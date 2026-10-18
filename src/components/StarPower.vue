@@ -83,4 +83,3 @@ const quantity = ref(10)
     }
 }
 </style>
-@use '../styles/variables' as *;

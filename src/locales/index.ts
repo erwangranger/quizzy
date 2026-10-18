@@ -1,7 +1,6 @@
 export type Locale = 'en' | 'fr'
 
-const messages: Record<Locale, Record<string, string>> = {
-  en: {
+const en = {
     'app.title': 'Quizzy 🥴',
     'about.heading': 'triv·i·a',
     'about.partOfSpeech': 'noun',
@@ -45,8 +44,9 @@ const messages: Record<Locale, Record<string, string>> = {
     'message.8': "You're on your way to becoming a trivia master.",
     'message.9': 'A regular trivia wiz. Nice work.',
     'message.10': 'Holy snikes!! A perfect score! Excellent work.',
-  },
-  fr: {
+} as const
+
+const fr: Record<keyof typeof en, string> = {
     'app.title': 'Quizzy 🥴',
     'about.heading': 'triv·i·a',
     'about.partOfSpeech': 'nom',
@@ -90,11 +90,12 @@ const messages: Record<Locale, Record<string, string>> = {
     'message.8': 'Vous êtes en bonne voie de devenir un maître du trivia.',
     'message.9': 'Un véritable virtuose du trivia. Beau travail.',
     'message.10': 'Holy snikes !! Un score parfait ! Excellent travail.',
-  },
 }
 
-export function t(key: string, params?: Record<string, string | number>): string {
-  let text = messages.en[key] ?? key
+const messages: Record<Locale, Record<keyof typeof en, string>> = { en, fr }
+
+export function t(key: keyof typeof en, params?: Record<string, string | number>): string {
+  let text = messages.en[key]
   if (params) {
     for (const [name, value] of Object.entries(params)) {
       text = text.split(`{${name}}`).join(String(value))

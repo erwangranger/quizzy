@@ -10,14 +10,15 @@ body {
   color: $color-white;
   display: flex;
   font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
 }
 
-// Vue 3 mounts inside #app instead of replacing it; without this the extra
+// Vue 3 mounts inside #app instead of replacing it; without width the extra
 // wrapper becomes the body's flex item and shrinks to content width.
 #app {
   width: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 body,
