@@ -10,56 +10,127 @@
     >{{ t('starter.multiplayer') }}</button>
     <button @click="startGame">{{ t('starter.start') }}</button>
 
-    <!-- Category dropdown selector -->
-    <div class="dropdown" @click="dropdownToggle">
-      <!-- dropdown label -->
+    <!-- Language selector -->
+    <div class="dropdown" @click="langToggle">
       <div class="dropdown-label">
-        <h2>{{ t('starter.chooseCategory') }}</h2>
-        <!-- toggle expand icons -->
+        <h2>{{ t('starter.language') }}</h2>
         <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="toggleExpand" key="expand-more">expand_more</i>
+          <i class="material-icons expand-more" v-if="langExpand" key="expand-more">expand_more</i>
           <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
         </transition>
       </div>
-      <h3>{{ store.currentCategory.name }}</h3>
-      <ul :class="dropdownClass">
-        <li @click="chooseCategory({ name: 'Random', id: 9 })">{{ t('starter.random') }}</li>
-        <li v-for="category in store.categories" :key="category.id" @click="chooseCategory(category)">{{ category.name }}</li>
+      <h3>{{ store.setup.lang }}</h3>
+      <ul :class="langClass">
+        <li
+        v-for="lang in languages"
+        :key="lang"
+        @click="chooseLang(lang)"
+        >{{ lang }}</li>
+      </ul>
+    </div>
+
+    <!-- Category multi-select dropdown -->
+    <div class="dropdown" @click="categoryToggle">
+      <div class="dropdown-label">
+        <h2>{{ t('starter.chooseCategory') }}</h2>
+        <transition name="fade" mode="out-in">
+          <i class="material-icons expand-more" v-if="categoryExpand" key="expand-more">expand_more</i>
+          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
+        </transition>
+      </div>
+      <h3>{{ selectedCategoryLabel }}</h3>
+      <ul :class="categoryClass">
+        <li
+        v-for="category in store.categories"
+        :key="category"
+        @click="toggleCategory(category)"
+        >{{ category }}</li>
+      </ul>
+    </div>
+
+    <!-- Question count selector -->
+    <div class="dropdown" @click="countToggle">
+      <div class="dropdown-label">
+        <h2>{{ t('starter.questionCount') }}</h2>
+        <transition name="fade" mode="out-in">
+          <i class="material-icons expand-more" v-if="countExpand" key="expand-more">expand_more</i>
+          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
+        </transition>
+      </div>
+      <h3>{{ store.setup.count }}</h3>
+      <ul :class="countClass">
+        <li
+        v-for="n in questionCounts"
+        :key="n"
+        @click="store.setSetup({ count: n })"
+        >{{ n }}</li>
       </ul>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 import { useGameStore } from '../store/store'
 import { t } from '../locales'
+import type { Category, Lang } from '../questions/schema'
 
 const store = useGameStore()
 
-const dropdownClass = reactive({
-  close: false,
-  open: false,
-})
-const toggleExpand = ref(true) // toggles expand icons
+const languages: Lang[] = ['en', 'fr']
+const questionCounts = [5, 10, 15, 20]
 
-// Send category data to store, set selected category
-function chooseCategory(category: { name: string; id: number }) {
-  store.setCurrentCategory(category)
+const langClass = reactive({ close: false, open: false })
+const categoryClass = reactive({ close: false, open: false })
+const countClass = reactive({ close: false, open: false })
+const langExpand = ref(true)
+const categoryExpand = ref(true)
+const countExpand = ref(true)
+
+const selectedCategoryLabel = computed(() => {
+  const chosen = store.setup.categories
+  if (chosen.length === 0) return t('starter.allCategories')
+  if (chosen.length === 1) return chosen[0]
+  return `${chosen.length} ${t('starter.categoriesSelected')}`
+})
+
+// Toggle a category in the multi-select (empty list = all categories)
+function toggleCategory(category: Category) {
+  const chosen = store.setup.categories
+  const next = chosen.includes(category)
+    ? chosen.filter((c) => c !== category)
+    : [...chosen, category]
+  store.setSetup({ categories: next })
 }
 
-// Toggle animation/display classes for category list
-function dropdownToggle() {
-  toggleExpand.value = !toggleExpand.value
-  if (dropdownClass.open) {
-    dropdownClass.open = false
-    dropdownClass.close = true
+function chooseLang(lang: Lang) {
+  store.setSetup({ lang, categories: [] })
+}
+
+function toggle(open: { open: boolean; close: boolean }) {
+  if (open.open) {
+    open.open = false
+    open.close = true
   } else {
-    dropdownClass.open = true
-    dropdownClass.close = false
+    open.open = true
+    open.close = false
   }
 }
 
+function langToggle() {
+  langExpand.value = !langExpand.value
+  toggle(langClass)
+}
+
+function categoryToggle() {
+  categoryExpand.value = !categoryExpand.value
+  toggle(categoryClass)
+}
+
+function countToggle() {
+  countExpand.value = !countExpand.value
+  toggle(countClass)
+}
 
 function startGame() {
   store.startGame()
@@ -69,6 +140,7 @@ function startGame() {
   }
 }
 </script>
+
 <style lang="scss" scoped>
 @use '../styles/variables' as *;
 
@@ -95,9 +167,14 @@ li {
     transition: all 0.3s ease;
     &:hover {
         color: $color-white;
-        //font-size: 1.5em;
         transform: scale(1.5);
     }
+}
+
+// Selected category in the multi-select
+.selected {
+    color: $color-green;
+    font-weight: bold;
 }
 
 ul {
@@ -119,7 +196,7 @@ ul {
     justify-content: center;
 }
 
-// Category dropdown expand icon
+// Dropdown expand icon
 .expand-less,
 .expand-more {
     font-size: 2em;

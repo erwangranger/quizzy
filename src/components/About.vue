@@ -5,7 +5,6 @@
 {{ t('about.definition') }}</p>
     <br>
     <p>{{ t('about.love') }}</p>
-    <h3>{{ t('about.madeBy') }} <a href="http://christopherianmurphy.com" class="link-dark">Christopher Murphy</a></h3>
   </div>
 </template>
 
@@ -24,11 +23,6 @@ div {
 }
 
 h2 {
-  font-weight: bold;
-}
-
-h3 {
-  color: $color-med;
   font-weight: bold;
 }
 

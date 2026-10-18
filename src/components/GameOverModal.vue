@@ -4,7 +4,7 @@
       <!-- Single player scores -->
       <div v-if="store.solo">
         <h1>{{ t('gameover.title') }}</h1>
-        <h2>{{ t('gameover.score', { score: store.scores.playerOne.total }) }}</h2>
+        <h2>{{ t('gameover.score', { score: store.scores.playerOne.total, total: store.questions.length }) }}</h2>
         <p>{{ scoreMessage }}</p>
       </div>
       <!-- Multiplayer scores -->

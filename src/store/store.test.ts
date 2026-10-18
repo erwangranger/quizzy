@@ -1,35 +1,33 @@
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
 import { useGameStore } from './store'
 
-const questions = [
-  {
-    category: 'General',
-    type: 'multiple',
-    difficulty: 'easy',
-    question: 'Q1?',
-    correct_answer: 'A1',
-    incorrect_answers: ['B1', 'C1', 'D1'],
-  },
-  {
-    category: 'General',
-    type: 'multiple',
-    difficulty: 'easy',
-    question: 'Q2?',
-    correct_answer: 'A2',
-    incorrect_answers: ['B2', 'C2', 'D2'],
-  },
-]
+// jsdom localStorage needs --localstorage-file; in-memory mock so the
+// question bank's seen-question tracking is deterministic in tests.
+const storage = new Map<string, string>()
+vi.stubGlobal(
+  'window',
+  Object.assign(window, {
+    localStorage: {
+      getItem: (key: string) => (storage.has(key) ? storage.get(key) : null),
+      setItem: (key: string, value: string) => void storage.set(key, value),
+      removeItem: (key: string) => void storage.delete(key),
+      clear: () => void storage.clear(),
+    },
+  }),
+)
 
 describe('useGameStore', () => {
   beforeEach(() => {
+    storage.clear()
     setActivePinia(createPinia())
   })
 
-  it('starts at the intro view in solo mode', () => {
+  it('starts at the intro view in solo mode with default setup', () => {
     const store = useGameStore()
     expect(store.currentView).toBe('app-intro')
     expect(store.solo).toBe(true)
+    expect(store.setup).toEqual({ lang: 'en', categories: [], count: 10, difficulty: undefined })
   })
 
   it('alternates turns by round parity', () => {
@@ -41,11 +39,11 @@ describe('useGameStore', () => {
     expect(store.turn).toBe('playerOne')
   })
 
-  it('applies questions with shuffled 4-way choices', () => {
+  it('draws from the local bank with shuffled 4-way choices', () => {
     const store = useGameStore()
-    store.applyQuestions(questions)
+    store.startGame()
     expect(store.currentView).toBe('app-game-board')
-    expect(store.questions).toHaveLength(2)
+    expect(store.questions).toHaveLength(10)
     for (const q of store.questions) {
       expect(q.choices).toHaveLength(4)
       expect(q.choices.filter((c) => c.answer)).toHaveLength(1)
@@ -55,9 +53,17 @@ describe('useGameStore', () => {
     }
   })
 
+  it('honors setup: category filter and question count', () => {
+    const store = useGameStore()
+    store.setSetup({ categories: ['science'], count: 2 })
+    store.startGame()
+    expect(store.questions).toHaveLength(2)
+    expect(store.questions.every((q) => q.category === 'science')).toBe(true)
+  })
+
   it('scores correct and incorrect answers into history and total', () => {
     const store = useGameStore()
-    store.applyQuestions(questions)
+    store.startGame()
     store.score({ correct: true, mode: 'playerOne' })
     store.score({ correct: true, mode: 'playerOne' })
     store.score({ correct: false, mode: 'playerTwo' })
@@ -74,16 +80,18 @@ describe('useGameStore', () => {
 
   it('styles buttons to mark the correct answer after a guess', () => {
     const store = useGameStore()
-    store.applyQuestions(questions)
+    store.startGame()
     store.styleButtons()
     const marked = store.questions[0].choices
     expect(marked.filter((c) => c.classes.correct)).toHaveLength(1)
     expect(marked.filter((c) => c.classes.incorrect)).toHaveLength(3)
   })
 
-  it('ends the game at round 9 and resets on new game', () => {
+  it('ends the game after the last question and resets', () => {
     const store = useGameStore()
-    for (let i = 0; i < 9; i++) store.incrementRound()
+    store.setSetup({ count: 3 })
+    store.startGame()
+    for (let i = 0; i < 2; i++) store.incrementRound()
     store.isGameOverCheck()
     expect(store.isGameOver).toBe(true)
     store.resetGame()
@@ -94,6 +102,15 @@ describe('useGameStore', () => {
     store.newGame()
     expect(store.currentView).toBe('app-intro')
     expect(store.solo).toBe(true)
-    expect(store.currentCategory.name).toBe('Random')
+  })
+
+  it('flags poolReset when the seen pool is exhausted', () => {
+    const store = useGameStore()
+    store.setSetup({ count: 10 })
+    store.startGame()
+    expect(store.poolReset).toBe(false)
+    store.resetGame()
+    store.startGame()
+    expect(store.poolReset).toBe(true)
   })
 })

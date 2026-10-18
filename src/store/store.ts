@@ -1,4 +1,6 @@
 import { defineStore } from 'pinia'
+import type { Category, Difficulty, Lang, Question } from '../questions/schema'
+import { drawQuestions, getCategories, resetSeenQuestions } from '../questions/questionBank'
 
 export interface Choice {
   text: string
@@ -6,13 +8,7 @@ export interface Choice {
   classes: { correct: boolean; incorrect: boolean }
 }
 
-export interface Question {
-  category: string
-  type: string
-  difficulty: string
-  question: string
-  correct_answer: string
-  incorrect_answers: string[]
+export interface GameQuestion extends Question {
   choices: Choice[]
 }
 
@@ -26,21 +22,28 @@ interface PlayerScore {
   total: number
 }
 
+export interface GameSetup {
+  lang: Lang
+  categories: Category[]
+  count: number
+  difficulty?: Difficulty
+}
+
 interface State {
   aboutShow: boolean
-  categories: { name: string; id: number }[]
-  currentCategory: { name: string; id: number }
   currentView: string
-  questions: Question[]
+  questions: GameQuestion[]
   isGameOver: boolean
   isPaused: boolean
   round: number
   scores: { playerOne: PlayerScore; playerTwo: PlayerScore }
   solo: boolean
   starPower: boolean
+  setup: GameSetup
+  poolReset: boolean
 }
 
-// Fisher-Yates shuffle, same behavior as upstream
+// Fisher-Yates shuffle
 function shuffle<T>(items: T[]): T[] {
   const arr = [...items]
   let i = arr.length
@@ -64,23 +67,28 @@ function emptyScores(): { playerOne: PlayerScore; playerTwo: PlayerScore } {
   }
 }
 
+function defaultSetup(): GameSetup {
+  return {
+    lang: 'en',
+    categories: [],
+    count: 10,
+    difficulty: undefined,
+  }
+}
+
 export const useGameStore = defineStore('game', {
   state: (): State => ({
     aboutShow: false, // Show or hide About menu
-    categories: [], // trivia categories
-    currentCategory: {
-      // chosen category
-      name: 'Random',
-      id: 9,
-    },
     currentView: 'app-intro',
     questions: [], // current list of questions in game
     isGameOver: false, // game state
     isPaused: false,
-    round: 0, // round counter, starts at 0, ends at 9
+    round: 0, // round counter, starts at 0, ends at setup.count - 1
     scores: emptyScores(),
     solo: true, // Game mode, solo or multiplayer?
     starPower: false, // show starPower animation
+    setup: defaultSetup(),
+    poolReset: false, // seen-question pool was exhausted on the last draw
   }),
   getters: {
     turn: (state) => {
@@ -91,13 +99,14 @@ export const useGameStore = defineStore('game', {
         return 'playerTwo'
       }
     },
+    categories: (state) => getCategories(state.setup.lang),
   },
   actions: {
     aboutToggle() {
       this.aboutShow = !this.aboutShow
     },
     isGameOverCheck() {
-      if (this.round === 9) {
+      if (this.round === this.questions.length - 1) {
         this.isGameOver = true
       }
     },
@@ -105,8 +114,6 @@ export const useGameStore = defineStore('game', {
       this.round += 1
     },
     newGame() {
-      this.currentCategory.name = 'Random'
-      this.currentCategory.id = 9
       this.currentView = 'app-intro'
       this.solo = true
     },
@@ -123,6 +130,7 @@ export const useGameStore = defineStore('game', {
       this.questions = []
       this.round = 0
       this.scores = emptyScores()
+      this.poolReset = false
     },
     score(payload: { correct: boolean; mode: 'playerOne' | 'playerTwo' }) {
       const player = payload.mode
@@ -142,9 +150,8 @@ export const useGameStore = defineStore('game', {
     selectMode(payload: boolean) {
       payload === true ? (this.solo = true) : (this.solo = false)
     },
-    setCurrentCategory(payload: { name: string; id: number }) {
-      this.currentCategory.name = payload.name
-      this.currentCategory.id = payload.id
+    setSetup(payload: Partial<GameSetup>) {
+      Object.assign(this.setup, payload)
     },
     starPowerOn() {
       this.starPower = true
@@ -163,44 +170,28 @@ export const useGameStore = defineStore('game', {
         }
       })
     },
-    async fetchCategories() {
-      const response = await fetch('https://opentdb.com/api_category.php')
-      const data = await response.json()
-      this.categories = data.trivia_categories
-    },
-    async startGame() {
-      this.currentView = 'app-loader'
-      // Fetch batch of questions for specific category
-      let api: string
-      // Determine if random (default) or chosen category
-      if (this.currentCategory.name === 'Random') {
-        api = 'https://opentdb.com/api.php?amount=10'
-      } else {
-        api = 'https://opentdb.com/api.php?amount=10&category=' + this.currentCategory.id
-      }
-      const response = await fetch(api)
-      const data = await response.json()
-      this.applyQuestions(data.results)
-    },
-    applyQuestions(payload: Omit<Question, 'choices'>[]) {
-      // Set questions to payload from http request
-      this.questions = payload.map((el) => {
-        // Create list of incorrect choices
-        const choices: Choice[] = el.incorrect_answers.map((item) => ({
+    // Draws questions from the local bank (bundled at build time, offline-safe)
+    // and applies them to the game state. Replaces the Open Trivia DB fetch.
+    startGame() {
+      const { questions, poolReset } = drawQuestions(this.setup)
+      this.poolReset = poolReset
+      this.questions = questions.map((q) => {
+        const choices: Choice[] = q.incorrect_answers.map((item) => ({
           text: item,
           answer: false,
           classes: { correct: false, incorrect: false },
         }))
-        // Add correct answer
         choices.push({
-          text: el.correct_answer,
+          text: q.correct_answer,
           answer: true,
           classes: { correct: false, incorrect: false },
         })
-        return { ...el, choices: shuffle(choices) }
+        return { ...q, choices: shuffle(choices) }
       })
-      // Set view to game board
-      this.currentView = 'app-game-board'
+      this.currentView = this.questions.length > 0 ? 'app-game-board' : 'app-intro'
+    },
+    clearSeenQuestions() {
+      resetSeenQuestions()
     },
   },
 })

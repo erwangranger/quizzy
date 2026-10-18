@@ -1,13 +1,14 @@
 <template>
   <div>
+    <p v-if="store.poolReset" class="pool-reset">{{ t('questions.poolReset') }}</p>
     <h3>{{ currentQuestion.category }}</h3>
-    <h2>{{ decodedQuestion }}</h2>
+    <h2>{{ currentQuestion.question }}</h2>
     <ul>
       <li v-for="(choice, i) in choices" :key="i">
         <button
         @click="answer(choice)"
         :disabled="store.isPaused"
-        :class="choice.classes">{{ decode(choice.text) }}</button>
+        :class="choice.classes">{{ choice.text }}</button>
       </li>
     </ul>
     <button v-if="store.isPaused" @click="advance">{{ t('questions.next') }}</button>
@@ -17,23 +18,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useGameStore, type Choice } from '../store/store'
-import { decode } from '../utils/htmlEntity'
 import { t } from '../locales'
 
 const store = useGameStore()
 
 const currentQuestion = computed(() => store.questions[store.round])
 const choices = computed(() => currentQuestion.value?.choices ?? [])
-// Decode HTML entities in question. Based on htmlEntity mixin
-const decodedQuestion = computed(() => decode(currentQuestion.value?.question ?? ''))
 
 // Reset board, present next question
 function advance() {
-  // Proceed if less than 10 rounds
-  if (store.round <= 8) {
-    store.pauseGame()
-    store.incrementRound()
-  }
+  store.pauseGame()
+  store.incrementRound()
   // Close About menu if open
   if (store.aboutShow) {
     store.aboutToggle()
@@ -84,6 +79,15 @@ div {
 
 h3 {
     color: $color-med;
+}
+
+.pool-reset {
+    background-color: $color-alt-med;
+    border-radius: 12px;
+    color: $color-white;
+    font-size: 0.9em;
+    margin: 0 0 1em;
+    padding: 0.4em 1em;
 }
 
 @media (max-width: 600px) {

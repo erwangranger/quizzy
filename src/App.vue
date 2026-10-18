@@ -22,7 +22,6 @@
       <!-- Primary page components -->
       <transition name="fade" mode="out-in">
         <Intro v-if="store.currentView === 'app-intro'" />
-        <Loader v-else-if="store.currentView === 'app-loader'" />
         <GameBoard v-else-if="store.currentView === 'app-game-board'" />
       </transition>
 
@@ -31,21 +30,14 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import About from './components/About.vue'
 import GameBoard from './components/GameBoard.vue'
 import GameOverModal from './components/GameOverModal.vue'
 import Intro from './components/Intro.vue'
-import Loader from './components/Loader.vue'
 import { useGameStore } from './store/store'
 import { t } from './locales'
 
 const store = useGameStore()
-
-onMounted(() => {
-  // Fetch categories from open trivia, send to store (Phase 1 removes this)
-  store.fetchCategories()
-})
 </script>
 
 <style lang="scss">

@@ -60,3 +60,49 @@
 
 ### Ignore (scope creep)
 Accounts, analytics, theming, sound, timers, haptics, landscape (SPEC §4 mandates portrait), favicon polish.
+
+## Trivia phrasing elimination (planned — 2026-10-18)
+
+> Owner rationale: "trivia" has a negative connotation — knowledge is rarely trivial. Evidence below verified 2026-10-18 against the working tree — re-verify before pickup.
+> Note: evidence line numbers captured mid-refactor on 2026-10-18 — a concurrent session is actively rewriting src/; locale keys are the stable reference, re-verify line numbers on pickup.
+
+- [ ] Sweep user-facing copy and replace "trivia" phrasing with neutral knowledge framing (quiz / question / knowledge), keeping en + fr locales consistent: `README.md`, `SPEC.md`, `CHANGELOG.md`, `package.json`, `index.html`, `src/locales/index.ts`, `src/components/About.vue` (renders `about.heading`/`about.definition`/`about.love` — replacing the dictionary-definition treatment with neutral knowledge framing is the core of this task)
+
+Evidence — every case-insensitive "trivia" occurrence in the repo (2026-10-18), as `file:line — phrase (user-facing | identifier)`:
+
+- `README.md:3` — "A single or multiplayer (local) trivia game" (user-facing)
+- `README.md` Credits section (bottom) — original project as starting point/inspiration, new app new direction (user-facing; attribution moved to the bottom 2026-10-18)
+- `CHANGELOG.md:9` — "Migrated Winsome Trivia (Vue 2 + Vuex + webpack 2 + node-sass)" (user-facing doc; upstream project name must stay)
+- `CHANGELOG.md:12` — "Open Trivia DB calls kept (removed in Phase 1)" (identifier — external API name)
+- `package.json:3` — "A single or multiplayer (local) trivia game. Quizzy 🥴 — sounds like queasy." (user-facing; "Quizzy 🥴" brand must stay)
+- `index.html:6` — meta description "A single or multiplayer trivia game." (user-facing)
+- `SPEC.md:1` — "# Trivia Road Trip: Agent Spec" (user-facing doc title)
+- `SPEC.md:3` — "You are building a trivia game … Winsome Trivia" (user-facing doc; upstream project name must stay)
+- `SPEC.md:15` — "fetched at game start from the Open Trivia DB API (`opentdb.com/api.php?amount=10`)" (identifier — external API name/URL)
+- `SPEC.md:27` — "Local question data: no Open Trivia DB" (identifier — external API name)
+- `SPEC.md:38` — "No Open Trivia DB data or API calls." (identifier — external API name)
+- `SPEC.md:46` — "credit Christopher Murphy / Winsome Trivia in `README.md`" (identifier — upstream attribution required by SPEC)
+- `SPEC.md:83` — "(Trivial Pursuit style six, plus current events.)" (user-facing doc)
+- `SPEC.md:118` — "Remove all Open Trivia DB code" (identifier — external API name)
+- `SPEC.md:126` — "closer to Trivial Pursuit" (user-facing doc)
+- `src/locales/index.ts:5` — "triv·i·a" (`about.heading`, en + fr `:46`) (user-facing; About modal title)
+- `src/locales/index.ts:7` — "details, considerations, or pieces of information of little importance or value." (`about.definition`, en; fr `:48` "…de peu d'importance ou de valeur.") (user-facing; About modal dictionary definition)
+- `src/locales/index.ts:8` — "I love trivia and I thought that you might too." (`about.love`, en) (user-facing, en)
+- `src/locales/index.ts:9` — "Test your trivial knowledge with a trivia quiz. Play against a friend, or challenge yourself." (`instructions.body`, en; fr counterpart already neutral — 'Testez vos connaissances avec un quiz…') (user-facing, en)
+- `src/locales/index.ts:32` — "Time to brush up on your trivia game." (`message.1`, en) (user-facing, en)
+- `src/locales/index.ts:37` — "…a wealth of trivial knowledge. Just not today." (`message.6`, en) (user-facing, en)
+- `src/locales/index.ts:39` — "…on your way to becoming a trivia master." (`message.8`, en) (user-facing, en)
+- `src/locales/index.ts:40` — "A regular trivia wiz. Nice work." (`message.9`, en) (user-facing, en)
+- `src/locales/index.ts:46` — "triv·i·a" (`about.heading`, fr) (user-facing; About modal title, fr)
+- `src/locales/index.ts:49` — "J'adore le trivia et j'ai pensé que vous pourriez l'aimer aussi." (`about.love`, fr) (user-facing, fr)
+- `src/locales/index.ts:78` — "…une mine de connaissances triviales. Mais pas aujourd'hui." (`message.6`, fr) (user-facing, fr)
+- `src/locales/index.ts:80` — "…en bonne voie de devenir un maître du trivia." (`message.8`, fr) (user-facing, fr)
+- `src/locales/index.ts:81` — "Un véritable virtuose du trivia. Beau travail." (`message.9`, fr) (user-facing, fr)
+- `src/components/About.vue:3-7` — renders `about.heading` / `about.definition` / `about.love` directly (user-facing render site; no literal "trivia" in the file)
+- `src/store/store.ts:174` — "Replaces the Open Trivia DB fetch." (identifier — code comment naming the external API)
+- `src/assets/winsome-trivia.png` — filename match; asset unreferenced by any code (identifier — upstream project name)
+- No literal occurrences: `questions/sample.json`, `scripts/validate-questions.mjs`, `.github/workflows/deploy.yml`, `src/components/` (except the About.vue render site above — no literal "trivia" text in any component), `src/styles/`, `src/main.ts`, `src/store/store.test.ts`, `src/questions/` (`src/utils/` does not exist)
+
+- [ ] Re-run the vitest suite after copy changes (tests may assert on locale strings)
+
+Constraints that still apply: phrasing/copy only — do NOT rename API identifiers or opentdb URLs, do NOT touch the "Quizzy 🥴" brand title; "trivia" may remain where it names the external API (Open Trivia DB / opentdb.com) or the upstream project (Winsome Trivia) but not in visible copy.
