@@ -17,6 +17,7 @@ const en = {
     'starter.chooseCategory': 'Choose Category',
     'starter.allCategories': 'All Categories',
     'starter.categoriesSelected': 'selected',
+    'category.recent-news': 'Recent News',
     'questions.next': 'Next',
     'questions.reveal': 'Reveal',
     'questions.poolReset': "You've seen all these questions — starting over!",
@@ -65,6 +66,7 @@ const fr: Record<keyof typeof en, string> = {
     'starter.chooseCategory': 'Choisir une catégorie',
     'starter.allCategories': 'Toutes les catégories',
     'starter.categoriesSelected': 'sélectionnées',
+    'category.recent-news': 'Actualités récentes',
     'questions.next': 'Suivant',
     'questions.reveal': 'Révéler',
     'questions.poolReset': 'Vous avez vu toutes ces questions — on recommence !',
@@ -116,4 +118,12 @@ export function t(key: keyof typeof en, params?: Record<string, string | number>
     }
   }
   return text
+}
+
+// Category display name: localized when a key exists, raw slug otherwise
+// (the six classic categories keep rendering their slugs).
+export function categoryLabel(category: string): string {
+  const key = `category.${category}` as keyof typeof en
+  const localized = (messages[activeLocale.value] as Record<string, string | undefined>)[key]
+  return localized ?? category
 }

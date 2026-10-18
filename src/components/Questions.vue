@@ -1,7 +1,7 @@
 <template>
   <div>
     <p v-if="store.poolReset" class="pool-reset">{{ t('questions.poolReset') }}</p>
-    <h3>{{ currentQuestion.category }}</h3>
+    <h3>{{ categoryLabel(currentQuestion.category) }}</h3>
     <h2>{{ currentQuestion.question }}</h2>
     <ul v-if="choicesVisible">
       <li v-for="(choice, i) in choices" :key="i">
@@ -49,7 +49,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useGameStore, type Choice } from '../store/store'
-import { t } from '../locales'
+import { t, categoryLabel } from '../locales'
 
 const store = useGameStore()
 

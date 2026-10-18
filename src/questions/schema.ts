@@ -9,6 +9,7 @@ export type Category =
   | 'entertainment'
   | 'sports-leisure'
   | 'current-events'
+  | 'recent-news'
 export type Difficulty = 1 | 2 | 3
 export type Origin = 'human' | 'claude'
 
@@ -35,6 +36,7 @@ export const CATEGORIES: readonly Category[] = [
   'entertainment',
   'sports-leisure',
   'current-events',
+  'recent-news',
 ]
 
 export interface ValidationIssue {
@@ -95,7 +97,7 @@ export function validateQuestion(input: unknown): ValidationIssue[] {
     fail('as_of', 'must be an ISO date (YYYY-MM-DD) or null')
   }
 
-  if (q.category === 'current-events') {
+  if (q.category === 'current-events' || q.category === 'recent-news') {
     if (typeof q.source_url !== 'string' || q.source_url.length === 0) fail('source_url', 'current-events questions require a non-null source_url')
     if (typeof q.as_of !== 'string' || !ISO_DATE.test(q.as_of)) fail('as_of', 'current-events questions require as_of')
     if (typeof q.question === 'string' && !MONTH_YEAR.test(q.question)) {

@@ -17,9 +17,9 @@ describe('questionBank', () => {
     resetSeenQuestions()
   })
 
-  it('loads 12 reviewed questions from questions/sample.json', () => {
+  it('loads 61 reviewed questions from questions/*.json', () => {
     const all = loadAllQuestions()
-    expect(all).toHaveLength(12)
+    expect(all).toHaveLength(61)
     expect(all.every((q) => q.reviewed)).toBe(true)
   })
 
@@ -31,6 +31,7 @@ describe('questionBank', () => {
       'arts-literature',
       'entertainment',
       'sports-leisure',
+      'recent-news',
     ])
     // no fr questions in the sample data
     expect(getCategories('fr')).toEqual([])
@@ -49,6 +50,12 @@ describe('questionBank', () => {
     expect(questions.every((q) => q.category === 'science' && q.lang === 'en')).toBe(true)
   })
 
+  it('draws only from the recent-news category', () => {
+    const { questions } = drawQuestions({ lang: 'en', categories: ['recent-news'], count: 5 })
+    expect(questions).toHaveLength(5)
+    expect(questions.every((q) => q.category === 'recent-news' && q.reviewed)).toBe(true)
+  })
+
   it('draws only the requested difficulty', () => {
     const { questions } = drawQuestions({ lang: 'en', categories: [], count: 5, difficulty: 1 })
     expect(questions.length).toBeGreaterThan(0)
@@ -56,18 +63,18 @@ describe('questionBank', () => {
   })
 
   it('prefers unseen questions and resets the pool when exhausted', () => {
-    // 12 questions total: draw 10, then the next draw must reset the pool
-    const first = drawQuestions({ lang: 'en', categories: [], count: 10 })
+    // 61 questions total: draw 60 (no reset), the next draw sees one unseen
+    // question left, so the bank resets the pool to full before drawing.
+    const first = drawQuestions({ lang: 'en', categories: [], count: 60 })
     expect(first.poolReset).toBe(false)
     const second = drawQuestions({ lang: 'en', categories: [], count: 10 })
     expect(second.poolReset).toBe(true)
-    // after reset, drawing from the full pool again works
     expect(second.questions).toHaveLength(10)
   })
 
   it('caps draws at the available pool size', () => {
     const { questions, poolReset } = drawQuestions({ lang: 'en', categories: [], count: 100 })
-    expect(questions).toHaveLength(12)
+    expect(questions).toHaveLength(61)
     expect(poolReset).toBe(true)
   })
 
@@ -77,9 +84,10 @@ describe('questionBank', () => {
     const overlap = first.questions.filter((q) => second.questions.some((s) => s.id === q.id))
     expect(overlap).toHaveLength(0)
     resetSeenQuestions()
-    const third = drawQuestions({ lang: 'en', categories: [], count: 5 })
+    // Draw 60 of 61 so the post-reset draw must intersect the first draw.
+    const third = drawQuestions({ lang: 'en', categories: [], count: 60 })
     const overlapAfterReset = first.questions.filter((q) => third.questions.some((s) => s.id === q.id))
-    expect(overlapAfterReset.length).toBeGreaterThan(0)
+    expect(overlapAfterReset).toHaveLength(5)
   })
 
   it('returns an empty result with no poolReset for an unknown language', () => {

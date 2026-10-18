@@ -5,7 +5,7 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-const CATEGORIES = ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure', 'current-events']
+const CATEGORIES = ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure', 'current-events', 'recent-news']
 const QUESTIONS_DIR = 'questions'
 
 const errors = []
@@ -101,7 +101,7 @@ for (const file of files) {
       fail(path, id, 'as_of must be an ISO date (YYYY-MM-DD) or null')
     }
 
-    if (q.category === 'current-events') {
+    if (q.category === 'current-events' || q.category === 'recent-news') {
       if (q.source_url === null || q.source_url === undefined) fail(path, id, 'current-events questions require a non-null source_url')
       if (!q.as_of) fail(path, id, 'current-events questions require as_of')
       if (typeof q.question === 'string' && !MONTH_YEAR.test(q.question)) {

@@ -111,7 +111,7 @@
         v-for="category in store.categories"
         :key="category"
         @click="toggleCategory(category)"
-        >{{ category }}</li>
+        >{{ categoryLabel(category) }}</li>
       </ul>
     </div>
 
@@ -139,7 +139,7 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
 import { useGameStore, MAX_PLAYERS } from '../store/store'
-import { t } from '../locales'
+import { t, categoryLabel } from '../locales'
 import type { Category, Lang } from '../questions/schema'
 
 const store = useGameStore()
@@ -162,7 +162,7 @@ const playersExpand = ref(true)
 const selectedCategoryLabel = computed(() => {
   const chosen = store.setup.categories
   if (chosen.length === 0) return t('starter.allCategories')
-  if (chosen.length === 1) return chosen[0]
+  if (chosen.length === 1) return categoryLabel(chosen[0])
   return `${chosen.length} ${t('starter.categoriesSelected')}`
 })
 

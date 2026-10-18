@@ -42,7 +42,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useGameStore, type Player } from '../store/store'
-import { t } from '../locales'
+import { t, categoryLabel } from '../locales'
 import type { Category } from '../questions/schema'
 
 const store = useGameStore()
@@ -67,7 +67,7 @@ const soloBreakdown = computed(() => {
   const counts = store.categoryBreakdown[0]
   if (!counts) return []
   return (Object.keys(counts) as Category[]).map(
-    (category) => `${category}: ${counts[category]}`,
+    (category) => `${categoryLabel(category)}: ${counts[category]}`,
   )
 })
 
@@ -87,7 +87,7 @@ function breakdownText(player: Player): string[] {
   const counts = store.categoryBreakdown[index]
   if (!counts) return []
   return (Object.keys(counts) as Category[]).map(
-    (category) => `${category}: ${counts[category]}`,
+    (category) => `${categoryLabel(category)}: ${counts[category]}`,
   )
 }
 

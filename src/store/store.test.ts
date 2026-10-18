@@ -214,7 +214,7 @@ describe('useGameStore', () => {
   it('weights correct answers by difficulty when enabled', () => {
     const store = useGameStore()
     store.selectMode(false)
-    store.setSetup({ players: 2, weightByDifficulty: true, count: 12 })
+    store.setSetup({ players: 2, weightByDifficulty: true, count: 12, categories: ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure'] })
     store.startGame()
     // Difficulty 1 and 2 questions exist in the sample pool
     const easy = store.questions.findIndex((q) => q.difficulty === 1)
@@ -274,7 +274,7 @@ describe('useGameStore', () => {
 
   it('flags poolReset when the seen pool is exhausted', () => {
     const store = useGameStore()
-    store.setSetup({ count: 10 })
+    store.setSetup({ count: 60 })
     store.startGame()
     expect(store.poolReset).toBe(false)
     store.resetGame()
@@ -284,7 +284,7 @@ describe('useGameStore', () => {
 
   it('breaks down correct answers per category', () => {
     const store = useGameStore()
-    store.setSetup({ count: 12 })
+    store.setSetup({ count: 12, categories: ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure'] })
     store.startGame()
     store.players[0].score.history = store.questions.map((q) => ({
       correct: true,
