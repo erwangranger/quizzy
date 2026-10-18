@@ -29,7 +29,7 @@ The site deploys to GitHub Pages via a GitHub Actions workflow on every push to 
 
 ## Question data
 
-Questions live as JSON files in `questions/` — no external API. Each file is an array of question objects (see the data model in `SPEC.md`). Only questions with `reviewed: true` are bundled into the build; unreviewed banks awaiting human review live in `questions/pending/`.
+Questions live as JSON files in `questions/` — no external API. Each file is an array of question objects (see the data model in `SPEC.md`). Only questions with `reviewed: true` are bundled into the build; `recent-news.json` is the reviewed current-events bank. New banks land in `questions/pending/` until reviewed.
 
 Validate them:
 
