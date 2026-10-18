@@ -1,0 +1,884 @@
+[
+  {
+    "id": "news-20261001-14",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, NASA announced that scientists were studying ancient rocks in which part of the UK to help understand whether there was once life on Mars?",
+    "correct_answer": "The Scottish Highlands",
+    "incorrect_answers": [
+      "The Welsh valleys",
+      "The Lake District",
+      "The Yorkshire Dales"
+    ],
+    "explanation": "A NASA-led team sampled the Stoer Formation around Clachtoll in Assynt, in the north-west Highlands. The area's rocks formed in environments comparable to ancient Martian lakes and rivers and may preserve microbial evidence some 1.2 billion years old.",
+    "source_url": "https://www.bbc.com/news/articles/c5gmr3309p7jo",
+    "as_of": "2026-10-01",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261002-39",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, actor and Parkinson's research advocate Michael J. Fox was elevated to the rank of Companion in which order?",
+    "correct_answer": "Order of Canada",
+    "incorrect_answers": [
+      "Order of the British Empire",
+      "National Order of Quebec",
+      "Legion of Honour"
+    ],
+    "explanation": "Fox, born in Edmonton and raised in Vancouver, has been one of the most visible funders of Parkinson's research since going public with his diagnosis. The Companion rank is the highest level of the Order of Canada, and the ceremony took place at Rideau Hall.",
+    "source_url": "https://www.lapresse.ca/actualites/national/2026-10-02/acteur-et-militant-contre-la-maladie-de-parkinson/michael-j-fox-est-promu-au-sein-de-l-ordre-du-canada.php",
+    "as_of": "2026-10-02",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261005-15",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, the Nobel Prize in Physiology or Medicine was awarded for optogenetics, a technique that controls brain cells using light and a protein borrowed from which organisms?",
+    "correct_answer": "Algae",
+    "incorrect_answers": [
+      "Jellyfish",
+      "Fungi",
+      "Deep-sea bacteria"
+    ],
+    "explanation": "Germans Peter Hegemann and Georg Nagel discovered channelrhodopsin, the light-sensitive algal protein at the heart of optogenetics, while American Karl Deisseroth worked out how to use it to switch nerve cells on and off.",
+    "source_url": "https://www.bbc.com/news/articles/c5ev3ypmzly8o",
+    "as_of": "2026-10-05",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261005-24",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, Cadillac Formula 1 driver Valtteri Bottas skipped a short flight and instead cycled about 350km to the Singapore Grand Prix from which country?",
+    "correct_answer": "Malaysia",
+    "incorrect_answers": [
+      "Indonesia",
+      "Thailand",
+      "Australia"
+    ],
+    "explanation": "The Finnish driver cycled from Malaysia to Singapore, covering over 160km on stage two alone. A keen cyclist, he had also qualified for the Gravel World Championships.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/cv2d6p9en7wdo",
+    "as_of": "2026-10-05",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261006-16",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Belgian-born physicist Francis Halzen won the Nobel Prize in Physics for his pioneering work on which observatory, built at the South Pole?",
+    "correct_answer": "The IceCube Neutrino Observatory",
+    "incorrect_answers": [
+      "The James Webb Space Telescope",
+      "The Large Hadron Collider",
+      "The Event Horizon Telescope"
+    ],
+    "explanation": "IceCube uses a cubic kilometre of Antarctic ice fitted with thousands of light sensors to detect neutrinos, elusive 'ghost particles' from violent cosmic events. Halzen first proposed the idea back in 1988.",
+    "source_url": "https://www.bbc.com/news/articles/cq203mymlvkeo",
+    "as_of": "2026-10-06",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261007-17",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Jaguar unveiled its new all-electric Type 01 car in the US. Which actor posed with the car at its New York launch event?",
+    "correct_answer": "Florence Pugh",
+    "incorrect_answers": [
+      "Olivia Colman",
+      "Anthony Hopkins",
+      "Ian McKellen"
+    ],
+    "explanation": "The launch, attended by celebrities including Florence Pugh, came two years after Jaguar's colourful 2024 rebrand drew accusations of going 'woke'. The Type 01 costs from £130,000 in the UK and produces about 1,000 horsepower.",
+    "source_url": "https://www.bbc.com/news/articles/c6je50ydld31o",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261007-40",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, a large survey led by a Montreal researcher found that consumers keep buying single-use water bottles mainly because they consider them what?",
+    "correct_answer": "More convenient",
+    "incorrect_answers": [
+      "Cheaper",
+      "Safer",
+      "Better tasting"
+    ],
+    "explanation": "The survey found people continue using single-use bottles even while knowing they are bad for the environment and possibly harmful to their health, simply because they find them practical.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-07/etude/malgre-les-risques-l-eau-en-bouteille-jugee-plus-pratique.php",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261008-10",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, the 2026 Nobel Prize in literature was awarded to which genre-bending Canadian writer and classicist?",
+    "correct_answer": "Anne Carson",
+    "incorrect_answers": [
+      "Margaret Atwood",
+      "Alice Munro",
+      "Han Kang"
+    ],
+    "explanation": "The Swedish Academy honored Carson, 76, for her 'bold and inventive oeuvre' blending verse, prose and essay with classical myth; she was in Iceland when she learned she had won.",
+    "source_url": "https://www.cnn.com/2026/10/08/style/nobel-prize-literature-anne-carson-winner-2026-intl",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261009-12",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, which wealthy city-state topped IQAir's list of the world's most polluted cities as smog from Indonesian wildfires engulfed it ahead of its Formula One night race?",
+    "correct_answer": "Singapore",
+    "incorrect_answers": [
+      "Hong Kong",
+      "Jakarta",
+      "Dubai"
+    ],
+    "explanation": "Singapore's air quality hit 'very unhealthy' levels with an AQI of 216; Kuala Lumpur ranked second as smoke drifted from fires in Sumatra and Borneo.",
+    "source_url": "https://www.cnn.com/2026/10/09/asia/singapore-pollution-formula-one-hnk-intl",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261011-18",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, Max Verstappen won the Singapore Grand Prix for the first time in his career. Which driver finished second for Ferrari?",
+    "correct_answer": "Charles Leclerc",
+    "incorrect_answers": [
+      "Lewis Hamilton",
+      "Lando Norris",
+      "George Russell"
+    ],
+    "explanation": "Verstappen led from start to finish at Marina Bay, with Leclerc second and Mercedes' Kimi Antonelli third. Ferrari team-mate Hamilton finished sixth after a baffling tyre strategy.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261011-19",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, after the Singapore Grand Prix, which 20-year-old Mercedes driver was left able to clinch his first Formula 1 world title at the next race in Austin?",
+    "correct_answer": "Kimi Antonelli",
+    "incorrect_answers": [
+      "Oscar Piastri",
+      "Liam Lawson",
+      "Isack Hadjar"
+    ],
+    "explanation": "Antonelli's third place in Singapore, combined with team-mate George Russell finishing ninth, extended his championship lead to 102 points with a maximum of 150 available. Winning in Austin could make him the sport's youngest champion.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261011-41",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, La Presse reported that NASA had begun recruiting volunteers for its third simulated Mars mission, in which crews live isolated for more than how long?",
+    "correct_answer": "More than a year",
+    "incorrect_answers": [
+      "Six months",
+      "One month",
+      "Two weeks"
+    ],
+    "explanation": "NASA's CHAPEA program locks volunteer crews inside a Mars-like habitat to study how they cope. Recruitment for the third simulation opened in the summer of 2026; a Canadian who took part in the first one, in 2023, described how demanding the isolation is.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-11/a-quoi-ressemblerait-une-mission-sur-mars.php",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261012-05",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Americans Robert E. Hall and Michael Woodford won the Nobel prize in economics for models that help governments and central banks do what?",
+    "correct_answer": "Stabilize their economies",
+    "incorrect_answers": [
+      "Predict stock market crashes",
+      "Automate tax collection",
+      "Eliminate national debt"
+    ],
+    "explanation": "The Royal Swedish Academy of Sciences honored the Stanford and Columbia professors for models that help minimize the impact of external shocks such as energy crises on economies.",
+    "source_url": "https://www.cnn.com/2026/10/12/business/nobel-prize-economics-intl",
+    "as_of": "2026-10-12",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261012-42",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, the Prix Versailles published its list of the world's most beautiful new stations, ranking Town Hall Station first. In which city is it?",
+    "correct_answer": "Melbourne",
+    "incorrect_answers": [
+      "Sydney",
+      "Vienna",
+      "Osaka"
+    ],
+    "explanation": "The Prix Versailles rewards contemporary architecture that combines mobility, beauty and sustainability. Town Hall Station in Melbourne, Australia, topped the 2026 ranking; its underground hall under City Square has eight huge columns that give it a cathedral-like feel.",
+    "source_url": "https://www.lapresse.ca/voyage/2026-10-12/prix-versailles/les-plus-belles-gares-contemporaines.php",
+    "as_of": "2026-10-12",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-20",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, scientists identified a new 170-million-year-old relative of the crocodile, named Ctenosuchus tenuidens, from fossils found in which country's Atlas Mountains?",
+    "correct_answer": "Morocco",
+    "incorrect_answers": [
+      "Algeria",
+      "Tunisia",
+      "Egypt"
+    ],
+    "explanation": "The team from the University of Portsmouth and Hassan II University of Casablanca found the fossils in rocks formed in ancient rivers and lakes in south-eastern Morocco. Its name comes from Ancient Greek words for comb, crocodile and thin teeth.",
+    "source_url": "https://www.bbc.com/news/articles/c6vg0px1dkmmo",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-21",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, Fortnite-maker Epic Games announced a 'huge pivot' towards using artificial intelligence in its game development. Who is the company's founder and CEO?",
+    "correct_answer": "Tim Sweeney",
+    "incorrect_answers": [
+      "Elon Musk",
+      "Satya Nadella",
+      "Jensen Huang"
+    ],
+    "explanation": "Tim Sweeney made the announcement on social media, saying developers would retool for 'maximum AI acceleration'. The news came after a report that Epic had delayed a collaboration with Disney featuring Star Wars and Marvel characters.",
+    "source_url": "https://www.bbc.com/news/articles/cvj6j812dg4no",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-27",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Canadian Space Agency astronaut Joshua Kutryk answered his first questions from the International Space Station. What did he tell reporters about his mission?",
+    "correct_answer": "It is his first time in space",
+    "incorrect_answers": [
+      "It is his second spaceflight",
+      "It is his third spaceflight",
+      "It is a spacewalk-only mission"
+    ],
+    "explanation": "Kutryk launched 11 days before the interview for a six-month stay with NASA's SpaceX Crew-13, and said he was still relearning basic skills like sleeping and eating in microgravity.",
+    "source_url": "https://www.cbc.ca/news/science/joshua-kutryk-q-a-iss-9.7379098",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-38",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, an international team published the largest genetic map of the bison to date. How many bison genomes did the study sequence in all?",
+    "correct_answer": "160",
+    "incorrect_answers": [
+      "60",
+      "115",
+      "45"
+    ],
+    "explanation": "Researchers sequenced 115 ancient and 45 modern genomes, spanning 20,000 years of the species' history. The study found surprising diversity has survived the near-extinction of the 19th century but is now trapped in isolated herds.",
+    "source_url": "https://www.cbc.ca/news/canada/edmonton/bison-dna-genome-9.7375668",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-43",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Quebec's Consignaction announced a $60 million plant in Sorel-Tracy to process which deposit-return containers?",
+    "correct_answer": "Glass containers",
+    "incorrect_answers": [
+      "Plastic bottles",
+      "Aluminum cans",
+      "Juice cartons"
+    ],
+    "explanation": "The facility will crush, wash and sort deposit-return glass before sending it to recyclers, and will be operated by equipment maker Machinex. Despite government opposition, it will be financed by considerably higher non-refundable ecofees paid by Quebec consumers.",
+    "source_url": "https://www.lapresse.ca/actualites/environnement/2026-10-13/consigne-sur-les-contenants-de-verre/une-usine-financee-par-les-consommateurs.php",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261013-44",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, La Presse described ETNA-MS, a Montreal-made tablet app approved by Health Canada that tracks the progression of multiple sclerosis by monitoring what?",
+    "correct_answer": "Eye movements",
+    "incorrect_answers": [
+      "Walking speed",
+      "Hand tremors",
+      "Speech patterns"
+    ],
+    "explanation": "The software was developed at Montreal's Neuro institute by neurologist Etienne de Villers-Sidani. Because it lets patients test at pharmacies, neurologists can receive data and adjust medication more often instead of waiting for the usual yearly check-up.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-13/invention-montrealaise/revolution-sur-tablette-pour-la-sclerose-en-plaques.php",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261014-22",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, a new dinosaur species named Invictibellatrix amberina was identified from a fossil found on which island more than 100 years ago?",
+    "correct_answer": "The Isle of Wight",
+    "incorrect_answers": [
+      "The Isle of Man",
+      "The Isle of Skye",
+      "Anglesey"
+    ],
+    "explanation": "The fossil, a chunk of the back of a skull, was dug up on the Isle of Wight by amateur palaeontologist Reginald Walter Tooley and acquired by the Natural History Museum in 1924, where it sat in a drawer for nearly a century.",
+    "source_url": "https://www.bbc.com/news/articles/cmvgx70v9vrjo",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261014-23",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, it was announced that Sir Ian McKellen, then 87, would appear as a hologram in the European premiere of the play An Ark at which UK city's Aviva Studios?",
+    "correct_answer": "Manchester",
+    "incorrect_answers": [
+      "London",
+      "Burnley",
+      "Liverpool"
+    ],
+    "explanation": "The Lord of the Rings star appears in 3D holographic form in Simon Stephens' play at Manchester's Factory International Aviva Studios, captured with 52 cameras, alongside Bridgerton's Golda Rosheuvel. The play debuted in New York.",
+    "source_url": "https://www.bbc.com/news/articles/cxyvrq6zjq55o",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261014-29",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, which animal was featured in the winning photo of the 2026 Wildlife Photographer of the Year competition?",
+    "correct_answer": "An elephant",
+    "incorrect_answers": [
+      "A lion",
+      "A whale",
+      "A dung beetle"
+    ],
+    "explanation": "Italian photographer Federico Veronesi won the grand title for 'The Aftermath', a black-and-white image of a mother elephant carrying her dead calf, taken while he tracked elephants in Namibia.",
+    "source_url": "https://www.cbc.ca/news/science/wpy-2026-9.7380334",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-02",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Milwaukee Brewers manager Pat Murphy was doused with champagne after his club advanced to the World Series. Whose three-run home run had put the Dodgers up 4-0 in Game 4 before Milwaukee rallied to win 6-4?",
+    "correct_answer": "Shohei Ohtani",
+    "incorrect_answers": [
+      "Mookie Betts",
+      "Freddie Freeman",
+      "Will Smith"
+    ],
+    "explanation": "Ohtani's second-inning blast briefly put Los Angeles in control, but Milwaukee chipped away and Garrett Mitchell's sixth-inning homer gave the Brewers a lead they never lost.",
+    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-06",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, NOAA released its first official winter outlook, which is dominated by a near-record strong El Nino expected to peak in intensity in which month?",
+    "correct_answer": "December",
+    "incorrect_answers": [
+      "January",
+      "February",
+      "November"
+    ],
+    "explanation": "Forecasters expect the El Nino, characterized by above-average tropical Pacific ocean temperatures, to peak in December and shape a milder, wetter winter across much of the Lower 48.",
+    "source_url": "https://www.cnn.com/2026/10/15/weather/winter-outlook-super-el-nino",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-08",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, a seven-story textile factory in Bangladesh called Green Field Factory won the RIBA International Prize as the world's best new building. In which city is it located?",
+    "correct_answer": "Rangpur",
+    "incorrect_answers": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet"
+    ],
+    "explanation": "Designed by Nakshabid Architects in the northern city of Rangpur, the plant-draped factory was praised for worker-focused amenities including a rooftop daycare and on-site medical practice.",
+    "source_url": "https://www.cnn.com/2026/10/15/style/riba-international-award-bangladesh-factory",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-09",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, the New Yalu River Bridge between China and North Korea finally opened, connecting the Chinese city of Dandong with which North Korean city?",
+    "correct_answer": "Sinuiju",
+    "incorrect_answers": [
+      "Pyongyang",
+      "Kaesong",
+      "Chongjin"
+    ],
+    "explanation": "The nearly two-mile, four-lane bridge sat unused for years after construction wrapped in 2014 because roads and border facilities on the North Korean side were unfinished.",
+    "source_url": "https://www.cnn.com/2026/10/15/asia/china-north-korea-bridge-intl-hnk",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-25",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, Tesla showed off its new electric Roadster sports car, nearly nine years after the next-generation version was first unveiled. Whose silhouette appears alongside the Tesla logo in the BBC report's picture?",
+    "correct_answer": "Elon Musk",
+    "incorrect_answers": [
+      "Jeff Bezos",
+      "Tim Cook",
+      "Sam Altman"
+    ],
+    "explanation": "Tesla unveiled the next-generation Roadster in late 2017, but the car repeatedly slipped back. The World Business Report item, illustrated with Elon Musk's silhouette, also noted a bumpy day for tech stocks amid questions over AI spending.",
+    "source_url": "https://www.bbc.com/audio/play/w3ct8fqw",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-28",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, an international timekeeping body meeting in France voted to do away with which decades-old clock adjustment?",
+    "correct_answer": "The leap second",
+    "incorrect_answers": [
+      "The leap year",
+      "Daylight saving time",
+      "The leap minute"
+    ],
+    "explanation": "The leap second, introduced in 1972 to keep atomic clocks in step with Earth's rotation, has been added 27 times, most recently in 2016. Timekeepers will now let clocks drift until they are off by a full hour, which could take centuries.",
+    "source_url": "https://www.cbc.ca/news/world/leap-second-decision-9.7381049",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-30",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, CBC reported that thousands of endangered American eels swim down the St. Lawrence River each year to reach their breeding grounds in which sea?",
+    "correct_answer": "The Sargasso Sea",
+    "incorrect_answers": [
+      "The Mediterranean Sea",
+      "The North Sea",
+      "The Red Sea"
+    ],
+    "explanation": "The eels are born in the Sargasso Sea in the Caribbean, then spend up to 20 years in fresh water such as Lake Ontario before swimming back out to spawn. Hydroelectric dam turbines are one of the biggest hazards on their journey.",
+    "source_url": "https://www.cbc.ca/news/climate/what-on-earth-eels-hydro-dams-9.7381506",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261015-37",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, Mattel announced a collectible Barbie doll honouring Céline Dion. Which moment of the Canadian singer's career inspired the doll's look?",
+    "correct_answer": "Her 1998 Oscars performance of My Heart Will Go On",
+    "incorrect_answers": [
+      "Her Las Vegas residency opening",
+      "Her 2024 Paris Olympics closing ceremony appearance",
+      "Her first Juno Award win"
+    ],
+    "explanation": "The limited-edition doll, part of Mattel's premium Barbie Signature line, recreates Dion's dark gown from the 1998 Academy Awards, where the Titanic ballad won best original song.",
+    "source_url": "https://www.cbc.ca/news/entertainment/celine-dion-barbie-9.7381753",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261016-31",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, Waymo said it would begin testing its autonomous vehicles with safety drivers on the streets of which Canadian city?",
+    "correct_answer": "Toronto",
+    "incorrect_answers": [
+      "Vancouver",
+      "Montreal",
+      "Calgary"
+    ],
+    "explanation": "The mapping and safety validation work began days after the announcement, with the goal of letting riders hail driverless cabs in Canada's biggest city by 2028. Winter conditions are the big engineering challenge for the technology.",
+    "source_url": "https://www.cbc.ca/news/business/waymo-toronto-winter-self-driving-9.7384550",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261016-32",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, CREA downgraded its Canadian home sales forecast for the third time this year, reporting that September sales fell by what amount compared to the same month a year earlier?",
+    "correct_answer": "7.7 per cent",
+    "incorrect_answers": [
+      "2.3 per cent",
+      "5.2 per cent",
+      "10.1 per cent"
+    ],
+    "explanation": "The Canadian Real Estate Association said rising oil costs pushing up fixed mortgage rates, plus anxiety about possible Bank of Canada rate hikes, kept buyers on the sidelines. Sales were also down 2.3 per cent from August.",
+    "source_url": "https://www.cbc.ca/news/business/crea-september-2026-forecast-downgrade-9.7382355",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261016-36",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, World Curling confirmed plans to hold the 2027 women's world championship in which country?",
+    "correct_answer": "The United Arab Emirates",
+    "incorrect_answers": [
+      "Japan",
+      "Switzerland",
+      "South Korea"
+    ],
+    "explanation": "The mid-March championship is slated for the UAE. Curling has traditionally been centred in cold-weather countries such as Canada, Scotland, Sweden and Switzerland, making the Gulf venue a notable choice.",
+    "source_url": "https://www.cbc.ca/sports/curling-womens-world-championships-abu-dhabi-9.7383379",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261016-45",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, a Montreal study of 45 skeletons from a 17th-century cemetery challenged the popular belief that French colonists in New France frequently formed unions with which group?",
+    "correct_answer": "Indigenous peoples",
+    "incorrect_answers": [
+      "Acadian settlers",
+      "Irish immigrants",
+      "United Empire Loyalists"
+    ],
+    "explanation": "The genetic analysis found no mixing at all, suggesting unions between colonists and Indigenous people were less common than many Quebecers believe about their distant ancestors.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-16/nouvelle-france/une-etude-met-a-mal-le-mythe-du-metissage-des-premiers-colons.php",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-01",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, the Milwaukee Brewers clinched their first World Series appearance since which year by sweeping the Los Angeles Dodgers in the NLCS?",
+    "correct_answer": "1982",
+    "incorrect_answers": [
+      "1975",
+      "1991",
+      "2008"
+    ],
+    "explanation": "Milwaukee swept the defending champion Dodgers to reach its second Fall Classic ever; the Brewers lost the 1982 World Series in seven games to the St. Louis Cardinals.",
+    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-04",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, unranked Auburn stunned top-ranked Georgia 27-24 on a 34-yard field goal as time expired. It was Auburn's first win in Athens since which year?",
+    "correct_answer": "2005",
+    "incorrect_answers": [
+      "1994",
+      "2010",
+      "2013"
+    ],
+    "explanation": "Alex McPherson's kick on the final play delivered Auburn's first victory in Athens since 2005 and its first road win against a No. 1 team since beating Florida in 1994.",
+    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-07",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 3,
+    "question": "In October 2026, CNN reported that Imogen Heap's 'The Happy Song,' scientifically engineered to soothe crying babies, had passed how many streams on Spotify over its 10-year life?",
+    "correct_answer": "470 million",
+    "incorrect_answers": [
+      "120 million",
+      "310 million",
+      "890 million"
+    ],
+    "explanation": "The 2016 collaboration between Heap and two psychologists was built from research and baby focus groups, and it has out-streamed classics like Marvin Gaye's 'Let's Get It On' on Spotify.",
+    "source_url": "https://www.cnn.com/2026/10/17/style/happy-song-imogen-heap-anniversary-wellness",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-13",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, CNN profiled an Italian princess who rents out her family's 16th-century Rome palace, the Ruspoli Bonaparte Residence, with suites starting around $470 a night. What is her name?",
+    "correct_answer": "Princess Giacinta Ruspoli",
+    "incorrect_answers": [
+      "Princess Maria Pia",
+      "Princess Beatrice",
+      "Princess Carolina di Borbone"
+    ],
+    "explanation": "She and her mother, former Miss Sicily Maria Pia, greet paying guests at the ancestral home; Italy stopped legally recognizing nobility in 1946, so upkeep depends on tourism income.",
+    "source_url": "https://www.cnn.com/2026/10/17/travel/italian-princess-renting-palace-rome",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-35",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Canada's women's rugby team beat England 24-21 in Toronto, ending a run of how many matches without defeat for the Red Roses?",
+    "correct_answer": "41 matches",
+    "incorrect_answers": [
+      "23 matches",
+      "37 matches",
+      "50 matches"
+    ],
+    "explanation": "Shoshanah Seumanutafa scored a 78th-minute try to complete the comeback in front of 18,621 fans, the biggest crowd for women's rugby in North America. It was England's first loss since the 2022 World Cup final.",
+    "source_url": "https://www.cbc.ca/sports/rugby/canada-womens-rugby-england-toronto-recap-9.7385124",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-46",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Quebec musician La Bronze revealed an invented one-word title for her fourth album. What was it?",
+    "correct_answer": "Festinathèque",
+    "incorrect_answers": [
+      "Marmite sonore",
+      "Cuisine de chambre",
+      "Banc de neige"
+    ],
+    "explanation": "La Bronze coined the word, which blends 'festin' (feast) with 'bibliothèque' (library), for her fourth album, an eclectic record in which she explores a wide range of emotions.",
+    "source_url": "https://www.lapresse.ca/arts/musique/2026-10-17/la-festinatheque/le-festin-des-festins-de-la-bronze.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-47",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, which NHL team won 8-3 in a game in which Carter Verhaeghe and Sam Bennett each scored a hat trick?",
+    "correct_answer": "Florida Panthers",
+    "incorrect_answers": [
+      "Seattle Kraken",
+      "Tampa Bay Lightning",
+      "Boston Bruins"
+    ],
+    "explanation": "The two Panthers each completed a hat trick in the runaway home win over Seattle in Sunrise. Two hat tricks by teammates in a single game is a rare feat in the NHL.",
+    "source_url": "https://www.lapresse.ca/sports/hockey/2026-10-17/samedi-dans-la-lnh/les-panthers-defont-le-kraken-8-3.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261017-50",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, CF Montréal was officially eliminated from MLS playoff contention after a 1-1 draw with which club?",
+    "correct_answer": "Seattle Sounders",
+    "incorrect_answers": [
+      "Vancouver Whitecaps",
+      "LA Galaxy",
+      "Toronto FC"
+    ],
+    "explanation": "Montreal's defence held firm late in the second half to salvage the 1-1 draw on Saturday night, but the single point was not enough to keep the club's post-season hopes alive.",
+    "source_url": "https://www.lapresse.ca/sports/soccer/2026-10-18/le-cf-montreal-recolte-un-match-nul-face-aux-sounders-et-est-officiellement-elimine.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-03",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, college football made history when five of the top seven teams in the AP Top 25 lost on the same day for the first time. Which conference was home to No. 1 Georgia, No. 6 Alabama and No. 7 Texas, all of whom lost that day?",
+    "correct_answer": "The SEC (Southeastern Conference)",
+    "incorrect_answers": [
+      "The Big Ten",
+      "The ACC",
+      "The Big 12"
+    ],
+    "explanation": "The 'Shakeup Saturday' upsets were driven by the Southeastern Conference. Unranked Auburn's 27-24 stunner at Georgia was the headliner, sealing a chaotic day for the sport.",
+    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-26",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, a search for Amelia Earhart's lost plane resumed around Nikumaroro Island in the Pacific, investigating an object spotted in the lagoon known by what name?",
+    "correct_answer": "The Taraia Object",
+    "incorrect_answers": [
+      "The Norwich City Object",
+      "The Gardner Object",
+      "The Electra Anomaly"
+    ],
+    "explanation": "The Purdue University and Archaeological Legacy Institute expedition targets the Taraia Object, visible in aerial imagery dating back to 1938. Severe El Nino-driven weather had held the team on their research vessel for three days.",
+    "source_url": "https://www.bbc.co.uk/news/articles/cv70pxe5j90eo",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-33",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, Stelco pressed ahead with plans to lay off up to 500 workers in Hamilton and Nanticoke, Ont. Which U.S. company owns the Canadian steelmaker?",
+    "correct_answer": "Cleveland-Cliffs",
+    "incorrect_answers": [
+      "U.S. Steel",
+      "Nucor",
+      "ArcelorMittal"
+    ],
+    "explanation": "The Ohio-based company, North America's largest producer of flat-rolled steel, bought Stelco in 2024. Its plan to cut jobs despite commitments under the Investment Canada Act has Ottawa weighing legal options.",
+    "source_url": "https://www.cbc.ca/news/business/stelco-jobs-layoffs-steel-industry-9.7384487",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-34",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, scientists reported that Italian sprinter Emma Mazzenga, still competing in masters races, was how old?",
+    "correct_answer": "93",
+    "incorrect_answers": [
+      "73",
+      "83",
+      "103"
+    ],
+    "explanation": "Mazzenga returned to running at 53 and now holds the women's over-90 world record in the 200 metres. Researchers found her fatigue-resistant slow-twitch muscle fibres are as large as those of a woman in her 20s.",
+    "source_url": "https://www.cbc.ca/news/world/emma-mazzenga-italian-sprinter-longevity-9.7383784",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-48",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 1,
+    "question": "In October 2026, which Canadian tennis player won the Wuhan Open women's doubles title alongside Brazil's Luisa Stefani?",
+    "correct_answer": "Gabriela Dabrowski",
+    "incorrect_answers": [
+      "Leylah Fernandez",
+      "Bianca Andreescu",
+      "Eugenie Bouchard"
+    ],
+    "explanation": "Dabrowski and Stefani beat defending champions Storm Hunter and Katerina Siniakova 7-5, 6-4 in the final in Wuhan on Sunday.",
+    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-wuhan/dabrowski-recolte-un-autre-titre-en-double-feminin.php",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261018-49",
+    "lang": "en",
+    "category": "current-events",
+    "difficulty": 2,
+    "question": "In October 2026, which Spanish tennis player won his first Masters 1000 title by beating fellow Spaniard Rafael Jodar in the Shanghai Masters final?",
+    "correct_answer": "Alejandro Davidovich Fokina",
+    "incorrect_answers": [
+      "Carlos Alcaraz",
+      "Rafael Nadal",
+      "Pablo Carreno Busta"
+    ],
+    "explanation": "Davidovich Fokina dropped the first set and an early service break before winning 1-6, 7-6 (5), 6-4 in Shanghai. The Masters 1000 tier sits just below the four Grand Slam tournaments.",
+    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-shanghai/davidovich-fokina-s-offre-son-premier-masters-1000.php",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": false
+  }
+]
