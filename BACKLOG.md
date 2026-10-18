@@ -16,6 +16,8 @@
 
 ## Cross-session note
 - Resolved: the concurrent branding/Phase 1 streams are merged into one uncommitted tree (single `CHANGELOG.md` Unreleased section). Nothing committed yet; Phase 2 quizmaster mode is next.
+- 2026-10-18 (Phase 2 session): RESOLVED — the 4 unreviewed pending files noted above were consolidated into a single bank `questions/pending/news-2026-10-18.json` (49 questions) and committed separately as `chore(questions)` (457226e), keeping them out of the feature commit.
+- 2026-10-18 (Phase 2 session): Phase 2 quizmaster mode implemented in the same uncommitted tree (store players[] 1–6, quizmaster + pass-and-play modes, difficulty weighting, ranking/breakdown, Wake Lock; tests 27→37, build + validate:questions green, CHANGELOG Phase 2 entry added). Nothing committed yet; owner review and commit are next.
 
 ## Special categories from course materials (idea)
 - Feed in a number of `.pdf` files or raw text; an AI reads it and generates quiz questions from it.
@@ -114,3 +116,8 @@ Evidence — every case-insensitive "trivia" occurrence in the repo (2026-10-18)
 - [ ] Re-run the vitest suite after copy changes (tests may assert on locale strings)
 
 Constraints that still apply: phrasing/copy only — do NOT rename API identifiers or opentdb URLs, do NOT touch the "Quizzy 🥴" brand title; "trivia" may remain where it names the external API (Open Trivia DB / opentdb.com) or the upstream project (Winsome Trivia) but not in visible copy.
+
+## October 2026 current-events bank (pending review)
+- `questions/pending/news-2026-10-18.json` — 49 `origin: "claude"` current-events questions from October 2026 news (sources: CNN, BBC, CBC, lapresse.ca), all `reviewed: false`. Invisible to the build and to `validate:questions` (both read `questions/` non-recursively).
+- Owner directive (2026-10-18): use these questions as soon as possible, even though they are not reviewed yet. To make them playable: flip `reviewed: true` after a quick review pass, or relax the reviewed filter in `loadAllQuestions` (`src/questions/questionBank.ts`).
+- Known review flag: `news-20261014-29` (Wildlife Photographer of the Year) — photographer/photo attribution needs verification. The rest were verified against source articles during research.

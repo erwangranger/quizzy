@@ -1,5 +1,6 @@
 <template>
   <section class="flex-center-col">
+    <!-- Mode: single player vs multiplayer -->
     <button
     @click="store.selectMode(true)"
     :class="store.solo ? 'active' : null"
@@ -9,6 +10,72 @@
     :class="!store.solo ? 'active' : null"
     >{{ t('starter.multiplayer') }}</button>
     <button @click="startGame">{{ t('starter.start') }}</button>
+
+    <!-- Multiplayer: quizmaster vs pass-and-play -->
+    <div class="dropdown" v-if="!store.solo" @click="modeToggle">
+      <div class="dropdown-label">
+        <h2>{{ t('starter.mode') }}</h2>
+        <transition name="fade" mode="out-in">
+          <i class="material-icons expand-more" v-if="modeExpand" key="expand-more">expand_more</i>
+          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
+        </transition>
+      </div>
+      <h3>{{ modeLabel }}</h3>
+      <ul :class="modeClass">
+        <li
+        :class="store.mode === 'quizmaster' ? 'selected' : null"
+        @click="store.setMultiplayerMode('quizmaster')"
+        >{{ t('starter.quizmaster') }}</li>
+        <li
+        :class="store.mode === 'pass-and-play' ? 'selected' : null"
+        @click="store.setMultiplayerMode('pass-and-play')"
+        >{{ t('starter.passPlay') }}</li>
+      </ul>
+    </div>
+
+    <!-- Player count and names (multiplayer only) -->
+    <div class="dropdown" v-if="!store.solo" @click="playersToggle">
+      <div class="dropdown-label">
+        <h2>{{ t('starter.players') }}</h2>
+        <transition name="fade" mode="out-in">
+          <i class="material-icons expand-more" v-if="playersExpand" key="expand-more">expand_more</i>
+          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
+        </transition>
+      </div>
+      <h3>{{ store.setup.players }}</h3>
+      <ul :class="playersClass">
+        <li
+        v-for="n in maxPlayers"
+        :key="n"
+        :class="store.setup.players === n ? 'selected' : null"
+        @click="store.setSetup({ players: n })"
+        >{{ n }}</li>
+      </ul>
+    </div>
+
+    <!-- Player name editing (multiplayer only) -->
+    <div class="names" v-if="!store.solo">
+      <label v-for="(player, i) in store.players" :key="i">
+        <input
+          type="text"
+          :value="player.name"
+          :aria-label="t('starter.playerName', { n: i + 1 })"
+          @input="store.renamePlayer(i, ($event.target as HTMLInputElement).value)"
+        />
+      </label>
+    </div>
+
+    <!-- Quizmaster open-answer toggle -->
+    <label class="toggle" v-if="!store.solo && store.mode === 'quizmaster'">
+      <input type="checkbox" :checked="store.setup.hideChoices" @change="store.setSetup({ hideChoices: ($event.target as HTMLInputElement).checked })" />
+      <span>{{ t('starter.hideChoices') }}</span>
+    </label>
+
+    <!-- Weighted scoring toggle (all modes) -->
+    <label class="toggle">
+      <input type="checkbox" :checked="store.setup.weightByDifficulty" @change="store.setSetup({ weightByDifficulty: ($event.target as HTMLInputElement).checked })" />
+      <span>{{ t('starter.weightByDifficulty') }}</span>
+    </label>
 
     <!-- Language selector -->
     <div class="dropdown" @click="langToggle">
@@ -71,7 +138,7 @@
 
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
-import { useGameStore } from '../store/store'
+import { useGameStore, MAX_PLAYERS } from '../store/store'
 import { t } from '../locales'
 import type { Category, Lang } from '../questions/schema'
 
@@ -79,13 +146,18 @@ const store = useGameStore()
 
 const languages: Lang[] = ['en', 'fr']
 const questionCounts = [5, 10, 15, 20]
+const maxPlayers = MAX_PLAYERS
 
 const langClass = reactive({ close: false, open: false })
 const categoryClass = reactive({ close: false, open: false })
 const countClass = reactive({ close: false, open: false })
+const modeClass = reactive({ close: false, open: false })
+const playersClass = reactive({ close: false, open: false })
 const langExpand = ref(true)
 const categoryExpand = ref(true)
 const countExpand = ref(true)
+const modeExpand = ref(true)
+const playersExpand = ref(true)
 
 const selectedCategoryLabel = computed(() => {
   const chosen = store.setup.categories
@@ -93,6 +165,10 @@ const selectedCategoryLabel = computed(() => {
   if (chosen.length === 1) return chosen[0]
   return `${chosen.length} ${t('starter.categoriesSelected')}`
 })
+
+const modeLabel = computed(() =>
+  store.mode === 'quizmaster' ? t('starter.quizmaster') : t('starter.passPlay'),
+)
 
 // Toggle a category in the multi-select (empty list = all categories)
 function toggleCategory(category: Category) {
@@ -130,6 +206,16 @@ function categoryToggle() {
 function countToggle() {
   countExpand.value = !countExpand.value
   toggle(countClass)
+}
+
+function modeToggle() {
+  modeExpand.value = !modeExpand.value
+  toggle(modeClass)
+}
+
+function playersToggle() {
+  playersExpand.value = !playersExpand.value
+  toggle(playersClass)
 }
 
 function startGame() {
@@ -227,5 +313,39 @@ ul {
 // Close dropdown
 .close {
     animation: close 1s ease forwards;
+}
+
+// Editable player names
+.names {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+
+    input {
+        border: 2px solid $color-white;
+        border-radius: 12px;
+        color: $color-darkest;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+        margin: 0.25em 0;
+        padding: 0.6em 1em;
+        text-align: center;
+    }
+}
+
+// Setup toggles (hide choices, weighted scoring)
+.toggle {
+    align-items: center;
+    display: flex;
+    font-size: 1.1em;
+    gap: 0.5em;
+    margin: 0.25em 0;
+    min-height: 44px;
+
+    input {
+        height: 22px;
+        width: 22px;
+    }
 }
 </style>

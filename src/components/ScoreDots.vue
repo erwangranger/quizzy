@@ -1,32 +1,16 @@
 <template>
   <div>
-    <!-- Single player score card -->
-    <div class="single" v-if="store.solo">
-      <div class="droplet-container">
-        <i
-        class="droplet"
-        v-for="(drop, i) in quantity"
-        :class="store.scores.playerOne.history[i]"></i>
-      </div>
-    </div>
-    <!-- multiplayer score cards -->
-    <div class="multi" v-if="!store.solo">
-      <!-- Player One score -->
-      <div class="droplet-container">
-        <i
-        class="droplet"
-        v-for="(drop, i) in quantity"
-        :key="i"
-        :class="store.scores.playerOne.history[i]"></i>
-      </div>
-      <!-- Player Two score -->
-      <div class="droplet-container">
-        <i
-        class="droplet"
-        v-for="(drop, i) in quantity"
-        :key="i"
-        :class="store.scores.playerTwo.history[i]"></i>
-      </div>
+    <div
+      class="droplet-container"
+      v-for="(player, p) in store.players"
+      :key="p"
+      :class="store.players.length > 1 ? 'multi' : 'single'"
+    >
+      <i
+      class="droplet"
+      v-for="(drop, i) in quantity"
+      :key="i"
+      :class="player.score.history[i]"></i>
     </div>
   </div>
 </template>
@@ -37,8 +21,7 @@ import { useGameStore } from '../store/store'
 
 const store = useGameStore()
 
-// Dots follow the game length; upstream's multiplayer 5 was cosmetic for its
-// fixed 10 rounds, so both modes use the actual question count.
+// Dots follow the game length; one history row per player (works for 1-6).
 const quantity = computed(() => Math.max(store.questions.length, 1))
 </script>
 
@@ -60,12 +43,10 @@ const quantity = computed(() => Math.max(store.questions.length, 1))
 }
 
 .multi {
-  display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .single {
-  display: flex;
   justify-content: center;
 }
 

@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import type { Category, Difficulty, Lang, Question } from '../questions/schema'
 import { drawQuestions, getCategories, resetSeenQuestions } from '../questions/questionBank'
-import { setLocale } from '../locales'
+import { setLocale, t } from '../locales'
 
 export interface Choice {
   text: string
@@ -18,18 +18,35 @@ export interface ScoreHistory {
   incorrect: boolean
 }
 
-interface PlayerScore {
-  history: ScoreHistory[]
-  total: number
+export interface Player {
+  name: string
+  score: { history: ScoreHistory[]; total: number }
 }
+
+export type GameMode = 'solo' | 'quizmaster' | 'pass-and-play'
 
 export interface GameSetup {
   lang: Lang
   categories: Category[]
   count: number
   difficulty?: Difficulty
+  players: number
+  hideChoices: boolean
+  weightByDifficulty: boolean
 }
 
+// Wake Lock API is absent in jsdom and older Safari; the game is a no-op there.
+interface WakeLockSentinel {
+  release(): Promise<void>
+}
+interface WakeLockApi {
+  wakeLock?: { request(type: 'screen'): Promise<WakeLockSentinel> }
+}
+
+function getWakeLock(): WakeLockApi['wakeLock'] {
+  const nav = navigator as WakeLockApi
+  return nav.wakeLock
+}
 interface State {
   aboutShow: boolean
   currentView: string
@@ -37,12 +54,23 @@ interface State {
   isGameOver: boolean
   isPaused: boolean
   round: number
-  scores: { playerOne: PlayerScore; playerTwo: PlayerScore }
+  players: Player[]
   solo: boolean
+  mode: GameMode
+  answering: number // pass-and-play: index of the player answering this round
+  playerChoices: (Choice | undefined)[] // pass-and-play: choice per player this round
+  revealed: boolean // reveal shown for the current round
+  marks: boolean[] // quizmaster: which players were right this round
+  hiddenChoices: boolean // quizmaster open-answer play: choices hidden until reveal
   starPower: boolean
   setup: GameSetup
   poolReset: boolean
+  wakeLockSentinel: WakeLockSentinel | null
 }
+
+export const MAX_PLAYERS = 6
+
+const PLAYERS_KEY = 'quizzy.player-names'
 
 // Fisher-Yates shuffle
 function shuffle<T>(items: T[]): T[] {
@@ -60,20 +88,33 @@ function shuffle<T>(items: T[]): T[] {
   return arr
 }
 
-// Canonical empty score state; shared by initial state and reset so both stay in lockstep
-function emptyScores(): { playerOne: PlayerScore; playerTwo: PlayerScore } {
-  return {
-    playerOne: { history: [], total: 0 },
-    playerTwo: { history: [], total: 0 },
+// Saved player names from localStorage, wrapped so the game still works when
+// storage is unavailable (private mode, quota). Missing names fall back to the
+// localized defaults ("Player 1".."Player 6" / "Joueur 1".."Joueur 6"), in
+// sync with the 'player.default' locale keys.
+function loadPlayerNames(count: number): Player[] {
+  const fallback = Array.from({ length: count }, (_, i) => t('player.default', { n: i + 1 }))
+  let names: string[] = []
+  try {
+    const raw = window.localStorage.getItem(PLAYERS_KEY)
+    const parsed: unknown = raw ? JSON.parse(raw) : []
+    names = Array.isArray(parsed)
+      ? parsed.filter((n): n is string => typeof n === 'string' && n.trim() !== '')
+      : []
+  } catch {
+    names = []
   }
+  return Array.from({ length: count }, (_, i) => ({
+    name: names[i] ?? fallback[i],
+    score: { history: [] as ScoreHistory[], total: 0 },
+  }))
 }
 
-function defaultSetup(): GameSetup {
-  return {
-    lang: 'en',
-    categories: [],
-    count: 10,
-    difficulty: undefined,
+function savePlayerNames(players: Player[]): void {
+  try {
+    window.localStorage.setItem(PLAYERS_KEY, JSON.stringify(players.map((p) => p.name)))
+  } catch {
+    // storage unavailable: names simply won't persist
   }
 }
 
@@ -85,20 +126,52 @@ export const useGameStore = defineStore('game', {
     isGameOver: false, // game state
     isPaused: false,
     round: 0, // round counter, starts at 0, ends at setup.count - 1
-    scores: emptyScores(),
+    players: loadPlayerNames(1),
     solo: true, // Game mode, solo or multiplayer?
+    mode: 'solo',
+    answering: 0, // pass-and-play: index of the player currently answering
+    playerChoices: [], // pass-and-play: choice per player this round
+    revealed: false, // reveal screen shown for the current round
+    marks: [], // quizmaster: who was right this round
+    hiddenChoices: false, // choices hidden until reveal (quizmaster open-answer play)
     starPower: false, // show starPower animation
-    setup: defaultSetup(),
+    setup: {
+      lang: 'en',
+      categories: [],
+      count: 10,
+      difficulty: undefined,
+      players: 1,
+      hideChoices: false,
+      weightByDifficulty: false,
+    },
     poolReset: false, // seen-question pool was exhausted on the last draw
+    wakeLockSentinel: null,
   }),
   getters: {
-    turn: (state) => {
-      let check = state.round % 2
-      if (check === 0 || state.round === 0) {
-        return 'playerOne'
-      } else {
-        return 'playerTwo'
-      }
+    // Competition ranking (1, 1, 3...): players sorted by total, ties share a rank.
+    ranking: (state) => {
+      const sorted = [...state.players].sort((a, b) => b.score.total - a.score.total)
+      return sorted.map((player, i) => ({
+        player,
+        rank: i > 0 && player.score.total === sorted[i - 1].score.total ? 0 : i + 1,
+      })).map((entry, i, all) => ({
+        player: entry.player,
+        rank: entry.rank === 0 ? all[i - 1].rank : entry.rank,
+      }))
+    },
+    // Correct answers per player, keyed by question category. History rows
+    // stay aligned with rounds in every mode, so index i maps to questions[i].
+    categoryBreakdown: (state) => {
+      return state.players.map((player) => {
+        const counts: Partial<Record<Category, number>> = {}
+        player.score.history.forEach((entry, i) => {
+          const category = state.questions[i]?.category
+          if (entry.correct && category) {
+            counts[category] = (counts[category] ?? 0) + 1
+          }
+        })
+        return counts
+      })
     },
     categories: (state) => getCategories(state.setup.lang),
   },
@@ -106,17 +179,156 @@ export const useGameStore = defineStore('game', {
     aboutToggle() {
       this.aboutShow = !this.aboutShow
     },
-    isGameOverCheck() {
+    selectMode(payload: boolean) {
+      this.solo = payload
+      if (payload) {
+        this.mode = 'solo'
+        this.players = loadPlayerNames(1)
+      } else {
+        // Quizmaster is the default multiplayer mode
+        this.mode = 'quizmaster'
+        if (this.setup.players < 2) this.setup.players = 2
+        this.players = loadPlayerNames(this.setup.players)
+      }
+    },
+    setMultiplayerMode(mode: 'quizmaster' | 'pass-and-play') {
+      if (this.solo) return
+      this.mode = mode
+    },
+    setSetup(payload: Partial<GameSetup>) {
+      const playersChanged = payload.players !== undefined && payload.players !== this.setup.players
+      Object.assign(this.setup, payload)
+      if (payload.lang) setLocale(payload.lang)
+      if (playersChanged && !this.solo) this.players = loadPlayerNames(this.setup.players)
+    },
+    renamePlayer(index: number, name: string) {
+      const player = this.players[index]
+      if (!player) return
+      player.name = name
+      savePlayerNames(this.players)
+    },
+    isPassAndPlay() {
+      return this.mode === 'solo' || this.mode === 'pass-and-play'
+    },
+    // Mark who answered correctly in quizmaster mode (toggle button state)
+    toggleMark(index: number) {
+      this.marks[index] = !this.marks[index]
+    },
+    // Reveal the answer for this round: quizmaster button, or automatic once
+    // the last pass-and-play player has answered.
+    revealAnswer() {
+      this.hiddenChoices = false
+      this.styleButtons()
+      this.pauseGame('pause')
+      this.revealed = true
+      if (this.mode === 'quizmaster') {
+        this.marks = this.players.map(() => false)
+      }
+    },
+    // Record the answering player's choice in pass-and-play. Between players
+    // the phone is paused so the interstitial can cover the board; the last
+    // player goes straight to the reveal.
+    answer(choice: Choice) {
+      this.styleButtons()
+      this.playerChoices[this.answering] = choice
+      if (choice.answer) this.starPowerOn()
+      if (this.answering < this.players.length - 1) {
+        this.answering += 1
+        // Pause for the pass-the-phone interstitial
+        this.pauseGame('pause')
+      } else {
+        this.revealAnswer()
+      }
+    },
+    // Ready pressed on the pass-the-phone interstitial: wipe the previous
+    // player's button feedback and hand the phone over.
+    readyNext() {
+      const current = this.questions[this.round]
+      if (!current) return
+      current.choices.forEach((el) => {
+        el.classes = { correct: false, incorrect: false }
+      })
+      this.pauseGame()
+    },
+    // Score one player's answer. Zero-point answers still record history so
+    // every player's score dots stay aligned with the question count.
+    score(index: number, points: number) {
+      const player = this.players[index]
+      if (!player) return
+      if (points > 0) {
+        player.score.history.push({ correct: true, incorrect: false })
+        player.score.total += points
+      } else {
+        player.score.history.push({ correct: false, incorrect: true })
+      }
+    },
+    // Score the finished round. Quizmaster: marked players earn points
+    // (weighting per player from the drawn question's difficulty).
+    // Pass-and-play: every recorded choice is scored.
+    scoreRound() {
+      const question = this.questions[this.round]
+      const points = this.setup.weightByDifficulty && question ? question.difficulty : 1
+      if (this.mode === 'quizmaster') {
+        this.players.forEach((_, i) => {
+          this.score(i, this.marks[i] ? points : 0)
+        })
+      } else {
+        this.players.forEach((_, i) => {
+          const choice = this.playerChoices[i]
+          if (choice) {
+            this.score(i, choice.answer ? points : 0)
+            this.playerChoices[i] = undefined
+          }
+        })
+      }
+    },
+    // Score the round and move on. The game ends after the last question's
+    // reveal, so game-over handling lives here for every mode.
+    next() {
+      this.scoreRound()
+      if (this.mode === 'quizmaster' && this.marks.some((marked) => marked)) {
+        this.starPowerOn()
+      }
       if (this.round === this.questions.length - 1) {
         this.isGameOver = true
+        this.releaseWakeLock()
+      } else {
+        this.incrementRound()
       }
     },
     incrementRound() {
       this.round += 1
+      this.answering = 0
+      this.playerChoices = []
+      this.revealed = false
+      this.marks = []
+      this.hiddenChoices = this.setup.hideChoices && this.mode === 'quizmaster'
+      this.pauseGame()
+    },
+    // Quizmaster mode keeps the screen awake for the whole game (Screen Wake
+    // Lock API; no-op where unsupported, e.g. jsdom or older Safari).
+    async requestWakeLock() {
+      if (this.mode !== 'quizmaster') return
+      try {
+        const wakeLock = getWakeLock()
+        this.wakeLockSentinel = wakeLock ? await wakeLock.request('screen') : null
+      } catch {
+        // Wake Lock unsupported or denied: the game still works
+      }
+    },
+    async releaseWakeLock() {
+      try {
+        await this.wakeLockSentinel?.release()
+      } catch {
+        // ignore
+      }
+      this.wakeLockSentinel = null
     },
     newGame() {
       this.currentView = 'app-intro'
       this.solo = true
+      this.mode = 'solo'
+      this.players = loadPlayerNames(1)
     },
     pauseGame(payload?: 'pause') {
       if (payload === 'pause') {
@@ -130,30 +342,14 @@ export const useGameStore = defineStore('game', {
       this.isPaused = false
       this.questions = []
       this.round = 0
-      this.scores = emptyScores()
+      this.answering = 0
+      this.playerChoices = []
+      this.revealed = false
+      this.marks = []
+      this.hiddenChoices = false
+      this.players = this.players.map((p) => ({ name: p.name, score: { history: [], total: 0 } }))
       this.poolReset = false
-    },
-    score(payload: { correct: boolean; mode: 'playerOne' | 'playerTwo' }) {
-      const player = payload.mode
-      if (payload.correct) {
-        this.scores[player].history.push({
-          correct: true,
-          incorrect: false,
-        })
-        this.scores[player].total += 1
-      } else {
-        this.scores[player].history.push({
-          correct: false,
-          incorrect: true,
-        })
-      }
-    },
-    selectMode(payload: boolean) {
-      payload === true ? (this.solo = true) : (this.solo = false)
-    },
-    setSetup(payload: Partial<GameSetup>) {
-      Object.assign(this.setup, payload)
-      if (payload.lang) setLocale(payload.lang)
+      this.releaseWakeLock()
     },
     starPowerOn() {
       this.starPower = true
@@ -191,6 +387,14 @@ export const useGameStore = defineStore('game', {
         return { ...q, choices: shuffle(choices) }
       })
       this.currentView = this.questions.length > 0 ? 'app-game-board' : 'app-intro'
+      this.round = 0
+      this.answering = 0
+      this.playerChoices = []
+      this.revealed = false
+      this.marks = []
+      this.hiddenChoices = this.setup.hideChoices && this.mode === 'quizmaster'
+      this.isPaused = false
+      this.requestWakeLock()
     },
     clearSeenQuestions() {
       resetSeenQuestions()

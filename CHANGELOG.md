@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased — Phase 2: Every player answers every question
+
+- Every player answers every question: `scores.playerOne`/`playerTwo` replaced with a `players` array (1–6), each with an editable name persisted in `localStorage` (`quizzy.player-names`, try/catch-wrapped like the seen-question pool; defaults localize via `player.default`).
+- Quizmaster mode (default for multiplayer): the phone shows the question; a "Reveal" button shows the correct answer and explanation, a row of player-name toggles marks who was right, and "Next" scores the marked players and advances. Setup toggle "Hide Choices" hides the multiple-choice options until reveal for open-answer play.
+- Pass-and-play: each player taps their answer privately; between players a full-screen interstitial shows "Pass to {name}" with a "Ready" button so the next player cannot see the previous answer. Solo keeps the pass-and-play behavior with one player and no interstitial.
+- Scoring: 1 point per correct answer, with a "Weight by Difficulty" setup toggle (1/2/3 points from the drawn question's difficulty) applied in every mode.
+- Game over: ranking sorted by total with ties sharing a rank, per-player correct count ("7/10 correct") and per-category breakdown; solo keeps its score-ratio award message plus the breakdown. New Game / Rematch preserved (Rematch replays with the same players and setup).
+- Score dots: one droplet row per player (1–6), still sized to the actual question count.
+- Wake Lock: the screen stays awake during quizmaster-mode games via the Screen Wake Lock API (no dependency, try/catch no-op where unsupported); released on game over/reset.
+- Star-power animation triggers on quizmaster "Next" when at least one player was marked correct (immediately on a correct tap in solo/pass-and-play, as before).
+- Dead two-player UI keys removed (`gameboard.playerOne/playerTwo`, `gameover.playerOneWins/playerTwoWins/playerOne/playerTwo/draw`); 13 new keys added to both en and fr dictionaries.
+- Unit tests 27 → 37: quizmaster scoring via marked players, pass-and-play flow with last-player reveal, solo without interstitial handoff, ranking ties, difficulty weighting (on 1/2/3 and off = 1), 1–6 roster with localized names, name persistence.
+
 ## Unreleased — Phase 1: Local questions
 
 - Local question data: `questions/sample.json` (12 placeholder questions, 2 per core category, `lang: "en"`, `origin: "human"`, `reviewed: true`), bundled at build time via Vite `import.meta.glob` — no Open Trivia DB.

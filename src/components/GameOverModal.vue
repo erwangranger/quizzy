@@ -4,18 +4,32 @@
       <!-- Single player scores -->
       <div v-if="store.solo">
         <h1>{{ t('gameover.title') }}</h1>
-        <h2>{{ t('gameover.score', { score: store.scores.playerOne.total, total: store.questions.length }) }}</h2>
+        <h2>{{ t('gameover.score', { score: store.players[0]?.score.total ?? 0, total: store.questions.length }) }}</h2>
         <p>{{ scoreMessage }}</p>
+        <h3>{{ t('gameover.breakdown') }}</h3>
+        <ul class="breakdown">
+          <li v-for="(line, i) in soloBreakdown" :key="i">{{ line }}</li>
+        </ul>
       </div>
-      <!-- Multiplayer scores -->
-      <div v-if="!store.solo">
-        <!-- Win conditions -->
-        <h1 v-if="store.scores.playerOne.total > store.scores.playerTwo.total">{{ t('gameover.playerOneWins') }}</h1>
-        <h1 v-if="store.scores.playerTwo.total > store.scores.playerOne.total">{{ t('gameover.playerTwoWins') }}</h1>
-        <h1 v-if="store.scores.playerOne.total === store.scores.playerTwo.total">{{ t('gameover.draw') }}</h1>
-        <!-- Results -->
-        <h2>{{ t('gameover.playerOne', { score: store.scores.playerOne.total }) }} <span :class="store.scores.playerOne.total >= store.scores.playerTwo.total ? 'score-high' : 'score-low'"></span></h2>
-        <h2>{{ t('gameover.playerTwo', { score: store.scores.playerTwo.total }) }} <span :class="store.scores.playerTwo.total >= store.scores.playerOne.total ? 'score-high' : 'score-low'"></span></h2>
+      <!-- Multiplayer ranking -->
+      <div v-else>
+        <h1>{{ t('gameover.title') }}</h1>
+        <h3>{{ t('gameover.breakdown') }}</h3>
+        <ol class="ranking">
+          <li v-for="entry in store.ranking" :key="entry.player.name">
+            <h2>
+              {{ rankLabel(entry.rank) }}
+              {{ entry.player.name }}
+              <span :class="entry.rank === 1 ? 'score-high' : ''">
+                {{ t('gameover.points', { points: entry.player.score.total }) }}
+              </span>
+              — {{ t('gameover.correct', { correct: correctCount(entry.player), total: store.questions.length }) }}
+            </h2>
+            <ul class="breakdown" v-if="breakdownText(entry.player).length > 0">
+              <li v-for="(line, i) in breakdownText(entry.player)" :key="i">{{ line }}</li>
+            </ul>
+          </li>
+        </ol>
       </div>
       <!-- Restart game buttons -->
       <button @click="newGame(true)">{{ t('gameover.newGame') }}</button>
@@ -26,16 +40,18 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useGameStore } from '../store/store'
+import { useGameStore, type Player } from '../store/store'
 import { t } from '../locales'
+import type { Category } from '../questions/schema'
 
 const store = useGameStore()
 
 // Award message for solo mode, by score-to-total ratio
 const scoreMessage = computed(() => {
   const total = Math.max(store.questions.length, 1)
-  const ratio = store.scores.playerOne.total / total
-  if (store.scores.playerOne.total === 0) return t('message.0')
+  const score = store.players[0]?.score.total ?? 0
+  const ratio = score / total
+  if (score === 0) return t('message.0')
   if (ratio >= 1) return t('message.10')
   if (ratio >= 0.8) return t('message.8')
   if (ratio >= 0.6) return t('message.6')
@@ -43,6 +59,35 @@ const scoreMessage = computed(() => {
   if (ratio >= 0.2) return t('message.2')
   return t('message.1')
 })
+
+// Solo: one line per category answered correctly.
+const soloBreakdown = computed(() => {
+  const counts = store.categoryBreakdown[0]
+  if (!counts) return []
+  return (Object.keys(counts) as Category[]).map(
+    (category) => `${category}: ${counts[category]}`,
+  )
+})
+
+// Correct history entries per player (weighting can make total != count)
+function correctCount(player: Player): number {
+  return player.score.history.filter((h) => h.correct).length
+}
+
+// Ties share a rank: "1." for winners, "2." etc. afterwards.
+function rankLabel(rank: number): string {
+  return `${rank}.`
+}
+
+// One readable line per category the player answered correctly.
+function breakdownText(player: Player): string[] {
+  const index = store.players.indexOf(player)
+  const counts = store.categoryBreakdown[index]
+  if (!counts) return []
+  return (Object.keys(counts) as Category[]).map(
+    (category) => `${category}: ${counts[category]}`,
+  )
+}
 
 function newGame(payload: boolean) {
   store.resetGame()
@@ -75,13 +120,37 @@ h2 {
   color: $color-dark;
 }
 
+h3 {
+  color: $color-darkest;
+  margin-top: 1em;
+}
+
+.ranking {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.breakdown {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  font-size: 0.9em;
+
+  li {
+    color: $color-dark;
+  }
+}
+
 .container {
   background-color: $color-white;
   border-radius: 25px;
   color: $color-med;
   margin-top: 4em;
+  max-height: 80vh;
+  overflow-y: auto;
   padding: 2em 2.5%;
-  //height: 500px;
 }
 
 .modal {
