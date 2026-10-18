@@ -35,6 +35,20 @@
 - [ ] Open question: full Google Analytics may be overkill for a friends-first audience; owner to choose vs a lightweight privacy-friendly alternative (GoatCounter / Umami / Plausible).
 - Constraints that still apply: no backend, accounts or database (section 3) — analytics must be client-side beacons only; the amendment above is the only non-goal change.
 
+## Starter screen sequencing (idea)
+
+> Owner request (2026-10-18): "single and multiplayers are choices. 'start' is an action. language, category, number of questions, all these are choices. So, in the sequence, I would like to first choose the options, and have a clearly differentiated launch button."
+
+Current layout evidence (verified 2026-10-18):
+- `src/components/Starter.vue:3-12` — Single Player, Multiplayer and Start render as three identical sibling buttons; the launch action sits mid-sequence.
+- Every other choice renders after Start: multiplayer mode/players/names (`Starter.vue:14-66`), hide-choices + weight toggles (`Starter.vue:68-78`), language/category/question-count dropdowns (`Starter.vue:80-135`).
+- Choice buttons and Start share the global `button` style (`src/main.scss:70`); the only differentiation is the selected-mode `.active` state (`Starter.vue:272-277`).
+
+- [ ] Reorder the Starter template so every choice precedes the launch button: Single/Multiplayer → multiplayer-only choices (mode, players, names, hide choices) → shared choices (weight, language, category, question count) → Start last. Behavior unchanged: same store calls (`selectMode`, `setMultiplayerMode`, `setSetup`, `startGame`), same `v-if="!store.solo"` conditionals.
+- [ ] Style Start as the clearly differentiated primary action, visually distinct from the choice buttons (e.g. the unused `$color-green` from `src/styles/_variables.scss`, larger/full-width treatment); `starter.start` copy unchanged in en + fr.
+- [ ] Consider rendering Single/Multiplayer as one two-option choice (segmented pair) instead of two independent buttons — suggestion, not decided.
+- Constraints that still apply: setup logic and locale keys untouched; after pickup, verify both solo and multiplayer layouts (multiplayer inserts the mode/players/names blocks above Start).
+
 ## Items to review and consider (MVP gap analysis — 2026-10-18)
 
 > Snapshot of a brainstorm review; will go stale. File/line evidence verified 2026-10-18 against the then-uncommitted tree — re-verify against the working tree before acting.
