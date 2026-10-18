@@ -234,20 +234,23 @@ export const useGameStore = defineStore('game', {
       if (choice.answer) this.starPowerOn()
       if (this.answering < this.players.length - 1) {
         this.answering += 1
+        // Wipe button feedback before the interstitial fades in, so the
+        // next player cannot glimpse the correct answer mid-fade
+        const current = this.questions[this.round]
+        if (current) {
+          current.choices.forEach((el) => {
+            el.classes = { correct: false, incorrect: false }
+          })
+        }
         // Pause for the pass-the-phone interstitial
         this.pauseGame('pause')
       } else {
         this.revealAnswer()
       }
     },
-    // Ready pressed on the pass-the-phone interstitial: wipe the previous
-    // player's button feedback and hand the phone over.
+    // Ready pressed on the pass-the-phone interstitial: hand the phone
+    // over; feedback was already wiped in answer() before the fade-in.
     readyNext() {
-      const current = this.questions[this.round]
-      if (!current) return
-      current.choices.forEach((el) => {
-        el.classes = { correct: false, incorrect: false }
-      })
       this.pauseGame()
     },
     // Score one player's answer. Zero-point answers still record history so

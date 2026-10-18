@@ -15,6 +15,7 @@
       <p class="reveal-answer">
         <strong>{{ t('reveal.correctAnswer', { answer: currentQuestion.correct_answer }) }}</strong>
       </p>
+      <p class="reveal-explanation-label">{{ t('reveal.explanation') }}</p>
       <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
       <!-- Quizmaster marks who was right -->
       <div v-if="store.mode === 'quizmaster'" class="marks">
@@ -131,6 +132,13 @@ h3 {
 .reveal-explanation {
     font-size: 0.95em;
     margin: 0.5em 0 0;
+}
+.reveal-explanation-label {
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 1em 0 0.25em;
+    color: $color-med;
 }
 
 .marks {

@@ -16,7 +16,7 @@
         <h1>{{ t('gameover.title') }}</h1>
         <h3>{{ t('gameover.breakdown') }}</h3>
         <ol class="ranking">
-          <li v-for="entry in store.ranking" :key="entry.player.name">
+          <li v-for="(entry, i) in store.ranking" :key="i">
             <h2>
               {{ rankLabel(entry.rank) }}
               {{ entry.player.name }}
@@ -46,12 +46,13 @@ import type { Category } from '../questions/schema'
 
 const store = useGameStore()
 
-// Award message for solo mode, by score-to-total ratio
+// Award message for solo mode, by correct-answer ratio (not weighted points)
 const scoreMessage = computed(() => {
   const total = Math.max(store.questions.length, 1)
-  const score = store.players[0]?.score.total ?? 0
-  const ratio = score / total
-  if (score === 0) return t('message.0')
+  const player = store.players[0]
+  const correct = player ? correctCount(player) : 0
+  const ratio = correct / total
+  if (correct === 0) return t('message.0')
   if (ratio >= 1) return t('message.10')
   if (ratio >= 0.8) return t('message.8')
   if (ratio >= 0.6) return t('message.6')

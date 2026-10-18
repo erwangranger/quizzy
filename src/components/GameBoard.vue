@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Display player turn in multiplayer mode -->
-    <div v-if="!store.solo && !store.revealed" class="turnDisplay">
+    <div v-if="store.mode === 'pass-and-play' && !store.revealed" class="turnDisplay">
       <h2>{{ t('gameboard.turn', { name: currentName }) }}</h2>
     </div>
     <Questions />
