@@ -1,15 +1,16 @@
 <template>
   <section class="flex-center-col">
-    <!-- Mode: single player vs multiplayer -->
-    <button
-    @click="store.selectMode(true)"
-    :class="store.solo ? 'active' : null"
-    >{{ t('starter.singlePlayer') }}</button>
-    <button
-    @click="store.selectMode(false)"
-    :class="!store.solo ? 'active' : null"
-    >{{ t('starter.multiplayer') }}</button>
-    <button @click="startGame">{{ t('starter.start') }}</button>
+    <!-- Mode: single player vs multiplayer (side by side) -->
+    <div class="mode-choice">
+      <button
+      @click="store.selectMode(true)"
+      :class="store.solo ? 'active' : null"
+      >{{ t('starter.singlePlayer') }}</button>
+      <button
+      @click="store.selectMode(false)"
+      :class="!store.solo ? 'active' : null"
+      >{{ t('starter.multiplayer') }}</button>
+    </div>
 
     <!-- Multiplayer: quizmaster vs pass-and-play -->
     <div class="dropdown" v-if="!store.solo" @click="modeToggle">
@@ -133,6 +134,8 @@
         >{{ n }}</li>
       </ul>
     </div>
+    <!-- Launch button: clearly differentiated primary action, always last -->
+    <button class="start" @click="startGame">{{ t('starter.start') }}</button>
   </section>
 </template>
 
@@ -236,6 +239,18 @@ function startGame() {
     }
 }
 
+// Mode choice: the two mode buttons side by side
+.mode-choice {
+    display: flex;
+    gap: 0.75em;
+    width: 100%;
+    max-width: 400px;
+
+    button {
+        flex: 1;
+    }
+}
+
 .expand-less,
 .expand-more,
 h2,
@@ -313,6 +328,25 @@ ul {
 // Close dropdown
 .close {
     animation: close 1s ease forwards;
+}
+
+// Launch button: differentiated primary action
+.start {
+    background-color: $color-green;
+    border: 2px solid $color-green;
+    color: $color-darkest;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: none;
+}
+
+@media (hover:hover) {
+    .start:hover,
+    .start:active {
+        background-color: $color-green;
+        border: 2px solid $color-green;
+        color: $color-darkest;
+    }
 }
 
 // Editable player names

@@ -35,19 +35,14 @@
 - [ ] Open question: full Google Analytics may be overkill for a friends-first audience; owner to choose vs a lightweight privacy-friendly alternative (GoatCounter / Umami / Plausible).
 - Constraints that still apply: no backend, accounts or database (section 3) — analytics must be client-side beacons only; the amendment above is the only non-goal change.
 
-## Starter screen sequencing (idea)
+## Starter screen sequencing (done — 2026-10-18)
 
 > Owner request (2026-10-18): "single and multiplayers are choices. 'start' is an action. language, category, number of questions, all these are choices. So, in the sequence, I would like to first choose the options, and have a clearly differentiated launch button."
 
-Current layout evidence (verified 2026-10-18):
-- `src/components/Starter.vue:3-12` — Single Player, Multiplayer and Start render as three identical sibling buttons; the launch action sits mid-sequence.
-- Every other choice renders after Start: multiplayer mode/players/names (`Starter.vue:14-66`), hide-choices + weight toggles (`Starter.vue:68-78`), language/category/question-count dropdowns (`Starter.vue:80-135`).
-- Choice buttons and Start share the global `button` style (`src/main.scss:70`); the only differentiation is the selected-mode `.active` state (`Starter.vue:272-277`).
-
-- [ ] Reorder the Starter template so every choice precedes the launch button: Single/Multiplayer → multiplayer-only choices (mode, players, names, hide choices) → shared choices (weight, language, category, question count) → Start last. Behavior unchanged: same store calls (`selectMode`, `setMultiplayerMode`, `setSetup`, `startGame`), same `v-if="!store.solo"` conditionals.
-- [ ] Style Start as the clearly differentiated primary action, visually distinct from the choice buttons (e.g. the unused `$color-green` from `src/styles/_variables.scss`, larger/full-width treatment); `starter.start` copy unchanged in en + fr.
-- [ ] Consider rendering Single/Multiplayer as one two-option choice (segmented pair) instead of two independent buttons — suggestion, not decided.
-- Constraints that still apply: setup logic and locale keys untouched; after pickup, verify both solo and multiplayer layouts (multiplayer inserts the mode/players/names blocks above Start).
+- [x] Reordered the Starter template so every choice precedes the launch button: Single/Multiplayer → multiplayer-only choices (mode, players, names, hide choices) → shared choices (weight, language, category, question count) → Start last. Behavior unchanged: same store calls (`selectMode`, `setMultiplayerMode`, `setSetup`, `startGame`), same `v-if="!store.solo"` conditionals. (The choice ordering already matched the target; only the Start button moved from `Starter.vue:12` to the end of the template.)
+- [x] Styled Start as the differentiated primary action: scoped `.start` class using `$color-green`, bold 1.5em, full-width (`max-width: none`), hover state kept green so it stays distinct from the `$color-med` choice-button hover; `starter.start` copy unchanged in en + fr.
+- [x] Done (2026-10-18, owner request): Single Player / Multiplayer now render side by side in a `.mode-choice` flex row (equal halves, 0.75em gap) instead of stacked; verified at desktop (400px row, 194px buttons) and 320px viewport (147px buttons, no horizontal overflow) in the built app, solo + multiplayer layouts, zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
+- Verified in the built app (vite preview + headless Chromium): solo layout — all choices above Start, Start last, green full-width (rgb(92, 219, 128), 24px bold); multiplayer layout — mode/players/names/toggles blocks above Start, Start still last; launch starts the quizmaster game with zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
 
 ## Items to review and consider (MVP gap analysis — 2026-10-18)
 

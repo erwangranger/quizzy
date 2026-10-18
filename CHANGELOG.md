@@ -13,6 +13,13 @@
 - Dead two-player UI keys removed (`gameboard.playerOne/playerTwo`, `gameover.playerOneWins/playerTwoWins/playerOne/playerTwo/draw`); 13 new keys added to both en and fr dictionaries.
 - Unit tests 27 → 37: quizmaster scoring via marked players, pass-and-play flow with last-player reveal, solo without interstitial handoff, ranking ties, difficulty weighting (on 1/2/3 and off = 1), 1–6 roster with localized names, name persistence.
 
+## Unreleased — Starter screen sequencing
+
+- Starter screen reordered around choices first, launch last: Single Player / Multiplayer choice buttons, then the multiplayer-only choices (quizmaster vs pass-and-play, player count, names, Hide Choices), then the shared choices (Weight by Difficulty, language, category, question count), and the Start button at the bottom of the sequence instead of between the mode buttons and the choices.
+- Start is styled as the clearly differentiated primary action: green (`$color-green`), bold, larger (1.5em), full-width, with a green hover state that keeps it distinct from the choice buttons' hover color.
+- No setup-logic changes: same store calls (`selectMode`, `setMultiplayerMode`, `setSetup`, `startGame`), same locale keys in en + fr.
+- The Single Player / Multiplayer choice buttons now sit side by side in a flex row (equal halves, 0.75em gap) instead of stacked one below the other; still the first choice in the sequence, both keep the same `selectMode` behavior and selected-state styling.
+
 ## Unreleased — Phase 1: Local questions
 
 - Local question data: `questions/sample.json` (12 placeholder questions, 2 per core category, `lang: "en"`, `origin: "human"`, `reviewed: true`), bundled at build time via Vite `import.meta.glob` — no Open Trivia DB.
