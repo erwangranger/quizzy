@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — Skip questions and leave mid-game
+
+- Skip button during gameplay (all modes): "Skip" (`questions.skip`, en + fr "Passer") advances to the next question with no answers, no points, and no history row — for questions players have seen before. Skipped questions are excluded from the game-over total (`answeredTotal` getter counts rounds actually played): answer 7 of 10 with 3 skipped reads "Score: 7/7", not "7/10", and the award-message ratio follows the played rounds. Score dots shrink to the played rounds (one dot per answered question; skipped questions show no dot). Skipping the last question ends the game. Hidden at the reveal (Next owns that state); not shown between pass-and-play turns.
+- Category attribution survives skips: every history row is stamped with the drawn question's category at score time (`ScoreHistory.category`), and the category breakdown counts the stamped category instead of assuming history index = question index — a correct answer after a skipped round is credited to its own category, not the skipped one (game-over breakdown lines).
+- Main Menu button below Skip ("Main Menu", en + fr "Menu principal"): leaves the game and returns to the Starter screen at any point (`resetGame()` + `newGame()`, the same reset path as game-over New Game — releases the quizmaster Wake Lock and clears stale paused/revealed state; scores are not persisted). Both are styled as quiet secondary actions (transparent with white border) next to the primary choice buttons.
+- Unit tests 38 → 46: skip advances with no history row and no score, skip on the last question ends the game, skip in pass-and-play and quizmaster modes, `answeredTotal` excludes skipped rounds (answer-skip-answer = 2 of 2), all-skip game scores 0 with an empty history, skipped questions shrink the dots, post-skip correct answers credit their own category (skipped category absent from the breakdown).
+
 ## Unreleased — Phase 2: Every player answers every question
 
 - Every player answers every question: `scores.playerOne`/`playerTwo` replaced with a `players` array (1–6), each with an editable name persisted in `localStorage` (`quizzy.player-names`, try/catch-wrapped like the seen-question pool; defaults localize via `player.default`).

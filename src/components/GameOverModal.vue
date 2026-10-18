@@ -5,7 +5,7 @@
       <div v-if="store.solo">
         <h1>{{ t('gameover.title') }}</h1>
         <h2 v-if="store.setup.weightByDifficulty">{{ t('gameover.points', { points: store.players[0]?.score.total ?? 0 }) }}</h2>
-        <h2 v-else>{{ t('gameover.score', { score: store.players[0]?.score.total ?? 0, total: store.questions.length }) }}</h2>
+        <h2 v-else>{{ t('gameover.score', { score: store.players[0]?.score.total ?? 0, total: store.answeredTotal }) }}</h2>
         <p>{{ scoreMessage }}</p>
         <h3>{{ t('gameover.breakdown') }}</h3>
         <ul class="breakdown">
@@ -24,7 +24,7 @@
               <span :class="entry.rank === 1 ? 'score-high' : ''">
                 {{ t('gameover.points', { points: entry.player.score.total }) }}
               </span>
-              — {{ t('gameover.correct', { correct: correctCount(entry.player), total: store.questions.length }) }}
+              — {{ t('gameover.correct', { correct: correctCount(entry.player), total: store.answeredTotal }) }}
             </h2>
             <ul class="breakdown" v-if="breakdownText(entry.player).length > 0">
               <li v-for="(line, i) in breakdownText(entry.player)" :key="i">{{ line }}</li>
@@ -49,7 +49,7 @@ const store = useGameStore()
 
 // Award message for solo mode, by correct-answer ratio (not weighted points)
 const scoreMessage = computed(() => {
-  const total = Math.max(store.questions.length, 1)
+  const total = Math.max(store.answeredTotal, 1)
   const player = store.players[0]
   const correct = player ? correctCount(player) : 0
   const ratio = correct / total

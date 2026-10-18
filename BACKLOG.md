@@ -18,6 +18,8 @@
 - Resolved: the concurrent branding/Phase 1 streams are merged into one uncommitted tree (single `CHANGELOG.md` Unreleased section). Nothing committed yet; Phase 2 quizmaster mode is next.
 - 2026-10-18 (Phase 2 session): RESOLVED — the 4 unreviewed pending files noted above were consolidated into a single bank `questions/pending/news-2026-10-18.json` (49 questions) and committed separately as `chore(questions)` (457226e), keeping them out of the feature commit.
 - 2026-10-18 (Phase 2 session): Phase 2 quizmaster mode implemented in the same uncommitted tree (store players[] 1–6, quizmaster + pass-and-play modes, difficulty weighting, ranking/breakdown, Wake Lock; tests 27→37, build + validate:questions green, CHANGELOG Phase 2 entry added). Nothing committed yet; owner review and commit are next.
+- [ ] In quizmaster mode the "Reveal" button (`Questions.vue:38`) is visually indistinguishable from the answer choice buttons — same base `<button>` styling. After `styleButtons()` applies `.correct`/`.incorrect` to choices, the Reveal button needs to be clearly distinct as an action button (not an answer). Same-class ambiguity also affects the "Next" button (`Questions.vue:43`).
+- Approach: reuse the established primary-action pattern from Starter.vue `.start` — green fill, `$color-darkest` text, bold, full-width. This is the same differentiator the owner just approved for Start-vs-choices (Starter.vue:334–348). Apply consistent `.start` class + scoped style to both Reveal and Next buttons.
 
 ## Special categories from course materials (idea)
 - Feed in a number of `.pdf` files or raw text; an AI reads it and generates quiz questions from it.
@@ -34,6 +36,18 @@
 - [ ] Any analytics script must load async/non-blocking and degrade gracefully offline, so the offline acceptance criteria (Phase 1 item 5, Phase 4 item 4) still pass.
 - [ ] Open question: full Google Analytics may be overkill for a friends-first audience; owner to choose vs a lightweight privacy-friendly alternative (GoatCounter / Umami / Plausible).
 - Constraints that still apply: no backend, accounts or database (section 3) — analytics must be client-side beacons only; the amendment above is the only non-goal change.
+
+## Skip questions and leave mid-game (done — 2026-10-18)
+
+> Owner request (2026-10-18): "during gameplay, allow to skip, for example if that's a question we've seen before. also allow to navigate back to the main menu."
+
+- [x] `skipRound()` in `src/store/store.ts`: records nothing (no history row, no points) and advances the round; skipping the last question ends the game (same game-over handling as `next()`).
+- [x] Skipped questions excluded from totals (`answeredTotal` getter, owner request 2026-10-18: "questions that are skipped should not be counted in the total"): game-over "Score: {score}/{total}" and per-player "{correct}/{total} correct" use rounds actually played — answer 7 of 10 with 3 skipped reads 7/7; the solo award-message ratio follows played rounds. ScoreDots size to `answeredTotal` (skipped questions show no dot); zero-point answered rounds still count (quizmaster unmarked players).
+- [x] Category attribution survives skips: `ScoreHistory.category` is stamped at score time from the drawn question, and `categoryBreakdown` counts the stamped category (was: history index → `questions[i]`, which misattributed post-skip answers to the skipped question's category). Test: answer ✓, skip, answer ✓ → credited to the answered questions' categories; skipped category absent.
+- [x] Skip button in `src/components/Questions.vue` (`questions.skip`, en + fr "Passer"): shown while the round is unanswered (hidden at the reveal; absent between pass-and-play turns since the interstitial covers the board). Closes the About menu if open, like Next and Start.
+- [x] Main Menu button (`questions.menu`, en + fr "Menu principal") below Skip: `resetGame()` + `newGame()` returns to the Starter screen at any point — the same reset path as game-over New Game (clears a stale paused/revealed state and releases the quizmaster Wake Lock); in-game scores are not persisted.
+- [x] Both styled as quiet secondary actions (transparent, white border, `$color-alt-dark` hover) distinct from the primary choice buttons.
+- [x] Verified: vitest 46/46 (skip tests: no history row + advance, last-question game over, pass-and-play + quizmaster skip, `answeredTotal` excludes skips (answer-skip-answer = 2 of 2), all-skip game, dots follow played rounds, post-skip category attribution), `vue-tsc -b` + `vite build` green, headless Chromium smoke on the built app — 10-question games: 1 answered + 9 skipped reads "Score: 1/1" with 1 dot; 2 answered-wrong + 8 skipped reads "Score: 0/2" with 2 dots and an empty breakdown (wrong answers never appear); zero console errors.
 
 ## Starter screen sequencing (done — 2026-10-18)
 

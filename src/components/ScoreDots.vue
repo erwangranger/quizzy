@@ -21,8 +21,9 @@ import { useGameStore } from '../store/store'
 
 const store = useGameStore()
 
-// Dots follow the game length; one history row per player (works for 1-6).
-const quantity = computed(() => Math.max(store.questions.length, 1))
+// Dots follow the rounds actually played; skipped questions show no dot
+// (works for 1-6 players, one history row per player).
+const quantity = computed(() => Math.max(store.answeredTotal, 1))
 </script>
 
 <style lang="scss" scoped>

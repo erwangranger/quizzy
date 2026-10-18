@@ -16,6 +16,7 @@ export interface GameQuestion extends Question {
 export interface ScoreHistory {
   correct: boolean
   incorrect: boolean
+  category?: Category
 }
 
 export interface Player {
@@ -159,19 +160,25 @@ export const useGameStore = defineStore('game', {
         rank: entry.rank === 0 ? all[i - 1].rank : entry.rank,
       }))
     },
-    // Correct answers per player, keyed by question category. History rows
-    // stay aligned with rounds in every mode, so index i maps to questions[i].
+    // Correct answers per player, keyed by category. Each history row is
+    // stamped with the drawn question's category at score time, so answers
+    // credit their own category even when earlier rounds were skipped.
     categoryBreakdown: (state) => {
       return state.players.map((player) => {
         const counts: Partial<Record<Category, number>> = {}
-        player.score.history.forEach((entry, i) => {
-          const category = state.questions[i]?.category
-          if (entry.correct && category) {
-            counts[category] = (counts[category] ?? 0) + 1
+        player.score.history.forEach((entry) => {
+          if (entry.correct && entry.category) {
+            counts[entry.category] = (counts[entry.category] ?? 0) + 1
           }
         })
         return counts
       })
+    },
+    // Rounds actually played (answers recorded): skipped questions are
+    // excluded, so "7/10 correct" means 7 of the 7 questions played.
+    answeredTotal: (state) => {
+      if (state.players.length === 0) return state.questions.length
+      return Math.max(...state.players.map((p) => p.score.history.length))
     },
     categories: (state) => getCategories(state.setup.lang),
   },
@@ -254,15 +261,19 @@ export const useGameStore = defineStore('game', {
       this.pauseGame()
     },
     // Score one player's answer. Zero-point answers still record history so
-    // every player's score dots stay aligned with the question count.
+    // every player's score dots stay aligned with the question count. The
+    // drawn question's category is stamped on the row so the breakdown
+    // credits each answer to its own category even when earlier rounds
+    // were skipped (history index no longer maps to questions[i]).
     score(index: number, points: number) {
       const player = this.players[index]
       if (!player) return
+      const category = this.questions[this.round]?.category
       if (points > 0) {
-        player.score.history.push({ correct: true, incorrect: false })
+        player.score.history.push({ correct: true, incorrect: false, category })
         player.score.total += points
       } else {
-        player.score.history.push({ correct: false, incorrect: true })
+        player.score.history.push({ correct: false, incorrect: true, category })
       }
     },
     // Score the finished round. Quizmaster: marked players earn points
@@ -285,8 +296,19 @@ export const useGameStore = defineStore('game', {
         })
       }
     },
+    // Skip the current round: no one answers or scores, and no history row
+    // is recorded — skipped questions are excluded from the game-over total
+    // ("7/10" means 7 of the questions actually played) and from the dots.
+    skipRound() {
+      if (this.round === this.questions.length - 1) {
+        this.isGameOver = true
+        this.releaseWakeLock()
+      } else {
+        this.incrementRound()
+      }
+    },
     // Score the round and move on. The game ends after the last question's
-    // reveal, so game-over handling lives here for every mode.
+    // reveal, so game-over handling lives here and in skipRound.
     next() {
       this.scoreRound()
       if (this.mode === 'quizmaster' && this.marks.some((marked) => marked)) {

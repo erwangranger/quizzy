@@ -38,11 +38,15 @@
     <button v-if="store.mode === 'quizmaster' && !store.revealed" @click="store.revealAnswer()">
       {{ t('questions.reveal') }}
     </button>
+    <!-- Skip: no one answers or scores this round (e.g. a seen question) -->
+    <button v-if="!store.revealed" @click="skip">{{ t('questions.skip') }}</button>
     <!-- Next: scores and advances (quizmaster after marking, pass-and-play
          and solo after the reveal) -->
     <button v-if="showNext" @click="advance">
       {{ t('questions.next') }}
     </button>
+    <!-- Leave the game and return to the Starter screen -->
+    <button class="menu" @click="toMenu">{{ t('questions.menu') }}</button>
   </div>
 </template>
 
@@ -85,6 +89,25 @@ function choiceLabel(index: number): string {
 function advance() {
   store.pauseGame()
   store.next()
+  // Close About menu if open
+  if (store.aboutShow) {
+    store.aboutToggle()
+  }
+}
+
+// Skip the round: no one answers or scores
+function skip() {
+  store.skipRound()
+  // Close About menu if open
+  if (store.aboutShow) {
+    store.aboutToggle()
+  }
+}
+
+// Leave the game and return to the Starter screen
+function toMenu() {
+  store.resetGame()
+  store.newGame()
   // Close About menu if open
   if (store.aboutShow) {
     store.aboutToggle()
@@ -189,5 +212,23 @@ h3 {
     background-color: $color-red;
     border: 2px solid $color-red;
     color: $color-white;
+}
+
+// Secondary actions: skip the round, leave for the Starter screen
+.menu,
+.skip {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    border-radius: 12px;
+    color: $color-white;
+    font-size: 1em;
+    margin: 1em 0;
+    padding: 0.5em 1.5em;
+}
+
+.menu:hover,
+.skip:hover {
+    background-color: $color-alt-dark;
+    border-color: $color-alt-dark;
 }
 </style>
