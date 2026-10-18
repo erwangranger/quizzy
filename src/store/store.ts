@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import type { Category, Difficulty, Lang, Question } from '../questions/schema'
 import { drawQuestions, getCategories, resetSeenQuestions } from '../questions/questionBank'
+import { setLocale } from '../locales'
 
 export interface Choice {
   text: string
@@ -152,6 +153,7 @@ export const useGameStore = defineStore('game', {
     },
     setSetup(payload: Partial<GameSetup>) {
       Object.assign(this.setup, payload)
+      if (payload.lang) setLocale(payload.lang)
     },
     starPowerOn() {
       this.starPower = true

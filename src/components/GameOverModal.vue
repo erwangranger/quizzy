@@ -31,26 +31,17 @@ import { t } from '../locales'
 
 const store = useGameStore()
 
-// Award message for solo mode
+// Award message for solo mode, by score-to-total ratio
 const scoreMessage = computed(() => {
-  const cases = {
-    0: t('message.0'),
-    1: t('message.1'),
-    2: t('message.2'),
-    3: t('message.3'),
-    4: t('message.4'),
-    5: t('message.5'),
-    6: t('message.6'),
-    7: t('message.7'),
-    8: t('message.8'),
-    9: t('message.9'),
-    10: t('message.10'),
-  }
-  const score = store.scores.playerOne.total
-  if (score) {
-    return cases[score as keyof typeof cases]
-  }
-  return ''
+  const total = Math.max(store.questions.length, 1)
+  const ratio = store.scores.playerOne.total / total
+  if (store.scores.playerOne.total === 0) return t('message.0')
+  if (ratio >= 1) return t('message.10')
+  if (ratio >= 0.8) return t('message.8')
+  if (ratio >= 0.6) return t('message.6')
+  if (ratio >= 0.4) return t('message.4')
+  if (ratio >= 0.2) return t('message.2')
+  return t('message.1')
 })
 
 function newGame(payload: boolean) {

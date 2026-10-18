@@ -37,8 +37,9 @@ import { useGameStore } from '../store/store'
 
 const store = useGameStore()
 
-// Quantity of dots, dependent on single player or multiplayer
-const quantity = computed(() => (store.solo ? 10 : 5))
+// Dots follow the game length; upstream's multiplayer 5 was cosmetic for its
+// fixed 10 rounds, so both modes use the actual question count.
+const quantity = computed(() => Math.max(store.questions.length, 1))
 </script>
 
 <style lang="scss" scoped>
