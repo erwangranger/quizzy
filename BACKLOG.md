@@ -1,13 +1,21 @@
 # Backlog
 
-## Woozy face 🥴 branding (in progress)
+## Woozy face 🥴 branding (done)
 - [x] `index.html` title, `README.md` heading, `package.json` description, `CHANGELOG.md` Unreleased entry
 - [x] `app.title` in `src/locales/index.ts` en + fr → `'Quizzy 🥴'`
-- [ ] Favicon: none exists today (`index.html` has no `<link rel="icon">`); add an emoji SVG favicon for 🥴
+- [x] Favicon: `public/favicon.svg` (🥴 emoji SVG), linked from `index.html`; verified in the built `dist/`
 - [x] Run vitest suite after the `app.title` change (6/6 passed)
 
+## Trivia phrasing elimination (done — 2026-10-18)
+- [x] Sweep executed per the checklist below: en + fr locales (`about.*`, `instructions.body`, `message.1/6/8`), `README.md:3`, `SPEC.md` (title, framing, Trivial Pursuit refs), `package.json:3`, `index.html` meta. Open Trivia DB and Winsome Trivia proper nouns kept; "Quizzy 🥴" untouched.
+- [x] vitest 27/27 passed after the sweep; `validate:questions` passes; `npm run build` succeeds.
+
+## Locale reactivity fix (done — 2026-10-18)
+- [x] `t()` now uses a reactive active locale (`setLocale` from `src/locales/index.ts`); `store.setSetup` sets it when the Starter language selector changes. Verified in the browser: UI switches fully to French and back; zero console errors.
+- [x] Dead award-message keys `message.3/5/7/9` removed from both dictionaries (unreachable via the ratio-based GameOverModal); `message.4` no longer hardcodes "4/10".
+
 ## Cross-session note
-- Another omp session is active in this repo. This branding work is uncommitted; reconcile `CHANGELOG.md` (it gained a top-level Unreleased section) before either side commits.
+- Resolved: the concurrent branding/Phase 1 streams are merged into one uncommitted tree (single `CHANGELOG.md` Unreleased section). Nothing committed yet; Phase 2 quizmaster mode is next.
 
 ## Special categories from course materials (idea)
 - Feed in a number of `.pdf` files or raw text; an AI reads it and generates quiz questions from it.

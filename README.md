@@ -1,6 +1,6 @@
 # Quizzy 🥴
 
-A single or multiplayer (local) trivia game, built with Vue 3, Pinia, TypeScript and Vite.
+A single or multiplayer (local) quiz game, built with Vue 3, Pinia, TypeScript and Vite.
 
 ## Development
 

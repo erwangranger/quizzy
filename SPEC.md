@@ -1,6 +1,6 @@
-# Trivia Road Trip: Agent Spec
+# Road Trip Quiz: Agent Spec
 
-You are building a trivia game for a small group (typically 2 players) to play on one phone, often in a car with patchy connectivity. Start from the existing open-source app **Winsome Trivia** (https://github.com/Splode/open-trivia-app, MIT license) and extend it as described below.
+You are building a quiz game for a small group (typically 2 players) to play on one phone, often in a car with patchy connectivity. Start from the existing open-source app **Winsome Trivia** (https://github.com/Splode/open-trivia-app, MIT license) and extend it as described below.
 
 Work in phases. Finish each phase completely, commit it, and stop for review before starting the next one. Do not skip ahead.
 
@@ -80,7 +80,7 @@ Field rules:
 |---|---|---|
 | `id` | string | Unique across all files. Format `<category-prefix>-<4 digits>` for human questions, `news-YYYYMMDD-<nn>` for generated ones. |
 | `lang` | `"en"` or `"fr"` | Required. The game filters by selected language. |
-| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `current-events`. (Trivial Pursuit style six, plus current events.) |
+| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `current-events`. (Six classic categories, plus current events.) |
 | `difficulty` | 1, 2 or 3 | 1 easy, 3 hard. |
 | `question` | string | Plain text, no HTML entities. |
 | `correct_answer` | string | Short. |
@@ -123,7 +123,7 @@ Deliverables for the data model:
 
 1. **Players:** 1 to 6, each with an editable name. Remember names in `localStorage`. Replace the `playerOne` / `playerTwo` state with an array of players.
 2. **Two multiplayer modes**, chosen at setup:
-   - **Quizmaster mode** (default for multiplayer): the phone shows the question and choices; one person reads it aloud; everyone answers out loud. A "Reveal" button shows the correct answer and explanation. Then a row of player-name toggle buttons lets the quizmaster mark who was right. "Next" scores and advances. Include a setup toggle **"Hide choices"** that hides the multiple-choice options until reveal (open-answer play, closer to Trivial Pursuit).
+   - **Quizmaster mode** (default for multiplayer): the phone shows the question and choices; one person reads it aloud; everyone answers out loud. A "Reveal" button shows the correct answer and explanation. Then a row of player-name toggle buttons lets the quizmaster mark who was right. "Next" scores and advances. Include a setup toggle **"Hide choices"** that hides the multiple-choice options until reveal (open-answer play).
    - **Pass-and-play:** each player in turn taps their answer privately. Between players, show a full-screen interstitial: "Pass to {name}" with a "Ready" button, so the next player cannot see the previous answer. After the last player answers, show the reveal screen with every player's choice, the correct answer and the explanation.
 3. **Solo mode** behaves like pass-and-play with one player and no interstitial.
 4. **Scoring:** 1 point per correct answer. Setup option "Weight by difficulty" (1/2/3 points). Score dots show a per-player history row.
