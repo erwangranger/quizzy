@@ -18,8 +18,7 @@
 - Resolved: the concurrent branding/Phase 1 streams are merged into one uncommitted tree (single `CHANGELOG.md` Unreleased section). Nothing committed yet; Phase 2 quizmaster mode is next.
 - 2026-10-18 (Phase 2 session): RESOLVED — the 4 unreviewed pending files noted above were consolidated into a single bank `questions/pending/news-2026-10-18.json` (49 questions) and committed separately as `chore(questions)` (457226e), keeping them out of the feature commit.
 - 2026-10-18 (Phase 2 session): Phase 2 quizmaster mode implemented in the same uncommitted tree (store players[] 1–6, quizmaster + pass-and-play modes, difficulty weighting, ranking/breakdown, Wake Lock; tests 27→37, build + validate:questions green, CHANGELOG Phase 2 entry added). Nothing committed yet; owner review and commit are next.
-- [ ] In quizmaster mode the "Reveal" button (`Questions.vue:38`) is visually indistinguishable from the answer choice buttons — same base `<button>` styling. After `styleButtons()` applies `.correct`/`.incorrect` to choices, the Reveal button needs to be clearly distinct as an action button (not an answer). Same-class ambiguity also affects the "Next" button (`Questions.vue:43`).
-- Approach: reuse the established primary-action pattern from Starter.vue `.start` — green fill, `$color-darkest` text, bold, full-width. This is the same differentiator the owner just approved for Start-vs-choices (Starter.vue:334–348). Apply consistent `.start` class + scoped style to both Reveal and Next buttons.
+- [x] Reveal and Next buttons styled with .start (green primary-action) matching Starter.vue pattern, gated by their original v-if conditions.
 
 ## Special categories from course materials (idea)
 - Feed in a number of `.pdf` files or raw text; an AI reads it and generates quiz questions from it.

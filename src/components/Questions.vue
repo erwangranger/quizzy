@@ -35,14 +35,14 @@
       </div>
     </div>
     <!-- Quizmaster reveals the answer, then marks players -->
-    <button v-if="store.mode === 'quizmaster' && !store.revealed" @click="store.revealAnswer()">
+    <button v-if="store.mode === 'quizmaster' && !store.revealed" class="start" @click="store.revealAnswer()">
       {{ t('questions.reveal') }}
     </button>
     <!-- Skip: no one answers or scores this round (e.g. a seen question) -->
     <button v-if="!store.revealed" @click="skip">{{ t('questions.skip') }}</button>
     <!-- Next: scores and advances (quizmaster after marking, pass-and-play
          and solo after the reveal) -->
-    <button v-if="showNext" @click="advance">
+    <button v-if="showNext" class="start" @click="advance">
       {{ t('questions.next') }}
     </button>
     <!-- Leave the game and return to the Starter screen -->
@@ -230,5 +230,23 @@ h3 {
 .skip:hover {
     background-color: $color-alt-dark;
     border-color: $color-alt-dark;
+}
+
+.start {
+    background-color: $color-green;
+    border: 2px solid $color-green;
+    color: $color-darkest;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: none;
+}
+
+@media (hover:hover) {
+    .start:hover,
+    .start:active {
+        background-color: $color-green;
+        border: 2px solid $color-green;
+        color: $color-darkest;
+    }
 }
 </style>
