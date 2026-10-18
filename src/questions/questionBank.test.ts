@@ -87,7 +87,8 @@ describe('questionBank', () => {
     // Draw 60 of 61 so the post-reset draw must intersect the first draw.
     const third = drawQuestions({ lang: 'en', categories: [], count: 60 })
     const overlapAfterReset = first.questions.filter((q) => third.questions.some((s) => s.id === q.id))
-    expect(overlapAfterReset).toHaveLength(5)
+    // 60 of 61 drawn excludes at most one of the first draw's 5.
+    expect(overlapAfterReset.length).toBeGreaterThanOrEqual(4)
   })
 
   it('returns an empty result with no poolReset for an unknown language', () => {
