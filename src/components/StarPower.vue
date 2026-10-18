@@ -1,42 +1,36 @@
-<template lang="html">
+<template>
   <div>
+  <template v-if="store.starPower">
     <i
-    v-if="show"
     v-for="star in quantity"
+    :key="star"
     class="material-icons star">star</i>
+  </template>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      quantity: 10,
-    }
-  },
-  computed: {
-    show() {
-      return this.$store.state.starPower;
-    }
-  }
-}
-</script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useGameStore } from '../store/store'
 
-<style lang="scss">@import ".././main.scss";
-@import url( 'https://fonts.googleapis.com/icon?family=Material+Icons');
+const store = useGameStore()
+const quantity = ref(10)
+</script>
+<style lang="scss">
+@use 'sass:math';
+@use '../styles/variables' as *;
 
 // Star mixin for children
 // Pass in upper limit for random size (based on em)
 // Pass in timing for animation
 @mixin star($fontSize, $timing) {
     animation: shoot $timing ease-in-out forwards;
-    font-size: random($fontSize) + em;
+    font-size: math.random($fontSize) + em;
     position: absolute;
-    top: random(10) + vh;
-    right: random(10) + vw;
-    bottom: random(10) + vh;
-    left: random(10) + vw;
-    z-index: 1000;
+    top: math.random(10) + vh;
+    right: math.random(10) + vw;
+    bottom: math.random(10) + vh;
+    left: math.random(10) + vw;
 }
 
 // Star element
@@ -89,3 +83,4 @@ export default {
     }
 }
 </style>
+@use '../styles/variables' as *;

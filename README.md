@@ -1,15 +1,28 @@
-# Winsome Trivia
+# Quizzy 🥴
 
-A single or multiplayer (local) trivia game made with featuring over 2,000 unique questions and built with Vue.js.
+A single or multiplayer (local) trivia game, built with Vue 3, Pinia, TypeScript and Vite.
 
-<div align="center">
-  <img alt="Winsome Trivia screenshot" src=".github/winsome.png" width="800px">
-</div>
+Based on [Winsome Trivia](https://github.com/Splode/open-trivia-app) by [Christopher Murphy](http://christopherianmurphy.com) (MIT license).
 
-## About
-A trivia web app built with Vue.js and powered by the [Open Trivia Database](https://opentdb.com/).
+## Development
 
-State is managed by [Vuex](https://github.com/vuejs/vuex). Database requests are handled by [vue-resource](https://github.com/pagekit/vue-resource).
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Test
+
+```bash
+npm test
+```
 
 ## License
-MIT
+
+MIT — see [LICENSE](./LICENSE) (upstream, © 2018 Christopher Murphy).

@@ -1,101 +1,78 @@
-<template lang="html">
+<template>
   <div>
-    <h3>{{ questions[round].category }}</h3>
+    <h3>{{ currentQuestion.category }}</h3>
     <h2>{{ decodedQuestion }}</h2>
     <ul>
-      <li v-for="choice in choices">
+      <li v-for="(choice, i) in choices" :key="i">
         <button
         @click="answer(choice)"
-        :disabled="isPaused"
+        :disabled="store.isPaused"
         :class="choice.classes">{{ decode(choice.text) }}</button>
       </li>
     </ul>
-    <button v-if="isPaused" @click="advance">Next</button>
+    <button v-if="store.isPaused" @click="advance">{{ t('questions.next') }}</button>
   </div>
 </template>
 
-<script>
-import { htmlEntity } from '.././htmlEntityMixin';
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useGameStore, type Choice } from '../store/store'
+import { decode } from '../utils/htmlEntity'
+import { t } from '../locales'
 
-export default {
-  mixins: [htmlEntity],
-  computed: {
-    aboutShow() {
-      return this.$store.state.aboutShow;
-    },
-    choices() {
-      return this.questions[this.round].choices;
-    },
-    // Decode HTML entities in question. Based on htmlEntity mixin
-    decodedQuestion() {
-      return this.decode(this.questions[this.round].question);
-    },
-    isPaused() {
-      return this.$store.state.isPaused;
-    },
-    mode() {
-      return this.$store.getters.mode;
-    },
-    // Access questions from store
-    questions() {
-      return this.$store.state.questions;
-    },
-    // Access round from store
-    round() {
-      return this.$store.getters.round;
-    },
-    turn() {
-      return this.$store.getters.turn;
-    },
-  },
-  methods: {
-    // Reset board, present next question
-    advance() {
-      // Proceed if less than 10 rounds
-      if (this.round <= 8) {
-        this.$store.commit('pauseGame');
-        this.$store.commit('incrementRound');
-      }
-      // Close About menu if open
-      if (this.aboutShow) {
-        this.$store.commit('aboutToggle');
-      }
-    },
-    // Resolve answer
-    answer(choice) {
-      // Pause game state (effects buttons)
-      this.$store.commit('pauseGame', 'pause');
-      // Close About menu if open
-      if (this.aboutShow) {
-        this.$store.commit('aboutToggle');
-      }
-      // Apply button styles for correct / incorrect
-      this.$store.commit('styleButtons');
-      // Check mode for payload
-      let mode;
-      if (this.mode || this.turn === 'playerOne') {
-        mode = 'playerOne';
-      } else if (this.turn === 'playerTwo') {
-        mode = 'playerTwo'
-      }
-      // Check for correct answer and score
-      if (choice.answer) {
-        // Score correctly
-        this.$store.commit('score', {true: true, mode});
-        // Call down the stars!
-        this.$store.dispatch('starPower');
-      } else {
-        // Score incorrectly
-        this.$store.commit('score', {false: false, mode});
-      }
-      // Check if game is over
-      this.$store.commit('isGameOver');
-    },
-  },
+const store = useGameStore()
+
+const currentQuestion = computed(() => store.questions[store.round])
+const choices = computed(() => currentQuestion.value?.choices ?? [])
+// Decode HTML entities in question. Based on htmlEntity mixin
+const decodedQuestion = computed(() => decode(currentQuestion.value?.question ?? ''))
+
+// Reset board, present next question
+function advance() {
+  // Proceed if less than 10 rounds
+  if (store.round <= 8) {
+    store.pauseGame()
+    store.incrementRound()
+  }
+  // Close About menu if open
+  if (store.aboutShow) {
+    store.aboutToggle()
+  }
+}
+
+// Resolve answer
+function answer(choice: Choice) {
+  // Pause game state (effects buttons)
+  store.pauseGame('pause')
+  // Close About menu if open
+  if (store.aboutShow) {
+    store.aboutToggle()
+  }
+  // Apply button styles for correct / incorrect
+  store.styleButtons()
+  // Check mode for payload
+  let mode: 'playerOne' | 'playerTwo'
+  if (store.solo || store.turn === 'playerOne') {
+    mode = 'playerOne'
+  } else {
+    mode = 'playerTwo'
+  }
+  // Check for correct answer and score
+  if (choice.answer) {
+    // Score correctly
+    store.score({ correct: true, mode })
+    // Call down the stars!
+    store.starPowerOn()
+  } else {
+    // Score incorrectly
+    store.score({ correct: false, mode })
+  }
+  store.isGameOverCheck()
 }
 </script>
 
-<style lang="scss" scoped>@import ".././main.scss";
+<style lang="scss" scoped>
+@use '../styles/variables' as *;
 
 div {
     background-color: #0277BD;

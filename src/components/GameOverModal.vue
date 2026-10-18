@@ -1,75 +1,70 @@
-<template lang="html">
+<template>
   <div class="modal fade-in">
     <div class="container slide-in">
       <!-- Single player scores -->
-      <div v-if="mode">
-        <h1>Game Over!</h1>
-        <h2>Score: {{ scores.playerOne.total }}/10</h2>
+      <div v-if="store.solo">
+        <h1>{{ t('gameover.title') }}</h1>
+        <h2>{{ t('gameover.score', { score: store.scores.playerOne.total }) }}</h2>
         <p>{{ scoreMessage }}</p>
       </div>
       <!-- Multiplayer scores -->
-      <div v-if="!mode">
+      <div v-if="!store.solo">
         <!-- Win conditions -->
-        <h1 v-if="scores.playerOne.total > scores.playerTwo.total">Player One Wins!</h1>
-        <h1 v-if="scores.playerTwo.total > scores.playerOne.total">Player Two Wins!</h1>
-        <h1 v-if="scores.playerOne.total === scores.playerTwo.total">Draw!</h1>
+        <h1 v-if="store.scores.playerOne.total > store.scores.playerTwo.total">{{ t('gameover.playerOneWins') }}</h1>
+        <h1 v-if="store.scores.playerTwo.total > store.scores.playerOne.total">{{ t('gameover.playerTwoWins') }}</h1>
+        <h1 v-if="store.scores.playerOne.total === store.scores.playerTwo.total">{{ t('gameover.draw') }}</h1>
         <!-- Results -->
-        <h2>Player One: <span :class="scores.playerOne.total >= scores.playerTwo.total ? 'score-high' : 'score-low'">{{ scores.playerOne.total }}</span></h2>
-        <h2>Player Two: <span :class="scores.playerTwo.total >= scores.playerOne.total ? 'score-high' : 'score-low'">{{ scores.playerTwo.total }}</span></h2>
+        <h2>{{ t('gameover.playerOne', { score: store.scores.playerOne.total }) }} <span :class="store.scores.playerOne.total >= store.scores.playerTwo.total ? 'score-high' : 'score-low'"></span></h2>
+        <h2>{{ t('gameover.playerTwo', { score: store.scores.playerTwo.total }) }} <span :class="store.scores.playerTwo.total >= store.scores.playerOne.total ? 'score-high' : 'score-low'"></span></h2>
       </div>
       <!-- Restart game buttons -->
-      <button @click="newGame(true)">New Game</button>
-      <button v-if="!mode" @click="newGame(false)">Rematch!</button>
+      <button @click="newGame(true)">{{ t('gameover.newGame') }}</button>
+      <button v-if="!store.solo" @click="newGame(false)">{{ t('gameover.rematch') }}</button>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    mode() {
-      return this.$store.getters.mode;
-    },
-    scores() {
-      return this.$store.state.scores;
-    },
-    // Award message for solo mode
-    scoreMessage() {
-      const cases = {
-        0: "Ouch. Well, at least you can't go down from here.",
-        1: 'Time to brush up on your trivia game.',
-        2: 'Were you just guessing?',
-        3: "Google is your friend. Consider it today's Encyclopedia Britannica.",
-        4: "Don't worry — a 4/10 is average.",
-        5: 'So-so performance. Not bad. Not great. Maybe better luck next time.',
-        6: 'You may one day be a wealth of trivial knowledge. Just not today.',
-        7: 'Not bad. Can you perform this well a second time?',
-        8: "You're on your way to becoming a trivia master.",
-        9: 'A regular trivia wiz. Nice work.',
-        10: 'Holy snikes!! A perfect score! Excellent work.',
-      };
-      let score = this.scores.playerOne.total;
-      if (score) {
-        return cases[score];
-      } else {
-        return '';
-      }
-    }
-  },
-  methods: {
-    newGame(payload) {
-      this.$store.commit('resetGame');
-      if (payload) {
-        this.$store.commit('newGame');
-      } else {
-        this.$store.dispatch('startGame');
-      }
-    },
-  },
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useGameStore } from '../store/store'
+import { t } from '../locales'
+
+const store = useGameStore()
+
+// Award message for solo mode
+const scoreMessage = computed(() => {
+  const cases = {
+    0: t('message.0'),
+    1: t('message.1'),
+    2: t('message.2'),
+    3: t('message.3'),
+    4: t('message.4'),
+    5: t('message.5'),
+    6: t('message.6'),
+    7: t('message.7'),
+    8: t('message.8'),
+    9: t('message.9'),
+    10: t('message.10'),
+  }
+  const score = store.scores.playerOne.total
+  if (score) {
+    return cases[score as keyof typeof cases]
+  }
+  return ''
+})
+
+function newGame(payload: boolean) {
+  store.resetGame()
+  if (payload) {
+    store.newGame()
+  } else {
+    store.startGame()
+  }
 }
 </script>
 
-<style lang="scss" scoped>@import ".././main.scss";
+<style lang="scss" scoped>
+@use '../styles/variables' as *;
 
 button {
   background-color: $color-med;

@@ -1,7 +1,7 @@
-<template lang="html">
+<template>
   <div class="wrapper flex-center-col">
     <div class="droplet-container">
-      <i class="droplet" v-for="drop in quantity"></i>
+      <i class="droplet" v-for="drop in quantity" :key="drop"></i>
     </div>
     <div class="message">
       <transition name="fade">
@@ -11,72 +11,47 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      counter: -1,
-      quantity: 10,
-      message: ["Doin' the worm", "Fetchin' your trivia", 'Massaging brain tissue'],
-      show: false,
-    }
-  },
-  methods: {
-    delayIncrement() {
-      const vm = this;
-      return new Promise(function(resolve, reject) {
-        setTimeout(() => {
-          if (vm.counter >= vm.message.length) {
-            vm.counter = -1;
-          }
-          vm.incrementCounter(vm.counter);
-          console.log(vm.counter);
-          resolve()
-        }, 2000);
-      });
-    },
-    delayToggle() {
-      const vm = this;
-      return new Promise(function(resolve, reject) {
-        vm.show = vm.toggle(vm.show);
-        resolve();
-      });
-    },
-    incrementCounter(counter) {
-      return counter += 1;
-    },
-    loopMessage() {
-      setTimeout(() => {
-        if (this.counter >= this.message.length-1) {
-          this.counter = -1;
-        }
-        this.counter += 1;
-      }, 500)
-      setTimeout(() => {
-        this.show = true;
-      }, 1500)
-      setTimeout(() => {
-        this.show = false;
-      }, 5000)
-    },
-    toggle(value) {
-      return value = !value;
-    }
-  },
-  created() {
-    // TODO: refactor initial timing
-    this.loopMessage();
-    // TODO: refactor loops
-    setInterval(() => {
-      this.loopMessage();
-    }, 5000)
+<script setup lang="ts">
+import { onUnmounted, ref } from 'vue'
+import { t } from '../locales'
 
-  }
+const quantity = 10
+const message = [t('loader.doinTheWorm'), t('loader.fetching'), t('loader.massaging')]
+const counter = ref(-1)
+const show = ref(false)
+
+const timers: ReturnType<typeof setTimeout>[] = []
+
+function loopMessage() {
+  timers.push(setTimeout(() => {
+    if (counter.value >= message.length - 1) {
+      counter.value = -1
+    }
+    counter.value += 1
+  }, 500))
+  timers.push(setTimeout(() => {
+    show.value = true
+  }, 1500))
+  timers.push(setTimeout(() => {
+    show.value = false
+  }, 5000))
 }
+
+// TODO: refactor initial timing
+loopMessage()
+// TODO: refactor loops
+const interval = setInterval(() => {
+  loopMessage()
+}, 5000)
+
+onUnmounted(() => {
+  clearInterval(interval)
+  timers.forEach(clearTimeout)
+})
 </script>
 
-<style lang="scss" scoped>@import ".././main.scss";
-@media (max-width: 600px) {}
+<style lang="scss" scoped>
+@use '../styles/variables' as *;
 @mixin drop($delay) {
   animation: drop-in 1s ease infinite;
   animation-delay: $delay;

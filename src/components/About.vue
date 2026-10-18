@@ -1,22 +1,19 @@
-<template lang="html">
-<div>
-  <h2>triv·i·a</h2>
-  <p><em>noun</em><br>
-details, considerations, or pieces of information of little importance or value.</p>
-<br>
-<p>I love trivia and I thought that you might too.</p>
-  <h3>Made by <a href="http://christopherianmurphy.com" class="link-dark">Christopher Murphy</a></h3>
-  <p>Powered by the <a href="https://opentdb.com/" class="link-light">Open Trivia Database</a>.</p>
-</div>
+<template>
+  <div>
+    <h2>{{ t('about.heading') }}</h2>
+    <p><em>{{ t('about.partOfSpeech') }}</em><br>
+{{ t('about.definition') }}</p>
+    <br>
+    <p>{{ t('about.love') }}</p>
+    <h3>{{ t('about.madeBy') }} <a href="http://christopherianmurphy.com" class="link-dark">Christopher Murphy</a></h3>
+  </div>
 </template>
 
-<script>
-export default {
-}
+<script setup lang="ts">
+import { t } from '../locales'
 </script>
-
 <style lang="scss" scoped>
-@import ".././main.scss";
+@use '../styles/variables' as *;
 
 div {
   background-color: $color-darkest;
@@ -34,6 +31,7 @@ h3 {
   color: $color-med;
   font-weight: bold;
 }
+
 p:last-child {
   margin-bottom: 2em;
 }

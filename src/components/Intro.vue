@@ -1,19 +1,12 @@
-<template lang="html">
+<template>
   <section>
-    <app-instructions></app-instructions>
-    <app-starter></app-starter>
+    <Instructions />
+    <Starter />
   </section>
 </template>
 
-<script>
-import Instructions from './Instructions.vue';
-import Starter from './Starter.vue';
-export default {
-  components: {
-    'app-instructions': Instructions,
-    'app-starter': Starter,
-  }
-}
+<script setup lang="ts">
+import Instructions from './Instructions.vue'
+import Starter from './Starter.vue'
 </script>
 
-<style lang="scss">@import ".././main.scss";</style>

@@ -1,94 +1,77 @@
-<template lang="html">
+<template>
   <section class="flex-center-col">
     <button
-    @click="selectMode(true)"
-    :class="mode ? 'active' : null"
-    >Single Player</button>
+    @click="store.selectMode(true)"
+    :class="store.solo ? 'active' : null"
+    >{{ t('starter.singlePlayer') }}</button>
     <button
-    @click="selectMode(false)"
-    :class="!mode ? 'active' : null"
-    >Multiplayer</button>
-    <button @click="startGame">Start</button>
+    @click="store.selectMode(false)"
+    :class="!store.solo ? 'active' : null"
+    >{{ t('starter.multiplayer') }}</button>
+    <button @click="startGame">{{ t('starter.start') }}</button>
 
     <!-- Category dropdown selector -->
     <div class="dropdown" @click="dropdownToggle">
       <!-- dropdown label -->
       <div class="dropdown-label">
-        <h2>Choose Category</h2>
+        <h2>{{ t('starter.chooseCategory') }}</h2>
         <!-- toggle expand icons -->
         <transition name="fade" mode="out-in">
           <i class="material-icons expand-more" v-if="toggleExpand" key="expand-more">expand_more</i>
           <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
         </transition>
       </div>
-      <h3>{{ currentCategory.name }}</h3>
+      <h3>{{ store.currentCategory.name }}</h3>
       <ul :class="dropdownClass">
-        <li @click="chooseCategory({ name: 'Random', id: 9 })">Random (default)</li>
-        <li v-for="category in categories" @click="chooseCategory(category)">{{ category.name }}</li>
+        <li @click="chooseCategory({ name: 'Random', id: 9 })">{{ t('starter.random') }}</li>
+        <li v-for="category in store.categories" :key="category.id" @click="chooseCategory(category)">{{ category.name }}</li>
       </ul>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      dropdownClass: {
-        close: false,
-        open: false,
-      },
-      toggleExpand: true, // toggles expand icons
-    }
-  },
-  computed: {
-    aboutShow() {
-      return this.$store.state.aboutShow;
-    },
-    categories() {
-      // Return categories from state
-      return this.$store.state.categories;
-    },
-    currentCategory() {
-      return this.$store.state.currentCategory;
-    },
-    mode() {
-      // Return mode from state. Used to determine selected button style.
-      return this.$store.state.solo;
-    }
-  },
-  methods: {
-    // Send category data to store, set selected category
-    chooseCategory(category) {
-      this.$store.commit('setCurrentCategory', category);
-    },
-    // Toggle animation/display classes for category list
-    dropdownToggle() {
-      this.toggleExpand = !this.toggleExpand;
-      if (this.dropdownClass.open) {
-        this.dropdownClass.open = false;
-        this.dropdownClass.close = true;
-      } else {
-        this.dropdownClass.open = true;
-        this.dropdownClass.close = false;
-      }
-    },
-    // Call selectMode mutation
-    selectMode(mode) {
-      this.$store.commit('selectMode', mode);
-    },
-    startGame() {
-      this.$store.dispatch('startGame');
-      // Close About menu if open
-      if (this.aboutShow) {
-        this.$store.commit('aboutToggle');
-      }
-    },
-  },
+<script setup lang="ts">
+import { reactive, ref } from 'vue'
+import { useGameStore } from '../store/store'
+import { t } from '../locales'
+
+const store = useGameStore()
+
+const dropdownClass = reactive({
+  close: false,
+  open: false,
+})
+const toggleExpand = ref(true) // toggles expand icons
+
+// Send category data to store, set selected category
+function chooseCategory(category: { name: string; id: number }) {
+  store.setCurrentCategory(category)
+}
+
+// Toggle animation/display classes for category list
+function dropdownToggle() {
+  toggleExpand.value = !toggleExpand.value
+  if (dropdownClass.open) {
+    dropdownClass.open = false
+    dropdownClass.close = true
+  } else {
+    dropdownClass.open = true
+    dropdownClass.close = false
+  }
+}
+
+
+function startGame() {
+  store.startGame()
+  // Close About menu if open
+  if (store.aboutShow) {
+    store.aboutToggle()
+  }
 }
 </script>
+<style lang="scss" scoped>
+@use '../styles/variables' as *;
 
-<style lang="scss" scoped>@import ".././main.scss";
 @media (max-width: 600px) {
     section {
         padding: 0 2.5%;

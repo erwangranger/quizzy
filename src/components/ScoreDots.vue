@@ -1,59 +1,48 @@
-<template lang="html">
+<template>
   <div>
     <!-- Single player score card -->
-    <div class="single" v-if="mode">
+    <div class="single" v-if="store.solo">
       <div class="droplet-container">
         <i
         class="droplet"
         v-for="(drop, i) in quantity"
-        :class="scores.playerOne.history[i]"></i>
+        :class="store.scores.playerOne.history[i]"></i>
       </div>
     </div>
     <!-- multiplayer score cards -->
-    <div class="multi" v-if="!mode">
+    <div class="multi" v-if="!store.solo">
       <!-- Player One score -->
       <div class="droplet-container">
         <i
         class="droplet"
         v-for="(drop, i) in quantity"
-        :class="scores.playerOne.history[i]"></i>
+        :key="i"
+        :class="store.scores.playerOne.history[i]"></i>
       </div>
       <!-- Player Two score -->
       <div class="droplet-container">
         <i
         class="droplet"
         v-for="(drop, i) in quantity"
-        :class="scores.playerTwo.history[i]"></i>
+        :key="i"
+        :class="store.scores.playerTwo.history[i]"></i>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    mode() {
-      return this.$store.getters.mode;
-    },
-    // Quantity of dots, dependent on single player or multiplayer
-    quantity() {
-      return this.mode ? 10 : 5;
-    },
-    round() {
-      return this.$store.getters.round;
-    },
-    scores() {
-      return this.$store.state.scores;
-    },
-    turn() {
-      return this.$store.getters.turn;
-    },
-  }
-}
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useGameStore } from '../store/store'
+
+const store = useGameStore()
+
+// Quantity of dots, dependent on single player or multiplayer
+const quantity = computed(() => (store.solo ? 10 : 5))
 </script>
 
 <style lang="scss" scoped>
-@import ".././main.scss";
+@use '../styles/variables' as *;
 
 .droplet-container {
   display: flex;

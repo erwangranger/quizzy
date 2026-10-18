@@ -1,38 +1,28 @@
-<template lang="html">
+<template>
   <section>
     <!-- Display player turn in multiplayer mode -->
-    <div v-if="!mode" class="turnDisplay">
-      <h2 v-if="turn === 'playerOne'">Player One</h2>
-      <h2 v-if="turn === 'playerTwo'">Player Two</h2>
+    <div v-if="!store.solo" class="turnDisplay">
+      <h2 v-if="store.turn === 'playerOne'">{{ t('gameboard.playerOne') }}</h2>
+      <h2 v-if="store.turn === 'playerTwo'">{{ t('gameboard.playerTwo') }}</h2>
     </div>
-    <app-questions></app-questions>
-    <app-score-dots></app-score-dots>
-    <app-star-power></app-star-power>
+    <Questions />
+    <ScoreDots />
+    <StarPower />
   </section>
 </template>
 
-<script>
-import Questions from './Questions.vue';
-import ScoreDots from './ScoreDots.vue';
-import StarPower from './StarPower.vue';
-export default {
-  components: {
-    'app-questions': Questions,
-    'app-score-dots': ScoreDots,
-    'app-star-power': StarPower,
-  },
-  computed: {
-    mode() {
-      return this.$store.getters.mode;
-    },
-    turn() {
-      return this.$store.getters.turn;
-    }
-  }
-}
+<script setup lang="ts">
+import Questions from './Questions.vue'
+import ScoreDots from './ScoreDots.vue'
+import StarPower from './StarPower.vue'
+import { useGameStore } from '../store/store'
+import { t } from '../locales'
+
+const store = useGameStore()
 </script>
 
-<style lang="scss" scoped>@import ".././main.scss";
+<style lang="scss" scoped>
+@use '../styles/variables' as *;
 
 h2 {
     font-weight: bold;

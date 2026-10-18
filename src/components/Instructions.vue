@@ -1,18 +1,14 @@
-<template lang="html">
-<div>
-  <p>Test your trivial knowledge with 10 questions.
-  </br>
-    Play against a friend, or challenge yourself.</p>
-</div>
+<template>
+  <div>
+    <p>{{ t('instructions.body') }}</p>
+  </div>
 </template>
 
-<script>
-export default {}
+<script setup lang="ts">
+import { t } from '../locales'
 </script>
 
 <style lang="scss" scoped>
-@import ".././main.scss";
-
 div {
   margin: 0 0 1em 0;
 }
