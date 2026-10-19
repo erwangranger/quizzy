@@ -39,6 +39,13 @@
           </p>
         </div>
       </div>
+      <!-- Persistent per-player tally: each player's running score, visible
+           while advancing between questions (solo shows one entry) -->
+      <div class="tally">
+        <p v-for="(player, i) in store.players" :key="i">
+          <strong>{{ player.name }}</strong>: {{ t('gameover.points', { points: player.score.total }) }}
+        </p>
+      </div>
       <div class="foot-actions">
         <!-- Skip: no one answers or scores this round (e.g. a seen question) -->
         <button v-if="!store.revealed" class="text-btn" @click="skip">{{ t('questions.skip') }}</button>
@@ -192,6 +199,19 @@ h3 {
         padding: 0.5em 1em;
     }
 }
+.tally {
+    margin: 1em 0 0;
+    padding: 0;
+    min-width: 0;
+    border-radius: 0;
+    background: transparent;
+
+    p {
+        margin: 0.25em 0;
+        font-size: 0.9em;
+    }
+}
+
 
 .mark-active {
     background-color: $color-green;

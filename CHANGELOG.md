@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Per-player score tally
+
+- Each player's running score is now visible at the bottom of the Questions screen while advancing between questions: a `.tally` block in the footer strip (below the reveal panel, above the Skip / Main Menu / Reveal / Next actions) showing one "Name: N pts" entry per player — one entry in solo, one per player in quizmaster and pass-and-play. Entries update when a round is scored (Next) and never move on a skip (`skipRound()` records nothing). Owner request: "keep a tally/score for each player visible at the bottom when going to the next question."
+- UI-only change in `src/components/Questions.vue` (template + scoped styles); reads `store.players[i].score.total` directly, no store changes, reuses the existing `gameover.points` locale key so no dictionary edits. `.tally` resets the component's scoped bare-`div` card rule explicitly (margin/padding/min-width/border-radius/background — the rule matched the new block like it matches `.foot`/`.foot-actions`). Verified: `vue-tsc -b` + build green, vitest 48/48, headless Chromium — tally renders for solo (1 entry) and quizmaster (per-player), updates after Next, static on Skip, no overflow at 320px.
+
 ## Unreleased — About panel rework
 
 - The corner menu now opens a useful panel instead of a dictionary treatment: it shows the app version (injected at build time as `__APP_VERSION__` from `package.json` via a Vite `define`), a "Source on GitHub" link (github.com/erwangranger/quizzy), a "Report an issue" link (issues/new), and a one-line credit to the upstream Winsome Trivia fork. Version, copy and layout, no explanation, no "I love learning".
