@@ -3,8 +3,7 @@
 ## Unreleased — Google Analytics
 
 - Client-side GA4 via the canonical gtag snippet (`src/analytics.ts`, no npm dependency): the async `googletagmanager.com/gtag/js` script plus the `dataLayer` bootstrap, injected on the first game start — never before, so nothing loads until someone actually plays. Measurement ID read at build time from `.env.production` (`VITE_GA_MEASUREMENT_ID=G-RNWDDHKDL5`, committed per owner decision — the ID is a public identifier, not a credential); a build without the ID injects nothing and makes no network requests, so the offline acceptance criteria keep passing.
-- Virtual `page_view` events on screen transitions: one per in-app screen (`app-intro` ↔ `app-game-board` via a `currentView` watcher in `App.vue`, plus `game-over` when the modal opens). No URL change, no history entries, no router — GA4's page reports read these, so the owner can see how far visitors get without the per-tap pageview pollution a real router would cause.
-- Verified: `vue-tsc -b` + vitest 48/48 + build green; headless Chromium — page_view fires for intro→board, game-over, and back-to-menu; no duplicate page_view for the initial load (gtag bootstraps on the first game_start).
+- Virtual `page_view` events on screen transitions: one per in-app screen (`app-intro` ↔ `app-game-board` via a `currentView` watcher in `App.vue`, plus `game-over` when the modal opens). No URL change, no history entries, no router — the event's `page_location` carries a fictional absolute path (`…/app-game-board`), which is what GA4's Pages dimension (`page_path`) reads: a `#fragment` would be stripped and every screen would collapse to one path. Verified: `vue-tsc -b` + vitest 48/48 + build green; headless Chromium — page_view fires for intro→board, game-over, and back-to-menu with absolute path page_location and the browser URL untouched; no duplicate page_view for the initial load (gtag bootstraps on the first game_start).
 
 ## Unreleased — Per-player score tally
 

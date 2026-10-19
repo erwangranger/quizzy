@@ -73,10 +73,15 @@ function gameStart(mode: string, players: number, count: number): void {
 // back to the menu). No URL change, no history entry, no router — GA4 page
 // reports read these so the owner can see how far visitors get. The real
 // page_view fires once per full load; these mark in-app screens.
+// page_location carries a fictional path segment (standard SPA
+// virtual-pageview pattern): GA4's Pages dimension is page_path, and it
+// strips #fragments when deriving it, so a #screen fragment would collapse
+// every screen to one path in the report. The browser URL is untouched —
+// only the event parameter differs.
 function pageView(screen: string): void {
   event('page_view', {
     page_title: screen,
-    page_location: `${window.location.origin}${window.location.pathname}#${screen}`,
+    page_location: `${window.location.origin}${window.location.pathname}${screen}`,
   })
 }
 
