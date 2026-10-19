@@ -11,44 +11,50 @@
         :class="choice.classes">{{ choice.text }}</button>
       </li>
     </ul>
-    <div v-if="store.revealed" class="reveal">
-      <p class="reveal-answer">
-        <strong>{{ t('reveal.correctAnswer', { answer: currentQuestion.correct_answer }) }}</strong>
-      </p>
-      <p class="reveal-explanation-label">{{ t('reveal.explanation') }}</p>
-      <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
-      <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: currentQuestion.as_of }) }}</span>
-      <a v-if="currentQuestion.source_url" :href="currentQuestion.source_url" target="_blank" rel="noopener noreferrer" class="source-link">{{ t('reveal.source') }}</a>
-      <!-- Quizmaster marks who was right -->
-      <div v-if="store.mode === 'quizmaster'" class="marks">
-        <p class="marks-label">{{ t('reveal.whoWasRight') }}</p>
-        <button
-          v-for="(player, i) in store.players"
-          :key="i"
-          :class="store.marks[i] ? 'mark-active' : null"
-          @click="store.toggleMark(i)"
-        >{{ player.name }}</button>
-      </div>
-      <!-- Pass-and-play: show every player's choice -->
-      <div v-else class="choices-taken">
-        <p v-for="(player, i) in store.players" :key="i">
-          <strong>{{ player.name }}</strong>: {{ choiceLabel(i) }}
+    <!-- Everything that is not an answer lives in a footer strip below a
+         hairline, so no action resembles the answer buttons above -->
+    <div class="foot">
+      <div v-if="store.revealed" class="reveal">
+        <p class="reveal-answer">
+          <strong>{{ t('reveal.correctAnswer', { answer: currentQuestion.correct_answer }) }}</strong>
         </p>
+        <p class="reveal-explanation-label">{{ t('reveal.explanation') }}</p>
+        <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
+        <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: currentQuestion.as_of }) }}</span>
+        <a v-if="currentQuestion.source_url" :href="currentQuestion.source_url" target="_blank" rel="noopener noreferrer" class="source-link">{{ t('reveal.source') }}</a>
+        <!-- Quizmaster marks who was right -->
+        <div v-if="store.mode === 'quizmaster'" class="marks">
+          <p class="marks-label">{{ t('reveal.whoWasRight') }}</p>
+          <button
+            v-for="(player, i) in store.players"
+            :key="i"
+            :class="store.marks[i] ? 'mark-active' : null"
+            @click="store.toggleMark(i)"
+          >{{ player.name }}</button>
+        </div>
+        <!-- Pass-and-play: show every player's choice -->
+        <div v-else class="choices-taken">
+          <p v-for="(player, i) in store.players" :key="i">
+            <strong>{{ player.name }}</strong>: {{ choiceLabel(i) }}
+          </p>
+        </div>
+      </div>
+      <div class="foot-actions">
+        <!-- Skip: no one answers or scores this round (e.g. a seen question) -->
+        <button v-if="!store.revealed" class="text-btn" @click="skip">{{ t('questions.skip') }}</button>
+        <!-- Leave the game and return to the Starter screen -->
+        <button class="text-btn" @click="toMenu">{{ t('questions.menu') }}</button>
+        <!-- Quizmaster reveals the answer, then marks players -->
+        <button v-if="store.mode === 'quizmaster' && !store.revealed" class="primary" @click="store.revealAnswer()">
+          {{ t('questions.reveal') }}
+        </button>
+        <!-- Next: scores and advances (quizmaster after marking, pass-and-play
+             and solo after the reveal) -->
+        <button v-if="showNext" class="primary" @click="advance">
+          {{ t('questions.next') }}
+        </button>
       </div>
     </div>
-    <!-- Quizmaster reveals the answer, then marks players -->
-    <button v-if="store.mode === 'quizmaster' && !store.revealed" class="start" @click="store.revealAnswer()">
-      {{ t('questions.reveal') }}
-    </button>
-    <!-- Skip: no one answers or scores this round (e.g. a seen question) -->
-    <button v-if="!store.revealed" @click="skip">{{ t('questions.skip') }}</button>
-    <!-- Next: scores and advances (quizmaster after marking, pass-and-play
-         and solo after the reveal) -->
-    <button v-if="showNext" class="start" @click="advance">
-      {{ t('questions.next') }}
-    </button>
-    <!-- Leave the game and return to the Starter screen -->
-    <button class="menu" @click="toMenu">{{ t('questions.menu') }}</button>
   </div>
 </template>
 
@@ -124,7 +130,7 @@ div {
     background-color: #0277BD;
     border-radius: 25px;
     margin-bottom: 2em;
-    padding: 1em 1em 2.5em;
+    padding: 1em 1em .5em;
     min-width: 320px;
 }
 
@@ -139,15 +145,6 @@ h3 {
     font-size: 0.9em;
     margin: 0 0 1em;
     padding: 0.4em 1em;
-}
-
-.reveal {
-    background-color: $color-alt-dark;
-    border-radius: 12px;
-    color: $color-white;
-    margin: 1em 0 0;
-    padding: 1em;
-    text-align: left;
 }
 
 .reveal-answer {
@@ -214,7 +211,7 @@ h3 {
   div {
     border-radius: 0;
     margin-bottom: 1em;
-    padding: .25em 1em 1.5em;
+    padding: .25em 1em .5em;
     min-width: auto;
   }
 }
@@ -230,39 +227,73 @@ h3 {
     border: 2px solid $color-red;
     color: $color-white;
 }
+// Footer strip: everything that is not an answer sits below a hairline,
+// separated from the answer buttons' visual zone
+.foot {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0;
+    margin: 1.2em 0 0;
+    min-width: 0;
+    padding: 0.8em 1em 0;
+}
 
-// Secondary actions: skip the round, leave for the Starter screen
-.menu,
-.skip {
-    background-color: transparent;
-    border: 2px solid $color-white;
+.reveal {
+    background-color: $color-alt-dark;
     border-radius: 12px;
     color: $color-white;
-    font-size: 1em;
-    margin: 1em 0;
-    padding: 0.5em 1.5em;
+    margin: 0.8em 0;
+    padding: 1em;
+    text-align: left;
 }
 
-.menu:hover,
-.skip:hover {
-    background-color: $color-alt-dark;
-    border-color: $color-alt-dark;
+.foot-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0;
+    min-width: 0;
+    padding: 0 0 0.6em;
 }
 
-.start {
+// Quiet text actions: skip the round, leave for the Starter screen
+.text-btn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: $color-white;
+    opacity: 0.75;
+    font-size: 0.85em;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.4em 0.6em;
+    cursor: pointer;
+    width: auto;
+    max-width: none;
+    min-height: 44px;
+}
+
+.text-btn:hover {
+    opacity: 1;
+}
+
+// Compact primary action: reveal the answer, next question
+.primary {
     background-color: $color-green;
     border: 2px solid $color-green;
+    border-radius: 10px;
     color: $color-darkest;
-    font-size: 1.5em;
+    font-size: 0.95em;
     font-weight: bold;
-    max-width: none;
+    margin: 0 0 0 auto;
+    padding: 0.5em 1.4em;
+    width: auto;
 }
 
 @media (hover:hover) {
-    .start:hover,
-    .start:active {
+    .primary:hover,
+    .primary:active {
         background-color: $color-green;
-        border: 2px solid $color-green;
+        border-color: $color-green;
         color: $color-darkest;
     }
 }

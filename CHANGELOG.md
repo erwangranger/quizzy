@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — Question actions in a footer strip
+
+- The Questions screen separates answers from actions: everything that is not an answer (the reveal panel — correct answer, explanation, Source link, "As of" badge, quizmaster marks or pass-and-play choices — plus the Skip / Main Menu / Reveal / Next actions) now lives in a footer strip below a hairline at the bottom of the question card, so no action resembles the answer buttons above it.
+- Skip and Main Menu are quiet text actions (small, transparent, 75% opacity); Reveal and Next are the compact green primary button, right-aligned in the strip. Previously Skip was pixel-identical to the answer pills (it inherited the global white button style) and Reveal/Next reused the big green launch pill.
+- Component-level change in `src/components/Questions.vue` (template restructure + scoped styles; the `.menu`/`.skip`/`.start` classes in this file were removed). Locale strings and store behavior unchanged; all flows verified in the browser (solo, quizmaster, 320px viewport, zero console errors).
+
 ## Unreleased — French question banks
 
 - All 61 questions translated to French so French speakers can play: new `questions/fr-sample.json` (12, `origin: "human"`, IDs `geo-fr-0001` style) and `questions/fr-recent-news.json` (49, `origin: "claude"`, IDs `news-<date>-<61+>` — same date, fresh sequence, no collision with the en bank's max nn 50). Questions, choices, explanations and joke answers fully translated (jokes keep landing: « Un parking très humide », « Le 32 novembre, forcément un mardi », « Un orignal avec une raquette »); `source_url`, `as_of`, `category`, `difficulty` unchanged; French month name in the news anchor ("En octobre 2026, ...").

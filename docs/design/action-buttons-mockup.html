@@ -1,0 +1,327 @@
+<!doctype html>
+<!-- ARCHIVED design (2026-10-19): not shipped as-is — the owner picked scheme 5 (footer strip
+     inside the card) with an extension: the reveal panel also sits below the hairline, so
+     everything that is not an answer lives in the footer. Ported into src/components/Questions.vue.
+     Mockup only: 5 look-and-feel schemes for the Questions-screen action cluster
+     (Reveal, Skip, Next, Main Menu). No app files were modified by this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Question actions — 5 style mockups</title>
+<style>
+:root{
+  --darkest:#0277BD; --dark:#03A9F4; --med:#4FC3F7;
+  --alt-dark:#5C6BC0; --alt-med:#7986CB;
+  --white:whitesmoke; --green:#5CDB80; --red:#FF5593;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  background:linear-gradient(to top,#4481eb 0%,#04befe 100%);
+  color:var(--white);
+  font-family:'Quicksand','Trebuchet MS',system-ui,sans-serif;
+}
+.wrap{max-width:900px;margin:0 auto;padding:34px 20px 90px}
+h1{font-size:1.55em;margin:0 0 6px}
+.sub{margin:0 0 30px;font-size:.95em;opacity:.85;line-height:1.5}
+
+.card{
+  background:rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:20px 24px 28px;
+  margin-bottom:18px;
+}
+.pt{display:flex;align-items:center;gap:10px}
+.pt b{font-size:1.05em}
+.num{
+  background:var(--green);color:var(--darkest);border-radius:50%;
+  width:26px;height:26px;flex:0 0 26px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:bold;font-size:.85em;
+}
+.num.ref{background:var(--white)}
+.cap{margin:8px 0 20px;font-size:.88em;opacity:.78;line-height:1.45}
+
+/* ---- mini question card + answer pills (baseline, what actions must differ from) ---- */
+.qcard{
+  background:var(--darkest);
+  border-radius:25px;
+  padding:1em 1em 1.5em;
+  margin:0 0 18px;
+}
+.qcard h3{margin:0 0 4px;color:var(--med);font-size:.95em}
+.qcard h2{margin:0 0 1em;font-weight:normal;font-size:1.05em}
+.qcard ul{list-style:none;margin:0;padding:0}
+.qcard button{font:inherit;cursor:pointer}
+.ans{
+  display:block;width:100%;max-width:400px;margin:.5em auto;
+  background:var(--white);border:2px solid var(--white);
+  border-radius:190px;color:var(--darkest);
+  font-size:1.25em;padding:1em;
+}
+
+/* the four actions in their CURRENT look (reference card) */
+.act-now-skip{
+  display:block;width:100%;max-width:400px;margin:.5em auto;
+  background:var(--white);border:2px solid var(--white);
+  border-radius:190px;color:var(--darkest);
+  font-size:1.25em;padding:1em;
+}
+.act-now-menu{
+  display:block;width:100%;max-width:400px;margin:.5em auto;
+  background:transparent;border:2px solid var(--white);
+  border-radius:12px;color:var(--white);
+  font-size:1em;padding:.5em 1.5em;
+}
+.act-now-reveal{
+  display:block;width:100%;margin:.5em auto;
+  background:var(--green);border:2px solid var(--green);
+  border-radius:190px;color:var(--darkest);
+  font-size:1.5em;font-weight:bold;padding:1em;
+}
+
+/* every scheme centers its action area like the app column */
+.actions{display:flex;flex-direction:column;align-items:center}
+
+/* ============ scheme 1: ghost + underline text links ============ */
+/* Skip & Main Menu become quiet ghost pills, half height, muted text.
+   Reveal/Next keep green but shrink to a compact pill. Everything reads
+   "small utility row", nothing competes with the 1.25em answer pills. */
+.s1 .row{display:flex;gap:12px;justify-content:center;width:100%;max-width:400px}
+.s1 .ghost{
+  flex:1;background:transparent;border:1px solid rgba(255,255,255,.45);
+  border-radius:12px;color:var(--white);opacity:.85;
+  font-size:.9em;padding:.6em .5em;
+}
+.s1 .ghost:hover{opacity:1;border-color:var(--white)}
+.s1 .primary{
+  width:100%;max-width:400px;background:var(--green);border:2px solid var(--green);
+  border-radius:12px;color:var(--darkest);
+  font-size:1.05em;font-weight:bold;padding:.7em;
+}
+
+/* ============ scheme 2: text-only underline actions ============ */
+/* Skip and Main Menu drop all chrome: plain underlined links, like the
+   Source link in the reveal panel. Reveal/Next stay the only buttons. */
+.s2 .row{display:flex;gap:28px;justify-content:center;margin-top:2px}
+.s2 .link{
+  background:none;border:0;padding:.2em 0;
+  color:var(--white);opacity:.8;
+  font-size:.95em;text-decoration:underline;text-underline-offset:3px;
+}
+.s2 .link:hover{opacity:1;color:var(--med)}
+.s2 .primary{
+  width:100%;max-width:400px;
+  background:var(--green);border:2px solid var(--green);
+  border-radius:190px;color:var(--darkest);
+  font-size:1.4em;font-weight:bold;padding:.85em;
+}
+
+/* ============ scheme 3: left-aligned compact utility row ============ */
+/* A slim bar under the card: Skip (outline) left, Main Menu right,
+   Reveal/Next as medium pill between. Vertical rhythm separates it
+   from the answers; nothing is full-width. */
+.s3 .bar{
+  display:flex;align-items:center;gap:10px;
+  width:100%;max-width:400px;margin-top:2px;
+}
+.s3 .outline{
+  background:transparent;border:1.5px solid rgba(255,255,255,.5);
+  border-radius:10px;color:var(--white);
+  font-size:.85em;padding:.45em .9em;
+}
+.s3 .outline:hover{border-color:var(--white)}
+.s3 .primary{
+  flex:1;background:var(--green);border:2px solid var(--green);
+  border-radius:10px;color:var(--darkest);
+  font-size:.95em;font-weight:bold;padding:.55em;
+}
+
+/* ============ scheme 4: pill + circular icon buttons ============ */
+/* Reveal/Next: green pill, smaller than answers, centered.
+   Skip: amber outline pill. Main Menu: round home-icon button,
+   visually "chrome", not an answer. */
+.s4 .primary{
+  width:60%;max-width:400px;background:var(--green);border:2px solid var(--green);
+  border-radius:190px;color:var(--darkest);
+  font-size:1.15em;font-weight:bold;padding:.75em;
+}
+.s4 .warn{
+  background:transparent;border:2px solid #FFD166;
+  border-radius:190px;color:#FFD166;
+  font-size:.9em;padding:.55em 1.6em;
+}
+.s4 .warn:hover{background:rgba(255,209,102,.15)}
+.s4 .home{
+  background:transparent;border:2px solid rgba(255,255,255,.5);
+  border-radius:50%;color:var(--white);
+  width:44px;height:44px;font-size:1.1em;line-height:1;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.s4 .home:hover{border-color:var(--white)}
+.s4 .row{display:flex;gap:14px;align-items:center;justify-content:center;margin-top:2px}
+
+/* ============ scheme 5: footer bar pinned to card edge ============ */
+/* Actions leave the card's center column entirely: a footer strip at the
+   bottom of the question card, separated by a hairline. Answers never
+   share a visual zone with actions. */
+.s5 .qcard{padding-bottom:0;overflow:hidden}
+.s5 .foot{
+  display:flex;align-items:center;gap:10px;
+  border-top:1px solid rgba(255,255,255,.25);
+  margin-top:1.2em;padding:.8em 1em;
+}
+.s5 .foot .spacer{flex:1}
+.s5 .foot button{
+  background:transparent;border:0;color:var(--white);opacity:.75;
+  font-size:.85em;padding:.4em .6em;
+}
+.s5 .foot button:hover{opacity:1}
+.s5 .foot .primary{
+  background:var(--green);border:2px solid var(--green);opacity:1;
+  border-radius:10px;color:var(--darkest);
+  font-size:.95em;font-weight:bold;padding:.5em 1.4em;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Question actions — 5 styles</h1>
+  <p class="sub">
+    Static mockup for the four Questions-screen actions (Reveal, Skip, Next, Main Menu) so they stop
+    resembling the answer pills. Each card shows the current answer buttons on top and the scheme's
+    action cluster underneath. Nothing committed, no app files touched. Reply with a number — or a mix.
+  </p>
+
+  <!-- ============ reference ============ -->
+  <section class="card">
+    <div class="pt"><span class="num ref">=</span><b>Current look</b></div>
+    <p class="cap">Skip is pixel-identical to the answer pills (it inherits the global button style), Main Menu is the white-outline pill, Reveal/Next reuse the big green launch pill. This is what the 5 schemes below have to beat.</p>
+    <div class="qcard">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="actions">
+        <button class="act-now-reveal">Reveal</button>
+        <button class="act-now-skip">Skip</button>
+        <button class="act-now-menu">Main Menu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">1</span><b>Ghost utility row + compact primary</b></div>
+    <p class="cap">Skip / Main Menu become half-height ghost pills in one row; Reveal/Next shrink to a compact rounded-rectangle primary. Everything is visibly smaller and quieter than the answers — same palette, different weight.</p>
+    <div class="qcard s1">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="actions">
+        <button class="primary">Reveal</button>
+        <div class="row">
+          <button class="ghost">Skip</button>
+          <button class="ghost">Main Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">2</span><b>Text links + big green primary</b></div>
+    <p class="cap">Skip and Main Menu lose all chrome and become underlined text links (matching the reveal panel's Source link); Reveal/Next stay the only real buttons, a slightly smaller green pill. Maximum contrast: buttons mean "answer/act", links mean "navigate".</p>
+    <div class="qcard s2">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="actions">
+        <button class="primary">Reveal</button>
+        <div class="row">
+          <button class="link">Skip</button>
+          <button class="link">Main Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">3</span><b>Compact utility bar</b></div>
+    <p class="cap">One slim row under the answers: small outline Skip, green compact Reveal/Next filling the middle, small outline Main Menu. Nothing full-width, nothing pill-shaped — reads as a toolbar, not an answer.</p>
+    <div class="qcard s3">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="actions">
+        <div class="bar">
+          <button class="outline">Skip</button>
+          <button class="primary">Reveal</button>
+          <button class="outline">Main Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">4</span><b>Color-coded: green / amber / round home</b></div>
+    <p class="cap">Reveal/Next: green pill at 60% width. Skip: amber outline pill (a deliberate "warning" hue). Main Menu: a round home-icon button. Three different shapes and hues, none matching the white answer pills.</p>
+    <div class="qcard s4">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="actions">
+        <button class="primary">Reveal</button>
+        <div class="row">
+          <button class="warn">Skip</button>
+          <button class="home" aria-label="Main Menu">⌂</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">5</span><b>Footer strip inside the card</b></div>
+    <p class="cap">Actions leave the answer zone entirely: a hairline-separated footer at the bottom of the question card — Skip and Main Menu as quiet text, Reveal/Next as the compact green button on the right. Answers and actions never share a visual zone.</p>
+    <div class="qcard s5">
+      <h3>GEOGRAPHY</h3>
+      <h2>Which river flows through Montreal?</h2>
+      <ul>
+        <li><button class="ans">Saint Lawrence River</button></li>
+        <li><button class="ans">Ottawa River</button></li>
+        <li><button class="ans">A very damp parking lot</button></li>
+      </ul>
+      <div class="foot">
+        <button>Skip</button>
+        <button>Main Menu</button>
+        <span class="spacer"></span>
+        <button class="primary">Reveal</button>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
