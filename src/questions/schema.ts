@@ -46,8 +46,8 @@ export interface ValidationIssue {
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const HTML_ENTITY = /&[a-zA-Z]+;|&#\d+;/
 const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre) 20\d{2}/
-const HUMAN_ID = /^[a-z-]+-\d{4}$/
-const CLAUDE_ID = /^news-\d{8}-\d{2}$/
+const SHORT_ID = /^[a-z-]+-\d{4}$/ // human questions and claude-generated general knowledge
+const NEWS_ID = /^news-\d{8}-\d{2}$/ // claude-generated news-pipeline questions
 
 // Validates one question object against the section-5 field rules.
 // Returns issues found; empty array means valid. Shape-agnostic: accepts
@@ -102,11 +102,11 @@ export function validateQuestion(input: unknown): ValidationIssue[] {
     }
   }
 
-  if (q.origin === 'human' && typeof q.id === 'string' && !HUMAN_ID.test(q.id)) {
+  if (q.origin === 'human' && typeof q.id === 'string' && !SHORT_ID.test(q.id)) {
     fail('id', `human id must match <category-prefix>-<4 digits>, got "${q.id}"`)
   }
-  if (q.origin === 'claude' && typeof q.id === 'string' && !CLAUDE_ID.test(q.id)) {
-    fail('id', `claude id must match news-YYYYMMDD-<nn>, got "${q.id}"`)
+  if (q.origin === 'claude' && typeof q.id === 'string' && !SHORT_ID.test(q.id) && !NEWS_ID.test(q.id)) {
+    fail('id', `claude id must match <category-prefix>-<4 digits> or news-YYYYMMDD-<nn>, got "${q.id}"`)
   }
   if (q.origin !== 'human' && q.origin !== 'claude') fail('origin', `must be "human" or "claude", got ${JSON.stringify(q.origin)}`)
   if (typeof q.reviewed !== 'boolean') fail('reviewed', 'must be a boolean')

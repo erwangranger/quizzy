@@ -6,7 +6,12 @@
     "difficulty": 1,
     "question": "Which river flows through Montreal?",
     "correct_answer": "Saint Lawrence River",
-    "incorrect_answers": ["Ottawa River", "Hudson River", "Richelieu River", "A very damp parking lot"],
+    "incorrect_answers": [
+      "Ottawa River",
+      "Hudson River",
+      "Richelieu River",
+      "A very damp parking lot"
+    ],
     "explanation": "Montreal sits on an island at the confluence of the Saint Lawrence and Ottawa rivers. The Saint Lawrence connects the Great Lakes to the Atlantic, which made the city a major port.",
     "source_url": "https://en.wikipedia.org/wiki/Saint_Lawrence_River",
     "as_of": null,
@@ -20,7 +25,12 @@
     "difficulty": 1,
     "question": "What is the capital of Australia?",
     "correct_answer": "Canberra",
-    "incorrect_answers": ["Sydney", "Melbourne", "Perth", "A lost boomerang"],
+    "incorrect_answers": [
+      "Sydney",
+      "Melbourne",
+      "Perth",
+      "A lost boomerang"
+    ],
     "explanation": "Canberra was purpose-built as the capital in 1913 to end the rivalry between Sydney and Melbourne. It lies between the two cities in the Australian Capital Territory.",
     "source_url": "https://en.wikipedia.org/wiki/Canberra",
     "as_of": null,
@@ -34,7 +44,12 @@
     "difficulty": 1,
     "question": "In which year did the Berlin Wall fall?",
     "correct_answer": "1989",
-    "incorrect_answers": ["1987", "1991", "1993", "November 32nd, definitely a Tuesday"],
+    "incorrect_answers": [
+      "1987",
+      "1991",
+      "1993",
+      "November 32nd, definitely a Tuesday"
+    ],
     "explanation": "The wall was opened on 9 November 1989 as East Germany lifted travel restrictions. German reunification followed less than a year later, in October 1990.",
     "source_url": "https://en.wikipedia.org/wiki/Berlin_Wall",
     "as_of": null,
@@ -48,7 +63,12 @@
     "difficulty": 2,
     "question": "Who was the first woman to win a Nobel Prize?",
     "correct_answer": "Marie Curie",
-    "incorrect_answers": ["Rosalind Franklin", "Ada Lovelace", "Florence Nightingale", "A very enthusiastic pigeon"],
+    "incorrect_answers": [
+      "Rosalind Franklin",
+      "Ada Lovelace",
+      "Florence Nightingale",
+      "A very enthusiastic pigeon"
+    ],
     "explanation": "Marie Curie won the 1903 Nobel Prize in Physics for research on radioactivity. She later won a second Nobel in Chemistry in 1911, remaining the only person with Nobels in two sciences.",
     "source_url": "https://en.wikipedia.org/wiki/Marie_Curie",
     "as_of": null,
@@ -62,7 +82,12 @@
     "difficulty": 1,
     "question": "What gas do plants absorb from the atmosphere for photosynthesis?",
     "correct_answer": "Carbon dioxide",
-    "incorrect_answers": ["Oxygen", "Nitrogen", "Hydrogen", "A really confident hamster"],
+    "incorrect_answers": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "A really confident hamster"
+    ],
     "explanation": "Plants take in carbon dioxide through stomata in their leaves and use sunlight to turn it into sugars. Oxygen is released as a by-product of the process.",
     "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
     "as_of": null,
@@ -76,7 +101,12 @@
     "difficulty": 2,
     "question": "How many bones are in the adult human body?",
     "correct_answer": "206",
-    "incorrect_answers": ["186", "230", "254", "Two bones and a spare femur in the glovebox"],
+    "incorrect_answers": [
+      "186",
+      "230",
+      "254",
+      "Two bones and a spare femur in the glovebox"
+    ],
     "explanation": "Adults have 206 bones, but babies start with about 270. Many bones fuse together during growth, which reduces the count by adulthood.",
     "source_url": "https://en.wikipedia.org/wiki/Human_skeleton",
     "as_of": null,
@@ -90,7 +120,12 @@
     "difficulty": 1,
     "question": "Who painted the Mona Lisa?",
     "correct_answer": "Leonardo da Vinci",
-    "incorrect_answers": ["Michelangelo", "Raphael", "Donatello", "A very talented turtle"],
+    "incorrect_answers": [
+      "Michelangelo",
+      "Raphael",
+      "Donatello",
+      "A very talented turtle"
+    ],
     "explanation": "Leonardo da Vinci painted the portrait around 1503 to 1506 and kept refining it for years. It now hangs in the Louvre in Paris, behind protective glass.",
     "source_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
     "as_of": null,
@@ -104,7 +139,12 @@
     "difficulty": 2,
     "question": "Who wrote the play \"Romeo and Juliet\"?",
     "correct_answer": "William Shakespeare",
-    "incorrect_answers": ["Christopher Marlowe", "Ben Jonson", "Geoffrey Chaucer", "The other Shakespeare"],
+    "incorrect_answers": [
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "Geoffrey Chaucer",
+      "The other Shakespeare"
+    ],
     "explanation": "Shakespeare wrote the tragedy in the early 1590s, adapting an Italian tale. Its balcony scene remains one of the most quoted passages in English literature.",
     "source_url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet",
     "as_of": null,
@@ -118,7 +158,12 @@
     "difficulty": 1,
     "question": "Which studio produced the animated film \"Toy Story\"?",
     "correct_answer": "Pixar",
-    "incorrect_answers": ["DreamWorks", "Studio Ghibli", "Illumination", "A very ambitious goldfish"],
+    "incorrect_answers": [
+      "DreamWorks",
+      "Studio Ghibli",
+      "Illumination",
+      "A very ambitious goldfish"
+    ],
     "explanation": "Pixar released Toy Story in 1995 as the first fully computer-animated feature film. Disney distributed it, and the partnership later grew into Disney's purchase of Pixar in 2006.",
     "source_url": "https://en.wikipedia.org/wiki/Toy_Story",
     "as_of": null,
@@ -132,7 +177,12 @@
     "difficulty": 2,
     "question": "Which band released the album \"Abbey Road\"?",
     "correct_answer": "The Beatles",
-    "incorrect_answers": ["The Rolling Stones", "The Who", "Pink Floyd", "Four very lost tourists"],
+    "incorrect_answers": [
+      "The Rolling Stones",
+      "The Who",
+      "Pink Floyd",
+      "Four very lost tourists"
+    ],
     "explanation": "The Beatles released Abbey Road in 1969, named after the London street where their recording studio sits. Its crosswalk photo became one of music's most famous covers.",
     "source_url": "https://en.wikipedia.org/wiki/Abbey_Road",
     "as_of": null,
@@ -146,7 +196,12 @@
     "difficulty": 1,
     "question": "How many players are on the field per team in a soccer match?",
     "correct_answer": "11",
-    "incorrect_answers": ["9", "10", "12", "Half a team on lunch break"],
+    "incorrect_answers": [
+      "9",
+      "10",
+      "12",
+      "Half a team on lunch break"
+    ],
     "explanation": "Each soccer team fields 11 players, one of whom is the goalkeeper. The same structure is used from local leagues to the World Cup final.",
     "source_url": "https://en.wikipedia.org/wiki/Association_football",
     "as_of": null,
@@ -160,11 +215,1916 @@
     "difficulty": 2,
     "question": "In chess, which piece can only move diagonally?",
     "correct_answer": "Bishop",
-    "incorrect_answers": ["Rook", "Knight", "Queen", "The pawn on roller skates"],
+    "incorrect_answers": [
+      "Rook",
+      "Knight",
+      "Queen",
+      "The pawn on roller skates"
+    ],
     "explanation": "Bishops move any number of squares diagonally and are confined to the color of their starting square. Each player starts with one light-squared and one dark-squared bishop.",
     "source_url": "https://en.wikipedia.org/wiki/Bishop_(chess)",
     "as_of": null,
     "origin": "human",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0003",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who painted ‘The Starry Night’?",
+    "correct_answer": "Vincent van Gogh",
+    "incorrect_answers": [
+      "Claude Monet",
+      "Paul Cézanne",
+      "Edvard Munch",
+      "Nine insomniacs with ladders"
+    ],
+    "explanation": "Vincent van Gogh painted it in June 1889 from his room at the Saint-Rémy-de-Provence asylum; it now hangs in the Museum of Modern Art in New York.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Starry_Night",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0004",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who painted ‘The Last Supper’?",
+    "correct_answer": "Leonardo da Vinci",
+    "incorrect_answers": [
+      "Michelangelo",
+      "Raphael",
+      "Sandro Botticelli",
+      "The caterer"
+    ],
+    "explanation": "Leonardo da Vinci painted this mural in the refectory of Santa Maria delle Grazie in Milan in the late 1490s, and its fragile surface has been restored many times since.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0005",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Renaissance sculptor created the marble statue of David that stands in Florence?",
+    "correct_answer": "Michelangelo",
+    "incorrect_answers": [
+      "Auguste Rodin",
+      "Lorenzo Ghiberti",
+      "Antonio Canova",
+      "The marble, obviously"
+    ],
+    "explanation": "Michelangelo carved the 5-metre giant from a single block of Carrara marble between 1501 and 1504; it now stands in Florence’s Accademia Gallery.",
+    "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0006",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which French sculptor created ‘The Thinker’?",
+    "correct_answer": "Auguste Rodin",
+    "incorrect_answers": [
+      "Camille Claudel",
+      "Aristide Maillol",
+      "Constantin Brâncuși",
+      "The first man to overthink"
+    ],
+    "explanation": "Rodin conceived the seated figure around 1880 for his monumental ‘The Gates of Hell’; enlarged bronze copies now sit in Paris and Cleveland.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Thinker",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0007",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Who wrote the novel ‘Moby-Dick’?",
+    "correct_answer": "Herman Melville",
+    "incorrect_answers": [
+      "Jack London",
+      "Robert Louis Stevenson",
+      "Joseph Conrad",
+      "The whale’s ghostwriter"
+    ],
+    "explanation": "Herman Melville published it in 1851, drawing on real whaling voyages and a legendary white whale nicknamed Mocha Dick; the book flopped at first and became a classic only decades later.",
+    "source_url": "https://en.wikipedia.org/wiki/Moby-Dick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0008",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who wrote the novel ‘Pride and Prejudice’?",
+    "correct_answer": "Jane Austen",
+    "incorrect_answers": [
+      "Charlotte Brontë",
+      "Elizabeth Gaskell",
+      "Mary Shelley",
+      "Mr. Darcy’s florist"
+    ],
+    "explanation": "Jane Austen published it in 1813; the sparkling courtship between Elizabeth Bennet and Mr Darcy has stayed in print for over two centuries and keeps returning to the screen.",
+    "source_url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0009",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "In which Shakespeare play does a prince muse ‘To be, or not to be’?",
+    "correct_answer": "Hamlet",
+    "incorrect_answers": [
+      "Macbeth",
+      "King Lear",
+      "Othello",
+      "The Danish pastry"
+    ],
+    "explanation": "Written around 1600, ‘Hamlet’ follows the Prince of Denmark as he hesitates between revenge on his uncle Claudius and despair; the famous soliloquy opens Act 3, Scene 1.",
+    "source_url": "https://en.wikipedia.org/wiki/To_be,_or_not_to_be",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0010",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which 17th-century French playwright wrote ‘Tartuffe’ and ‘The Misanthrope’?",
+    "correct_answer": "Molière",
+    "incorrect_answers": [
+      "Jean Racine",
+      "Pierre Corneille",
+      "Victor Hugo",
+      "The king’s barber"
+    ],
+    "explanation": "Molière (1622–1673), actor and favourite of Louis XIV, turned hypocrisy and vanity into enduring farce; ‘Tartuffe’ was banned for five years after churchmen took offense.",
+    "source_url": "https://en.wikipedia.org/wiki/Moliere",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0011",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which art movement takes its name from Claude Monet’s painting ‘Impression, Sunrise’?",
+    "correct_answer": "Impressionism",
+    "incorrect_answers": [
+      "Cubism",
+      "Surrealism",
+      "Baroque",
+      "Very fast painting"
+    ],
+    "explanation": "A critic coined the name mockingly in 1874, but it stuck to Monet, Renoir and Degas, who painted fleeting light outdoors with loose, visible brushstrokes.",
+    "source_url": "https://en.wikipedia.org/wiki/Impressionism",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0012",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which early 20th-century movement, pioneered by Pablo Picasso and Georges Braque, breaks subjects into geometric fragments?",
+    "correct_answer": "Cubism",
+    "incorrect_answers": [
+      "Fauvism",
+      "Futurism",
+      "Art Nouveau",
+      "Origami with paint"
+    ],
+    "explanation": "Working side by side from 1908, Picasso and Braque sliced faces, guitars and bottles into overlapping planes, shattering five centuries of single-point perspective.",
+    "source_url": "https://en.wikipedia.org/wiki/Cubism",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0013",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "How many symphonies did Ludwig van Beethoven complete?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "5",
+      "7",
+      "12",
+      "A baker’s dozen"
+    ],
+    "explanation": "Between 1799 and 1824 Beethoven wrote nine symphonies, from the ‘Eroica’ to the ‘Choral’ with its ‘Ode to Joy’; by the Ninth’s 1824 premiere he was completely deaf.",
+    "source_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0014",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Baroque composer wrote ‘The Four Seasons’?",
+    "correct_answer": "Antonio Vivaldi",
+    "incorrect_answers": [
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Antonio Salieri",
+      "The weatherman’s quartet"
+    ],
+    "explanation": "Published in 1725, Vivaldi’s four violin concertos each come with a sonnet describing spring, summer, autumn and winter, an early landmark of program music.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0015",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "In ‘Don Quixote’, what does the delusional knight famously mistake for giants and charge at with his lance?",
+    "correct_answer": "Windmills",
+    "incorrect_answers": [
+      "Cathedrals",
+      "Castle towers",
+      "Stone bridges",
+      "The neighbour’s laundry"
+    ],
+    "explanation": "In Cervantes’ 1605 novel, the would-be knight-errant jousts with windmills he believes are giants, giving the world the phrase ‘tilting at windmills’ for fighting imaginary enemies.",
+    "source_url": "https://en.wikipedia.org/wiki/Don_Quixote",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0016",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who created the detective Sherlock Holmes?",
+    "correct_answer": "Arthur Conan Doyle",
+    "incorrect_answers": [
+      "Agatha Christie",
+      "Edgar Allan Poe",
+      "Charles Dickens",
+      "Dr. Watson’s typist"
+    ],
+    "explanation": "Conan Doyle introduced Holmes in the 1887 novel ‘A Study in Scarlet’; the pipe, the deerstalker and 221B Baker Street made him fiction’s most portrayed detective.",
+    "source_url": "https://en.wikipedia.org/wiki/A_Study_in_Scarlet",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0017",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Who wrote the 1857 realist novel ‘Madame Bovary’?",
+    "correct_answer": "Gustave Flaubert",
+    "incorrect_answers": [
+      "Émile Zola",
+      "Guy de Maupassant",
+      "Honoré de Balzac",
+      "Emma’s personal shopper"
+    ],
+    "explanation": "Flaubert spent nearly five years hunting ‘le mot juste’ to render Emma Bovary’s adulterous daydreams; prosecuted for obscenity in 1857, he was acquitted and French realism had its landmark.",
+    "source_url": "https://en.wikipedia.org/wiki/Madame_Bovary",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0018",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which medieval Italian poet wrote ‘The Divine Comedy’, in which Virgil guides him through Hell?",
+    "correct_answer": "Dante Alighieri",
+    "incorrect_answers": [
+      "Petrarch",
+      "Giovanni Boccaccio",
+      "Torquato Tasso",
+      "Hell’s Yelp reviewer"
+    ],
+    "explanation": "Dante completed the three-part poem around 1320; guided by Virgil through the nine circles of the Inferno, he fixed the modern Western image of Hell, Purgatory and Paradise.",
+    "source_url": "https://en.wikipedia.org/wiki/Inferno_(Dante)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0003",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Who directed the 1994 prison drama The Shawshank Redemption?",
+    "correct_answer": "Frank Darabont",
+    "incorrect_answers": [
+      "Rob Reiner",
+      "Ron Howard",
+      "Frank Capra",
+      "The warden, obviously"
+    ],
+    "explanation": "Frank Darabont adapted Stephen King's novella; the film underperformed in theatres, earned 7 Oscar nominations, and found its huge audience later on home video.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0004",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who directed the 1972 crime classic The Godfather?",
+    "correct_answer": "Francis Ford Coppola",
+    "incorrect_answers": [
+      "Martin Scorsese",
+      "Sergio Leone",
+      "Brian De Palma",
+      "The Don himself"
+    ],
+    "explanation": "Francis Ford Coppola adapted Mario Puzo's novel into the 1972 classic, which won Best Picture and revived Marlon Brando's career.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Godfather",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0005",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In which 1993 film do cloned dinosaurs run wild in a theme park?",
+    "correct_answer": "Jurassic Park",
+    "incorrect_answers": [
+      "The Lost World",
+      "King Kong",
+      "Godzilla",
+      "Dino Petting Farm"
+    ],
+    "explanation": "Steven Spielberg's adaptation of Michael Crichton's novel used groundbreaking CGI and became the highest-grossing film in history at its release.",
+    "source_url": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0006",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In which year was the film Titanic released?",
+    "correct_answer": "1997",
+    "incorrect_answers": [
+      "1995",
+      "1999",
+      "2001",
+      "1912, obviously"
+    ],
+    "explanation": "James Cameron's romantic epic with Leonardo DiCaprio and Kate Winslet tied the record for most Oscars with 11 and held the box-office crown until his own Avatar in 2009.",
+    "source_url": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0007",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In the sitcom Friends, what is the name of the coffee shop where the gang hangs out?",
+    "correct_answer": "Central Perk",
+    "incorrect_answers": [
+      "Monks Café",
+      "Java Junction",
+      "Brewed Awakening",
+      "Starbucks, but unpaid"
+    ],
+    "explanation": "Central Perk, with its signature orange couch, anchored all 10 seasons of Friends from 1994 to 2004.",
+    "source_url": "https://en.wikipedia.org/wiki/Central_Perk",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0008",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which animated franchise follows the adventures of a panda who dreams of kung fu?",
+    "correct_answer": "Kung Fu Panda",
+    "incorrect_answers": [
+      "Madagascar",
+      "Ice Age",
+      "Despicable Me",
+      "Fur Fighters"
+    ],
+    "explanation": "DreamWorks launched Kung Fu Panda in 2008 with Jack Black voicing Po, and the franchise has grown to 4 films and several series.",
+    "source_url": "https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film_series)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0009",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which British singer sang the theme song Skyfall for the 2012 James Bond film?",
+    "correct_answer": "Adele",
+    "incorrect_answers": [
+      "Sam Smith",
+      "Amy Winehouse",
+      "Duffy",
+      "The villain's choir"
+    ],
+    "explanation": "Adele co-wrote Skyfall with producer Paul Epworth and won the Academy Award for Best Original Song in 2013.",
+    "source_url": "https://en.wikipedia.org/wiki/Skyfall_(song)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0010",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which HBO fantasy series based on George R. R. Martin's novels ran from 2011 to 2019?",
+    "correct_answer": "Game of Thrones",
+    "incorrect_answers": [
+      "The Witcher",
+      "Vikings",
+      "The Last Kingdom",
+      "The one with the dragons and no plot"
+    ],
+    "explanation": "Game of Thrones ran 8 seasons on HBO and became a global phenomenon, winning a record 59 Emmy Awards overall.",
+    "source_url": "https://en.wikipedia.org/wiki/Game_of_Thrones",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0011",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 2019 South Korean film became the first non-English-language winner of the Best Picture Oscar?",
+    "correct_answer": "Parasite",
+    "incorrect_answers": [
+      "Oldboy",
+      "Burning",
+      "Train to Busan",
+      "The one with subtitles only at the Oscars"
+    ],
+    "explanation": "Bong Joon-ho's Parasite won 4 Academy Awards in 2020, including Best Picture, Director and Original Screenplay.",
+    "source_url": "https://en.wikipedia.org/wiki/Parasite_(2019_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0012",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who is the wizard boy with a lightning-shaped scar in the film adaptations of J. K. Rowling's novels?",
+    "correct_answer": "Harry Potter",
+    "incorrect_answers": [
+      "Ron Weasley",
+      "Neville Longbottom",
+      "Draco Malfoy",
+      "The scar kid from next door"
+    ],
+    "explanation": "Daniel Radcliffe played Harry Potter in 8 films released between 2001 and 2011, adapted from the 7 novels.",
+    "source_url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0013",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 1994 film pairs a slow-witted but kind-hearted man with a box of chocolates line?",
+    "correct_answer": "Forrest Gump",
+    "incorrect_answers": [
+      "Big",
+      "Cast Away",
+      "Rain Man",
+      "Chocolates: nature's life coach"
+    ],
+    "explanation": "Robert Zemeckis's Forrest Gump won 6 Oscars in 1995, including Best Picture and a Best Actor win for Tom Hanks.",
+    "source_url": "https://en.wikipedia.org/wiki/Forrest_Gump",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0014",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which band recorded the 1973 albums The Dark Side of the Moon and Wish You Were Here?",
+    "correct_answer": "Pink Floyd",
+    "incorrect_answers": [
+      "Led Zeppelin",
+      "The Who",
+      "Genesis",
+      "The other Pink"
+    ],
+    "explanation": "Pink Floyd's The Dark Side of the Moon spent over 900 weeks on the Billboard 200 and remains one of the best-selling albums ever.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0015",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In the Toy Story franchise, what is the name of the cowboy doll?",
+    "correct_answer": "Woody",
+    "incorrect_answers": [
+      "Buzz",
+      "Rex",
+      "Jessie",
+      "Forky's long-lost cousin"
+    ],
+    "explanation": "Woody, voiced by Tom Hanks, leads the toys in all 4 Toy Story films, with Buzz Lightyear as his rival-turned-best-friend.",
+    "source_url": "https://en.wikipedia.org/wiki/Woody_(Toy_Story)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0016",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which studio produced the 2001 animated classic Spirited Away?",
+    "correct_answer": "Studio Ghibli",
+    "incorrect_answers": [
+      "Pixar",
+      "Madhouse",
+      "Toei Animation",
+      "A bakery with strong opinions"
+    ],
+    "explanation": "Hayao Miyazaki's Spirited Away won the Oscar for Best Animated Feature in 2003 and held Japan's domestic box-office record from 2001 until Demon Slayer: Mugen Train overtook it in 2020.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_films_in_Japan",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0003",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Japan?",
+    "correct_answer": "Tokyo",
+    "incorrect_answers": [
+      "Osaka",
+      "Kyoto",
+      "Seoul",
+      "Honda City"
+    ],
+    "explanation": "Tokyo has been Japan’s capital since 1868, when the emperor moved from Kyoto. With about 37 million people, its metro area is the most populous in the world.",
+    "source_url": "https://en.wikipedia.org/wiki/Capital_of_Japan",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0004",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river is the longest in Africa?",
+    "correct_answer": "The Nile",
+    "incorrect_answers": [
+      "The Congo",
+      "The Niger",
+      "The Zambezi",
+      "The Sahara’s garden hose"
+    ],
+    "explanation": "The Nile runs roughly 6,650 km from central Africa to the Mediterranean — the traditional figure, though recent measurements put it nearer 7,000 km — flowing through 11 countries including Egypt and Sudan.",
+    "source_url": "https://en.wikipedia.org/wiki/Nile",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0005",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which ocean is the largest?",
+    "correct_answer": "The Pacific Ocean",
+    "incorrect_answers": [
+      "The Atlantic Ocean",
+      "The Indian Ocean",
+      "The Arctic Ocean",
+      "The Big Puddle"
+    ],
+    "explanation": "The Pacific covers about 165 million square km, more than all of Earth’s land combined, and touches both Asia and the Americas.",
+    "source_url": "https://en.wikipedia.org/wiki/Pacific_Ocean",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0006",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which mountain is the highest above sea level?",
+    "correct_answer": "Mount Everest",
+    "incorrect_answers": [
+      "K2",
+      "Kilimanjaro",
+      "Denali",
+      "Mount Laundry"
+    ],
+    "explanation": "Mount Everest rises 8,849 m on the Nepal–China border. K2 is second at 8,611 m, but no summit on Earth is higher.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Everest",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0007",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which desert is the largest hot desert in the world?",
+    "correct_answer": "The Sahara",
+    "incorrect_answers": [
+      "The Gobi",
+      "The Kalahari",
+      "The Mojave",
+      "The World’s Biggest Beach"
+    ],
+    "explanation": "The Sahara spans about 9.2 million square km across North Africa, nearly the size of the United States. Antarctica is bigger overall, but it is a cold desert.",
+    "source_url": "https://en.wikipedia.org/wiki/Sahara",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0008",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the imaginary line at 0 degrees latitude called?",
+    "correct_answer": "The Equator",
+    "incorrect_answers": [
+      "The Prime Meridian",
+      "The Tropic of Cancer",
+      "The International Date Line",
+      "The Belly Button of the Earth"
+    ],
+    "explanation": "The Equator circles Earth exactly halfway between the poles, and places on it see almost equal day and night all year round.",
+    "source_url": "https://en.wikipedia.org/wiki/Equator",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0009",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which canal connects the Mediterranean Sea and the Red Sea?",
+    "correct_answer": "The Suez Canal",
+    "incorrect_answers": [
+      "The Panama Canal",
+      "The Erie Canal",
+      "The Corinth Canal",
+      "The Shortcut to Nowhere"
+    ],
+    "explanation": "Opened in 1869, the Suez Canal runs about 193 km through Egypt and carries roughly 12% of all seaborne trade.",
+    "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0010",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which continent is the coldest?",
+    "correct_answer": "Antarctica",
+    "incorrect_answers": [
+      "Europe",
+      "Asia",
+      "North America",
+      "The Land of Leftovers"
+    ],
+    "explanation": "Antarctica logged the lowest temperature ever measured on Earth: minus 89.2 °C at Vostok Station in 1983.",
+    "source_url": "https://en.wikipedia.org/wiki/Vostok_Station",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0011",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river flows through Paris?",
+    "correct_answer": "The Seine",
+    "incorrect_answers": [
+      "The Rhône",
+      "The Loire",
+      "The Danube",
+      "The Baguette River"
+    ],
+    "explanation": "The Seine runs 777 km through northern France and reaches the English Channel at Le Havre. Most of Paris’s famous landmarks line its banks.",
+    "source_url": "https://en.wikipedia.org/wiki/Seine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0012",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Canada?",
+    "correct_answer": "Ottawa",
+    "incorrect_answers": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Igloo City"
+    ],
+    "explanation": "Ottawa was chosen in 1857 as a compromise between English- and French-speaking Canada. Toronto is the largest city, not the capital.",
+    "source_url": "https://en.wikipedia.org/wiki/National_Capital_Region_(Canada)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0013",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "What is the capital of Brazil?",
+    "correct_answer": "Brasília",
+    "incorrect_answers": [
+      "Rio de Janeiro",
+      "São Paulo",
+      "Salvador",
+      "Carnival City"
+    ],
+    "explanation": "Brasília was purpose-built in the late 1950s to move the capital inland and was inaugurated in 1960, replacing Rio de Janeiro.",
+    "source_url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0014",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the smallest country in the world by area?",
+    "correct_answer": "Vatican City",
+    "incorrect_answers": [
+      "Monaco",
+      "Nauru",
+      "San Marino",
+      "My Backyard"
+    ],
+    "explanation": "Vatican City covers about 0.44 square km inside Rome — smaller than many city parks — and has fewer than 1,000 residents.",
+    "source_url": "https://en.wikipedia.org/wiki/Vatican_City",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0015",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which lake is the largest in the world by surface area?",
+    "correct_answer": "The Caspian Sea",
+    "incorrect_answers": [
+      "The Black Sea",
+      "The Baltic Sea",
+      "The Red Sea",
+      "The Big Bathtub"
+    ],
+    "explanation": "The Caspian Sea between Europe and Asia covers about 371,000 square km. Despite the name, it is a salty inland lake, not connected to any ocean.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_lakes_by_area",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0016",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "What is the deepest known point in the ocean?",
+    "correct_answer": "The Mariana Trench",
+    "incorrect_answers": [
+      "The Puerto Rico Trench",
+      "The Java Trench",
+      "The Tonga Trench",
+      "The Deep End"
+    ],
+    "explanation": "The Mariana Trench in the western Pacific bottoms out near 11,000 m below sea level — deeper than Mount Everest is tall.",
+    "source_url": "https://en.wikipedia.org/wiki/Mariana_Trench",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0017",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the largest island in the world?",
+    "correct_answer": "Greenland",
+    "incorrect_answers": [
+      "New Guinea",
+      "Borneo",
+      "Madagascar",
+      "The Floating Rock"
+    ],
+    "explanation": "Greenland covers about 2.17 million square km, mostly under an ice sheet. Australia is larger but counts as a continent, not an island.",
+    "source_url": "https://en.wikipedia.org/wiki/Greenland",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0018",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which famous waterfall lies on the border between Zambia and Zimbabwe?",
+    "correct_answer": "Victoria Falls",
+    "incorrect_answers": [
+      "Niagara Falls",
+      "Iguazu Falls",
+      "Angel Falls",
+      "Faucet of the Gods"
+    ],
+    "explanation": "Victoria Falls stretches about 1.7 km across the Zambezi River. Locals call it Mosi-oa-Tunya, meaning the smoke that thunders.",
+    "source_url": "https://en.wikipedia.org/wiki/Victoria_Falls",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0019",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which mountain range is traditionally considered the boundary between Europe and Asia?",
+    "correct_answer": "The Ural Mountains",
+    "incorrect_answers": [
+      "The Alps",
+      "The Andes",
+      "The Carpathians",
+      "The Border Fence"
+    ],
+    "explanation": "The Ural Mountains run about 2,500 km from the Arctic Ocean toward Kazakhstan and have marked the Europe-Asia boundary on maps since the 1700s.",
+    "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0020",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which country spans the most time zones?",
+    "correct_answer": "France",
+    "incorrect_answers": [
+      "Russia",
+      "China",
+      "Australia",
+      "The Jet Lag Kingdom"
+    ],
+    "explanation": "With its overseas territories, France spans 12 time zones, from UTC-10 in French Polynesia to UTC+12 in Wallis and Futuna — more than Russia or the United States.",
+    "source_url": "https://en.wikipedia.org/wiki/Time_in_France",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0021",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which country has the longest coastline in the world?",
+    "correct_answer": "Canada",
+    "incorrect_answers": [
+      "Russia",
+      "Indonesia",
+      "Australia",
+      "The Kingdom of Sandcastles"
+    ],
+    "explanation": "Canada’s mainland and Arctic islands give it about 202,000 km of coastline, far ahead of second-place Norway at roughly 83,000 km.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_length_of_coastline",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0022",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which country is completely surrounded by South Africa?",
+    "correct_answer": "Lesotho",
+    "incorrect_answers": [
+      "Eswatini",
+      "Botswana",
+      "Zimbabwe",
+      "The Donut Hole"
+    ],
+    "explanation": "Lesotho is one of only three countries fully surrounded by a single other country, with San Marino and Vatican City inside Italy. Its lowest point is about 1,400 m above sea level.",
+    "source_url": "https://en.wikipedia.org/wiki/Lesotho",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0003",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did humans first walk on the Moon?",
+    "correct_answer": "1969",
+    "incorrect_answers": [
+      "1961",
+      "1972",
+      "1975",
+      "As soon as the cheese was ready"
+    ],
+    "explanation": "Apollo 11 landed on the Moon on 20 July 1969, and Neil Armstrong became the first person to step onto the lunar surface. About 600 million people watched the broadcast live.",
+    "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0004",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did the Titanic sink on her maiden voyage?",
+    "correct_answer": "1912",
+    "incorrect_answers": [
+      "1905",
+      "1918",
+      "1923",
+      "The iceberg declined to comment"
+    ],
+    "explanation": "The Titanic struck an iceberg on 14 April 1912 and sank early the next day in the North Atlantic. More than 1,500 of the roughly 2,200 people aboard died.",
+    "source_url": "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0005",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first President of the United States?",
+    "correct_answer": "George Washington",
+    "incorrect_answers": [
+      "Thomas Jefferson",
+      "John Adams",
+      "Benjamin Franklin",
+      "His horse, Nelson"
+    ],
+    "explanation": "Washington took office in 1789 and served two terms as the first president under the US Constitution. John Adams was his vice president and succeeded him in 1797.",
+    "source_url": "https://en.wikipedia.org/wiki/Presidency_of_George_Washington",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0006",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which country did the Industrial Revolution begin?",
+    "correct_answer": "Great Britain",
+    "incorrect_answers": [
+      "France",
+      "The United States",
+      "Germany",
+      "The Kingdom of Narnia"
+    ],
+    "explanation": "Britain industrialised first from the late 18th century, thanks to coal, steam power, canals and its colonial trade network. Textile mills and ironworks transformed the economy within a generation.",
+    "source_url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0007",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year was Napoleon finally defeated at the Battle of Waterloo?",
+    "correct_answer": "1815",
+    "incorrect_answers": [
+      "1799",
+      "1805",
+      "1830",
+      "Shortly after elevenses"
+    ],
+    "explanation": "Napoleon was crushed by Wellington's allied army and Blücher's Prussians on 18 June 1815 in present-day Belgium. He abdicated days later and was exiled to Saint Helena.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0008",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year was the Bastille stormed, marking the start of the French Revolution?",
+    "correct_answer": "1789",
+    "incorrect_answers": [
+      "1776",
+      "1799",
+      "1804",
+      "During a very loud block party"
+    ],
+    "explanation": "Parisians stormed the fortress prison on 14 July 1789, a date still celebrated as France's national day. The Revolution abolished feudal privileges and led to the First Republic in 1792.",
+    "source_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0009",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first human to travel into space?",
+    "correct_answer": "Yuri Gagarin",
+    "incorrect_answers": [
+      "Neil Armstrong",
+      "Alan Shepard",
+      "Buzz Aldrin",
+      "A pigeon in a spacesuit"
+    ],
+    "explanation": "Soviet cosmonaut Yuri Gagarin orbited Earth aboard Vostok 1 on 12 April 1961, a flight lasting 108 minutes. Alan Shepard followed weeks later on a suborbital hop.",
+    "source_url": "https://en.wikipedia.org/wiki/Yuri_Gagarin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0010",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did Christopher Columbus first reach the Americas?",
+    "correct_answer": "1492",
+    "incorrect_answers": [
+      "1476",
+      "1498",
+      "1519",
+      "Somewhere between lunch and dinner"
+    ],
+    "explanation": "Sailing for Spain, Columbus crossed the Atlantic with three ships and made landfall in the Bahamas on 12 October 1492. He never accepted that he had found continents unknown to Europeans.",
+    "source_url": "https://en.wikipedia.org/wiki/Christopher_Columbus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0011",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which country did the Renaissance begin?",
+    "correct_answer": "Italy",
+    "incorrect_answers": [
+      "France",
+      "England",
+      "Spain",
+      "Atlantis, for a while"
+    ],
+    "explanation": "The Renaissance took hold in the wealthy Italian city-states, especially Florence, from the 14th century. Banking wealth funded artists such as Leonardo da Vinci and Michelangelo.",
+    "source_url": "https://en.wikipedia.org/wiki/Italian_Renaissance",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0012",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did Germany invade Poland, starting the Second World War in Europe?",
+    "correct_answer": "1939",
+    "incorrect_answers": [
+      "1936",
+      "1941",
+      "1944",
+      "During Oktoberfest, unfortunately"
+    ],
+    "explanation": "German forces crossed into Poland on 1 September 1939; Britain and France declared war two days later. The war in Europe ended in May 1945.",
+    "source_url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0013",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In which year was the Magna Carta sealed by King John of England?",
+    "correct_answer": "1215",
+    "incorrect_answers": [
+      "1066",
+      "1297",
+      "1381",
+      "Too busy counting his castles"
+    ],
+    "explanation": "Rebel barons forced King John to seal the charter at Runnymede in June 1215. It bound even the king to the law and inspired later constitutional documents such as the US Bill of Rights.",
+    "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0014",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who founded the Mongol Empire, the largest contiguous land empire in history?",
+    "correct_answer": "Genghis Khan",
+    "incorrect_answers": [
+      "Kublai Khan",
+      "Attila the Hun",
+      "Tamerlane",
+      "Whoever herded the most yaks"
+    ],
+    "explanation": "Temüjin united the Mongol tribes and was proclaimed Genghis Khan in 1206. At its height the empire stretched from Korea to Hungary, linked by the Yam relay system.",
+    "source_url": "https://en.wikipedia.org/wiki/Mongol_Empire",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0015",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Treaty of Versailles, signed in 1919, formally ended which conflict?",
+    "correct_answer": "The First World War",
+    "incorrect_answers": [
+      "The Second World War",
+      "The Franco-Prussian War",
+      "The Crimean War",
+      "The War of the Sneezes"
+    ],
+    "explanation": "Signed on 28 June 1919 in the Hall of Mirrors, the treaty imposed heavy reparations and territorial losses on Germany. Its terms are widely seen as fuelling German resentment between the wars.",
+    "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0016",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Great Pyramid of Giza was built as the tomb of which pharaoh?",
+    "correct_answer": "Khufu",
+    "incorrect_answers": [
+      "Tutankhamun",
+      "Ramses II",
+      "Cleopatra",
+      "Pharaoh McPharaohface"
+    ],
+    "explanation": "Built around 2560 BC for the pharaoh Khufu, it remained the tallest man-made structure on Earth for over 3,800 years. It is the only surviving Wonder of the ancient world.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0017",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Whose expedition completed the first circumnavigation of the Earth?",
+    "correct_answer": "Ferdinand Magellan",
+    "incorrect_answers": [
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "Francis Drake",
+      "A rubber duck with oars"
+    ],
+    "explanation": "Magellan's Spanish expedition left Seville in 1519 and returned in 1522 under Juan Sebastián Elcano, Magellan having been killed in the Philippines. Only 18 men of the original crew made it home.",
+    "source_url": "https://en.wikipedia.org/wiki/Magellan_expedition",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0018",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Around what year did Johannes Gutenberg introduce his movable-type printing press?",
+    "correct_answer": "1440",
+    "incorrect_answers": [
+      "1380",
+      "1520",
+      "1600",
+      "Once the ink stopped complaining"
+    ],
+    "explanation": "Gutenberg developed movable metal type in Mainz around 1440, and his 42-line Bible followed in the mid-1450s. Printed books became far cheaper, spreading literacy and ideas at unprecedented speed.",
+    "source_url": "https://en.wikipedia.org/wiki/Johannes_Gutenberg",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0019",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who was the first Emperor of Rome?",
+    "correct_answer": "Augustus",
+    "incorrect_answers": [
+      "Julius Caesar",
+      "Nero",
+      "Constantine",
+      "A toga with big dreams"
+    ],
+    "explanation": "Octavian defeated Antony and Cleopatra, took the name Augustus, and ruled as Rome's first emperor from 27 BC to AD 14. Julius Caesar, his adoptive father, had been a dictator but never emperor.",
+    "source_url": "https://en.wikipedia.org/wiki/Augustus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0020",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In which year did the Western Roman Empire fall, with the deposition of Romulus Augustulus?",
+    "correct_answer": "476",
+    "incorrect_answers": [
+      "410",
+      "395",
+      "553",
+      "The week the aqueduct leaked"
+    ],
+    "explanation": "In 476 the Germanic leader Odoacer deposed the boy emperor Romulus Augustulus and took power in Italy. The Eastern, Byzantine Empire endured for nearly another thousand years.",
+    "source_url": "https://en.wikipedia.org/wiki/Deposition_of_Romulus_Augustus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0021",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In which year did the Ottoman Empire capture Constantinople, ending the Byzantine Empire?",
+    "correct_answer": "1453",
+    "incorrect_answers": [
+      "1402",
+      "1485",
+      "1204",
+      "The empire misplaced its keys"
+    ],
+    "explanation": "Mehmed II's army breached the Theodosian walls on 29 May 1453 after a 53-day siege. Constantine XI, the last Byzantine emperor, died in the fighting, and the city became the Ottoman capital.",
+    "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0022",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Who became the first person to reach the South Pole, in 1911?",
+    "correct_answer": "Roald Amundsen",
+    "incorrect_answers": [
+      "Robert Falcon Scott",
+      "Ernest Shackleton",
+      "Edmund Hillary",
+      "A very committed penguin"
+    ],
+    "explanation": "Norwegian explorer Roald Amundsen and his team reached the pole on 14 December 1911, beating Scott's British party by about a month. Scott's group perished on the return journey.",
+    "source_url": "https://en.wikipedia.org/wiki/Amundsen%27s_South_Pole_expedition",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0003",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which chemical symbol stands for gold?",
+    "correct_answer": "Au",
+    "incorrect_answers": [
+      "Ag",
+      "Fe",
+      "Sn",
+      "Certified unobtainium, 24 karat"
+    ],
+    "explanation": "The symbol comes from aurum, the Latin word for gold. Humans have worked gold for over 5,000 years, and its rarity and resistance to tarnish made it a store of value in nearly every civilization.",
+    "source_url": "https://en.wikipedia.org/wiki/Gold",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0004",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet is the hottest in our solar system?",
+    "correct_answer": "Venus",
+    "incorrect_answers": [
+      "Mercury",
+      "Mars",
+      "Jupiter",
+      "The Sun, if you count it"
+    ],
+    "explanation": "Venus traps heat under a crushing carbon-dioxide atmosphere about 90 times denser than Earth's, holding its surface near 465 degrees Celsius. That makes it hotter than Mercury even though Mercury orbits closer to the Sun.",
+    "source_url": "https://en.wikipedia.org/wiki/Venus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0005",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which force pulls falling objects toward the ground?",
+    "correct_answer": "Gravity",
+    "incorrect_answers": [
+      "Magnetism",
+      "Friction",
+      "Inertia",
+      "Sarcasm, mostly"
+    ],
+    "explanation": "Isaac Newton described gravity in 1687 as a universal attraction between masses, and Albert Einstein reframed it in 1915 as the bending of spacetime. Gravity keeps the Moon in orbit and gives objects their weight.",
+    "source_url": "https://en.wikipedia.org/wiki/Gravity",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0006",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which molecule carries the genetic instructions of living things?",
+    "correct_answer": "DNA",
+    "incorrect_answers": [
+      "RNA",
+      "ATP",
+      "Hemoglobin",
+      "Do Not Ask"
+    ],
+    "explanation": "The double-helix structure of DNA was described by James Watson and Francis Crick in 1953, drawing on Rosalind Franklin's X-ray images. Its sequence of four chemical bases stores the blueprint for every living organism.",
+    "source_url": "https://en.wikipedia.org/wiki/DNA",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0007",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which organ pumps blood around the human body?",
+    "correct_answer": "The heart",
+    "incorrect_answers": [
+      "The liver",
+      "The lungs",
+      "The stomach",
+      "The spleen, on weekends"
+    ],
+    "explanation": "The human heart beats roughly 100,000 times a day, moving about 5 liters of blood every minute through a four-chambered pump. It sits slightly left of center in the chest and works without ever resting.",
+    "source_url": "https://en.wikipedia.org/wiki/Heart",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0008",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet is known as the Red Planet?",
+    "correct_answer": "Mars",
+    "incorrect_answers": [
+      "Venus",
+      "Jupiter",
+      "Mercury",
+      "The one with rings"
+    ],
+    "explanation": "Mars owes its color to iron oxide, essentially rust, dusting much of its surface. The ancient Romans named it for their god of war, and today NASA rovers on its plains search for signs that liquid water once flowed.",
+    "source_url": "https://en.wikipedia.org/wiki/Mars",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0009",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which scientist developed the theory of relativity?",
+    "correct_answer": "Albert Einstein",
+    "incorrect_answers": [
+      "Isaac Newton",
+      "Charles Darwin",
+      "Nikola Tesla",
+      "Albert's cousin Norman"
+    ],
+    "explanation": "Einstein published special relativity in 1905 and general relativity in 1915, linking space, time, mass and gravity. His famous E = mc2 relation underpins nuclear physics and the corrections that keep GPS accurate.",
+    "source_url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0010",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which everyday substance has the chemical formula H2O?",
+    "correct_answer": "Water",
+    "incorrect_answers": [
+      "Carbon dioxide",
+      "Sodium chloride",
+      "Methane",
+      "Hot chocolate, in winter"
+    ],
+    "explanation": "Each water molecule links two hydrogen atoms to one oxygen atom. That simple bent shape makes water polar, so it dissolves salts, moderates the climate and supports every known form of life on Earth.",
+    "source_url": "https://en.wikipedia.org/wiki/Water",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0011",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which unit measures electric current?",
+    "correct_answer": "The ampere",
+    "incorrect_answers": [
+      "The volt",
+      "The watt",
+      "The ohm",
+      "One standard zappy"
+    ],
+    "explanation": "The ampere honors André-Marie Ampère, the French physicist who founded electrodynamics in the 1820s. One ampere corresponds to about 6.2 billion billion electrons flowing past a point each second.",
+    "source_url": "https://en.wikipedia.org/wiki/Ampere",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0012",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which chemical element is the lightest in the universe?",
+    "correct_answer": "Hydrogen",
+    "incorrect_answers": [
+      "Helium",
+      "Lithium",
+      "Oxygen",
+      "One lonely proton with attitude"
+    ],
+    "explanation": "Hydrogen has a single proton and makes up about 75 percent of the ordinary matter in the universe. Stars, including the Sun, spend most of their lives fusing hydrogen into helium, releasing the light that makes them shine.",
+    "source_url": "https://en.wikipedia.org/wiki/Hydrogen",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0013",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which galaxy contains our solar system?",
+    "correct_answer": "The Milky Way",
+    "incorrect_answers": [
+      "The Andromeda Galaxy",
+      "The Triangulum Galaxy",
+      "The Whirlpool Galaxy",
+      "The Big Dipper Express"
+    ],
+    "explanation": "The Milky Way is a barred spiral galaxy about 100,000 light-years across, holding somewhere between 100 and 400 billion stars. The Sun sits roughly 26,000 light-years from its center, and Andromeda is our nearest large galactic neighbor.",
+    "source_url": "https://en.wikipedia.org/wiki/Milky_Way",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0014",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which organ produces the hormone insulin?",
+    "correct_answer": "The pancreas",
+    "incorrect_answers": [
+      "The kidney",
+      "The adrenal gland",
+      "The thyroid",
+      "The appendix, when it feels like it"
+    ],
+    "explanation": "The pancreas releases insulin and glucagon to keep blood sugar stable, along with enzymes that help digest food. When insulin production fails, the result is diabetes, a condition affecting more than 500 million people worldwide.",
+    "source_url": "https://en.wikipedia.org/wiki/Pancreas",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0015",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which scientist discovered penicillin in 1928?",
+    "correct_answer": "Alexander Fleming",
+    "incorrect_answers": [
+      "Louis Pasteur",
+      "Robert Koch",
+      "Joseph Lister",
+      "Bartholomew the Absent-Minded"
+    ],
+    "explanation": "Fleming noticed in 1928 that a stray Penicillium mold had killed bacteria in a petri dish he had left unwashed. Penicillin, later purified by Howard Florey and Ernst Chain, became the first modern antibiotic and saved millions of lives.",
+    "source_url": "https://en.wikipedia.org/wiki/Discovery_of_penicillin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0016",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Approximately how fast does light travel through empty space?",
+    "correct_answer": "300,000 km per second",
+    "incorrect_answers": [
+      "150,000 km per second",
+      "30,000 km per second",
+      "3 million km per second",
+      "Fast enough to beat morning traffic"
+    ],
+    "explanation": "Light moves at exactly 299,792,458 meters per second in a vacuum, the universal speed limit set by relativity. Sunlight needs about 8 minutes 20 seconds to reach Earth, and nothing carrying mass can ever match it.",
+    "source_url": "https://en.wikipedia.org/wiki/Speed_of_light",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0017",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which chemical element has the symbol K?",
+    "correct_answer": "Potassium",
+    "incorrect_answers": [
+      "Phosphorus",
+      "Platinum",
+      "Polonium",
+      "The element of surprise"
+    ],
+    "explanation": "The K comes from kalium, the Latin name for potassium. The metal is essential for nerve signals and muscle contractions, and a single banana contains roughly 400 milligrams of it.",
+    "source_url": "https://en.wikipedia.org/wiki/Potassium",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0018",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "How many hearts does an octopus have?",
+    "correct_answer": "Three",
+    "incorrect_answers": [
+      "One",
+      "Two",
+      "Six",
+      "Forty-two, obviously"
+    ],
+    "explanation": "An octopus has two branchial hearts pumping blood through its gills and one systemic heart serving the rest of the body. Its blood uses copper-based hemocyanin instead of iron, which is why it looks blue.",
+    "source_url": "https://en.wikipedia.org/wiki/Octopus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0003",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How often are the Summer Olympic Games traditionally held?",
+    "correct_answer": "Every 4 years",
+    "incorrect_answers": [
+      "Every 2 years",
+      "Every 3 years",
+      "Every 5 years",
+      "Whenever the torch gets tired"
+    ],
+    "explanation": "The modern Games revived the ancient Greek tradition in 1896 in Athens and have kept a 4-year cycle, called an Olympiad, ever since. Only world wars and the 2020 pandemic have pushed editions off schedule.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympic_Games",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0004",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many players form a volleyball team on court at serve?",
+    "correct_answer": "6",
+    "incorrect_answers": [
+      "5",
+      "7",
+      "8",
+      "A very tall pyramid of players"
+    ],
+    "explanation": "Indoor volleyball puts 6 players per side, arranged in front and back rows that must rotate. Beach volleyball is a different beast entirely, with 2-player teams on sand.",
+    "source_url": "https://en.wikipedia.org/wiki/Volleyball",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0005",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many points win a standard game of blackjack?",
+    "correct_answer": "21",
+    "incorrect_answers": [
+      "19",
+      "20",
+      "22",
+      "Whatever number the dealer had for breakfast"
+    ],
+    "explanation": "Blackjack pays its top prize for cards totalling 21, and going over busts the hand instantly. The name is often linked to an old bonus payout for an ace of spades paired with a black jack, though the true origin is debated.",
+    "source_url": "https://en.wikipedia.org/wiki/Blackjack",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0006",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How often does the Tour de France take place?",
+    "correct_answer": "Every year",
+    "incorrect_answers": [
+      "Every 2 years",
+      "Every 4 years",
+      "Twice a year",
+      "Whenever the baguettes are fresh"
+    ],
+    "explanation": "The Tour is an annual fixture every July since 1903, interrupted only by the two world wars. It is the oldest and generally the most prestigious of cycling’s three Grand Tours.",
+    "source_url": "https://en.wikipedia.org/wiki/Tour_de_France",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0007",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "What is the name of the quadrennial tournament where national teams compete for rugby union’s top prize?",
+    "correct_answer": "The Rugby World Cup",
+    "incorrect_answers": [
+      "The Six Nations",
+      "The Rugby Championship",
+      "The British and Irish Lions tour",
+      "The Very Large Egg-Shaped Trophy"
+    ],
+    "explanation": "The Rugby World Cup has been staged every 4 years since 1987, with South Africa the most successful nation at 4 titles, ahead of New Zealand on 3. The Six Nations and Rugby Championship are annual regional contests, not world titles.",
+    "source_url": "https://en.wikipedia.org/wiki/Rugby_World_Cup",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0008",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many players sit at the table in a standard game of chess?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "3",
+      "4",
+      "Anyone hungry enough for a knight"
+    ],
+    "explanation": "Chess is strictly a one-on-one game, one player commanding white and the other black on a 64-square board. Team formats exist only in exhibitions and online relays, never in a standard game.",
+    "source_url": "https://en.wikipedia.org/wiki/Chess",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0009",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "How many Winter Olympic Games were held in France during the 20th century?",
+    "correct_answer": "3",
+    "incorrect_answers": [
+      "1",
+      "2",
+      "4",
+      "Enough to freeze the wine cellar"
+    ],
+    "explanation": "France hosted Chamonix 1924, Grenoble 1968 and Albertville 1992, making it the Winter Games’ most frequent European host of the century. Chamonix 1924 was the very first Winter Olympics ever staged.",
+    "source_url": "https://en.wikipedia.org/wiki/France_at_the_Olympics",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0010",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "What is the name of tennis’s oldest major tournament, played on grass in London?",
+    "correct_answer": "Wimbledon",
+    "incorrect_answers": [
+      "Roland Garros",
+      "The US Open",
+      "The Australian Open",
+      "The Very Proper Lawn Party"
+    ],
+    "explanation": "Wimbledon, officially the Championships, first served in 1877 at the All England Club and still requires players to wear almost entirely white. Roland Garros, the US Open and the Australian Open make up the other three majors.",
+    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0011",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In downhill skiing, how is a run’s time measured when two runs decide the result?",
+    "correct_answer": "By total time",
+    "incorrect_answers": [
+      "By best single run",
+      "By average speed",
+      "By points per gate",
+      "By whoever screams fastest down the mountain"
+    ],
+    "explanation": "Downhill races that use two runs, like Olympic combined events, add both times together and the lowest total wins. Single-run World Cup downhills simply award the fastest single descent.",
+    "source_url": "https://en.wikipedia.org/wiki/Alpine_combined",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0012",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "What is the best possible lowest score on a single golf hole?",
+    "correct_answer": "1",
+    "incorrect_answers": [
+      "0",
+      "2",
+      "3",
+      "Minus one, for especially polite players"
+    ],
+    "explanation": "A score of 1, the coveted hole in one, is the lowest possible on any hole since every stroke counts. The term birdie for one under par dates to an 1899 Atlantic City round, long after the hole-in-one folklore began.",
+    "source_url": "https://en.wikipedia.org/wiki/Par_(score)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0013",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "How many lanes does an Olympic swimming pool have?",
+    "correct_answer": "10",
+    "incorrect_answers": [
+      "6",
+      "8",
+      "12",
+      "One per national anthem"
+    ],
+    "explanation": "Olympic competition pools measure 50 metres and carry 10 lanes, with the two outside lanes left empty to dampen waves. Standard 25-metre pools often run 8 or fewer lanes, which is why the Olympic tank feels so wide.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympic-size_swimming_pool",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0014",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which nation leads the all-time Winter Olympic medal table?",
+    "correct_answer": "Norway",
+    "incorrect_answers": [
+      "The United States",
+      "Germany",
+      "Austria",
+      "The Kingdom of Hot Cocoa"
+    ],
+    "explanation": "Norway has led the all-time Winter Games medal table for decades and extended the gap with 18 golds at Milan Cortina 2026, now standing at 166 golds and 447 total medals. Cross-country skiing and speed skating supply most of the haul.",
+    "source_url": "https://en.wikipedia.org/wiki/Norway_at_the_Winter_Olympics",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0015",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which swimmer holds the record for the most Olympic gold medals overall?",
+    "correct_answer": "Michael Phelps",
+    "incorrect_answers": [
+      "Mark Spitz",
+      "Katie Ledecky",
+      "Ian Thorpe",
+      "The friendly shark from the deep end"
+    ],
+    "explanation": "Michael Phelps collected 23 Olympic golds between 2004 and 2016, more than double the 9 won by Latynina, Spitz, Lewis and Nurmi. His 8 golds at a single Games in Beijing 2008 remain untouched.",
+    "source_url": "https://en.wikipedia.org/wiki/Michael_Phelps",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0016",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which cyclist won the Tour de France five consecutive times for the first time?",
+    "correct_answer": "Miguel Indurain",
+    "incorrect_answers": [
+      "Eddy Merckx",
+      "Bernard Hinault",
+      "Jacques Anquetil",
+      "A very determined baguette on wheels"
+    ],
+    "explanation": "Miguel Indurain took five straight Tours from 1991 to 1995, the first rider ever to win five in succession. Anquetil, Merckx and Hinault each won five in total, but never five years in a row.",
+    "source_url": "https://en.wikipedia.org/wiki/Miguel_Indur%C3%A1in",
+    "as_of": null,
+    "origin": "claude",
     "reviewed": true
   }
 ]

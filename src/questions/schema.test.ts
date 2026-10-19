@@ -111,6 +111,10 @@ describe('validateQuestion', () => {
     expect(validateQuestion(validQuestion({ id: 'bad_id' })).map((i) => i.field)).toContain('id')
     expect(validateQuestion(validQuestion({ id: 'news-20260901-01', origin: 'human' })).map((i) => i.field)).toContain('id')
   })
+  it('accepts a claude-origin general knowledge question with a short id', () => {
+    const issues = validateQuestion(validQuestion({ id: 'geo-0003', origin: 'claude' }))
+    expect(issues).toEqual([])
+  })
 })
 
 describe('validateQuestionFile', () => {

@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
+import { loadAllQuestions } from '../questions/questionBank'
 import { useGameStore } from './store'
 
 // jsdom localStorage needs --localstorage-file; in-memory mock so the
@@ -280,7 +281,10 @@ describe('useGameStore', () => {
 
   it('flags poolReset when the seen pool is exhausted', () => {
     const store = useGameStore()
-    store.setSetup({ count: 60 })
+    // Seen ids persist across games, so a second full-pool draw exhausts
+    // the unseen pool and the bank resets recency before redrawing.
+    const enPool = loadAllQuestions().filter((q) => q.lang === 'en').length
+    store.setSetup({ count: enPool - 1 })
     store.startGame()
     expect(store.poolReset).toBe(false)
     store.resetGame()
@@ -300,7 +304,7 @@ describe('useGameStore', () => {
     }))
     const breakdown = store.categoryBreakdown[0]
     const scienceCount = store.questions.filter((q) => q.category === 'science').length
-    expect(breakdown['science']).toBe(scienceCount)
+    expect(breakdown['science'] ?? 0).toBe(scienceCount)
   })
 
   it('credits post-skip answers to their own category, not the skipped one', () => {

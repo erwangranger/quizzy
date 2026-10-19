@@ -58,8 +58,8 @@ for (const file of files) {
     if (q.origin === 'human' && !/^[a-z-]+-\d{4}$/.test(q.id ?? '')) {
       fail(path, id, `human id must match <category-prefix>-<4 digits>, got "${q.id}"`)
     }
-    if (q.origin === 'claude' && !/^news-\d{8}-\d{2}$/.test(q.id ?? '')) {
-      fail(path, id, `claude id must match news-YYYYMMDD-<nn>, got "${q.id}"`)
+    if (q.origin === 'claude' && !/^news-\d{8}-\d{2}$/.test(q.id ?? '') && !/^[a-z-]+-\d{4}$/.test(q.id ?? '')) {
+      fail(path, id, `claude id must match <category-prefix>-<4 digits> or news-YYYYMMDD-<nn>, got "${q.id}"`)
     }
     if (prefix === 'news' && q.origin !== 'claude') fail(path, id, 'news- ids are reserved for claude-origin questions')
 
