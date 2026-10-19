@@ -12,46 +12,35 @@
       >{{ t('starter.multiplayer') }}</button>
     </div>
 
-    <!-- Multiplayer: quizmaster vs pass-and-play -->
-    <div class="dropdown" v-if="!store.solo" @click="modeToggle">
-      <div class="dropdown-label">
-        <h2>{{ t('starter.mode') }}</h2>
-        <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="modeExpand" key="expand-more">expand_more</i>
-          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
-        </transition>
-      </div>
-      <h3>{{ modeLabel }}</h3>
-      <ul :class="modeClass">
-        <li
-        :class="store.mode === 'quizmaster' ? 'selected' : null"
+    <!-- Multiplayer: quizmaster vs pass-and-play (segmented) -->
+    <div class="seg-row" v-if="!store.solo">
+      <span class="seg-label">{{ t('starter.mode') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.mode')">
+        <button
+        type="button"
+        :class="store.mode === 'quizmaster' ? 'on' : null"
         @click="store.setMultiplayerMode('quizmaster')"
-        >{{ t('starter.quizmaster') }}</li>
-        <li
-        :class="store.mode === 'pass-and-play' ? 'selected' : null"
+        >{{ t('starter.quizmaster') }}</button>
+        <button
+        type="button"
+        :class="store.mode === 'pass-and-play' ? 'on' : null"
         @click="store.setMultiplayerMode('pass-and-play')"
-        >{{ t('starter.passPlay') }}</li>
-      </ul>
+        >{{ t('starter.passPlay') }}</button>
+      </div>
     </div>
 
-    <!-- Player count and names (multiplayer only) -->
-    <div class="dropdown" v-if="!store.solo" @click="playersToggle">
-      <div class="dropdown-label">
-        <h2>{{ t('starter.players') }}</h2>
-        <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="playersExpand" key="expand-more">expand_more</i>
-          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
-        </transition>
-      </div>
-      <h3>{{ store.setup.players }}</h3>
-      <ul :class="playersClass">
-        <li
+    <!-- Player count (multiplayer only, segmented) -->
+    <div class="seg-row" v-if="!store.solo">
+      <span class="seg-label">{{ t('starter.players') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.players')">
+        <button
         v-for="n in maxPlayers"
         :key="n"
-        :class="store.setup.players === n ? 'selected' : null"
+        type="button"
+        :class="store.setup.players === n ? 'on' : null"
         @click="store.setSetup({ players: n })"
-        >{{ n }}</li>
-      </ul>
+        >{{ n }}</button>
+      </div>
     </div>
 
     <!-- Player name editing (multiplayer only) -->
@@ -78,61 +67,47 @@
       <span>{{ t('starter.weightByDifficulty') }}</span>
     </label>
 
-    <!-- Language selector -->
-    <div class="dropdown" @click="langToggle">
-      <div class="dropdown-label">
-        <h2>{{ t('starter.language') }}</h2>
-        <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="langExpand" key="expand-more">expand_more</i>
-          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
-        </transition>
-      </div>
-      <h3>{{ store.setup.lang }}</h3>
-      <ul :class="langClass">
-        <li
+    <!-- Language selector (segmented) -->
+    <div class="seg-row">
+      <span class="seg-label">{{ t('starter.language') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.language')">
+        <button
         v-for="lang in languages"
         :key="lang"
+        type="button"
+        :class="store.setup.lang === lang ? 'on' : null"
         @click="chooseLang(lang)"
-        >{{ lang }}</li>
-      </ul>
+        >{{ lang }}</button>
+      </div>
     </div>
 
-    <!-- Category multi-select dropdown -->
-    <div class="dropdown" @click="categoryToggle">
-      <div class="dropdown-label">
-        <h2>{{ t('starter.chooseCategory') }}</h2>
-        <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="categoryExpand" key="expand-more">expand_more</i>
-          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
-        </transition>
-      </div>
-      <h3>{{ selectedCategoryLabel }}</h3>
-      <ul :class="categoryClass">
-        <li
+    <!-- Category multi-select chips -->
+    <div class="chips-row">
+      <span class="seg-label">{{ t('starter.chooseCategory') }}</span>
+      <div class="chips" role="group" :aria-label="t('starter.chooseCategory')">
+        <button
         v-for="category in store.categories"
         :key="category"
+        type="button"
+        :class="store.setup.categories.includes(category) ? 'on' : null"
+        :aria-pressed="store.setup.categories.includes(category)"
         @click="toggleCategory(category)"
-        >{{ categoryLabel(category) }}</li>
-      </ul>
+        >{{ categoryLabel(category) }}</button>
+      </div>
     </div>
 
-    <!-- Question count selector -->
-    <div class="dropdown" @click="countToggle">
-      <div class="dropdown-label">
-        <h2>{{ t('starter.questionCount') }}</h2>
-        <transition name="fade" mode="out-in">
-          <i class="material-icons expand-more" v-if="countExpand" key="expand-more">expand_more</i>
-          <i class="material-icons expand-less" v-else key="expand-less">expand_less</i>
-        </transition>
-      </div>
-      <h3>{{ store.setup.count }}</h3>
-      <ul :class="countClass">
-        <li
+    <!-- Question count selector (segmented) -->
+    <div class="seg-row">
+      <span class="seg-label">{{ t('starter.questionCount') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.questionCount')">
+        <button
         v-for="n in questionCounts"
         :key="n"
+        type="button"
+        :class="store.setup.count === n ? 'on' : null"
         @click="store.setSetup({ count: n })"
-        >{{ n }}</li>
-      </ul>
+        >{{ n }}</button>
+      </div>
     </div>
     <!-- Launch button: clearly differentiated primary action, always last -->
     <button class="start" @click="startGame">{{ t('starter.start') }}</button>
@@ -140,7 +115,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue'
 import { useGameStore, MAX_PLAYERS } from '../store/store'
 import { t, categoryLabel } from '../locales'
 import type { Category, Lang } from '../questions/schema'
@@ -151,27 +125,6 @@ const languages: Lang[] = ['en', 'fr']
 const questionCounts = [5, 10, 15, 20]
 const maxPlayers = MAX_PLAYERS
 
-const langClass = reactive({ close: false, open: false })
-const categoryClass = reactive({ close: false, open: false })
-const countClass = reactive({ close: false, open: false })
-const modeClass = reactive({ close: false, open: false })
-const playersClass = reactive({ close: false, open: false })
-const langExpand = ref(true)
-const categoryExpand = ref(true)
-const countExpand = ref(true)
-const modeExpand = ref(true)
-const playersExpand = ref(true)
-
-const selectedCategoryLabel = computed(() => {
-  const chosen = store.setup.categories
-  if (chosen.length === 0) return t('starter.allCategories')
-  if (chosen.length === 1) return categoryLabel(chosen[0])
-  return `${chosen.length} ${t('starter.categoriesSelected')}`
-})
-
-const modeLabel = computed(() =>
-  store.mode === 'quizmaster' ? t('starter.quizmaster') : t('starter.passPlay'),
-)
 
 // Toggle a category in the multi-select (empty list = all categories)
 function toggleCategory(category: Category) {
@@ -184,41 +137,6 @@ function toggleCategory(category: Category) {
 
 function chooseLang(lang: Lang) {
   store.setSetup({ lang, categories: [] })
-}
-
-function toggle(open: { open: boolean; close: boolean }) {
-  if (open.open) {
-    open.open = false
-    open.close = true
-  } else {
-    open.open = true
-    open.close = false
-  }
-}
-
-function langToggle() {
-  langExpand.value = !langExpand.value
-  toggle(langClass)
-}
-
-function categoryToggle() {
-  categoryExpand.value = !categoryExpand.value
-  toggle(categoryClass)
-}
-
-function countToggle() {
-  countExpand.value = !countExpand.value
-  toggle(countClass)
-}
-
-function modeToggle() {
-  modeExpand.value = !modeExpand.value
-  toggle(modeClass)
-}
-
-function playersToggle() {
-  playersExpand.value = !playersExpand.value
-  toggle(playersClass)
 }
 
 function startGame() {
@@ -251,85 +169,120 @@ function startGame() {
     }
 }
 
-.expand-less,
-.expand-more,
-h2,
-li {
-    cursor: pointer;
+// Segmented settings rows: label left, all options always visible
+.seg-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
 }
 
-h3 {
-    color: $color-white;
-    margin: 0;
+.seg-label {
+    font-size: 1em;
+    min-width: 110px;
+    text-align: right;
 }
 
-li {
-    margin: 0.5em 0;
-    transition: all 0.3s ease;
-    &:hover {
+.seg {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 4px;
+
+    button {
+        background: transparent;
+        border: 2px solid transparent;
+        border-radius: 9px;
         color: $color-white;
-        transform: scale(1.5);
+        flex: 1;
+        font-size: 1em;
+        margin: 0;
+        max-width: none;
+        min-height: 44px;
+        padding: 0.4em 0.6em;
+        transition: background 0.2s ease;
+        width: auto;
+
+        &.on {
+            background: $color-green;
+            color: $color-darkest;
+            font-weight: bold;
+        }
     }
 }
 
-// Selected category in the multi-select
-.selected {
-    color: $color-green;
-    font-weight: bold;
-}
-
-ul {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-}
-
-// Selected mode button
-.active {
-    background-color: $color-darkest;
-    border: 2px solid $color-darkest;
-    color: $color-white;
-}
-
-.dropdown-label {
-    align-items: center;
+// Category multi-select chips: tap toggles on/off
+.chips-row {
     display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: 400px;
+    width: 100%;
+
+    .seg-label {
+        text-align: center;
+    }
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
     justify-content: center;
+
+    button {
+        background: transparent;
+        border: 2px solid $color-white;
+        border-radius: 999px;
+        color: $color-white;
+        font-size: 1em;
+        margin: 0;
+        max-width: none;
+        min-height: 44px;
+        padding: 0.4em 1.1em;
+        transition: all 0.2s ease;
+        width: auto;
+
+        &.on {
+            background: $color-green;
+            border-color: $color-green;
+            color: $color-darkest;
+            font-weight: bold;
+        }
+    }
 }
 
-// Dropdown expand icon
-.expand-less,
-.expand-more {
-    font-size: 2em;
-    padding-top: 7px;
-    margin-left: 15px;
-    transition: all 0.3s ease;
-}
+@media (hover:hover) {
+    .seg button:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: transparent;
+        color: $color-white;
+    }
 
-.expand-more {
-    color: $color-white;
-    &:hover {
+    .chips button:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: $color-white;
+        color: $color-white;
+    }
+
+    .seg button.on:hover {
+        background: $color-green;
+        border-color: transparent;
+        color: $color-darkest;
+    }
+
+    .chips button.on:hover {
+        background: $color-green;
+        border-color: $color-green;
         color: $color-darkest;
     }
 }
-
-.expand-less {
-    color: $color-darkest;
-    &:hover {
-        color: $color-white;
-    }
-}
-
-// Open dropdown
-.open {
-    animation: open 1s ease forwards;
-}
-
-// Close dropdown
-.close {
-    animation: close 1s ease forwards;
-}
-
 // Launch button: differentiated primary action
 .start {
     background-color: $color-green;

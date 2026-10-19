@@ -70,7 +70,16 @@
 - [x] No store/schema changes: `source_url` and `as_of` already existed; the reveal block is shared by all modes, so the explanation shows whether or not players got it right (unchanged behavior).
 - [x] Styles: `.as-of-badge` (block, 0.75em, `$color-med`) and `.source-link` (inline-block, underline, 0.9em, `$color-green`).
 - [x] Verified: vitest 46/46, `vue-tsc -b` + build green; headless Chromium at 375px (Recent News question; longest bank explanation is 270 chars): badge and link render without collisions, reveal fits without horizontal overflow (scrollWidth 375), zero console errors; French strings verified end-to-end ("Explication", "Source", "Le 2026-10-18").
-- Product gap (not a UI bug): all 61 bank questions are `lang: "en"` — with the UI locale set to French the category list is empty and Start silently does nothing; fr question content remains the deferrable item (SPEC Phase 5).
+- Product gap (not a UI bug): all 61 bank questions were `lang: "en"` — with the UI locale set to French the category list was empty and Start silently did nothing. RESOLVED (2026-10-18): all 61 questions translated to French (`questions/fr-sample.json` + `questions/fr-recent-news.json`, 122 total across the 4 banks); validators accept French date anchors; the language toggle now swaps banks. See CHANGELOG "French question banks".
+
+
+## French question banks (done — 2026-10-18)
+
+- [x] All 61 questions translated en → fr via 10 parallel sub-agents (1 sample + 9 news chunks): `questions/fr-sample.json` (12, `origin: "human"`, IDs `geo-fr-0001` style matching `HUMAN_ID`) and `questions/fr-recent-news.json` (49, `origin: "claude"`, IDs `news-<date>-<61+>` — same date as the source, fresh sequence; en bank max nn is 50 so 61+ never collides; every date had ≥49 headroom).
+- [x] Validator fix required for the fr news bank: the `MONTH_YEAR` regex (src/questions/schema.ts:50, scripts/validate-questions.mjs:34) was English-months-only — extended to janvier–décembre; SPEC.md field rule updated.
+- [x] Tests updated for the 122-question world: bank-size test (122 = 61 en + 61 fr), `getCategories('fr')` mirrors en (7 categories), per-language pool cap, fr draw test (`fr` + `recent-news` → 5, all `news-` ids), unknown-language test moved from `'fr'` (now a real bank) to `'zz' as Lang`. Suite 48/48.
+- [x] QC: `validate:questions` 122/122 across 4 files, zero errors; no duplicate joke answers within the fr banks (Whoville/Bouillabafoufou dupes are en↔fr pairs, fine); no double quotes in any fr string; explanations ≤400 chars with no period-abbreviations (sentence-split safe).
+- [x] Verified: `vue-tsc -b` + vite build green (bundle carries 49 "En octobre 2026" questions + 61 `lang:"fr"` objects); headless Chromium — fr toggle renders fr UI with 7 category chips; solo game draws 10 questions all `lang: "fr"` (verified via pinia state after the headless renderer froze mid-transition); correct answer records a category-stamped history row, answer-wrong-next leaves `answeredTotal` 2 and total 1; en bank still draws en-only.
 
 ## Items to review and consider (MVP gap analysis — 2026-10-18)
 

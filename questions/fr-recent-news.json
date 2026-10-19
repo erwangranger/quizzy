@@ -1,0 +1,933 @@
+[
+  {
+    "id": "news-20261001-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, la NASA a annoncé que des scientifiques étudiaient des roches anciennes dans quelle région du Royaume-Uni afin de mieux comprendre si la vie avait pu exister sur Mars ?",
+    "correct_answer": "Les Highlands écossais",
+    "incorrect_answers": [
+      "Les vallées du Pays de Galles",
+      "Le Lake District",
+      "Les Dales du Yorkshire",
+      "La face cachée de la Lune"
+    ],
+    "explanation": "Une équipe dirigée par la NASA a échantillonné la formation de Stoer près de Clachtoll, dans l'Assynt, au nord-ouest des Highlands. Les roches de la région se sont formées dans des environnements semblables à ceux d'anciens lacs et de rivières martiens et pourraient renfermer des traces microbiennes vieilles de 1,2 milliard d'années.",
+    "source_url": "https://www.bbc.com/news/articles/c5gmr3309p7jo",
+    "as_of": "2026-10-01",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261002-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, l'acteur et militant pour la recherche sur la maladie de Parkinson Michael J. Fox a été élevé au rang de Compagnon dans quel ordre ?",
+    "correct_answer": "L'Ordre du Canada",
+    "incorrect_answers": [
+      "L'Ordre de l'Empire britannique",
+      "L'Ordre national du Québec",
+      "La Légion d'honneur",
+      "L'Ordre de la DeLorean"
+    ],
+    "explanation": "Né à Edmonton et élevé à Vancouver, Michael J. Fox est l'un des bailleurs de fonds les plus visibles de la recherche sur la maladie de Parkinson depuis qu'il a rendu public son diagnostic. Le rang de Compagnon est le plus haut niveau de l'Ordre du Canada, et la cérémonie a eu lieu à Rideau Hall.",
+    "source_url": "https://www.lapresse.ca/actualites/national/2026-10-02/acteur-et-militant-contre-la-maladie-de-parkinson/michael-j-fox-est-promu-au-sein-de-l-ordre-du-canada.php",
+    "as_of": "2026-10-02",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261005-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, le prix Nobel de physiologie ou médecine a été attribué pour l'optogénétique, une technique qui contrôle les cellules du cerveau à l'aide de la lumière et d'une protéine empruntée à quels organismes ?",
+    "correct_answer": "Des algues",
+    "incorrect_answers": [
+      "Des méduses",
+      "Des champignons",
+      "Des bactéries des grands fonds",
+      "Des pigeons phosphorescents"
+    ],
+    "explanation": "Les Allemands Peter Hegemann et Georg Nagel ont découvert la channelrhodopsine, la protéine algale sensible à la lumière au cœur de l'optogénétique, tandis que l'Américain Karl Deisseroth a montré comment l'utiliser pour allumer et éteindre les cellules nerveuses.",
+    "source_url": "https://www.bbc.com/news/articles/c5ev3ypmzly8o",
+    "as_of": "2026-10-05",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261005-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le pilote de Formule 1 de l'écurie Cadillac Valtteri Bottas a renoncé à un court vol et a plutôt parcouru environ 350 km à vélo pour se rendre au Grand Prix de Singapour depuis quel pays ?",
+    "correct_answer": "La Malaisie",
+    "incorrect_answers": [
+      "L'Indonésie",
+      "La Thaïlande",
+      "L'Australie",
+      "La Comté"
+    ],
+    "explanation": "Le pilote finlandais a pédalé de la Malaisie jusqu'à Singapour, couvrant plus de 160 km lors de la seule deuxième étape. Passionné de cyclisme, il s'était aussi qualifié pour les Championnats du monde de gravel.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/cv2d6p9en7wdo",
+    "as_of": "2026-10-05",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261006-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, le physicien d'origine belge Francis Halzen a remporté le prix Nobel de physique pour son travail pionnier sur quel observatoire, construit au pôle Sud ?",
+    "correct_answer": "L'Observatoire des neutrinos IceCube",
+    "incorrect_answers": [
+      "Le télescope spatial James Webb",
+      "Le Grand collisionneur de hadrons",
+      "Le télescope Event Horizon",
+      "Un très grand bac à glaçons"
+    ],
+    "explanation": "IceCube utilise un kilomètre cube de glace antarctique équipé de milliers de capteurs de lumière pour détecter les neutrinos, ces insaisissables « particules fantômes » issues d'événements cosmiques violents. Halzen a proposé cette idée dès 1988.",
+    "source_url": "https://www.bbc.com/news/articles/cq203mymlvkeo",
+    "as_of": "2026-10-06",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261007-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, Jaguar a dévoilé sa nouvelle voiture tout électrique Type 01 aux États-Unis. Quel acteur a posé aux côtés du véhicule lors de son événement de lancement à New York ?",
+    "correct_answer": "Florence Pugh",
+    "incorrect_answers": [
+      "Olivia Colman",
+      "Anthony Hopkins",
+      "Ian McKellen",
+      "Kermit la grenouille, en smoking"
+    ],
+    "explanation": "Ce lancement, auquel ont participé des célébrités dont Florence Pugh, est survenu deux ans après le rebranding haut en couleur de Jaguar en 2024, qui avait valu à la marque des accusations de « wokisme ». La Type 01 coûte à partir de 130 000 livres sterling au Royaume-Uni et développe environ 1 000 chevaux.",
+    "source_url": "https://www.bbc.com/news/articles/c6je50ydld31o",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261007-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, un vaste sondage mené par un chercheur montréalais a révélé que les consommateurs continuent d'acheter des bouteilles d'eau à usage unique principalement parce qu'ils les considèrent comme quoi ?",
+    "correct_answer": "Plus pratique",
+    "incorrect_answers": [
+      "Moins cher",
+      "Plus sûr",
+      "De meilleur goût",
+      "Elles viennent avec le Wi-Fi gratuit"
+    ],
+    "explanation": "Le sondage révèle que les gens continuent d'utiliser des bouteilles à usage unique même s'ils savent qu'elles sont mauvaises pour l'environnement et potentiellement nocives pour leur santé, simplement parce qu'ils les trouvent pratiques.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-07/etude/malgre-les-risques-l-eau-en-bouteille-jugee-plus-pratique.php",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261008-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le prix Nobel de littérature 2026 a été décerné à quel écrivain et classiciste canadien qui mélange les genres ?",
+    "correct_answer": "Anne Carson",
+    "incorrect_answers": [
+      "Margaret Atwood",
+      "Alice Munro",
+      "Han Kang",
+      "Un castor avec sa carte de bibliothèque"
+    ],
+    "explanation": "L'Académie suédoise a honoré Carson, 76 ans, pour son « œuvre audacieuse et inventive » mêlant vers, prose et essai aux mythes de l'Antiquité ; elle a appris qu'elle avait gagné alors qu'elle séjournait en Islande.",
+    "source_url": "https://www.cnn.com/2026/10/08/style/nobel-prize-literature-anne-carson-winner-2026-intl",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261009-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, quelle cité-État fortunée a pris la première place du classement d'IQAir des villes les plus polluées du monde, alors que le smog des feux de forêt en Indonésie l'engloutissait à l'approche de sa course nocturne de Formule 1 ?",
+    "correct_answer": "Singapour",
+    "incorrect_answers": [
+      "Hong Kong",
+      "Jakarta",
+      "Dubaï",
+      "L'Atlantide, mais avec plus de circulation"
+    ],
+    "explanation": "La qualité de l'air de Singapour a atteint un niveau « très malsain » avec un indice AQI de 216 ; Kuala Lumpur s'est classée deuxième tandis que la fumée des incendies à Sumatra et à Bornéo se propageait.",
+    "source_url": "https://www.cnn.com/2026/10/09/asia/singapore-pollution-formula-one-hnk-intl",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261011-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, Max Verstappen a remporté le Grand Prix de Singapour, une première dans sa carrière. Quel pilote a terminé deuxième pour Ferrari ?",
+    "correct_answer": "Charles Leclerc",
+    "incorrect_answers": [
+      "Lewis Hamilton",
+      "Lando Norris",
+      "George Russell",
+      "Un pélican très égaré"
+    ],
+    "explanation": "Verstappen a mené du début à la fin à Marina Bay, avec Leclerc deuxième et Kimi Antonelli, de Mercedes, troisième. Son coéquipier chez Ferrari, Hamilton, a terminé sixième après une stratégie de pneus déroutante.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261011-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, après le Grand Prix de Singapour, quel pilote de Mercedes âgé de 20 ans est resté en mesure d'assurer son premier titre mondial de Formule 1 dès la prochaine course, à Austin ?",
+    "correct_answer": "Kimi Antonelli",
+    "incorrect_answers": [
+      "Oscar Piastri",
+      "Liam Lawson",
+      "Isack Hadjar",
+      "Un kart de location à Austin"
+    ],
+    "explanation": "La troisième place d'Antonelli à Singapour, combinée à la neuvième de son coéquipier George Russell, a porté son avance au championnat à 102 points, alors que 150 points restaient en jeu au maximum. Une victoire à Austin pourrait faire de lui le plus jeune champion de l'histoire de la discipline.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261011-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, La Presse a rapporté que la NASA avait commencé à recruter des volontaires pour sa troisième mission martienne simulée, dans laquelle les équipages vivent isolés pendant plus de combien de temps ?",
+    "correct_answer": "Plus d'un an",
+    "incorrect_answers": [
+      "Six mois",
+      "Un mois",
+      "Deux semaines",
+      "Jusqu'à ce que les collations s'épuisent"
+    ],
+    "explanation": "Le programme CHAPEA de la NASA enferme des équipages de volontaires dans un habitat semblable à Mars pour étudier leur façon de s'adapter. Le recrutement pour la troisième simulation s'est ouvert à l'été 2026 ; un Canadien qui avait participé à la première, en 2023, a décrit à quel point l'isolement est éprouvant.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-11/a-quoi-ressemblerait-une-mission-sur-mars.php",
+    "as_of": "2026-10-11",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261012-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, les Américains Robert E. Hall et Michael Woodford ont remporté le prix Nobel d'économie pour des modèles qui aident les gouvernements et les banques centrales à faire quoi ?",
+    "correct_answer": "Stabiliser leur économie",
+    "incorrect_answers": [
+      "Prédire les krachs boursiers",
+      "Automatiser la collecte des impôts",
+      "Éliminer la dette nationale",
+      "Rendre tout le monde milliardaire"
+    ],
+    "explanation": "L'Académie royale suédoise des sciences a honoré ces professeurs de Stanford et de Columbia pour des modèles qui aident à minimiser l'impact des chocs externes comme les crises énergétiques sur les économies.",
+    "source_url": "https://www.cnn.com/2026/10/12/business/nobel-prize-economics-intl",
+    "as_of": "2026-10-12",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261012-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, le Prix Versailles a publié sa liste des plus belles nouvelles gares du monde, classant Town Hall Station au premier rang. Dans quelle ville se trouve-t-elle ?",
+    "correct_answer": "Melbourne",
+    "incorrect_answers": [
+      "Sydney",
+      "Vienne",
+      "Osaka",
+      "Sous la mer, évidemment"
+    ],
+    "explanation": "Le Prix Versailles récompense l'architecture contemporaine alliant mobilité, beauté et durabilité. Town Hall Station, à Melbourne en Australie, a dominé le palmarès 2026 ; sa salle souterraine sous le City Square compte huit immenses colonnes qui lui donnent des allures de cathédrale.",
+    "source_url": "https://www.lapresse.ca/voyage/2026-10-12/prix-versailles/les-plus-belles-gares-contemporaines.php",
+    "as_of": "2026-10-12",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, des scientifiques ont identifié un nouveau parent du crocodile vieux de 170 millions d'années, nommé Ctenosuchus tenuidens, à partir de fossiles trouvés dans les montagnes de l'Atlas de quel pays ?",
+    "correct_answer": "Le Maroc",
+    "incorrect_answers": [
+      "L'Algérie",
+      "La Tunisie",
+      "L'Égypte",
+      "Quelque part près de l'Atlantide, probablement"
+    ],
+    "explanation": "L'équipe de l'Université de Portsmouth et de l'Université Hassan II de Casablanca a trouvé les fossiles dans des roches formées dans d'anciennes rivières et lacs du sud-est du Maroc. Son nom vient de mots du grec ancien qui signifient peigne, crocodile et dents fines.",
+    "source_url": "https://www.bbc.com/news/articles/c6vg0px1dkmmo",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, Epic Games, le créateur de Fortnite, a annoncé un « énorme pivot » vers l'utilisation de l'intelligence artificielle dans le développement de ses jeux. Qui est le fondateur et PDG de l'entreprise ?",
+    "correct_answer": "Tim Sweeney",
+    "incorrect_answers": [
+      "Elon Musk",
+      "Satya Nadella",
+      "Jensen Huang",
+      "Sir Fortnite le Premier"
+    ],
+    "explanation": "Tim Sweeney a fait l'annonce sur les réseaux sociaux, déclarant que les développeurs adapteraient leurs outils pour une « accélération maximale de l'IA ». La nouvelle est arrivée après un rapport selon lequel Epic avait reporté une collaboration avec Disney mettant en vedette des personnages de Star Wars et de Marvel.",
+    "source_url": "https://www.bbc.com/news/articles/cvj6j812dg4no",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, l'astronaute de l'Agence spatiale canadienne Joshua Kutryk a répondu à ses premières questions depuis la Station spatiale internationale. Qu'a-t-il dit aux journalistes au sujet de sa mission ?",
+    "correct_answer": "C'est sa première fois dans l'espace",
+    "incorrect_answers": [
+      "C'est son deuxième vol spatial",
+      "C'est son troisième vol spatial",
+      "C'est une mission consacrée aux sorties spatiales",
+      "Une très grande échelle depuis la Terre"
+    ],
+    "explanation": "Kutryk s'est envolé 11 jours avant l'entrevue pour un séjour de six mois à bord de la Crew-13 de SpaceX de la NASA, et a dit qu'il réapprenait encore des gestes de base comme dormir et manger en microgravité.",
+    "source_url": "https://www.cbc.ca/news/science/joshua-kutryk-q-a-iss-9.7379098",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-64",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, une équipe internationale a publié la plus grande carte génétique du bison à ce jour. Combien de génomes de bison l'étude a-t-elle séquencés au total ?",
+    "correct_answer": "160",
+    "incorrect_answers": [
+      "60",
+      "115",
+      "45",
+      "Un décompte très velu"
+    ],
+    "explanation": "Les chercheurs ont séquencé 115 génomes anciens et 45 génomes modernes, couvrant 20 000 ans d'histoire de l'espèce. L'étude a révélé qu'une diversité surprenante a survécu à la quasi-extinction du XIXe siècle mais se retrouve maintenant piégée dans des troupeaux isolés.",
+    "source_url": "https://www.cbc.ca/news/canada/edmonton/bison-dna-genome-9.7375668",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-65",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, l'organisme québécois Consignaction a annoncé une usine de 60 millions de dollars à Sorel-Tracy pour traiter quels contenants consignés ?",
+    "correct_answer": "Les contenants de verre",
+    "incorrect_answers": [
+      "Les bouteilles de plastique",
+      "Les canettes d'aluminium",
+      "Les briques de jus",
+      "Des barquettes de poutine glacées"
+    ],
+    "explanation": "L'usine broiera, lavera et triera le verre consigné avant de l'envoyer aux recycleurs, et sera exploitée par le fabricant d'équipement Machinex. Malgré l'opposition du gouvernement, son financement reposera sur des écofrais non remboursables payés par les consommateurs québécois, dont le montant augmentera considérablement.",
+    "source_url": "https://www.lapresse.ca/actualites/environnement/2026-10-13/consigne-sur-les-contenants-de-verre/une-usine-financee-par-les-consommateurs.php",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261013-66",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, La Presse décrit ETNA-MS, une application pour tablette conçue à Montréal et approuvée par Santé Canada, qui suit la progression de la sclérose en plaques en surveillant quoi ?",
+    "correct_answer": "Les mouvements des yeux",
+    "incorrect_answers": [
+      "La vitesse de marche",
+      "Les tremblements de la main",
+      "Les habitudes de parole",
+      "La fréquence des haussements de sourcils"
+    ],
+    "explanation": "Le logiciel a été développé à l'Institut Neuro de Montréal par le neurologue Etienne de Villers-Sidani. Comme il permet aux patients de se tester en pharmacie, les neurologues peuvent recevoir des données et ajuster les médicaments plus souvent, au lieu d'attendre le bilan annuel habituel.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-13/invention-montrealaise/revolution-sur-tablette-pour-la-sclerose-en-plaques.php",
+    "as_of": "2026-10-13",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261014-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, une nouvelle espèce de dinosaure nommée Invictibellatrix amberina a été identifiée à partir d'un fossile découvert sur quelle île il y a plus de 100 ans ?",
+    "correct_answer": "L'île de Wight",
+    "incorrect_answers": [
+      "L'île de Man",
+      "L'île de Skye",
+      "Anglesey",
+      "L'île flottante des collations"
+    ],
+    "explanation": "Le fossile, un morceau de l'arrière d'un crâne, a été déterré sur l'île de Wight par le paléontologue amateur Reginald Walter Tooley, puis acquis par le Musée d'histoire naturelle en 1924, où il est resté dans un tiroir pendant près d'un siècle.",
+    "source_url": "https://www.bbc.com/news/articles/cmvgx70v9vrjo",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261014-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, on a annoncé que Sir Ian McKellen, alors âgé de 87 ans, apparaîtrait sous forme d'hologramme lors de la première européenne de la pièce An Ark dans les Aviva Studios de quelle ville du Royaume-Uni ?",
+    "correct_answer": "Manchester",
+    "incorrect_answers": [
+      "Londres",
+      "Burnley",
+      "Liverpool",
+      "Narnia, par le fond de l'armoire"
+    ],
+    "explanation": "La vedette du Seigneur des anneaux apparaît en hologramme 3D dans la pièce de Simon Stephens aux Aviva Studios de Factory International, à Manchester, capturé à l'aide de 52 caméras, aux côtés de Golda Rosheuvel de Bridgerton. La pièce a été créée à New York.",
+    "source_url": "https://www.bbc.com/news/articles/cxyvrq6zjq55o",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261014-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, quel animal figurait sur la photo gagnante du concours Wildlife Photographer of the Year 2026 ?",
+    "correct_answer": "Un éléphant",
+    "incorrect_answers": [
+      "Un lion",
+      "Une baleine",
+      "Un bousier",
+      "Une plante verte très fière"
+    ],
+    "explanation": "Le photographe italien Federico Veronesi a remporté le grand titre avec « The Aftermath », une image en noir et blanc d'une éléphante portant son petit mort, prise alors qu'il traquait des éléphants en Namibie.",
+    "source_url": "https://www.cbc.ca/news/science/wpy-2026-9.7380334",
+    "as_of": "2026-10-14",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, le gérant des Brewers de Milwaukee, Pat Murphy, a été arrosé de champagne après que son club s'est qualifié pour la Série mondiale. Le circuit de trois points de quel joueur avait donné une avance de 4-0 aux Dodgers lors du quatrième match, avant que Milwaukee ne revienne pour gagner 6-4 ?",
+    "correct_answer": "Shohei Ohtani",
+    "incorrect_answers": [
+      "Mookie Betts",
+      "Freddie Freeman",
+      "Will Smith",
+      "Le vendeur de Dodger Dogs"
+    ],
+    "explanation": "La longue balle d'Ohtani en deuxième manche avait brièvement donné le contrôle à Los Angeles, mais Milwaukee a grugé l'écart et le circuit de Garrett Mitchell en sixième manche a donné aux Brewers une avance qu'ils n'ont plus perdue.",
+    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, la NOAA a publié ses premières prévisions hivernales officielles, dominées par un El Niño d'une intensité proche du record qui devrait atteindre son pic en quel mois ?",
+    "correct_answer": "Décembre",
+    "incorrect_answers": [
+      "Janvier",
+      "Février",
+      "Novembre",
+      "Un mois de septembre très détrempé, mais en pire"
+    ],
+    "explanation": "Les prévisionnistes attendent de l'El Niño, caractérisé par des températures de l'océan Pacifique tropical supérieures à la normale, qu'il atteigne son pic en décembre et qu'il façonne un hiver plus doux et plus humide sur une grande partie des 48 États contigus.",
+    "source_url": "https://www.cnn.com/2026/10/15/weather/winter-outlook-super-el-nino",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, une usine textile de sept étages du Bangladesh nommée Green Field Factory a remporté le prix international RIBA de la meilleure nouvelle construction au monde. Dans quelle ville se trouve-t-elle ?",
+    "correct_answer": "Rangpur",
+    "incorrect_answers": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Un très grand jardin"
+    ],
+    "explanation": "Conçue par Nakshabid Architects à Rangpur, dans le nord du pays, l'usine couverte de plantes a été saluée pour ses aménagements pensés pour les travailleurs, dont une garderie sur le toit et un cabinet médical sur place.",
+    "source_url": "https://www.cnn.com/2026/10/15/style/riba-international-award-bangladesh-factory",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-64",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le nouveau pont sur le fleuve Yalou entre la Chine et la Corée du Nord a enfin ouvert, reliant la ville chinoise de Dandong à quelle ville nord-coréenne ?",
+    "correct_answer": "Sinuiju",
+    "incorrect_answers": [
+      "Pyongyang",
+      "Kaesong",
+      "Chongjin",
+      "Le siège arrière d'un canoë"
+    ],
+    "explanation": "Le pont, long de près de 3 kilomètres et doté de quatre voies, est resté inutilisé pendant des années après la fin des travaux en 2014, car les routes et les installations frontalières côté nord-coréen n'étaient pas achevées.",
+    "source_url": "https://www.cnn.com/2026/10/15/asia/china-north-korea-bridge-intl-hnk",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-65",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, Tesla a présenté sa nouvelle voiture de sport électrique Roadster, près de neuf ans après le premier dévoilement de la version de nouvelle génération. De qui la silhouette apparaît-elle à côté du logo Tesla dans la photo du reportage de la BBC ?",
+    "correct_answer": "Elon Musk",
+    "incorrect_answers": [
+      "Jeff Bezos",
+      "Tim Cook",
+      "Sam Altman",
+      "Un lampadaire suspectement grand"
+    ],
+    "explanation": "Tesla avait dévoilé la Roadster de nouvelle génération à la fin de 2017, mais la voiture a accumulé les reports. Le sujet du World Business Report, illustré par la silhouette d'Elon Musk, notait aussi une journée difficile pour les valeurs technologiques, dans un contexte d'interrogations sur les dépenses en intelligence artificielle.",
+    "source_url": "https://www.bbc.com/audio/play/w3ct8fqw",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-66",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, un organisme international de mesure du temps réuni en France a voté l'abolition de quel ajustement de l'horloge vieux de plusieurs décennies ?",
+    "correct_answer": "La seconde intercalaire",
+    "incorrect_answers": [
+      "L'année bissextile",
+      "L'heure d'été",
+      "La minute intercalaire",
+      "Une heure entière, parce que siècles"
+    ],
+    "explanation": "La seconde intercalaire, introduite en 1972 pour garder les horloges atomiques en phase avec la rotation de la Terre, a été ajoutée 27 fois, la dernière fois en 2016. Les gardiens du temps laisseront désormais les horloges dériver jusqu'à un décalage d'une heure entière, ce qui pourrait prendre des siècles.",
+    "source_url": "https://www.cbc.ca/news/world/leap-second-decision-9.7381049",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-67",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, CBC a rapporté que des milliers d'anguilles d'Amérique en voie de disparition descendent chaque année le fleuve Saint-Laurent pour rejoindre leurs zones de reproduction dans quelle mer ?",
+    "correct_answer": "La mer des Sargasses",
+    "incorrect_answers": [
+      "La mer Méditerranée",
+      "La mer du Nord",
+      "La mer Rouge",
+      "La piscine à vagues du parc aquatique"
+    ],
+    "explanation": "Les anguilles naissent dans la mer des Sargasses, dans les Caraïbes, puis passent jusqu'à 20 ans en eau douce, par exemple dans le lac Ontario, avant de retourner en mer pour frayer. Les turbines des barrages hydroélectriques figurent parmi les plus grands dangers de leur voyage.",
+    "source_url": "https://www.cbc.ca/news/climate/what-on-earth-eels-hydro-dams-9.7381506",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261015-68",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, Mattel a annoncé une poupée Barbie de collection rendant hommage à Céline Dion. Quel moment de la carrière de la chanteuse canadienne a inspiré le look de la poupée ?",
+    "correct_answer": "Sa prestation de My Heart Will Go On aux Oscars 1998",
+    "incorrect_answers": [
+      "Le début de sa résidence à Las Vegas",
+      "Sa prestation à la cérémonie de clôture des Jeux olympiques de Paris 2024",
+      "Son premier prix Juno",
+      "Un gâteau d'anniversaire en forme de Titanic"
+    ],
+    "explanation": "La poupée en édition limitée, issue de la gamme haut de gamme Barbie Signature de Mattel, recrée la robe sombre portée par Dion lors des Oscars 1998, où la ballade du film Titanic a remporté l'Oscar de la meilleure chanson originale.",
+    "source_url": "https://www.cbc.ca/news/entertainment/celine-dion-barbie-9.7381753",
+    "as_of": "2026-10-15",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261016-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, Waymo a annoncé qu'elle commencerait à tester ses véhicules autonomes avec des conducteurs de sécurité dans les rues de quelle ville canadienne ?",
+    "correct_answer": "Toronto",
+    "incorrect_answers": [
+      "Vancouver",
+      "Montréal",
+      "Calgary",
+      "Whoville"
+    ],
+    "explanation": "Les travaux de cartographie et de validation de sécurité ont commencé quelques jours après l'annonce, dans le but de permettre aux passagers de commander des taxis sans conducteur dans la plus grande ville du Canada d'ici 2028. Les conditions hivernales constituent le principal défi d'ingénierie de la technologie.",
+    "source_url": "https://www.cbc.ca/news/business/waymo-toronto-winter-self-driving-9.7384550",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261016-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, l'ACI a revu à la baisse ses prévisions de ventes domiciliaires au Canada pour la troisième fois cette année, en indiquant de combien les ventes de septembre avaient diminué par rapport au même mois un an plus tôt ?",
+    "correct_answer": "7,7 pour cent",
+    "incorrect_answers": [
+      "2,3 pour cent",
+      "5,2 pour cent",
+      "10,1 pour cent",
+      "De quoi avoir besoin d'une échelle"
+    ],
+    "explanation": "L'Association canadienne de l'immeuble a expliqué que la hausse des coûts du pétrole, qui fait grimper les taux hypothécaires fixes, et l'inquiétude face à d'éventuelles hausses de taux de la Banque du Canada maintenaient les acheteurs à l'écart. Les ventes ont aussi reculé de 2,3 pour cent par rapport à août.",
+    "source_url": "https://www.cbc.ca/news/business/crea-september-2026-forecast-downgrade-9.7382355",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261016-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, World Curling a confirmé son intention d'organiser le championnat du monde féminin 2027 dans quel pays ?",
+    "correct_answer": "Les Émirats arabes unis",
+    "incorrect_answers": [
+      "Le Japon",
+      "La Suisse",
+      "La Corée du Sud",
+      "Un château de sable très glacé"
+    ],
+    "explanation": "Le championnat de la mi-mars doit se tenir aux Émirats arabes unis. Le curling est traditionnellement concentré dans les pays au climat froid comme le Canada, l'Écosse, la Suède et la Suisse, ce qui fait de ce pays du Golfe un choix étonnant.",
+    "source_url": "https://www.cbc.ca/sports/curling-womens-world-championships-abu-dhabi-9.7383379",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261016-64",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, une étude montréalaise portant sur 45 squelettes d'un cimetière du XVIIe siècle a remis en question la croyance populaire voulant que les colons français de la Nouvelle-France aient fréquemment formé des unions avec quel groupe ?",
+    "correct_answer": "Les peuples autochtones",
+    "incorrect_answers": [
+      "Les colons acadiens",
+      "Les immigrants irlandais",
+      "Les loyalistes de l'Empire-Uni",
+      "Celui que le crieur public a désigné"
+    ],
+    "explanation": "L'analyse génétique n'a révélé aucun métissage, ce qui suggère que les unions entre colons et peuples autochtones étaient moins fréquentes que ce que beaucoup de Québécois croient au sujet de leurs lointains ancêtres.",
+    "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-16/nouvelle-france/une-etude-met-a-mal-le-mythe-du-metissage-des-premiers-colons.php",
+    "as_of": "2026-10-16",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, les Brewers de Milwaukee ont décroché leur première participation à la Série mondiale depuis quelle année en balayant les Dodgers de Los Angeles lors de la Série de championnat de la Ligue nationale ?",
+    "correct_answer": "1982",
+    "incorrect_answers": [
+      "1975",
+      "1991",
+      "2008",
+      "1975 et demie"
+    ],
+    "explanation": "Milwaukee a balayé les Dodgers, champions en titre, pour se tailler une place à sa deuxième Série mondiale de l'histoire ; les Brewers avaient perdu la Série mondiale 1982 en sept matchs contre les Cardinals de Saint-Louis.",
+    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, Auburn, non classée, a créé la surprise en battant Georgia, première au classement, 27-24 sur un botté de 34 verges à l'expiration du temps réglementaire. C'était la première victoire d'Auburn à Athènes depuis quelle année ?",
+    "correct_answer": "2005",
+    "incorrect_answers": [
+      "1994",
+      "2010",
+      "2013",
+      "L'année après la prochaine"
+    ],
+    "explanation": "Le botté d'Alex McPherson sur le dernier jeu a donné à Auburn sa première victoire à Athènes depuis 2005 et sa première victoire à l'extérieur contre une équipe classée première depuis sa victoire contre la Floride en 1994.",
+    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, CNN rapportait que « The Happy Song » d'Imogen Heap, scientifiquement conçue pour apaiser les bébés qui pleurent, avait dépassé combien d'écoutes sur Spotify au fil de ses dix ans d'existence ?",
+    "correct_answer": "470 millions",
+    "incorrect_answers": [
+      "120 millions",
+      "310 millions",
+      "890 millions",
+      "Un stream par bébé depuis 2016"
+    ],
+    "explanation": "Née en 2016 de la collaboration entre Heap et deux psychologues, la chanson s'est construite à partir de recherches et de groupes de discussion avec des bébés, et elle a dépassé sur Spotify des classiques comme « Let's Get It On » de Marvin Gaye.",
+    "source_url": "https://www.cnn.com/2026/10/17/style/happy-song-imogen-heap-anniversary-wellness",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-64",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, CNN a dressé le portrait d'une princesse italienne qui loue le palais romain du XVIe siècle de sa famille, la Ruspoli Bonaparte Residence, avec des suites à partir d'environ 470 $ la nuit. Comment s'appelle-t-elle ?",
+    "correct_answer": "La princesse Giacinta Ruspoli",
+    "incorrect_answers": [
+      "La princesse Maria Pia",
+      "La princesse Beatrice",
+      "La princesse Carolina di Borbone",
+      "La duchesse Pumpernickel de la boutique de souvenirs"
+    ],
+    "explanation": "Elle et sa mère, l'ancienne Miss Sicile Maria Pia, accueillent les clients payants dans la demeure ancestrale ; l'Italie a cessé de reconnaître légalement la noblesse en 1946, si bien que l'entretien dépend des revenus du tourisme.",
+    "source_url": "https://www.cnn.com/2026/10/17/travel/italian-princess-renting-palace-rome",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-65",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, l'équipe canadienne féminine de rugby a battu l'Angleterre 24-21 à Toronto, mettant fin à une série de combien de matchs sans défaite pour les Red Roses ?",
+    "correct_answer": "41 matchs",
+    "incorrect_answers": [
+      "23 matchs",
+      "37 matchs",
+      "50 matchs",
+      "Tous, pour toujours"
+    ],
+    "explanation": "Shoshanah Seumanutafa a marqué un essai à la 78e minute pour compléter la remontée devant 18 621 spectateurs, la plus grande foule de l'histoire du rugby féminin en Amérique du Nord. C'était la première défaite de l'Angleterre depuis la finale de la Coupe du monde 2022.",
+    "source_url": "https://www.cbc.ca/sports/rugby/canada-womens-rugby-england-toronto-recap-9.7385124",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-66",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, la musicienne québécoise La Bronze a révélé un titre inventé d'un seul mot pour son quatrième album. Lequel était-ce ?",
+    "correct_answer": "Festinathèque",
+    "incorrect_answers": [
+      "Marmite sonore",
+      "Cuisine de chambre",
+      "Banc de neige",
+      "Bouillabafoufou"
+    ],
+    "explanation": "La Bronze a forgé ce mot, qui fusionne « festin » et « bibliothèque », pour son quatrième album, un disque éclectique dans lequel elle explore une vaste gamme d'émotions.",
+    "source_url": "https://www.lapresse.ca/arts/musique/2026-10-17/la-festinatheque/le-festin-des-festins-de-la-bronze.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-67",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, quelle équipe de la LNH a gagné 8-3 dans un match où Carter Verhaeghe et Sam Bennett ont chacun réussi un tour du chapeau ?",
+    "correct_answer": "Les Panthers de la Floride",
+    "incorrect_answers": [
+      "Le Kraken de Seattle",
+      "Le Lightning de Tampa Bay",
+      "Les Bruins de Boston",
+      "Les Zamboni All-Stars"
+    ],
+    "explanation": "Les deux Panthers ont chacun complété un tour du chapeau dans cette victoire facile à domicile contre Seattle, à Sunrise. Deux tours du chapeau par des coéquipiers dans un même match, c'est un fait rare dans la LNH.",
+    "source_url": "https://www.lapresse.ca/sports/hockey/2026-10-17/samedi-dans-la-lnh/les-panthers-defont-le-kraken-8-3.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261017-68",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le CF Montréal a été officiellement éliminé de la course aux séries éliminatoires de la MLS après un match nul de 1-1 contre quel club ?",
+    "correct_answer": "Les Sounders de Seattle",
+    "incorrect_answers": [
+      "Les Whitecaps de Vancouver",
+      "Le Galaxy de Los Angeles",
+      "Le Toronto FC",
+      "Le club de kayak local"
+    ],
+    "explanation": "La défense montréalaise a tenu bon tard en deuxième mi-temps pour arracher le match nul de 1-1 samedi soir, mais ce point unique n'a pas suffi à maintenir les espoirs de séries du club en vie.",
+    "source_url": "https://www.lapresse.ca/sports/soccer/2026-10-18/le-cf-montreal-recolte-un-match-nul-face-aux-sounders-et-est-officiellement-elimine.php",
+    "as_of": "2026-10-17",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-61",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le football universitaire américain est entré dans l'histoire lorsque cinq des sept meilleures équipes du top 25 de l'AP ont perdu le même jour pour la première fois. Quelle conférence comptait Georgia, numéro 1, Alabama, numéro 6, et Texas, numéro 7, toutes battues ce jour-là ?",
+    "correct_answer": "La SEC (Conférence Sud-Est)",
+    "incorrect_answers": [
+      "La Big Ten",
+      "L'ACC",
+      "La Big 12",
+      "L'Alliance des éléphants confus"
+    ],
+    "explanation": "Les surprises de ce « Shakeup Saturday » ont été portées par la Conférence Sud-Est. Auburn, non classée, a créé la sensation en s'imposant 27-24 chez Georgia, le fait saillant d'une journée chaotique pour ce sport.",
+    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-62",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, les recherches de l'avion perdu d'Amelia Earhart ont repris autour de l'île Nikumaroro, dans le Pacifique, afin d'étudier un objet repéré dans le lagon connu sous quel nom ?",
+    "correct_answer": "L'objet Taraia",
+    "incorrect_answers": [
+      "L'objet Norwich City",
+      "L'objet Gardner",
+      "L'anomalie Electra",
+      "Un piano flottant géant"
+    ],
+    "explanation": "L'expédition de l'Université Purdue et de l'Archaeological Legacy Institute vise l'objet Taraia, visible sur des images aériennes remontant à 1938. Une météo sévère liée à El Niño avait retenu l'équipe trois jours à bord de son navire de recherche.",
+    "source_url": "https://www.bbc.co.uk/news/articles/cv70pxe5j90eo",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-63",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, Stelco a poursuivi ses plans visant à mettre à pied jusqu'à 500 travailleurs à Hamilton et à Nanticoke, en Ontario. Quelle entreprise américaine est propriétaire de ce sidérurgiste canadien ?",
+    "correct_answer": "Cleveland-Cliffs",
+    "incorrect_answers": [
+      "US Steel",
+      "Nucor",
+      "ArcelorMittal",
+      "L'abri d'acier de Bob dans sa cour"
+    ],
+    "explanation": "Cette entreprise de l'Ohio, plus grand producteur nord-américain d'acier plat, a acheté Stelco en 2024. Son plan de suppression d'emplois malgré ses engagements pris en vertu de la Loi sur l'investissement au Canada amène Ottawa à étudier des recours juridiques.",
+    "source_url": "https://www.cbc.ca/news/business/stelco-jobs-layoffs-steel-industry-9.7384487",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-64",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, des scientifiques ont rapporté que la sprinteuse italienne Emma Mazzenga, qui participe encore à des épreuves masters, avait quel âge ?",
+    "correct_answer": "93",
+    "incorrect_answers": [
+      "73",
+      "83",
+      "103",
+      "Assez rapide pour dépasser son acte de naissance"
+    ],
+    "explanation": "Mazzenga a repris la course à 53 ans et détient désormais le record du monde du 200 mètres dans la catégorie des femmes de plus de 90 ans. Les chercheurs ont constaté que ses fibres musculaires à contraction lente, résistantes à la fatigue, sont aussi volumineuses que celles d'une femme de 20 ans.",
+    "source_url": "https://www.cbc.ca/news/world/emma-mazzenga-italian-sprinter-longevity-9.7383784",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-65",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, quelle joueuse de tennis canadienne a remporté le titre du double féminin de l'Open de Wuhan aux côtés de la Brésilienne Luisa Stefani ?",
+    "correct_answer": "Gabriela Dabrowski",
+    "incorrect_answers": [
+      "Leylah Fernandez",
+      "Bianca Andreescu",
+      "Eugenie Bouchard",
+      "Un orignal avec une raquette"
+    ],
+    "explanation": "Dabrowski et Stefani ont battu les championnes en titre Storm Hunter et Katerina Siniakova 7-5, 6-4 en finale à Wuhan dimanche.",
+    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-wuhan/dabrowski-recolte-un-autre-titre-en-double-feminin.php",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "news-20261018-66",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, quel joueur de tennis espagnol a remporté son premier titre Masters 1000 en battant son compatriote Rafael Jodar en finale du Masters de Shanghai ?",
+    "correct_answer": "Alejandro Davidovich Fokina",
+    "incorrect_answers": [
+      "Carlos Alcaraz",
+      "Rafael Nadal",
+      "Pablo Carreno Busta",
+      "Un juge de ligne très enthousiaste"
+    ],
+    "explanation": "Davidovich Fokina a perdu le premier set et cédé un break de service avant de l'emporter 1-6, 7-6 (5), 6-4 à Shanghai. Le niveau Masters 1000 se situe juste en dessous des quatre tournois du Grand Chelem.",
+    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-shanghai/davidovich-fokina-s-offre-son-premier-masters-1000.php",
+    "as_of": "2026-10-18",
+    "origin": "claude",
+    "reviewed": true
+  }
+]

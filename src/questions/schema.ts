@@ -47,7 +47,7 @@ export interface ValidationIssue {
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const HTML_ENTITY = /&[a-zA-Z]+;|&#\d+;/
-const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December) 20\d{2}/
+const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre) 20\d{2}/
 const HUMAN_ID = /^[a-z-]+-\d{4}$/
 const CLAUDE_ID = /^news-\d{8}-\d{2}$/
 

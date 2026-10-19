@@ -89,6 +89,23 @@ describe('validateQuestion', () => {
     )
     expect(issues).toEqual([])
   })
+  it('accepts a French date-anchored current-events question', () => {
+    const issues = validateQuestion(
+      validQuestion({
+        id: 'news-20260901-02',
+        origin: 'claude',
+        reviewed: false,
+        category: 'current-events',
+        question: 'En septembre 2026, quel vaisseau spatial a atteint Mars ?',
+        correct_answer: 'La sonde X',
+        incorrect_answers: ['La sonde Y', 'La sonde Z', 'La sonde W', 'La sonde V'],
+        explanation: 'La sonde X est entrée en orbite martienne en septembre 2026 après une croisière de sept mois. C’est la première mission de son programme.',
+        source_url: 'https://example.com/news',
+        as_of: '2026-09-15',
+      }),
+    )
+    expect(issues).toEqual([])
+  })
 
   it('enforces id format per origin', () => {
     expect(validateQuestion(validQuestion({ id: 'bad_id' })).map((i) => i.field)).toContain('id')

@@ -87,7 +87,7 @@ Field rules:
 | `incorrect_answers` | string[4] | Exactly 4: 3 plausible, plus 1 obviously-wrong joke answer meant to earn a chuckle. None equal to the correct answer. |
 | `explanation` | string | 1 to 3 sentences, max 400 characters. Must add context, not just restate the answer. |
 | `source_url` | string or null | Required (non-null) for `current-events`. |
-| `as_of` | ISO date or null | Required for `current-events`; the date the fact was true. The question text must also be date-anchored ("In September 2026, ..."). |
+| `as_of` | ISO date or null | Required for `current-events`; the date the fact was true. The question text must also be date-anchored ("In September 2026, ..." / "En septembre 2026, ..." — English and French month names both satisfy the anchor). |
 | `origin` | `"human"` or `"claude"` | Provenance. |
 | `reviewed` | boolean | Only `reviewed: true` questions are included in the build. |
 

@@ -31,7 +31,7 @@ if (files.length === 0) {
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const HTML_ENTITY = /&[a-zA-Z]+;|&#\d+;/
-const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December) 20\d{2}/
+const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre) 20\d{2}/
 
 for (const file of files) {
   const path = join(QUESTIONS_DIR, file)

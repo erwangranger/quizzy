@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased — Tagline
+## Unreleased — French question banks
+
+- All 61 questions translated to French so French speakers can play: new `questions/fr-sample.json` (12, `origin: "human"`, IDs `geo-fr-0001` style) and `questions/fr-recent-news.json` (49, `origin: "claude"`, IDs `news-<date>-<61+>` — same date, fresh sequence, no collision with the en bank's max nn 50). Questions, choices, explanations and joke answers fully translated (jokes keep landing: « Un parking très humide », « Le 32 novembre, forcément un mardi », « Un orignal avec une raquette »); `source_url`, `as_of`, `category`, `difficulty` unchanged; French month name in the news anchor ("En octobre 2026, ...").
+- Validators now accept French date anchors: the `MONTH_YEAR` regex in `src/questions/schema.ts` and `scripts/validate-questions.mjs` matches English and French month names (janvier–décembre); `SPEC.md` field rule updated.
+- The language toggle on the Starter screen (en/fr) now actually swaps banks: `drawQuestions` filters by `lang`, `getCategories('fr')` returns the same 7 categories, and the store's locale switches with it. Unknown-language test switched from `'fr'` (now a real bank) to a `'zz'` cast.
+- QC: `validate:questions` 122/122 across 4 files; no duplicate joke answers within the fr banks; vitest 48/48 (bank-size 122, fr categories, per-language pool cap, fr draw test); `vue-tsc -b` + build green; headless Chromium — fr toggle renders the fr UI (« Commencer », « Choisir une catégorie ») with 7 category chips; solo game draws 10 questions all `lang: "fr"`, correct answer recorded (category-stamped history row, `answeredTotal` 2 after an answer-wrong-next), game-over totals unchanged.
+- Category chips now show localized names instead of raw slugs: `category.geography/history/science/arts-literature/entertainment/sports-leisure` keys added to both locale dictionaries (`src/locales/index.ts`; en "Arts & Literature" / fr "Arts et littérature" etc.) — previously only `recent-news` was localized, so 6 English slugs rendered in fr mode (and raw slugs in en mode). Chips still select by slug; verified en + fr chips in the browser.
 
 - `instructions.body` (en + fr) replaced "Test your knowledge with a quiz. Play against a friend, or challenge yourself." with "Symptoms may include knowledge vertigo." (fr "Symptômes possibles : vertige de la connaissance.") — plays off the 🥴 branding; renders on the intro screen above the Starter.
 

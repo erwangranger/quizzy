@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { drawQuestions, getCategories, resetSeenQuestions, loadAllQuestions } from './questionBank'
+import type { Lang } from './schema'
 
 // jsdom localStorage needs --localstorage-file; provide an in-memory mock so
 // seen-question tracking is exercised deterministically.
@@ -17,10 +18,12 @@ describe('questionBank', () => {
     resetSeenQuestions()
   })
 
-  it('loads 61 reviewed questions from questions/*.json', () => {
+  it('loads 122 reviewed questions from questions/*.json', () => {
     const all = loadAllQuestions()
-    expect(all).toHaveLength(61)
+    expect(all).toHaveLength(122)
     expect(all.every((q) => q.reviewed)).toBe(true)
+    expect(all.filter((q) => q.lang === 'en')).toHaveLength(61)
+    expect(all.filter((q) => q.lang === 'fr')).toHaveLength(61)
   })
 
   it('derives categories from the data for the given language', () => {
@@ -33,8 +36,16 @@ describe('questionBank', () => {
       'sports-leisure',
       'recent-news',
     ])
-    // no fr questions in the sample data
-    expect(getCategories('fr')).toEqual([])
+    // fr banks mirror the en categories
+    expect(getCategories('fr')).toEqual([
+      'geography',
+      'history',
+      'science',
+      'arts-literature',
+      'entertainment',
+      'sports-leisure',
+      'recent-news',
+    ])
   })
 
   it('draws the requested count without repeats within a game', () => {
@@ -63,7 +74,7 @@ describe('questionBank', () => {
   })
 
   it('prefers unseen questions and resets the pool when exhausted', () => {
-    // 61 questions total: draw 60 (no reset), the next draw sees one unseen
+    // 61 en questions total: draw 60 (no reset), the next draw sees one unseen
     // question left, so the bank resets the pool to full before drawing.
     const first = drawQuestions({ lang: 'en', categories: [], count: 60 })
     expect(first.poolReset).toBe(false)
@@ -72,10 +83,13 @@ describe('questionBank', () => {
     expect(second.questions).toHaveLength(10)
   })
 
-  it('caps draws at the available pool size', () => {
+  it('caps draws at the available pool size per language', () => {
     const { questions, poolReset } = drawQuestions({ lang: 'en', categories: [], count: 100 })
     expect(questions).toHaveLength(61)
     expect(poolReset).toBe(true)
+    const fr = drawQuestions({ lang: 'fr', categories: [], count: 100 })
+    expect(fr.questions).toHaveLength(61)
+    expect(fr.questions.every((q) => q.lang === 'fr')).toBe(true)
   })
 
   it('tracks seen ids across draws until reset', () => {
@@ -92,8 +106,14 @@ describe('questionBank', () => {
   })
 
   it('returns an empty result with no poolReset for an unknown language', () => {
-    const { questions, poolReset } = drawQuestions({ lang: 'fr', categories: [], count: 5 })
+    const { questions, poolReset } = drawQuestions({ lang: 'zz' as Lang, categories: [], count: 5 })
     expect(questions).toHaveLength(0)
     expect(poolReset).toBe(false)
+  })
+
+  it('draws only fr questions for the fr language', () => {
+    const { questions } = drawQuestions({ lang: 'fr', categories: ['recent-news'], count: 5 })
+    expect(questions).toHaveLength(5)
+    expect(questions.every((q) => q.lang === 'fr' && q.id.startsWith('news-'))).toBe(true)
   })
 })
