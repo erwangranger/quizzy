@@ -30,18 +30,18 @@
 - Fits existing data model: generated questions as `questions/*.json` entries (`id`, `lang`, …) loaded through the `questionBank` module.
 - Constraints that still apply: no AI API calls from the client app (generation happens offline in a pipeline, results are reviewed before merging — same shape as Phase 5).
 
-## Play analytics (planned — 2026-10-19)
+## Play analytics (done — 2026-10-19)
 
 > Owner request (2026-10-19): "add to backlog, I want to add Google Analytics so I can tell how many people are using the app."
-- [ ] Awareness goal: the game is friends-first but public (served via GitHub Pages); owner wants to know how many people are using the app (usage counts), including when strangers find and play it.
-- [ ] Amend SPEC section 3 non-goal "No ads, analytics or trackers" to permit client-side analytics — the owner's request for analytics is the approval; no other non-goal changes.
-- [ ] Analytics integration: Google Analytics (owner decision 2026-10-19) via a client-side gtag snippet in the static Vite build (likely `index.html` / `src/main.ts`); SPEC section 4 requires asking before any runtime dependency — prefer a plain script tag over an npm package.
-- [ ] Gameplay telemetry: whether people play, session duration, which questions are shown (question IDs), per-question correct/incorrect counts; natural integration point is the quiz store `src/store/store.ts`.
-- [ ] GitHub Pages deploy is already specced (goal 4 "Rendered website", Phase 4 item 2 `deploy.yml`); when picking this up, verify it is live rather than adding new publishing work (no `.github/` workflows exist today).
-- [ ] Any analytics script must load async/non-blocking and degrade gracefully offline, so the offline acceptance criteria (Phase 1 item 5, Phase 4 item 4) still pass.
-- [x] Resolved (2026-10-19): owner chose Google Analytics over the lightweight privacy-friendly alternatives (GoatCounter / Umami / Plausible); nothing left to decide on pickup.
-- [ ] Prerequisite: owner creates a GA4 property and provides the measurement ID (`G-…`) — the gtag snippet cannot ship without it.
-- Constraints that still apply: no backend, accounts or database (section 3) — analytics must be client-side beacons only; the amendment above is the only non-goal change.
+
+- [x] Awareness goal met: usage counts via GA4 `game_start` (mode, players, question count) — fires on every launch, Starter or game-over rematch, so every play session counts, including strangers finding the public GitHub Pages site.
+- [x] SPEC section 3 non-goal amended to "No ads or trackers. Client-side Google Analytics is permitted (amended 2026-10-19, owner approval): usage counts, question IDs shown, and per-question correct/incorrect counts only" — the only non-goal change.
+- [x] Integration: Google Analytics (owner decision) via a client-side gtag snippet in `src/analytics.ts` — the async `googletagmanager.com/gtag/js` script + `dataLayer` bootstrap, injected on the first `game_start` (never before), no npm dependency per SPEC section 4. `src/main.ts` imports the module; `vite.config.ts` untouched.
+- [x] Gameplay telemetry: `question_shown` (question ID + category, every round presented) and `question_answered` per player (question ID, correct/incorrect, mode, player name) from `src/store/store.ts` (`trackQuestionShown()` on start + every `incrementRound()`, event in `score()`); session duration is GA4-automatic. Skipped rounds never fire `question_answered`.
+- [x] GitHub Pages deploy verified live (https://erwangranger.github.io/quizzy/ returns 200); `.github/workflows/deploy.yml` exists and builds on push to `main` — the backlog line "no .github/ workflows exist today" was stale.
+- [x] Async/non-blocking and offline-safe: no-ID build injects nothing and makes no network requests (offline acceptance criteria keep passing); blocked scripts/offline failures are swallowed — analytics can never break the game.
+- [x] Measurement ID provided (2026-10-19): `G-RNWDDHKDL5` in committed `.env.production` (`VITE_GA_MEASUREMENT_ID`, read natively via `import.meta.env` — a Vite `define` reading `process.env` would NOT pick up .env files and was removed). ID is a public identifier, safe to commit; the Measurement Protocol API secret (if ever needed) must never be committed.
+- [x] Verified: `vue-tsc -b` + vitest 48/48 + build green; no-ID build has zero gtag references in the bundle; headless Chromium — script injected on Start with the ID, `game_start`/`question_shown`/`question_answered` observed in `dataLayer`, skip adds no answer event, second launch fires a second `game_start`, zero console errors.
 
 ## Skip questions and leave mid-game (done — 2026-10-18)
 

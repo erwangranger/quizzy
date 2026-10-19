@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — Google Analytics
+
+- Client-side GA4 via the canonical gtag snippet (`src/analytics.ts`, no npm dependency): the async `googletagmanager.com/gtag/js` script plus the `dataLayer` bootstrap, injected on the first game start — never before, so nothing loads until someone actually plays. Measurement ID read at build time from `.env.production` (`VITE_GA_MEASUREMENT_ID=G-RNWDDHKDL5`, committed per owner decision — the ID is a public identifier, not a credential); a build without the ID injects nothing and makes no network requests, so the offline acceptance criteria keep passing.
+- Gameplay telemetry per the owner's request: `game_start` (mode, players, question count — fires on every launch, Starter or rematch), `question_shown` (question ID + category, every round presented), `question_answered` per player (question ID, correct/incorrect, mode, player name). Session duration is GA4-automatic. Skipped questions fire `question_shown` for the round they appear but never `question_answered`.
+- Failures are swallowed by design: blocked scripts, offline, ad-blockers — analytics can never break the game. SPEC section 3 non-goal amended (2026-10-19, owner approval): "No ads or trackers. Client-side Google Analytics is permitted…" — the only non-goal change.
+- Verified: `vue-tsc -b` + vitest 48/48 + build green; no-ID build emits zero gtag references; headless Chromium on the committed-ID build — script tag with `G-RNWDDHKDL5` injected on Start, `game_start` / `question_shown` / `question_answered` all observed in `dataLayer`, skip adds no answer event, second launch fires a second `game_start`, zero console errors.
+
 ## Unreleased — Per-player score tally
 
 - Each player's running score is now visible at the bottom of the Questions screen while advancing between questions: a `.tally` block in the footer strip (below the reveal panel, above the Skip / Main Menu / Reveal / Next actions) showing one "Name: N pts" entry per player — one entry in solo, one per player in quizmaster and pass-and-play. Entries update when a round is scored (Next) and never move on a skip (`skipRound()` records nothing). Owner request: "keep a tally/score for each player visible at the bottom when going to the next question."

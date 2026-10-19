@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import type { Category, Difficulty, Lang, Question } from '../questions/schema'
 import { drawQuestions, getCategories, resetSeenQuestions } from '../questions/questionBank'
+import { analytics } from '../analytics'
 import { setLocale, t } from '../locales'
 
 export interface Choice {
@@ -269,6 +270,12 @@ export const useGameStore = defineStore('game', {
       const player = this.players[index]
       if (!player) return
       const category = this.questions[this.round]?.category
+      analytics.questionAnswered(
+        this.questions[this.round]?.id ?? '',
+        points > 0,
+        this.mode,
+        player.name,
+      )
       if (points > 0) {
         player.score.history.push({ correct: true, incorrect: false, category })
         player.score.total += points
@@ -329,6 +336,7 @@ export const useGameStore = defineStore('game', {
       this.marks = []
       this.hiddenChoices = this.setup.hideChoices && this.mode === 'quizmaster'
       this.pauseGame()
+      this.trackQuestionShown()
     },
     // Quizmaster mode keeps the screen awake for the whole game (Screen Wake
     // Lock API; no-op where unsupported, e.g. jsdom or older Safari).
@@ -420,6 +428,15 @@ export const useGameStore = defineStore('game', {
       this.hiddenChoices = this.setup.hideChoices && this.mode === 'quizmaster'
       this.isPaused = false
       this.requestWakeLock()
+      analytics.gameStart(this.mode, this.players.length, this.questions.length)
+      this.trackQuestionShown()
+    },
+    // Fires question_shown for the current round's question (question IDs
+    // per the analytics telemetry list). No-op when the round has no
+    // question. Called on game start and every round advance.
+    trackQuestionShown() {
+      const question = this.questions[this.round]
+      if (question) analytics.questionShown(question.id, question.category)
     },
     clearSeenQuestions() {
       resetSeenQuestions()
