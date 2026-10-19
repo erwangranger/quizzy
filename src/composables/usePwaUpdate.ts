@@ -6,8 +6,10 @@ import { registerSW } from 'virtual:pwa-register'
  * for activation (vite-plugin-pwa, registerType: 'prompt'). Exposes a
  * reactive flag for the UpdatePrompt banner, a dismiss function, and the
  * plugin's updateSW callback — calling updateSW(true) sends the
- * SKIP_WAITING message so the waiting worker activates, and the plugin
- * reloads the page once it takes control.
+ * SKIP_WAITING message so the waiting worker activates. The generated
+ * worker has no clientsClaim, so it never claims the open page and the
+ * plugin's controlling-reload does not fire; the caller (App.vue
+ * onRefresh) owns the reload via controllerchange or a ~3s fallback.
  */
 export function usePwaUpdate(): {
   promptShow: Ref<boolean>

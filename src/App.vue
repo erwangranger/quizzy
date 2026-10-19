@@ -44,8 +44,23 @@ const store = useGameStore()
 const { promptShow, promptDismiss, updateSW } = usePwaUpdate()
 
 function onRefresh() {
+  // updateSW(true) only sends SKIP_WAITING; the generated worker has no
+  // clientsClaim, so it never claims this open page and the plugin's
+  // controlling-reload never fires. Reload ourselves: immediately on
+  // takeover (controllerchange, once) or once skipWaiting has settled
+  // (~3s fallback). The once-guard keeps exactly one reload.
+  let reloaded = false
+  const reload = () => {
+    if (reloaded) return
+    reloaded = true
+    window.location.reload()
+  }
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('controllerchange', reload, { once: true })
+  }
   updateSW?.(true)
   promptDismiss()
+  window.setTimeout(reload, 3000)
 }
 </script>
 
