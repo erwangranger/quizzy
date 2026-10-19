@@ -1,0 +1,1 @@
+../../../.omp/skills/quizzy-question-crafting/SKILL.md
