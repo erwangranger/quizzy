@@ -74,7 +74,10 @@ function gameStart(mode: string, players: number, count: number): void {
 // reports read these so the owner can see how far visitors get. The real
 // page_view fires once per full load; these mark in-app screens.
 function pageView(screen: string): void {
-  event('page_view', { page_title: screen, page_location: `${window.location.pathname}#${screen}` })
+  event('page_view', {
+    page_title: screen,
+    page_location: `${window.location.origin}${window.location.pathname}#${screen}`,
+  })
 }
 
 // A question was shown to players (question IDs, per the backlog telemetry
