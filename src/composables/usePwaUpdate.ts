@@ -1,13 +1,21 @@
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref, type Ref } from 'vue'
 import { registerSW } from 'virtual:pwa-register'
 
 /**
- * Tracks a service worker that has installed a new version and is waiting
- * for the current page to close before activating (vite-plugin-pwa,
- * registerType: 'autoUpdate'). Exposes a reactive flag for the
- * UpdatePrompt banner and a dismiss function.
+ * Tracks a service worker that has downloaded a new version and is WAITING
+ * for activation (vite-plugin-pwa, registerType: 'prompt'). Exposes a
+ * reactive flag for the UpdatePrompt banner, a dismiss function, and the
+ * plugin's updateSW callback — calling updateSW(true) sends the
+ * SKIP_WAITING message so the waiting worker activates, and the plugin
+ * reloads the page once it takes control.
  */
-export function usePwaUpdate() {
+export function usePwaUpdate(): {
+  promptShow: Ref<boolean>
+  promptDismiss: () => void
+  // Assigned inside onMounted, so it is null until the component mounts.
+  updateSW: ((reloadPage?: boolean) => Promise<void>) | null
+} {
+  let updateSW: ((reloadPage?: boolean) => Promise<void>) | null = null
   const promptShow = ref(false)
 
   function promptDismiss() {
@@ -28,7 +36,7 @@ export function usePwaUpdate() {
     if (typeof window === 'undefined' || !('serviceWorker' in navigator)) return
 
     try {
-      registerSW({
+      updateSW = registerSW({
         onNeedRefresh() {
           promptShow.value = true
         },
@@ -51,5 +59,5 @@ export function usePwaUpdate() {
     }
   })
 
-  return { promptShow, promptDismiss }
+  return { promptShow, promptDismiss, updateSW }
 }

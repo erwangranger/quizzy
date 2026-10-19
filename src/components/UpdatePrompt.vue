@@ -20,14 +20,15 @@
 import { ref } from 'vue'
 import { t } from '../locales'
 
-defineEmits<{ (e: 'dismiss'): void }>()
+const emit = defineEmits<{ (e: 'dismiss'): void; (e: 'refresh'): void }>()
 
 const visible = ref(true)
 
-// Fade-out on refresh: hide first, then reload once the leave transition ends.
+// Fade-out on refresh: hide first, then hand off — the parent activates
+// the waiting service worker via updateSW(true) and the plugin reloads.
 function refresh() {
   visible.value = false
-  window.setTimeout(() => window.location.reload(), 200)
+  emit('refresh')
 }
 </script>
 

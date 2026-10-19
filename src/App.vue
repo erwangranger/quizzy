@@ -26,7 +26,7 @@
       </transition>
 
     </main>
-    <UpdatePrompt v-if="promptShow" @dismiss="promptDismiss" />
+    <UpdatePrompt v-if="promptShow" @dismiss="promptDismiss" @refresh="onRefresh" />
   </div>
 </template>
 
@@ -41,7 +41,12 @@ import { useGameStore } from './store/store'
 import { t } from './locales'
 
 const store = useGameStore()
-const { promptShow, promptDismiss } = usePwaUpdate()
+const { promptShow, promptDismiss, updateSW } = usePwaUpdate()
+
+function onRefresh() {
+  updateSW?.(true)
+  promptDismiss()
+}
 </script>
 
 <style lang="scss">
