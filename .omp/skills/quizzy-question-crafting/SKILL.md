@@ -12,7 +12,7 @@ are quality rules the validators cannot check.
 
 ## Data model
 
-Every question is one JSON object in a questions/*.json array. Full rules in `SPEC.md`
+Every question is one JSON object in a questions/*.json array. Full rules in `docs/SPEC.md`
 (data-model section) and enforced by `src/questions/schema.ts` + `scripts/validate-questions.mjs`.
 
 | Field | Rule |
