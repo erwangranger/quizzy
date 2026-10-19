@@ -1,51 +1,76 @@
 # Quizzy 🥴
 
-A single or multiplayer (local) quiz game, built with Vue 3, Pinia, TypeScript and Vite.
-Play solo or with a group on one device — pass it around (pass-and-play) or run it quizmaster-style, where one player reads the questions and the others write their answers down. Optional difficulty weighting scores harder questions for more points.
+A free trivia quiz you can play in your browser — alone, or with a group of friends sharing one device.
 
-## Development
+**👉 Play it here: [https://erwangranger.github.io/quizzy/](https://erwangranger.github.io/quizzy/)**
 
-```bash
-npm install
-npm run dev
-```
+No account, nothing to install — open the link and play. It works on phones, tablets, and computers, and it's available in English and French.
 
-## Test
+---
 
-```bash
-npm test
-```
+## What it looks like
 
-## Build
+Pick how you want to play, then choose a language, a category, and how many questions you want:
 
-```bash
-npm run build
-npm run preview
-```
+![The Quizzy start screen: choose single player or multiplayer, a language, a category, and the number of questions](docs/screenshots/start.png)
 
-## Deployment
+Answer multiple-choice questions at your own pace:
 
-The site deploys to GitHub Pages via a GitHub Actions workflow on every push to `main`.
+![A question with five answer choices](docs/screenshots/question.png)
 
-## Question data
+After each answer you instantly see whether you were right, along with a short explanation:
 
-Questions live as JSON files in `questions/` — no external API. Each file is an array of question objects (see the data model in `docs/SPEC.md`). Only questions with `reviewed: true` are bundled into the build; `recent-news.json` is the reviewed current-events bank. New banks land in `questions/pending/` until reviewed.
+![A revealed question showing the correct answer in green, wrong ones in red, and an explanation](docs/screenshots/answer.png)
 
-Validate them:
+When the quiz is over you get your score and a breakdown by category:
 
-```bash
-npm run validate:questions
-```
+![Game over screen showing the final score and a category breakdown](docs/screenshots/game-over.png)
 
-## PWA / Install
+## How to play
 
-Quizzy is a progressive web app — install it on your phone or desktop for an app-like experience (offline-ready, full-screen display, native status bar).
+1. **Choose your mode** — Single Player, or Multiplayer (see below).
+2. **Weight by Difficulty** *(optional)* — tick this to make harder questions worth more points. Left off, every question scores the same.
+3. **Pick a language** — English (`en`) or French (`fr`).
+4. **Pick a category** — Geography, History, Science, Arts & Literature, Entertainment, Sports & Leisure, or Recent News.
+5. **Pick how many questions** — 5, 10, 15, or 20.
+6. Hit **Start** and answer the questions. Not sure about one? **Skip** it — no penalty, it just moves on.
+7. At the end, check your score and start another round, or head back to the menu.
+
+### Playing with friends
+
+Two ways to play together on one device:
+
+- **Pass-and-play** — pass the device around; each player answers on their turn. The strip at the bottom keeps everyone's score.
+- **Quizmaster** — one person reads the questions aloud while everyone else writes their answers down. The quizmaster reveals each answer and marks who got it right.
+  - Quizmaster-only option: **Hide Choices** — keep answer choices on screen for the quizmaster only, so players answer without seeing the options.
+
+To set up either one, choose **Multiplayer** on the start screen, add each player's name, and pick who (if anyone) is the quizmaster.
+
+## Install it as an app
+
+Quizzy is a progressive web app (PWA): you can add it to your home screen or desktop and it behaves like a regular app — full screen, no browser bars, and it keeps working offline.
 
 - **Chrome/Edge (Android/Desktop):** a banner appears when you visit the site; tap "Add to Quizzy".
 - **Safari (iOS):** tap the Share button → "Add to Home Screen".
 - **Firefox (Android):** tap the menu (⋮) → "Add to Home Screen" or "Install".
 
-Once installed, Quizzy launches standalone with no browser chrome. It works offline (cached app shell + questions).
+Once installed, Quizzy launches full screen like any other app, with no browser bars. It works offline (the app shell and questions are cached).
+
+## Tips
+
+- The **menu button** in the top-right corner opens an About panel with the app version, a link to the source code, and a way to report a problem.
+- Quizzy avoids repeating questions until you've seen the whole deck — a message tells you when it starts over.
+
+Quizzy is built with Vue 3, Pinia, TypeScript, Vite and SCSS. Questions live as JSON files in `questions/` — no external API (see the data model in [`docs/SPEC.md`](docs/SPEC.md)). Only questions with `reviewed: true` are bundled into the build; new banks land in `questions/pending/` until reviewed.
+
+```bash
+npm install
+npm run dev                       # dev server
+npm test                          # unit tests
+npm run validate:questions        # validate question files
+npm run build && npm run preview  # production build + local preview
+```
+The site deploys to GitHub Pages automatically on every push to `main`.
 
 ## Credits
 
