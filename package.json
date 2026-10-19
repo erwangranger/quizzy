@@ -7,11 +7,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
+    "dev": "vite --config config/vite.config.ts",
+    "build": "vue-tsc -b config && vite build --config config/vite.config.ts",
+    "preview": "vite preview --config config/vite.config.ts",
     "validate:questions": "node scripts/validate-questions.mjs",
-    "test": "vitest run"
+    "test": "vitest run --config config/vite.config.ts"
   },
   "dependencies": {
     "pinia": "^3.0.1",
