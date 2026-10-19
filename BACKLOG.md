@@ -65,6 +65,7 @@
 - MVP = SPEC phase order with Phase 4.2 pulled ahead of Phase 2: Phase 1 (local questions) → Phase 4.2 (Pages deploy) → Phase 2 quizmaster mode → Phase 4.1 (full PWA) → Phase 3 (explanations UI). Phase 5 last/never for MVP.
 - Single change that matters most: land Phase 1 — root dependency of Phases 2–5, deletes the only hard connectivity failure (OpenTDB fetch at game start).
 - Close second: minimal GitHub Pages deploy (`deploy.yml` + Vite `base`) so the game reaches a phone.
+- Phase 4 (full PWA): done (2026-10-18). Installed `vite-plugin-pwa`, workbox-precaching, workbox-window; manifest.webmanifest with icons, service worker, Apple meta tags in index.html; `usePwaUpdate.ts` composable + `UpdatePrompt.vue` component integrated in App.vue with en+fr locale keys. Verified: vue-tsc -b clean, vitest 46/46, build green.
 
 ### Ranked gaps (likelihood × impact; evidence as of 2026-10-18)
 | # | Gap | L×I | Evidence (2026-10-18) | Fix |

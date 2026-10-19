@@ -9,7 +9,7 @@ function validQuestion(overrides: Partial<Question> = {}): Question {
     difficulty: 1,
     question: 'Which river flows through Montreal?',
     correct_answer: 'Saint Lawrence River',
-    incorrect_answers: ['Ottawa River', 'Hudson River', 'Richelieu River'],
+    incorrect_answers: ['Ottawa River', 'Hudson River', 'Richelieu River', 'A very wide creek'],
     explanation:
       'Montreal sits on an island at the confluence of the Saint Lawrence and Ottawa rivers. The Saint Lawrence connects the Great Lakes to the Atlantic, which made the city a major port.',
     source_url: null,
@@ -44,8 +44,9 @@ describe('validateQuestion', () => {
   it('rejects wrong incorrect_answers count and duplicates of the correct answer', () => {
     const issues = validateQuestion(validQuestion({ incorrect_answers: ['A', 'B'] as never }))
     expect(issues.map((i) => i.field)).toContain('incorrect_answers')
-    const dup = validateQuestion(validQuestion({ incorrect_answers: ['Saint Lawrence River', 'B', 'C'] }))
-    expect(dup.map((i) => i.field)).toContain('incorrect_answers')
+    const tooMany = validateQuestion(validQuestion({ incorrect_answers: ['A', 'B', 'C', 'D', 'E'] as never }))
+    expect(tooMany.map((i) => i.field)).toContain('incorrect_answers')
+    const dup = validateQuestion(validQuestion({ incorrect_answers: ['Saint Lawrence River', 'B', 'C', 'D'] }))
   })
 
   it('rejects explanations over 400 chars or with more than 3 sentences', () => {
@@ -80,7 +81,7 @@ describe('validateQuestion', () => {
         category: 'current-events',
         question: 'In September 2026, which spacecraft reached Mars?',
         correct_answer: 'Probe X',
-        incorrect_answers: ['Probe Y', 'Probe Z', 'Probe W'],
+        incorrect_answers: ['Probe Y', 'Probe Z', 'Probe W', 'Probe V'],
         explanation: 'Probe X entered Mars orbit in September 2026 after a seven-month cruise. It is the first mission of its program.',
         source_url: 'https://example.com/news',
         as_of: '2026-09-15',
@@ -103,8 +104,8 @@ describe('validateQuestionFile', () => {
   it('detects duplicate ids and duplicate question text across items', () => {
     const issues = validateQuestionFile([
       validQuestion(),
-      validQuestion({ incorrect_answers: ['A', 'B', 'C'] }),
-      validQuestion({ id: 'hist-0001', question: 'Which river flows through Montreal?  ', incorrect_answers: ['A', 'B', 'C'] }),
+      validQuestion({ incorrect_answers: ['A', 'B', 'C', 'D'] }),
+      validQuestion({ id: 'hist-0001', question: 'Which river flows through Montreal?  ', incorrect_answers: ['A', 'B', 'C', 'D'] }),
     ])
     const messages = issues.map((i) => i.message)
     expect(messages.some((m) => m.includes('duplicate id'))).toBe(true)

@@ -51,6 +51,8 @@ const en = {
     'message.6': 'You may one day be a wealth of knowledge. Just not today.',
     'message.8': "You're on your way to becoming a quiz master.",
     'message.10': 'Holy snikes!! A perfect score! Excellent work.',
+    'update.prompt': 'New version available — tap to refresh',
+    'update.refresh': 'Refresh',
 } as const
 
 const fr: Record<keyof typeof en, string> = {
@@ -102,6 +104,8 @@ const fr: Record<keyof typeof en, string> = {
     'message.6': 'Vous serez peut-être un jour une mine de connaissances. Mais pas aujourd\'hui.',
     'message.8': 'Vous êtes en bonne voie de devenir un maître du quiz.',
     'message.10': 'Holy snikes !! Un score parfait ! Excellent travail.',
+    'update.prompt': 'Nouvelle version disponible — actualisez',
+    'update.refresh': 'Actualiser',
 }
 
 const messages: Record<Locale, Record<keyof typeof en, string>> = { en, fr }

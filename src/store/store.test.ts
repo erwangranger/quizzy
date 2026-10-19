@@ -80,13 +80,13 @@ describe('useGameStore', () => {
     expect(next.players.map((p) => p.name)).toEqual(['Ada', 'Player 2'])
   })
 
-  it('draws from the local bank with shuffled 4-way choices', () => {
+  it('draws from the local bank with shuffled 5-way choices', () => {
     const store = useGameStore()
     store.startGame()
     expect(store.currentView).toBe('app-game-board')
     expect(store.questions).toHaveLength(10)
     for (const q of store.questions) {
-      expect(q.choices).toHaveLength(4)
+      expect(q.choices).toHaveLength(5)
       expect(q.choices.filter((c) => c.answer)).toHaveLength(1)
       expect(q.choices.map((c) => c.text).sort()).toEqual(
         [q.correct_answer, ...q.incorrect_answers].sort(),

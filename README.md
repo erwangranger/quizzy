@@ -37,6 +37,16 @@ Validate them:
 npm run validate:questions
 ```
 
+## PWA / Install
+
+Quizzy is a progressive web app — install it on your phone or desktop for an app-like experience (offline-ready, full-screen display, native status bar).
+
+- **Chrome/Edge (Android/Desktop):** a banner appears when you visit the site; tap "Add to Quizzy".
+- **Safari (iOS):** tap the Share button → "Add to Home Screen".
+- **Firefox (Android):** tap the menu (⋮) → "Add to Home Screen" or "Install".
+
+Once installed, Quizzy launches standalone with no browser chrome. It works offline (cached app shell + questions).
+
 ## Credits
 
 Quizzy started life as a fork of [Winsome Trivia](https://github.com/Splode/open-trivia-app) by [Christopher Murphy](http://christopherianmurphy.com) — the original project was the starting point and the inspiration for this one. Credit where credit is due. It has since grown into a new app, going in a new direction of its own.

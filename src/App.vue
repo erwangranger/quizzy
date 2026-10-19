@@ -26,6 +26,7 @@
       </transition>
 
     </main>
+    <UpdatePrompt v-if="promptShow" @dismiss="promptDismiss" />
   </div>
 </template>
 
@@ -34,10 +35,13 @@ import About from './components/About.vue'
 import GameBoard from './components/GameBoard.vue'
 import GameOverModal from './components/GameOverModal.vue'
 import Intro from './components/Intro.vue'
+import { usePwaUpdate } from './composables/usePwaUpdate'
+import UpdatePrompt from './components/UpdatePrompt.vue'
 import { useGameStore } from './store/store'
 import { t } from './locales'
 
 const store = useGameStore()
+const { promptShow, promptDismiss } = usePwaUpdate()
 </script>
 
 <style lang="scss">

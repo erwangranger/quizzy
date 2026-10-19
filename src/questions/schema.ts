@@ -20,7 +20,7 @@ export interface Question {
   difficulty: Difficulty
   question: string
   correct_answer: string
-  incorrect_answers: [string, string, string]
+  incorrect_answers: [string, string, string, string]
   explanation: string
   source_url: string | null
   as_of: string | null
@@ -73,8 +73,8 @@ export function validateQuestion(input: unknown): ValidationIssue[] {
   else if (HTML_ENTITY.test(q.question)) fail('question', 'must be plain text without HTML entities')
 
   if (typeof q.correct_answer !== 'string' || q.correct_answer.trim().length === 0) fail('correct_answer', 'must be a non-empty string')
-  if (!Array.isArray(q.incorrect_answers) || q.incorrect_answers.length !== 3) {
-    fail('incorrect_answers', 'must have exactly 3 items')
+  if (!Array.isArray(q.incorrect_answers) || q.incorrect_answers.length !== 4) {
+    fail('incorrect_answers', 'must have exactly 4 items')
   } else {
     for (const wrong of q.incorrect_answers) {
       if (typeof wrong !== 'string' || wrong.trim().length === 0) fail('incorrect_answers', 'items must be non-empty strings')

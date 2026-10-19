@@ -65,7 +65,7 @@ Store questions in `questions/*.json`, each file an array of question objects. F
   "difficulty": 2,
   "question": "Which river flows through Montreal?",
   "correct_answer": "Saint Lawrence River",
-  "incorrect_answers": ["Ottawa River", "Hudson River", "Richelieu River"],
+  "incorrect_answers": ["Ottawa River", "Hudson River", "Richelieu River", "A very wide creek"],
   "explanation": "Montreal sits on an island at the confluence of the Saint Lawrence and Ottawa rivers. The Saint Lawrence connects the Great Lakes to the Atlantic, which made the city a major port.",
   "source_url": "https://en.wikipedia.org/wiki/Saint_Lawrence_River",
   "as_of": null,
@@ -84,7 +84,7 @@ Field rules:
 | `difficulty` | 1, 2 or 3 | 1 easy, 3 hard. |
 | `question` | string | Plain text, no HTML entities. |
 | `correct_answer` | string | Short. |
-| `incorrect_answers` | string[3] | Exactly 3, plausible, none equal to the correct answer. |
+| `incorrect_answers` | string[4] | Exactly 4: 3 plausible, plus 1 obviously-wrong joke answer meant to earn a chuckle. None equal to the correct answer. |
 | `explanation` | string | 1 to 3 sentences, max 400 characters. Must add context, not just restate the answer. |
 | `source_url` | string or null | Required (non-null) for `current-events`. |
 | `as_of` | ISO date or null | Required for `current-events`; the date the fact was true. The question text must also be date-anchored ("In September 2026, ..."). |
