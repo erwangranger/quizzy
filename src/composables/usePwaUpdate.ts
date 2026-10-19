@@ -1,5 +1,5 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { Workbox } from 'workbox-window'
+import { registerSW } from 'virtual:pwa-register'
 
 /**
  * Tracks a service worker that has installed a new version and is waiting
@@ -9,12 +9,6 @@ import { Workbox } from 'workbox-window'
  */
 export function usePwaUpdate() {
   const promptShow = ref(false)
-
-  let wb: Workbox | undefined
-
-  function onWaiting() {
-    promptShow.value = true
-  }
 
   function promptDismiss() {
     promptShow.value = false
@@ -34,9 +28,15 @@ export function usePwaUpdate() {
     if (typeof window === 'undefined' || !('serviceWorker' in navigator)) return
 
     try {
-      wb = new Workbox('/service-worker.js')
-      wb.addEventListener('waiting', onWaiting)
-      wb.register()
+      registerSW({
+        onNeedRefresh() {
+          promptShow.value = true
+        },
+        onRegisterError() {
+          // Registration failures must never break the app.
+          promptShow.value = false
+        },
+      })
     } catch {
       // Registration failures must never break the app.
       promptShow.value = false
@@ -46,10 +46,6 @@ export function usePwaUpdate() {
   })
 
   onBeforeUnmount(() => {
-    if (wb) {
-      wb.removeEventListener('waiting', onWaiting)
-      wb = undefined
-    }
     if (typeof document !== 'undefined') {
       document.removeEventListener('visibilitychange', onVisibilityChange)
     }
