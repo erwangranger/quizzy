@@ -4,10 +4,10 @@ export type Locale = 'en' | 'fr'
 
 const en = {
     'app.title': 'Quizzy 🥴',
-    'about.heading': 'Quizzy',
-    'about.partOfSpeech': 'noun',
-    'about.definition': 'a quiz game about knowledge, played with friends on one phone.',
-    'about.love': 'I love learning and I thought you might too.',
+    'about.source': 'Source on GitHub',
+    'about.issues': 'Report an issue',
+    'about.creditLead': 'Quizzy started life as a fork of',
+    'about.creditName': 'Winsome Trivia',
     'instructions.body': 'Symptoms may include knowledge vertigo.',
     'starter.singlePlayer': 'Single Player',
     'starter.multiplayer': 'Multiplayer',
@@ -65,10 +65,10 @@ const en = {
 
 const fr: Record<keyof typeof en, string> = {
     'app.title': 'Quizzy 🥴',
-    'about.heading': 'Quizzy',
-    'about.partOfSpeech': 'nom',
-    'about.definition': 'un quiz de connaissances, à jouer entre amis sur un seul téléphone.',
-    'about.love': 'J\'adore apprendre et j\'ai pensé que vous pourriez l\'aimer aussi.',
+    'about.source': 'Source sur GitHub',
+    'about.issues': 'Signaler un problème',
+    'about.creditLead': 'Quizzy a commencé comme un fork de',
+    'about.creditName': 'Winsome Trivia',
     'instructions.body': 'Symptômes possibles : vertige de la connaissance.',
     'starter.singlePlayer': 'Un joueur',
     'starter.multiplayer': 'Multijoueur',
