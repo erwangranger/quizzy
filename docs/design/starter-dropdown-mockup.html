@@ -1,0 +1,441 @@
+<!doctype html>
+<!-- Archived design (2026-10-19): not shipped — the chosen option (segmented controls / chips) was ported into src/components/Starter.vue.
+     Mockup only: shows 10 layout options for the Starter choices dropdown.
+     No app files were modified. Pick a number and the style gets ported into Starter.vue. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choices dropdown — 10 style mockups</title>
+<style>
+:root{
+  --darkest:#0277BD; --dark:#03A9F4; --med:#4FC3F7;
+  --alt-dark:#5C6BC0; --alt-med:#7986CB;
+  --white:whitesmoke; --green:#5CDB80; --red:#FF5593;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  background:linear-gradient(to top,#4481eb 0%,#04befe 100%);
+  color:var(--white);
+  font-family:'Quicksand','Trebuchet MS',system-ui,sans-serif;
+}
+.wrap{max-width:900px;margin:0 auto;padding:34px 20px 90px}
+h1{font-size:1.55em;margin:0 0 6px}
+.sub{margin:0 0 30px;font-size:.95em;opacity:.85;line-height:1.5}
+
+.card{
+  background:rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:20px 24px 28px;
+  margin-bottom:18px;
+}
+.pt{display:flex;align-items:center;gap:10px}
+.pt b{font-size:1.05em}
+.num{
+  background:var(--green);color:var(--darkest);border-radius:50%;
+  width:26px;height:26px;flex:0 0 26px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:bold;font-size:.85em;
+}
+.num.ref{background:var(--white)}
+.cap{margin:8px 0 20px;font-size:.88em;opacity:.78;line-height:1.45}
+
+.demo{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;min-height:96px;
+}
+button{font:inherit;cursor:pointer}
+
+/* ---- baseline (current Starter.vue) ---- */
+.b-head{display:flex;align-items:center;justify-content:center;cursor:pointer}
+.b-head .t{margin:0;font-size:1.25em}
+.chev{display:inline-block;font-size:1.5em;margin-left:12px;transition:transform .3s;line-height:1}
+.open>.chev,.b-head.open .chev{transform:rotate(180deg)}
+.b-val{margin:0;font-size:1.1em}
+.picklist{list-style:none;margin:0;padding:0}
+.b-list{
+  display:flex;flex-direction:column;align-items:center;
+  max-height:0;opacity:0;overflow:hidden;
+  transition:max-height .4s ease,opacity .4s ease;
+}
+.b-list.open{max-height:200px;opacity:1}
+.b-list li{margin:7px 0;cursor:pointer;transition:transform .3s,color .3s}
+.b-list li:hover{transform:scale(1.35)}
+li.selected{color:var(--green);font-weight:bold}
+
+/* ---- 1. native select ---- */
+.nat{display:flex;align-items:center;gap:16px;font-size:1.08em}
+.nat select{
+  font:inherit;padding:9px 16px;border-radius:12px;
+  border:2px solid var(--white);background:#fff;color:#024a7a;
+}
+.nat select:focus{outline:3px solid var(--green)}
+
+/* ---- 2. inline label · value ---- */
+.inline{position:relative;width:280px}
+.inline-head{
+  width:100%;display:flex;align-items:center;justify-content:center;gap:10px;
+  background:rgba(255,255,255,.14);border:2px solid var(--white);
+  border-radius:12px;padding:11px 16px;color:var(--white);
+}
+.inline-head .lab{opacity:.9}
+.inline-head .live-val{color:var(--green)}
+.dd-pop{
+  position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%);
+  min-width:170px;margin:0;padding:8px 0;list-style:none;
+  background:#fff;color:#024a7a;border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,20,60,.35);
+  display:none;z-index:30;
+}
+.dd-pop.open{display:block}
+.dd-pop li{padding:9px 18px;cursor:pointer;text-align:center}
+.dd-pop li:hover{background:rgba(3,169,244,.14)}
+.dd-pop li.selected{color:#02775b;background:rgba(92,219,128,.28);font-weight:bold}
+
+/* ---- 3. segmented control ---- */
+.segrow{display:flex;align-items:center;gap:16px}
+.seglabel{min-width:110px;text-align:right;font-size:1.05em}
+.seg{display:flex;background:rgba(0,0,0,.2);border-radius:12px;padding:4px;gap:4px}
+.seg button{
+  border:0;background:transparent;color:var(--white);
+  padding:8px 18px;border-radius:9px;font-weight:600;transition:background .2s;
+}
+.seg button.on{background:var(--green);color:var(--darkest)}
+.seg button:not(.on):hover{background:rgba(255,255,255,.16)}
+
+/* ---- 4. chip row ---- */
+.chips-block{display:flex;flex-direction:column;align-items:center;gap:12px}
+.micro{font-size:.72em;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.chips button{
+  border:2px solid var(--white);background:transparent;color:var(--white);
+  border-radius:999px;padding:8px 20px;font-weight:600;transition:all .2s;
+}
+.chips button.on{background:var(--green);border-color:var(--green);color:var(--darkest)}
+.chips button:not(.on):hover{background:rgba(255,255,255,.14)}
+
+/* ---- 5. popover under right-aligned value ---- */
+.popwrap{position:relative;width:320px}
+.pophead{
+  width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  background:rgba(255,255,255,.14);border:2px solid var(--white);
+  border-radius:12px;padding:11px 16px;color:var(--white);
+}
+.pophead .val{display:flex;align-items:center;gap:8px;color:var(--green);font-weight:bold}
+.pophead .val .chev{margin-left:0;font-size:1.1em}
+.dd-pop.right{left:auto;right:0;transform:none;min-width:140px}
+
+/* ---- 6. split: heading left, options right ---- */
+.split{display:flex;align-items:center;gap:0}
+.split .h{margin:0;font-size:1.25em;padding-right:26px}
+.radios{
+  display:flex;flex-direction:column;gap:9px;
+  border-left:2px solid rgba(255,255,255,.35);padding-left:26px;
+}
+.radios label{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:1.05em}
+.radios input{width:18px;height:18px;accent-color:var(--green)}
+
+/* ---- 7. horizontal filter bar ---- */
+.fbar-block{width:100%;max-width:430px}
+.hbar{display:flex;gap:10px;overflow-x:auto;padding:12px 2px 6px}
+.hbar button{
+  flex:0 0 auto;border:2px solid var(--white);background:rgba(255,255,255,.08);
+  color:var(--white);border-radius:999px;padding:8px 18px;font-weight:600;transition:all .2s;
+}
+.hbar button.on{background:var(--white);color:#024a7a;border-color:var(--white)}
+.hbar button:not(.on):hover{background:rgba(255,255,255,.16)}
+
+/* ---- 8. stepper ---- */
+.stepr{display:flex;align-items:center;gap:18px;font-size:1.08em}
+.stepper{display:flex;align-items:center;background:rgba(0,0,0,.2);border-radius:12px;overflow:hidden}
+.stepper button{
+  border:0;background:transparent;color:var(--white);
+  font-size:1.25em;padding:9px 18px;line-height:1;transition:background .2s;
+}
+.stepper button:hover{background:rgba(255,255,255,.16)}
+.stepper .live-val{min-width:70px;text-align:center;color:var(--green);font-size:1.1em}
+
+/* ---- 9. option cards ---- */
+.optcards-block{display:flex;flex-direction:column;align-items:center;gap:12px}
+.optcards{display:flex;gap:14px}
+.optcards button{
+  width:150px;padding:14px 10px;border-radius:14px;
+  border:2px solid var(--white);background:rgba(255,255,255,.1);color:var(--white);
+  display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s;
+}
+.optcards b{font-size:1.2em}
+.optcards small{opacity:.75}
+.optcards button.on{border-color:var(--green);background:rgba(92,219,128,.2)}
+.optcards button.on b{color:var(--green)}
+.optcards button:not(.on):hover{background:rgba(255,255,255,.18)}
+
+/* ---- 10. bottom sheet ---- */
+.sheetopen{
+  display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.14);border:2px solid var(--white);
+  border-radius:12px;padding:11px 18px;color:var(--white);
+}
+.sheetopen .live-val{color:var(--green);font-weight:bold}
+.sheet{position:fixed;inset:0;z-index:50}
+.sheet[hidden]{display:none}
+.sheet .bd{position:absolute;inset:0;background:rgba(1,30,60,.55)}
+.sheet .panel{
+  position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:min(430px,94vw);background:#fff;color:#024a7a;
+  border-radius:20px 20px 0 0;padding:20px 20px 26px;
+  box-shadow:0 -8px 30px rgba(0,20,60,.4);
+}
+.sheet .t{font-weight:bold;font-size:1.05em;margin-bottom:10px}
+.sheet-opt{
+  display:block;width:100%;text-align:left;padding:12px 14px;
+  border:0;border-radius:10px;background:transparent;color:#024a7a;
+}
+.sheet-opt:hover{background:rgba(3,169,244,.12)}
+.sheet-opt.on{font-weight:bold;background:rgba(92,219,128,.3)}
+.sheet-done{
+  margin-top:14px;width:100%;padding:12px;border:0;border-radius:12px;
+  background:var(--green);color:var(--darkest);font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Choices dropdown — 10 styles</h1>
+  <p class="sub">
+    Static mockup for the five Starter controls (mode, players, language, category, count) on the app palette.
+    Nothing committed, no app files touched. Reply with a number — or a mix, e.g. "3 for mode/players, 4 for category".
+  </p>
+
+  <!-- ============ baseline ============ -->
+  <section class="card">
+    <div class="pt"><span class="num ref">=</span><b>Current Starter.vue layout</b></div>
+    <p class="cap">Heading centered with chevron, current value and options expand below it. Shown for comparison — this is the one you find strange.</p>
+    <div class="demo">
+      <div class="b-head" data-toggle="bl">
+        <h2 class="t">Language</h2><span class="chev">▾</span>
+      </div>
+      <h3 class="b-val live-val">en</h3>
+      <ul class="picklist b-list" id="bl">
+        <li class="selected">en</li><li>fr</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">1</span><b>Native <code>&lt;select&gt;</code></b></div>
+    <p class="cap">Label left, OS dropdown right. Zero JS, keyboard + screen-reader support for free. Loses the custom look; the category becomes a multiple-select.</p>
+    <div class="demo">
+      <div class="nat">
+        <label for="natlang">Language</label>
+        <select id="natlang"><option>en</option><option>fr</option></select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">2</span><b>Inline "label · value ⌄"</b></div>
+    <p class="cap">Heading, value and chevron share one line; options float above the content below. Closest literal answer to "choices next to the heading".</p>
+    <div class="demo">
+      <div class="inline">
+        <button class="inline-head" data-toggle="in2">
+          <span class="lab">Language</span>
+          <b class="live-val">en</b>
+          <span class="chev">▾</span>
+        </button>
+        <ul class="picklist dd-pop" id="in2">
+          <li class="selected">en</li><li>fr</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">3</span><b>Segmented control beside the heading</b></div>
+    <p class="cap">All options always visible as a pill group next to the label — no open/close state at all. Best for few options (mode, players, count); the 6-way category would need chips instead.</p>
+    <div class="demo">
+      <div class="segrow">
+        <span class="seglabel">Language</span>
+        <div class="seg" data-group><button class="on">en</button><button>fr</button></div>
+      </div>
+      <div class="segrow">
+        <span class="seglabel">Questions</span>
+        <div class="seg" data-group><button>5</button><button class="on">10</button><button>15</button><button>20</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">4</span><b>Chip row under a small label</b></div>
+    <p class="cap">Tiny uppercase label, options as always-visible pills. The category multi-select maps naturally here — chips just toggle on/off.</p>
+    <div class="demo">
+      <div class="chips-block">
+        <span class="micro">Language</span>
+        <div class="chips" data-group><button class="on">en</button><button>fr</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">5</span><b>Popover under a right-aligned value</b></div>
+    <p class="cap">Label left, current value right on the same row, menu drops beneath the value with a shadow. Compact and familiar (settings-screen style).</p>
+    <div class="demo">
+      <div class="popwrap">
+        <button class="pophead" data-toggle="pp5">
+          <span>Language</span>
+          <span class="val"><b class="live-val">en</b><span class="chev">▾</span></span>
+        </button>
+        <ul class="picklist dd-pop right" id="pp5">
+          <li class="selected">en</li><li>fr</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">6</span><b>Split row: heading left, options right</b></div>
+    <p class="cap">Heading on the left, options listed immediately beside it after a divider — literally "choices next to the heading", always visible. Category becomes a checkbox column.</p>
+    <div class="demo">
+      <div class="split">
+        <h2 class="h">Language</h2>
+        <div class="radios">
+          <label><input type="radio" name="lang6" checked> en</label>
+          <label><input type="radio" name="lang6"> fr</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">7</span><b>Horizontal filter bar</b></div>
+    <p class="cap">App-store style: small label above an always-visible, scrollable pill row. Great for count and categories; removes all expand/collapse logic.</p>
+    <div class="demo">
+      <div class="fbar-block">
+        <span class="micro">Questions</span>
+        <div class="hbar" data-group><button>5</button><button class="on">10</button><button>15</button><button>20</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">8</span><b>Stepper (‹ value ›)</b></div>
+    <p class="cap">Arrows cycle through the options — no list rendered at all. Fun and very compact; awkward for the 6-way category picker.</p>
+    <div class="demo">
+      <div class="stepr">
+        <span>Questions</span>
+        <div class="stepper">
+          <button data-step="-1">‹</button>
+          <b class="live-val" id="stepval">10</b>
+          <button data-step="1">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">9</span><b>Option cards</b></div>
+    <p class="cap">Large tappable cards with title + description, always visible. Richest look, most vertical space; suits language and mode choices.</p>
+    <div class="demo">
+      <div class="optcards-block">
+        <span class="micro">Language</span>
+        <div class="optcards" data-group>
+          <button class="on"><b>en</b><small>English</small></button>
+          <button><b>fr</b><small>Français</small></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 ============ -->
+  <section class="card">
+    <div class="pt"><span class="num">10</span><b>Bottom sheet picker</b></div>
+    <p class="cap">Mobile-app pattern: the row only shows label + value; tapping opens a bottom sheet with big thumb-friendly options and a Done button.</p>
+    <div class="demo">
+      <button class="sheetopen" data-open="sh10">
+        <span>Language</span><b class="live-val">en</b><span class="chev">▾</span>
+      </button>
+    </div>
+  </section>
+</div>
+
+<!-- bottom sheet for #10 -->
+<div class="sheet" id="sh10" hidden>
+  <div class="bd" data-close="sh10"></div>
+  <div class="panel">
+    <div class="t">Language</div>
+    <button class="sheet-opt on" data-pick="sh10">en</button>
+    <button class="sheet-opt" data-pick="sh10">fr</button>
+    <button class="sheet-done" data-close="sh10">Done</button>
+  </div>
+</div>
+
+<script>
+// open/close dropdown-style demos (baseline, 2, 5)
+document.querySelectorAll('[data-toggle]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.getElementById(btn.dataset.toggle).classList.toggle('open');
+    btn.classList.toggle('open');
+  });
+});
+
+// picking an option updates the visible value in that demo
+document.querySelectorAll('.picklist').forEach(function (ul) {
+  ul.addEventListener('click', function (e) {
+    var li = e.target.closest('li');
+    if (!li) return;
+    ul.querySelectorAll('li').forEach(function (x) { x.classList.remove('selected'); });
+    li.classList.add('selected');
+    var demo = ul.closest('.card');
+    var val = demo && demo.querySelector('.live-val');
+    if (val) val.textContent = li.textContent.trim();
+  });
+});
+
+// always-visible pill groups (3, 4, 7, 9)
+document.querySelectorAll('[data-group]').forEach(function (g) {
+  g.addEventListener('click', function (e) {
+    var b = e.target.closest('button');
+    if (!b || !g.contains(b)) return;
+    g.querySelectorAll('button').forEach(function (x) { x.classList.remove('on'); });
+    b.classList.add('on');
+  });
+});
+
+// stepper (8)
+var stepOpts = [5, 10, 15, 20], stepI = 1;
+var stepVal = document.getElementById('stepval');
+document.querySelectorAll('[data-step]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    stepI = Math.max(0, Math.min(stepOpts.length - 1, stepI + Number(b.dataset.step)));
+    stepVal.textContent = stepOpts[stepI];
+  });
+});
+
+// bottom sheet (10)
+document.addEventListener('click', function (e) {
+  var open = e.target.closest('[data-open]');
+  if (open) { document.getElementById(open.dataset.open).hidden = false; return; }
+  var close = e.target.closest('[data-close]');
+  if (close) { document.getElementById(close.dataset.close).hidden = true; return; }
+  var pick = e.target.closest('[data-pick]');
+  if (pick) {
+    var sheetEl = document.getElementById(pick.dataset.pick);
+    sheetEl.querySelectorAll('.sheet-opt').forEach(function (x) { x.classList.remove('on'); });
+    pick.classList.add('on');
+    var trig = document.querySelector('[data-open="' + pick.dataset.pick + '"] .live-val');
+    if (trig) trig.textContent = pick.textContent.trim();
+    document.getElementById(pick.dataset.pick).hidden = true;
+  }
+});
+</script>
+</body>
+</html>
