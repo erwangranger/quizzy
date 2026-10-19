@@ -58,10 +58,10 @@ describe('validateQuestion', () => {
     expect(sentences.map((i) => i.field)).toContain('explanation')
   })
 
-  it('requires source_url, as_of and date-anchored text for current-events', () => {
+  it('requires source_url, as_of and date-anchored text for recent-news', () => {
     const issues = validateQuestion(
       validQuestion({
-        category: 'current-events',
+        category: 'recent-news',
         question: 'What happened recently?',
         explanation: 'An event happened that was notable for quiz play.',
       }),
@@ -72,13 +72,13 @@ describe('validateQuestion', () => {
     expect(fields).toContain('question')
   })
 
-  it('accepts a valid current-events question with all anchors', () => {
+  it('accepts a valid recent-news question with all anchors', () => {
     const issues = validateQuestion(
       validQuestion({
         id: 'news-20260901-01',
         origin: 'claude',
         reviewed: false,
-        category: 'current-events',
+        category: 'recent-news',
         question: 'In September 2026, which spacecraft reached Mars?',
         correct_answer: 'Probe X',
         incorrect_answers: ['Probe Y', 'Probe Z', 'Probe W', 'Probe V'],
@@ -89,13 +89,13 @@ describe('validateQuestion', () => {
     )
     expect(issues).toEqual([])
   })
-  it('accepts a French date-anchored current-events question', () => {
+  it('accepts a French date-anchored recent-news question', () => {
     const issues = validateQuestion(
       validQuestion({
         id: 'news-20260901-02',
         origin: 'claude',
         reviewed: false,
-        category: 'current-events',
+        category: 'recent-news',
         question: 'En septembre 2026, quel vaisseau spatial a atteint Mars ?',
         correct_answer: 'La sonde X',
         incorrect_answers: ['La sonde Y', 'La sonde Z', 'La sonde W', 'La sonde V'],

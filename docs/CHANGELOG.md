@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — Category cleanup
+
+- `current-events` collapsed out of the data model — the enum slug was dead (zero questions in any bank, no label key; the shipped category is and has been `recent-news`). `Category` and `CATEGORIES` in `src/questions/schema.ts` now carry 7 members; the source/`as_of`/date-anchor rules in `schema.ts` and `scripts/validate-questions.mjs` key on `recent-news` alone. Behavior-preserving: every bank file, UI label, test and GA `question_shown` event already used `recent-news`, so GA category history stays continuous. `schema.test.ts` fixtures flipped; `vue-tsc` + vitest + `validate:questions` green.
+
 ## Unreleased — Google Analytics
 
 - Client-side GA4 via the canonical gtag snippet (`src/analytics.ts`, no npm dependency): the async `googletagmanager.com/gtag/js` script plus the `dataLayer` bootstrap, injected on the first game start — never before, so nothing loads until someone actually plays. Measurement ID read at build time from `.env.production` (`VITE_GA_MEASUREMENT_ID=G-RNWDDHKDL5`, committed per owner decision — the ID is a public identifier, not a credential); a build without the ID injects nothing and makes no network requests, so the offline acceptance criteria keep passing.

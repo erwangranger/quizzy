@@ -80,14 +80,14 @@ Field rules:
 |---|---|---|
 | `id` | string | Unique across all files. Format `<category-prefix>-<4 digits>` for human questions, `news-YYYYMMDD-<nn>` for generated ones. |
 | `lang` | `"en"` or `"fr"` | Required. The game filters by selected language. |
-| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `current-events`. (Six classic categories, plus current events.) |
+| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `recent-news`. (Six classic categories, plus recent news.) |
 | `difficulty` | 1, 2 or 3 | 1 easy, 3 hard. |
 | `question` | string | Plain text, no HTML entities. |
 | `correct_answer` | string | Short. |
 | `incorrect_answers` | string[4] | Exactly 4: 3 plausible, plus 1 obviously-wrong joke answer meant to earn a chuckle. None equal to the correct answer. |
 | `explanation` | string | 1 to 3 sentences, max 400 characters. Must add context, not just restate the answer. |
-| `source_url` | string or null | Required (non-null) for `current-events`. |
-| `as_of` | ISO date or null | Required for `current-events`; the date the fact was true. The question text must also be date-anchored ("In September 2026, ..." / "En septembre 2026, ..." — English and French month names both satisfy the anchor). |
+| `source_url` | string or null | Required (non-null) for `recent-news`. |
+| `as_of` | ISO date or null | Required for `recent-news`; the date the fact was true. The question text must also be date-anchored ("In September 2026, ..." / "En septembre 2026, ..." — English and French month names both satisfy the anchor). |
 | `origin` | `"human"` or `"claude"` | Provenance. |
 | `reviewed` | boolean | Only `reviewed: true` questions are included in the build. |
 
@@ -133,7 +133,7 @@ Deliverables for the data model:
 ### Phase 3: Explanations
 
 1. The reveal screen always shows: the correct answer, the explanation, and (if present) a "Source" link opening in a new tab. Show the explanation **whether or not players got it right**.
-2. For `current-events` questions, show "As of {as_of}" under the explanation.
+2. For `recent-news` questions, show "As of {as_of}" under the explanation.
 3. Keep the star-power animation for a correct answer in solo and pass-and-play; in quizmaster mode trigger it when at least one player is marked correct.
 4. Acceptance: explanation is readable without scrolling on a 375 px wide screen for a 400-character explanation.
 
@@ -152,7 +152,7 @@ This runs **in CI only**. The client app never calls an AI API.
 1. Script `scripts/generate-questions.ts` (run with `tsx`):
    - Uses `@anthropic-ai/sdk`. Model is read from env var `CLAUDE_MODEL` (no hardcoded default in code paths other than a documented fallback in the workflow file). API key from `ANTHROPIC_API_KEY`.
    - Enables the Anthropic web search tool so questions are based on events from the last N days (default 14).
-   - Inputs (CLI flags / workflow inputs): `--count` (default 10), `--lang` (default `en`), `--days` (default 14), `--categories` (default `current-events`).
+   - Inputs (CLI flags / workflow inputs): `--count` (default 10), `--lang` (default `en`), `--days` (default 14), `--categories` (default `recent-news`).
    - Sends the model: the question schema, the rules from section 5, the list of existing question texts and IDs from the last 90 days (for deduplication), and these content rules:
      - Questions must be about verifiable facts, not opinions or predictions.
      - Every question must be date-anchored in its text and have `as_of` and a `source_url` from a reputable outlet or primary source found via search.
@@ -163,7 +163,7 @@ This runs **in CI only**. The client app never calls an AI API.
    - Runs a duplicate check (normalized text similarity against existing questions); drops near-duplicates.
    - Writes survivors to `questions/pending/news-YYYY-MM-DD.json` with `origin: "claude"` and `reviewed: false`.
 2. Workflow `generate-questions.yml`: weekly cron plus `workflow_dispatch` with the inputs above. Runs the script, then opens a pull request (e.g. `peter-evans/create-pull-request`) titled "New current-events questions (YYYY-MM-DD)" whose body lists each question, its answer and its source link for quick review.
-3. Review flow (document in `README.md`): I edit questions in the PR, set `reviewed: true` on the ones I keep, delete the rest, then merge. A small script `npm run promote:pending` moves reviewed questions from `questions/pending/` into `questions/current-events.json` and deletes empty pending files.
+3. Review flow (document in `README.md`): I edit questions in the PR, set `reviewed: true` on the ones I keep, delete the rest, then merge. A small script `npm run promote:pending` moves reviewed questions from `questions/pending/` into `questions/recent-news.json` and deletes empty pending files.
 4. Staleness: questions with `as_of` older than 18 months are excluded from the build by default (configurable), since "recent events" stop being recent.
 5. Acceptance: a manual `workflow_dispatch` run with `--count 5` produces a valid PR; with `ANTHROPIC_API_KEY` missing, the job fails with a clear message; the deployed app never includes `reviewed: false` questions.
 

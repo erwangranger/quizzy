@@ -8,7 +8,6 @@ export type Category =
   | 'arts-literature'
   | 'entertainment'
   | 'sports-leisure'
-  | 'current-events'
   | 'recent-news'
 export type Difficulty = 1 | 2 | 3
 export type Origin = 'human' | 'claude'
@@ -35,7 +34,6 @@ export const CATEGORIES: readonly Category[] = [
   'arts-literature',
   'entertainment',
   'sports-leisure',
-  'current-events',
   'recent-news',
 ]
 
@@ -96,12 +94,11 @@ export function validateQuestion(input: unknown): ValidationIssue[] {
   if (q.as_of !== null && (typeof q.as_of !== 'string' || !ISO_DATE.test(q.as_of))) {
     fail('as_of', 'must be an ISO date (YYYY-MM-DD) or null')
   }
-
-  if (q.category === 'current-events' || q.category === 'recent-news') {
-    if (typeof q.source_url !== 'string' || q.source_url.length === 0) fail('source_url', 'current-events questions require a non-null source_url')
-    if (typeof q.as_of !== 'string' || !ISO_DATE.test(q.as_of)) fail('as_of', 'current-events questions require as_of')
+  if (q.category === 'recent-news') {
+    if (typeof q.source_url !== 'string' || q.source_url.length === 0) fail('source_url', 'recent-news questions require a non-null source_url')
+    if (typeof q.as_of !== 'string' || !ISO_DATE.test(q.as_of)) fail('as_of', 'recent-news questions require as_of')
     if (typeof q.question === 'string' && !MONTH_YEAR.test(q.question)) {
-      fail('question', 'current-events question text must be date-anchored (e.g. "In September 2026, ...")')
+      fail('question', 'recent-news question text must be date-anchored (e.g. "In September 2026, ...")')
     }
   }
 
