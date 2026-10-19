@@ -57,6 +57,17 @@
 - [x] Done (2026-10-18, owner request): Single Player / Multiplayer now render side by side in a `.mode-choice` flex row (equal halves, 0.75em gap) instead of stacked; verified at desktop (400px row, 194px buttons) and 320px viewport (147px buttons, no horizontal overflow) in the built app, solo + multiplayer layouts, zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
 - Verified in the built app (vite preview + headless Chromium): solo layout — all choices above Start, Start last, green full-width (rgb(92, 219, 128), 24px bold); multiplayer layout — mode/players/names/toggles blocks above Start, Start still last; launch starts the quizmaster game with zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
 
+## Phase 3: Explanations UI (done — 2026-10-18)
+
+> SPEC §6 Phase 3: the reveal screen shows the correct answer, the explanation, a Source link (new tab) when present, and "As of" for date-anchored questions; readable at 375px.
+
+- [x] Source link in the `src/components/Questions.vue` reveal block: `reveal.source` (en + fr "Source") rendered as an underlined link (`target="_blank" rel="noopener noreferrer"`) when `currentQuestion.source_url` is set; absent otherwise (the field is nullable).
+- [x] "As of" date badge: `reveal.asOf` (en "As of {date}" / fr "Le {date}") under the explanation when `currentQuestion.as_of` is set.
+- [x] No store/schema changes: `source_url` and `as_of` already existed; the reveal block is shared by all modes, so the explanation shows whether or not players got it right (unchanged behavior).
+- [x] Styles: `.as-of-badge` (block, 0.75em, `$color-med`) and `.source-link` (inline-block, underline, 0.9em, `$color-green`).
+- [x] Verified: vitest 46/46, `vue-tsc -b` + build green; headless Chromium at 375px (Recent News question; longest bank explanation is 270 chars): badge and link render without collisions, reveal fits without horizontal overflow (scrollWidth 375), zero console errors; French strings verified end-to-end ("Explication", "Source", "Le 2026-10-18").
+- Product gap (not a UI bug): all 61 bank questions are `lang: "en"` — with the UI locale set to French the category list is empty and Start silently does nothing; fr question content remains the deferrable item (SPEC Phase 5).
+
 ## Items to review and consider (MVP gap analysis — 2026-10-18)
 
 > Snapshot of a brainstorm review; will go stale. File/line evidence verified 2026-10-18 against the then-uncommitted tree — re-verify against the working tree before acting.
@@ -65,7 +76,7 @@
 - MVP = SPEC phase order with Phase 4.2 pulled ahead of Phase 2: Phase 1 (local questions) → Phase 4.2 (Pages deploy) → Phase 2 quizmaster mode → Phase 4.1 (full PWA) → Phase 3 (explanations UI). Phase 5 last/never for MVP.
 - Single change that matters most: land Phase 1 — root dependency of Phases 2–5, deletes the only hard connectivity failure (OpenTDB fetch at game start).
 - Close second: minimal GitHub Pages deploy (`deploy.yml` + Vite `base`) so the game reaches a phone.
-- Phase 4 (full PWA): done (2026-10-18). Installed `vite-plugin-pwa`, workbox-precaching, workbox-window; manifest.webmanifest with icons, service worker, Apple meta tags in index.html; `usePwaUpdate.ts` composable + `UpdatePrompt.vue` component integrated in App.vue with en+fr locale keys. Verified: vue-tsc -b clean, vitest 46/46, build green.
+- Phase 4 (full PWA): done (2026-10-18). Installed `vite-plugin-pwa`, workbox-precaching; manifest.webmanifest with icons, service worker, Apple meta tags in index.html; `usePwaUpdate.ts` composable + `UpdatePrompt.vue` component integrated in App.vue with en+fr locale keys. Registration fixed to the plugin's canonical `registerSW` from `virtual:pwa-register` (`injectRegister: null`; the original `new Workbox('/service-worker.js')` pointed at a file the plugin doesn't emit and 404'd under the Pages subpath); `workbox-window` removed. Verified: vue-tsc -b clean, vitest 46/46, build green, `dist/sw.js` generated.
 
 ### Ranked gaps (likelihood × impact; evidence as of 2026-10-18)
 | # | Gap | L×I | Evidence (2026-10-18) | Fix |
@@ -74,7 +85,6 @@
 | 2 | No way to get the game onto a phone | H×H | no `.github/`, no `public/`; `vite.config.ts` has no `base` | Pull Phase 4.2 + minimal 4.1 manifest forward, right after Phase 1 |
 | 3 | Multiplayer still upstream's alternating turns | H×H | `store.ts:86-93` `turn = round % 2`; playerOne/playerTwo hardcoded in state + `score()` payload (`store.ts:127`) | Phase 2; quizmaster mode first (no interstitial) |
 | 4 | Question supply ≈ one game, not a road trip | H×M | 12 placeholders ÷ 10-question default ≈ 1 game | Owner delivers `questions/sample.json` early (SPEC §5.98) |
-| 5 | Hardcoded "10" breaks the question-count option | M×M | `'Score: {score}/10'` in locales; game over at `round === 9` (`store.ts:100`); award messages keyed 0-10 (`GameOverModal.vue:36-48`; `if (score)` hides message.0) | Parameterize inside Phase 1.4 |
 | 6 | No wake lock in quizmaster mode | M×M | no wakeLock in `src/` (grep 2026-10-18) | Wake Lock API in Phase 2 (platform API, no new dependency) |
 
 ### Missing from the SPEC entirely
@@ -87,7 +97,7 @@
 
 ### Deferrable past MVP
 - Full PWA polish (Phase 4.1 beyond minimal manifest).
-- Explanation UI (Phase 3) — but write `explanation` into placeholder questions NOW; the Phase 1 schema carries it.
+- Explanation UI (Phase 3) — done 2026-10-18 (see section above); placeholder questions have carried `explanation` since Phase 1.
 - `fr` questions — ship the `lang` field + filter in Phase 1; retrofitting hurts.
 - Service-worker tap-to-refresh (Phase 4, `registerType: 'prompt'`).
 
@@ -96,7 +106,6 @@ Accounts, analytics, theming, sound, timers, haptics, landscape (SPEC §4 mandat
 
 ## Trivia phrasing elimination (planned — 2026-10-18)
 
-> Owner rationale: "trivia" has a negative connotation — knowledge is rarely trivial. Evidence below verified 2026-10-18 against the working tree — re-verify before pickup.
 > Note: evidence line numbers captured mid-refactor on 2026-10-18 — a concurrent session is actively rewriting src/; locale keys are the stable reference, re-verify line numbers on pickup.
 
 - [ ] Sweep user-facing copy and replace "trivia" phrasing with neutral knowledge framing (quiz / question / knowledge), keeping en + fr locales consistent: `README.md`, `SPEC.md`, `CHANGELOG.md`, `package.json`, `index.html`, `src/locales/index.ts`, `src/components/About.vue` (renders `about.heading`/`about.definition`/`about.love` — replacing the dictionary-definition treatment with neutral knowledge framing is the core of this task)

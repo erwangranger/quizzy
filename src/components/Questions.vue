@@ -17,6 +17,8 @@
       </p>
       <p class="reveal-explanation-label">{{ t('reveal.explanation') }}</p>
       <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
+      <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: currentQuestion.as_of }) }}</span>
+      <a v-if="currentQuestion.source_url" :href="currentQuestion.source_url" target="_blank" rel="noopener noreferrer" class="source-link">{{ t('reveal.source') }}</a>
       <!-- Quizmaster marks who was right -->
       <div v-if="store.mode === 'quizmaster'" class="marks">
         <p class="marks-label">{{ t('reveal.whoWasRight') }}</p>
@@ -162,6 +164,21 @@ h3 {
     text-transform: uppercase;
     margin: 1em 0 0.25em;
     color: $color-med;
+}
+
+.as-of-badge {
+    display: block;
+    font-size: 0.75em;
+    color: $color-med;
+    margin-top: 0.15em;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: $color-green;
+    text-decoration: underline;
+    font-size: 0.9em;
 }
 
 .marks {
