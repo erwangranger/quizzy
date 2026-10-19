@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — About panel rework
+
+- The corner menu now opens a useful panel instead of a dictionary treatment: it shows the app version (injected at build time as `__APP_VERSION__` from `package.json` via a Vite `define`), a "Source on GitHub" link (github.com/erwangranger/quizzy), a "Report an issue" link (issues/new), and a one-line credit to the upstream Winsome Trivia fork. Version, copy and layout, no explanation, no "I love learning".
+- All links open in a new tab (`target="_blank" rel="noopener noreferrer"`) and reuse the existing `.link-light` hover-underline style. `about.heading/partOfSpeech/definition/love` keys removed from both locale dictionaries; `about.source/issues/creditLead/creditName` added (en + fr).
+- Component: `src/components/About.vue` rebuilt. Vite config: `vite.config.ts` gains the version `define` (only config change). Verified: `vue-tsc -b` + build green, vitest 48/48, headless Chromium — panel opens/toggles cleanly with version `v0.1.0` and all three hrefs correct, fr locale renders « Source sur GitHub / Signaler un problème », 320px viewport has no horizontal overflow, zero console errors.
+
 ## Unreleased — Question actions in a footer strip
 
 - The Questions screen separates answers from actions: everything that is not an answer (the reveal panel — correct answer, explanation, Source link, "As of" badge, quizmaster marks or pass-and-play choices — plus the Skip / Main Menu / Reveal / Next actions) now lives in a footer strip below a hairline at the bottom of the question card, so no action resembles the answer buttons above it.

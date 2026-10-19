@@ -30,14 +30,17 @@
 - Fits existing data model: generated questions as `questions/*.json` entries (`id`, `lang`, …) loaded through the `questionBank` module.
 - Constraints that still apply: no AI API calls from the client app (generation happens offline in a pipeline, results are reviewed before merging — same shape as Phase 5).
 
-## Play analytics (idea)
-- [ ] Awareness goal: the game is friends-first but public (served via GitHub Pages); owner wants to know when strangers find and play it.
+## Play analytics (planned — 2026-10-19)
+
+> Owner request (2026-10-19): "add to backlog, I want to add Google Analytics so I can tell how many people are using the app."
+- [ ] Awareness goal: the game is friends-first but public (served via GitHub Pages); owner wants to know how many people are using the app (usage counts), including when strangers find and play it.
 - [ ] Amend SPEC section 3 non-goal "No ads, analytics or trackers" to permit client-side analytics — the owner's request for analytics is the approval; no other non-goal changes.
-- [ ] Analytics integration: owner suggests "some sort of Google Analytics"; a client-side snippet fits the static Vite build (likely `index.html` / `src/main.ts`), treat it as a suggestion, not a decided implementation. SPEC section 4 requires asking before any runtime dependency — prefer a plain script tag over an npm package.
+- [ ] Analytics integration: Google Analytics (owner decision 2026-10-19) via a client-side gtag snippet in the static Vite build (likely `index.html` / `src/main.ts`); SPEC section 4 requires asking before any runtime dependency — prefer a plain script tag over an npm package.
 - [ ] Gameplay telemetry: whether people play, session duration, which questions are shown (question IDs), per-question correct/incorrect counts; natural integration point is the quiz store `src/store/store.ts`.
 - [ ] GitHub Pages deploy is already specced (goal 4 "Rendered website", Phase 4 item 2 `deploy.yml`); when picking this up, verify it is live rather than adding new publishing work (no `.github/` workflows exist today).
 - [ ] Any analytics script must load async/non-blocking and degrade gracefully offline, so the offline acceptance criteria (Phase 1 item 5, Phase 4 item 4) still pass.
-- [ ] Open question: full Google Analytics may be overkill for a friends-first audience; owner to choose vs a lightweight privacy-friendly alternative (GoatCounter / Umami / Plausible).
+- [x] Resolved (2026-10-19): owner chose Google Analytics over the lightweight privacy-friendly alternatives (GoatCounter / Umami / Plausible); nothing left to decide on pickup.
+- [ ] Prerequisite: owner creates a GA4 property and provides the measurement ID (`G-…`) — the gtag snippet cannot ship without it.
 - Constraints that still apply: no backend, accounts or database (section 3) — analytics must be client-side beacons only; the amendment above is the only non-goal change.
 
 ## Skip questions and leave mid-game (done — 2026-10-18)
@@ -63,6 +66,15 @@
 - [x] Card bottom padding trimmed to the mockup's scheme: the card rule is now `padding: 1em 1em .5em` (`Questions.vue:133`; 600px media `.25em 1em .5em`) — the pre-trim ~40px desktop / ~24px mobile of dead blue space between the footer actions and the card edge measures 8px / 7px; dead `.spacer` span removed (right-alignment comes from `.primary { margin: 0 0 0 auto }`).
 - Evidence before (2026-10-19): Skip rendered pixel-identical to the answer pills — the template button carried no class, so it fell through to the global white 190px-radius pill (`src/main.scss:70`); Reveal/Next reused `.start` (green, bold 1.5em, full-width, same pill shape and column as the choices).
 - [x] Verified: `vue-tsc -b` + `vite build` green, vitest 48/48; headless Chromium on the built app — solo: hairline below the last answer pill, Skip "42px" and Main Menu "85px" text actions (44px touch height) vs 400px white answer pills, Reveal/Next compact green 81px buttons right-aligned to the card edge, `.foot` min-width 0 / radius 0 / no bottom margin, card padding trimmed (`1em 1em .5em`; 8px card-edge-to-actions desktop, 7px at 320px); answer → reveal renders the panel inside `.foot` with Source link and Next, Skip hidden at reveal; Next → advance, Skip → advance (no history row, `answeredTotal` 1); Main Menu returns to the Starter; quizmaster: pre-reveal Reveal button in the footer, reveal → "Who was right?" marks inside `.foot`, mark + Next scores Player 1 (total 1, category-stamped history row); zero console errors; 320px viewport — no horizontal overflow (320/320), footer actions wrap.
+
+## Per-player score tally during gameplay (idea)
+
+> Owner request (2026-10-19): "keep a tally/score for each player visible at the bottom when going to the next question."
+
+- [ ] Persistent tally on the Questions screen: each player's running score visible at the bottom while advancing between questions (solo = one tally; quizmaster + pass-and-play = one entry per player).
+- [ ] Data already exists — UI-only change expected: per-player `score.total` lives in `Player` state (`src/store/store.ts:24`, seeded at `:110`) and `ranking` already sorts by it; game over already shows per-player counts.
+- [ ] Placement interacts with the footer strip from "Action-button look & feel": the reveal panel + action row already sit below the hairline in `src/components/Questions.vue` `.foot` — the tally likely joins that strip; must not collide with the 44px `.text-btn` actions or the compact green Reveal/Next, and must respect the bare-`div` leak resets (no `width: 100%`, `min-width: 0`, `border-radius: 0`).
+- [ ] Skipped rounds add no points (`skipRound()` records nothing) — the tally must not move on a skip; game-over totals use `answeredTotal`.
 
 ## Starter screen sequencing (done — 2026-10-18)
 
@@ -129,11 +141,12 @@
 ### Ignore (scope creep)
 Accounts, analytics, theming, sound, timers, haptics, landscape (SPEC §4 mandates portrait), favicon polish.
 
-## Trivia phrasing elimination (planned — 2026-10-18)
+## Trivia phrasing elimination (done — 2026-10-19)
 
-> Note: evidence line numbers captured mid-refactor on 2026-10-18 — a concurrent session is actively rewriting src/; locale keys are the stable reference, re-verify line numbers on pickup.
+> Note: evidence line numbers below were captured mid-refactor on 2026-10-18; the sweep landed across the Phase 1 follow-up commits plus this session's About rework.
 
-- [ ] Sweep user-facing copy and replace "trivia" phrasing with neutral knowledge framing (quiz / question / knowledge), keeping en + fr locales consistent: `README.md`, `SPEC.md`, `CHANGELOG.md`, `package.json`, `index.html`, `src/locales/index.ts`, `src/components/About.vue` (renders `about.heading`/`about.definition`/`about.love` — replacing the dictionary-definition treatment with neutral knowledge framing is the core of this task)
+- [x] Sweep user-facing copy and replace "trivia" phrasing with neutral knowledge framing (quiz / question / knowledge), keeping en + fr locales consistent: `README.md`, `SPEC.md`, `CHANGELOG.md`, `package.json`, `index.html`, `src/locales/index.ts`, `src/components/About.vue` (renders `about.heading`/`about.definition`/`about.love` — replacing the dictionary-definition treatment with neutral knowledge framing is the core of this task)
+  - Done 2026-10-19: the About panel rework was the last user-facing piece. `grep -in "trivia|trivial"` across README, package.json, index.html, SPEC.md, src/locales/index.ts, src/components/About.vue now matches only the upstream proper nouns "Winsome Trivia" / "open-trivia-app" (kept deliberately, attribution + URL).
 
 Evidence — every case-insensitive "trivia" occurrence in the repo (2026-10-18), as `file:line — phrase (user-facing | identifier)`:
 
