@@ -118,7 +118,7 @@
     "difficulty": 1,
     "question": "Which studio produced the animated film \"Toy Story\"?",
     "correct_answer": "Pixar",
-    "incorrect_answers": ["DreamWorks", "Studio Ghibli", "Illumination", "One Very Talented Hamster"],
+    "incorrect_answers": ["DreamWorks", "Studio Ghibli", "Illumination", "A very ambitious goldfish"],
     "explanation": "Pixar released Toy Story in 1995 as the first fully computer-animated feature film. Disney distributed it, and the partnership later grew into Disney's purchase of Pixar in 2006.",
     "source_url": "https://en.wikipedia.org/wiki/Toy_Story",
     "as_of": null,

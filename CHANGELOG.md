@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — Five-way choices with a joke answer
+
+- Every question now shows 5 choices: the 3 plausible wrong answers plus a new 4th obviously-wrong joke answer meant to earn a chuckle (all 61 questions across `questions/sample.json` and `questions/recent-news.json`).
+- Data model: `incorrect_answers` widened from `string[3]` to `string[4]` — exactly 4 items (3 plausible + 1 joke) — in `src/questions/schema.ts`; the Phase 1 validator and `scripts/validate-questions.mjs` enforce the new count, and `SPEC.md` field rules now document it.
+- Unit tests updated to the new shape: schema fixtures carry 4 items, the store test asserts shuffled 5-way choices.
+
 ## Unreleased — Phase 4: PWA + GitHub Pages deployment
 
 - Full PWA support via `vite-plugin-pwa`: `manifest.webmanifest` with app name, icon entries (192px + 512px PNG), `display: standalone`, `orientation: portrait`, `start_url: ./`; precaching for HTML/JS/CSS/SVG/JSON/woff2; Google Fonts runtime caching.
