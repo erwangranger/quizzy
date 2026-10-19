@@ -39,9 +39,24 @@ import { usePwaUpdate } from './composables/usePwaUpdate'
 import UpdatePrompt from './components/UpdatePrompt.vue'
 import { useGameStore } from './store/store'
 import { t } from './locales'
+import { analytics } from './analytics'
+import { watch } from 'vue'
 
 const store = useGameStore()
 const { promptShow, promptDismiss, updateSW } = usePwaUpdate()
+
+// Virtual page_view per in-app screen transition (intro ↔ game board) and
+// at game over — GA4 page reports read these; no URL change, no router.
+watch(
+  () => store.currentView,
+  (view) => analytics.pageView(view),
+)
+watch(
+  () => store.isGameOver,
+  (over) => {
+    if (over) analytics.pageView('game-over')
+  },
+)
 
 function onRefresh() {
   // updateSW(true) only sends SKIP_WAITING; the generated worker has no

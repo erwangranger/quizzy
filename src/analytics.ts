@@ -69,6 +69,14 @@ function gameStart(mode: string, players: number, count: number): void {
   event('game_start', { mode, players, question_count: count })
 }
 
+// Virtual page_view on a screen transition (intro → game board → game over,
+// back to the menu). No URL change, no history entry, no router — GA4 page
+// reports read these so the owner can see how far visitors get. The real
+// page_view fires once per full load; these mark in-app screens.
+function pageView(screen: string): void {
+  event('page_view', { page_title: screen, page_location: `${window.location.pathname}#${screen}` })
+}
+
 // A question was shown to players (question IDs, per the backlog telemetry
 // list). Skipped questions never get this event — they are not played.
 function questionShown(questionId: string, category: string): void {
@@ -94,6 +102,7 @@ function questionAnswered(
 
 export const analytics = {
   gameStart,
+  pageView,
   questionShown,
   questionAnswered,
 }

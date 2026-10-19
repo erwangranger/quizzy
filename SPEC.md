@@ -34,7 +34,7 @@ Facts about the upstream repo (verify them before relying on them):
 - No backend, accounts, database server or network multiplayer across devices.
 - No native iOS/Swift code.
 - No calls to any AI API from the client app, ever.
-- No ads or trackers. Client-side Google Analytics is permitted (amended 2026-10-19, owner approval): usage counts, question IDs shown, and per-question correct/incorrect counts only — client-side beacons, no backend, no accounts, no data beyond gameplay events.
+- No ads or trackers. Client-side Google Analytics is permitted (amended 2026-10-19, owner approval): usage counts (including virtual page_view events on screen transitions), question IDs shown, and per-question correct/incorrect counts — client-side beacons, no backend, no accounts, no data beyond gameplay and screen-transition events.
 - No Open Trivia DB data or API calls.
 
 ---

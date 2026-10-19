@@ -3,9 +3,8 @@
 ## Unreleased — Google Analytics
 
 - Client-side GA4 via the canonical gtag snippet (`src/analytics.ts`, no npm dependency): the async `googletagmanager.com/gtag/js` script plus the `dataLayer` bootstrap, injected on the first game start — never before, so nothing loads until someone actually plays. Measurement ID read at build time from `.env.production` (`VITE_GA_MEASUREMENT_ID=G-RNWDDHKDL5`, committed per owner decision — the ID is a public identifier, not a credential); a build without the ID injects nothing and makes no network requests, so the offline acceptance criteria keep passing.
-- Gameplay telemetry per the owner's request: `game_start` (mode, players, question count — fires on every launch, Starter or rematch), `question_shown` (question ID + category, every round presented), `question_answered` per player (question ID, correct/incorrect, mode, player name). Session duration is GA4-automatic. Skipped questions fire `question_shown` for the round they appear but never `question_answered`.
-- Failures are swallowed by design: blocked scripts, offline, ad-blockers — analytics can never break the game. SPEC section 3 non-goal amended (2026-10-19, owner approval): "No ads or trackers. Client-side Google Analytics is permitted…" — the only non-goal change.
-- Verified: `vue-tsc -b` + vitest 48/48 + build green; no-ID build emits zero gtag references; headless Chromium on the committed-ID build — script tag with `G-RNWDDHKDL5` injected on Start, `game_start` / `question_shown` / `question_answered` all observed in `dataLayer`, skip adds no answer event, second launch fires a second `game_start`, zero console errors.
+- Virtual `page_view` events on screen transitions: one per in-app screen (`app-intro` ↔ `app-game-board` via a `currentView` watcher in `App.vue`, plus `game-over` when the modal opens). No URL change, no history entries, no router — GA4's page reports read these, so the owner can see how far visitors get without the per-tap pageview pollution a real router would cause.
+- Verified: `vue-tsc -b` + vitest 48/48 + build green; headless Chromium — page_view fires for intro→board, game-over, and back-to-menu; no duplicate page_view for the initial load (gtag bootstraps on the first game_start).
 
 ## Unreleased — Per-player score tally
 
