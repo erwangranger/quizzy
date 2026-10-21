@@ -193,8 +193,8 @@ export const useGameStore = defineStore('game', {
         this.mode = 'solo'
         this.players = loadPlayerNames(1)
       } else {
-        // Quizmaster is the default multiplayer mode
-        this.mode = 'quizmaster'
+        // Pass-and-play is the default multiplayer mode
+        this.mode = 'pass-and-play'
         if (this.setup.players < 2) this.setup.players = 2
         this.players = loadPlayerNames(this.setup.players)
       }

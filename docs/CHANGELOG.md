@@ -117,6 +117,11 @@
 - Dead two-player UI keys removed (`gameboard.playerOne/playerTwo`, `gameover.playerOneWins/playerTwoWins/playerOne/playerTwo/draw`); 13 new keys added to both en and fr dictionaries.
 - Unit tests 27 → 37: quizmaster scoring via marked players, pass-and-play flow with last-player reveal, solo without interstitial handoff, ranking ties, difficulty weighting (on 1/2/3 and off = 1), 1–6 roster with localized names, name persistence.
 
+## Unreleased — Pass-and-play default
+
+- Multiplayer now defaults to **pass-and-play** instead of quizmaster: choosing Multiplayer on the start screen sets `mode: 'pass-and-play'` in `selectMode` (`src/store/store.ts`); the segmented Quizmaster / Pass and Play row still switches modes via `setMultiplayerMode`, and solo defaults are unchanged.
+- Default-mode unit test updated (`selects pass-and-play as the default multiplayer mode`); no other store logic, components, or locale keys changed.
+
 ## Unreleased — Starter screen sequencing
 
 - Starter screen reordered around choices first, launch last: Single Player / Multiplayer choice buttons, then the multiplayer-only choices (quizmaster vs pass-and-play, player count, names, Hide Choices), then the shared choices (Weight by Difficulty, language, category, question count), and the Start button at the bottom of the sequence instead of between the mode buttons and the choices.

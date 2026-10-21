@@ -41,11 +41,11 @@ describe('useGameStore', () => {
     })
   })
 
-  it('selects quizmaster as the default multiplayer mode', () => {
+  it('selects pass-and-play as the default multiplayer mode', () => {
     const store = useGameStore()
     store.selectMode(false)
     expect(store.solo).toBe(false)
-    expect(store.mode).toBe('quizmaster')
+    expect(store.mode).toBe('pass-and-play')
     expect(store.setup.players).toBe(2)
     expect(store.players).toHaveLength(2)
   })
@@ -120,8 +120,8 @@ describe('useGameStore', () => {
   it('quizmaster mode: scores only the marked players on Next', () => {
     const store = useGameStore()
     store.selectMode(false)
+    store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 3 })
-    store.startGame()
     expect(store.mode).toBe('quizmaster')
     // Pre-reveal: choices visible unless hide-choices was set
     expect(store.hiddenChoices).toBe(false)
@@ -145,6 +145,7 @@ describe('useGameStore', () => {
   it('quizmaster mode with hide-choices: choices hidden until reveal', () => {
     const store = useGameStore()
     store.selectMode(false)
+    store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 2, hideChoices: true })
     store.startGame()
     expect(store.hiddenChoices).toBe(true)
@@ -249,6 +250,7 @@ describe('useGameStore', () => {
   it('scores a full quizmaster round through scoreRound with weighting', () => {
     const store = useGameStore()
     store.selectMode(false)
+    store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 2, weightByDifficulty: true, count: 12 })
     store.startGame()
     store.revealAnswer()
