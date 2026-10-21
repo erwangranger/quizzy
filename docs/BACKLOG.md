@@ -5,13 +5,11 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 ## Roadmap status (2026-10-21)
 - Phases 0–3: done.
 - Phase 4: done except a real-device check of 4.4 — after "Add to Home Screen" on iOS Safari, the installed app starts and plays a full game in airplane mode. Not yet recorded as done.
-- Phase 5: not started (below).
+- Phase 5: built (laptop scheduled task, see README "Weekly news questions"). Acceptance is pending: the first "Run now" producing a valid PR (below).
 
-## Phase 5: generated current-events questions (decision needed)
-- Nothing exists yet: no `scripts/generate-questions.ts`, no `generate-questions.yml`, no `npm run promote:pending`, no 18-month `as_of` staleness filter. The October 2026 news bank (98 questions, en + fr) was produced once and promoted by hand into `questions/recent-news.json` / `questions/fr-recent-news.json`.
-- Needs: `@anthropic-ai/sdk` + `tsx` (named in SPEC), an `ANTHROPIC_API_KEY` repo secret, a `CLAUDE_MODEL` workflow fallback.
-- Without it, Recent News goes stale. GA `question_shown` by category can show whether the category earns the investment first.
-- The staleness filter (SPEC §6 Phase 5.4) is independent and cheap. It only matters from about April 2028 for the current bank.
+## Phase 5 follow-ups
+- One-time setup on the laptop: `brew install gh && gh auth login`, create the `quizzy-news` scheduled task, then "Run now". Not yet done. That first run is the acceptance check. Web search inside a scheduled run is not documented, so confirm it works there.
+- GA `question_shown` by category can show whether Recent News earns a weekly batch, or whether a fortnightly cadence is enough.
 
 ## Resume follow-ups
 - Wake Lock is not re-acquired when the tab is hidden and shown again (affects normal quizmaster games too, not just resumed ones).
@@ -20,7 +18,7 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 ## Special categories from course materials (idea)
 - Feed in `.pdf` files or raw text; an AI generates quiz questions from them so students can check they understood course materials.
 - Fits the existing data model: generated questions are `questions/*.json` entries loaded through `questionBank`.
-- Same constraint as Phase 5: no AI calls from the client; generation runs offline and is reviewed before merging. Best built on top of the Phase 5 pipeline.
+- Same constraint as Phase 5: no AI calls from the client; generation runs offline and is reviewed before merging. Can reuse the Phase 5 recipe pattern (a `.claude/commands/` file + pending/ + promote).
 
 ## Decisions to keep (so they aren't re-proposed)
 - No router / URL-per-screen: game state is not URL-addressable (only one saved game, in localStorage) so deep links would dead-end, and a router is a new runtime dependency. Screen analytics use virtual `page_view` events instead (see CHANGELOG "Google Analytics").

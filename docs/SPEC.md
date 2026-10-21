@@ -27,7 +27,7 @@ Facts about the upstream repo (verify them before relying on them):
 3. **Local question data:** no Open Trivia DB. Questions live as JSON files in this repo. I will supply a small set of sample questions to start.
 4. **Rendered website:** deployed to GitHub Pages, installable as a PWA, fully playable offline.
 5. **iOS-ready architecture:** no native app now, but nothing may block wrapping the web build with Capacitor later.
-6. **Claude-generated questions** about recent world events, produced by a scheduled pipeline and reviewed by a human before merging (Phase 5).
+6. **Claude-generated questions** about recent world events, produced by a weekly scheduled Claude Code task and reviewed by a human before merging (Phase 5).
 
 ## 3. Non-goals (do not build)
 
@@ -44,7 +44,7 @@ Facts about the upstream repo (verify them before relying on them):
 - **Stack target:** Vue 3 (Composition API, `<script setup>`), Vite, Pinia, TypeScript, Vitest, `sass` (Dart Sass). Node current LTS. Package manager: npm.
 - **Keep the upstream look and feel** (layout, colors, star-power animation, score dots) unless a requirement forces a change. Restyling is a later, separate task.
 - **Attribution:** keep the upstream `LICENSE`, and credit Christopher Murphy in `README.md`.
-- **Dependencies:** ask before adding any runtime dependency beyond those listed above (plus `vite-plugin-pwa` in Phase 4 and `@anthropic-ai/sdk` in Phase 5).
+- **Dependencies:** ask before adding any runtime dependency beyond those listed above (plus `vite-plugin-pwa` in Phase 4).
 - **Relative asset paths and hash-free routing** (or no router at all), so the build works under a GitHub Pages subpath and inside a Capacitor WebView.
 - **Data layer separated from UI:** components never read JSON files directly; they go through a `questionBank` module. This is what makes a future native or alternative front end cheap.
 - **Mobile first:** design for a phone held in portrait. Tap targets of at least 44 px. Readable at arm's length (large question text).
@@ -147,25 +147,25 @@ Deliverables for the data model:
 
 ### Phase 5: Claude-generated current-events questions
 
-This runs **in CI only**. The client app never calls an AI API.
+Amended 2026-10-21 (owner decision): generation runs as a **weekly Claude Code Desktop scheduled task on the owner's laptop**, not in CI. It uses the owner's Claude subscription and Claude Code's own web search, so there is no `@anthropic-ai/sdk`, `tsx`, `ANTHROPIC_API_KEY` secret or `generate-questions.yml` workflow. The client app still never calls an AI API.
 
-1. Script `scripts/generate-questions.ts` (run with `tsx`):
-   - Uses `@anthropic-ai/sdk`. Model is read from env var `CLAUDE_MODEL` (no hardcoded default in code paths other than a documented fallback in the workflow file). API key from `ANTHROPIC_API_KEY`.
-   - Enables the Anthropic web search tool so questions are based on events from the last N days (default 14).
-   - Inputs (CLI flags / workflow inputs): `--count` (default 10), `--lang` (default `en`), `--days` (default 14), `--categories` (default `recent-news`).
-   - Sends the model: the question schema, the rules from section 5, the list of existing question texts and IDs from the last 90 days (for deduplication), and these content rules:
+1. Recipe `.claude/commands/news-questions.md` (the scheduled task's prompt just says to follow it). Inputs: `count` per language (default 10), `days` (default 14), `langs` (default `en,fr`). Each run:
+   - Branches `news/YYYY-MM-DD` from `origin/main`, and aborts on a dirty tree, missing `gh` auth, or an existing branch for the day.
+   - Reads existing news questions from the last 90 days (`node scripts/news-context.mjs`) for deduplication and free ids.
+   - Web-searches events from the last N days and writes questions following the `quizzy-question-crafting` skill and these content rules:
      - Questions must be about verifiable facts, not opinions or predictions.
      - Every question must be date-anchored in its text and have `as_of` and a `source_url` from a reputable outlet or primary source found via search.
      - Avoid tragedies and violent events as quiz material; avoid partisan framing; prefer science, culture, sports, business, space, geography, notable firsts.
      - The correct answer must be unambiguous; incorrect answers must be plausible but clearly wrong.
      - Explanations written in the model's own words, never copied from the source.
-   - Asks for JSON only; parses defensively (strip code fences), then validates every question with the Phase 1 validator. Invalid items are dropped and logged, not "fixed" silently.
-   - Runs a duplicate check (normalized text similarity against existing questions); drops near-duplicates.
-   - Writes survivors to `questions/pending/news-YYYY-MM-DD.json` with `origin: "claude"` and `reviewed: false`.
-2. Workflow `generate-questions.yml`: weekly cron plus `workflow_dispatch` with the inputs above. Runs the script, then opens a pull request (e.g. `peter-evans/create-pull-request`) titled "New current-events questions (YYYY-MM-DD)" whose body lists each question, its answer and its source link for quick review.
-3. Review flow (document in `README.md`): I edit questions in the PR, set `reviewed: true` on the ones I keep, delete the rest, then merge. A small script `npm run promote:pending` moves reviewed questions from `questions/pending/` into `questions/recent-news.json` and deletes empty pending files.
-4. Staleness: questions with `as_of` older than 18 months are excluded from the build by default (configurable), since "recent events" stop being recent.
-5. Acceptance: a manual `workflow_dispatch` run with `--count 5` produces a valid PR; with `ANTHROPIC_API_KEY` missing, the job fails with a clear message; the deployed app never includes `reviewed: false` questions.
+     - French questions are written natively, not translated.
+   - Writes `questions/pending/news-YYYY-MM-DD.json` and `questions/pending/fr-news-YYYY-MM-DD.json` with `origin: "claude"` and `reviewed: false`.
+   - Runs `npm run validate:questions`, which covers `questions/pending/` and fails on near-duplicates (token Jaccard ≥ 0.8) involving a pending question. Invalid items are dropped and logged, not "fixed" silently.
+   - Pushes and opens a PR titled "New current-events questions (YYYY-MM-DD)" whose body lists each question, its answer and its source link, plus the dropped items.
+2. Unattended permissions live in the committed `.claude/settings.json` allowlist (git/gh/validator/news-context, web search, writes under `questions/pending/`).
+3. Review flow (documented in `README.md`): I edit questions in the PR, set `reviewed: true` on the ones I keep, run `npm run promote:pending` (moves reviewed questions into `questions/recent-news.json` / `questions/fr-recent-news.json`, drops the rest, deletes the pending files, re-validates), commit, then merge.
+4. Staleness: recent-news questions with `as_of` older than 18 months are left out of play (`isStale` in `questionBank`, evaluated on the device so an installed offline app ages them out too). Override with `VITE_NEWS_MAX_AGE_MONTHS`.
+5. Acceptance: a manual "Run now" of the scheduled task produces a valid PR; with `gh` unauthenticated the run stops with a clear message; the deployed app never includes `reviewed: false` questions (only top-level `questions/*.json` is bundled, and only `reviewed: true` items are kept).
 
 ---
 

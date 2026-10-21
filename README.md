@@ -67,10 +67,33 @@ Quizzy is built with Vue 3, Pinia, TypeScript, Vite and SCSS. Questions live as 
 npm install
 npm run dev                       # dev server
 npm test                          # unit tests
-npm run validate:questions        # validate question files
+npm run validate:questions        # validate question files (incl. questions/pending/)
+npm run promote:pending           # move reviewed pending questions into the news banks
 npm run build && npm run preview  # production build + local preview
 ```
 The site deploys to GitHub Pages automatically on every push to `main`.
+
+## Weekly news questions
+
+A Claude Code Desktop scheduled task on the owner's laptop writes about 10 English and 10 French Recent News questions every week and opens a pull request. The recipe it follows is [`.claude/commands/news-questions.md`](.claude/commands/news-questions.md). You can also run it by hand with `/news-questions` (e.g. `/news-questions count=5`).
+
+**One-time setup**
+
+1. `brew install gh && gh auth login`.
+2. In the Claude desktop app's Code tab, go to **Scheduled** → **New task** → **Set up manually**:
+   - Name: `quizzy-news`.
+   - Schedule: weekly, Monday 09:00.
+   - Advanced settings: **Only on this computer**. Local folder: this repo, with **Worktree** on so runs never touch your working copy.
+   - Instructions: *Read `.claude/commands/news-questions.md` and follow it exactly.*
+3. Click **Run now** once. Approve ("always allow") anything the committed `.claude/settings.json` allowlist doesn't cover, so later runs don't stall waiting for you.
+
+Runs only fire while the app is open and the Mac is awake. A run missed in the last 7 days catches up once on wake or app start. To avoid missing runs, turn on Settings → This computer → System → **Keep computer awake**.
+
+**Reviewing a PR**
+
+1. Check each question against its source link. Edit wording in the pending files, and set `reviewed: true` on the ones to keep.
+2. `npm run promote:pending`: reviewed questions move into `questions/recent-news.json` / `questions/fr-recent-news.json`, the rest are dropped, and the pending files are deleted.
+3. Commit and merge. Unreviewed questions never ship. News questions older than 18 months drop out of play automatically.
 
 ## Native iOS app (future, not implemented yet)
 

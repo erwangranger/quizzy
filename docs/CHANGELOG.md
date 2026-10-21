@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — Phase 5: weekly news questions from a laptop scheduled task
+
+- Phase 5 runs as a weekly Claude Code Desktop scheduled task on the owner's laptop instead of CI (SPEC §6 amended 2026-10-21). There is no `@anthropic-ai/sdk`, `tsx`, API key or GitHub workflow. Recipe: `.claude/commands/news-questions.md`. It branches `news/YYYY-MM-DD` from `origin/main`, web-searches the last 14 days, writes about 10 en + 10 fr questions to `questions/pending/`, validates (invalid items are dropped and listed), and opens a PR with question/answer/source tables.
+- `validate:questions` now covers `questions/pending/` and flags near-duplicate question text (token Jaccard ≥ 0.8, same language): an error when a pending question is involved, a warning between shipped banks.
+- New `scripts/news-context.mjs` (recent news questions from the last N days, for dedup and id allocation) and `npm run promote:pending` (moves `reviewed: true` pending questions into the en/fr news banks, drops the rest, re-validates).
+- Staleness: `isStale` in `questionBank` leaves recent-news questions older than 18 months out of play, checked on the device (`VITE_NEWS_MAX_AGE_MONTHS` overrides). Unit tests 54 → 55.
+- `.claude/settings.json`: a project allowlist so unattended runs don't stall on permission prompts.
+- README: a "Weekly news questions" section (setup, sleep behaviour, review flow).
+
 ## Unreleased — Resume an interrupted game
 
 - A phone call, swipe-away or OS tab kill no longer loses the game: the in-progress game is saved to `localStorage` (`quizzy.saved-game`, versioned payload; an incompatible or corrupt save is discarded silently, and every read/write is try/catch-wrapped like the player-name key). Saved: drawn questions, round, players with scores/history, mode, setup, and the per-round state (pass-and-play turn and choices, reveal, quizmaster marks, hidden choices, interstitial pause). Written on start, answer, score, round advance (Next and Skip), reveal, mark toggle and Ready; cleared at game over, on Main Menu / New Game / Rematch, and when a new game starts.
