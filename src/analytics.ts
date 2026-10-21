@@ -72,6 +72,14 @@ function gameStart(mode: string, players: number, count: number): void {
   event('game_start', { mode, players, question_count: count })
 }
 
+// An interrupted game was resumed from the Starter. Loads gtag like
+// gameStart (after a reload nothing is loaded yet, and every later event
+// would be dropped) without counting a second game_start.
+function gameResume(mode: string, players: number, round: number): void {
+  load()
+  event('game_resume', { mode, players, round })
+}
+
 // Virtual page_view on a screen transition (intro → game board → game over,
 // back to the menu). No URL change, no history entry, no router — GA4 page
 // reports read these so the owner can see how far visitors get. The real
@@ -113,6 +121,7 @@ function questionAnswered(
 
 export const analytics = {
   gameStart,
+  gameResume,
   pageView,
   questionShown,
   questionAnswered,

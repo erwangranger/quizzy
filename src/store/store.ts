@@ -72,6 +72,26 @@ interface State {
 export const MAX_PLAYERS = 4
 
 const PLAYERS_KEY = 'quizzy.player-names'
+const SAVED_GAME_KEY = 'quizzy.saved-game'
+// Bump when the saved shape changes: an older save is discarded, not migrated.
+const SAVED_GAME_VERSION = 1
+
+// Everything needed to put an interrupted game back exactly where it was.
+export interface SavedGame {
+  version: number
+  questions: GameQuestion[]
+  round: number
+  players: Player[]
+  mode: GameMode
+  setup: GameSetup
+  answering: number
+  playerChoices: (Choice | null)[] // JSON has no undefined: holes become null
+  revealed: boolean
+  marks: boolean[]
+  hiddenChoices: boolean
+  isPaused: boolean
+  poolReset: boolean
+}
 
 // Fisher-Yates shuffle
 function shuffle<T>(items: T[]): T[] {
@@ -116,6 +136,57 @@ function savePlayerNames(players: Player[]): void {
     window.localStorage.setItem(PLAYERS_KEY, JSON.stringify(players.map((p) => p.name)))
   } catch {
     // storage unavailable: names simply won't persist
+  }
+}
+
+// The saved game from localStorage, or null when there is none, it is from an
+// incompatible version, or it is corrupt (discarded silently; the game must
+// work when storage is unavailable).
+export function peekSavedGame(): SavedGame | null {
+  try {
+    const raw = window.localStorage.getItem(SAVED_GAME_KEY)
+    if (!raw) return null
+    const data = JSON.parse(raw) as Partial<SavedGame> | null
+    if (
+      !data ||
+      data.version !== SAVED_GAME_VERSION ||
+      !Array.isArray(data.questions) ||
+      data.questions.length === 0 ||
+      !Number.isInteger(data.round) ||
+      data.round! < 0 ||
+      data.round! >= data.questions.length ||
+      !Array.isArray(data.players) ||
+      data.players.length === 0 ||
+      !data.players.every((p) => typeof p?.name === 'string' && Array.isArray(p.score?.history)) ||
+      !['solo', 'quizmaster', 'pass-and-play'].includes(data.mode as string) ||
+      !data.setup ||
+      !Array.isArray(data.playerChoices) ||
+      !Array.isArray(data.marks) ||
+      !data.questions.every((q) => Array.isArray(q?.choices))
+    ) {
+      clearSavedGame()
+      return null
+    }
+    return data as SavedGame
+  } catch {
+    clearSavedGame()
+    return null
+  }
+}
+
+function writeSavedGame(game: SavedGame): void {
+  try {
+    window.localStorage.setItem(SAVED_GAME_KEY, JSON.stringify(game))
+  } catch {
+    // storage unavailable: the game simply can't be resumed
+  }
+}
+
+function clearSavedGame(): void {
+  try {
+    window.localStorage.removeItem(SAVED_GAME_KEY)
+  } catch {
+    // ignore
   }
 }
 
@@ -220,6 +291,7 @@ export const useGameStore = defineStore('game', {
     // Mark who answered correctly in quizmaster mode (toggle button state)
     toggleMark(index: number) {
       this.marks[index] = !this.marks[index]
+      this.saveGame()
     },
     // Reveal the answer for this round: quizmaster button, or automatic once
     // the last pass-and-play player has answered.
@@ -231,6 +303,7 @@ export const useGameStore = defineStore('game', {
       if (this.mode === 'quizmaster') {
         this.marks = this.players.map(() => false)
       }
+      this.saveGame()
     },
     // Record the answering player's choice in pass-and-play. Between players
     // the phone is paused so the interstitial can cover the board; the last
@@ -254,11 +327,13 @@ export const useGameStore = defineStore('game', {
       } else {
         this.revealAnswer()
       }
+      this.saveGame()
     },
     // Ready pressed on the pass-the-phone interstitial: hand the phone
     // over; feedback was already wiped in answer() before the fade-in.
     readyNext() {
       this.pauseGame()
+      this.saveGame()
     },
     // Score one player's answer. Zero-point answers still record history so
     // every player's score dots stay aligned with the question count. The
@@ -281,6 +356,7 @@ export const useGameStore = defineStore('game', {
       } else {
         player.score.history.push({ correct: false, incorrect: true, category })
       }
+      this.saveGame()
     },
     // Score the finished round. Quizmaster: marked players earn points
     // (weighting per player from the drawn question's difficulty).
@@ -308,6 +384,7 @@ export const useGameStore = defineStore('game', {
     skipRound() {
       if (this.round === this.questions.length - 1) {
         this.isGameOver = true
+        clearSavedGame()
         this.releaseWakeLock()
       } else {
         this.incrementRound()
@@ -322,6 +399,7 @@ export const useGameStore = defineStore('game', {
       }
       if (this.round === this.questions.length - 1) {
         this.isGameOver = true
+        clearSavedGame()
         this.releaseWakeLock()
       } else {
         this.incrementRound()
@@ -336,6 +414,53 @@ export const useGameStore = defineStore('game', {
       this.hiddenChoices = this.setup.hideChoices && this.mode === 'quizmaster'
       this.pauseGame()
       this.trackQuestionShown()
+      this.saveGame()
+    },
+    // Persist the in-progress game so a swipe-away, phone call or OS tab kill
+    // can be resumed from the Starter. Skipped once the game is over.
+    saveGame() {
+      if (this.isGameOver || this.questions.length === 0) return
+      writeSavedGame({
+        version: SAVED_GAME_VERSION,
+        questions: this.questions,
+        round: this.round,
+        players: this.players,
+        mode: this.mode,
+        setup: this.setup,
+        answering: this.answering,
+        playerChoices: Array.from(this.playerChoices, (c) => c ?? null),
+        revealed: this.revealed,
+        marks: Array.from(this.marks, (m) => !!m),
+        hiddenChoices: this.hiddenChoices,
+        isPaused: this.isPaused,
+        poolReset: this.poolReset,
+      })
+    },
+    // Restore a saved game and go straight to the board. Returns false when
+    // there is nothing valid to resume. game_resume instead of game_start (the
+    // game began earlier); question_shown fires again for the restored question.
+    resumeGame(): boolean {
+      const saved = peekSavedGame()
+      if (!saved) return false
+      this.questions = saved.questions
+      this.round = saved.round
+      this.players = saved.players
+      this.mode = saved.mode
+      this.setup = { ...this.setup, ...saved.setup }
+      setLocale(this.setup.lang)
+      this.answering = saved.answering
+      this.playerChoices = saved.playerChoices.map((c) => c ?? undefined)
+      this.revealed = saved.revealed
+      this.marks = saved.marks
+      this.hiddenChoices = saved.hiddenChoices
+      this.isPaused = saved.isPaused
+      this.poolReset = saved.poolReset
+      this.isGameOver = false
+      this.currentView = 'app-game-board'
+      this.requestWakeLock()
+      analytics.gameResume(this.mode, this.players.length, this.round + 1)
+      this.trackQuestionShown()
+      return true
     },
     // Quizmaster mode keeps the screen awake for the whole game (Screen Wake
     // Lock API; no-op where unsupported, e.g. jsdom or older Safari).
@@ -381,6 +506,7 @@ export const useGameStore = defineStore('game', {
       this.hiddenChoices = false
       this.players = this.players.map((p) => ({ name: p.name, score: { history: [], total: 0 } }))
       this.poolReset = false
+      clearSavedGame()
       this.releaseWakeLock()
     },
     starPowerOn() {
@@ -403,6 +529,7 @@ export const useGameStore = defineStore('game', {
     // Draws questions from the local bank (bundled at build time, offline-safe)
     // and applies them to the game state. Replaces the Open Trivia DB fetch.
     startGame() {
+      clearSavedGame()
       const { questions, poolReset } = drawQuestions(this.setup)
       this.poolReset = poolReset
       this.questions = questions.map((q) => {
@@ -429,6 +556,7 @@ export const useGameStore = defineStore('game', {
       this.requestWakeLock()
       analytics.gameStart(this.mode, this.players.length, this.questions.length)
       this.trackQuestionShown()
+      this.saveGame()
     },
     // Fires question_shown for the current round's question (question IDs
     // per the analytics telemetry list). No-op when the round has no

@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
 import { loadAllQuestions } from '../questions/questionBank'
-import { useGameStore } from './store'
+import { peekSavedGame, useGameStore } from './store'
 
 // jsdom localStorage needs --localstorage-file; in-memory mock so the
 // question bank's seen-question tracking and player names are deterministic
@@ -465,6 +465,126 @@ describe('useGameStore', () => {
     expect(store.mode).toBe('quizmaster')
     expect(store.setup.players).toBe(2)
     expect(store.players).toHaveLength(2)
+  })
+
+  describe('saved game', () => {
+    const KEY = 'quizzy.saved-game'
+
+    it('writes a save after an answer and restores the same game', () => {
+      const store = useGameStore()
+      store.setSetup({ players: 2, count: 5 })
+      store.startGame()
+      expect(storage.has(KEY)).toBe(true)
+      const first = store.questions[0].choices[0]
+      store.answer(first)
+      store.readyNext()
+      store.answer(store.questions[0].choices[1])
+      store.scoreRound()
+      store.incrementRound()
+      const { questions, round, players } = JSON.parse(JSON.stringify(store.$state))
+
+      setActivePinia(createPinia())
+      const fresh = useGameStore()
+      expect(fresh.resumeGame()).toBe(true)
+      expect(fresh.currentView).toBe('app-game-board')
+      expect(fresh.round).toBe(round)
+      expect(fresh.round).toBe(1)
+      expect(fresh.questions).toEqual(questions)
+      expect(fresh.players).toEqual(players)
+      expect(fresh.mode).toBe('pass-and-play')
+      expect(fresh.setup.count).toBe(5)
+    })
+
+    it('restores mid-round pass-and-play and quizmaster state', () => {
+      const store = useGameStore()
+      store.setSetup({ players: 2 })
+      store.startGame()
+      store.answer(store.questions[0].choices[0])
+      expect(store.answering).toBe(1)
+      setActivePinia(createPinia())
+      const fresh = useGameStore()
+      fresh.resumeGame()
+      expect(fresh.answering).toBe(1)
+      expect(fresh.isPaused).toBe(true)
+      expect(fresh.playerChoices[0]?.text).toBe(store.questions[0].choices[0].text)
+      expect(fresh.playerChoices[1]).toBeUndefined()
+
+      fresh.setMultiplayerMode('quizmaster')
+      fresh.startGame()
+      fresh.revealAnswer()
+      fresh.toggleMark(1)
+      setActivePinia(createPinia())
+      const again = useGameStore()
+      again.resumeGame()
+      expect(again.mode).toBe('quizmaster')
+      expect(again.revealed).toBe(true)
+      expect(again.marks).toEqual([false, true])
+    })
+
+    it('clears the save at game over, on reset and when a new game starts', () => {
+      const store = useGameStore()
+      store.setSetup({ count: 5 })
+      store.startGame()
+      store.score(0, 1)
+      expect(storage.has(KEY)).toBe(true)
+      for (let i = 0; i < 5; i++) store.next()
+      expect(store.isGameOver).toBe(true)
+      expect(storage.has(KEY)).toBe(false)
+
+      store.resetGame()
+      store.startGame()
+      expect(storage.has(KEY)).toBe(true)
+      store.resetGame()
+      store.newGame()
+      expect(storage.has(KEY)).toBe(false)
+
+      store.startGame()
+      storage.set(KEY, 'stale')
+      store.startGame()
+      expect(JSON.parse(storage.get(KEY)!).round).toBe(0)
+    })
+
+    it('ignores and discards corrupt JSON or a wrong version', () => {
+      const store = useGameStore()
+      store.startGame()
+      const good = JSON.parse(storage.get(KEY)!)
+
+      storage.set(KEY, '{not json')
+      expect(peekSavedGame()).toBeNull()
+      expect(storage.has(KEY)).toBe(false)
+
+      storage.set(KEY, JSON.stringify({ ...good, version: 999 }))
+      expect(peekSavedGame()).toBeNull()
+      expect(storage.has(KEY)).toBe(false)
+
+      storage.set(KEY, JSON.stringify({ ...good, round: 99 }))
+      expect(useGameStore().resumeGame()).toBe(false)
+    })
+
+    it('keeps working when storage throws', () => {
+      const ls = window.localStorage
+      const boom = () => {
+        throw new Error('denied')
+      }
+      Object.assign(ls, { getItem: boom, setItem: boom, removeItem: boom })
+      try {
+        const store = useGameStore()
+        expect(() => {
+          store.startGame()
+          store.answer(store.questions[0].choices[0])
+          store.next()
+          store.resetGame()
+        }).not.toThrow()
+        expect(peekSavedGame()).toBeNull()
+        expect(store.resumeGame()).toBe(false)
+      } finally {
+        Object.assign(ls, {
+          getItem: (key: string) => (storage.has(key) ? storage.get(key) : null),
+          setItem: (key: string, value: string) => void storage.set(key, value),
+          removeItem: (key: string) => void storage.delete(key),
+        })
+      }
+    })
   })
 
 })

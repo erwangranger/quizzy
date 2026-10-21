@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — Resume an interrupted game
+
+- A phone call, swipe-away or OS tab kill no longer loses the game: the in-progress game is saved to `localStorage` (`quizzy.saved-game`, versioned payload; an incompatible or corrupt save is discarded silently, and every read/write is try/catch-wrapped like the player-name key). Saved: drawn questions, round, players with scores/history, mode, setup, and the per-round state (pass-and-play turn and choices, reveal, quizmaster marks, hidden choices, interstitial pause). Written on start, answer, score, round advance (Next and Skip), reveal, mark toggle and Ready; cleared at game over, on Main Menu / New Game / Rematch, and when a new game starts.
+- Starter: a green "Resume game" primary action above the setup choices when a valid save exists, with a "Question N of M" hint (en + fr: `starter.resume`, `starter.resumeHint`). Resume restores the saved language, goes straight to the board and re-acquires the quizmaster Wake Lock.
+- Analytics: resume fires a new `game_resume` event (mode, players, round) instead of a second `game_start`, and loads gtag — after a reload nothing was loaded, so the resumed game's events would otherwise be dropped.
+- Unit tests 49 → 54 (save after answering + full restore, mid-round pass-and-play/quizmaster restore, cleared at game over/reset/new game, corrupt/wrong-version/out-of-range saves ignored, storage throwing). Verified: build green; headless Chromium — answer, advance, reload, Starter shows Resume with the right question, resume returns to the board with the tally intact. Not verified in the browser: Wake Lock re-acquire, French UI.
+
 ## Unreleased — Docs: player cap and Capacitor note
 
 - SPEC §2 and Phase 2.1 amended to 1–4 players to match `MAX_PLAYERS`.

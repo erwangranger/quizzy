@@ -13,8 +13,9 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 - Without it, Recent News goes stale. GA `question_shown` by category can show whether the category earns the investment first.
 - The staleness filter (SPEC §6 Phase 5.4) is independent and cheap. It only matters from about April 2028 for the current bank.
 
-## Interruption recovery (decision needed)
-- The store is memory-only: a phone call or swipe-away loses the game in progress. Options: persist `{questions, round, players/scores, mode}` to `localStorage` (try/catch-wrapped, like the seen-IDs and player-name keys) and offer "Resume" on the Starter; or explicitly accept the loss.
+## Resume follow-ups
+- Wake Lock is not re-acquired when the tab is hidden and shown again (affects normal quizmaster games too, not just resumed ones).
+- Not yet verified on a device: resume after a real phone call / iOS tab kill, French resume UI.
 
 ## Special categories from course materials (idea)
 - Feed in `.pdf` files or raw text; an AI generates quiz questions from them so students can check they understood course materials.
@@ -22,7 +23,7 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 - Same constraint as Phase 5: no AI calls from the client; generation runs offline and is reviewed before merging. Best built on top of the Phase 5 pipeline.
 
 ## Decisions to keep (so they aren't re-proposed)
-- No router / URL-per-screen: state is memory-only so deep links would dead-end, and a router is a new runtime dependency. Screen analytics use virtual `page_view` events instead (see CHANGELOG "Google Analytics").
+- No router / URL-per-screen: game state is not URL-addressable (only one saved game, in localStorage) so deep links would dead-end, and a router is a new runtime dependency. Screen analytics use virtual `page_view` events instead (see CHANGELOG "Google Analytics").
 - The GA Measurement ID is public and committed in `.env.production`; a Measurement Protocol API secret, if ever needed, must never be committed.
 - `Questions.vue` has a scoped bare-`div` card rule that leaks onto any new block `div` inside the card. Reset margin/padding/min-width/border-radius/background explicitly, as `.foot`, `.foot-actions` and `.tally` do.
 - Out of scope unless the owner asks: accounts, theming, sound, timers, haptics, landscape (SPEC §4 mandates portrait).

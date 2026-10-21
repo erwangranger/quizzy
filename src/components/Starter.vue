@@ -1,5 +1,11 @@
 <template>
   <section class="flex-center-col">
+    <!-- Interrupted game: primary action above the setup choices -->
+    <button v-if="saved" class="start resume" @click="resumeGame">
+      {{ t('starter.resume') }}
+      <small>{{ t('starter.resumeHint', { round: saved.round + 1, total: saved.questions.length }) }}</small>
+    </button>
+
     <!-- Language selector (segmented) -->
     <div class="seg-row">
       <span class="seg-label">{{ t('starter.language') }}</span>
@@ -103,7 +109,8 @@
 </template>
 
 <script setup lang="ts">
-import { useGameStore, MAX_PLAYERS } from '../store/store'
+import { ref } from 'vue'
+import { useGameStore, MAX_PLAYERS, peekSavedGame } from '../store/store'
 import { t, categoryLabel } from '../locales'
 import type { Category, Lang } from '../questions/schema'
 
@@ -112,6 +119,8 @@ const store = useGameStore()
 const languages: Lang[] = ['en', 'fr']
 const questionCounts = [5, 10, 15, 20]
 const maxPlayers = MAX_PLAYERS
+// Read once on mount; starting a new game discards the save
+const saved = ref(peekSavedGame())
 
 
 // Toggle a category in the multi-select (empty list = all categories)
@@ -129,7 +138,19 @@ function chooseLang(lang: Lang) {
 
 function startGame() {
   store.startGame()
-  // Close About menu if open
+  closeAbout()
+}
+
+function resumeGame() {
+  if (!store.resumeGame()) {
+    saved.value = null
+    return
+  }
+  closeAbout()
+}
+
+// Close About menu if open
+function closeAbout() {
   if (store.aboutShow) {
     store.aboutToggle()
   }
@@ -276,6 +297,17 @@ function startGame() {
         background-color: $color-green;
         border: 2px solid $color-green;
         color: $color-darkest;
+    }
+}
+
+// Resume button: same primary look as Start, with a small hint line
+.resume {
+    margin-bottom: 0.5em;
+
+    small {
+        display: block;
+        font-size: 0.55em;
+        font-weight: normal;
     }
 }
 
