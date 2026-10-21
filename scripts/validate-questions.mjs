@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 // Validates every questions/*.json file against the section-5 data model:
 // field rules, ID uniqueness and duplicate question text. Exits non-zero on
-// any error. Zero-dependency (Node builtins only) so CI needs nothing extra.
-import { readdirSync, readFileSync } from 'node:fs'
+// any error. Also covers questions/pending/ (generated, not yet reviewed) and
+// flags near-duplicate question text: a warning between shipped banks, an
+// error when a pending question is involved. Zero-dependency (Node builtins
+// only) so CI needs nothing extra.
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const CATEGORIES = ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure', 'recent-news']
 const QUESTIONS_DIR = 'questions'
+const PENDING_DIR = join(QUESTIONS_DIR, 'pending')
+const NEAR_DUPLICATE = 0.8
 
 const errors = []
+const warnings = []
 const seenIds = new Map()
 const seenTexts = new Map()
 
@@ -16,13 +22,20 @@ function fail(file, id, msg) {
   errors.push(`${file}${id ? ` [${id}]` : ''}: ${msg}`)
 }
 
+function jsonFiles(dir) {
+  return readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => join(dir, f))
+}
+
 let files
 try {
-  files = readdirSync(QUESTIONS_DIR).filter((f) => f.endsWith('.json'))
+  files = jsonFiles(QUESTIONS_DIR)
 } catch {
   console.log('No questions/ directory found — nothing to validate.')
   process.exit(0)
 }
+if (existsSync(PENDING_DIR)) files.push(...jsonFiles(PENDING_DIR))
 
 if (files.length === 0) {
   console.log('No question files found — nothing to validate.')
@@ -33,8 +46,28 @@ const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const HTML_ENTITY = /&[a-zA-Z]+;|&#\d+;/
 const MONTH_YEAR = /(January|February|March|April|May|June|July|August|September|October|November|December|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre) 20\d{2}/
 
-for (const file of files) {
-  const path = join(QUESTIONS_DIR, file)
+// Normalized token set of a question, for near-duplicate detection
+function tokens(text) {
+  return new Set(
+    text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter((t) => t.length > 0),
+  )
+}
+
+function jaccard(a, b) {
+  let shared = 0
+  for (const t of a) if (b.has(t)) shared++
+  return shared / (a.size + b.size - shared)
+}
+
+const allQuestions = []
+
+for (const path of files) {
   let data
   try {
     data = JSON.parse(readFileSync(path, 'utf8'))
@@ -118,8 +151,27 @@ for (const file of files) {
       const norm = q.question.trim().toLowerCase()
       if (seenTexts.has(norm)) fail(path, q.id, `duplicate question text (also ${seenTexts.get(norm)})`)
       else seenTexts.set(norm, q.id)
+      allQuestions.push({ path, id: q.id, lang: q.lang, pending: path.startsWith(PENDING_DIR), tokens: tokens(q.question) })
     }
   }
+}
+
+for (let i = 0; i < allQuestions.length; i++) {
+  for (let j = i + 1; j < allQuestions.length; j++) {
+    const a = allQuestions[i]
+    const b = allQuestions[j]
+    if (a.lang !== b.lang) continue
+    const score = jaccard(a.tokens, b.tokens)
+    if (score < NEAR_DUPLICATE) continue
+    const msg = `near-duplicate of [${a.id}] in ${a.path} (similarity ${score.toFixed(2)})`
+    if (a.pending || b.pending) fail(b.path, b.id, msg)
+    else warnings.push(`${b.path} [${b.id}]: ${msg}`)
+  }
+}
+
+if (warnings.length > 0) {
+  console.warn(`\n${warnings.length} warning(s):`)
+  for (const w of warnings) console.warn(`  - ${w}`)
 }
 
 if (errors.length > 0) {
