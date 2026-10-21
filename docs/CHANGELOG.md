@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Docs: player cap and Capacitor note
+
+- SPEC §2 and Phase 2.1 amended to 1–4 players to match `MAX_PLAYERS`.
+- README: "Native iOS app (future, not implemented yet)" section — how a Capacitor wrap of `dist/` would work (SPEC Phase 4.5). Vite `base` is already `'./'`, so no config change is needed.
+
 ## Unreleased — Player-count buttons replace the mode choices
 
 - One less decision on the Starter screen: the "Single Player vs Multiplayer" segmented row is gone, replaced by a 1–4 player-count segmented row (buttons 1/2/3/4, active filled, `store.setSetup({ players })` on click). The user fills out player names directly — one name input per player, always visible.

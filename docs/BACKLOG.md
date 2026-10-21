@@ -4,7 +4,7 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 
 ## Roadmap status (2026-10-21)
 - Phases 0–3: done.
-- Phase 4: done except 4.5 (below) and a real-device check of 4.4 — after "Add to Home Screen" on iOS Safari, the installed app starts and plays a full game in airplane mode. Not yet recorded as done.
+- Phase 4: done except a real-device check of 4.4 — after "Add to Home Screen" on iOS Safari, the installed app starts and plays a full game in airplane mode. Not yet recorded as done.
 - Phase 5: not started (below).
 
 ## Phase 5: generated current-events questions (decision needed)
@@ -12,12 +12,6 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 - Needs: `@anthropic-ai/sdk` + `tsx` (named in SPEC), an `ANTHROPIC_API_KEY` repo secret, a `CLAUDE_MODEL` workflow fallback.
 - Without it, Recent News goes stale. GA `question_shown` by category can show whether the category earns the investment first.
 - The staleness filter (SPEC §6 Phase 5.4) is independent and cheap. It only matters from about April 2028 for the current bank.
-
-## Phase 4.5: Capacitor note in README
-- Document how a future iOS wrap would work (do not implement): `npm run build` → `dist/` is the web asset folder; nothing depends on a server.
-
-## SPEC drift: player cap
-- SPEC §6 Phase 2.1 says 1–6 players; the Starter now caps at 4 (`MAX_PLAYERS`, 2026-10-21 player-count buttons). Amend the SPEC to match, or restore 6.
 
 ## Interruption recovery (decision needed)
 - The store is memory-only: a phone call or swipe-away loses the game in progress. Options: persist `{questions, round, players/scores, mode}` to `localStorage` (try/catch-wrapped, like the seen-IDs and player-name keys) and offer "Resume" on the Starter; or explicitly accept the loss.

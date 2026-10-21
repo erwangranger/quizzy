@@ -72,6 +72,20 @@ npm run build && npm run preview  # production build + local preview
 ```
 The site deploys to GitHub Pages automatically on every push to `main`.
 
+## Native iOS app (future, not implemented yet)
+
+Quizzy is a static site: `npm run build` writes everything to `dist/`, and nothing needs a server (questions are bundled, and analytics is an optional client-side gtag). A native iOS wrapper would use [Capacitor](https://capacitorjs.com) to load that folder:
+
+```bash
+npm install @capacitor/core @capacitor/cli @capacitor/ios
+npx cap init                          # set webDir to "dist"
+npx cap add ios
+npm run build && npx cap sync
+npx cap open ios                      # opens the project in Xcode
+```
+
+The Vite `base` is `'./'` (relative asset paths), which works both on the GitHub Pages subpath and inside the Capacitor shell. Keep it that way; a Capacitor build would also work with `'/'`.
+
 ## Credits
 
 Quizzy started life as a fork of [Christopher Murphy's open-source quiz app](https://github.com/Splode/open-trivia-app) — the original project was the starting point and the inspiration for this one. Credit where credit is due. It has since grown into a new app, going in a new direction of its own.

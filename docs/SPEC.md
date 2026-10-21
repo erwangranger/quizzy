@@ -22,7 +22,7 @@ Facts about the upstream repo (verify them before relying on them):
 
 ## 2. Goals
 
-1. **All players answer every question** (not alternating turns), for 2 to 6 players.
+1. **All players answer every question** (not alternating turns), for 2 to 4 players.
 2. **Explanations:** after each question is revealed, show a short explanation (2 to 3 sentences of context) along with the correct answer.
 3. **Local question data:** no Open Trivia DB. Questions live as JSON files in this repo. I will supply a small set of sample questions to start.
 4. **Rendered website:** deployed to GitHub Pages, installable as a PWA, fully playable offline.
@@ -121,7 +121,7 @@ Deliverables for the data model:
 
 ### Phase 2: Every player answers every question
 
-1. **Players:** 1 to 6, each with an editable name. Remember names in `localStorage`. Replace the `playerOne` / `playerTwo` state with an array of players.
+1. **Players:** 1 to 4, each with an editable name. Remember names in `localStorage`. Replace the `playerOne` / `playerTwo` state with an array of players.
 2. **Two multiplayer modes**, chosen at setup:
    - **Quizmaster mode** (default for multiplayer): the phone shows the question and choices; one person reads it aloud; everyone answers out loud. A "Reveal" button shows the correct answer and explanation. Then a row of player-name toggle buttons lets the quizmaster mark who was right. "Next" scores and advances. Include a setup toggle **"Hide choices"** that hides the multiple-choice options until reveal (open-answer play).
    - **Pass-and-play:** each player in turn taps their answer privately. Between players, show a full-screen interstitial: "Pass to {name}" with a "Ready" button, so the next player cannot see the previous answer. After the last player answers, show the reveal screen with every player's choice, the correct answer and the explanation.
