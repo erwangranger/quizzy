@@ -1,0 +1,291 @@
+<!doctype html>
+<!-- CHOSEN design (2026-10-21): scheme 3 (stamp + name stack) — the owner picked it over the
+     other three. Ported into src/components/Questions.vue with two adjustments: all wrong
+     answers stay red at the reveal (owner request, as before), and the marks hang in a
+     padding gutter beside the pills (the mockup's -34px hang clips outside the card at 320px).
+Mockup only (2026-10-21): 4 designs for per-answer verdict marks with participant names —
+     a green ✓ beside the right answer, red ✗ beside every wrong pick, and each player's name
+     attached to the answer they chose. Builds on the chosen scheme 8 (drawn check / cross) and
+     the drawn-check language from answer-feedback-mockup.html. No app files were modified. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verdict marks + player names — 4 mockups</title>
+<style>
+:root{
+  --darkest:#0277BD; --dark:#03A9F4; --med:#4FC3F7;
+  --alt-dark:#5C6BC0; --alt-med:#7986CB;
+  --white:whitesmoke; --green:#5CDB80; --red:#FF5593;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  background:linear-gradient(to top,#4481eb 0%,#04befe 100%);
+  color:var(--white);
+  font-family:'Quicksand','Trebuchet MS',system-ui,sans-serif;
+}
+.wrap{max-width:720px;margin:0 auto;padding:34px 20px 90px}
+h1{font-size:1.55em;margin:0 0 6px}
+.sub{margin:0 0 30px;font-size:.95em;opacity:.85;line-height:1.5}
+
+.card{
+  background:rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:20px 24px 26px;
+  margin-bottom:18px;
+}
+.pt{display:flex;align-items:center;gap:10px}
+.pt b{font-size:1.05em}
+.num{
+  background:var(--green);color:var(--darkest);border-radius:50%;
+  width:26px;height:26px;flex:0 0 26px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:bold;font-size:.85em;
+}
+.replay{
+  margin-left:auto;background:transparent;color:var(--white);
+  border:1px solid rgba(255,255,255,.45);border-radius:10px;
+  font:inherit;font-size:.8em;padding:.35em .8em;cursor:pointer;
+}
+.replay:hover{border-color:var(--white)}
+.cap{margin:8px 0 18px;font-size:.88em;opacity:.78;line-height:1.45}
+
+/* ---- mini question card, matching the app ---- */
+.qcard{
+  background:var(--darkest);
+  border-radius:25px;
+  padding:1em 1em 1.3em;
+}
+.qcard h3{margin:0 0 4px;color:var(--med);font-size:.9em}
+.qcard h2{margin:0 0 .8em;font-weight:normal;font-size:1.05em}
+ul{list-style:none;margin:0;padding:0}
+.ans{
+  display:block;width:100%;max-width:380px;margin:.4em auto;
+  background:var(--white);border:2px solid var(--white);
+  border-radius:190px;color:var(--darkest);
+  font-size:1em;padding:.65em;text-align:center;
+  position:relative;
+}
+.ans.dim{opacity:.4}
+/* verdict marks common to every scheme: drawn ✓ on the right answer */
+.vmark{position:absolute;top:50%;transform:translateY(-50%);width:22px;height:22px}
+.vmark.left{left:12px}
+.vmark.right{right:12px}
+.vmark svg{width:100%;height:100%;display:block}
+.vmark svg path{fill:none;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:32;stroke-dashoffset:32;animation:draw .5s ease-out .25s forwards}
+.vmark.g svg path{stroke:var(--green)}
+.vmark.r svg path{stroke:var(--red)}
+.vmark.bad svg path:nth-child(2){animation-delay:.5s}
+.vmark svg circle{fill:none;stroke-width:2.5;stroke-dasharray:76;stroke-dashoffset:76;animation:draw .6s ease-out .1s forwards}
+.vmark.g svg circle{stroke:var(--green)}
+.vmark.r svg circle{stroke:var(--red)}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* wrong-answer marks: drawn ✗ */
+.wrongmark{position:absolute;top:50%;transform:translateY(-50%);width:20px;height:20px;opacity:0;animation:mk .3s ease-out .75s forwards}
+.wrongmark svg{width:100%;height:100%;display:block}
+.wrongmark svg path{fill:none;stroke:var(--red);stroke-width:3.5;stroke-linecap:round;stroke-dasharray:20;stroke-dashoffset:20}
+.wrongmark svg path:nth-child(1){animation:draw .25s ease-out .75s forwards}
+.wrongmark svg path:nth-child(2){animation:draw .25s ease-out .95s forwards}
+.wrongmark svg circle{fill:none;stroke:var(--red);stroke-width:2.5;stroke-dasharray:63;stroke-dashoffset:63;animation:draw .4s ease-out .7s forwards}
+
+/* player-name tags on wrong answers */
+.ptag{
+  position:absolute;font-size:.72em;font-weight:bold;
+  background:var(--red);color:var(--white);
+  padding:.28em .7em;border-radius:190px;white-space:nowrap;
+  opacity:0;animation:mk .3s ease-out 1.15s forwards;
+}
+@keyframes mk{to{opacity:1}}
+
+/* ============ scheme 1: marks in the gutter, names as side tags ============ */
+/* ✓ in a drawn circle sits left of the correct pill; ✗ marks sit left of each
+   wrong pick with the player's name in a small red tag hanging on the pill's
+   right edge. Names never enter the pills, so the answer text stays untouched. */
+.s1 .ans.ok{animation:pop .45s cubic-bezier(.2,1.4,.4,1) .2s backwards}
+.s1 .ans.ok .vmark{left:-34px}
+.s1 .wrong{position:relative}
+.s1 .wrong .ptag{right:-12px;top:-12px}
+.s1 .wrong .vmark{left:-28px}
+@keyframes pop{0%{transform:scale(.6)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
+
+/* ============ scheme 2: names inside the pills ============ */
+/* The verdict ✗ is drawn right of the answer text and the player's name rides
+   inside the pill after it, as a small red-bordered chip. Everything stays on
+   one line per answer — the tidiest read on a narrow phone. */
+.s2 .wrong{display:flex;align-items:center;justify-content:center;gap:.55em;text-align:left}
+.s2 .wrong .vmark{position:static;transform:none;flex:0 0 20px;width:20px;height:20px}
+.s2 .wrong .ptag{
+  position:static;transform:none;
+  background:transparent;border:1.5px solid var(--red);color:var(--red);
+  animation:mk .3s ease-out 1.2s forwards;
+}
+.s2 .ans.ok{animation:pop .45s cubic-bezier(.2,1.4,.4,1) .2s backwards}
+.s2 .ans.ok .vmark{right:14px}
+
+/* ============ scheme 3: stamp + stack of names ============ */
+/* Bolder: a thick ringed ✗ stamps in beside each wrong answer and the players'
+   names stack vertically as solid red tags pinned to the pill's right edge —
+   reads instantly when two people pick the same wrong answer. */
+.s3 .wrong{position:relative}
+.s3 .wrong .vmark{left:-30px;width:26px;height:26px}
+.s3 .wrong .vmark svg{filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+.s3 .stack{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:4px;align-items:flex-end;
+}
+.s3 .stack .ptag{
+  position:static;transform:none;font-size:.7em;
+  animation:mk .3s ease-out 1.2s forwards;
+}
+.s3 .stack .ptag:nth-child(2){animation-delay:1.35s}
+.s3 .ans.ok{animation:pop .45s cubic-bezier(.2,1.4,.4,1) .2s backwards}
+.s3 .ans.ok .vmark{left:-34px}
+
+/* ============ scheme 4: footer roster ============ */
+/* Pills stay clean (✓/✗ drawn marks only, no names on the answers); every
+   player's verdict lands in a roster strip under the answers — name, their
+   pick, and their drawn ✓/✗ — like a scorekeeper's ledger. */
+.s4 .ans.ok{animation:pop .45s cubic-bezier(.2,1.4,.4,1) .2s backwards}
+.s4 .ans.ok .vmark{right:14px}
+.s4 .wrong .vmark{right:14px}
+.roster{
+  margin-top:.8em;border-top:1px solid rgba(255,255,255,.25);padding-top:.6em;
+}
+.roster p{margin:.3em 0;font-size:.9em;display:flex;align-items:center;gap:.5em}
+.roster .who{font-weight:bold;min-width:5.5em}
+.roster .pick{opacity:.85}
+.roster svg{width:18px;height:18px;flex:0 0 18px}
+.roster svg path{fill:none;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:20;stroke-dashoffset:20}
+.roster .okline svg path{stroke:var(--green);animation:draw .3s ease-out .6s forwards}
+.roster .okline svg path.long{stroke-dasharray:32;animation:draw .4s ease-out .5s forwards}
+.roster .badline svg path{stroke:var(--red)}
+.roster .badline svg path:nth-child(1){animation:draw .2s ease-out .8s forwards}
+.roster .badline svg path:nth-child(2){animation:draw .2s ease-out .95s forwards}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  .vmark svg path,.vmark svg circle,.wrongmark svg path,.wrongmark svg circle{stroke-dashoffset:0}
+  .roster svg path{stroke-dashoffset:0}
+  .ptag,.wrongmark{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Verdict marks + player names — 4 mockups</h1>
+  <p class="sub">Every scheme keeps the chosen drawn ✓ beside the right answer and drawn ✗ beside each
+  wrong pick, and attaches each participant's name to what they chose. Two players answered this round:
+  Amélie picked the correct <strong>Seine</strong>, Sam picked the wrong <strong>Rhine</strong>. Press
+  <strong>↺ Replay</strong> to re-run a scheme's animation.</p>
+
+  <!-- 1 -->
+  <section class="sch s1">
+    <div class="card">
+      <div class="pt"><span class="num">1</span><b>Gutter marks, name tags on the edge</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">✓ in a drawn circle hangs left of the correct pill; ✗ marks hang left of each wrong
+      pick with the player's name in a small red tag pinned to the pill's edge. Names never enter the
+      pills, so answer text stays untouched.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><span class="vmark left g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-6.5"/></svg></span>Seine</li>
+            <li class="ans dim wrong"><span class="vmark left r bad"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg></span>Rhine<span class="ptag">Sam</span></li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sch s2">
+    <div class="card">
+      <div class="pt"><span class="num">2</span><b>Names inside the pills</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">The drawn ✗ sits right of the answer text and the player's name rides inside the pill
+      after it as a small red-outlined chip. One line per answer — the tidiest read on a narrow phone.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><span class="vmark right g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-6.5"/></svg></span>Seine</li>
+            <li class="ans dim wrong"><span class="vmark r bad"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg></span>Rhine<span class="ptag">Sam</span></li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="sch s3">
+    <div class="card">
+      <div class="pt"><span class="num">3</span><b>Stamp + name stack</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">A thicker ringed ✗ stamps in beside each wrong answer and players' names stack as
+      solid red tags on the pill's right edge — handles two people picking the same wrong answer without
+      crowding the text.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><span class="vmark left g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-6.5"/></svg></span>Seine</li>
+            <li class="ans dim wrong"><span class="vmark left r bad"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg></span>Rhine
+              <span class="stack"><span class="ptag">Sam</span><span class="ptag">Zoé</span></span></li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="sch s4">
+    <div class="card">
+      <div class="pt"><span class="num">4</span><b>Clean pills + roster strip</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">Pills stay clean: drawn ✓ on the right answer, ✗ on each wrong pick, no names on the
+      answers. Every player's verdict lands in a roster strip under the answers — name, their pick, and
+      their own drawn ✓/✗ — like a scorekeeper's ledger.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><span class="vmark right g"><svg viewBox="0 0 24 24"><path d="M7.5 12.5l3 3 6-6.5"/></svg></span>Seine</li>
+            <li class="ans dim wrong"><span class="vmark right r"><svg viewBox="0 0 24 24"><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg></span>Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+          <div class="roster">
+            <p class="okline"><span class="who">Amélie</span><svg viewBox="0 0 24 24"><path class="long" d="M7.5 12.5l3 3 6-6.5"/></svg><span class="pick">Seine</span></p>
+            <p class="badline"><span class="who">Sam</span><svg viewBox="0 0 24 24"><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg><span class="pick">Rhine</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+document.querySelectorAll('.replay').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var sch = btn.closest('.sch');
+    var demo = sch.querySelector('.demo');
+    var clone = demo.cloneNode(true);
+    demo.replaceWith(clone);
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!doctype html>
+<!-- Mockup only (2026-10-21): 8 animation designs for right/wrong answer feedback and
+     per-player verdicts in multiplayer (quizmaster marks + pass-and-play lines).
+     No app files were modified by this file. Press ↺ Replay on any scheme to re-run
+     its animation. Palette matches src/styles/_variables.scss. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Right / wrong feedback — 8 animation mockups</title>
+<style>
+:root{
+  --darkest:#0277BD; --dark:#03A9F4; --med:#4FC3F7;
+  --alt-dark:#5C6BC0; --alt-med:#7986CB;
+  --white:whitesmoke; --green:#5CDB80; --red:#FF5593;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  background:linear-gradient(to top,#4481eb 0%,#04befe 100%);
+  color:var(--white);
+  font-family:'Quicksand','Trebuchet MS',system-ui,sans-serif;
+}
+.wrap{max-width:720px;margin:0 auto;padding:34px 20px 90px}
+h1{font-size:1.55em;margin:0 0 6px}
+.sub{margin:0 0 30px;font-size:.95em;opacity:.85;line-height:1.5}
+
+.card{
+  background:rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:20px 24px 26px;
+  margin-bottom:18px;
+}
+.pt{display:flex;align-items:center;gap:10px}
+.pt b{font-size:1.05em}
+.num{
+  background:var(--green);color:var(--darkest);border-radius:50%;
+  width:26px;height:26px;flex:0 0 26px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:bold;font-size:.85em;
+}
+.num.ref{background:var(--white)}
+.replay{
+  margin-left:auto;background:transparent;color:var(--white);
+  border:1px solid rgba(255,255,255,.45);border-radius:10px;
+  font:inherit;font-size:.8em;padding:.35em .8em;cursor:pointer;
+}
+.replay:hover{border-color:var(--white)}
+.cap{margin:8px 0 18px;font-size:.88em;opacity:.78;line-height:1.45}
+
+/* ---- mini question card + answer pills, matching the app ---- */
+.qcard{
+  background:var(--darkest);
+  border-radius:25px;
+  padding:1em 1em 1.3em;
+}
+.qcard h3{margin:0 0 4px;color:var(--med);font-size:.9em}
+.qcard h2{margin:0 0 .8em;font-weight:normal;font-size:1.05em}
+ul{list-style:none;margin:0;padding:0}
+.ans{
+  display:block;width:100%;max-width:380px;margin:.4em auto;
+  background:var(--white);border:2px solid var(--white);
+  border-radius:190px;color:var(--darkest);
+  font-size:1em;padding:.65em;text-align:center;
+  position:relative;
+}
+.ans.ok{background:var(--green);border-color:var(--green);color:var(--white)}
+.ans.bad{background:var(--red);border-color:var(--red);color:var(--white)}
+.ans.dim{opacity:.4}
+
+/* ---- multiplayer surfaces ---- */
+.mp{margin-top:14px}
+.mp-label{margin:0 0 .4em;font-size:.72em;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{
+  display:inline-block;border:2px solid rgba(255,255,255,.5);border-radius:12px;
+  padding:.45em 1em;min-width:44px;text-align:center;font-size:.9em;
+}
+.chip.ok{background:var(--green);border-color:var(--green);color:var(--white)}
+.chip.bad{background:var(--red);border-color:var(--red);color:var(--white)}
+.line{margin:.25em 0;font-size:.92em}
+.line.ok{color:var(--white)}
+.v{display:inline-block;margin-left:.35em;font-weight:bold}
+.v.ok{color:var(--green)}
+.v.bad{color:var(--red)}
+
+/* ============ scheme 1: pop & shake ============ */
+/* Correct pill bounces in; a wrong pick shakes sideways. Player chips
+   and verdict glyphs repeat the same motion. Cheap, punchy, no layout shift. */
+.s1 .ok{animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+.s1 .bad{animation:shake .5s}
+.s1 .v{animation:pop .5s .1s backwards}
+@keyframes pop{0%{transform:scale(.6)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
+@keyframes shake{10%,90%{transform:translateX(-2px)}20%,80%{transform:translateX(4px)}30%,50%,70%{transform:translateX(-6px)}40%,60%{transform:translateX(6px)}}
+
+/* ============ scheme 2: fill sweep ============ */
+/* The verdict color wipes across the pill from left to right — green for
+   right, red for wrong. Calm, no movement; works identically on pills
+   and player chips. */
+.s2 .ok,.s2 .bad{color:var(--darkest);background-color:transparent;background-repeat:no-repeat;background-size:0 100%;animation:sweep .55s ease-out forwards}
+.s2 .ans.bad{color:var(--darkest)}
+.s2 .chip.ok{background-image:linear-gradient(var(--green),var(--green))}
+.s2 .chip.bad{background-image:linear-gradient(var(--red),var(--red))}
+.s2 .ans.ok{background-image:linear-gradient(var(--green),var(--green))}
+.s2 .ans.bad{background-image:linear-gradient(var(--red),var(--red))}
+.s2 .v{animation:fadein .3s .35s backwards}
+@keyframes sweep{to{background-size:100% 100%}}
+@keyframes fadein{from{opacity:0}}
+
+/* ============ scheme 3: confetti burst ============ */
+/* The correct answer fires a small burst of particles; a wrong pick gets a
+   one-shot red flash. Festive — matches the joke-answer humor. */
+.s3 .ok{animation:pop .45s cubic-bezier(.2,1.4,.4,1)}
+.s3 .bad{animation:badflash .6s}
+.s3 .v{animation:pop .45s .15s backwards}
+.cf{position:absolute;inset:0;pointer-events:none}
+.cf i{
+  position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:2px;
+  animation:fly .8s ease-out forwards;
+}
+.cf i:nth-child(1){background:var(--green);--dx:-84px;--dy:-36px;--r:-160deg}
+.cf i:nth-child(2){background:var(--white);--dx:-64px;--dy:22px;--r:120deg}
+.cf i:nth-child(3){background:var(--med);--dx:-30px;--dy:-52px;--r:200deg}
+.cf i:nth-child(4){background:var(--alt-med);--dx:-12px;--dy:46px;--r:-90deg}
+.cf i:nth-child(5){background:var(--green);--dx:18px;--dy:-56px;--r:150deg}
+.cf i:nth-child(6){background:var(--white);--dx:44px;--dy:34px;--r:-140deg}
+.cf i:nth-child(7){background:var(--med);--dx:70px;--dy:-26px;--r:170deg}
+.cf i:nth-child(8){background:var(--alt-med);--dx:88px;--dy:14px;--r:-110deg}
+@keyframes fly{
+  0%{transform:translate(0,0) rotate(0deg);opacity:1}
+  70%{opacity:1}
+  100%{transform:translate(var(--dx),var(--dy)) rotate(var(--r));opacity:0}
+}
+@keyframes badflash{
+  0%{box-shadow:0 0 0 0 rgba(255,85,147,.8)}
+  40%{box-shadow:0 0 0 8px rgba(255,85,147,.35)}
+  100%{box-shadow:0 0 0 0 rgba(255,85,147,0)}
+}
+
+/* ============ scheme 4: sticker slam ============ */
+/* A ✔️ / ❌ sticker thumps down onto the pill like a rubber stamp; the pill
+   itself keeps its white face with a thick colored border. Player chips get
+   the same stamp. Playful and unambiguous. */
+.s4 .ans.ok{background:var(--white);border-color:var(--green);color:var(--darkest);animation:thump .35s ease-out}
+.s4 .ans.bad{background:var(--white);border-color:var(--red);color:var(--darkest);animation:thump .35s ease-out}
+.s4 .ans.ok::after,.s4 .ans.bad::after{
+  position:absolute;right:14px;top:50%;font-size:1.25em;
+  animation:slam .45s cubic-bezier(.3,1.6,.5,1) both;
+}
+.s4 .ans.ok::after{content:'✔️';transform:translateY(-50%)}
+.s4 .ans.bad::after{content:'❌';transform:translateY(-50%)}
+.s4 .chip{position:relative;background:var(--white);color:var(--darkest);animation:thump .35s ease-out}
+.s4 .chip.ok{border-color:var(--green)}
+.s4 .chip.bad{border-color:var(--red)}
+.s4 .chip.ok::after{content:'✔️';margin-left:.3em;font-size:.85em;animation:slam .45s .1s cubic-bezier(.3,1.6,.5,1) both;display:inline-block}
+.s4 .chip.bad::after{content:'❌';margin-left:.3em;font-size:.85em;animation:slam .45s .1s cubic-bezier(.3,1.6,.5,1) both;display:inline-block}
+.s4 .v{font-size:0}
+.s4 .v.ok::before{content:'✔️';font-size:1em}
+.s4 .v.bad::before{content:'❌';font-size:1em}
+@keyframes slam{
+  0%{transform:translateY(-50%) scale(2.4) rotate(-18deg);opacity:0}
+  60%{transform:translateY(-50%) scale(.92) rotate(3deg);opacity:1}
+  100%{transform:translateY(-50%) scale(1) rotate(0deg);opacity:1}
+}
+.s4 .chip.ok::after{transform:none}
+.s4 .chip.bad::after{transform:none}
+.s4 .chip.ok::after{animation-name:slamchip}
+.s4 .chip.bad::after{animation-name:slamchip}
+@keyframes slamchip{
+  0%{transform:scale(2.4) rotate(-18deg);opacity:0}
+  60%{transform:scale(.92) rotate(3deg);opacity:1}
+  100%{transform:scale(1) rotate(0deg);opacity:1}
+}
+@keyframes thump{0%{transform:scale(1.04)}100%{transform:scale(1)}}
+
+/* ============ scheme 5: scoreboard pulse ============ */
+/* Verdicts arrive as expanding rings: two green pulses around the correct
+   pill, two red pulses around a wrong one. Pass-and-play rows flash a tinted
+   background like a scoreboard line. Reads well without any movement. */
+.s5 .ok{animation:ringG .9s ease-out 2}
+.s5 .bad{animation:ringR .9s ease-out 2}
+.s5 .line{border-radius:8px;padding:.3em .6em;margin:.3em -0.6em}
+.s5 .line.ok{animation:tintG .9s ease-out 1}
+.s5 .line.bad{animation:tintR .9s ease-out 1}
+@keyframes ringG{0%{box-shadow:0 0 0 0 rgba(92,219,128,.55)}100%{box-shadow:0 0 0 14px rgba(92,219,128,0)}}
+@keyframes ringR{0%{box-shadow:0 0 0 0 rgba(255,85,147,.55)}100%{box-shadow:0 0 0 14px rgba(255,85,147,0)}}
+@keyframes tintG{0%{background:rgba(92,219,128,.28)}100%{background:transparent}}
+@keyframes tintR{0%{background:rgba(255,85,147,.28)}100%{background:transparent}}
+
+/* ============ scheme 6: neon glow ============ */
+/* No movement at all: the verdict glows. The correct pill breathes a green
+   halo; a wrong pick flickers a red one and slightly desaturates. Subtle,
+   premium, impossible to miss peripherally. */
+.s6 .ok{animation:neonG 1.4s ease-in-out 2 forwards}
+.s6 .bad{animation:neonR 1.4s ease-in-out 2 forwards;filter:brightness(.92)}
+.s6 .v{animation:neonG 1.4s ease-in-out 2 forwards}
+.s6 .v.bad{animation-name:neonR}
+.s6 .line.ok,.s6 .line.bad{border-radius:8px;padding:.3em .6em;margin:.3em -0.6em}
+@keyframes neonG{0%,100%{box-shadow:0 0 6px 0 rgba(92,219,128,.5)}50%{box-shadow:0 0 22px 4px rgba(92,219,128,.9)}}
+@keyframes neonR{0%,100%{box-shadow:0 0 6px 0 rgba(255,85,147,.5)}50%{box-shadow:0 0 22px 4px rgba(255,85,147,.9)}}
+
+/* ============ scheme 7: card flip ============ */
+/* The pill flips on its X axis like a dealt card: white face up, colored face
+   revealed as it turns through 90°. Player chips flip the same way.
+   A tactile "card dealt" feel. */
+.s7 .ok{animation:flipG .6s ease forwards}
+.s7 .bad{animation:flipR .6s ease forwards}
+.s7 .v{display:inline-block;animation:flipG .6s .1s ease forwards}
+.s7 .v.bad{animation-name:flipR}
+@keyframes flipG{
+  0%{transform:perspective(600px) rotateX(0);background:var(--white);color:var(--darkest)}
+  49.9%{background:var(--white);color:var(--darkest)}
+  50%{transform:perspective(600px) rotateX(90deg);background:var(--green);color:var(--white)}
+  100%{transform:perspective(600px) rotateX(0);background:var(--green);color:var(--white)}
+}
+@keyframes flipR{
+  0%{transform:perspective(600px) rotateX(0);background:var(--white);color:var(--darkest)}
+  49.9%{background:var(--white);color:var(--darkest)}
+  50%{transform:perspective(600px) rotateX(90deg);background:var(--red);color:var(--white)}
+  100%{transform:perspective(600px) rotateX(0);background:var(--red);color:var(--white)}
+}
+
+/* ============ scheme 8: drawn check / cross ============ */
+/* A stroke-drawn ✓ or ✗ writes itself next to the verdict, and the correct
+   pill underlines itself — like ink on paper. Verdicts land after the ink
+   dries, so the eye follows the draw. */
+.s8 .ok{animation:appear2 .25s ease-out both}
+.s8 .bad{animation:appear2 .25s ease-out both}
+.s8 svg{width:20px;height:20px;vertical-align:-4px;margin-right:.35em}
+.s8 svg path{fill:none;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:32;stroke-dashoffset:32;animation:draw .5s ease-out .2s forwards}
+.s8 .ok svg path{stroke:var(--darkest)}
+.s8 .bad svg path{stroke:var(--darkest)}
+.s8 .bad svg path:nth-child(2){animation-delay:.45s}
+.s8 .ans.ok::after{content:'';position:absolute;left:1.2em;right:1.2em;bottom:6px;height:3px;
+  background:rgba(2,119,189,.55);border-radius:2px;transform:scaleX(0);transform-origin:left;
+  animation:ux .4s .5s ease-out forwards}
+.s8 .chip{animation:appear .35s ease-out .5s both}
+.s8 .v{animation:fadein .3s .7s backwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes ux{to{transform:scaleX(1)}}
+@keyframes appear{from{background:transparent;border-color:rgba(255,255,255,.35);color:var(--white)}}
+@keyframes appear2{from{background:transparent;border-color:rgba(255,255,255,.35)}}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Right / wrong feedback — 8 animation mockups</h1>
+  <p class="sub">Each scheme shows the post-reveal state on a mini question card (one player picked
+  the right answer, another a wrong one) plus both multiplayer surfaces: quizmaster marks
+  (Amélie right, Sam wrong, Zoé unmarked) and pass-and-play lines. Press
+  <strong>↺ Replay</strong> to re-run a scheme's animation. Palette and pill geometry match the app.</p>
+
+  <!-- reference: current static look -->
+  <section class="sch s0">
+    <div class="card">
+      <div class="pt"><span class="num ref">•</span><b>Today (reference — no animation)</b></div>
+      <p class="cap">Colors swap instantly at the reveal: green pill for right, red for wrong;
+      quizmaster marks fill green; pass-and-play lines show plain text with no verdict.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine</p>
+          <p class="line"><strong>Sam</strong>: Rhine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section class="sch s1">
+    <div class="card">
+      <div class="pt"><span class="num">1</span><b>Pop &amp; shake</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">Correct pill bounces in (scale up, settle); a wrong pick shakes sideways.
+      Player chips and ✓/✗ verdicts repeat the same motion. Punchy and cheap; no layout shift.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sch s2">
+    <div class="card">
+      <div class="pt"><span class="num">2</span><b>Fill sweep</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">The verdict color wipes across the pill from left to right — green for right,
+      red for wrong. Calm, no movement; identical on pills and player chips.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="sch s3">
+    <div class="card">
+      <div class="pt"><span class="num">3</span><b>Confetti burst</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">The correct answer fires a small burst of particles; a wrong pick gets a one-shot
+      red flash ring. Festive — matches the joke-answer humor. Player chips pop with the reveal.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><span class="cf"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="sch s4">
+    <div class="card">
+      <div class="pt"><span class="num">4</span><b>Sticker slam</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">A ✔️ / ❌ sticker thumps down like a rubber stamp; the pill keeps a white face with
+      a thick green/red border. Player chips get the same stamp. Playful and unambiguous.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="sch s5">
+    <div class="card">
+      <div class="pt"><span class="num">5</span><b>Scoreboard pulse</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">Verdicts arrive as expanding rings — two green pulses around the right pill, two red
+      around a wrong one. Pass-and-play rows flash a tinted background like scoreboard lines.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line ok"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line bad"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="sch s6">
+    <div class="card">
+      <div class="pt"><span class="num">6</span><b>Neon glow</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">No movement at all: the verdict glows. The right pill breathes a green halo; a wrong
+      pick flickers a red one and slightly desaturates. Subtle, premium, visible peripherally.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line ok"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line bad"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="sch s7">
+    <div class="card">
+      <div class="pt"><span class="num">7</span><b>Card flip</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">The pill flips on its X axis like a dealt card: white face up, colored face revealed
+      as it turns through 90°. Player chips flip the same way. Tactile, phone-native feel.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok">Seine</li>
+            <li class="ans bad">Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="sch s8">
+    <div class="card">
+      <div class="pt"><span class="num">8</span><b>Drawn check / cross</b><button class="replay">↺ Replay</button></div>
+      <p class="cap">A stroke-drawn ✓ or ✗ writes itself beside the answer and the correct pill underlines
+      itself — ink on paper. Verdict chips fade in after the ink dries so the eye follows the draw.</p>
+      <div class="demo">
+        <div class="qcard">
+          <h3>Geography</h3>
+          <h2>Which river flows through Paris?</h2>
+          <ul>
+            <li class="ans ok"><svg viewBox="0 0 24 24"><path d="M4 13l5 5L20 6"/></svg>Seine</li>
+            <li class="ans bad"><svg viewBox="0 0 24 24"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>Rhine</li>
+            <li class="ans dim">Loire</li>
+            <li class="ans dim">Thames</li>
+            <li class="ans dim">The one in Vegas</li>
+          </ul>
+        </div>
+        <div class="mp">
+          <p class="mp-label">Quizmaster marks</p>
+          <div class="chips">
+            <span class="chip ok">Amélie</span>
+            <span class="chip bad">Sam</span>
+            <span class="chip">Zoé</span>
+          </div>
+          <p class="mp-label">Pass-and-play</p>
+          <p class="line"><strong>Amélie</strong>: Seine <span class="v ok">✓</span></p>
+          <p class="line"><strong>Sam</strong>: Rhine <span class="v bad">✗</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+document.querySelectorAll('.replay').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var sch = btn.closest('.sch');
+    var demo = sch.querySelector('.demo');
+    var clone = demo.cloneNode(true);
+    demo.replaceWith(clone);
+  });
+});
+</script>
+</body>
+</html>
