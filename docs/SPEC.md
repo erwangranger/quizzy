@@ -1,6 +1,6 @@
 # Road Trip Quiz: Agent Spec
 
-You are building a quiz game for a small group (typically 2 players) to play on one phone, often in a car with patchy connectivity. Start from the existing open-source app **Winsome Trivia** (https://github.com/Splode/open-trivia-app, MIT license) and extend it as described below.
+You are building a quiz game for a small group (typically 2 players) to play on one phone, often in a car with patchy connectivity. Start from the existing open-source app by **Christopher Murphy** (https://github.com/Splode/open-trivia-app, MIT license) and extend it as described below.
 
 Work in phases. Finish each phase completely, commit it, and stop for review before starting the next one. Do not skip ahead.
 
@@ -43,7 +43,7 @@ Facts about the upstream repo (verify them before relying on them):
 
 - **Stack target:** Vue 3 (Composition API, `<script setup>`), Vite, Pinia, TypeScript, Vitest, `sass` (Dart Sass). Node current LTS. Package manager: npm.
 - **Keep the upstream look and feel** (layout, colors, star-power animation, score dots) unless a requirement forces a change. Restyling is a later, separate task.
-- **Attribution:** keep the upstream `LICENSE`, and credit Christopher Murphy / Winsome Trivia in `README.md`.
+- **Attribution:** keep the upstream `LICENSE`, and credit Christopher Murphy in `README.md`.
 - **Dependencies:** ask before adding any runtime dependency beyond those listed above (plus `vite-plugin-pwa` in Phase 4 and `@anthropic-ai/sdk` in Phase 5).
 - **Relative asset paths and hash-free routing** (or no router at all), so the build works under a GitHub Pages subpath and inside a Capacitor WebView.
 - **Data layer separated from UI:** components never read JSON files directly; they go through a `questionBank` module. This is what makes a future native or alternative front end cheap.

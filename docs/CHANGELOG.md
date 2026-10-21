@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — Phrasing sweep
+
+- Phrasing sweep: attribution no longer names the upstream project by its old title — the README credits sentence and the About panel now credit "Christopher Murphy's open-source quiz app" (link text and SPEC.md lines 3/46 reworded; the upstream repo URL is unchanged); en/fr `about.creditName` locale keys reworded to match. Mentions of the external question API in SPEC/CHANGELOG history are kept as that API's proper name.
+
 ## Unreleased — General knowledge banks
 
 - 200 new questions across the six classic categories (geography 40, history 40, science 32, arts & literature 32, entertainment 28, sports & leisure 28): 100 evergreen topics, each with an English question in `questions/sample.json` and a natural French translation in `questions/fr-sample.json` (IDs `geo-0003`+ / `geo-fr-0003`+ style, same number per pair). Generated, not human-verified — the owner asked for them in the app even unreviewed, so they ship with `origin: "claude"`, `reviewed: true`. Difficulty mix roughly half 1 / third 2 / rest 3; 5-choice sets with a chuckle-worthy 5th answer; joke answers deduplicated within each language across all four banks, and one French-leaked joke in the en bank (`ente-0015`) plus its answer-alias fr pair fixed in review.

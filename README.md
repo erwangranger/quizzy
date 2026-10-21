@@ -1,6 +1,6 @@
 # Quizzy 🥴
 
-A free trivia quiz you can play in your browser — alone, or with a group of friends sharing one device.
+A free quiz you can play in your browser — alone, or with a group of friends sharing one device.
 
 **👉 Play it here: [https://erwangranger.github.io/quizzy/](https://erwangranger.github.io/quizzy/)**
 
@@ -74,7 +74,7 @@ The site deploys to GitHub Pages automatically on every push to `main`.
 
 ## Credits
 
-Quizzy started life as a fork of [Winsome Trivia](https://github.com/Splode/open-trivia-app) by [Christopher Murphy](http://christopherianmurphy.com) — the original project was the starting point and the inspiration for this one. Credit where credit is due. It has since grown into a new app, going in a new direction of its own.
+Quizzy started life as a fork of [Christopher Murphy's open-source quiz app](https://github.com/Splode/open-trivia-app) — the original project was the starting point and the inspiration for this one. Credit where credit is due. It has since grown into a new app, going in a new direction of its own.
 
 ## License
 
