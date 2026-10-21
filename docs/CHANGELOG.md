@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Player-count buttons replace the mode choices
+
+- One less decision on the Starter screen: the "Single Player vs Multiplayer" segmented row is gone, replaced by a 1–4 player-count segmented row (buttons 1/2/3/4, active filled, `store.setSetup({ players })` on click). The user fills out player names directly — one name input per player, always visible.
+- The Quizmaster / Pass and Play segmented choice now appears only when the player count is 2 or more; at 1 player the game is solo. Mode follows the count in `setSetup` (`src/store/store.ts`): dropping to 1 player sets `mode: 'solo'`, rising from solo defaults to `pass-and-play`, and an explicit multiplayer choice survives count changes.
+- Store: `MAX_PLAYERS` 6 → 4; the `solo` state field and the `selectMode` action are deleted — `solo` is now a getter (`players.length === 1`), so `GameOverModal`/`GameBoard` `store.solo` usages are unchanged; `newGame()` reloads the roster for `setup.players` without the old solo/count branches; `setMultiplayerMode` guards on the roster instead of the removed state. Analytics still pass `mode` as a free string with the same three values.
+- UI keys removed (`starter.singlePlayer`, `starter.multiplayer`, `starter.playMode`) from both en and fr dictionaries; `starter.players`, `starter.mode`, `starter.playerName`, `starter.quizmaster`, `starter.passPlay` kept. Starter order: Language → Players buttons → names → Quizmaster/Pass and Play (2+ only) → Hide Choices → Weight → categories → question count → Start.
+- Unit tests 49/49: the default-mode test now pins the count-driven transition (`setSetup({ players: 2 })` → pass-and-play, quizmaster survives count changes, back to 1 → solo); roster test renamed to 1–4 with the 1-player/solo leg; every `selectMode` call replaced with `setSetup({ players: 2 })`.
+
 ## Unreleased — Setup remembered on Main Menu
 
 - Returning to the Starter via "Main Menu" / "New Game" no longer forgets the play-mode configuration: `newGame()` kept resetting `solo`/`mode` to single-player, collapsing the multiplayer rows (quizmaster/pass-and-play, player count, names, hide-choices) back to solo. The action now keeps the play-mode choice and reloads player names for the current mode (bumping the count to 2 when left below it). Everything else in `store.setup` (language, categories, question count, toggles) already survived — the mode reset only hid it. UI: `src/store/store.ts` (`newGame()`); no component, locale, or storage changes. The menu reset test in `src/store/store.test.ts` now pins persistence (`solo: false`, mode, player count, players array survive).

@@ -57,7 +57,6 @@ interface State {
   isPaused: boolean
   round: number
   players: Player[]
-  solo: boolean
   mode: GameMode
   answering: number // pass-and-play: index of the player answering this round
   playerChoices: (Choice | undefined)[] // pass-and-play: choice per player this round
@@ -70,7 +69,7 @@ interface State {
   wakeLockSentinel: WakeLockSentinel | null
 }
 
-export const MAX_PLAYERS = 6
+export const MAX_PLAYERS = 4
 
 const PLAYERS_KEY = 'quizzy.player-names'
 
@@ -92,7 +91,7 @@ function shuffle<T>(items: T[]): T[] {
 
 // Saved player names from localStorage, wrapped so the game still works when
 // storage is unavailable (private mode, quota). Missing names fall back to the
-// localized defaults ("Player 1".."Player 6" / "Joueur 1".."Joueur 6"), in
+// localized defaults ("Player 1".."Player 4" / "Joueur 1".."Joueur 4"), in
 // sync with the 'player.default' locale keys.
 function loadPlayerNames(count: number): Player[] {
   const fallback = Array.from({ length: count }, (_, i) => t('player.default', { n: i + 1 }))
@@ -129,7 +128,6 @@ export const useGameStore = defineStore('game', {
     isPaused: false,
     round: 0, // round counter, starts at 0, ends at setup.count - 1
     players: loadPlayerNames(1),
-    solo: true, // Game mode, solo or multiplayer?
     mode: 'solo',
     answering: 0, // pass-and-play: index of the player currently answering
     playerChoices: [], // pass-and-play: choice per player this round
@@ -150,6 +148,9 @@ export const useGameStore = defineStore('game', {
     wakeLockSentinel: null,
   }),
   getters: {
+    // Solo when exactly one player is on the roster; the mode follows the
+    // player count (see setSetup), so existing store.solo readers keep working.
+    solo: (state) => state.players.length === 1,
     // Competition ranking (1, 1, 3...): players sorted by total, ties share a rank.
     ranking: (state) => {
       const sorted = [...state.players].sort((a, b) => b.score.total - a.score.total)
@@ -187,27 +188,25 @@ export const useGameStore = defineStore('game', {
     aboutToggle() {
       this.aboutShow = !this.aboutShow
     },
-    selectMode(payload: boolean) {
-      this.solo = payload
-      if (payload) {
-        this.mode = 'solo'
-        this.players = loadPlayerNames(1)
-      } else {
-        // Pass-and-play is the default multiplayer mode
-        this.mode = 'pass-and-play'
-        if (this.setup.players < 2) this.setup.players = 2
-        this.players = loadPlayerNames(this.setup.players)
-      }
-    },
     setMultiplayerMode(mode: 'quizmaster' | 'pass-and-play') {
-      if (this.solo) return
+      if (this.players.length < 2) return
       this.mode = mode
     },
     setSetup(payload: Partial<GameSetup>) {
       const playersChanged = payload.players !== undefined && payload.players !== this.setup.players
       Object.assign(this.setup, payload)
       if (payload.lang) setLocale(payload.lang)
-      if (playersChanged && !this.solo) this.players = loadPlayerNames(this.setup.players)
+      if (playersChanged) {
+        const count = this.setup.players
+        // Mode follows the player count: one player is solo, two or more
+        // default to pass-and-play; an explicit multiplayer choice is kept.
+        if (count === 1) {
+          this.mode = 'solo'
+        } else if (this.mode === 'solo') {
+          this.mode = 'pass-and-play'
+        }
+        this.players = loadPlayerNames(count)
+      }
     },
     renamePlayer(index: number, name: string) {
       const player = this.players[index]
@@ -359,17 +358,9 @@ export const useGameStore = defineStore('game', {
     },
     newGame() {
       this.currentView = 'app-intro'
-      // Keep the play-mode setup (single/multiplayer, mode, player count) so
-      // "Main Menu" / "New Game" returns to the Starter as configured, not
-      // collapsed back to solo; player names already persist in storage.
-      if (this.solo) {
-        this.players = loadPlayerNames(1)
-      } else if (this.setup.players < 2) {
-        this.setup.players = 2
-        this.players = loadPlayerNames(2)
-      } else {
-        this.players = loadPlayerNames(this.setup.players)
-      }
+      // Keep the play-mode setup (mode, player count) so "Main Menu" / "New
+      // Game" returns to the Starter as configured; names persist in storage.
+      this.players = loadPlayerNames(this.setup.players)
     },
     pauseGame(payload?: 'pause') {
       if (payload === 'pause') {

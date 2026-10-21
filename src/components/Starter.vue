@@ -14,25 +14,34 @@
       </div>
     </div>
 
-    <!-- Play mode: single player vs multiplayer (segmented) -->
+    <!-- Player count (1–4, segmented): one player is solo, 2+ reveals the mode choice -->
     <div class="seg-row">
-      <span class="seg-label">{{ t('starter.playMode') }}</span>
-      <div class="seg" role="group" :aria-label="t('starter.playMode')">
+      <span class="seg-label">{{ t('starter.players') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.players')">
         <button
+        v-for="n in maxPlayers"
+        :key="n"
         type="button"
-        :class="store.solo ? 'on' : null"
-        @click="store.selectMode(true)"
-        >{{ t('starter.singlePlayer') }}</button>
-        <button
-        type="button"
-        :class="!store.solo ? 'on' : null"
-        @click="store.selectMode(false)"
-        >{{ t('starter.multiplayer') }}</button>
+        :class="store.setup.players === n ? 'on' : null"
+        @click="store.setSetup({ players: n })"
+        >{{ n }}</button>
       </div>
     </div>
 
-    <!-- Multiplayer: quizmaster vs pass-and-play (segmented) -->
-    <div class="seg-row" v-if="!store.solo">
+    <!-- Player name editing (one input per player) -->
+    <div class="names">
+      <label v-for="(player, i) in store.players" :key="i">
+        <input
+          type="text"
+          :value="player.name"
+          :aria-label="t('starter.playerName', { n: i + 1 })"
+          @input="store.renamePlayer(i, ($event.target as HTMLInputElement).value)"
+        />
+      </label>
+    </div>
+
+    <!-- Multiplayer: quizmaster vs pass-and-play (segmented, 2+ players only) -->
+    <div class="seg-row" v-if="store.setup.players >= 2">
       <span class="seg-label">{{ t('starter.mode') }}</span>
       <div class="seg" role="group" :aria-label="t('starter.mode')">
         <button
@@ -48,34 +57,8 @@
       </div>
     </div>
 
-    <!-- Player count (multiplayer only, segmented) -->
-    <div class="seg-row" v-if="!store.solo">
-      <span class="seg-label">{{ t('starter.players') }}</span>
-      <div class="seg" role="group" :aria-label="t('starter.players')">
-        <button
-        v-for="n in maxPlayers"
-        :key="n"
-        type="button"
-        :class="store.setup.players === n ? 'on' : null"
-        @click="store.setSetup({ players: n })"
-        >{{ n }}</button>
-      </div>
-    </div>
-
-    <!-- Player name editing (multiplayer only) -->
-    <div class="names" v-if="!store.solo">
-      <label v-for="(player, i) in store.players" :key="i">
-        <input
-          type="text"
-          :value="player.name"
-          :aria-label="t('starter.playerName', { n: i + 1 })"
-          @input="store.renamePlayer(i, ($event.target as HTMLInputElement).value)"
-        />
-      </label>
-    </div>
-
     <!-- Quizmaster open-answer toggle -->
-    <label class="toggle" v-if="!store.solo && store.mode === 'quizmaster'">
+    <label class="toggle" v-if="store.mode === 'quizmaster'">
       <input type="checkbox" :checked="store.setup.hideChoices" @change="store.setSetup({ hideChoices: ($event.target as HTMLInputElement).checked })" />
       <span>{{ t('starter.hideChoices') }}</span>
     </label>

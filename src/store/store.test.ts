@@ -41,18 +41,30 @@ describe('useGameStore', () => {
     })
   })
 
-  it('selects pass-and-play as the default multiplayer mode', () => {
+  it('follows the player count: 2+ players default to pass-and-play', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     expect(store.solo).toBe(false)
     expect(store.mode).toBe('pass-and-play')
     expect(store.setup.players).toBe(2)
     expect(store.players).toHaveLength(2)
+    // An explicit quizmaster choice survives a player-count change
+    store.setMultiplayerMode('quizmaster')
+    store.setSetup({ players: 3 })
+    expect(store.mode).toBe('quizmaster')
+    // Back to one player: solo again, roster rebuilt
+    store.setSetup({ players: 1 })
+    expect(store.solo).toBe(true)
+    expect(store.mode).toBe('solo')
+    expect(store.players).toHaveLength(1)
+    // Back to 2+ players: pass-and-play is the default again
+    store.setSetup({ players: 2 })
+    expect(store.mode).toBe('pass-and-play')
+    expect(store.players).toHaveLength(2)
   })
 
-  it('builds a roster of 1 to 6 players with localized default names', () => {
+  it('builds a roster of 1 to 4 players with localized default names', () => {
     const store = useGameStore()
-    store.selectMode(false)
     store.setSetup({ players: 4 })
     expect(store.players).toHaveLength(4)
     expect(store.players.map((p) => p.name)).toEqual([
@@ -61,13 +73,13 @@ describe('useGameStore', () => {
       'Player 3',
       'Player 4',
     ])
-    store.setSetup({ players: 6 })
-    expect(store.players).toHaveLength(6)
+    store.setSetup({ players: 1 })
+    expect(store.players).toHaveLength(1)
+    expect(store.mode).toBe('solo')
   })
 
   it('remembers edited player names in localStorage and reuses them', () => {
     const store = useGameStore()
-    store.selectMode(false)
     store.setSetup({ players: 2 })
     store.renamePlayer(0, 'Ada')
     expect(JSON.parse(storage.get('quizzy.player-names') ?? '[]')).toEqual([
@@ -77,7 +89,7 @@ describe('useGameStore', () => {
     // A new game (new pinia instance) reloads the saved names
     setActivePinia(createPinia())
     const next = useGameStore()
-    next.selectMode(false)
+    next.setSetup({ players: 2 })
     expect(next.players.map((p) => p.name)).toEqual(['Ada', 'Player 2'])
   })
 
@@ -119,7 +131,7 @@ describe('useGameStore', () => {
 
   it('quizmaster mode: scores only the marked players on Next', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 3 })
     expect(store.mode).toBe('quizmaster')
@@ -144,7 +156,7 @@ describe('useGameStore', () => {
 
   it('quizmaster mode with hide-choices: choices hidden until reveal', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 2, hideChoices: true })
     store.startGame()
@@ -159,7 +171,7 @@ describe('useGameStore', () => {
 
   it('pass-and-play: interstitial between players, reveal after the last', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('pass-and-play')
     store.setSetup({ players: 2 })
     store.startGame()
@@ -208,7 +220,6 @@ describe('useGameStore', () => {
 
   it('ranks players with ties sharing a rank', () => {
     const store = useGameStore()
-    store.selectMode(false)
     store.setSetup({ players: 3 })
     store.startGame()
     store.score(0, 3)
@@ -221,7 +232,6 @@ describe('useGameStore', () => {
 
   it('weights correct answers by difficulty when enabled', () => {
     const store = useGameStore()
-    store.selectMode(false)
     store.setSetup({ players: 2, weightByDifficulty: true, count: 12, categories: ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure'] })
     store.startGame()
     // Difficulty 1 and 2 questions exist in the sample pool
@@ -249,7 +259,7 @@ describe('useGameStore', () => {
 
   it('scores a full quizmaster round through scoreRound with weighting', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 2, weightByDifficulty: true, count: 12 })
     store.startGame()
@@ -367,7 +377,7 @@ describe('useGameStore', () => {
 
   it('skips a round in pass-and-play and quizmaster modes', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('pass-and-play')
     store.setSetup({ players: 2, count: 3 })
     store.startGame()
@@ -378,7 +388,7 @@ describe('useGameStore', () => {
     expect(store.round).toBe(1)
 
     const quiz = useGameStore()
-    quiz.selectMode(false)
+    quiz.setSetup({ players: 2 })
     quiz.setMultiplayerMode('quizmaster')
     quiz.setSetup({ players: 2, count: 3 })
     quiz.startGame()
@@ -435,7 +445,7 @@ describe('useGameStore', () => {
 
   it('leaving for the menu resets a paused/revealed state like game-over New Game', () => {
     const store = useGameStore()
-    store.selectMode(false)
+    store.setSetup({ players: 2 })
     store.setMultiplayerMode('quizmaster')
     store.setSetup({ players: 2 })
     store.startGame()

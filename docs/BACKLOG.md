@@ -85,6 +85,7 @@
 - [x] Styled Start as the differentiated primary action: scoped `.start` class using `$color-green`, bold 1.5em, full-width (`max-width: none`), hover state kept green so it stays distinct from the `$color-med` choice-button hover; `starter.start` copy unchanged in en + fr.
 - [x] Done (2026-10-18, owner request): Single Player / Multiplayer now render side by side in a `.mode-choice` flex row (equal halves, 0.75em gap) instead of stacked; verified at desktop (400px row, 194px buttons) and 320px viewport (147px buttons, no horizontal overflow) in the built app, solo + multiplayer layouts, zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
 - Verified in the built app (vite preview + headless Chromium): solo layout — all choices above Start, Start last, green full-width (rgb(92, 219, 128), 24px bold); multiplayer layout — mode/players/names/toggles blocks above Start, Start still last; launch starts the quizmaster game with zero console errors. vitest 38/38, `vue-tsc` + `vite build` green.
+- Superseded (2026-10-21, owner request): the Single Player / Multiplayer choice is gone — replaced with a 1–4 player-count slider (names filled directly, one input per player); the Quizmaster / Pass and Play segmented choice appears only at 2+ players, and 1 player is solo. Start remains the differentiated launch action at the end of the sequence.
 
 ## Phase 3: Explanations UI (done — 2026-10-18)
 
