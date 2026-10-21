@@ -1,15 +1,34 @@
 <template>
   <section class="flex-center-col">
-    <!-- Mode: single player vs multiplayer (side by side) -->
-    <div class="mode-choice">
-      <button
-      @click="store.selectMode(true)"
-      :class="store.solo ? 'active' : null"
-      >{{ t('starter.singlePlayer') }}</button>
-      <button
-      @click="store.selectMode(false)"
-      :class="!store.solo ? 'active' : null"
-      >{{ t('starter.multiplayer') }}</button>
+    <!-- Language selector (segmented) -->
+    <div class="seg-row">
+      <span class="seg-label">{{ t('starter.language') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.language')">
+        <button
+        v-for="lang in languages"
+        :key="lang"
+        type="button"
+        :class="store.setup.lang === lang ? 'on' : null"
+        @click="chooseLang(lang)"
+        >{{ lang }}</button>
+      </div>
+    </div>
+
+    <!-- Play mode: single player vs multiplayer (segmented) -->
+    <div class="seg-row">
+      <span class="seg-label">{{ t('starter.playMode') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.playMode')">
+        <button
+        type="button"
+        :class="store.solo ? 'on' : null"
+        @click="store.selectMode(true)"
+        >{{ t('starter.singlePlayer') }}</button>
+        <button
+        type="button"
+        :class="!store.solo ? 'on' : null"
+        @click="store.selectMode(false)"
+        >{{ t('starter.multiplayer') }}</button>
+      </div>
     </div>
 
     <!-- Multiplayer: quizmaster vs pass-and-play (segmented) -->
@@ -66,20 +85,6 @@
       <input type="checkbox" :checked="store.setup.weightByDifficulty" @change="store.setSetup({ weightByDifficulty: ($event.target as HTMLInputElement).checked })" />
       <span>{{ t('starter.weightByDifficulty') }}</span>
     </label>
-
-    <!-- Language selector (segmented) -->
-    <div class="seg-row">
-      <span class="seg-label">{{ t('starter.language') }}</span>
-      <div class="seg" role="group" :aria-label="t('starter.language')">
-        <button
-        v-for="lang in languages"
-        :key="lang"
-        type="button"
-        :class="store.setup.lang === lang ? 'on' : null"
-        @click="chooseLang(lang)"
-        >{{ lang }}</button>
-      </div>
-    </div>
 
     <!-- Category multi-select chips -->
     <div class="chips-row">
@@ -157,17 +162,6 @@ function startGame() {
     }
 }
 
-// Mode choice: the two mode buttons side by side
-.mode-choice {
-    display: flex;
-    gap: 0.75em;
-    width: 100%;
-    max-width: 400px;
-
-    button {
-        flex: 1;
-    }
-}
 
 // Segmented settings rows: label left, all options always visible
 .seg-row {

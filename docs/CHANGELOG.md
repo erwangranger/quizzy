@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Segmented play-mode toggle
+
+- The Single Player / Multiplayer toggle on the starter screen now uses the same segmented style as the Language row: a `Mode` / `Mode` label beside the two options in one pill, with the active side filled green and bold. Replaces the old side-by-side `.mode-choice` button row (styles removed). UI-only: `src/components/Starter.vue` (template + styles); new `starter.playMode` en/fr locale key in `src/locales/index.ts`.
+- Starter choice order per owner request: Language first, then Single/Multiplayer, then the rest of the setup choices (multiplayer-only choices, weight toggle, category, question count) before the Start button.
+
 ## Unreleased — Install instructions in the About panel
 
 - The top-right menu's About panel now carries the install instructions that used to live only in the README: a lead line (Quizzy is a PWA, full-screen play even offline), the three per-browser install steps (Chrome/Edge banner, Safari Share → Add to Home Screen, Firefox menu → Install), and the after-install note. Bilingual — 5 new en/fr locale keys (`about.installLead/installChrome/installSafari/installFirefox/installAfter`); UI-only: `src/components/About.vue` (template + scoped styles), README Tips line updated to mention the panel now includes install instructions.
