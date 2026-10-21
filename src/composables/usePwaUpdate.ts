@@ -9,21 +9,29 @@ import { registerSW } from 'virtual:pwa-register'
  * SKIP_WAITING message so the waiting worker activates. The generated
  * worker has no clientsClaim, so it never claims the open page and the
  * plugin's controlling-reload does not fire; the caller (App.vue
- * onRefresh) owns the reload via controllerchange or a ~3s fallback.
+ * onRefresh) owns the reload via controllerchange or once the
+ * SKIP_WAITING promise settles.
  */
 export function usePwaUpdate(): {
   promptShow: Ref<boolean>
   promptDismiss: () => void
-  // Assigned inside onMounted, so it is null until the component mounts.
-  updateSW: ((reloadPage?: boolean) => Promise<void>) | null
+  // Stable wrapper: reads the plugin callback registered in onMounted, so
+  // destructuring App.vue sees it even though registration is async.
+  updateSW: (reloadPage?: boolean) => Promise<void>
 } {
-  let updateSW: ((reloadPage?: boolean) => Promise<void>) | null = null
+  let pluginUpdateSW: ((reloadPage?: boolean) => Promise<void>) | null = null
   const promptShow = ref(false)
 
   function promptDismiss() {
     promptShow.value = false
   }
 
+  // The composable's public updateSW: forwards to the plugin callback once
+  // onMounted has registered it. A no-op promise before registration (a
+  // user cannot click Refresh before the app mounts anyway).
+  async function updateSW(reloadPage?: boolean): Promise<void> {
+    await pluginUpdateSW?.(reloadPage)
+  }
   // Page visibility change: the user navigated away; the waiting service
   // worker takes control on the next load, so stop prompting on return.
   function onVisibilityChange() {
@@ -38,7 +46,7 @@ export function usePwaUpdate(): {
     if (typeof window === 'undefined' || !('serviceWorker' in navigator)) return
 
     try {
-      updateSW = registerSW({
+      pluginUpdateSW = registerSW({
         onNeedRefresh() {
           promptShow.value = true
         },

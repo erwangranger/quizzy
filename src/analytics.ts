@@ -33,9 +33,12 @@ function load(): void {
   if (!MEASUREMENT_ID) return
   const w = window as WindowWithGtag
   w.dataLayer = w.dataLayer || []
-  // gtag() queues arguments onto dataLayer; works before the script arrives
-  w.gtag = function gtag(...args: unknown[]) {
-    w.dataLayer!.push(args)
+  // gtag() queues its arguments object onto dataLayer; works before the
+  // script arrives. MUST push the arguments object, never a real array:
+  // gtm.js treats Arguments-form entries as gtag commands and silently
+  // ignores array-form ones (events never reach Google).
+  w.gtag = function gtag(this: unknown[]) {
+    w.dataLayer!.push(arguments as unknown as unknown[])
   }
   w.gtag('js', new Date())
   w.gtag('config', MEASUREMENT_ID, {
