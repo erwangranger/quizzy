@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git fetch origin main:*)",
+      "Bash(git switch:*)",
+      "Bash(git branch:*)",
+      "Bash(git add questions/pending:*)",
+      "Bash(git commit:*)",
+      "Bash(git push -u origin news/*)",
+      "Bash(git ls-remote --heads origin news/*)",
+      "Bash(gh auth status:*)",
+      "Bash(gh pr create:*)",
+      "Bash(npm run validate:questions:*)",
+      "Bash(node scripts/news-context.mjs:*)",
+      "WebSearch",
+      "WebFetch",
+      "Write(questions/pending/**)",
+      "Edit(questions/pending/**)",
+      "Write(.git/news-pr-body.md)",
+      "Skill(quizzy-question-crafting)"
+    ]
+  }
+}
