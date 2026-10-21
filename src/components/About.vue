@@ -19,6 +19,15 @@
         >{{ t('about.issues') }}</a>
       </li>
     </ul>
+    <div class="install">
+      <p class="install-lead">{{ t('about.installLead') }}</p>
+      <ul class="install-steps">
+        <li>{{ t('about.installChrome') }}</li>
+        <li>{{ t('about.installSafari') }}</li>
+        <li>{{ t('about.installFirefox') }}</li>
+      </ul>
+      <p class="install-after">{{ t('about.installAfter') }}</p>
+    </div>
     <p class="credit">
       {{ t('about.creditLead') }}
       <a
@@ -58,6 +67,27 @@ const version = __APP_VERSION__
 
   li {
     margin: 0.4em 0;
+  }
+}
+
+.install {
+  margin-bottom: 1.5em;
+
+  p {
+    color: $color-med;
+    font-size: 0.85em;
+  }
+
+  .install-lead {
+    margin-bottom: 0.75em;
+  }
+
+  .install-steps {
+    margin-bottom: 0.75em;
+
+    li {
+      margin: 0.4em 0;
+    }
   }
 }
 

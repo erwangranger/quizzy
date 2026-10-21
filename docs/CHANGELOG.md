@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Install instructions in the About panel
+
+- The top-right menu's About panel now carries the install instructions that used to live only in the README: a lead line (Quizzy is a PWA, full-screen play even offline), the three per-browser install steps (Chrome/Edge banner, Safari Share → Add to Home Screen, Firefox menu → Install), and the after-install note. Bilingual — 5 new en/fr locale keys (`about.installLead/installChrome/installSafari/installFirefox/installAfter`); UI-only: `src/components/About.vue` (template + scoped styles), README Tips line updated to mention the panel now includes install instructions.
+- Verified: `vue-tsc -b config` + vitest 49/49 + `validate:questions` (322) + build green; headless Chromium on the built app — panel renders the install block on the intro screen and during a game, in English and French (screenshot-checked), zero console errors.
+
 ## Unreleased — Phrasing sweep
 
 - Phrasing sweep: attribution no longer names the upstream project by its old title — the README credits sentence and the About panel now credit "Christopher Murphy's open-source quiz app" (link text and SPEC.md lines 3/46 reworded; the upstream repo URL is unchanged); en/fr `about.creditName` locale keys reworded to match. Mentions of the external question API in SPEC/CHANGELOG history are kept as that API's proper name.

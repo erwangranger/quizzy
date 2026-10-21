@@ -58,7 +58,7 @@ Once installed, Quizzy launches full screen like any other app, with no browser 
 
 ## Tips
 
-- The **menu button** in the top-right corner opens an About panel with the app version, a link to the source code, and a way to report a problem.
+- The **menu button** in the top-right corner opens an About panel with the app version, install instructions, a link to the source code, and a way to report a problem.
 - Quizzy avoids repeating questions until you've seen the whole deck — a message tells you when it starts over.
 
 Quizzy is built with Vue 3, Pinia, TypeScript, Vite and SCSS. Questions live as JSON files in `questions/` — no external API (see the data model in [`docs/SPEC.md`](docs/SPEC.md)). Only questions with `reviewed: true` are bundled into the build; new banks land in `questions/pending/` until reviewed.
