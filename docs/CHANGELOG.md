@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Setup remembered on Main Menu
+
+- Returning to the Starter via "Main Menu" / "New Game" no longer forgets the play-mode configuration: `newGame()` kept resetting `solo`/`mode` to single-player, collapsing the multiplayer rows (quizmaster/pass-and-play, player count, names, hide-choices) back to solo. The action now keeps the play-mode choice and reloads player names for the current mode (bumping the count to 2 when left below it). Everything else in `store.setup` (language, categories, question count, toggles) already survived — the mode reset only hid it. UI: `src/store/store.ts` (`newGame()`); no component, locale, or storage changes. The menu reset test in `src/store/store.test.ts` now pins persistence (`solo: false`, mode, player count, players array survive).
+- Verified: vitest 49/49 + `vue-tsc -b config` + `validate:questions` (322) + build green; headless Chromium on the built app — quizmaster/3 players/hide-choices/15 questions/Science configured → Main Menu → all rows rendered with the right active fills (`Multiplayer`, `Quizmaster`, `3`, `15`, checked toggle, pressed Science chip) and player names intact → Start relaunches straight into quizmaster/15/science; solo → menu still lands on single-player; zero page errors.
+
 ## Unreleased — Segmented play-mode toggle
 
 - The Single Player / Multiplayer toggle on the starter screen now uses the same segmented style as the Language row: a `Mode` / `Mode` label beside the two options in one pill, with the active side filled green and bold. Replaces the old side-by-side `.mode-choice` button row (styles removed). UI-only: `src/components/Starter.vue` (template + styles); new `starter.playMode` en/fr locale key in `src/locales/index.ts`.

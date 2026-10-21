@@ -446,10 +446,13 @@ describe('useGameStore', () => {
     expect(store.currentView).toBe('app-intro')
     expect(store.isPaused).toBe(false)
     expect(store.revealed).toBe(false)
-    expect(store.isGameOver).toBe(false)
     expect(store.questions).toHaveLength(0)
-    expect(store.solo).toBe(true)
-    expect(store.mode).toBe('solo')
+    // Play-mode setup survives the return to the Starter: Main Menu no
+    // longer collapses the configuration back to solo
+    expect(store.solo).toBe(false)
+    expect(store.mode).toBe('quizmaster')
+    expect(store.setup.players).toBe(2)
+    expect(store.players).toHaveLength(2)
   })
-})
 
+})

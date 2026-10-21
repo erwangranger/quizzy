@@ -359,9 +359,17 @@ export const useGameStore = defineStore('game', {
     },
     newGame() {
       this.currentView = 'app-intro'
-      this.solo = true
-      this.mode = 'solo'
-      this.players = loadPlayerNames(1)
+      // Keep the play-mode setup (single/multiplayer, mode, player count) so
+      // "Main Menu" / "New Game" returns to the Starter as configured, not
+      // collapsed back to solo; player names already persist in storage.
+      if (this.solo) {
+        this.players = loadPlayerNames(1)
+      } else if (this.setup.players < 2) {
+        this.setup.players = 2
+        this.players = loadPlayerNames(2)
+      } else {
+        this.players = loadPlayerNames(this.setup.players)
+      }
     },
     pauseGame(payload?: 'pause') {
       if (payload === 'pause') {
