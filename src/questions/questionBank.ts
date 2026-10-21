@@ -14,6 +14,17 @@ export interface DrawOptions {
 // generated questions can live in the repo without shipping to players.
 const modules = import.meta.glob('/questions/*.json', { eager: true }) as Record<string, { default: unknown[] }>
 
+// Recent news stops being recent: news questions whose as_of is older than
+// this many months are left out of play. Override with VITE_NEWS_MAX_AGE_MONTHS.
+const NEWS_MAX_AGE_MONTHS = Number(import.meta.env.VITE_NEWS_MAX_AGE_MONTHS) || 18
+
+export function isStale(q: Question, now: Date = new Date(), maxAgeMonths = NEWS_MAX_AGE_MONTHS): boolean {
+  if (q.category !== 'recent-news' || !q.as_of) return false
+  const cutoff = new Date(now)
+  cutoff.setMonth(cutoff.getMonth() - maxAgeMonths)
+  return q.as_of < cutoff.toISOString().slice(0, 10)
+}
+
 export function loadAllQuestions(): Question[] {
   const valid: Question[] = []
   for (const [path, mod] of Object.entries(modules)) {
@@ -25,7 +36,7 @@ export function loadAllQuestions(): Question[] {
         continue
       }
       const q = item as Question
-      if (q.reviewed) valid.push(q)
+      if (q.reviewed && !isStale(q)) valid.push(q)
     }
   }
   return valid

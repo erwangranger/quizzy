@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { drawQuestions, getCategories, resetSeenQuestions, loadAllQuestions } from './questionBank'
-import type { Lang } from './schema'
+import { drawQuestions, getCategories, isStale, resetSeenQuestions, loadAllQuestions } from './questionBank'
+import type { Lang, Question } from './schema'
 
 // jsdom localStorage needs --localstorage-file; provide an in-memory mock so
 // seen-question tracking is exercised deterministically.
@@ -121,5 +121,15 @@ describe('questionBank', () => {
     const { questions } = drawQuestions({ lang: 'fr', categories: ['recent-news'], count: 5 })
     expect(questions).toHaveLength(5)
     expect(questions.every((q) => q.lang === 'fr' && q.id.startsWith('news-'))).toBe(true)
+  })
+
+  it('treats recent-news older than 18 months as stale', () => {
+    const now = new Date('2028-04-15T12:00:00Z')
+    const news = { category: 'recent-news', as_of: '2026-09-15' } as Question
+    expect(isStale(news, now)).toBe(true) // 19 months old
+    expect(isStale({ ...news, as_of: '2026-11-15' }, now)).toBe(false) // 17 months old
+    expect(isStale({ ...news, category: 'history' }, now)).toBe(false)
+    expect(isStale({ ...news, as_of: null }, now)).toBe(false)
+    expect(isStale(news, now, 24)).toBe(false)
   })
 })
