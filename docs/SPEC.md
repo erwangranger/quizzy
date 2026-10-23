@@ -161,7 +161,7 @@ Amended 2026-10-21 (owner decision): generation runs as a **weekly Claude Code D
      - French questions are written natively, not translated.
    - Writes `questions/pending/news-YYYY-MM-DD.json` and `questions/pending/fr-news-YYYY-MM-DD.json` with `origin: "claude"` and `reviewed: false`.
    - Runs `npm run validate:questions`, which covers `questions/pending/` and fails on near-duplicates (token Jaccard ≥ 0.8) involving a pending question. Invalid items are dropped and logged, not "fixed" silently.
-   - Pushes and opens a PR titled "New current-events questions (YYYY-MM-DD)" whose body lists each question, its answer and its source link, plus the dropped items.
+   - Pushes and opens a PR titled "chore(questions): new current-events questions (YYYY-MM-DD)" (a `chore`, so the weekly merge never cuts a release) whose body lists each question, its answer and its source link, plus the dropped items.
 2. Unattended permissions live in the committed `.claude/settings.json` allowlist (git/gh/validator/news-context, web search, writes under `questions/pending/`).
 3. Review flow (documented in `README.md`): I edit questions in the PR, set `reviewed: true` on the ones I keep, run `npm run promote:pending` (moves reviewed questions into `questions/recent-news.json` / `questions/fr-recent-news.json`, drops the rest, deletes the pending files, re-validates), commit, then merge.
 4. Staleness: recent-news questions with `as_of` older than 18 months are left out of play (`isStale` in `questionBank`, evaluated on the device so an installed offline app ages them out too). Override with `VITE_NEWS_MAX_AGE_MONTHS`.

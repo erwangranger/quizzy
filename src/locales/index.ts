@@ -4,6 +4,7 @@ export type Locale = 'en' | 'fr'
 
 const en = {
     'app.title': 'Quizzy 🥴',
+    'about.contentUpdated': 'questions updated {date}',
     'about.source': 'Source on GitHub',
     'about.issues': 'Report an issue',
     'about.creditLead': 'Quizzy started life as a fork of',
@@ -70,6 +71,7 @@ const en = {
 
 const fr: Record<keyof typeof en, string> = {
     'app.title': 'Quizzy 🥴',
+    'about.contentUpdated': 'questions mises à jour le {date}',
     'about.source': 'Source sur GitHub',
     'about.issues': 'Signaler un problème',
     'about.creditLead': 'Quizzy a commencé comme un fork de',

@@ -2,10 +2,28 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
+import { execSync } from 'node:child_process'
 import pkg from '../package.json' with { type: 'json' }
 
+// Date the question banks last changed (weekly news merges don't bump the semver).
+// Falls back to the build date when git history isn't available.
+const contentDate = (() => {
+  try {
+    const d = execSync('git log -1 --format=%cs -- questions', { stdio: ['ignore', 'pipe', 'ignore'] })
+      .toString()
+      .trim()
+    if (d) return d
+  } catch {
+    // no git or shallow clone: fall through
+  }
+  return new Date().toISOString().slice(0, 10)
+})()
+
 export default defineConfig({
-  define: { __APP_VERSION__: JSON.stringify(pkg.version) },
+  define: {
+    __APP_VERSION__: JSON.stringify(pkg.version),
+    __CONTENT_DATE__: JSON.stringify(contentDate),
+  },
   base: './',
   plugins: [
     vue(),
