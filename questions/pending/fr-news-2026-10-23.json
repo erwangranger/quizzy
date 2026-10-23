@@ -1,0 +1,154 @@
+[
+  {
+    "id": "news-20261023-09",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, dans quelle ville norvégienne la cérémonie de remise du prix Nobel de la paix a-t-elle été annoncée pour le 10 décembre ?",
+    "correct_answer": "Oslo",
+    "incorrect_answers": [
+      "Bergen",
+      "Stockholm",
+      "Copenhague",
+      "Le fond d'un fjord"
+    ],
+    "explanation": "Contrairement aux autres Nobel remis à Stockholm, la paix est décernée à Oslo, où siège le comité norvégien. Cette année, la lauréate est la juriste sud-africaine Navi Pillay.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-10",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, la lauréate du Nobel de la paix Navi Pillay a fondé son propre cabinet d'avocats en Afrique du Sud en quelle année ?",
+    "correct_answer": "1967",
+    "incorrect_answers": [
+      "1952",
+      "1975",
+      "1983",
+      "1492, par pur hasard"
+    ],
+    "explanation": "Pillay a ouvert son cabinet à Durban à une époque où l'apartheid limitait fortement les carrières des juristes non blancs. Elle a ensuite défendu des opposants au régime.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-11",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, la juriste Navi Pillay, nouvelle lauréate du Nobel de la paix, est née en quelle année ?",
+    "correct_answer": "1941",
+    "incorrect_answers": [
+      "1935",
+      "1948",
+      "1952",
+      "Avant l'invention du fromage"
+    ],
+    "explanation": "Née à Durban en 1941, elle avait donc environ 85 ans à l'annonce du prix. Sa carrière a traversé le barreau sud-africain, la justice internationale et l'ONU.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-12",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, le prix Nobel de la paix a couronné Navi Pillay, ancienne présidente de quel tribunal international créé après un génocide ?",
+    "correct_answer": "Le Tribunal pénal international pour le Rwanda",
+    "incorrect_answers": [
+      "Le Tribunal pénal international pour l'ex-Yougoslavie",
+      "Le tribunal de Nuremberg",
+      "La Cour européenne des droits de l'homme",
+      "Le tribunal des licornes"
+    ],
+    "explanation": "Elle y a siégé comme juge dès 1999 puis en a assumé la présidence. Cette expérience a nourri son travail ultérieur à la tête du Haut-Commissariat de l'ONU aux droits de l'homme.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-13",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, les Rays de Tampa Bay ont atteint la Série mondiale. Ils avaient déjà gagné le championnat de l'Américaine en 2008 et en quelle autre année ?",
+    "correct_answer": "2020",
+    "incorrect_answers": [
+      "2013",
+      "2016",
+      "2022",
+      "2099, dans le futur"
+    ],
+    "explanation": "Aucune de ces deux conquêtes de l'Américaine n'a débouché sur un titre mondial : Tampa Bay n'a jamais gagné la Série. Cette fois, ils affrontent des Brewers de Milwaukee eux aussi en quête d'un premier sacre.",
+    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
+    "as_of": "2026-10-19",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-14",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, menés 2-1 par Cleveland dans la finale de l'Américaine, les Rays de Tampa Bay ont ensuite remporté combien de matchs consécutifs ?",
+    "correct_answer": "Trois",
+    "incorrect_answers": [
+      "Un",
+      "Deux",
+      "Quatre",
+      "Mille"
+    ],
+    "explanation": "Tampa Bay a ainsi éliminé les Guardians en six matchs, 4-2, avec une victoire décisive le lundi soir. L'équipe s'est qualifiée pour la Série mondiale.",
+    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
+    "as_of": "2026-10-19",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-15",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, dans quelle ville a eu lieu le premier match de la Série mondiale opposant les Brewers aux Rays ?",
+    "correct_answer": "Milwaukee",
+    "incorrect_answers": [
+      "Tampa",
+      "Cleveland",
+      "Los Angeles",
+      "Quelque part sur la Lune"
+    ],
+    "explanation": "Les matchs 1 et 2 se jouent à Milwaukee, les matchs 3 à 5 à Tampa Bay, puis les matchs 6 et 7, si nécessaires, de nouveau à Milwaukee. Le coup d'envoi était prévu le 23 octobre.",
+    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
+    "as_of": "2026-10-19",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-16",
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, le prix Nobel de la paix a été attribué à Navi Pillay, juriste de quel pays ?",
+    "correct_answer": "L'Afrique du Sud",
+    "incorrect_answers": [
+      "L'Inde",
+      "Le Kenya",
+      "Le Nigeria",
+      "Le Royaume des Pingouins"
+    ],
+    "explanation": "Elle est née à Durban dans une famille d'origine indienne tamoule. Le comité Nobel norvégien a salué son engagement pour la paix et le droit international.",
+    "source_url": "https://www.khaleejtimes.com/navanethem-navi-pillay-wins-nobel-peace-prize-2026",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  }
+]
