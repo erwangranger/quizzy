@@ -1,0 +1,154 @@
+[
+  {
+    "id": "news-20261023-01",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In October 2026, Henri Kagan and Kenso Soai won the Nobel Prize in Chemistry for discoveries about non-linear effects and autocatalysis in which kind of chemical synthesis?",
+    "correct_answer": "Asymmetric organic synthesis",
+    "incorrect_answers": [
+      "Polymer synthesis",
+      "Electrochemical synthesis",
+      "Inorganic nanoparticle synthesis",
+      "Baking-soda volcano synthesis"
+    ],
+    "explanation": "Asymmetric synthesis is the art of making just one of two mirror-image forms of a molecule, which matters because the two forms can behave very differently in medicines. The Royal Swedish Academy of Sciences announced the award on 7 October.",
+    "source_url": "https://www.khaleejtimes.com/world/henri-kagan-kenso-soai-win-2026-nobel-chemistry-prize",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-02",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In October 2026, the 2026 Nobel Prize in Chemistry was announced with a prize sum of how many Swedish crowns, shared between its two laureates?",
+    "correct_answer": "12 million",
+    "incorrect_answers": [
+      "8 million",
+      "10 million",
+      "15 million",
+      "Eleventy billion"
+    ],
+    "explanation": "The sum is roughly 1.2 million US dollars at current exchange rates and is split between Henri Kagan and Kenso Soai. The medal and diploma are presented at the Stockholm ceremony each December.",
+    "source_url": "https://www.khaleejtimes.com/world/henri-kagan-kenso-soai-win-2026-nobel-chemistry-prize",
+    "as_of": "2026-10-07",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-03",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, the Norwegian Nobel Committee awarded the Nobel Peace Prize to which South African jurist, honoured for promoting peace and international law?",
+    "correct_answer": "Navanethem Pillay",
+    "incorrect_answers": [
+      "Mary Robinson",
+      "Louise Arbour",
+      "Michelle Bachelet",
+      "Duchess Pumpernickel of the Gift Shop"
+    ],
+    "explanation": "Born in 1941, Pillay built a career spanning courtrooms in South Africa and international tribunals. The committee praised her firm moral compass in announcing the prize on 9 October.",
+    "source_url": "https://www.khaleejtimes.com/navanethem-navi-pillay-wins-nobel-peace-prize-2026",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-04",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, Nobel Peace Prize winner Navi Pillay was recognised as a jurist born in which South African city?",
+    "correct_answer": "Durban",
+    "incorrect_answers": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Atlantis, but the sunken one"
+    ],
+    "explanation": "Pillay grew up in Durban in a family of Indian Tamil origin during apartheid. Her path from that city led to the bench of the High Court of South Africa and onto the world stage.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-05",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, the Nobel Peace Prize went to Navi Pillay, who earlier served from 2008 to 2014 in which United Nations post?",
+    "correct_answer": "High Commissioner for Human Rights",
+    "incorrect_answers": [
+      "Secretary-General",
+      "High Commissioner for Refugees",
+      "President of the General Assembly",
+      "Head of the UN Snack Committee"
+    ],
+    "explanation": "The High Commissioner leads the UN human rights office in Geneva. Pillay also served as a judge and president of the International Criminal Tribunal for Rwanda before taking that role.",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Nobel_Peace_Prize",
+    "as_of": "2026-10-09",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-06",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In October 2026, the Milwaukee Brewers reached the World Series against which team, guaranteeing baseball a first-time champion?",
+    "correct_answer": "The Tampa Bay Rays",
+    "incorrect_answers": [
+      "The Cleveland Guardians",
+      "The Houston Astros",
+      "The Toronto Blue Jays",
+      "The Springfield Isotopes"
+    ],
+    "explanation": "Neither Milwaukee nor Tampa Bay had ever won the title, and the pairing is the first between two title-less clubs since 1980. Game 1 was set for 23 October at American Family Field.",
+    "source_url": "https://www.news4jax.com/sports/2026/10/20/brewers-rays-will-produce-a-first-time-champion-and-maybe-the-first-all-indoor-world-series/",
+    "as_of": "2026-10-20",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-07",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, the Tampa Bay Rays beat the Cleveland Guardians to win the American League pennant. How many games did that series last?",
+    "correct_answer": "Six",
+    "incorrect_answers": [
+      "Four",
+      "Five",
+      "Seven",
+      "Forty-two, with overtime"
+    ],
+    "explanation": "Cleveland led 2-1 early on, but Tampa Bay won three straight, finishing the job in Game 6. It sent the Rays to the World Series, where they face the Brewers.",
+    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
+    "as_of": "2026-10-19",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261023-08",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In October 2026, the Brewers-Rays World Series was billed as possibly the first all-indoor Series because both ballparks have which feature?",
+    "correct_answer": "A roof over the field",
+    "incorrect_answers": [
+      "Artificial lighting only",
+      "Heated seats",
+      "An underground tunnel",
+      "A giant umbrella"
+    ],
+    "explanation": "Tampa Bay plays under a fixed roof while Milwaukee has a retractable one expected to stay closed in the cool late-October weather. Cold temperatures in the upper 40s were forecast.",
+    "source_url": "https://www.news4jax.com/sports/2026/10/20/brewers-rays-will-produce-a-first-time-champion-and-maybe-the-first-all-indoor-world-series/",
+    "as_of": "2026-10-19",
+    "origin": "claude",
+    "reviewed": false
+  }
+]
