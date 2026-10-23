@@ -10,9 +10,9 @@ No account, nothing to install — open the link and play. It works on phones, t
 
 ## What it looks like
 
-Pick how you want to play, then choose a language, a category, and how many questions you want:
+Pick how many players, then choose a language, a category, and how many questions you want:
 
-![The Quizzy start screen: choose single player or multiplayer, a language, a category, and the number of questions](docs/screenshots/start.png)
+![The Quizzy start screen: choose the number of players, a language, a category, and the number of questions](docs/screenshots/start.png)
 
 Answer multiple-choice questions at your own pace:
 
@@ -28,7 +28,7 @@ When the quiz is over you get your score and a breakdown by category:
 
 ## How to play
 
-1. **Choose your mode** — Single Player, or Multiplayer (see below).
+1. **Choose how many players** — 1 to 4. One player is a solo game; two or more play together (see below).
 2. **Weight by Difficulty** *(optional)* — tick this to make harder questions worth more points. Left off, every question scores the same.
 3. **Pick a language** — English (`en`) or French (`fr`).
 4. **Pick a category** — Geography, History, Science, Arts & Literature, Entertainment, Sports & Leisure, or Recent News.
@@ -44,7 +44,7 @@ Two ways to play together on one device:
 - **Quizmaster** — one person reads the questions aloud while everyone else writes their answers down. The quizmaster reveals each answer and marks who got it right.
   - Quizmaster-only option: **Hide Choices** — keep answer choices on screen for the quizmaster only, so players answer without seeing the options.
 
-To set up either one, choose **Multiplayer** on the start screen, add each player's name, and pick who (if anyone) is the quizmaster.
+To set up either one, pick 2 or more players on the start screen, enter each player's name, and choose **Pass and Play** or **Quizmaster**.
 
 ## Install it as an app
 
@@ -59,6 +59,7 @@ Once installed, Quizzy launches full screen like any other app, with no browser 
 ## Tips
 
 - The **menu button** in the top-right corner opens an About panel with the app version, install instructions, a link to the source code, and a way to report a problem.
+- Interrupted by a phone call or a closed tab? Your game is saved on the device. Reopen Quizzy and tap **Resume game** on the start screen to pick up where you left off.
 - Quizzy avoids repeating questions until you've seen the whole deck — a message tells you when it starts over.
 
 Quizzy is built with Vue 3, Pinia, TypeScript, Vite and SCSS. Questions live as JSON files in `questions/` — no external API (see the data model in [`docs/SPEC.md`](docs/SPEC.md)). Only questions with `reviewed: true` are bundled into the build; new banks land in `questions/pending/` until reviewed.
