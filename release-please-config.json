@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "da835d3ff0ac8cc504907cd7b5e721780dd99a98",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "quizzy",
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": false,
+      "changelog-path": "docs/CHANGELOG.md",
+      "include-v-in-tag": true
+    }
+  }
+}

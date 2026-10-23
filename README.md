@@ -95,6 +95,21 @@ Runs only fire while the app is open and the Mac is awake. A run missed in the l
 2. `npm run promote:pending`: reviewed questions move into `questions/recent-news.json` / `questions/fr-recent-news.json`, the rest are dropped, and the pending files are deleted.
 3. Commit and merge. Unreviewed questions never ship. News questions older than 18 months drop out of play automatically.
 
+## Releases
+
+Quizzy uses [Semantic Versioning](https://semver.org) (`MAJOR.MINOR.PATCH`, tags `vX.Y.Z`). The version and the date the question banks last changed are shown at the top of the About panel, e.g. `v0.2.0 · questions updated 2026-10-23`.
+
+Versions are cut automatically by [release-please](https://github.com/googleapis/release-please) from [conventional commits](https://www.conventionalcommits.org) on `main`:
+
+| Commit type | Effect (before 1.0) |
+| --- | --- |
+| `feat:` | minor bump (0.2.0 → 0.3.0) |
+| `fix:` | patch bump (0.2.0 → 0.2.1) |
+| `feat!:` / `BREAKING CHANGE:` | minor bump (major after 1.0) |
+| `docs:`, `chore:`, `refactor:`, `style:`, `test:` | no release |
+
+release-please keeps a "release PR" open that bumps `package.json` and writes `docs/CHANGELOG.md`. Merging it creates the tag and GitHub Release, and the normal deploy ships it. Squash-merged PR titles become the commit message, so write them as conventional commits. Weekly news questions are `chore(questions):`, so they never bump the version; the content date in About covers them.
+
 ## Native iOS app (future, not implemented yet)
 
 Quizzy is a static site: `npm run build` writes everything to `dist/`, and nothing needs a server (questions are bundled, and analytics is an optional client-side gtag). A native iOS wrapper would use [Capacitor](https://capacitorjs.com) to load that folder:

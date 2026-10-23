@@ -35,9 +35,9 @@ Let `DATE` be today's date (`YYYY-MM-DD`) and `STAMP` the same without dashes (`
 - If nothing survives, abort: switch back and delete the branch (`git switch - && git branch -D news/DATE`) and report why.
 
 ## 6. Commit and open the PR
-- `git add questions/pending && git commit -m "feat(questions): pending news questions DATE"` and end the message with a blank line followed by `Co-Authored-By: Claude <noreply@anthropic.com>`.
+- `git add questions/pending && git commit -m "chore(questions): pending news questions DATE"` and end the message with a blank line followed by `Co-Authored-By: Claude <noreply@anthropic.com>`.
 - `git push -u origin news/DATE`.
-- `gh pr create --base main --title "New current-events questions (DATE)" --body-file .git/news-pr-body.md` (write the body there first; `.git/` is never committed). The body has:
+- `gh pr create --base main --title "chore(questions): new current-events questions (DATE)" --body-file .git/news-pr-body.md` (write the body there first; `.git/` is never committed). The body has:
   - One table per language: `id | question | answer | source`, with the source as a markdown link.
   - A "Dropped" list: each dropped question's id, text and the validator error.
   - The review steps: edit questions in the PR, set `reviewed: true` on the ones to keep, run `npm run promote:pending`, commit, merge.

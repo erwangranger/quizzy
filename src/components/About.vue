@@ -1,6 +1,6 @@
 <template>
   <div class="about-panel">
-    <p class="version">v{{ version }}</p>
+    <p class="version">v{{ version }} · {{ t('about.contentUpdated', { date: contentDate }) }}</p>
     <ul class="links">
       <li>
         <a
@@ -42,10 +42,12 @@
 
 <script setup lang="ts">
 declare const __APP_VERSION__: string
+declare const __CONTENT_DATE__: string
 
 import { t } from '../locales'
 
 const version = __APP_VERSION__
+const contentDate = __CONTENT_DATE__
 </script>
 <style lang="scss" scoped>
 @use '../styles/variables' as *;
