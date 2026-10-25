@@ -5736,5 +5736,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0061",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which two countries share the longest international border in the world?",
+    "correct_answer": "Canada and the United States",
+    "incorrect_answers": [
+      "Russia and China",
+      "Russia and Kazakhstan",
+      "Argentina and Chile",
+      "Canada and a line drawn in permanent marker"
+    ],
+    "explanation": "The boundary, including the Great Lakes and both coasts, runs nearly 8,900 km. Its mainland section is the second-longest continuous international border after Kazakhstan–Russia.",
+    "source_url": "https://en.wikipedia.org/wiki/Canada%E2%80%93United_States_border",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0062",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which river is the longest in Great Britain?",
+    "correct_answer": "The River Severn",
+    "incorrect_answers": [
+      "The River Thames",
+      "The River Trent",
+      "The River Tay",
+      "The River Bother"
+    ],
+    "explanation": "The Severn runs about 354 km from its source on Plynlimon in mid Wales to the Bristol Channel, edging out the Thames by less than 10 km.",
+    "source_url": "https://en.wikipedia.org/wiki/River_Severn",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0063",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Surtsey, a volcanic island that rose from the sea in 1963, lies off the coast of which country?",
+    "correct_answer": "Iceland",
+    "incorrect_answers": [
+      "Portugal",
+      "New Zealand",
+      "Japan",
+      "The world's most exclusive sandcastle"
+    ],
+    "explanation": "Surtsey surfaced off Iceland's south coast on 14 November 1963 and kept growing until 1967; erosion has shrunk it since. Named after a fire giant of Norse myth, it is closed to everyone but researchers, who watch plants and birds colonise virgin land.",
+    "source_url": "https://en.wikipedia.org/wiki/Surtsey",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0064",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Strait of Malacca, one of the world's busiest shipping lanes, lies between the Malay Peninsula and which island?",
+    "correct_answer": "Sumatra",
+    "incorrect_answers": [
+      "Borneo",
+      "Java",
+      "Sulawesi",
+      "A shipping lane for paddleboards"
+    ],
+    "explanation": "The strait connects the Andaman Sea to the South China Sea and carries about a quarter of the world's traded goods. Sumatra, the large Indonesian island, forms its southwestern shore.",
+    "source_url": "https://en.wikipedia.org/wiki/Strait_of_Malacca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0061",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "How long did the Hundred Years War between England and France last?",
+    "correct_answer": "116 years",
+    "incorrect_answers": [
+      "100 years",
+      "132 years",
+      "88 years",
+      "From harvest to harvest, because medieval deadlines"
+    ],
+    "explanation": "The name is a rounded label coined by later historians for the conflicts of 1337 to 1453, which actually ran 116 years. It was interrupted by long truces, including one that lasted more than two decades in the mid-14th century.",
+    "source_url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0062",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Gallic leader made a last stand against Julius Caesar at the siege of Alesia in 52 BC?",
+    "correct_answer": "Vercingetorix",
+    "incorrect_answers": [
+      "Ambiorix",
+      "Boudica",
+      "Arminius",
+      "Duke Baguette of the Baguette Battalion"
+    ],
+    "explanation": "Caesar trapped Vercingetorix on the plateau of Alise-Sainte-Reine behind a double line of fortifications and beat off a huge relief army. The defeated leader surrendered, was paraded in Caesars triumph and was executed in Rome in 46 BC.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0063",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which ancient Roman aqueduct bridge in southern France, with three tiers of arches, stands almost 49 metres high?",
+    "correct_answer": "The Pont du Gard",
+    "incorrect_answers": [
+      "The Pont du Gard Bridge of Sighs",
+      "The Aqueduct of Segovia",
+      "The Bridge of Alcántara",
+      "A Roman paddling pool"
+    ],
+    "explanation": "Built in the first century AD, the Pont du Gard carried water of the 50-kilometre aqueduct feeding Nimes. Its three tiers of arches rise about 48.8 metres above the Gardon river, making it the highest known Roman aqueduct bridge.",
+    "source_url": "https://en.wikipedia.org/wiki/Pont_du_Gard",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0064",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Roughly how many people worldwide caught the Spanish flu during the 1918 pandemic?",
+    "correct_answer": "500 million",
+    "incorrect_answers": [
+      "150 million",
+      "1 billion",
+      "50 million",
+      "Anyone who sneezed twice"
+    ],
+    "explanation": "Around 500 million people, then about a third of the world population, were infected. The name is misleading: wartime censors in the combatant countries suppressed outbreak news, while neutral Spain reported it freely.",
+    "source_url": "https://en.wikipedia.org/wiki/Spanish_flu",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0048",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the largest organ of the human body?",
+    "correct_answer": "The skin",
+    "incorrect_answers": [
+      "The liver",
+      "The brain",
+      "The lungs",
+      "The ego"
+    ],
+    "explanation": "Skin covers an area of roughly 2 square metres on an average adult and acts as a barrier against water loss and pathogens. The liver is the largest organ inside the body.",
+    "source_url": "https://en.wikipedia.org/wiki/Human_skin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0049",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which ocean trench contains Challenger Deep, the deepest known point of Earth's seabed?",
+    "correct_answer": "The Mariana Trench",
+    "incorrect_answers": [
+      "The Java Trench",
+      "The Tonga Trench",
+      "The Puerto Rico Trench",
+      "The trench coat department"
+    ],
+    "explanation": "Challenger Deep sits at the southern end of the Mariana Trench in the western Pacific, about 10,900 to 11,000 metres below sea level. The bathyscaphe Trieste made the first crewed descent in 1960.",
+    "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0050",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the half-life of carbon-14, the isotope used to date organic remains?",
+    "correct_answer": "About 5,730 years",
+    "incorrect_answers": [
+      "About 1,600 years",
+      "About 5,730 days",
+      "About 160,000 years",
+      "Two carbon credits"
+    ],
+    "explanation": "Half of any carbon-14 sample decays away roughly every 5,730 years, which limits reliable radiocarbon dates to about 50,000 years. Willard Libby developed the method and won the 1960 Nobel Prize in Chemistry for it.",
+    "source_url": "https://en.wikipedia.org/wiki/Radiocarbon_dating",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0048",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "The cave paintings of Lascaux, famous for their bulls and horses, are in which country?",
+    "correct_answer": "France",
+    "incorrect_answers": [
+      "Spain",
+      "Germany",
+      "Italy",
+      "The parking garage they found the paintings in"
+    ],
+    "explanation": "Marcel Ravidat discovered the entrance on 12 September 1940, after his dog sniffed around a hole near Montignac, and the cave was closed to visitors in 1963 to save the paintings from the breath of up to 1,200 daily visitors. Its largest bull measures 5.2 m.",
+    "source_url": "https://en.wikipedia.org/wiki/Lascaux",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0049",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which French playwright wrote the comedy about the hypocrite Tartuffe, first staged for Louis XIV in 1664?",
+    "correct_answer": "Molière",
+    "incorrect_answers": [
+      "Jean Racine",
+      "Pierre Corneille",
+      "Voltaire",
+      "Tartuffe, who insists he wrote it"
+    ],
+    "explanation": "The Archbishop of Paris condemned the play as an attack on piety and public performances were banned until 1669, when the final five-act version triumphed at the Palais-Royal. The word tartuffe still means a hypocrite in French.",
+    "source_url": "https://en.wikipedia.org/wiki/Tartuffe",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0050",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which composer spent about 26 years writing the four-opera Ring cycle that opened the first Bayreuth Festival in 1876?",
+    "correct_answer": "Richard Wagner",
+    "incorrect_answers": [
+      "Giuseppe Verdi",
+      "Johannes Brahms",
+      "Richard Strauss",
+      "Four operas is only three too many"
+    ],
+    "explanation": "Wagner wrote the libretto and music over about 26 years, from 1848 to 1874, and a full cycle runs roughly 15 hours across four evenings. The first complete performance opened the first Bayreuth Festival in 1876, from Das Rheingold to Götterdämmerung.",
+    "source_url": "https://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0045",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "The Star Wars character Chewbacca takes his name from the Russian word for which animal?",
+    "correct_answer": "Dog",
+    "incorrect_answers": [
+      "Bear",
+      "Horse",
+      "Lion",
+      "A Wookiee-sized hamster"
+    ],
+    "explanation": "George Lucas was inspired by his Alaskan Malamute, Indiana, who rode beside him in the passenger seat, and the name itself derives from sobaka, the Russian word for dog.",
+    "source_url": "https://en.wikipedia.org/wiki/Chewbacca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0046",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In the 1937 animated film Snow White and the Seven Dwarfs, the wicked queen poisons Snow White with which object?",
+    "correct_answer": "An apple",
+    "incorrect_answers": [
+      "A comb",
+      "A spindle",
+      "A mirror",
+      "One of Sleepy's yawns"
+    ],
+    "explanation": "The Grimms' tale also had the queen try a laced bodice and a poisoned comb, but the film kept only the apple, whose sleeping curse only love's first kiss can break.",
+    "source_url": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0047",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which company manufactured the TR-808, the analog drum machine that became a cornerstone of hip-hop?",
+    "correct_answer": "Roland",
+    "incorrect_answers": [
+      "Yamaha",
+      "Korg",
+      "Casio",
+      "An overcaffeinated woodpecker"
+    ],
+    "explanation": "Roland built the TR-808 between 1980 and 1983 and dropped it as a commercial failure, yet it went on to anchor hip-hop and dance music, appearing on more hit records than any other drum machine.",
+    "source_url": "https://en.wikipedia.org/wiki/Roland_TR-808",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0045",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "What was the original name of the sport now known as volleyball?",
+    "correct_answer": "Mintonette",
+    "incorrect_answers": [
+      "Netball",
+      "Rallyball",
+      "Real tennis",
+      "Underwater basket weaving"
+    ],
+    "explanation": "William G. Morgan invented the indoor game in 1895, and an observer named Alfred Halstead suggested the new name volleyball after noticing its volleying play. Morgan had first derived the game from badminton, hence mintonette.",
+    "source_url": "https://en.wikipedia.org/wiki/Volleyball",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0046",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "At which Olympic Games did the first torch relay from Olympia to the host city take place?",
+    "correct_answer": "Berlin 1936",
+    "incorrect_answers": [
+      "Amsterdam 1928",
+      "London 1948",
+      "Helsinki 1952",
+      "By carrier pigeon"
+    ],
+    "explanation": "Carl Diem introduced the torch relay with no ancient precedent at the 1936 Summer Olympics in Berlin. Runners carried the flame about 3,187 kilometers from Olympia to Berlin in twelve days.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympic_flame",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0047",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "The name pétanque comes from an expression meaning what?",
+    "correct_answer": "Feet planted",
+    "incorrect_answers": [
+      "A running start",
+      "Rolling throw",
+      "Target practice",
+      "Tickling the gravel"
+    ],
+    "explanation": "Pétanque grew from jeu provençal in La Ciotat around 1910, when a former champion with severe rheumatism could no longer run before throwing. The name evolved from pieds tanqués, or feet planted on the ground.",
+    "source_url": "https://en.wikipedia.org/wiki/P%C3%A9tanque",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

@@ -5736,5 +5736,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0061",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Entre quels pays se trouve la plus longue frontière internationale du monde ?",
+    "correct_answer": "Le Canada et les États-Unis",
+    "incorrect_answers": [
+      "La Russie et la Chine",
+      "La Russie et le Kazakhstan",
+      "L'Argentine et le Chili",
+      "Le Canada et une ligne au marqueur permanent"
+    ],
+    "explanation": "S'étendant sur près de 8 900 km, elle n'est pas militarisée et environ la moitié de son tracé traverse des lacs et des rivières. Elle se compose de deux segments : 6 414 km avec les États contigus et 2 477 km avec l'Alaska.",
+    "source_url": "https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_le_Canada_et_les_%C3%89tats-Unis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0062",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel fleuve est le plus long du Royaume-Uni ?",
+    "correct_answer": "La Severn",
+    "incorrect_answers": [
+      "La Tamise",
+      "Le Trent",
+      "Le Tay",
+      "Le fleuve Pénible"
+    ],
+    "explanation": "La Severn parcourt environ 354 km depuis sa source sur le Plynlimon, au pays de Galles, jusqu'au canal de Bristol, devançant la Tamise de moins de 10 km.",
+    "source_url": "https://fr.wikipedia.org/wiki/Severn",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0063",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "L'île volcanique de Surtsey, apparue en mer en 1963, se trouve au large de quel pays ?",
+    "correct_answer": "L'Islande",
+    "incorrect_answers": [
+      "Le Portugal",
+      "La Nouvelle-Zélande",
+      "Le Japon",
+      "Le plus jeune caillou de l'Atlantique"
+    ],
+    "explanation": "Surtsey a émergé au large de la côte sud de l'Islande le 14 novembre 1963 et a continué de croître jusqu'en 1967, avant que l'érosion ne l'entame. Nommée d'après Surt, un géant du feu de la mythologie nordique, elle est interdite au public afin que les chercheurs observent la vie coloniser une terre vierge.",
+    "source_url": "https://fr.wikipedia.org/wiki/Surtsey",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0064",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Le détroit de Malacca, l'une des routes maritimes les plus fréquentées du monde, sépare la péninsule Malaise de quelle grande île ?",
+    "correct_answer": "Sumatra",
+    "incorrect_answers": [
+      "Bornéo",
+      "Java",
+      "Sulawesi",
+      "La piscine de Sumatra"
+    ],
+    "explanation": "Le détroit relie la mer d'Andaman à la mer de Chine méridionale; le Japon et la Chine y font transiter l'essentiel de leurs hydrocarbures. Sumatra, la grande île indonésienne, en forme la rive sud-ouest.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_Malacca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0061",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Combien d'années a duré la guerre de Cent Ans entre l'Angleterre et la France ?",
+    "correct_answer": "116 ans",
+    "incorrect_answers": [
+      "100 ans",
+      "132 ans",
+      "88 ans",
+      "De vendanges en vendanges, car les délais médiévaux"
+    ],
+    "explanation": "Le nom est une étiquette arrondie forgée au XIXe siècle pour regrouper les conflits de 1337 à 1453, qui ont duré 116 ans. La guerre fut entrecoupée de longues trêves, dont une de plus de vingt ans au milieu du XIVe siècle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Guerre_de_Cent_Ans",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0062",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel chef gaulois a affronté Jules César lors du siège d'Alésia en 52 avant notre ère ?",
+    "correct_answer": "Vercingétorix",
+    "incorrect_answers": [
+      "Ambiorix",
+      "Boadicée",
+      "Arminius",
+      "Duc Baguette de la Brigade Baguette"
+    ],
+    "explanation": "César a enfermé Vercingétorix sur le plateau d'Alise-Sainte-Reine derrière un double réseau de fortifications et repoussé une immense armée de secours. Vaincu, le chef gaulois s'est rendu, a figuré au triomphe de César et a été exécuté à Rome en 46 avant notre ère.",
+    "source_url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_d%27Al%C3%A9sia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0063",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel pont-aqueduc romain à trois niveaux du sud de la France culmine à près de 49 mètres de hauteur ?",
+    "correct_answer": "Le pont du Gard",
+    "incorrect_answers": [
+      "Le pont du Gard des Soupirs",
+      "L'aqueduc de Ségovie",
+      "Le pont d'Alcántara",
+      "Une piscine romaine"
+    ],
+    "explanation": "Bâti au premier siècle de notre ère, le pont du Gard portait l'eau de l'aqueduc de 50 kilomètres alimentant Nîmes. Ses trois niveaux d'arches s'élèvent à environ 48,77 mètres au-dessus du Gardon, ce qui en fait le plus haut pont-aqueduc connu du monde romain.",
+    "source_url": "https://fr.wikipedia.org/wiki/Pont_du_Gard",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0064",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Combien de personnes dans le monde ont contracté la grippe espagnole lors de la pandémie de 1918 ?",
+    "correct_answer": "500 millions",
+    "incorrect_answers": [
+      "150 millions",
+      "1 milliard",
+      "50 millions",
+      "Tous ceux qui ont éternué deux fois"
+    ],
+    "explanation": "Environ 500 millions de personnes, soit 27 pour cent de la population mondiale de l'époque, ont été infectées. Le nom est trompeur : la censure de guerre étouffait l'information dans les pays belligérants, tandis que l'Espagne neutre la publiait librement.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grippe_espagnole",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0048",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quel est le plus grand organe du corps humain ?",
+    "correct_answer": "La peau",
+    "incorrect_answers": [
+      "Le foie",
+      "Le cerveau",
+      "Les poumons",
+      "La peau de banane"
+    ],
+    "explanation": "La peau couvre près de 2 mètres carrés chez un adulte moyen et protège le corps des microbes et de la déshydratation. Le foie est le plus grand organe interne.",
+    "source_url": "https://fr.wikipedia.org/wiki/Peau_humaine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0049",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Dans quelle fosse océanique se trouve le Challenger Deep, le point le plus profond connu du fond des océans ?",
+    "correct_answer": "La fosse des Mariannes",
+    "incorrect_answers": [
+      "La fosse de la Sonde",
+      "La fosse des Tonga",
+      "La fosse de Porto Rico",
+      "La fosse septique"
+    ],
+    "explanation": "Le Challenger Deep se trouve à l'extrémité sud de la fosse des Mariannes, dans l'ouest du Pacifique, à environ 10 900 à 11 000 mètres sous le niveau de la mer. Le bathyscaphe Trieste y est descendu pour la première fois en 1960.",
+    "source_url": "https://fr.wikipedia.org/wiki/Fosse_des_Mariannes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0050",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quelle est la demi-vie du carbone 14, l'isotope utilisé pour dater les restes organiques ?",
+    "correct_answer": "Environ 5 730 ans",
+    "incorrect_answers": [
+      "Environ 1 600 ans",
+      "Environ 5 730 jours",
+      "Environ 160 000 ans",
+      "Deux crédits carbone"
+    ],
+    "explanation": "La moitié d'un échantillon de carbone 14 se désintègre tous les 5 730 ans environ, ce qui limite la datation fiable à environ 50 000 ans. Willard Libby a mis au point la méthode et a reçu le prix Nobel de chimie en 1960.",
+    "source_url": "https://fr.wikipedia.org/wiki/Datation_au_carbone_14",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0048",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Les peintures rupestres de la grotte de Lascaux, célèbres pour leurs taureaux et leurs chevaux, se trouvent dans quel pays ?",
+    "correct_answer": "La France",
+    "incorrect_answers": [
+      "L'Espagne",
+      "L'Allemagne",
+      "L'Italie",
+      "Le parking souterrain où elles ont été retrouvées"
+    ],
+    "explanation": "Marcel Ravidat découvre l'entrée de la grotte le 12 septembre 1940, après que son chien s'intéresse à un trou près de Montignac ; fermée au public en 1963 pour protéger les peintures du souffle de jusqu'à 1 200 visiteurs par jour, elle n'est plus ouverte qu'aux scientifiques. Son plus grand taureau mesure 5,2 m.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grotte_de_Lascaux",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0049",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel dramaturge français a écrit la comédie « Le Tartuffe », créée devant Louis XIV en 1664 ?",
+    "correct_answer": "Molière",
+    "incorrect_answers": [
+      "Jean Racine",
+      "Pierre Corneille",
+      "Voltaire",
+      "Tartuffe, qui jure l'avoir écrit lui-même"
+    ],
+    "explanation": "L'archevêque de Paris fait interdire la pièce, jugée offensante pour la piété, et les représentations publiques ne reprennent qu'en 1669, quand la version définitive en cinq actes triomphe au Palais-Royal. Le mot tartuffe désigne encore aujourd'hui un hypocrite en français.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tartuffe_ou_l%27Imposteur",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0050",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quel compositeur a mis environ 26 ans à écrire le cycle de quatre opéras « L'Anneau du Nibelung », créé au premier festival de Bayreuth en 1876 ?",
+    "correct_answer": "Richard Wagner",
+    "incorrect_answers": [
+      "Giuseppe Verdi",
+      "Johannes Brahms",
+      "Richard Strauss",
+      "Quatre opéras, c'est déjà trois de trop"
+    ],
+    "explanation": "Wagner écrit les livrets et la musique d'environ 1848 à 1874, et le cycle complet demande environ 15 heures de représentation sur quatre soirées. Sa première intégrale ouvre le tout premier festival de Bayreuth en 1876, de L'Or du Rhin au Crépuscule des dieux.",
+    "source_url": "https://fr.wikipedia.org/wiki/L%27Anneau_du_Nibelung",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0045",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Le nom du personnage Chewbacca, dans Star Wars, vient du mot russe désignant quel animal ?",
+    "correct_answer": "Le chien",
+    "incorrect_answers": [
+      "L'ours",
+      "Le cheval",
+      "Le lion",
+      "Un hamster de la taille d'un Wookiee"
+    ],
+    "explanation": "George Lucas s'est inspiré de son malamute de l'Alaska, Indiana, qui s'asseyait à ses côtés sur le siège passager, et le nom dérive de sobaka, le mot russe pour chien.",
+    "source_url": "https://fr.wikipedia.org/wiki/Chewbacca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0046",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Dans le film d'animation Blanche-Neige et les Sept Nains de 1937, la méchante reine empoisonne Blanche-Neige avec quel objet ?",
+    "correct_answer": "Une pomme",
+    "incorrect_answers": [
+      "Un peigne",
+      "Un fuseau",
+      "Un miroir",
+      "Un bâillement de Simplet"
+    ],
+    "explanation": "Le conte des frères Grimm contenait aussi un corsage lacé et un peigne empoisonné, mais le film n'a gardé que la pomme, dont le sommeil de mort ne peut être brisé que par le premier baiser.",
+    "source_url": "https://fr.wikipedia.org/wiki/Blanche-Neige_et_les_Sept_Nains",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0047",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quelle société a fabriqué la TR-808, la boîte à rythmes analogique devenue un pilier du hip-hop ?",
+    "correct_answer": "Roland",
+    "incorrect_answers": [
+      "Yamaha",
+      "Korg",
+      "Casio",
+      "Un pivert très caféiné"
+    ],
+    "explanation": "Roland a fabriqué la TR-808 entre 1980 et 1983 puis l'a abandonnée comme un échec commercial, mais elle est ensuite devenue un pilier du hip-hop et de la musique électronique.",
+    "source_url": "https://fr.wikipedia.org/wiki/Roland_TR-808",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0045",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Quel était le nom original du sport aujourd'hui connu sous le nom de volleyball ?",
+    "correct_answer": "La mintonette",
+    "incorrect_answers": [
+      "Le netball",
+      "Le rallyball",
+      "Le jeu de paume",
+      "Le tricot sous-marin"
+    ],
+    "explanation": "William G. Morgan a inventé le jeu en salle en 1895, et l'observateur Alfred Halstead a proposé le nouveau nom de volleyball après avoir remarqué les volées du jeu. Morgan avait d'abord dérivé le jeu du badminton, d'où la mintonette.",
+    "source_url": "https://fr.wikipedia.org/wiki/Volley-ball",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0046",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Lors de quels Jeux olympiques le premier relais de la flamme d'Olympie à la ville hôte a-t-il eu lieu ?",
+    "correct_answer": "Berlin 1936",
+    "incorrect_answers": [
+      "Amsterdam 1928",
+      "Londres 1948",
+      "Helsinki 1952",
+      "Par pigeon voyageur"
+    ],
+    "explanation": "Carl Diem a introduit le relais de la torche, sans précédent antique, aux Jeux de 1936 à Berlin. La flamme a alors parcouru environ 3 187 kilomètres d'Olympie à Berlin en douze jours.",
+    "source_url": "https://fr.wikipedia.org/wiki/Flamme_olympique",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0047",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Le nom pétanque vient d'une expression qui signifie quoi ?",
+    "correct_answer": "Pieds plantés",
+    "incorrect_answers": [
+      "Un départ en course",
+      "Le lancer roulé",
+      "Le tir à la cible",
+      "Chatouiller le gravier"
+    ],
+    "explanation": "La pétanque est née du jeu provençal à La Ciotat vers 1910, lorsqu'un ancien champion rongé par les rhumatismes ne pouvait plus courir avant de lancer. Le nom vient de l'expression provençale pieds tanqués, c'est-à-dire les pieds ancrés au sol.",
+    "source_url": "https://fr.wikipedia.org/wiki/P%C3%A9tanque",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
