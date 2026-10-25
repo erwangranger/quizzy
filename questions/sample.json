@@ -3076,5 +3076,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0033",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which reef off the coast of Australia is the largest living structure on Earth?",
+    "correct_answer": "The Great Barrier Reef",
+    "incorrect_answers": [
+      "The Belize Barrier Reef",
+      "The Red Sea coral reef",
+      "The Florida Reef",
+      "The world's largest jacuzzi"
+    ],
+    "explanation": "The Great Barrier Reef stretches about 2,300 km along Queensland and is built by billions of coral polyps. It is the biggest structure made by living organisms and can be spotted from space.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0034",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river flows through Vienna, Bratislava, Budapest and Belgrade?",
+    "correct_answer": "The Danube",
+    "incorrect_answers": [
+      "The Rhine",
+      "The Volga",
+      "The Seine",
+      "A very long garden hose"
+    ],
+    "explanation": "The Danube rises in Germany's Black Forest and runs about 2,850 km to the Black Sea, passing through or along 10 countries, more than any other river. Vienna, Budapest and Belgrade all grew on its banks.",
+    "source_url": "https://en.wikipedia.org/wiki/Danube",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0035",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which salty lake between Israel and Jordan sits at the lowest land elevation on Earth?",
+    "correct_answer": "The Dead Sea",
+    "incorrect_answers": [
+      "The Caspian Sea",
+      "The Great Salt Lake",
+      "Lake Assal",
+      "The world's largest pickle jar"
+    ],
+    "explanation": "The Dead Sea sits about 430 m below sea level and drops a little more every year. Its water is nearly 10 times saltier than the ocean, so swimmers float effortlessly.",
+    "source_url": "https://en.wikipedia.org/wiki/Dead_Sea",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0036",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which waterfall in Venezuela is the tallest in the world, dropping 979 m?",
+    "correct_answer": "Angel Falls",
+    "incorrect_answers": [
+      "Tugela Falls",
+      "Niagara Falls",
+      "Victoria Falls",
+      "The waterfall with a fear of heights"
+    ],
+    "explanation": "Angel Falls plunges 979 m from Auyan-tepui, a flat-topped mountain in Canaima National Park. The water falls so far that much of it turns to mist before reaching the ground.",
+    "source_url": "https://en.wikipedia.org/wiki/Angel_Falls",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0033",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which engineer, famous for his bridges and railways, designed the SS Great Eastern, launched in 1858?",
+    "correct_answer": "Isambard Kingdom Brunel",
+    "incorrect_answers": [
+      "George Stephenson",
+      "Thomas Telford",
+      "Joseph Bazalgette",
+      "The foreman's goldfish"
+    ],
+    "explanation": "At 211 m long, she was by far the largest ship ever built at her 1858 launch and could carry 4,000 passengers from England to Australia without refuelling.",
+    "source_url": "https://en.wikipedia.org/wiki/SS_Great_Eastern",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0034",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In which year did Roald Amundsen become the first explorer to reach the South Pole?",
+    "correct_answer": "1911",
+    "incorrect_answers": [
+      "1909",
+      "1912",
+      "1915",
+      "The year penguins got the vote"
+    ],
+    "explanation": "Amundsen and four companions reached the pole on 14 December 1911, beating Robert Falcon Scott's British party by five weeks.",
+    "source_url": "https://en.wikipedia.org/wiki/Amundsen%27s_South_Pole_expedition",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0035",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which kind of vessels did the English send among the Spanish Armada as it lay anchored off Calais in 1588, scattering its formation?",
+    "correct_answer": "Fireships",
+    "incorrect_answers": [
+      "Galleons",
+      "Galleys",
+      "Frigates",
+      "Spain's floating barbecue"
+    ],
+    "explanation": "The Armada anchored off Calais in August 1588 to link up with the Duke of Parma's army, and English fireships sent into the anchorage scattered it before the Battle of Gravelines.",
+    "source_url": "https://en.wikipedia.org/wiki/Spanish_Armada",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0036",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which British patriotic song, set to music by Thomas Arne in 1740, is most strongly associated with the Royal Navy?",
+    "correct_answer": "Rule, Britannia!",
+    "incorrect_answers": [
+      "Jerusalem",
+      "Land of Hope and Glory",
+      "God Save the King",
+      "The Admiral's shower song"
+    ],
+    "explanation": "It grew out of Alfred, a 1740 masque about Alfred the Great, with words by James Thomson and music by Thomas Arne, and is most strongly associated with the Royal Navy.",
+    "source_url": "https://en.wikipedia.org/wiki/Rule,_Britannia!",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0027",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What are Saturn's famous rings made almost entirely of?",
+    "correct_answer": "Water ice",
+    "incorrect_answers": [
+      "Iron dust",
+      "Frozen methane",
+      "Volcanic ash",
+      "A hula hoop the size of Texas"
+    ],
+    "explanation": "The rings are made almost entirely of water ice particles, ranging from micrometers to meters across, orbiting the planet. Galileo first spotted them through a telescope in 1610, though he could not tell what they were.",
+    "source_url": "https://en.wikipedia.org/wiki/Rings_of_Saturn",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0028",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which vitamin can the human body produce when skin is exposed to sunlight?",
+    "correct_answer": "Vitamin D",
+    "incorrect_answers": [
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin K",
+      "The free sample from the sun"
+    ],
+    "explanation": "Unlike the other twelve vitamins, vitamin D is only conditionally essential in the diet because ultraviolet B radiation in sunlight triggers its synthesis in the skin. Deficiency causes rickets in children.",
+    "source_url": "https://en.wikipedia.org/wiki/Vitamin_D",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0029",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which periodic comet last passed through the inner solar system in 1986 and is due back in 2061?",
+    "correct_answer": "Halley's Comet",
+    "incorrect_answers": [
+      "Hale-Bopp",
+      "Comet Encke",
+      "Comet Swift-Tuttle",
+      "The sky's most punctual snowball"
+    ],
+    "explanation": "Halley's Comet is the only known short-period comet consistently visible to the naked eye, returning roughly every 74 to 79 years. Edmond Halley showed in 1705 that earlier sightings were returns of the same comet.",
+    "source_url": "https://en.wikipedia.org/wiki/Halley%27s_Comet",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0027",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Norwegian painter created 'The Scream', the 1893 image of a figure clutching its face on a bridge?",
+    "correct_answer": "Edvard Munch",
+    "incorrect_answers": [
+      "Gustav Klimt",
+      "Wassily Kandinsky",
+      "Marc Chagall",
+      "Whoever stepped on his Lego"
+    ],
+    "explanation": "Edvard Munch made four versions of the image, saying he heard a scream pass through nature while walking at sunset above the Oslofjord; the 1893 painting was stolen from the National Gallery in Oslo in 1994 and recovered three months later.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Scream",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0028",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Approximately how tall is Michelangelo's marble statue of David in Florence?",
+    "correct_answer": "5.17 metres",
+    "incorrect_answers": [
+      "3.96 metres",
+      "6.7 metres",
+      "2.13 metres",
+      "Two giraffes wearing platform shoes"
+    ],
+    "explanation": "Michelangelo carved David from a single block of Carrara marble between 1501 and 1504; the statue stood in the Piazza della Signoria until 1873, when it moved indoors to the Galleria dell'Accademia.",
+    "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0029",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "The 1913 premiere of which Stravinsky ballet at the Theatre des Champs-Elysees in Paris caused one of the most famous near-riots in music history?",
+    "correct_answer": "The Rite of Spring",
+    "incorrect_answers": [
+      "The Firebird",
+      "Petrushka",
+      "The Afternoon of a Faun",
+      "The Rite of Spring Cleaning"
+    ],
+    "explanation": "Stravinsky's score and Vaslav Nijinsky's stark choreography premiered on 29 May 1913; catcalls, arguments and scuffles broke out among the Paris audience before the orchestra could finish the work.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Rite_of_Spring",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0024",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "What does the Swahili phrase in The Lion King's song Hakuna Matata mean?",
+    "correct_answer": "No worries",
+    "incorrect_answers": [
+      "Follow your heart",
+      "Long live the king",
+      "Circle of life",
+      "The official motto of the Ministry of Warthogs"
+    ],
+    "explanation": "Hakuna Matata is Swahili for no worries. Tim Rice and Elton John wrote five songs for the 1994 film, including Circle of Life and Can You Feel the Love Tonight.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Lion_King",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0025",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 2001 animated film was the first ever to win the Academy Award for Best Animated Feature?",
+    "correct_answer": "Shrek",
+    "incorrect_answers": [
+      "Monsters, Inc.",
+      "Toy Story",
+      "Spirited Away",
+      "A golden statuette of Lord Farquaad's haircut"
+    ],
+    "explanation": "Shrek won the inaugural Academy Award for Best Animated Feature in 2002, beating Monsters, Inc. and Jimmy Neutron: Boy Genius. In 2020 it became the first 21st-century film preserved in the National Film Registry.",
+    "source_url": "https://en.wikipedia.org/wiki/Shrek",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0026",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1927 film, often called the first talkie, was the first feature-length movie with synchronized dialogue and singing?",
+    "correct_answer": "The Jazz Singer",
+    "incorrect_answers": [
+      "Metropolis",
+      "The Singing Fool",
+      "Sunrise",
+      "A gramophone hidden in the popcorn machine"
+    ],
+    "explanation": "Alan Crosland's The Jazz Singer, starring Al Jolson, used the Vitaphone sound-on-disc system and effectively ended the silent era. It entered the US public domain on January 1, 2023.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Jazz_Singer",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0024",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In basketball, how high above the floor is the rim of the hoop?",
+    "correct_answer": "10 feet (3.05 m)",
+    "incorrect_answers": [
+      "8 feet (2.44 m)",
+      "12 feet (3.66 m)",
+      "15 feet (4.57 m)",
+      "Hoops float, height depends on the weather"
+    ],
+    "explanation": "The rim sits 10 feet (3.05 m) above the floor at every level of play, a height fixed since James Naismith nailed peach baskets to a balcony rail in 1891.",
+    "source_url": "https://en.wikipedia.org/wiki/Basketball",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0025",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "What distance does a modern marathon cover?",
+    "correct_answer": "42.195 km",
+    "incorrect_answers": [
+      "40 km",
+      "44.2 km",
+      "38.5 km",
+      "However far the nearest snack bar is"
+    ],
+    "explanation": "The odd 42.195 km distance was set at the 1908 London Olympics so the royal family could watch the finish from Windsor Castle, and it became standard in 1921.",
+    "source_url": "https://en.wikipedia.org/wiki/Marathon",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0026",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "What is the diameter of the dohyo, the ring in which sumo bouts take place?",
+    "correct_answer": "4.55 m",
+    "incorrect_answers": [
+      "3.60 m",
+      "5.20 m",
+      "6.70 m",
+      "A ring of spare rice-straw bales, width undisclosed"
+    ],
+    "explanation": "The dohyo is a 4.55 m circle of clay bounded by partially buried rice-straw bales; 6.7 m is the width of the square platform it stands on.",
+    "source_url": "https://en.wikipedia.org/wiki/Dohy%C5%8D",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
