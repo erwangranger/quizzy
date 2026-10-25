@@ -5356,5 +5356,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0057",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Le lac Supérieur, le plus grand lac d'eau douce du monde par sa superficie, borde quelle province canadienne ?",
+    "correct_answer": "L'Ontario",
+    "incorrect_answers": [
+      "Le Québec",
+      "Le Manitoba",
+      "La Colombie-Britannique",
+      "La province des Grands Lacs Hyper Gigantesques"
+    ],
+    "explanation": "Le lac Supérieur chevauche la frontière canado-américaine, bordé par l'Ontario au nord et à l'est, et par les États américains du Minnesota, du Wisconsin et du Michigan au sud et à l'ouest. Il contient environ un dixième de l'eau douce de surface de la planète.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_Sup%C3%A9rieur",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0058",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel pays, le plus grand archipel du monde, est composé d'environ 17 000 îles dont Java, Sumatra et Sulawesi ?",
+    "correct_answer": "L'Indonésie",
+    "incorrect_answers": [
+      "Les Philippines",
+      "Le Japon",
+      "Les Maldives",
+      "L'archipel flottant des îles à crêpes"
+    ],
+    "explanation": "L'Indonésie s'étire entre l'océan Indien et l'océan Pacifique sur quelque 17 000 îles, dont environ 900 sont habitées, ce qui en fait le plus grand archipel du monde. Situé sur la ceinture de feu du Pacifique, ce pays compte plus de volcans actifs que tout autre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Indon%C3%A9sie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0059",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle chaîne de montagnes, dressée le long de la côte occidentale de l'Amérique du Sud, est la plus longue chaîne continentale du monde ?",
+    "correct_answer": "La cordillère des Andes",
+    "incorrect_answers": [
+      "Les montagnes Rocheuses",
+      "L'Himalaya",
+      "Les Alpes",
+      "La cordillère qui se cache derrière les nuages le lundi"
+    ],
+    "explanation": "La cordillère des Andes s'étend sur environ 8 900 km à travers sept pays, du Venezuela au nord jusqu'à l'Argentine et au Chili au sud. L'Aconcagua, en Argentine, est le plus haut sommet en dehors de l'Asie.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cordill%C3%A8re_des_Andes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0060",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quelles deux capitales du monde se font face de part et d'autre du fleuve Congo, plus proches l'une de l'autre que n'importe quel autre couple de capitales nationales ?",
+    "correct_answer": "Kinshasa et Brazzaville",
+    "incorrect_answers": [
+      "Rome et le Vatican",
+      "Vienne et Bratislava",
+      "Le Caire et Jérusalem",
+      "Bankville-Gauche et Bankville-Droite"
+    ],
+    "explanation": "Kinshasa, capitale de la république démocratique du Congo, et Brazzaville, capitale de la république du Congo, se regardent de part et d'autre du fleuve Congo. Ce sont les deux capitales nationales les plus proches au monde sans être la même ville.",
+    "source_url": "https://fr.wikipedia.org/wiki/Kinshasa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0057",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Combien de caisses de thé de la Compagnie des Indes orientales les colons ont-ils jetées dans le port de Boston pendant la Boston Tea Party de 1773 ?",
+    "correct_answer": "342",
+    "incorrect_answers": [
+      "224",
+      "384",
+      "442",
+      "Le lot décaféiné, resté intact"
+    ],
+    "explanation": "Déguisés en guerriers mohawks, des colons ont monté à bord des navires Dartmouth, Eleanor et Beaver dans la nuit du 16 décembre 1773 et brisé 342 caisses de thé, d'une valeur d'environ 10 000 livres de l'époque.",
+    "source_url": "https://fr.wikipedia.org/wiki/Boston_Tea_Party",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0058",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel empereur maurya, bouleversé par le carnage de sa propre conquête du Kalinga, a renoncé à la guerre et fait graver des édits promouvant les valeurs bouddhiques sur des piliers dans tout son empire ?",
+    "correct_answer": "Ashoka",
+    "incorrect_answers": [
+      "Le cireur de piliers de Pataliputra",
+      "Bindusara",
+      "Samudragupta",
+      "Le polit-piliers de Pataliputra"
+    ],
+    "explanation": "Gravés sur des piliers et des parois rocheuses du sous-continent au 3e siècle avant notre ère, ces édits comptent parmi les plus anciens écrits déchiffrables de l'Inde ; James Prinsep a déchiffré l'écriture brahmi sur l'un d'eux en 1837 et retrouvé le nom d'Ashoka.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ashoka",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0059",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Combien de prisonniers ont été libérés lorsque la foule a pris d'assaut la forteresse de la Bastille en 1789 ?",
+    "correct_answer": "7",
+    "incorrect_answers": [
+      "17",
+      "70",
+      "170",
+      "Un stock de porte-clés souvenir"
+    ],
+    "explanation": "Le 14 juillet 1789, la forteresse médiévale ne détenait que sept prisonniers : quatre faussaires, deux hommes internés comme fous et un aristocrate, le comte de Solages. La foule s'y est aussi emparée de la poudre, et le gouverneur Bernard-René de Launay a été tué après la reddition.",
+    "source_url": "https://fr.wikipedia.org/wiki/Prise_de_la_Bastille",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0060",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quel homme d'État athénien a secrètement persuadé le roi perse Xerxès d'attaquer en mer, attirant sa flotte bien plus nombreuse dans le passage étroit entre Salamine et le continent en 480 avant notre ère ?",
+    "correct_answer": "Thémistocle",
+    "incorrect_answers": [
+      "Périclès",
+      "Léonidas",
+      "Aristide",
+      "Ulysse, entre deux voyages"
+    ],
+    "explanation": "Un messager de confiance a annoncé à Xerxès que les Grecs s'apprêtaient à fuir, si bien que la flotte perse a ramé toute la nuit dans le détroit, où sa supériorité numérique ne comptait plus pour rien. Xerxès s'est ensuite replié avec une grande partie de son armée, laissant Mardonius subir une défaite finale à Platées.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bataille_de_Salamine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0045",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quel métal est liquide à température ambiante ?",
+    "correct_answer": "Le mercure",
+    "incorrect_answers": [
+      "Le brome",
+      "Le gallium",
+      "Le sodium",
+      "Un argument solide, visiblement"
+    ],
+    "explanation": "Le mercure, aussi appelé vif-argent, est le seul métal liquide à température ambiante ; le brome, seul autre élément liquide, n'est pas un métal. Il gèle à moins 38,8 degrés Celsius et bout à 357 degrés, d'où son rôle dans les anciens thermomètres.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mercure_(chimie)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0046",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quelle planète tourne presque couchée sur le côté, avec un axe incliné d'environ 98 degrés ?",
+    "correct_answer": "Uranus",
+    "incorrect_answers": [
+      "Neptune",
+      "Jupiter",
+      "Saturne",
+      "Une roulade très paresseuse"
+    ],
+    "explanation": "L'axe de rotation d'Uranus est incliné d'environ 98 degrés : la planète roule autour du Soleil comme un tonneau au lieu de tourner debout. Chaque pôle connaît 42 ans d'ensoleillement suivis de 42 ans d'obscurité au cours de son orbite de 84 ans.",
+    "source_url": "https://fr.wikipedia.org/wiki/Uranus_(planète)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0047",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quel est le plus petit et le plus léger os du corps humain adulte ?",
+    "correct_answer": "L'étrier",
+    "incorrect_answers": [
+      "Le marteau",
+      "L'enclume",
+      "Le fémur",
+      "La chaussure bébé du fémur"
+    ],
+    "explanation": "Plus petit et plus léger os du corps humain, l'étrier mesure environ 3 millimètres et se trouve dans l'oreille moyenne, troisième des trois osselets. Nommé d'après la pièce d'équitation qu'il rappelle, il transmet les vibrations de l'enclume vers l'oreille interne.",
+    "source_url": "https://fr.wikipedia.org/wiki/Étrier_(os)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0045",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel sculpteur de la Renaissance a déclaré que les portes est du baptistère de Florence étaient si belles qu'elles pourraient orner le Paradis ?",
+    "correct_answer": "Michel-Ange",
+    "incorrect_answers": [
+      "Lorenzo Ghiberti",
+      "Donatello",
+      "Filippo Brunelleschi",
+      "Le critique de portes de la Renaissance"
+    ],
+    "explanation": "Lorenzo Ghiberti a consacré plus de 25 ans à ces portes dorées (1425 à 1452) ; le compliment de Michel-Ange leur a donné le nom qu'elles portent encore.",
+    "source_url": "https://fr.wikipedia.org/wiki/Porte_du_Paradis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0046",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Sur quel fleuve la Water Music de Haendel a-t-elle été créée en 1717, lors d'un concert royal offert au roi George Ier ?",
+    "correct_answer": "La Tamise",
+    "incorrect_answers": [
+      "La Seine",
+      "Le Danube",
+      "Le Rhin",
+      "La flaque dans la cour du palais"
+    ],
+    "explanation": "Le roi George Ier remonte le fleuve de Whitehall à Chelsea tandis qu'environ 50 musiciens jouent depuis une barque voisine ; le roi, enchanté, demande de rejouer l'œuvre 3 fois.",
+    "source_url": "https://fr.wikipedia.org/wiki/Water_Music",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0047",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quel est le sous-titre du roman Frankenstein, publié anonymement par Mary Shelley en 1818 ?",
+    "correct_answer": "Le Prométhée moderne",
+    "incorrect_answers": [
+      "Le Nouveau Pygmalion",
+      "Le Savant gothique",
+      "Le Sorcier moderne",
+      "Un manuel de cuisine, en fait"
+    ],
+    "explanation": "Le sous-titre compare Victor Frankenstein à Prométhée, le Titan de la mythologie grecque qui a volé le feu des dieux ; la première édition paraît anonymement en 1818.",
+    "source_url": "https://fr.wikipedia.org/wiki/Frankenstein_ou_le_Prom%C3%A9th%C3%A9e_moderne",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0042",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Dans le film Le Magicien d'Oz de 1939, de quelle couleur sont les fameux souliers de Dorothy, alors qu'ils sont argentés dans le roman original ?",
+    "correct_answer": "Rubis",
+    "incorrect_answers": [
+      "Émeraude",
+      "Saphir",
+      "Améthyste",
+      "Des claquettes empruntées au voisin"
+    ],
+    "explanation": "Les cinéastes ont teinté les souliers en rubis pour profiter du Technicolor, remplaçant la paire argentée du roman de Lyman Frank Baum. La paire portée par Judy Garland est exposée à la Smithsonian Institution.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Magicien_d%27Oz_(film,_1939)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0043",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quelle chanson Randy Newman a-t-il écrite et interprétée comme thème principal du film Toy Story, sorti en 1995 ?",
+    "correct_answer": "You've Got a Friend in Me",
+    "incorrect_answers": [
+      "I Will Go Sailing No More",
+      "When She Loved Me",
+      "Strange Things",
+      "Les jouets chantent sous la pluie"
+    ],
+    "explanation": "You've Got a Friend in Me ouvre Toy Story, premier long métrage d'animation entièrement réalisé par ordinateur, et revient dans les quatre volets de la série. Newman a aussi signé la musique du film, et la chanson a été nommée à l'Oscar de la meilleure chanson originale.",
+    "source_url": "https://fr.wikipedia.org/wiki/You%27ve_Got_a_Friend_in_Me",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0044",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Dans Star Wars, quel type de cristal, logé dans la poignée du sabre laser, alimente la lame et lui donne sa couleur ?",
+    "correct_answer": "Cristal kyber",
+    "incorrect_answers": [
+      "Cristal de plasma",
+      "Cristal de quartz",
+      "Kryptonite",
+      "Trois piles AAA"
+    ],
+    "explanation": "Le cristal kyber concentre l'énergie brute en un rayon et donne sa couleur à la lame. Les Jedi portent des lames bleues ou vertes, tandis que la lame rouge est l'arme des utilisateurs du Côté obscur, notamment les Sith.",
+    "source_url": "https://fr.wikipedia.org/wiki/Sabre_laser",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0042",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Quelle devise latine de trois mots est traditionnellement celle des Jeux olympiques ?",
+    "correct_answer": "Citius, Altius, Fortius",
+    "incorrect_answers": [
+      "Veni, Vidi, Vici",
+      "Semper Fidelis",
+      "E Pluribus Unum",
+      "Citius, Altius, Bouffiuz"
+    ],
+    "explanation": "Ces trois mots latins signifient plus vite, plus haut, plus fort ; Pierre de Coubertin les a empruntés à son ami Henri Didon, un prêtre dominicain passionné d'athlétisme. En 2021, le CIO y a ajouté un quatrième mot : Ensemble.",
+    "source_url": "https://fr.wikipedia.org/wiki/Symboles_olympiques",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0043",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Aux échecs, comment s'appelle la capture particulière qui doit être jouée immédiatement après une avance de deux cases d'un pion adverse ?",
+    "correct_answer": "La prise en passant",
+    "incorrect_answers": [
+      "Le roque",
+      "La promotion",
+      "Le zugzwang",
+      "L'embouteillage de pions"
+    ],
+    "explanation": "La prise en passant permet de capturer un pion adverse sur la case qu'il a franchie, comme s'il n'avait avancé que d'une case. Elle n'est légale qu'au tour qui suit immédiatement le double pas du pion adverse.",
+    "source_url": "https://fr.wikipedia.org/wiki/En_passant_(échecs)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0044",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Au golf, quel nom d'oiseau désigne un score de trois coups sous le par sur un même trou ?",
+    "correct_answer": "L'albatros",
+    "incorrect_answers": [
+      "L'aigle",
+      "Le condor",
+      "L'osprey",
+      "Le pélican furieux"
+    ],
+    "explanation": "Le thème ornithologique grimpe avec le score : birdie à un coup sous le par, aigle à deux, albatros à trois, tandis que le condor, quatre coups sous le par, est si rare que seuls six cas sont attestés depuis 1962.",
+    "source_url": "https://fr.wikipedia.org/wiki/Par_(golf)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

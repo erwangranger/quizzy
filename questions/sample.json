@@ -5356,5 +5356,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0057",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Lake Superior, the largest freshwater lake in the world by surface area, borders which Canadian province?",
+    "correct_answer": "Ontario",
+    "incorrect_answers": [
+      "Quebec",
+      "Manitoba",
+      "British Columbia",
+      "The province of Really Big Lakes"
+    ],
+    "explanation": "Lake Superior straddles the Canada-United States border, with Ontario to the north and east and the US states of Minnesota, Wisconsin and Michigan to the south and west. It holds about a tenth of the world's surface fresh water.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Superior",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0058",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which country, the world's largest archipelagic state, is made up of around 17,000 islands including Java, Sumatra and Sulawesi?",
+    "correct_answer": "Indonesia",
+    "incorrect_answers": [
+      "Philippines",
+      "Japan",
+      "Maldives",
+      "The Floating Archipelago of Pancake Islands"
+    ],
+    "explanation": "Indonesia stretches between the Indian and Pacific oceans across some 17,000 islands, about 900 of them inhabited, making it the largest archipelagic state on Earth. It sits on the Pacific Ring of Fire and has more active volcanoes than any other country.",
+    "source_url": "https://en.wikipedia.org/wiki/Indonesia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0059",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which mountain range, running along the western edge of South America, is the longest continental mountain range in the world?",
+    "correct_answer": "The Andes",
+    "incorrect_answers": [
+      "The Rockies",
+      "The Himalayas",
+      "The Alps",
+      "The range that hides behind clouds on Mondays"
+    ],
+    "explanation": "The Andes stretch about 8,900 km through seven countries, from Venezuela in the north down to Argentina and Chile in the south. Aconcagua, in Argentina, is the highest peak outside Asia.",
+    "source_url": "https://en.wikipedia.org/wiki/Andes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0060",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which two world capitals sit face to face on opposite banks of the Congo River, closer together than any other pair of national capitals?",
+    "correct_answer": "Kinshasa and Brazzaville",
+    "incorrect_answers": [
+      "Rome and Vatican City",
+      "Vienna and Bratislava",
+      "Cairo and Jerusalem",
+      "Left Bankville and Right Bankville"
+    ],
+    "explanation": "Kinshasa, capital of the Democratic Republic of the Congo, and Brazzaville, capital of the Republic of the Congo, face each other across the Congo River. They are the two closest capital cities in the world that are not the same city.",
+    "source_url": "https://en.wikipedia.org/wiki/Kinshasa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0057",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "How many chests of British East India Company tea did colonists dump into Boston Harbor during the Boston Tea Party of 1773?",
+    "correct_answer": "342",
+    "incorrect_answers": [
+      "224",
+      "384",
+      "442",
+      "The decaf shipment, untouched"
+    ],
+    "explanation": "Some colonists, thinly disguised as Mohawk warriors, boarded the ships Dartmouth, Eleanor and Beaver on the night of 16 December 1773 and smashed open 342 chests of tea, worth around 10,000 pounds at the time.",
+    "source_url": "https://en.wikipedia.org/wiki/Boston_Tea_Party",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0058",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Mauryan emperor, shaken by the bloodshed of his own conquest of Kalinga, renounced war and had edicts promoting Buddhist values carved on pillars across his empire?",
+    "correct_answer": "Ashoka",
+    "incorrect_answers": [
+      "Chandragupta Maurya",
+      "Bindusara",
+      "Samudragupta",
+      "The pillar-polisher of Pataliputra"
+    ],
+    "explanation": "Carved on pillars and rock faces across the subcontinent in the third century BC, the edicts are among the earliest decipherable writing in India; James Prinsep cracked the Brahmi script on them in 1837 and recovered Ashoka's name.",
+    "source_url": "https://en.wikipedia.org/wiki/Ashoka",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0059",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "How many prisoners were freed when the crowd stormed the Bastille fortress in 1789?",
+    "correct_answer": "7",
+    "incorrect_answers": [
+      "17",
+      "70",
+      "170",
+      "A supply of souvenir keychains"
+    ],
+    "explanation": "On 14 July 1789 the medieval fortress held just seven inmates: four forgers, two men held as insane and one aristocrat, the Comte de Solages. The crowd also seized its gunpowder, and Governor Bernard-René de Launay was killed after surrendering.",
+    "source_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0060",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which Athenian statesman secretly persuaded the Persian king Xerxes to attack at sea, luring his much larger fleet into the narrow passage between Salamis and the mainland in 480 BC?",
+    "correct_answer": "Themistocles",
+    "incorrect_answers": [
+      "Pericles",
+      "Leonidas",
+      "Aristides",
+      "Odysseus, between voyages"
+    ],
+    "explanation": "A trusted messenger told Xerxes the Greeks were about to slip away, so the Persian fleet rowed into the strait all night, where its numbers counted for little. Xerxes soon withdrew with much of his army, leaving Mardonius to a final defeat at Plataea.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0045",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which metal is liquid at room temperature?",
+    "correct_answer": "Mercury",
+    "incorrect_answers": [
+      "Bromine",
+      "Gallium",
+      "Sodium",
+      "A solid argument, apparently"
+    ],
+    "explanation": "Mercury, also called quicksilver, is the only metal that stays liquid at room temperature; bromine, the only other liquid element, is a nonmetal. It freezes at minus 38.8 degrees Celsius and boils at 357 degrees, which is why it filled older thermometers.",
+    "source_url": "https://en.wikipedia.org/wiki/Mercury_(element)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0046",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which planet rotates almost on its side, with its axis tilted by about 98 degrees?",
+    "correct_answer": "Uranus",
+    "incorrect_answers": [
+      "Neptune",
+      "Jupiter",
+      "Saturn",
+      "A very lazy somersault"
+    ],
+    "explanation": "The rotation axis of Uranus is tilted by about 98 degrees, so the planet rolls around the Sun like a barrel instead of spinning upright. Each pole spends 42 years in sunlight followed by 42 years of darkness during its 84-year orbit.",
+    "source_url": "https://en.wikipedia.org/wiki/Uranus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0047",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the smallest and lightest bone in the adult human body?",
+    "correct_answer": "The stapes",
+    "incorrect_answers": [
+      "The malleus",
+      "The incus",
+      "The femur",
+      "The femur's baby shoe"
+    ],
+    "explanation": "The stapes, named for its stirrup shape, sits in the middle ear as the third of three tiny ossicles and measures about 3 millimetres. It passes sound vibrations from the incus to the inner ear and is lighter than a grain of rice.",
+    "source_url": "https://en.wikipedia.org/wiki/Stapes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0045",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Renaissance sculptor said the east doors of the Florence Baptistery were so beautiful that they might stand at the gates of Paradise?",
+    "correct_answer": "Michelangelo",
+    "incorrect_answers": [
+      "Lorenzo Ghiberti",
+      "Donatello",
+      "Filippo Brunelleschi",
+      "The door reviewer of the Renaissance"
+    ],
+    "explanation": "Lorenzo Ghiberti spent more than 25 years on the gilded east doors (1425 to 1452); Michelangelo's compliment gave them the name they still carry.",
+    "source_url": "https://en.wikipedia.org/wiki/Florence_Baptistery",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0046",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "On which river did Handel's Water Music premiere in 1717, during a royal concert for King George I?",
+    "correct_answer": "The Thames",
+    "incorrect_answers": [
+      "The Seine",
+      "The Danube",
+      "The Rhine",
+      "The puddle in the palace courtyard"
+    ],
+    "explanation": "King George I sailed upriver from Whitehall to Chelsea while about 50 musicians played from a nearby barge; the delighted king ordered the music repeated 3 times.",
+    "source_url": "https://en.wikipedia.org/wiki/Water_Music",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0047",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "What is the subtitle of Mary Shelley's 1818 novel Frankenstein?",
+    "correct_answer": "The Modern Prometheus",
+    "incorrect_answers": [
+      "The New Pygmalion",
+      "The Gothic Scientist",
+      "The Modern Sorcerer",
+      "Frankenstein's Book Club"
+    ],
+    "explanation": "The subtitle casts Victor Frankenstein as a new Prometheus, the Titan of Greek myth who stole fire from the gods; the first edition appeared anonymously in 1818.",
+    "source_url": "https://en.wikipedia.org/wiki/Frankenstein",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0042",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In the 1939 film The Wizard of Oz, what color are Dorothy's magical shoes, changed from silver in the original novel?",
+    "correct_answer": "Ruby",
+    "incorrect_answers": [
+      "Emerald",
+      "Sapphire",
+      "Amethyst",
+      "Sneakers from a Kansas mall"
+    ],
+    "explanation": "The filmmakers dyed the shoes ruby red to show off Technicolor, replacing the silver pair of Lyman Frank Baum's novel. The shoes Judy Garland wore are displayed at the Smithsonian.",
+    "source_url": "https://en.wikipedia.org/wiki/Ruby_slippers",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0043",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which song did Randy Newman write and perform as the main theme of the 1995 film Toy Story?",
+    "correct_answer": "You've Got a Friend in Me",
+    "incorrect_answers": [
+      "I Will Go Sailing No More",
+      "When She Loved Me",
+      "Strange Things",
+      "A ballad about a lonely yo-yo"
+    ],
+    "explanation": "Randy Newman wrote and sang the theme for Pixar's first feature, and it returns across all four Toy Story films. The song earned Academy Award and Golden Globe nominations for Best Original Song.",
+    "source_url": "https://en.wikipedia.org/wiki/You%27ve_Got_a_Friend_in_Me",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0044",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In Star Wars lore, what kind of crystal, held in a lightsaber's hilt, powers the blade and gives it its color?",
+    "correct_answer": "Kyber crystal",
+    "incorrect_answers": [
+      "Plasma crystal",
+      "Quartz crystal",
+      "Kryptonite",
+      "Three AAA batteries"
+    ],
+    "explanation": "A lightsaber's kyber crystal powers the blade and sets its color. Jedi wield blue, green and other hues, while the Sith carry red blades that mark the dark side.",
+    "source_url": "https://en.wikipedia.org/wiki/Lightsaber",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0042",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "What three-word Latin phrase is the traditional motto of the Olympic Games?",
+    "correct_answer": "Citius, Altius, Fortius",
+    "incorrect_answers": [
+      "Veni, Vidi, Vici",
+      "Semper Fidelis",
+      "E Pluribus Unum",
+      "Citius, Altius, Hungrius"
+    ],
+    "explanation": "The three Latin words mean Faster, Higher, Stronger; Baron Pierre de Coubertin borrowed them from his friend Henri Didon, a Dominican priest and athletics enthusiast. In 2021 the IOC added a fourth word, Together, to the motto.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympic_symbols",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0043",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In chess, what is the name of the special pawn capture that must be made immediately after an enemy pawn advances two squares?",
+    "correct_answer": "En passant",
+    "incorrect_answers": [
+      "Castling",
+      "Promotion",
+      "Zugzwang",
+      "The pawn traffic jam"
+    ],
+    "explanation": "En passant is French for ‘in passing’: the capturing pawn lands on the square the enemy pawn skipped over, as if it had advanced only one square. The capture is legal only on the turn immediately after the double advance.",
+    "source_url": "https://en.wikipedia.org/wiki/En_passant",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0044",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "In golf, what bird’s name is given to a score of three strokes under par on a single hole?",
+    "correct_answer": "Albatross",
+    "incorrect_answers": [
+      "Eagle",
+      "Condor",
+      "Osprey",
+      "The angry pelican"
+    ],
+    "explanation": "American golfers often call the same score a double eagle. The bird theme climbs with the score: birdie is one under par, eagle two, albatross three, while a condor, four under par, is so rare that only a handful have ever been recorded.",
+    "source_url": "https://en.wikipedia.org/wiki/Par_(score)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
