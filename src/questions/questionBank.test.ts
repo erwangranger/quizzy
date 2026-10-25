@@ -88,11 +88,41 @@ describe('questionBank', () => {
     const enPool = loadAllQuestions().filter((q) => q.lang === 'en').length
     const { questions, poolReset } = drawQuestions({ lang: 'en', categories: [], count: 1000 })
     expect(questions).toHaveLength(enPool)
-    expect(poolReset).toBe(true)
+    // An over-draw of a full pool takes every question fresh.
+    expect(poolReset).toBe(false)
+    const second = drawQuestions({ lang: 'en', categories: [], count: 1000 })
+    // The immediate redraw has no unseen questions left.
+    expect(second.poolReset).toBe(true)
     const frPool = loadAllQuestions().filter((q) => q.lang === 'fr').length
     const fr = drawQuestions({ lang: 'fr', categories: [], count: 1000 })
     expect(fr.questions).toHaveLength(frPool)
     expect(fr.questions.every((q) => q.lang === 'fr')).toBe(true)
+  })
+
+  it('blends unseen questions with the least recently seen repeats', () => {
+    const category = 'recent-news'
+    const pool = loadAllQuestions().filter((q) => q.lang === 'en' && q.category === category).length
+    const first = drawQuestions({ lang: 'en', categories: [category], count: pool - 1 })
+    expect(first.poolReset).toBe(false)
+    const second = drawQuestions({ lang: 'en', categories: [category], count: 2 })
+    expect(second.questions).toHaveLength(2)
+    const overlap = second.questions.filter((q) => first.questions.some((f) => f.id === q.id))
+    expect(overlap).toHaveLength(1)
+    // The repeat is the first appended id: oldest seen refills first.
+    expect(overlap[0].id).toBe(first.questions[0].id)
+    expect(second.poolReset).toBe(true)
+  })
+
+  it('does not duplicate repeats when the seen list holds duplicate ids', () => {
+    const category = 'recent-news'
+    const pool = loadAllQuestions().filter((q) => q.lang === 'en' && q.category === category).length
+    // Blend draws re-append repeat ids to the seen list; a later blend
+    // drawing past the pool must not push the same question twice.
+    drawQuestions({ lang: 'en', categories: [category], count: pool - 9 })
+    drawQuestions({ lang: 'en', categories: [category], count: 12 })
+    const third = drawQuestions({ lang: 'en', categories: [category], count: pool + 1 })
+    expect(third.questions).toHaveLength(pool)
+    expect(new Set(third.questions.map((q) => q.id)).size).toBe(pool)
   })
 
 

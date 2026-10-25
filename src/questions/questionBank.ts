@@ -88,8 +88,9 @@ export interface DrawResult {
 }
 
 // Draws `count` random questions without repeats within a game, preferring
-// questions not seen recently. When the unseen pool is exhausted, resets it
-// and reports poolReset so the UI can say so.
+// questions not seen recently. Takes every unseen question first, then fills
+// the remainder with the least-recently-seen repeats; reports poolReset when
+// the draw includes previously-seen questions.
 export function drawQuestions({ lang, categories, count, difficulty }: DrawOptions): DrawResult {
   const pool = loadAllQuestions().filter(
     (q) =>
@@ -98,7 +99,8 @@ export function drawQuestions({ lang, categories, count, difficulty }: DrawOptio
       (difficulty === undefined || q.difficulty === difficulty),
   )
 
-  const seen = new Set(getSeenIds())
+  const seenIds = getSeenIds()
+  const seen = new Set(seenIds)
   const unseen = pool.filter((q) => !seen.has(q.id))
 
   let picked: Question[]
@@ -106,12 +108,23 @@ export function drawQuestions({ lang, categories, count, difficulty }: DrawOptio
   if (unseen.length >= count) {
     picked = shuffle(unseen).slice(0, count)
   } else {
-    // Not enough fresh questions: reset recency and redraw from the full pool
-    poolReset = pool.length > 0 && unseen.length < count
-    picked = shuffle(pool).slice(0, Math.min(count, pool.length))
+    // Not enough fresh questions: take all fresh ones, then refill with the
+    // least-recently-seen repeats (front of the seen list is the oldest).
+    const fresh = shuffle(unseen)
+    const pickedIds = new Set(fresh.map((q) => q.id))
+    const repeats: Question[] = []
+    for (const id of seenIds) {
+      if (pickedIds.has(id)) continue
+      const q = pool.find((c) => c.id === id)
+      if (q) {
+        repeats.push(q)
+        pickedIds.add(id)
+      }
+    }
+    picked = [...fresh, ...repeats].slice(0, count)
+    poolReset = picked.some((q) => seen.has(q.id))
   }
 
-  const seenIds = getSeenIds()
   saveSeenIds([...seenIds, ...picked.map((q) => q.id)])
 
   return { questions: picked, poolReset }
