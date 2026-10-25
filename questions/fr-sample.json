@@ -2190,7 +2190,7 @@
     "category": "history",
     "difficulty": 3,
     "question": "En 1834, brûler six siècles de bâtons de comptage en bois a détruit par accident quel bâtiment ?",
-    "correct_answer": "Le Parlement britannique",
+    "correct_answer": "Le palais de Westminster",
     "incorrect_answers": [
       "La tour de Londres",
       "L'abbaye de Westminster",
@@ -2227,7 +2227,7 @@
     "lang": "fr",
     "category": "science",
     "difficulty": 3,
-    "question": "Quel symbole chimique désigne l'azote ?",
+    "question": "Quel élément chimique est représenté par le symbole N ?",
     "correct_answer": "N",
     "incorrect_answers": [
       "Nd",
@@ -2311,7 +2311,7 @@
       "150",
       "Un jeu parfait au billard, mais en plus classe"
     ],
-    "explanation": "Un break maximum empocher les 15 rouges avec 15 noirs pour 120 points, puis les six couleurs pour 27 points de plus. Joe Davis a réussi le premier 147 officiel en 1955 ; celui de Ronnie O'Sullivan au Championnat du monde 1997 n'a pris que 5 minutes et 8 secondes.",
+    "explanation": "Un break maximum consiste à empocher les 15 rouges avec 15 noirs pour 120 points, puis les six couleurs pour 27 points de plus. Joe Davis a réussi le premier 147 officiel en 1955 ; celui de Ronnie O'Sullivan au Championnat du monde 1997 n'a pris que 5 minutes et 8 secondes.",
     "source_url": "https://fr.wikipedia.org/wiki/147_(snooker)",
     "as_of": null,
     "origin": "claude",
