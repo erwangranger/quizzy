@@ -4280,11 +4280,11 @@
     "category": "geography",
     "difficulty": 3,
     "question": "Bornéo est partagée entre trois pays ; lequel n'en fait pas partie ?",
-    "correct_answer": "L'Indonésie",
+    "correct_answer": "Le Vietnam",
     "incorrect_answers": [
-      "Brunei",
+      "L'Indonésie",
       "La Malaisie",
-      "Le Vietnam",
+      "Brunei",
       "La république de Bornéo-Nova"
     ],
     "explanation": "L'île est partagée entre Brunei et la Malaisie au nord, et l'Indonésie au sud, où elle est appelée Kalimantan. Avec environ 743 000 kilomètres carrés, c'est la troisième plus grande île du monde.",

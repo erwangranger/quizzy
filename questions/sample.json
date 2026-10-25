@@ -4280,11 +4280,11 @@
     "category": "geography",
     "difficulty": 3,
     "question": "Borneo is shared by three countries; which is NOT one of them?",
-    "correct_answer": "Indonesia",
+    "correct_answer": "Vietnam",
     "incorrect_answers": [
-      "Brunei",
+      "Indonesia",
       "Malaysia",
-      "Vietnam",
+      "Brunei",
       "The Republic of Borneo-Nova"
     ],
     "explanation": "The island is split between Brunei and Malaysia in the north and Indonesia in the south, where it is called Kalimantan. At about 743,000 square km it is the third-largest island in the world.",
