@@ -4596,5 +4596,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0049",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle est la capitale la plus froide du monde en température annuelle moyenne ?",
+    "correct_answer": "Oulan-Bator",
+    "incorrect_answers": [
+      "Moscou",
+      "Ottawa",
+      "Reykjavik",
+      "La chambre froide de Mongolie"
+    ],
+    "explanation": "Oulan-Bator se niche dans une vallée de la rivière Tuul, au centre-nord de la Mongolie, à environ 1 300 m d'altitude. Ses hivers longs et secs et son climat continental froid en font la capitale la plus froide du monde, devant Moscou ou Ottawa.",
+    "source_url": "https://fr.wikipedia.org/wiki/Oulan-Bator",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0050",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel est le plus long fleuve d'Asie ?",
+    "correct_answer": "Le Yangtsé",
+    "incorrect_answers": [
+      "Le Gange",
+      "Le Mékong",
+      "Le fleuve Jaune",
+      "Le grand frère du Volga"
+    ],
+    "explanation": "Le Yangtsé parcourt environ 6 380 km du plateau Tibétain à la mer de Chine orientale, ce qui en fait le troisième fleuve du monde après le Nil et l'Amazone. Son bassin est le plus peuplé du monde et rassemble près d'un tiers de la population chinoise.",
+    "source_url": "https://fr.wikipedia.org/wiki/Yangts%C3%A9",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0051",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle est la plus haute montagne en dehors de l'Asie ?",
+    "correct_answer": "L'Aconcagua",
+    "incorrect_answers": [
+      "Le Denali",
+      "Le Kilimandjaro",
+      "L'Elbrouz",
+      "La rumeur la plus haute des Andes"
+    ],
+    "explanation": "L'Aconcagua, le « colosse de l'Amérique », s'élève à environ 6 960 m dans la cordillère des Andes, en Argentine. C'est le point culminant des Amériques et de l'hémisphère sud, devant le Denali, plus haut sommet d'Amérique du Nord à près de 6 190 m.",
+    "source_url": "https://fr.wikipedia.org/wiki/Aconcagua",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0052",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quelle montagne est considérée comme la plus haute du monde si on la mesure depuis sa base sous-marine ?",
+    "correct_answer": "Le Mauna Kea",
+    "incorrect_answers": [
+      "Le mont Everest",
+      "Le K2",
+      "L'Annapurna",
+      "Une combinaison de plongée, après un bain"
+    ],
+    "explanation": "Le Mauna Kea, à Hawaï, culmine à 4 207 m d'altitude, mais ses flancs continuent sur environ 6 000 m jusqu'au plancher du Pacifique, ce qui porte son total base-sommet au-dessus de 10 000 m. C'est pourquoi certaines autorités le disent plus haute que l'Everest, qui domine seulement au-dessus du niveau de la mer.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mauna_Kea",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0049",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel ancien réseau de routes commerciales acheminait la soie de la Chine vers l'Europe ?",
+    "correct_answer": "La route de la soie",
+    "incorrect_answers": [
+      "La route de l'ambre",
+      "La route de l'encens",
+      "La route du thé et des chevaux",
+      "L'express du chameau"
+    ],
+    "explanation": "La route de la soie relia la Chine à l'Asie centrale, à l'Inde, à la Perse et à la Méditerranée pendant près de 1 500 ans. Marchands et pèlerins y circulaient avec les marchandises ; l'explorateur Sven Hedin a popularisé ce nom au XXe siècle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Route_de_la_soie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0050",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel édifice à coupole, ancienne cathédrale puis mosquée, est aujourd'hui un grand musée d'Istanbul ?",
+    "correct_answer": "Sainte-Sophie",
+    "incorrect_answers": [
+      "La mosquée Bleue",
+      "Le palais de Topkapi",
+      "La Citerne Basilique",
+      "Le grand parapluie bleu du bazar"
+    ],
+    "explanation": "Construite pour l'empereur Justinien Ier et consacrée en 537, Sainte-Sophie est restée pendant près de mille ans le plus grand espace couvert du monde. Devenue mosquée après 1453, elle fut un musée en 1935, puis redevint une mosquée en 2020.",
+    "source_url": "https://fr.wikipedia.org/wiki/Sainte-Sophie_(Constantinople)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0051",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel grand recensement de l'Angleterre ordonné par Guillaume le Conquérant porte le nom du Jugement dernier ?",
+    "correct_answer": "Le Domesday Book",
+    "incorrect_answers": [
+      "La Chronique anglo-saxonne",
+      "Le Danelaw",
+      "L'Assize de Clarendon",
+      "Le devoir de vacances royal"
+    ],
+    "explanation": "Commandé en 1085 et achevé en 1086, le Domesday Book consignait qui détenait chaque parcelle de terre et ce qu'elle valait, afin que rien ne puisse être contesté. Seuls deux volumes du manuscrit subsistent, conservés aux National Archives.",
+    "source_url": "https://fr.wikipedia.org/wiki/Domesday_Book",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0052",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quel as de l'aviation de la Première Guerre mondiale a gagné le surnom de Baron rouge avec 80 victoires homologuées ?",
+    "correct_answer": "Manfred von Richthofen",
+    "incorrect_answers": [
+      "Eddie Rickenbacker",
+      "René Fonck",
+      "Oswald Boelcke",
+      "Baron Mauve des airs"
+    ],
+    "explanation": "L'as allemand Manfred von Richthofen peignait son avion en rouge et menait un escadron aux livrées si colorées que les pilotes l'appelaient le Cirque volant. Il a obtenu 80 victoires homologuées avant d'être abattu en avril 1918.",
+    "source_url": "https://fr.wikipedia.org/wiki/Manfred_von_Richthofen",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0039",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quel métal se trouve au centre de chaque molécule d'hémoglobine, permettant aux globules rouges de transporter l'oxygène dans le corps ?",
+    "correct_answer": "Le fer",
+    "incorrect_answers": [
+      "Le cuivre",
+      "Le zinc",
+      "Le magnésium",
+      "Le même métal que les cuillères souvenir"
+    ],
+    "explanation": "L'hémoglobine est une métalloprotéine contenant du fer, présente dans les globules rouges, qui fixe l'oxygène dans les poumons et le relaie aux tissus. Un manque de fer réduit l'hémoglobine, d'où l'anémie.",
+    "source_url": "https://fr.wikipedia.org/wiki/H%C3%A9moglobine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0040",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "À quelle vitesse le son se propage-t-il dans l'air à température ambiante, au niveau de la mer ?",
+    "correct_answer": "Environ 343 mètres par seconde",
+    "incorrect_answers": [
+      "Environ 34 mètres par seconde",
+      "Environ 1 225 mètres par seconde",
+      "Environ 3 430 mètres par seconde",
+      "Un couloir par hourra"
+    ],
+    "explanation": "À 20 degrés Celsius, la vitesse du son dans l'air est d'environ 343 mètres par seconde, soit près d'un kilomètre toutes les trois secondes. Elle descend à environ 331 mètres par seconde dans l'air glacé, car le son va plus vite dans un gaz plus chaud et moins dense.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vitesse_du_son",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0041",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quelle force lie les protons et les neutrons au sein du noyau atomique, en surmontant la répulsion électrique entre protons ?",
+    "correct_answer": "La force nucléaire forte",
+    "incorrect_answers": [
+      "La gravité",
+      "La force électromagnétique",
+      "La force nucléaire faible",
+      "Un câlin très serré"
+    ],
+    "explanation": "Les protons se repoussent électriquement, mais à moins d'un femtomètre de distance la force nucléaire, résidu de l'interaction forte entre nucléons, l'emporte largement : c'est elle qui tient le noyau. L'interaction forte, elle, lie les quarks.",
+    "source_url": "https://fr.wikipedia.org/wiki/Force_nucl%C3%A9aire",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0039",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel roman de George Orwell se déroule dans un superÉtat totalitaire dirigé par Big Brother ?",
+    "correct_answer": "1984",
+    "incorrect_answers": [
+      "Le Meilleur des mondes",
+      "Fahrenheit 451",
+      "La Ferme des animaux",
+      "Le grand livre des câlins"
+    ],
+    "explanation": "Publié le 8 juin 1949, le roman suit Winston Smith, censeur chargé de réécrire les vieux journaux au ministère de la Vérité. Il a popularisé des termes comme Big Brother, novlangue et impensé double, et la BBC l'a classé huitième de son Big Read en 2003.",
+    "source_url": "https://fr.wikipedia.org/wiki/1984_(roman)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0040",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Qui a composé le Requiem en ré mineur que Mozart a laissé inachevé à sa mort en 1791 ?",
+    "correct_answer": "Wolfgang Amadeus Mozart",
+    "incorrect_answers": [
+      "Antonio Salieri",
+      "Joseph Haydn",
+      "Franz Schubert",
+      "Le groupe hommage du comte Walsegg"
+    ],
+    "explanation": "La commande anonyme venait en réalité du comte Franz de Walsegg, qui voulait présenter l'œuvre comme la sienne pour un service commémoratif en mémoire de sa jeune épouse. Mozart meurt le 5 décembre 1791, le Lacrimosa interrompu après huit mesures, et son élève Franz Xaver Süssmayr achève la messe.",
+    "source_url": "https://fr.wikipedia.org/wiki/Requiem_(Mozart)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0041",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quel manoeuvre a dérobé la Joconde au Louvre et l'a gardée dans son logement parisien pendant plus de deux ans ?",
+    "correct_answer": "Vincenzo Peruggia",
+    "incorrect_answers": [
+      "Eduardo de Valfierno",
+      "Yves Chaudron",
+      "Apollinaire",
+      "L'employé du mois du Louvre en 1911"
+    ],
+    "explanation": "Peruggia, vitrier italien ayant participé à la fabrication du caisson protecteur du tableau, s'enfuit avec sous sa blouse d'ouvrier le 21 août 1911 ; Picasso et le poète Apollinaire furent interrogés après le vol. Arrêté à Florence en décembre 1913, il ne purga que sept mois.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vincenzo_Peruggia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0036",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Dans La Reine des neiges, quelle chanson chantée par la reine Elsa alors qu'elle assume ses pouvoirs est devenue un tube mondial ?",
+    "correct_answer": "Libérée, délivrée",
+    "incorrect_answers": [
+      "Dans un autre monde",
+      "Tu voudrais un bonhomme de neige ?",
+      "Pour la première fois",
+      "Un duo avec un bonhomme de neige frileux"
+    ],
+    "explanation": "Idina Menzel interprète Libérée, délivrée dans le film de 2013, et la chanson a remporté l'Oscar de la meilleure chanson originale. Ses auteurs, Kristen Anderson-Lopez et Robert Lopez, ont aussi écrit les chansons de La Reine des neiges 2.",
+    "source_url": "https://fr.wikipedia.org/wiki/Libérée,_délivrée",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0037",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Située dans un hôpital chirurgical mobile pendant la guerre de Corée, quelle série comico-dramatique s'est terminée en 1983 avec l'épisode le plus regardé de l'histoire de la télévision américaine ?",
+    "correct_answer": "MASH",
+    "incorrect_answers": [
+      "China Beach",
+      "Head of the Class",
+      "Papa a raison",
+      "Un camp de chirurgiens très méticuleux"
+    ],
+    "explanation": "MASH a été diffusée sur CBS de 1972 à 1983, adaptée du film de Robert Altman sorti en 1970. Son dernier épisode, Adieu, à jamais, a réuni environ 106 millions de téléspectateurs, un record américain qui est resté debout jusqu'au Super Bowl de 2010.",
+    "source_url": "https://fr.wikipedia.org/wiki/MASH_(série_télévisée)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0038",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel film d'horreur muet de 1920, célèbre pour ses décors peints déformés et un twist final dans un asile, est un monument du cinéma expressionniste allemand ?",
+    "correct_answer": "Le Cabinet du docteur Caligari",
+    "incorrect_answers": [
+      "Nosferatu",
+      "Le Golem",
+      "Waxworks",
+      "Un dessin de ville très de travers"
+    ],
+    "explanation": "Réalisé par Robert Wiene, Le Cabinet du docteur Caligari suit un hypnotiseur qui fait d'un somnambule son assassin, et le dénouement révèle que toute l'histoire est le délire d'un patient. Ses décors penchés et peints sont devenus la signature visuelle de l'expressionnisme allemand.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Cabinet_du_docteur_Caligari",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0036",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Au hockey sur glace, quelle est la forme du palet que les joueurs frappent avec leur crosse ?",
+    "correct_answer": "Un disque plat et rond",
+    "incorrect_answers": [
+      "Un ovale",
+      "Un cube",
+      "Une sphère",
+      "Un beignet congelé"
+    ],
+    "explanation": "Le palet est un petit cylindre de caoutchouc vulcanisé de 2,54 cm d'épaisseur et 7,62 cm de diamètre, pesant entre 156 et 170 grammes. Il joue sur la glace le même rôle que la balle dans les jeux à balle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Palet_(sport)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0037",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Combien de cercles concentriques composent la maison, la cible dessinée sur la glace au curling ?",
+    "correct_answer": "Quatre",
+    "incorrect_answers": [
+      "Deux",
+      "Trois",
+      "Cinq",
+      "Un service complet de vaisselle"
+    ],
+    "explanation": "La maison est peinte en quatre cercles concentriques de 12, 8 et 4 pieds et de 30,48 cm de diamètre. Le plus petit cercle est le bouton central, l'endroit où une pierre bien lancée marque le mieux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Curling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0038",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "En rugby union, combien de joueurs de chaque équipe se trouvent sur le terrain dans la forme standard du jeu ?",
+    "correct_answer": "15",
+    "incorrect_answers": [
+      "13",
+      "11",
+      "7",
+      "À peu près un car rempli"
+    ],
+    "explanation": "Le rugby à XV oppose deux équipes de 15 joueurs, huit avants et sept arrières. Le jeu tire son nom du collège de Rugby, en Angleterre, où il est né dans la première moitié du XIXe siècle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Rugby_%C3%A0_XV",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

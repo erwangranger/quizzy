@@ -4596,5 +4596,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0049",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the coldest capital city in the world by average yearly temperature?",
+    "correct_answer": "Ulaanbaatar",
+    "incorrect_answers": [
+      "Moscow",
+      "Ottawa",
+      "Reykjavik",
+      "The Mongolian walk-in freezer"
+    ],
+    "explanation": "Ulaanbaatar sits in a valley on the Tuul River in north-central Mongolia at about 1,300 m elevation. Its long, dry winters and cold continental climate make it the coldest capital in the world, ahead of Moscow or Ottawa.",
+    "source_url": "https://en.wikipedia.org/wiki/Ulaanbaatar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0050",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the longest river in Asia?",
+    "correct_answer": "The Yangtze",
+    "incorrect_answers": [
+      "The Ganges",
+      "The Mekong",
+      "The Yellow River",
+      "The Volga's longer sibling"
+    ],
+    "explanation": "The Yangtze flows about 6,300 km from the Tibetan Plateau to the East China Sea, making it the third-longest river in the world after the Nile and the Amazon. Its basin is home to nearly one-third of China's population.",
+    "source_url": "https://en.wikipedia.org/wiki/Yangtze",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0051",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the highest mountain outside of Asia?",
+    "correct_answer": "Aconcagua",
+    "incorrect_answers": [
+      "Denali",
+      "Kilimanjaro",
+      "Elbrus",
+      "The Andes' tallest rumor"
+    ],
+    "explanation": "Aconcagua rises about 6,960 m in the Andes of Mendoza Province, Argentina, making it the highest peak in the Americas and the Southern Hemisphere. Denali, North America's highest, tops out near 6,190 m.",
+    "source_url": "https://en.wikipedia.org/wiki/Aconcagua",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0052",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which mountain is considered the tallest in the world when measured from its underwater base?",
+    "correct_answer": "Mauna Kea",
+    "incorrect_answers": [
+      "Mount Everest",
+      "K2",
+      "Annapurna",
+      "A wetsuit, after a bath"
+    ],
+    "explanation": "Mauna Kea on Hawaii rises 4,207 m above sea level, but its flanks continue about 6,000 m to the floor of the Pacific, putting its base-to-peak total above 10,000 m. That is why some authorities call it the tallest mountain, even though Everest is higher above sea level.",
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0049",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which ancient network of trade routes carried silk from China towards Europe?",
+    "correct_answer": "The Silk Road",
+    "incorrect_answers": [
+      "The Amber Road",
+      "The Incense Route",
+      "The Tea Horse Road",
+      "The camel express lane"
+    ],
+    "explanation": "The Silk Road linked China with Central Asia, India, Persia and the Mediterranean for some 1,500 years. Merchants, pilgrims and ideas travelled it alongside goods; explorer Sven Hedin popularised the name in the 20th century.",
+    "source_url": "https://en.wikipedia.org/wiki/Silk_Road",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0050",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which domed former cathedral and mosque now serves as a major museum in Istanbul?",
+    "correct_answer": "Hagia Sophia",
+    "incorrect_answers": [
+      "The Blue Mosque",
+      "Topkapi Palace",
+      "The Basilica Cistern",
+      "The big blue umbrella bazaar"
+    ],
+    "explanation": "Built for Emperor Justinian I and consecrated in 537, Hagia Sophia was the largest enclosed space in the world for nearly a thousand years. It became a mosque after 1453, a museum in 1935, and a mosque again in 2020.",
+    "source_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0051",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which great survey of England, ordered by William the Conqueror, was named after the Last Judgement?",
+    "correct_answer": "The Domesday Book",
+    "incorrect_answers": [
+      "The Anglo-Saxon Chronicle",
+      "The Danelaw rolls",
+      "The Assize of Clarendon",
+      "The royal homework planner"
+    ],
+    "explanation": "Commissioned in 1085 and completed in 1086, the Domesday Book recorded who held every parcel of land and what it was worth, so nothing could be contested. Only two of the manuscript volumes survive, kept at The National Archives.",
+    "source_url": "https://en.wikipedia.org/wiki/Domesday_Book",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0052",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which First World War flying ace earned the nickname Red Baron with 80 confirmed victories?",
+    "correct_answer": "Manfred von Richthofen",
+    "incorrect_answers": [
+      "Eddie Rickenbacker",
+      "René Fonck",
+      "Oswald Boelcke",
+      "Baron Mauve von Aeroplane"
+    ],
+    "explanation": "The German ace Manfred von Richthofen painted his fighter aircraft red and led a squadron so colourfully marked that pilots called it the Flying Circus. He scored 80 confirmed kills before he was shot down and killed in April 1918.",
+    "source_url": "https://en.wikipedia.org/wiki/Manfred_von_Richthofen",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0039",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which metal is found at the centre of every hemoglobin molecule, letting red blood cells carry oxygen around the body?",
+    "correct_answer": "Iron",
+    "incorrect_answers": [
+      "Copper",
+      "Zinc",
+      "Magnesium",
+      "The same metal they make novelty spoons from"
+    ],
+    "explanation": "Hemoglobin is an iron-containing metalloprotein inside red blood cells that binds oxygen in the lungs and releases it to tissues. Too little iron means less hemoglobin, which is why iron deficiency causes anemia.",
+    "source_url": "https://en.wikipedia.org/wiki/Hemoglobin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0040",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Roughly how fast does sound travel through air at room temperature, at sea level?",
+    "correct_answer": "About 343 metres per second",
+    "incorrect_answers": [
+      "About 34 metres per second",
+      "About 1,225 metres per second",
+      "About 3,430 metres per second",
+      "One hallway per yodel"
+    ],
+    "explanation": "At 20 degrees Celsius the speed of sound in air is about 343 metres per second, roughly a kilometre every three seconds. It drops to about 331 metres per second in freezing air because sound travels faster through warmer, less dense gas.",
+    "source_url": "https://en.wikipedia.org/wiki/Speed_of_sound",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0041",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which force binds protons and neutrons together inside an atomic nucleus, overcoming the electric repulsion between protons?",
+    "correct_answer": "The strong nuclear force",
+    "incorrect_answers": [
+      "Gravity",
+      "The electromagnetic force",
+      "The weak nuclear force",
+      "A very tight hug"
+    ],
+    "explanation": "Protons repel each other electrically, but at ranges under about a femtometre the residual strong force between nucleons is far stronger, so nuclei hold together. This force is what remains of the strong interaction that binds quarks.",
+    "source_url": "https://en.wikipedia.org/wiki/Nuclear_force",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0039",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which novel by George Orwell is set in a totalitarian superstate ruled by Big Brother?",
+    "correct_answer": "Nineteen Eighty-Four",
+    "incorrect_answers": [
+      "Brave New World",
+      "Fahrenheit 451",
+      "Animal Farm",
+      "The Big Book of Hugs"
+    ],
+    "explanation": "Published on 8 June 1949, the novel follows Winston Smith, a censor who rewrites old newspapers at the Ministry of Truth. It popularised terms like Big Brother, doublethink and Newspeak, and the BBC placed it eighth in its 2003 Big Read survey.",
+    "source_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0040",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Who composed the Requiem in D minor that Mozart left unfinished at his death in 1791?",
+    "correct_answer": "Wolfgang Amadeus Mozart",
+    "incorrect_answers": [
+      "Antonio Salieri",
+      "Joseph Haydn",
+      "Franz Schubert",
+      "The Walsegg Tribute Band"
+    ],
+    "explanation": "The anonymous commission actually came from Count Franz von Walsegg, who wanted the work credited to himself for a memorial service for his young wife. Mozart died on 5 December 1791 with the Lacrimosa cut off after eight bars, and his pupil Franz Xaver Sussmayr completed the mass.",
+    "source_url": "https://en.wikipedia.org/wiki/Requiem_(Mozart)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0041",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which handyman stole the Mona Lisa from the Louvre and kept it in his Paris flat for over two years?",
+    "correct_answer": "Vincenzo Peruggia",
+    "incorrect_answers": [
+      "Eduardo de Valfierno",
+      "Yves Chaudron",
+      "Apollinaire",
+      "The Louvre Employee of the Month, 1911"
+    ],
+    "explanation": "Peruggia, an Italian glazier who had helped build the painting's protective case, walked out with it under his worker's smock on 21 August 1911; Picasso and the poet Apollinaire were questioned over the theft. He was caught in Florence in December 1913 and served seven months.",
+    "source_url": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0036",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In Frozen, which song sung by Queen Elsa as she embraces her powers became a global hit?",
+    "correct_answer": "Let It Go",
+    "incorrect_answers": [
+      "Into the Unknown",
+      "Do You Want to Build a Snowman?",
+      "For the First Time in Forever",
+      "A duet with the snowman about appropriate outerwear"
+    ],
+    "explanation": "Idina Menzel sang Let It Go in the 2013 film, and it won the Academy Award for Best Original Song. The songwriters, Kristen Anderson-Lopez and Robert Lopez, also wrote the songs for Frozen II.",
+    "source_url": "https://en.wikipedia.org/wiki/Let_It_Go",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0037",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Set at a Mobile Army Surgical Hospital in the Korean War, which comedy-drama series signed off in 1983 with what was then the most-watched US television episode ever?",
+    "correct_answer": "M*A*S*H",
+    "incorrect_answers": [
+      "China Beach",
+      "Tour of Duty",
+      "Hogan's Heroes",
+      "A camp of very tidy surgeons"
+    ],
+    "explanation": "M*A*S*H ran on CBS from 1972 to 1983, adapting the 1970 Robert Altman film. Its finale, Goodbye, Farewell and Amen, drew about 106 million viewers, a US record that stood until the 2010 Super Bowl.",
+    "source_url": "https://en.wikipedia.org/wiki/M*A*S*H_(TV_series)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0038",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1920 silent horror film, famous for its distorted painted sets and a twist ending inside an asylum, is a landmark of German Expressionist cinema?",
+    "correct_answer": "The Cabinet of Dr. Caligari",
+    "incorrect_answers": [
+      "Nosferatu",
+      "The Golem",
+      "Waxworks",
+      "A very crooked drawing of a town"
+    ],
+    "explanation": "Directed by Robert Wiene, The Cabinet of Dr. Caligari follows a hypnotist who uses a sleepwalker to commit murders, and its final reveal reframes the whole story as a patient's delusion. Its skewed, painted backdrops became the visual shorthand for German Expressionism.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Cabinet_of_Dr._Caligari",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0036",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In ice hockey, what shape is the puck that players hit with their sticks?",
+    "correct_answer": "A flat round disc",
+    "incorrect_answers": [
+      "An oval",
+      "A cube",
+      "A sphere",
+      "A frozen bagel"
+    ],
+    "explanation": "The puck is a short cylinder of vulcanised rubber, roughly 2.5 cm thick and 7.6 cm in diameter, weighing between 156 and 170 grams. It serves the same role on ice that a ball does in ball games.",
+    "source_url": "https://en.wikipedia.org/wiki/Hockey_puck",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0037",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "How many concentric rings make up the target, called the house, in curling?",
+    "correct_answer": "Four",
+    "incorrect_answers": [
+      "Two",
+      "Three",
+      "Five",
+      "A full set of china"
+    ],
+    "explanation": "The house is painted as four concentric circles of 12, 8 and 4 feet and 12 inches in diameter. The smallest circle is the button, the spot where a well-delivered stone scores highest.",
+    "source_url": "https://en.wikipedia.org/wiki/Curling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0038",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "In rugby union, how many players from each team are on the pitch in the standard form of the game?",
+    "correct_answer": "15",
+    "incorrect_answers": [
+      "13",
+      "11",
+      "7",
+      "A busful, roughly"
+    ],
+    "explanation": "Rugby union is played between two teams of 15 players, eight forwards and seven backs. The game took its name from Rugby School in England, where it originated in the first half of the 19th century.",
+    "source_url": "https://en.wikipedia.org/wiki/Rugby_union",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
