@@ -4216,5 +4216,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0045",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel est le plus long fleuve d'Europe ?",
+    "correct_answer": "La Volga",
+    "incorrect_answers": [
+      "Le Danube",
+      "Le Rhin",
+      "La Seine",
+      "La flaque ambitieuse du continent"
+    ],
+    "explanation": "La Volga prend sa source dans les collines de Valdaï au nord-ouest de Moscou et se jette dans la mer Caspienne, entièrement en Russie. Son bassin draine plus d'un tiers de la Russie européenne, et le fleuve est considéré comme le fleuve national de la Russie.",
+    "source_url": "https://fr.wikipedia.org/wiki/Volga",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0046",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel lac porte les navires sur une grande partie du canal de Panama ?",
+    "correct_answer": "Le lac Gatún",
+    "incorrect_answers": [
+      "Le lac Titicaca",
+      "Le lac Nicaragua",
+      "Le lac Malawi",
+      "Le parking flottant pour les navires"
+    ],
+    "explanation": "Les écluses aux deux extrémités du canal hissent les navires jusqu'au lac Gatún, un réservoir d'eau douce situé à environ 26 mètres au-dessus du niveau de la mer, formé par le barrage sur le río Chagres. Lors de son remplissage en 1913, c'était le plus grand lac artificiel du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_Gat%C3%BAn",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0047",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle est la plus grande région libre de glace de l'Antarctique ?",
+    "correct_answer": "Les vallées sèches de McMurdo",
+    "incorrect_answers": [
+      "La barrière de Ross",
+      "La péninsule Antarctique",
+      "La chaîne Transantarctique",
+      "Le congélateur géant du pôle Sud"
+    ],
+    "explanation": "Les vents catabatiques chassent la neige et l'humidité des vallées sèches de McMurdo, dans la terre Victoria, laissant environ 4 800 kilomètres carrés sans glace. Les montagnes voisines bloquent l'avancée des glaciers, ce qui en fait un haut lieu de la recherche en Antarctique.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vall%C3%A9es_s%C3%A8ches_de_McMurdo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0048",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Bornéo est partagée entre trois pays ; lequel n'en fait pas partie ?",
+    "correct_answer": "L'Indonésie",
+    "incorrect_answers": [
+      "Brunei",
+      "La Malaisie",
+      "Le Vietnam",
+      "La république de Bornéo-Nova"
+    ],
+    "explanation": "L'île est partagée entre Brunei et la Malaisie au nord, et l'Indonésie au sud, où elle est appelée Kalimantan. Avec environ 743 000 kilomètres carrés, c'est la troisième plus grande île du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Born%C3%A9o",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0045",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel empereur de Chine repose gardé dans sa tombe par plus de 8 000 soldats en terre cuite ?",
+    "correct_answer": "Qin Shi Huang",
+    "incorrect_answers": [
+      "Han Wudi",
+      "Kublai Khan",
+      "Wu Zetian",
+      "L'équipe de nuit non payée de l'armée en terre cuite"
+    ],
+    "explanation": "Des paysans creusant un puits près de Xi'an ont découvert l'armée enterrée en 1974, plus de 2 000 ans après la mort du premier empereur. Les statues gagnent en hauteur avec le grade, jusqu'aux généraux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_de_terre_cuite",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0046",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel liquide a déferlé dans les rues de Boston en 1919 quand un immense réservoir a éclaté, tuant 21 personnes ?",
+    "correct_answer": "La mélasse",
+    "incorrect_answers": [
+      "Le sirop d'érable",
+      "Le pétrole brut",
+      "La bière",
+      "Un réservoir de sirop pour crêpes"
+    ],
+    "explanation": "Le réservoir du quartier de North End contenait environ 8 700 mètres cubes de mélasse, emportées par une vague roulant à environ 56 kilomètres par heure. Les habitants affirment que le quartier a senti la mélasse pendant des décennies les jours de chaleur.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grande_inondation_de_m%C3%A9lasse_de_Boston",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0047",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quelle légendaire bibliothèque de l'Antiquité abritait entre 40 000 et 700 000 rouleaux de papyrus ?",
+    "correct_answer": "La Bibliothèque d'Alexandrie",
+    "incorrect_answers": [
+      "La Bibliothèque du Congrès",
+      "La Bibliothèque Bodléienne",
+      "La Bibliothèque du Vatican",
+      "Le service des livres en retard de l'au-delà"
+    ],
+    "explanation": "Fondée sous les Ptolémées au troisième siècle avant notre ère, la bibliothèque et son Mouseion firent d'Alexandrie la capitale du savoir. Les feux de la guerre civile de Jules César en brûlèrent une partie en 48 avant notre ère.",
+    "source_url": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_d%27Alexandrie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0048",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quelle guerre du XIVe siècle entre Modène et Bologne est restée célèbre pour un seau de chêne volé ?",
+    "correct_answer": "La guerre du seau volé",
+    "incorrect_answers": [
+      "La guerre de la moustache",
+      "La guerre du paillasson",
+      "La guerre des oignons",
+      "Le siège de la vanne perdue"
+    ],
+    "explanation": "Bologne et Modène s'affrontèrent en 1325 dans la lutte entre Guelfes et Gibelins, et Modène remporta la seule bataille à Zappolino. Le fameux seau fut probablement pris comme trophée après la guerre plutôt que de la déclencher.",
+    "source_url": "https://fr.wikipedia.org/wiki/Guerre_du_seau_vol%C3%A9",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0036",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "À environ quelle température l'air autour d'un éclair se porte-t-il ?",
+    "correct_answer": "Environ 30 000 degrés Celsius",
+    "incorrect_answers": [
+      "Environ 1 000 degrés Celsius",
+      "Environ 5 000 degrés Celsius",
+      "Environ 10 000 degrés Celsius",
+      "Assez chaud pour un petit gilet"
+    ],
+    "explanation": "L'air autour de l'éclair atteint environ 30 000 degrés Celsius, plusieurs fois la température de surface du Soleil. Ce chauffage quasi instantané fait exploser le canal d'air et produit l'onde de choc que nous entendons comme le tonnerre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Foudre",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0037",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quel type de système météorologique est la Grande Tache rouge de Jupiter ?",
+    "correct_answer": "Un anticyclone",
+    "incorrect_answers": [
+      "Un cyclone",
+      "Un volcan",
+      "Un courant océanique",
+      "Un rond-point géant"
+    ],
+    "explanation": "La Grande Tache rouge tourne dans le sens anti-horaire dans l'hémisphère sud de Jupiter, ce qui en fait un anticyclone, système de haute pression, et non un cyclone. Sa couleur rouge-oranger pourrait venir de composés bombardés par le rayonnement solaire, et la tempête est observée depuis 1831.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grande_Tache_rouge",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0038",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "À quelle température en degrés Celsius correspond le zéro absolu ?",
+    "correct_answer": "Moins 273,15 degrés",
+    "incorrect_answers": [
+      "Moins 100 degrés",
+      "Moins 459,67 degrés",
+      "Moins 0,01 degré",
+      "À la température du congélateur"
+    ],
+    "explanation": "Le zéro absolu, état où un système atteint son énergie interne minimale, correspond à 0 kelvin, soit moins 273,15 degrés Celsius selon un accord international du SI. Les lois de la thermodynamique impliquent qu'il peut être approché mais jamais atteint ; en 2021, une expérience de l'université de Brême est descendue à 38 picokelvins.",
+    "source_url": "https://fr.wikipedia.org/wiki/Z%C3%A9ro_absolu",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0036",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel roman met en scène un petit garçon aux cheveux d'or qui vit sur l'astéroïde B-612 ?",
+    "correct_answer": "Le Petit Prince",
+    "incorrect_answers": [
+      "Charlie et la Chocolaterie",
+      "Le Bon Gros Géant",
+      "Le Petit Nicolas",
+      "Le Bébé Empereur de Mars"
+    ],
+    "explanation": "Antoine de Saint-Exupéry publie ce court récit en 1943 à New York, en anglais et en français, pendant l'occupation de la France. L'astéroïde minuscule et la rose que le petit garçon chérit en ont fait l'un des livres les plus traduits au monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Petit_Prince",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0037",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quelle peinture américaine de 1930 montre un fermier avec une fourche à côté d'une femme sévère devant une maison blanche ?",
+    "correct_answer": "American Gothic",
+    "incorrect_answers": [
+      "Nighthawks",
+      "Gothique Moisson",
+      "Pastorale américaine",
+      "La fourche en or du grand-père Wood"
+    ],
+    "explanation": "Grant Wood peint ce tableau en 1930, en prenant pour modèles sa sœur Nan et son dentiste Byron McKeeby, devant une ferme d'Eldon, dans l'Iowa. Un musée de Chicago l'achète en quelques mois et un débat national s'engage sur le sens : moquerie ou hommage à la vie rurale.",
+    "source_url": "https://fr.wikipedia.org/wiki/American_Gothic_(Wood)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0038",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Le drame versifié de quel dramaturge a inspiré les célèbres suites de Peer Gynt d'Edvard Grieg ?",
+    "correct_answer": "Henrik Ibsen",
+    "incorrect_answers": [
+      "August Strindberg",
+      "Bjørnstjerne Bjørnson",
+      "Johan Ludvig Heiberg",
+      "Baron Bragg des fjords"
+    ],
+    "explanation": "Henrik Ibsen écrit Peer Gynt comme un drame à lire en 1867 et demande au Norvégien Edvard Grieg d'écrire la musique d'une création à Christiania en 1876. Les deux suites, avec Dans le palais du roi de la montagne et Morning Mood, dépassent la pièce et accompagnent aujourd'hui concerts et dessins animés.",
+    "source_url": "https://fr.wikipedia.org/wiki/Peer_Gynt_(Ibsen)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0033",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Le film musical de 1961 West Side Story, adaptation d'une comédie musicale de Broadway de 1957 inspirée de Roméo et Juliette, a remporté combien de récompenses aux Oscars ?",
+    "correct_answer": "10",
+    "incorrect_answers": [
+      "5",
+      "7",
+      "12",
+      "Un Oscar pour chaque membre de gang"
+    ],
+    "explanation": "West Side Story a été nommé onze fois aux Oscars et en a remporté dix, dont celui du meilleur film, un record pour une comédie musicale à l'époque. Leonard Bernstein a écrit la musique, Stephen Sondheim les paroles, et le coréalisateur Jerome Robbins a aussi reçu un Oscar spécial pour sa chorégraphie.",
+    "source_url": "https://fr.wikipedia.org/wiki/West_Side_Story_(film,_1961)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0034",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Le vaisseau Enterprise a entamé son périple dans quelle série de science-fiction de 1966, créée par Gene Roddenberry pour la NBC ?",
+    "correct_answer": "Star Trek : La série originale",
+    "incorrect_answers": [
+      "Perdus dans l'espace",
+      "Au-delà du réel",
+      "Voyage au fond des océans",
+      "Le film de fans le plus motivé du futur"
+    ],
+    "explanation": "Star Trek a été diffusée sur la NBC entre 1966 et 1969 et annulée après trois saisons et 79 épisodes, avant de trouver son immense public grâce à la rediffusion. Le nom Star Trek : The Original Series distingue la série de la franchise qu'elle a lancée.",
+    "source_url": "https://fr.wikipedia.org/wiki/Star_Trek_(série_télévisée)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0035",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Le thème électronique de quel compositeur grec, écrit pour le film de 1981 Les Chariots de feu, a atteint la première place du Billboard Hot 100 l'année suivante ?",
+    "correct_answer": "Vangelis",
+    "incorrect_answers": [
+      "Ennio Morricone",
+      "John Barry",
+      "Maurice Jarre",
+      "Un homme à synthétiseur très rapide"
+    ],
+    "explanation": "Le thème de Vangelis, sorti en single, a atteint la première place du Billboard Hot 100 en 1982, et la musique du film a remporté l'Oscar de la meilleure musique de film. Il avait déjà composé celle d'American College avant d'écrire celle de Blade Runner.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Chariots_de_feu",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0033",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Aux fléchettes, combien de points rapporte un tir dans la bulle intérieure sur une cible standard ?",
+    "correct_answer": "50",
+    "incorrect_answers": [
+      "25",
+      "40",
+      "100",
+      "Une tournée offerte par le barman"
+    ],
+    "explanation": "Sur une cible de fléchettes, le petit cercle rouge central, la bulle intérieure, vaut 50 points, et l'anneau vert qui l'entoure n'en vaut que 25. Le meilleur tir simple reste pourtant le triple 20, qui rapporte 60 points.",
+    "source_url": "https://fr.wikipedia.org/wiki/Fl%C3%A9chettes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0034",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Combien de trous compte une partie de golf standard ?",
+    "correct_answer": "18",
+    "incorrect_answers": [
+      "9",
+      "12",
+      "24",
+      "Un parcours de standing, 30 trous"
+    ],
+    "explanation": "Le format standard de 18 trous remonte à 1764, quand l'Old Course de Saint Andrews en Écosse a été ramené de 22 à 18 trous. Les autres parcours ont copié ce modèle, devenu la règle du jeu.",
+    "source_url": "https://fr.wikipedia.org/wiki/Golf",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0035",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Quel maillot distingué le leader du classement général du Tour de France ?",
+    "correct_answer": "Le maillot jaune",
+    "incorrect_answers": [
+      "Le maillot vert",
+      "Le maillot à pois rouges",
+      "Le maillot blanc",
+      "Un gilet de haute visibilité conforme aux normes"
+    ],
+    "explanation": "Le maillot jaune, créé en 1919, distingue le leader du classement général du Tour de France. Sa couleur viendrait de celle du papier du journal L'Auto, qui organisait l'épreuve.",
+    "source_url": "https://fr.wikipedia.org/wiki/Maillot_jaune",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

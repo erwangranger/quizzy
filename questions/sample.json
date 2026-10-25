@@ -4216,5 +4216,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0045",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river is the longest in Europe?",
+    "correct_answer": "The Volga",
+    "incorrect_answers": [
+      "The Danube",
+      "The Rhine",
+      "The Seine",
+      "Europe's puddle with ambitions"
+    ],
+    "explanation": "The Volga rises in the Valdai Hills northwest of Moscow and flows into the Caspian Sea, entirely within Russia. It is widely regarded as the national river of Russia, and its basin drains more than a third of European Russia.",
+    "source_url": "https://en.wikipedia.org/wiki/Volga",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0046",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which lake carries ships across a large part of the Panama Canal?",
+    "correct_answer": "Gatun Lake",
+    "incorrect_answers": [
+      "Lake Titicaca",
+      "Lake Nicaragua",
+      "Lake Malawi",
+      "The floating parking lot for ships"
+    ],
+    "explanation": "Locks at each end of the canal lift ships into Gatun Lake, a freshwater reservoir about 26 metres above sea level formed by damming the Chagres River. When it filled in 1913 it was the largest artificial lake in the world.",
+    "source_url": "https://en.wikipedia.org/wiki/Gatun_Lake",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0047",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the largest ice-free region of Antarctica?",
+    "correct_answer": "The McMurdo Dry Valleys",
+    "incorrect_answers": [
+      "The Ross Ice Shelf",
+      "The Antarctic Peninsula",
+      "The Transantarctic Mountains",
+      "The giant freezer section"
+    ],
+    "explanation": "Katabatic winds scour snow and moisture away from the McMurdo Dry Valleys in Victoria Land, leaving about 4,800 square kilometres ice-free. Surrounding mountains block the flow of nearby glaciers, making the region a hotbed of Antarctic research.",
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0048",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Borneo is shared by three countries; which is NOT one of them?",
+    "correct_answer": "Indonesia",
+    "incorrect_answers": [
+      "Brunei",
+      "Malaysia",
+      "Vietnam",
+      "The Republic of Borneo-Nova"
+    ],
+    "explanation": "The island is split between Brunei and Malaysia in the north and Indonesia in the south, where it is called Kalimantan. At about 743,000 square km it is the third-largest island in the world.",
+    "source_url": "https://en.wikipedia.org/wiki/Borneo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0045",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which Chinese emperor lies guarded in his tomb by more than 8,000 terracotta soldiers?",
+    "correct_answer": "Qin Shi Huang",
+    "incorrect_answers": [
+      "Han Wudi",
+      "Kublai Khan",
+      "Wu Zetian",
+      "The Terracotta Army's unpaid night shift"
+    ],
+    "explanation": "Farmers digging a well near Xi'an discovered the buried army in 1974, more than 2,000 years after the first emperor's death. The figures stand taller with rising rank, from foot soldiers up to generals.",
+    "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0046",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Great Molasses Flood, which killed 21 people in Boston in 1919, began when a storage tank of what burst?",
+    "correct_answer": "Molasses",
+    "incorrect_answers": [
+      "Maple syrup",
+      "Crude oil",
+      "Beer",
+      "A suspiciously large jug of pancake syrup"
+    ],
+    "explanation": "A tank in Boston's North End held about 8,700 cubic meters of molasses when it burst, sending a wave through the streets at an estimated 56 kilometers per hour. Residents claimed the neighborhood smelled of molasses for decades on hot days.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0047",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which legendary library of the ancient world held an estimated 40,000 to 700,000 papyrus scrolls?",
+    "correct_answer": "The Library of Alexandria",
+    "incorrect_answers": [
+      "The Library of Congress",
+      "The Bodleian Library",
+      "The Vatican Library",
+      "The overdue-books department of the afterlife"
+    ],
+    "explanation": "Founded under the Ptolemies in the third century BC, the library and its Mouseion made Alexandria the capital of knowledge and learning. Fires from Julius Caesar's civil war burned part of the collection in 48 BC.",
+    "source_url": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0048",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which 14th-century war between Modena and Bologna is remembered for a stolen oaken bucket?",
+    "correct_answer": "The War of the Bucket",
+    "incorrect_answers": [
+      "The War of the Mustache",
+      "The War of the Doormat",
+      "The War of the Onions",
+      "The siege of the lost stopcock"
+    ],
+    "explanation": "Bologna and Modena fought in 1325 as part of the Guelph-Ghibelline struggle, and Modena won the only battle at Zappolino. The famous bucket was likely taken as a trophy afterwards rather than starting the war.",
+    "source_url": "https://en.wikipedia.org/wiki/War_of_the_Bucket",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0036",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Roughly how hot does the air around a lightning flash get?",
+    "correct_answer": "About 30,000 degrees Celsius",
+    "incorrect_answers": [
+      "About 1,000 degrees Celsius",
+      "About 5,000 degrees Celsius",
+      "About 10,000 degrees Celsius",
+      "Warm enough for a light sweater"
+    ],
+    "explanation": "The rapid heating of air around the flash to about 30,000 degrees Celsius, several times the surface temperature of the Sun, makes the channel expand explosively and produces the shock wave we hear as thunder.",
+    "source_url": "https://en.wikipedia.org/wiki/Lightning",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0037",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What kind of weather system is the Great Red Spot on Jupiter?",
+    "correct_answer": "An anticyclone",
+    "incorrect_answers": [
+      "A cyclone",
+      "A volcano",
+      "An ocean current",
+      "A giant traffic circle"
+    ],
+    "explanation": "The Great Red Spot rotates counterclockwise in Jupiter's southern hemisphere, which marks it as a high-pressure anticyclone rather than a cyclone. Its red-orange color may come from compounds blasted by solar radiation, and the storm has been observed since 1831.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Red_Spot",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0038",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What temperature on the Celsius scale corresponds to absolute zero?",
+    "correct_answer": "Minus 273.15 degrees",
+    "incorrect_answers": [
+      "Minus 100 degrees",
+      "Minus 459.67 degrees",
+      "Minus 0.01 degrees",
+      "Whatever the freezer is set to"
+    ],
+    "explanation": "Absolute zero, the point where a system reaches its minimum internal energy, is defined as 0 kelvin, equal to minus 273.15 degrees Celsius. The third law of thermodynamics means it can be approached but never reached; a 2021 experiment at the University of Bremen got within 38 picokelvin.",
+    "source_url": "https://en.wikipedia.org/wiki/Absolute_zero",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0036",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which novel features a little boy with golden hair who lives on asteroid B-612?",
+    "correct_answer": "The Little Prince",
+    "incorrect_answers": [
+      "Charlie and the Chocolate Factory",
+      "The BFG",
+      "A Wrinkle in Time",
+      "The Baby Emperor of Mars"
+    ],
+    "explanation": "Antoine de Saint-Exupery published this short tale in 1943 in New York, in English and French, while France was under occupation. The tiny asteroid home and the rose he tends have made it one of the most translated books ever written.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Little_Prince",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0037",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which 1930 American painting shows a farmer holding a pitchfork beside a stern woman in front of a white farmhouse?",
+    "correct_answer": "American Gothic",
+    "incorrect_answers": [
+      "Nighthawks",
+      "Gothic Harvest",
+      "American Pastoral",
+      "Grant Wood's Farm Aid"
+    ],
+    "explanation": "Grant Wood painted it in 1930, using his sister Nan and his dentist Byron McKeeby as models for the pair, with an Iowa farmhouse in Eldon as the backdrop. A Chicago museum bought it within months and a national debate began over whether it mocked or honored rural life.",
+    "source_url": "https://en.wikipedia.org/wiki/American_Gothic",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0038",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which playwright's verse drama inspired Edvard Grieg's famous Peer Gynt suites?",
+    "correct_answer": "Henrik Ibsen",
+    "incorrect_answers": [
+      "August Strindberg",
+      "Bjørnstjerne Bjørnson",
+      "Johan Ludvig Heiberg",
+      "Baron Bragg of the Fjords"
+    ],
+    "explanation": "Henrik Ibsen wrote Peer Gynt as a closet drama in 1867 and asked his fellow Norwegian Edvard Grieg to score an 1876 Christiania staging of it. Grieg's two suites, with In the Hall of the Mountain King and Morning Mood, outgrew the play and now score concerts and cartoons worldwide.",
+    "source_url": "https://en.wikipedia.org/wiki/Peer_Gynt",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0033",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "The 1961 musical film West Side Story, an adaptation of a 1957 Broadway show inspired by Romeo and Juliet, won how many Academy Awards?",
+    "correct_answer": "10",
+    "incorrect_answers": [
+      "5",
+      "7",
+      "12",
+      "An Oscar for every gang member"
+    ],
+    "explanation": "West Side Story was nominated for 11 Academy Awards and won 10, including Best Picture, a record for a musical at the time. Bernstein wrote the music, Stephen Sondheim the lyrics, and co-director Jerome Robbins also earned a special award for his choreography.",
+    "source_url": "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0034",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The starship Enterprise first set out under which 1966 science fiction series, created by Gene Roddenberry for NBC?",
+    "correct_answer": "Star Trek: The Original Series",
+    "incorrect_answers": [
+      "Lost in Space",
+      "The Outer Limits",
+      "Voyage to the Bottom of the Sea",
+      "A very committed fan film"
+    ],
+    "explanation": "Star Trek aired on NBC from September 8, 1966, to June 3, 1969, and was canceled after three seasons and 79 episodes, only to find its vast audience later through syndication. Its retronym The Original Series distinguishes the show from the franchise it started.",
+    "source_url": "https://en.wikipedia.org/wiki/Star_Trek:_The_Original_Series",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0035",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Greek composer's electronic theme for the 1981 film Chariots of Fire topped the US Billboard Hot 100 the following year?",
+    "correct_answer": "Vangelis",
+    "incorrect_answers": [
+      "Ennio Morricone",
+      "John Barry",
+      "Maurice Jarre",
+      "A man with a very fast synthesizer"
+    ],
+    "explanation": "Vangelis's theme was released as a single and reached number one on the Billboard Hot 100 in 1982, and the film's score won the Academy Award for Best Original Score. He had already scored Animal House and would later write the music for Blade Runner.",
+    "source_url": "https://en.wikipedia.org/wiki/Chariots_of_Fire_(instrumental)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0033",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In darts, how many points is a hit in the inner bullseye worth on a standard board?",
+    "correct_answer": "50",
+    "incorrect_answers": [
+      "25",
+      "40",
+      "100",
+      "A complimentary pint"
+    ],
+    "explanation": "The inner red circle at the centre of a darts board scores 50 points, while the green ring around it scores 25. The highest single-dart score on the board is neither: the triple-20 bed is worth 60.",
+    "source_url": "https://en.wikipedia.org/wiki/Darts",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0034",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "How many holes make up a standard round of golf?",
+    "correct_answer": "18",
+    "incorrect_answers": [
+      "9",
+      "12",
+      "24",
+      "A well-groomed 30"
+    ],
+    "explanation": "The standard 18-hole round dates to 1764, when the Old Course at St Andrews in Scotland was trimmed from 22 holes to 18. Other courses copied the layout, and it became the universal format.",
+    "source_url": "https://en.wikipedia.org/wiki/Golf",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0035",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which colour jersey does the overall leader wear in the Tour de France?",
+    "correct_answer": "The yellow jersey",
+    "incorrect_answers": [
+      "The green jersey",
+      "The polka-dot jersey",
+      "The white jersey",
+      "One in beige, for the sensible riders"
+    ],
+    "explanation": "The yellow jersey, introduced in 1919, marks the leader of the general classification. Its colour was chosen to match the yellow newsprint of L'Auto, the newspaper that organised the race.",
+    "source_url": "https://en.wikipedia.org/wiki/Yellow_jersey",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
