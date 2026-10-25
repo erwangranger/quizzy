@@ -2696,5 +2696,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0029",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel détroit sépare l'Asie de l'Amérique du Nord ?",
+    "correct_answer": "Le détroit de Béring",
+    "incorrect_answers": [
+      "Le détroit de Magellan",
+      "Le détroit de Gibraltar",
+      "Le Bosphore",
+      "The Panama Canal with the locks removed"
+    ],
+    "explanation": "Le détroit de Béring ne dépasse pas 82 km à son point le plus étroit, entre le cap Dejnev en Russie et la péninsule Seward en Alaska. La ligne de changement de date le traverse.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_B%C3%A9ring",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0030",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel pays contrôle le Groenland ?",
+    "correct_answer": "Le Danemark",
+    "incorrect_answers": [
+      "La Norvège",
+      "Le Canada",
+      "L'Islande",
+      "La boutique de souvenirs au bord de la carte"
+    ],
+    "explanation": "Le Groenland est passé sous contrôle danois en 1814 avec le traité de Kiel et est aujourd'hui une région autonome du royaume de Danemark. C'est la plus grande île du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Groenland",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0031",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel est le plus grand salar du monde, situé en Bolivie ?",
+    "correct_answer": "Salar d'Uyuni",
+    "incorrect_answers": [
+      "Salar d'Atacama",
+      "Les plaines de sel de Bonneville",
+      "Le lac Eyre",
+      "Le plus grand verre de margarita du monde"
+    ],
+    "explanation": "Le Salar d'Uyuni couvre environ 10 582 km2 et concentre une grande part des réserves mondiales de lithium connues. Après la pluie, il devient un immense miroir naturel.",
+    "source_url": "https://fr.wikipedia.org/wiki/Salar_d%27Uyuni",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0032",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "La France métropolitaine s'étend sur combien de fuseaux horaires, un record mondial ?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "8",
+      "3",
+      "24",
+      "L'heure d'ouverture de la boulangerie"
+    ],
+    "explanation": "Les territoires d'outre-mer, de Clipperton dans le Pacifique à La Réunion dans l'océan Indien, donnent à la France 12 fuseaux, de UTC-10 à UTC+12. La Russie suit avec 11.",
+    "source_url": "https://fr.wikipedia.org/wiki/Heure_en_France",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0029",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quels animaux, porteurs de puces infectées, ont propagé la Peste noire dans l'Europe du XIVe siècle ?",
+    "correct_answer": "Les rats",
+    "incorrect_answers": [
+      "Les pigeons",
+      "Les écureuils",
+      "Les chameaux",
+      "Les chats, en trop grand nombre"
+    ],
+    "explanation": "La peste atteint la Sicile en octobre 1347 à bord de galères génoises venues de Caffa, et Yersinia pestis, transmise par les puces des rats, aurait tué entre 25 et 50 millions d'Européens en cinq ans.",
+    "source_url": "https://fr.wikipedia.org/wiki/Peste_noire",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0030",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quelle est la longueur approximative de la Grande Muraille de Chine, branches et fossés compris ?",
+    "correct_answer": "21 196 km",
+    "incorrect_answers": [
+      "8 850 km",
+      "13 170 km",
+      "30 500 km",
+      "Assez longue pour décourager tout géodésien"
+    ],
+    "explanation": "Une étude officielle menée en 2012 par l'administration chinoise du patrimoine culturel a mesuré 21 196 km de murailles, de fossés et de barrières naturelles édifiés du VIIe siècle av. J.-C. à la dynastie Ming.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grande_Muraille",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0031",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "En quelle année Guy Fawkes a-t-il tenté de faire exploser le Parlement anglais ?",
+    "correct_answer": "1605",
+    "incorrect_answers": [
+      "1588",
+      "1620",
+      "1599",
+      "L'année où le Parlement s'est fait sauter tout seul"
+    ],
+    "explanation": "Guy Fawkes est arrêté le 5 novembre 1605 près de 36 barils de poudre cachés sous la Chambre des lords, et la Guy Fawkes Night est célébrée en Grande-Bretagne chaque année depuis.",
+    "source_url": "https://fr.wikipedia.org/wiki/Conspiration_des_Poudres",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0032",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Sur quelle plage de Caroline du Nord les frères Wright ont-ils réalisé le premier vol motorisé ?",
+    "correct_answer": "Kitty Hawk",
+    "incorrect_answers": [
+      "Daytona Beach",
+      "Myrtle Beach",
+      "Virginia Beach",
+      "Dans le jardin des Wright"
+    ],
+    "explanation": "Orville pilote le Wright Flyer pendant 12 secondes sur 37 mètres le 17 décembre 1903 à Kill Devil Hills, près de Kitty Hawk ; les frères avaient choisi ce site pour ses vents réguliers et son sable mou.",
+    "source_url": "https://fr.wikipedia.org/wiki/Wright_Flyer",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0024",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quelle particule subatomique porte une charge électrique négative et orbite autour du noyau atomique ?",
+    "correct_answer": "L'électron",
+    "incorrect_answers": [
+      "Le proton",
+      "Le neutron",
+      "Le photon",
+      "Le garde du corps miniature du noyau"
+    ],
+    "explanation": "L'électron porte une charge de -1 et orbite autour du noyau dans des nuages de probabilité appelés orbitales. Découvert par J.J. Thomson en 1897, il est environ 1 836 fois plus léger qu'un proton.",
+    "source_url": "https://fr.wikipedia.org/wiki/%C3%89lectron",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0025",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quelle échelle de dureté des minéraux va du talc à 1 jusqu'au diamant à 10 ?",
+    "correct_answer": "L'échelle de Mohs",
+    "incorrect_answers": [
+      "L'échelle de Beaufort",
+      "L'échelle de Richter",
+      "L'échelle Kelvin",
+      "Le classement pierre-feuille-ciseaux"
+    ],
+    "explanation": "L'échelle de Mohs, imaginée par Friedrich Mohs en 1812, classe la résistance au rayage du talc à 1 jusqu'au diamant à 10. L'ongle humain raye à environ 2,5.",
+    "source_url": "https://fr.wikipedia.org/wiki/%C3%89chelle_de_Mohs",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0026",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quel animal microscopique peut survivre dans le vide de l'espace ?",
+    "correct_answer": "Le tardigrade",
+    "incorrect_answers": [
+      "Le nématode",
+      "Le rotifère",
+      "L'amibe",
+      "Le biscuit tombé derrière le canapé"
+    ],
+    "explanation": "Les tardigrades, ou ours d'eau, sont des micro-animaux à huit pattes de moins d'un millimètre. En 2007, l'un d'eux a survécu à dix jours de vide spatial à bord d'un satellite en s'enfermant dans une forme de vie ralentie appelée tun.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tardigrada",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0024",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel peintre surréaliste espagnol a peint 'La Persistance de la mémoire', la toile de 1931 aux montres molles ?",
+    "correct_answer": "Salvador Dalí",
+    "incorrect_answers": [
+      "Joan Miró",
+      "René Magritte",
+      "Max Ernst",
+      "L'horloger qui avait oublié l'heure"
+    ],
+    "explanation": "Dalí peint la toile en 1931 ; après sa première exposition en 1932, elle est vendue 250 dollars et rejoint le Museum of Modern Art de New York en 1934, où elle est toujours exposée.",
+    "source_url": "https://fr.wikipedia.org/wiki/La_Persistance_de_la_mémoire",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0025",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel sculpteur grec de l'Antiquité a créé la statue colossale de Zeus à Olympie, l'une des Sept Merveilles du monde antique ?",
+    "correct_answer": "Phidias",
+    "incorrect_answers": [
+      "Praxitèle",
+      "Lysippe",
+      "Myron",
+      "Le club de minigolf d'Olympie"
+    ],
+    "explanation": "Ce colosse chryséléphantin — des plaques d'ivoire et d'or sur une armature de bois — culminait à 12,4 mètres dans le temple de Zeus, avant de disparaître d'ici la fin du VIe siècle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Statue_chryséléphantine_de_Zeus_à_Olympie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0026",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Dans 'Cent Ans de solitude', comment se nomme la ville fictive fondée par José Arcadio Buendía ?",
+    "correct_answer": "Macondo",
+    "incorrect_answers": [
+      "Comala",
+      "Santa María",
+      "Tres Marías",
+      "Le groupe de discussion des Buendía"
+    ],
+    "explanation": "Gabriel García Márquez publie ce roman en 1967 ; traduit en 46 langues, il s'est vendu à plus de 50 millions d'exemplaires et lui a valu le prix Nobel de littérature en 1982.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cent_Ans_de_solitude",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0021",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quelle série animée suit depuis des décennies la famille jaune de Homer, Marge, Bart, Lisa et Maggie dans la ville de Springfield ?",
+    "correct_answer": "Les Simpson",
+    "incorrect_answers": [
+      "Family Guy",
+      "South Park",
+      "Futurama",
+      "Le Grand Marathon Flambant"
+    ],
+    "explanation": "Les Simpson sont diffusées sur Fox depuis décembre 1989 et forment la série en prises de vues réelles la plus longue de l'histoire américaine ; l'emplacement exact de Springfield reste un gag récurrent.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Simpson",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0022",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quel album de Michael Jackson, sorti en 1982, est devenu le plus vendu de tous les temps grâce à des tubes comme Billie Jean et Beat It ?",
+    "correct_answer": "Thriller",
+    "incorrect_answers": [
+      "Bad",
+      "Off the Wall",
+      "Dangerous",
+      "Une leçon de moonwalk : 45 minutes de respiration"
+    ],
+    "explanation": "Thriller a remporté un record de huit Grammy Awards en 1984, et son clip de quatorze minutes a aidé MTV à dépasser sa réticence initiale à diffuser d'artistes noirs.",
+    "source_url": "https://fr.wikipedia.org/wiki/Thriller_(album)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0023",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel compositeur a écrit la partition de cordes stridente du film d'épouvante d'Alfred Hitchcock, « Psychose » (1960) ?",
+    "correct_answer": "Bernard Herrmann",
+    "incorrect_answers": [
+      "Ennio Morricone",
+      "Nino Rota",
+      "John Barry",
+      "Un violoniste seul dans la douche"
+    ],
+    "explanation": "La partition entièrement écrite pour cordes de Herrmann, avec le motif hurlant de la scène de douche, est devenue l'une des musiques de film les plus imitées de l'histoire du cinéma.",
+    "source_url": "https://fr.wikipedia.org/wiki/Psychose_(film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0021",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Dans le jeu télévisé Jeopardy!, sous quelle forme les candidats doivent-ils formuler chaque réponse ?",
+    "correct_answer": "Une question",
+    "incorrect_answers": [
+      "Une affirmation",
+      "La vérité",
+      "Un nom de catégorie",
+      "Un haïku sur le présentateur"
+    ],
+    "explanation": "Créé par Merv Griffin, ce jeu télévisé inverse le format habituel : le présentateur énonce des affirmations et les candidats répondent sous forme de questions. La première version a débuté sur NBC le 30 mars 1964, et Alex Trebek a animé l’édition quotidienne de 1984 à 2020.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jeopardy!",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0022",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Dans l’édition française du Monopoly, quelle est la rue la plus chère du plateau ?",
+    "correct_answer": "La rue de la Paix",
+    "incorrect_answers": [
+      "L’avenue de Neuilly",
+      "Le boulevard de Magenta",
+      "L’avenue des Champs-Élysées",
+      "La résidence secondaire du dé à coudre"
+    ],
+    "explanation": "Le Monopoly a été publié pour la première fois par Parker Brothers en 1935, et l’édition française remplace les rues d’Atlantic City par des lieux parisiens, la rue de la Paix étant la plus chère. Hasbro édite aujourd’hui le jeu.",
+    "source_url": "https://fr.wikipedia.org/wiki/Monopoly",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0023",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Combien de cartes compte le jeu de cartes italien traditionnel utilisé pour jouer à la scopa ?",
+    "correct_answer": "40",
+    "incorrect_answers": [
+      "32",
+      "36",
+      "52",
+      "Autant que de recettes de sauce tomate"
+    ],
+    "explanation": "Scopa signifie « balai » en italien : emporter toutes les cartes de la table s’appelle faire scopa. C’est l’un des trois grands jeux de cartes nationaux italiens avec la briscola et la tresette, et le jeu traditionnel compte les couleurs coupes, épées, bâtons et deniers.",
+    "source_url": "https://fr.wikipedia.org/wiki/Scopa_(jeu_de_cartes)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

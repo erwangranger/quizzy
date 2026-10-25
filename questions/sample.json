@@ -2696,5 +2696,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0029",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which strait separates Asia and North America?",
+    "correct_answer": "The Bering Strait",
+    "incorrect_answers": [
+      "The Strait of Magellan",
+      "The Strait of Gibraltar",
+      "The Bosphorus",
+      "The Panama Canal with the locks removed"
+    ],
+    "explanation": "The Bering Strait is only about 82 km wide at its narrowest, between Cape Dezhnev in Russia and Cape Prince of Wales in Alaska. The International Date Line runs through it.",
+    "source_url": "https://en.wikipedia.org/wiki/Bering_Strait",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0030",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which country controls Greenland?",
+    "correct_answer": "Denmark",
+    "incorrect_answers": [
+      "Norway",
+      "Canada",
+      "Iceland",
+      "The gift shop at the map edge"
+    ],
+    "explanation": "Greenland became a Danish colony in 1814 and is now an autonomous territory within the Kingdom of Denmark. It is the largest island in the world.",
+    "source_url": "https://en.wikipedia.org/wiki/Greenland",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0031",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which salt flat in Bolivia is the largest in the world?",
+    "correct_answer": "Salar de Uyuni",
+    "incorrect_answers": [
+      "Salar de Atacama",
+      "The Bonneville Salt Flats",
+      "Lake Eyre",
+      "The world's biggest margarita rim"
+    ],
+    "explanation": "Salar de Uyuni covers about 10,582 square km and holds a large share of the world's known lithium reserves. After rain it turns into a giant natural mirror.",
+    "source_url": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0032",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Mainland France spans how many time zones, the most of any country?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "8",
+      "3",
+      "24",
+      "Whatever time the bakery opens"
+    ],
+    "explanation": "Overseas territories from Clipperton Island in the Pacific to Reunion in the Indian Ocean give France 12 zones, from UTC-10 to UTC+12. Russia follows with 11.",
+    "source_url": "https://en.wikipedia.org/wiki/Time_in_France",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0029",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which animals, carrying infected fleas, spread the Black Death across 14th-century Europe?",
+    "correct_answer": "Rats",
+    "incorrect_answers": [
+      "Pigeons",
+      "Squirrels",
+      "Camels",
+      "Cats, working overtime"
+    ],
+    "explanation": "The plague reached Sicily in October 1347 aboard Genoese galleys from Caffa, and Yersinia pestis, carried by rat fleas, killed an estimated 25 to 50 million Europeans within five years.",
+    "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0030",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Approximately how long is the Great Wall of China, including all its branches and trenches?",
+    "correct_answer": "21,196 km",
+    "incorrect_answers": [
+      "8,850 km",
+      "13,170 km",
+      "30,500 km",
+      "Long enough that nobody bothered to measure it"
+    ],
+    "explanation": "A 2012 state survey by China's cultural heritage administration measured 21,196 km of walls, trenches and natural barriers built from the 7th century BC through the Ming dynasty.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0031",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did Guy Fawkes attempt to blow up the Houses of Parliament?",
+    "correct_answer": "1605",
+    "incorrect_answers": [
+      "1588",
+      "1620",
+      "1599",
+      "The year Parliament blew itself up by accident"
+    ],
+    "explanation": "Fawkes was caught on 5 November 1605 guarding 36 barrels of gunpowder hidden beneath the House of Lords, and Bonfire Night has been marked in Britain every year since.",
+    "source_url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0032",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "On which North Carolina beach did the Wright brothers make the first powered flight?",
+    "correct_answer": "Kitty Hawk",
+    "incorrect_answers": [
+      "Daytona Beach",
+      "Myrtle Beach",
+      "Virginia Beach",
+      "The Wrights' back garden"
+    ],
+    "explanation": "Orville piloted the Wright Flyer for 12 seconds over 120 feet on 17 December 1903 at Kill Devil Hills near Kitty Hawk; the brothers chose the site for its steady winds and soft sand.",
+    "source_url": "https://en.wikipedia.org/wiki/Wright_Flyer",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0024",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which subatomic particle carries a negative electric charge and orbits the atomic nucleus?",
+    "correct_answer": "Electron",
+    "incorrect_answers": [
+      "Proton",
+      "Neutron",
+      "Photon",
+      "The nucleus's tiny bodyguard"
+    ],
+    "explanation": "An electron carries a charge of -1 and orbits the nucleus in probability clouds called orbitals. Discovered by J.J. Thomson in 1897, it is about 1,836 times lighter than a proton.",
+    "source_url": "https://en.wikipedia.org/wiki/Electron",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0025",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which mineral hardness scale runs from talc at 1 to diamond at 10?",
+    "correct_answer": "Mohs scale",
+    "incorrect_answers": [
+      "Beaufort scale",
+      "Richter scale",
+      "Kelvin scale",
+      "The rock-paper-scissors ranking"
+    ],
+    "explanation": "The Mohs scale, devised by Friedrich Mohs in 1812, ranks scratch resistance from talc at 1 to diamond at 10. Your fingernail scrapes in at about 2.5.",
+    "source_url": "https://en.wikipedia.org/wiki/Mohs_scale",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0026",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which microscopic animal can survive the vacuum of open space?",
+    "correct_answer": "Tardigrade",
+    "incorrect_answers": [
+      "Nematode",
+      "Rotifer",
+      "Amoeba",
+      "The cookie that fell behind the sofa"
+    ],
+    "explanation": "Tardigrades, or water bears, are eight-legged micro-animals under 1 mm long. In 2007 one lived through ten days of open-space vacuum on a satellite by shutting down into a tun state.",
+    "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0024",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Spanish Surrealist painted 'The Persistence of Memory', the 1931 canvas of melting clocks?",
+    "correct_answer": "Salvador Dalí",
+    "incorrect_answers": [
+      "Joan Miró",
+      "René Magritte",
+      "Max Ernst",
+      "A watchmaker running a century late"
+    ],
+    "explanation": "Dalí painted the canvas in 1931; after its first 1932 exhibition it sold for 250 dollars and reached the Museum of Modern Art in New York in 1934, where it still hangs.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0025",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which ancient Greek sculptor created the colossal seated Statue of Zeus at Olympia, one of the Seven Wonders of the Ancient World?",
+    "correct_answer": "Phidias",
+    "incorrect_answers": [
+      "Praxiteles",
+      "Lysippos",
+      "Myron",
+      "The Olympia mini-golf committee"
+    ],
+    "explanation": "The chryselephantine colossus — ivory and gold plates over a wooden frame — stood about 12.4 metres tall in the Temple of Zeus before being lost by the end of the 6th century AD.",
+    "source_url": "https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0026",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "In 'One Hundred Years of Solitude', what is the name of the fictional town founded by José Arcadio Buendía?",
+    "correct_answer": "Macondo",
+    "incorrect_answers": [
+      "Comala",
+      "Santa María",
+      "Tres Marías",
+      "The Buendía family group chat"
+    ],
+    "explanation": "Gabriel García Márquez published the novel in 1967; it has sold more than 50 million copies in 46 languages and carried him to the 1982 Nobel Prize in Literature.",
+    "source_url": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0021",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which long-running animated series follows the yellow-skinned family of Homer, Marge, Bart, Lisa, and Maggie in the town of Springfield?",
+    "correct_answer": "The Simpsons",
+    "incorrect_answers": [
+      "Family Guy",
+      "South Park",
+      "Futurama",
+      "The Flaming Homer Marathon"
+    ],
+    "explanation": "The Simpsons premiered on Fox in December 1989 and became the longest-running American primetime scripted series, with Springfield's location famously kept a running gag.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Simpsons",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0022",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 1982 album by Michael Jackson became the best-selling album of all time, powered by singles like Billie Jean and Beat It?",
+    "correct_answer": "Thriller",
+    "incorrect_answers": [
+      "Bad",
+      "Off the Wall",
+      "Dangerous",
+      "Moonwalk Meditation: 45 Minutes of Light Breathing"
+    ],
+    "explanation": "Thriller won a record eight Grammys at the 1984 ceremony and its 14-minute title video helped break MTV's early reluctance to play Black artists.",
+    "source_url": "https://en.wikipedia.org/wiki/Thriller_(album)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0023",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which composer wrote the screeching string score for Alfred Hitchcock's 1960 horror classic Psycho?",
+    "correct_answer": "Bernard Herrmann",
+    "incorrect_answers": [
+      "Ennio Morricone",
+      "Nino Rota",
+      "John Barry",
+      "A Solo Violinist Locked in the Shower"
+    ],
+    "explanation": "Herrmann's all-string score, including the shrieking violin motif of the shower scene, cost far less than the film's budget, and Hitchcock paid him his full fee when the composer requested credit.",
+    "source_url": "https://en.wikipedia.org/wiki/Psycho_(1960_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0021",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In the game show Jeopardy!, contestants must phrase every response in what form?",
+    "correct_answer": "A question",
+    "incorrect_answers": [
+      "An answer",
+      "The truth",
+      "A category name",
+      "A haiku about the host"
+    ],
+    "explanation": "Created by Merv Griffin, the quiz show reverses the usual format: the host gives statements as clues and contestants respond as questions. It debuted on NBC on March 30, 1964, and Alex Trebek hosted the syndicated version for more than 36 years, from 1984 until 2020.",
+    "source_url": "https://en.wikipedia.org/wiki/Jeopardy!",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0022",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "On the standard American Monopoly board, which property is the most expensive?",
+    "correct_answer": "Boardwalk",
+    "incorrect_answers": [
+      "Park Place",
+      "Illinois Avenue",
+      "Pennsylvania Avenue",
+      "The thimble's summer home"
+    ],
+    "explanation": "Parker Brothers first published Monopoly in 1935, and the classic American board uses Atlantic City street names, with Boardwalk as the priciest space. Hasbro now publishes the game, and the French edition replaces the streets with Paris landmarks.",
+    "source_url": "https://en.wikipedia.org/wiki/Monopoly_(game)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0023",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "How many cards are in the traditional Italian deck used to play scopa?",
+    "correct_answer": "40",
+    "incorrect_answers": [
+      "32",
+      "36",
+      "52",
+      "One card per pizza topping"
+    ],
+    "explanation": "Scopa means broom in Italian: capturing every card on the table is called a scopa. The game is one of Italy's three major national card games, alongside briscola and tresette, and the traditional deck uses the suits cups, swords, batons and coins.",
+    "source_url": "https://en.wikipedia.org/wiki/Scopa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
