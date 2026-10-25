@@ -2417,7 +2417,7 @@
     "lang": "fr",
     "category": "history",
     "difficulty": 3,
-    "question": "Combien d'engins en bronze ont été identifiés dans le mécanisme d'Anticythère ?",
+    "question": "Combien d'engrenages en bronze ont été identifiés dans le mécanisme d'Anticythère ?",
     "correct_answer": "37",
     "incorrect_answers": [
       "12",
@@ -4697,7 +4697,7 @@
     "lang": "fr",
     "category": "history",
     "difficulty": 1,
-    "question": "Quel édifice à coupole, ancienne cathédrale puis mosquée, est aujourd'hui un grand musée d'Istanbul ?",
+    "question": "Quel édifice à coupole d'Istanbul a été à la fois une cathédrale et une mosquée ?",
     "correct_answer": "Sainte-Sophie",
     "incorrect_answers": [
       "La mosquée Bleue",
@@ -5124,7 +5124,7 @@
       "Là où les satellites vont se cacher"
     ],
     "explanation": "Le point Nemo, calculé en 1992 à partir de données satellitaires à environ 2 688 km des îles les plus proches, vient du latin signifiant personne, comme le célèbre capitaine de sous-marin de bande dessinée.",
-    "source_url": "https://fr.wikipedia.org/wiki/Point_de_d%C3%A9part",
+    "source_url": "https://fr.wikipedia.org/wiki/Point_Nemo",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -5314,7 +5314,7 @@
       "Une tondeuse robot par court"
     ],
     "explanation": "Le domaine couvre 8 hectares au total, dont 8 000 m2 de courts de competition en gazon : le Central, le numero 1 et les courts 2 a 19.",
-    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -5333,7 +5333,7 @@
       "Autant que de fraises restantes"
     ],
     "explanation": "Depuis 2022, les quatre tournois du Grand Chelem disputent un jeu decisif de 10 points des que la manche finale atteint 6-6, et le vainqueur doit compter deux points d'ecart. Wimbledon pratiquait le jeu decisif a 6-6 depuis 2019.",
-    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -5352,7 +5352,7 @@
       "Un invite de la boutique de souvenirs"
     ],
     "explanation": "Goran Ivanisevic, invite et 125e mondial, a battu Patrick Rafter en cinq manches en finale. Il reste le seul vainqueur de simple messieurs entre comme invite a Wimbledon ; Boris Becker etait deja champion non tete de serie en 1985.",
-    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
