@@ -3456,5 +3456,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0037",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel pays traverse 11 fuseaux horaires et couvre plus d'un dixième des terres émergées ?",
+    "correct_answer": "La Russie",
+    "incorrect_answers": [
+      "Le Canada",
+      "La Chine",
+      "Les États-Unis",
+      "L'empire des très grandes cartes"
+    ],
+    "explanation": "La Russie couvre environ 17,1 millions de kilomètres carrés, soit près de 11 pour cent des terres émergées, et s'étend sur 11 fuseaux horaires. Le Canada est deuxième avec environ 10 millions de kilomètres carrés.",
+    "source_url": "https://fr.wikipedia.org/wiki/Russie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0038",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel fleuve charrie plus d'eau que tous les autres, libérant près d'un cinquième de l'eau douce qui rejoint les océans ?",
+    "correct_answer": "L'Amazone",
+    "incorrect_answers": [
+      "Le Nil",
+      "Le Yangtzé",
+      "Le Mississippi",
+      "Le plus grand arrosoir du monde"
+    ],
+    "explanation": "L'Amazone déverse environ 209 000 mètres cubes d'eau par seconde dans l'Atlantique, soit près d'un cinquième de l'eau fluviale qui rejoint les océans. Son bassin couvre quelque 7 millions de kilomètres carrés en Amérique du Sud.",
+    "source_url": "https://fr.wikipedia.org/wiki/Amazone_(fleuve)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0039",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel détroit entre l'Espagne et le Maroc se rétrécit à environ 14 km et sépare l'Europe de l'Afrique ?",
+    "correct_answer": "Le détroit de Gibraltar",
+    "incorrect_answers": [
+      "Le détroit d'Ormuz",
+      "Le détroit de Malacca",
+      "Le Bosphore",
+      "Un très étroit couloir entre deux continents"
+    ],
+    "explanation": "Le détroit de Gibraltar relie l'océan Atlantique à la mer Méditerranée et se rétrécit à environ 14 km entre Tarifa, en Espagne, et le cap Cires, au Maroc. Par temps clair, chaque rive est visible depuis l'autre.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_Gibraltar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0040",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Sous quel autre nom allemand le lac de Constance, aux frontières de l'Allemagne, de l'Autriche et de la Suisse, est-il connu ?",
+    "correct_answer": "Le Bodensee",
+    "incorrect_answers": [
+      "Le Schwarzwaldsee",
+      "Le Waldsee",
+      "Le Muttersee",
+      "Le lac qui a oublié son nom"
+    ],
+    "explanation": "Le nom Bodensee vient du village lacustre de Bodman, dont la racine en vieux haut allemand désignait les terres basses ; les noms français et anglais viennent de la ville de Constance. Le lac se situe vers 395 m d'altitude et le Rhin l'alimente et le draine.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_de_Constance",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0037",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel ouvrage brodé du XIe siècle, long de plus de 68 mètres, retrace les événements ayant mené à la conquête normande de l'Angleterre ?",
+    "correct_answer": "La tapisserie de Bayeux",
+    "incorrect_answers": [
+      "Le Domesday Book",
+      "Les Évangiles de Lindisfarne",
+      "Le Livre de Kells",
+      "Une très longue serviette de thé"
+    ],
+    "explanation": "Brodée en laine sur lin vers 1070, la tapisserie de Bayeux mesure environ 68 mètres et compte une cinquantaine de scènes. Malgré son nom, c'est une broderie, pas une tapisserie tissée.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tapisserie_de_Bayeux",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0038",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quelle bataille de 1066 vit Guillaume de Normandie vaincre Harold II, le dernier roi anglo-saxon d'Angleterre ?",
+    "correct_answer": "La bataille de Hastings",
+    "incorrect_answers": [
+      "La bataille de Stamford Bridge",
+      "La bataille de Bosworth",
+      "La bataille d'Azincourt",
+      "La bataille du petit-déjeuner"
+    ],
+    "explanation": "Harold avait marché vers le sud après avoir battu Harald Hardrada à Stamford Bridge quelques semaines plus tôt. À Hastings, une flèche lui atteignit l'œil et Guillaume fut couronné roi avant Noël 1066.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bataille_de_Hastings",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0039",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quel volcan a enseveli la ville romaine de Pompéi sous les cendres lors de son éruption de l'an 79 ?",
+    "correct_answer": "Le Vésuve",
+    "incorrect_answers": [
+      "L'Etna",
+      "Le Stromboli",
+      "L'Everest",
+      "Mont Lave-vaisselle"
+    ],
+    "explanation": "L'éruption de l'an 79, racontée par Pline le Jeune, recouvrit Pompéi et Herculanum sous des mètres de cendres et de pierre ponce. Les fouilles commencées en 1748 en ont fait une fenêtre sur la vie romaine.",
+    "source_url": "https://fr.wikipedia.org/wiki/V%C3%A9suve",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0040",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel empereur du Mali du XIVe siècle est souvent présenté comme l'homme le plus riche de l'histoire ?",
+    "correct_answer": "Mansa Moussa",
+    "incorrect_answers": [
+      "Gengis Khan",
+      "Jules César",
+      "Cléopâtre",
+      "Duchesse Pumpernickel de la Boutique de souvenirs"
+    ],
+    "explanation": "Mansa Moussa régna sur l'empire du Mali d'environ 1312 à 1337 et s'enrichit grâce au commerce de l'or et du sel. Lors de son pèlerinage à La Mecque en 1324, il distribua tant d'or au Caire que sa valeur y chuta pendant des années.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mansa_Moussa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0030",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "À quelle distance du Krakatoa se trouve l'île Rodrigues, d'où l'éruption de 1883 fut entendue et prise pour des tirs de canon ?",
+    "correct_answer": "4 800 kilomètres",
+    "incorrect_answers": [
+      "2 400 kilomètres",
+      "6 000 kilomètres",
+      "800 kilomètres",
+      "Une tondeuse à gazon, deux champs plus loin"
+    ],
+    "explanation": "L'explosion du 27 août 1883, la plus violente, fut entendue à 4 800 kilomètres de là, à Rodrigues près de Maurice, où les témoins l'ont prise pour des tirs de canon d'un navire proche. Les ondes sonores ont fait plusieurs fois le tour du globe.",
+    "source_url": "https://fr.wikipedia.org/wiki/%C3%89ruption_du_Krakatoa_en_1883",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0031",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quel organite serait à l'origine une bactérie libre qu'une autre cellule a absorbée ?",
+    "correct_answer": "La mitochondrie",
+    "incorrect_answers": [
+      "Le ribosome",
+      "L'appareil de Golgi",
+      "Le lysosome",
+      "Le frigo de la pause café"
+    ],
+    "explanation": "La mitochondrie possède son propre ADN circulaire, un trait bactérien. Selon la théorie endosymbiotique, défendue par Lynn Margulis, elle descend d'une alpha-protéobactérie absorbée par une cellule hôte il y a environ deux milliards d'années.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mitochondrie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0032",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Pourquoi la vitesse de la lumière dans le vide vaut-elle exactement 299 792 458 mètres par seconde, pas un chiffre de plus ni de moins ?",
+    "correct_answer": "Le mètre a été redéfini en 1983 pour que la vitesse de la lumière tombe juste",
+    "incorrect_answers": [
+      "Des mesures de plus en plus précises ont fini par fixer ce chiffre exact",
+      "La lumière ralentit exactement à cette valeur au zéro absolu",
+      "Einstein a calculé cette valeur à la main en 1905",
+      "Parce qu'une nanoseconde mesure un pied-lumière"
+    ],
+    "explanation": "Depuis 1983, le mètre est défini comme la distance parcourue par la lumière dans le vide en 1/299 792 458 de seconde. La vitesse de la lumière est donc exacte par définition, et les mesures plus précises raffinent le mètre, pas la constante.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vitesse_de_la_lumi%C3%A8re",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0030",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel compositeur baroque a écrit les concertos pour violon connus sous le nom de « Les Quatre Saisons » ?",
+    "correct_answer": "Antonio Vivaldi",
+    "incorrect_answers": [
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Arcangelo Corelli",
+      "Celui qui a écrit le solo de triangle"
+    ],
+    "explanation": "Antonio Vivaldi a publié Les Quatre Saisons en 1725 à Amsterdam, comme les quatre premiers concertos d'un recueil de douze ; chaque concerto est accompagné d'un sonnet italien, probablement écrit par Vivaldi lui-même.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Quatre_Saisons_(Vivaldi)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0031",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel tableau de Pablo Picasso, peint en 1937, dénonce le bombardement d'une ville basque pendant la guerre d'Espagne ?",
+    "correct_answer": "Guernica",
+    "incorrect_answers": [
+      "Les Demoiselles d'Avignon",
+      "La Femme qui pleure",
+      "Le Vieil homme à la guitare",
+      "Une boulangerie du centre de Madrid"
+    ],
+    "explanation": "Picasso peint Guernica pour le pavillon espagnol de l'Exposition internationale de Paris de 1937, après le bombardement de la ville basque par la légion Condor le 26 avril 1937 ; cette toile en gris, d'environ 3,49 mètres sur 7,77, est exposée au Museo Reina Sofía à Madrid.",
+    "source_url": "https://fr.wikipedia.org/wiki/Guernica_(Picasso)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0032",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Miguel de Cervantes publie en 1605 la première partie de quel roman, souvent considéré comme le premier roman moderne ?",
+    "correct_answer": "Don Quichotte",
+    "incorrect_answers": [
+      "Lazarillo de Tormes",
+      "La Célestine",
+      "Gil Blas",
+      "Le chevalier Pataquès"
+    ],
+    "explanation": "La première partie du chef-d'œuvre de Cervantes paraît en 1605 et la seconde en 1615 ; son héros Alonso Quijano, avide de romans de chevalerie, se prend pour le chevalier errant Don Quichotte de la Manche, accompagné de son écuyer Sancho Panza.",
+    "source_url": "https://fr.wikipedia.org/wiki/Don_Quichotte",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0027",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quel film de James Cameron, sorti en 2009 et situé sur la lune Pandora, est devenu le plus gros succès au box-office de l'histoire ?",
+    "correct_answer": "Avatar",
+    "incorrect_answers": [
+      "Titanic",
+      "Avengers: Endgame",
+      "Star Wars : Le Réveil de la Force",
+      "Trois heures de tests sur fond bleu"
+    ],
+    "explanation": "Avatar a dépassé Titanic le 25 janvier 2010 et reste en tête depuis sa ressortie en 2021. James Cameron a tourné l'essentiel du film par capture de mouvement dans un studio construit pour l'occasion à Los Angeles.",
+    "source_url": "https://fr.wikipedia.org/wiki/Avatar_(film,_2009)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0028",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quelle chanson a ouvert la toute première diffusion de MTV le 1er août 1981 ?",
+    "correct_answer": "Video Killed the Radio Star",
+    "incorrect_answers": [
+      "Billie Jean",
+      "Thriller",
+      "Sweet Dreams",
+      "La tonalité du modem de la chaîne"
+    ],
+    "explanation": "Les Buggles ont ouvert la première diffusion de la chaîne le 1er août 1981. Écrite en 1979 par Trevor Horn et Geoff Downes avec Bruce Woolley, la chanson était déjà numéro un du classement britannique deux ans plus tôt.",
+    "source_url": "https://fr.wikipedia.org/wiki/Video_Killed_the_Radio_Star",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0029",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel film romantique indien de 1995, toujours projeté chaque jour au cinéma Maratha Mandir de Mumbai, détient le record de la plus longue exploitation de l'histoire du cinéma indien ?",
+    "correct_answer": "Dilwale Dulhania Le Jayenge",
+    "incorrect_answers": [
+      "Mother India",
+      "Sholay",
+      "Mughal-e-Azam",
+      "Un feuilleton sur la billetterie"
+    ],
+    "explanation": "Première réalisation d'Aditya Chopra, avec Shah Rukh Khan et Kajol, le film est sorti le 20 octobre 1995 et était toujours projeté chaque jour au Maratha Mandir plus de 30 ans plus tard. Il a rempoté 10 Filmfare Awards, un record pour un seul film à l'époque.",
+    "source_url": "https://fr.wikipedia.org/wiki/Dilwale_Dulhania_Le_Jayenge",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0027",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Combien d'anneaux entrelacés figurent sur le drapeau olympique ?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "3",
+      "7",
+      "12",
+      "Un seul, si on plie le drapeau"
+    ],
+    "explanation": "Pierre de Coubertin a créé les cinq anneaux entrelacés en 1913 pour représenter les cinq continents habités ; le drapeau a été hissé pour la première fois aux Jeux de 1920 à Anvers.",
+    "source_url": "https://fr.wikipedia.org/wiki/Symboles_olympiques",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0028",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Au biathlon, quel est le diamètre de la cible à toucher en position couchée ?",
+    "correct_answer": "45 mm",
+    "incorrect_answers": [
+      "115 mm",
+      "9 mm",
+      "450 mm",
+      "La taille d'une boîte à pizza"
+    ],
+    "explanation": "Les cibles couchées ne mesurent que 45 mm de diamètre à 50 mètres du tireur, contre 115 mm pour le tir debout ; chaque erreur coûte une minute ou un tour de pénalité de 150 mètres.",
+    "source_url": "https://fr.wikipedia.org/wiki/Biathlon",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0029",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Combien de spectateurs, environ, ont assisté à la victoire de l'Uruguay sur le Brésil dans le match décisif du Mondial 1950 au Maracanã ?",
+    "correct_answer": "Près de 200 000",
+    "incorrect_answers": [
+      "Près de 60 000",
+      "Près de 100 000",
+      "Près de 350 000",
+      "Deux hommes et un chien"
+    ],
+    "explanation": "L'affluence officielle était de 173 850 spectateurs, peut-être plus de 200 000, un record pour un match de football ; le Brésil n'avait besoin que d'un nul, mais le but de Ghiggia a offert la victoire 2-1 à l'Uruguay.",
+    "source_url": "https://fr.wikipedia.org/wiki/Maracanazo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

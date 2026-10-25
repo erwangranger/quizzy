@@ -3456,5 +3456,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0037",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which country spans 11 time zones and more than one-tenth of the world's land?",
+    "correct_answer": "Russia",
+    "incorrect_answers": [
+      "Canada",
+      "China",
+      "United States",
+      "The Empire of Really Big Maps"
+    ],
+    "explanation": "Russia covers about 17.1 million square km, roughly 11 percent of the world's land, and stretches from the Baltic to the Bering Strait. Canada is second in area at about 10 million square km.",
+    "source_url": "https://en.wikipedia.org/wiki/Russia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0038",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river carries more water than any other, releasing about a fifth of all the fresh water that reaches the oceans?",
+    "correct_answer": "The Amazon",
+    "incorrect_answers": [
+      "The Nile",
+      "The Yangtze",
+      "The Mississippi",
+      "The world's largest watering can"
+    ],
+    "explanation": "The Amazon pours about 209,000 cubic metres of water per second into the Atlantic, roughly a fifth of all river water reaching the oceans. Its basin covers some 7 million square km of South America.",
+    "source_url": "https://en.wikipedia.org/wiki/Amazon_River",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0039",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which strait between Spain and Morocco narrows to about 14 km and separates Europe from Africa?",
+    "correct_answer": "The Strait of Gibraltar",
+    "incorrect_answers": [
+      "The Strait of Hormuz",
+      "The Strait of Malacca",
+      "The Bosphorus",
+      "A very narrow hallway between two continents"
+    ],
+    "explanation": "The Strait of Gibraltar links the Atlantic Ocean to the Mediterranean Sea, narrowing to roughly 14 km between Tarifa in Spain and Cires Point in Morocco. On clear days each shore is visible from the other.",
+    "source_url": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0040",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Lake Constance, on the borders of Germany, Austria and Switzerland, is known in German by which other name?",
+    "correct_answer": "Bodensee",
+    "incorrect_answers": [
+      "Schwarzwaldsee",
+      "Waldsee",
+      "Muttersee",
+      "The lake that forgot its own name"
+    ],
+    "explanation": "The name Bodensee comes from the lakeside village of Bodman, whose Old High German root meant low-lying soils; the English and French names come from the city of Konstanz. The lake sits about 395 m above sea level and is fed and drained by the Rhine.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Constance",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0037",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which 11th-century embroidered cloth, over 68 metres long, depicts the events leading up to the Norman conquest of England?",
+    "correct_answer": "The Bayeux Tapestry",
+    "incorrect_answers": [
+      "The Domesday Book",
+      "The Lindisfarne Gospels",
+      "The Book of Kells",
+      "A very long tea towel"
+    ],
+    "explanation": "Stitched in wool on linen around 1070, the Bayeux Tapestry runs about 68 metres with some 58 scenes. Despite the name, it is an embroidery, not a woven tapestry.",
+    "source_url": "https://en.wikipedia.org/wiki/Bayeux_Tapestry",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0038",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which battle of 1066 saw William of Normandy defeat Harold II, the last Anglo-Saxon king of England?",
+    "correct_answer": "The Battle of Hastings",
+    "incorrect_answers": [
+      "The Battle of Stamford Bridge",
+      "The Battle of Bosworth Field",
+      "The Battle of Agincourt",
+      "The Battle of the Breakfast Table"
+    ],
+    "explanation": "Harold marched south after beating Harald Hardrada at Stamford Bridge weeks earlier. At Hastings an arrow struck his eye, and William was crowned king by Christmas 1066.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0039",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which volcano buried the Roman town of Pompeii under ash when it erupted in 79 AD?",
+    "correct_answer": "Mount Vesuvius",
+    "incorrect_answers": [
+      "Mount Etna",
+      "Mount Stromboli",
+      "Mount Everest",
+      "Mount Washmore"
+    ],
+    "explanation": "The eruption of 79 AD, described by Pliny the Younger, smothered Pompeii and Herculaneum in metres of ash and pumice. Excavations from 1748 onward turned the buried town into a window on Roman daily life.",
+    "source_url": "https://en.wikipedia.org/wiki/Vesuvius",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0040",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which 14th-century Mali emperor is often called the richest person in history?",
+    "correct_answer": "Mansa Musa",
+    "incorrect_answers": [
+      "Genghis Khan",
+      "Julius Caesar",
+      "Cleopatra",
+      "Duchess Pumpernickel of the Gift Shop"
+    ],
+    "explanation": "Mansa Musa ruled the Mali Empire from about 1312 to 1337, growing rich on gold and salt trade. On his 1324 pilgrimage to Mecca he handed out so much gold in Cairo that its value dropped for years.",
+    "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0030",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How far from Krakatoa is the island of Rodrigues, where the 1883 eruption was heard and mistaken for cannon fire?",
+    "correct_answer": "4,800 kilometres",
+    "incorrect_answers": [
+      "2,400 kilometres",
+      "6,000 kilometres",
+      "800 kilometres",
+      "A neighbour's lawnmower, two fields over"
+    ],
+    "explanation": "The third and loudest explosion on August 27, 1883 was heard 4,800 kilometres away on Rodrigues, near Mauritius, where witnesses took it for cannon fire from a nearby ship. The sound waves circled the globe several times.",
+    "source_url": "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0031",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which organelle is widely believed to have started out as a free-living bacterium that another cell absorbed?",
+    "correct_answer": "The mitochondrion",
+    "incorrect_answers": [
+      "The ribosome",
+      "The Golgi apparatus",
+      "The lysosome",
+      "The break room fridge"
+    ],
+    "explanation": "Mitochondria keep their own circular DNA, a bacterial trait. The endosymbiotic theory, championed by Lynn Margulis, holds that they descended from aerobic bacteria absorbed by another cell roughly two billion years ago.",
+    "source_url": "https://en.wikipedia.org/wiki/Mitochondrion",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0032",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Why is the speed of light in vacuum exactly 299,792,458 metres per second, not one digit more or less?",
+    "correct_answer": "The metre was redefined in 1983 to make the light speed exact",
+    "incorrect_answers": [
+      "Repeated measurements finally settled on that exact digit",
+      "Light slows to exactly that value at absolute zero",
+      "Einstein calculated the value by hand in 1905",
+      "Because a nanosecond is one light-foot long"
+    ],
+    "explanation": "Since 1983 the metre is defined as the distance light covers in 1/299,792,458 of a second, so the constant is exact by definition. Better measurements now refine the metre, not the speed of light.",
+    "source_url": "https://en.wikipedia.org/wiki/Speed_of_light",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0030",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Baroque composer wrote the set of violin concertos known as 'The Four Seasons'?",
+    "correct_answer": "Antonio Vivaldi",
+    "incorrect_answers": [
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Arcangelo Corelli",
+      "The one with the triangle solo"
+    ],
+    "explanation": "Antonio Vivaldi published The Four Seasons in 1725 in Amsterdam as the first four concertos of a set of twelve; each concerto is paired with an Italian sonnet, probably written by Vivaldi himself.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0031",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Pablo Picasso painted 'Guernica' in 1937 as a response to the bombing of which Basque town during the Spanish Civil War?",
+    "correct_answer": "Guernica",
+    "incorrect_answers": [
+      "Bilbao",
+      "Pamplona",
+      "San Sebastián",
+      "A bakery in downtown Madrid"
+    ],
+    "explanation": "Picasso painted Guernica for the Spanish pavilion at the 1937 Paris International Exposition, after the Condor Legion bombed the Basque town on 26 April 1937; the grey canvas, about 3.49 by 7.77 metres, now hangs in the Museo Reina Sofía in Madrid.",
+    "source_url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0032",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Miguel de Cervantes published the first part of which novel in 1605, often called the first modern novel?",
+    "correct_answer": "Don Quixote",
+    "incorrect_answers": [
+      "Lazarillo de Tormes",
+      "La Celestina",
+      "Gil Blas",
+      "Sir Reginald Fancypants"
+    ],
+    "explanation": "Cervantes published the first part of Don Quixote in 1605 and the second in 1615; its hero Alonso Quijano, obsessed with chivalric romances, sets out as the knight-errant Don Quixote of La Mancha with his squire Sancho Panza.",
+    "source_url": "https://en.wikipedia.org/wiki/Don_Quixote",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0027",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 2009 James Cameron film, set on the moon Pandora, became the highest-grossing film of all time?",
+    "correct_answer": "Avatar",
+    "incorrect_answers": [
+      "Titanic",
+      "Avengers: Endgame",
+      "Star Wars: The Force Awakens",
+      "Three hours of blue screen tests"
+    ],
+    "explanation": "Avatar passed Titanic on January 25, 2010, and has stayed on top since its 2021 re-release. James Cameron shot most of it with performance capture on a purpose-built stage in Los Angeles.",
+    "source_url": "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0028",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which song was the first music video ever played on MTV when the channel launched on August 1, 1981?",
+    "correct_answer": "Video Killed the Radio Star",
+    "incorrect_answers": [
+      "Billie Jean",
+      "Thriller",
+      "Sweet Dreams",
+      "The channel's dial-up modem tone"
+    ],
+    "explanation": "The Buggles opened MTV's first broadcast on August 1, 1981. The song, written in 1979 by Trevor Horn and Geoff Downes with Bruce Woolley, had already topped the UK chart two years earlier.",
+    "source_url": "https://en.wikipedia.org/wiki/MTV",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0029",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1995 Bollywood romance has been shown daily at the Maratha Mandir cinema in Mumbai since its release, the longest theatrical run in Indian cinema history?",
+    "correct_answer": "Dilwale Dulhania Le Jayenge",
+    "incorrect_answers": [
+      "Mother India",
+      "Sholay",
+      "Mughal-e-Azam",
+      "A soap opera about the ticket booth"
+    ],
+    "explanation": "Aditya Chopra's directorial debut, starring Shah Rukh Khan and Kajol, opened on 20 October 1995 and is still screening at the Maratha Mandir more than 30 years later. It won 10 Filmfare Awards, the most for a single film at the time.",
+    "source_url": "https://en.wikipedia.org/wiki/Dilwale_Dulhania_Le_Jayenge",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0027",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many interlaced rings appear on the Olympic flag?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "3",
+      "7",
+      "12",
+      "One, if you fold the flag"
+    ],
+    "explanation": "Pierre de Coubertin designed the five interlaced rings in 1913 to stand for the five inhabited continents, and the flag first flew at the 1920 Games in Antwerp.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympic_symbols",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0028",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In biathlon, what is the diameter of the target a shooter must hit from the prone position?",
+    "correct_answer": "45 mm",
+    "incorrect_answers": [
+      "115 mm",
+      "9 mm",
+      "450 mm",
+      "As wide as a pizza box"
+    ],
+    "explanation": "Prone targets measure just 45 mm across at 50 m from the shooter; standing targets grow to 115 mm, and each miss costs a 150 m penalty lap or one minute.",
+    "source_url": "https://en.wikipedia.org/wiki/Biathlon",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0029",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Roughly how many spectators watched Uruguay beat Brazil in the decisive match of the 1950 World Cup at the Maracana?",
+    "correct_answer": "Around 200,000",
+    "incorrect_answers": [
+      "Around 60,000",
+      "Around 100,000",
+      "Around 350,000",
+      "Two men and a dog"
+    ],
+    "explanation": "Official attendance was 173,850 and the real crowd may have topped 200,000, possibly the most attended football match ever; Brazil needed only a draw, but Alcides Ghiggia won it 2-1 for Uruguay.",
+    "source_url": "https://en.wikipedia.org/wiki/Uruguay_v_Brazil_(1950_FIFA_World_Cup)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
