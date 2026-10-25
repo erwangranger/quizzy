@@ -6116,5 +6116,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0065",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle chaîne de montagnes marque traditionnellement la limite entre l'Europe et l'Asie en Russie ?",
+    "correct_answer": "L'Oural",
+    "incorrect_answers": [
+      "Le Caucase",
+      "Les Carpates",
+      "L'Altaï",
+      "Les Alpes de Reste"
+    ],
+    "explanation": "L'Oural s'étire sur plus de 2 300 km, de la mer de Kara au fleuve Oural. Avec le fleuve homonyme, il marque traditionnellement la frontière géographique entre l'Europe et l'Asie.",
+    "source_url": "https://fr.wikipedia.org/wiki/Oural",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0066",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel pays africain le Sahara couvre-t-il presque entièrement ?",
+    "correct_answer": "L'Algérie",
+    "incorrect_answers": [
+      "Le Nigeria",
+      "L'Éthiopie",
+      "Le Kenya",
+      "La République du Château de Sable"
+    ],
+    "explanation": "Plus de 80 pour cent du territoire algérien se situe dans le Sahara, le plus vaste désert chaud du monde avec plus de 8,5 millions de km2. Seul le nord montagneux de l'Atlas et une étroite bande côtière y échappent.",
+    "source_url": "https://fr.wikipedia.org/wiki/Alg%C3%A9rie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0067",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Combien de pays bordent la mer Caspienne ?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "3",
+      "7",
+      "9",
+      "Un seul, il se déplace tout le temps"
+    ],
+    "explanation": "La mer Caspienne est bordée par le Kazakhstan, la Russie, l'Azerbaïdjan, l'Iran et le Turkménistan. Le droit international l'a finalement classée comme un lac, ce qui en fait la plus vaste étendue d'eau fermée du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mer_Caspienne",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0068",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quel détroit sépare la Nouvelle-Guinée de l'Australie ?",
+    "correct_answer": "Le détroit de Torrès",
+    "incorrect_answers": [
+      "Le détroit de Bass",
+      "Le détroit de Cook",
+      "Le détroit de Macassar",
+      "Le détroit des Poches Vides"
+    ],
+    "explanation": "Le détroit de Torrès, large d'environ 150 km, relie la mer de Corail à la mer d'Arafura. Lors des glaciations du Pléistocène, la Nouvelle-Guinée et l'Australie ne formaient qu'une seule masse terrestre appelée Sahul.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_Torr%C3%A8s",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0065",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel conflit a été déclenché par la défenestration de Prague de 1618, où des nobles protestants jetèrent deux gouverneurs royaux par la fenêtre ?",
+    "correct_answer": "La guerre de Trente Ans",
+    "incorrect_answers": [
+      "La guerre de Sept Ans",
+      "Les croisades hussites",
+      "La guerre de Succession d'Espagne",
+      "Un concours de crachage par la fenêtre"
+    ],
+    "explanation": "La défenestration de 1618 visait des gouverneurs catholiques et déclencha la révolte de Bohême, prélude à la guerre de Trente Ans. Les victimes survécurent à leur chute d'environ 21 mètres, amortie selon les récits par un tas d'ordures ou des douves.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9fenestrations_de_Prague",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0066",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quelle éruption volcanique valut à l'année 1816 le surnom d'année sans été dans l'hémisphère Nord ?",
+    "correct_answer": "Le Tambora",
+    "incorrect_answers": [
+      "Le Vésuve",
+      "Le Krakatoa",
+      "Le mont Saint-Helens",
+      "Un barbecue géant parti en fumée"
+    ],
+    "explanation": "L'éruption du Tambora d'avril 1815, sur l'île de Sumbawa en Indonésie, fut l'une des plus violentes de l'histoire. Son voile de cendres refroidit le climat, apportant de la neige en juin et de mauvaises récoltes en 1816.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ann%C3%A9e_sans_%C3%A9t%C3%A9",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0067",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Sur quelle île reculée de l'Atlantique sud Napoléon Bonaparte vécut-il en exil de 1815 jusqu'à sa mort en 1821 ?",
+    "correct_answer": "Sainte-Hélène",
+    "incorrect_answers": [
+      "L'Ascension",
+      "Tristan da Cunha",
+      "L'île de Pâques",
+      "La villa de ses beaux-parents en Toscane"
+    ],
+    "explanation": "Après Waterloo, les Britanniques exilèrent Napoléon sur Sainte-Hélène, où il vécut à Longwood House jusqu'à sa mort en 1821. L'île de l'Ascension, à environ 1 300 kilomètres au nord-ouest, fut mise en garnison au même moment pour décourager toute tentative de secours.",
+    "source_url": "https://fr.wikipedia.org/wiki/Longwood_House",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0068",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Durant l'été 1858, la puanteur de quel fleuve poussa le Parlement de Londres à envisager de déménager ?",
+    "correct_answer": "La Tamise",
+    "incorrect_answers": [
+      "La Severn",
+      "La Tyne",
+      "La Fleet ensevelie",
+      "Le rayon parfumerie de Whitehall"
+    ],
+    "explanation": "En juillet et août 1858, la chaleur intensifia l'odeur des eaux usées déversées dans la Tamise, et la Grande Puanteur vida le Parlement. Quelques semaines plus tard, une loi permit à Joseph Bazalgette de bâtir le nouveau réseau d'égouts de Londres.",
+    "source_url": "https://fr.wikipedia.org/wiki/Grande_Puanteur",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0051",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quelle information une abeille communique-t-elle à sa colonie en exécutant la danse frétillante ?",
+    "correct_answer": "La direction et la distance de la nourriture",
+    "incorrect_answers": [
+      "L'âge de la reine",
+      "Combien d'œufs ont été pondus aujourd'hui",
+      "La taille de la ruche",
+      "Les pas de danse préférés de la reine"
+    ],
+    "explanation": "Les butineuses exécutent cette danse en huit sur les rayons de la ruche pour indiquer où trouver du nectar. L'angle de la danse se mesure par rapport au soleil, et sa durée signale la distance.",
+    "source_url": "https://fr.wikipedia.org/wiki/Danse_des_abeilles",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0052",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Combien d'yeux avait l'Opabinia, cette étrange créature marine de la période cambrienne ?",
+    "correct_answer": "Cinq",
+    "incorrect_answers": [
+      "Deux",
+      "Huit",
+      "Un",
+      "Cinq cents, à quelques uns près"
+    ],
+    "explanation": "Cet animal aux corps mou des schistes de Burgess portait cinq yeux pédonculés et une trompe munie d'épines pour porter la nourriture à sa bouche. Il arpentait les fonds marins cambriens il y a plus de 500 millions d'années.",
+    "source_url": "https://fr.wikipedia.org/wiki/Opabinia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0053",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Le nombre d'Avogadro, qui compte les particules dans une mole de matière, rend hommage à quel scientifique italien ?",
+    "correct_answer": "Amedeo Avogadro",
+    "incorrect_answers": [
+      "Alessandro Volta",
+      "Luigi Galvani",
+      "Enrico Fermi",
+      "Le ranch à taupes du comte Avogadro"
+    ],
+    "explanation": "Jean Perrin propose ce nom en 1909 en l'honneur d'Amedeo Avogadro, dont les travaux sur les gaz ont anticipé l'idée de particules. Depuis 2019, la constante est fixée exactement à 602 214 076 000 000 000 000 000 particules par mole.",
+    "source_url": "https://fr.wikipedia.org/wiki/Nombre_d%27Avogadro",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0051",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel ballet se déroule le soir de Noël, où une casse-noisette prend vie ?",
+    "correct_answer": "Casse-Noisette",
+    "incorrect_answers": [
+      "Le Lac des cygnes",
+      "Giselle",
+      "La Belle au bois dormant",
+      "Celui où la fée Dragée syndique les jouets"
+    ],
+    "explanation": "Le ballet en deux actes de Tchaïkovski est créé à Saint-Pétersbourg en 1892, d'après une version d'Alexandre Dumas qui adapte elle-même le conte d'Hoffmann, Casse-Noisette et le Roi des souris.",
+    "source_url": "https://fr.wikipedia.org/wiki/Casse-Noisette",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0052",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel peintre espagnol a peint Les Ménines en 1656 ?",
+    "correct_answer": "Diego Vélasquez",
+    "incorrect_answers": [
+      "Le Greco",
+      "Francisco Goya",
+      "Bartolomé Esteban Murillo",
+      "Le photographe officiel du palais"
+    ],
+    "explanation": "Vélasquez, peintre officiel du roi Philippe IV, achève cette toile en 1656 ; elle est exposée au musée du Prado à Madrid, où un miroir du fond reflète le roi et la reine.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_M%C3%A9nines",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0053",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Comment se nomme le baleinier du capitaine Achab dans Moby-Dick ?",
+    "correct_answer": "Pequod",
+    "incorrect_answers": [
+      "Essex",
+      "Rachel",
+      "Jeroboam",
+      "Un canoë avec une seule rame"
+    ],
+    "explanation": "Le roman de Melville paru en 1851 est raconté par le marin Ismaël, qui embarque sur le Pequod lorsque le capitaine Achab traque le grand cachalot blanc qui lui a arraché la jambe.",
+    "source_url": "https://fr.wikipedia.org/wiki/Moby_Dick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0048",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quel film de 1922, qui suit un Inuit et sa famille dans l'Arctique canadien, est considéré comme le premier long métrage documentaire de l'histoire du cinéma ?",
+    "correct_answer": "Nanouk l'Esquimau",
+    "incorrect_answers": [
+      "L'Homme à la caméra",
+      "Nanette du Sud",
+      "Grizzly Man",
+      "Un homme, un chien et un trépied"
+    ],
+    "explanation": "Réalisé par Robert Flaherty, Nanouk l'Esquimau mêle documentaire et scènes mises en scène avant même que le mot documentaire n'existe, et il a façonné le film de non-fiction pour des décennies.",
+    "source_url": "https://fr.wikipedia.org/wiki/Nanouk_l%27Esquimau",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0049",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "En début d'année 1992, Nevermind du groupe Nirvana a détrôné en tête du classement américain Billboard 200 quel album d'une superstar des années 1980 ?",
+    "correct_answer": "Dangerous de Michael Jackson",
+    "incorrect_answers": [
+      "Like a Prayer de Madonna",
+      "Purple Rain de Prince",
+      "Born in the U.S.A. de Bruce Springsteen",
+      "Un album de kazoo joué par un grizzly"
+    ],
+    "explanation": "Nevermind a dépassé Dangerous de Michael Jackson au sommet du Billboard 200 en janvier 1992, un passage de relais symbolique de la pop vers le grunge.",
+    "source_url": "https://fr.wikipedia.org/wiki/Nevermind",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0050",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel film d'animation de Disney, sorti en 1940, fut le premier film commercial diffusé en son stéréophonique grâce au procédé Fantasound ?",
+    "correct_answer": "Fantasia",
+    "incorrect_answers": [
+      "Pinocchio",
+      "Bambi",
+      "Blanche-Neige et les Sept Nains",
+      "Une bande-son stéréo en kazoo"
+    ],
+    "explanation": "Walt Disney et RCA ont développé le Fantasound pour Fantasia, premier film commercial en stéréo et précurseur du son surround, même si sa sortie en salles fut d'abord un échec commercial.",
+    "source_url": "https://fr.wikipedia.org/wiki/Fantasia_(film,_1940)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0048",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Au Scrabble, combien de lettres blanches compte un jeu en version anglaise ?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "4",
+      "6",
+      "De quoi écrire ZZZZQQQ"
+    ],
+    "explanation": "Un jeu anglais contient 100 jetons, dont 98 portent une lettre, ce qui laisse 2 lettres blanches sans valeur qui servent de jokers. Le joueur annonce quelle lettre chaque blanc représente au moment de le poser.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lettres_du_Scrabble",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0049",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Quel tournoi du Grand Chelem de tennis est le dernier encore disputé sur terre battue ?",
+    "correct_answer": "Roland-Garros",
+    "incorrect_answers": [
+      "Wimbledon",
+      "L'US Open",
+      "L'Open d'Australie",
+      "Le Tournoi du Sable Fin"
+    ],
+    "explanation": "Roland-Garros est le dernier tournoi du Grand Chelem sur terre battue, une surface qui ralentit la balle et produit un rebond très haut ; l'US Open a abandonné cette surface en 1978. La terre battue favorise le jeu de fond plutôt que le service-volée.",
+    "source_url": "https://fr.wikipedia.org/wiki/Internationaux_de_France_de_tennis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0050",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Aux Jeux olympiques de Montréal en 1976, pourquoi les tableaux d'affichage montraient-ils 1.00 pour la première note parfaite en gymnastique ?",
+    "correct_answer": "Le tableau n'avait que 3 chiffres",
+    "incorrect_answers": [
+      "Les juges avaient saisi la note à l'envers",
+      "Une coupure de courant avait réinitialisé les tableaux",
+      "Le chiffre 10 était réservé aux scores d'équipe",
+      "Un tableau très timide"
+    ],
+    "explanation": "Nadia Comăneci a décroché la première note parfaite de l'histoire olympique en gymnastique aux barres asymétriques, mais les tableaux n'affichaient que 3 chiffres, si bien que 10.0 est apparu sous la forme 1.00. Elle a obtenu sept notes parfaites lors de ces Jeux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Nadia_Com%C4%83neci",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

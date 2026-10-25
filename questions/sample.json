@@ -6116,5 +6116,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0065",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which mountain range forms the traditional boundary between Europe and Asia in Russia?",
+    "correct_answer": "The Ural Mountains",
+    "incorrect_answers": [
+      "The Caucasus Mountains",
+      "The Carpathian Mountains",
+      "The Altai Mountains",
+      "The Leftover Alps"
+    ],
+    "explanation": "The Urals run north to south for over 2,300 km, from the Arctic Ocean coast to the Ural River. Geographers conventionally treat the range as the dividing line between the two continents.",
+    "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0066",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which African country does the Sahara desert cover almost entirely?",
+    "correct_answer": "Algeria",
+    "incorrect_answers": [
+      "Nigeria",
+      "Ethiopia",
+      "Kenya",
+      "The Republic of Sandcastle"
+    ],
+    "explanation": "Over 80 per cent of Algeria lies within the Sahara, the largest hot desert in the world at roughly 9,200,000 square kilometres. Only the Atlas Mountains in the far north and a narrow coastal strip escape the sand.",
+    "source_url": "https://en.wikipedia.org/wiki/Algeria",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0067",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "How many countries border the Caspian Sea?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "3",
+      "7",
+      "9",
+      "One, it just keeps moving around"
+    ],
+    "explanation": "The Caspian Sea is bounded by Kazakhstan, Russia, Azerbaijan, Iran and Turkmenistan. International law ultimately classed it as a lake, making it the largest enclosed body of water on Earth.",
+    "source_url": "https://en.wikipedia.org/wiki/Caspian_Sea",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0068",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which strait separates New Guinea from Australia?",
+    "correct_answer": "Torres Strait",
+    "incorrect_answers": [
+      "Bass Strait",
+      "Cook Strait",
+      "Makassar Strait",
+      "The Strait of Empty Pockets"
+    ],
+    "explanation": "Torres Strait is about 150 km wide and links the Coral Sea with the Arafura Sea. At low sea levels during the Pleistocene glaciations New Guinea and Australia were joined as the combined landmass of Sahul.",
+    "source_url": "https://en.wikipedia.org/wiki/Torres_Strait",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0065",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In 1618, Protestant estates threw two royal governors out of a window of Prague Castle, starting which conflict?",
+    "correct_answer": "The Thirty Years' War",
+    "incorrect_answers": [
+      "The Seven Years' War",
+      "The Hussite Crusades",
+      "The War of the Spanish Succession",
+      "A medieval pillow fight"
+    ],
+    "explanation": "The 1618 defenestration of Catholic officials at Prague Castle triggered the Bohemian Revolt, which widened into the Thirty Years' War. The victims survived the roughly 21-metre fall, aided by a rubbish heap or a moat depending on the account.",
+    "source_url": "https://en.wikipedia.org/wiki/Defenestrations_of_Prague",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0066",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which volcanic eruption made 1816 known as the Year Without a Summer across the Northern Hemisphere?",
+    "correct_answer": "Mount Tambora",
+    "incorrect_answers": [
+      "Mount Vesuvius",
+      "Krakatoa",
+      "Mount St. Helens",
+      "A very large bonfire in Wales"
+    ],
+    "explanation": "The April 1815 eruption of Mount Tambora in Indonesia was one of the most powerful in recorded history. Its ash veil cooled global temperatures, bringing June snowfall to New England and failed harvests across 1816.",
+    "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0067",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "On which remote South Atlantic island did Napoleon Bonaparte spend his final exile, from 1815 until his death in 1821?",
+    "correct_answer": "Saint Helena",
+    "incorrect_answers": [
+      "Ascension Island",
+      "Tristan da Cunha",
+      "Easter Island",
+      "His in-laws' villa in Tuscany"
+    ],
+    "explanation": "After Waterloo, the British exiled Napoleon to remote Saint Helena, where he lived at Longwood House under guard until dying in 1821. Ascension Island, about 1,300 kilometres northwest, was simultaneously garrisoned to prevent any rescue attempt.",
+    "source_url": "https://en.wikipedia.org/wiki/Longwood_House",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0068",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "During a hot summer, the stench of which river forced London's Parliament to consider relocating in 1858?",
+    "correct_answer": "The River Thames",
+    "incorrect_answers": [
+      "The River Severn",
+      "The River Tyne",
+      "The buried River Fleet",
+      "The perfume counter of Whitehall"
+    ],
+    "explanation": "In July and August 1858, heat intensified the smell of untreated sewage in the Thames, and the Great Stink emptied Parliament. Within weeks, a bill was passed empowering Joseph Bazalgette's new London sewer network.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0051",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What information does a honey bee share with its colony by performing the waggle dance?",
+    "correct_answer": "The direction and distance to food",
+    "incorrect_answers": [
+      "The age of the queen",
+      "How many eggs were laid today",
+      "The size of the hive",
+      "The queen's favourite dance moves"
+    ],
+    "explanation": "Foragers perform this figure-eight dance on the honeycomb to tell hive mates where to find nectar. The angle of the waggle run is measured relative to the sun, and its duration signals the distance.",
+    "source_url": "https://en.wikipedia.org/wiki/Waggle_dance",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0052",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "How many eyes did Opabinia, the odd sea creature of the Cambrian period, have?",
+    "correct_answer": "Five",
+    "incorrect_answers": [
+      "Two",
+      "Eight",
+      "One",
+      "Five hundred, give or take a few"
+    ],
+    "explanation": "This soft-bodied animal from the Burgess Shale had five eyes on stalks and a clawed proboscis for passing food to its mouth. It prowled the Cambrian seafloor more than 500 million years ago.",
+    "source_url": "https://en.wikipedia.org/wiki/Opabinia",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0053",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "The Avogadro constant, the number of particles in one mole of a substance, is named in honour of which Italian scientist?",
+    "correct_answer": "Amedeo Avogadro",
+    "incorrect_answers": [
+      "Alessandro Volta",
+      "Luigi Galvani",
+      "Enrico Fermi",
+      "Count Avogadro's mole ranch"
+    ],
+    "explanation": "Jean Perrin proposed the name in 1909 to honour Amedeo Avogadro, whose gas studies anticipated the particle idea. Since 2019 the constant has been fixed at 602,214,076,000,000,000,000,000 particles per mole.",
+    "source_url": "https://en.wikipedia.org/wiki/Avogadro%27s_number",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0051",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which ballet is set on Christmas Eve, where a nutcracker doll comes to life?",
+    "correct_answer": "The Nutcracker",
+    "incorrect_answers": [
+      "Swan Lake",
+      "Giselle",
+      "The Sleeping Beauty",
+      "The one where the sugar plum fairy unionizes"
+    ],
+    "explanation": "Tchaikovsky's two-act ballet premiered in Saint Petersburg in 1892, adapted from a story by Alexandre Dumas that itself retells Hoffmann's tale The Nutcracker and the Mouse King.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0052",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Spanish painter created Las Meninas in 1656?",
+    "correct_answer": "Diego Velázquez",
+    "incorrect_answers": [
+      "El Greco",
+      "Francisco Goya",
+      "Bartolomé Esteban Murillo",
+      "The palace's official selfie photographer"
+    ],
+    "explanation": "Velázquez, court painter to King Philip IV, finished the canvas in 1656; it now hangs in the Museo del Prado in Madrid, where a mirror on the back wall reflects the king and queen.",
+    "source_url": "https://en.wikipedia.org/wiki/Las_Meninas",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0053",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "What is the name of Captain Ahab's whaling ship in Moby-Dick?",
+    "correct_answer": "Pequod",
+    "incorrect_answers": [
+      "Essex",
+      "Rachel",
+      "Jeroboam",
+      "A canoe with one oar"
+    ],
+    "explanation": "Melville's 1851 novel is narrated by the sailor Ishmael, who joins the Pequod as Captain Ahab hunts the giant white whale that bit off his leg on an earlier voyage.",
+    "source_url": "https://en.wikipedia.org/wiki/Moby-Dick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0048",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which film is widely cited as the first feature-length documentary, following an Inuk man and his family in the Canadian Arctic?",
+    "correct_answer": "Nanook of the North",
+    "incorrect_answers": [
+      "Man with a Movie Camera",
+      "Nanette of the South",
+      "Grizzly Man",
+      "One man and his tripod"
+    ],
+    "explanation": "Robert Flaherty released Nanook of the North in 1922, blending documentary and staged scenes years before the term documentary existed, and it shaped nonfiction film for decades.",
+    "source_url": "https://en.wikipedia.org/wiki/Nanook_of_the_North",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0049",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Nirvana's breakthrough album Nevermind displaced which 1980s superstar from the top of the US Billboard 200 chart in the first chart week of 1992?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Madonna",
+      "Prince",
+      "Bruce Springsteen",
+      "A kazoo tribute band"
+    ],
+    "explanation": "Nevermind knocked Michael Jackson's Dangerous off the top of the Billboard 200 in January 1992, a symbolic passing of the torch from pop to grunge.",
+    "source_url": "https://en.wikipedia.org/wiki/Nevermind",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0050",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1940 Disney animated film became the first commercial film released in stereophonic sound, using a system called Fantasound?",
+    "correct_answer": "Fantasia",
+    "incorrect_answers": [
+      "Pinocchio",
+      "Bambi",
+      "Snow White and the Seven Dwarfs",
+      "A soundtrack recorded in surround-kazoo"
+    ],
+    "explanation": "Walt Disney and RCA developed the Fantasound system for Fantasia, making it the first commercial film in stereo and a forerunner of surround sound, though its roadshow release lost money at first.",
+    "source_url": "https://en.wikipedia.org/wiki/Fantasia_(1940_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0048",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In Scrabble, how many blank tiles does an English-language set contain?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "4",
+      "6",
+      "Enough to spell ZZZZQQQ"
+    ],
+    "explanation": "An English set holds 100 tiles, 98 of them printed with a letter, leaving 2 blanks that carry no value and act as wild cards. The player declares which letter each blank stands for when playing it.",
+    "source_url": "https://en.wikipedia.org/wiki/Scrabble",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0049",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Which Grand Slam tennis tournament is the only one still played on clay?",
+    "correct_answer": "The French Open",
+    "incorrect_answers": [
+      "Wimbledon",
+      "The US Open",
+      "The Australian Open",
+      "The Sandpit Invitational"
+    ],
+    "explanation": "Roland-Garros is the only major still held on clay, a surface that slows the ball and produces a high bounce; the US Open abandoned clay for hard courts in 1978. Clay rewards patient baseline play over big serving.",
+    "source_url": "https://en.wikipedia.org/wiki/French_Open",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0050",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "At the 1976 Montreal Olympics, why did scoreboards display 1.00 for the first gymnastics perfect 10?",
+    "correct_answer": "The scoreboard only had 3 digits",
+    "incorrect_answers": [
+      "The judges entered the score in reverse",
+      "A power cut reset the boards",
+      "The number 10 was reserved for team scores",
+      "A very shy scoreboard"
+    ],
+    "explanation": "Nadia Comaneci scored the first perfect 10 in Olympic gymnastics on the uneven bars, but the boards could hold only 3 digits, so 10.0 appeared as 1.00. She earned seven perfect scores at those Games.",
+    "source_url": "https://en.wikipedia.org/wiki/1976_Summer_Olympics",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
