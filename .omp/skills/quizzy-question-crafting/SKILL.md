@@ -50,7 +50,12 @@ Players see 5 choices: the correct answer, 3 plausible wrong answers, and 1 joke
 The directive from the owner: players should **chuckle** at the 5th choice. It is
 obviously wrong and entertaining, never a real contender.
 
-- 2–8 words, plain text, JSON-safe (no double quotes, backslashes, HTML entities, emoji).
+- As short as the laugh allows: deadpan 1-4 words; 5 words only when the extra words ARE the joke (e.g. "The waterfall with a fear of heights"); never more than 8.
+- Plain text, JSON-safe (no double quotes, backslashes, HTML entities, emoji).
+- Failure modes to cut when reviewing (each with its fix):
+  - Dead frame ("The one with...", "Long enough that...", "Whatever number..."): cut the frame, keep the image. "The one with the dragons and no plot" becomes "Dragons, but no plot".
+  - Explanatory tail (a clause explaining why it is funny): delete the tail, go deadpan. "A sushi chef with a very steady hand" becomes "A sushi chef, obviously".
+  - Subtitle clause (setup:punchline in one string): keep one image only. "Moonwalk Meditation: 45 Minutes of Light Breathing" becomes "45 minutes of light breathing".
 - Unmistakably wrong to anyone who knows the topic — absurd, exaggerated, or playfully literal.
 - Family-friendly and good-natured. Universal humor only: no politics, no religion,
   no cruelty toward real named people, no dark or violent humor.
