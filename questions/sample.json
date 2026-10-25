@@ -4976,5 +4976,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0053",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which sea strait separates the North Island and the South Island of New Zealand?",
+    "correct_answer": "Cook Strait",
+    "incorrect_answers": [
+      "Foveaux Strait",
+      "Bass Strait",
+      "Torres Strait",
+      "The gap between two sheep paddocks"
+    ],
+    "explanation": "Cook Strait narrows to about 22 km between Cape Terawhiti and the Marlborough Sounds, joining the Tasman Sea to the South Pacific Ocean. It is notoriously rough, and strong tidal currents race through the gap twice a day.",
+    "source_url": "https://en.wikipedia.org/wiki/Cook_Strait",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0054",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Baffin Island is the largest island of which country?",
+    "correct_answer": "Canada",
+    "incorrect_answers": [
+      "Denmark",
+      "Russia",
+      "United States",
+      "The polar bears' secret island"
+    ],
+    "explanation": "Baffin Island in the Canadian Arctic covers about 507,000 square km, making it the largest island of Canada and the fifth largest in the world. Its Barnes Ice Cap is a surviving remnant of the Laurentide Ice Sheet.",
+    "source_url": "https://en.wikipedia.org/wiki/Baffin_Island",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0055",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which inland sea lies entirely within Turkey, sitting between the Black Sea and the Aegean Sea?",
+    "correct_answer": "The Sea of Marmara",
+    "incorrect_answers": [
+      "The Black Sea",
+      "The Red Sea",
+      "The Dead Sea",
+      "The Mediterranean's overflow car park"
+    ],
+    "explanation": "The Sea of Marmara is Turkey's only inland sea, joined to the Black Sea by the Bosphorus and to the Aegean by the Dardanelles. Its surface water is far less salty than the open ocean because rivers keep diluting it.",
+    "source_url": "https://en.wikipedia.org/wiki/Sea_of_Marmara",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0056",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which city is the lowest-lying national capital in the world, sitting about 28 m below sea level?",
+    "correct_answer": "Baku",
+    "incorrect_answers": [
+      "Amsterdam",
+      "New Orleans",
+      "Cairo",
+      "The capital of the Fish Appreciation Society"
+    ],
+    "explanation": "Azerbaijan's capital Baku sits on the shore of the Caspian Sea, itself about 28 m below ocean level, making it the lowest-lying national capital on Earth. Amsterdam and New Orleans have streets below sea level too, but none sinks that deep.",
+    "source_url": "https://en.wikipedia.org/wiki/Baku",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0053",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In December 1914, British and German soldiers famously stopped fighting to sing carols and exchange small gifts during which event of the First World War?",
+    "correct_answer": "The Christmas Truce",
+    "incorrect_answers": [
+      "The Battle of the Somme",
+      "The Battle of Verdun",
+      "The Gallipoli landings",
+      "An early group hug, centuries ahead of schedule"
+    ],
+    "explanation": "German troops decorated their trenches with candles and sang carols on Christmas Eve 1914; British soldiers joined in singing and met in no man's land to swap tobacco, food and souvenirs.",
+    "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0054",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "On 28 April 1789, the crew of which Royal Navy ship set its captain, William Bligh, adrift in a small launch in the South Pacific?",
+    "correct_answer": "HMS Bounty",
+    "incorrect_answers": [
+      "HMS Beagle",
+      "HMS Endeavour",
+      "HMS Resolution",
+      "The one where the cook confiscated the rum"
+    ],
+    "explanation": "Fletcher Christian led the mutiny on the Bounty after the ship left Tahiti, setting Bligh and 18 loyalists adrift in the launch; Bligh then navigated over 3,600 nautical miles to Timor.",
+    "source_url": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0055",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Lighthouse of Alexandria, one of the Seven Wonders of the ancient world, stood on the small island of Pharos. In which modern-day country are its ruins?",
+    "correct_answer": "Egypt",
+    "incorrect_answers": [
+      "Greece",
+      "Turkey",
+      "Lebanon",
+      "The world's tallest nightlight"
+    ],
+    "explanation": "Built on Pharos island in the 3rd century BC under Ptolemy I and II, the lighthouse guided ships into Alexandria for centuries before earthquakes toppled it; divers later found its blocks in the harbour.",
+    "source_url": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0056",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which name, meaning nothing in Latin but chosen because nowhere in the oceans is farther from land, was given to the most remote point in the Pacific?",
+    "correct_answer": "Point Nemo",
+    "incorrect_answers": [
+      "Point Zero",
+      "Point Endeavour",
+      "Point Antipode",
+      "Where spacecraft go to hide"
+    ],
+    "explanation": "Point Nemo, computed in 1992 from satellite data about 2,688 km from the nearest islands, comes from the Latin for no one, and is also the name of the famous cartoon submarine captain.",
+    "source_url": "https://en.wikipedia.org/wiki/Point_Nemo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0042",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which element has the chemical symbol He?",
+    "correct_answer": "Helium",
+    "incorrect_answers": [
+      "Hydrogen",
+      "Hafnium",
+      "Holmium",
+      "Two hydrogens in a trench coat"
+    ],
+    "explanation": "Helium was spotted in the spectrum of the Sun during the eclipse of 1868, years before anyone found it on Earth, and was named after Helios, the Greek sun god. It is the second-lightest element after hydrogen and reacts with almost nothing.",
+    "source_url": "https://en.wikipedia.org/wiki/Helium",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0043",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which mammal famously lays eggs instead of giving birth to live young?",
+    "correct_answer": "Platypus",
+    "incorrect_answers": [
+      "Beaver",
+      "Otter",
+      "Armadillo",
+      "A beaver with an identity crisis"
+    ],
+    "explanation": "The platypus is one of only five living monotreme species, mammals that lay eggs. Found in eastern Australia, it combines a duck bill, a beaver tail and otter feet, and the male carries venomous spurs on its hind legs.",
+    "source_url": "https://en.wikipedia.org/wiki/Platypus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0044",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which moon of Jupiter is the largest moon in the solar system?",
+    "correct_answer": "Ganymede",
+    "incorrect_answers": [
+      "Titan",
+      "Callisto",
+      "Europa",
+      "Zeus's favourite parking spot"
+    ],
+    "explanation": "Ganymede spans 5,268 km across, wider than the planet Mercury, and is the only moon known to generate its own magnetic field. Galileo spotted it and three sister moons in 1610.",
+    "source_url": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0042",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "In which novel by F. Scott Fitzgerald does the mysterious millionaire Jay Gatsby throw lavish parties on Long Island?",
+    "correct_answer": "The Great Gatsby",
+    "incorrect_answers": [
+      "Tender Is the Night",
+      "This Side of Paradise",
+      "The Beautiful and Damned",
+      "The Great Gatsby Coloring Book"
+    ],
+    "explanation": "Published in April 1925, the novel follows narrator Nick Carraway, who rents a cottage next door to Gatsby's mansion at West Egg. A commercial flop that sold fewer than 20,000 copies in its first year, it became an American classic after its wartime revival.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Great_Gatsby",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0043",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Irish playwright wrote Waiting for Godot, the two-act play in which Vladimir and Estragon wait in vain by a country road?",
+    "correct_answer": "Samuel Beckett",
+    "incorrect_answers": [
+      "Harold Pinter",
+      "Eugene Ionesco",
+      "Jean-Paul Sartre",
+      "Hamuel Beckett"
+    ],
+    "explanation": "Beckett originally wrote the play in French as En attendant Godot, and it premiered at the Theatre de Babylone in Paris on 5 January 1953 under director Roger Blin. Beckett translated the English version himself, and it reached London in 1955.",
+    "source_url": "https://en.wikipedia.org/wiki/Waiting_for_Godot",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0044",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "How many times is the unchanging snare-drum ostinato played over the course of Ravel's 1928 orchestral piece Bolero?",
+    "correct_answer": "169",
+    "incorrect_answers": [
+      "99",
+      "144",
+      "365",
+      "Once, but with feeling"
+    ],
+    "explanation": "Ravel built the piece on two melodies over an ostinato rhythm played 169 times on one or more snare drums, rising in one long crescendo. He composed it in 1928 for the dancer Ida Rubinstein, and it premiered at the Paris Opera that November.",
+    "source_url": "https://en.wikipedia.org/wiki/Bol%C3%A9ro",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0039",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which French film, shot under wartime conditions in 1943-1945 and set in the theatrical world of 1830s Paris, was voted the best French film ever made in a 1995 poll of 600 French critics and industry professionals?",
+    "correct_answer": "Children of Paradise",
+    "incorrect_answers": [
+      "Grand Illusion",
+      "The 400 Blows",
+      "Hiroshima Mon Amour",
+      "A carousel of baguettes"
+    ],
+    "explanation": "Marcel Carné's two-part romantic drama Les Enfants du paradis follows a courtesan loved by a mime, an actor, a criminal and an aristocrat. Truffaut said he would give up all his films to have directed it.",
+    "source_url": "https://en.wikipedia.org/wiki/Children_of_Paradise",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0040",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which anthology series, created and presented by Rod Serling on CBS, ran for five seasons between 1959 and 1964 and left behind a phrase now used for surreal experiences?",
+    "correct_answer": "The Twilight Zone",
+    "incorrect_answers": [
+      "The Outer Limits",
+      "Alfred Hitchcock Presents",
+      "The Invaders",
+      "The Annoying Corridor"
+    ],
+    "explanation": "Serling wrote or co-wrote 92 of the show's 156 episodes, and each standalone story ended with a twist and often a moral. The phrase 'the Twilight Zone' has entered everyday speech for strange situations.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Twilight_Zone_(1959_TV_series)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0041",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The 1984 horror hit about a Nebraska town ruled by children who worship a cornfield deity was based on a short story first published in 1977 in which men's magazine?",
+    "correct_answer": "Penthouse",
+    "incorrect_answers": [
+      "Playboy",
+      "Hustler",
+      "Esquire",
+      "Farmers' Weekly"
+    ],
+    "explanation": "Stephen King's short story Children of the Corn appeared in Penthouse in 1977 before being collected in Night Shift, and Fritz Kiersch's 1984 adaptation launched a long-running film series.",
+    "source_url": "https://en.wikipedia.org/wiki/Children_of_the_Corn_(film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0039",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How much of the Wimbledon grounds consists of competition grass courts that groundsmen mow every year?",
+    "correct_answer": "About 8,000 m2",
+    "incorrect_answers": [
+      "About 80,000 m2",
+      "About 800 m2",
+      "About 8 m2",
+      "One robot mower per court"
+    ],
+    "explanation": "The grounds cover 8 hectares in total, of which 8,000 m2 are the competition grass courts: Centre Court, No. 1 Court and courts 2 to 19.",
+    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0040",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Since 2022, a final-set tie-break at Wimbledon starts once the set reaches 6-6: how many points does the winner need?",
+    "correct_answer": "10 points",
+    "incorrect_answers": [
+      "7 points",
+      "12 points",
+      "15 points",
+      "As many points as there are strawberries left"
+    ],
+    "explanation": "Since 2022 all four Grand Slams play a 10-point tie-break when the final set reaches 6-6, and the winner must lead by two points. Wimbledon previously used a 12-12 tie-break from 2019.",
+    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0041",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which player, ranked 125th in the world and playing on a wild card, won the 2001 Wimbledon Gentlemen's Singles?",
+    "correct_answer": "Goran Ivanisevic",
+    "incorrect_answers": [
+      "Goran Dragic",
+      "Marin Cilic",
+      "Ivan Lendl",
+      "A wildcard from the gift shop"
+    ],
+    "explanation": "Goran Ivanisevic entered as a wild card ranked 125th and beat Patrick Rafter in a five-set final. He remains the only wild-card winner of the Wimbledon men's singles; Boris Becker had been an unseeded champion in 1985.",
+    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

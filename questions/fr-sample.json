@@ -4976,5 +4976,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0053",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel détroit sépare l'île du Nord et l'île du Sud de la Nouvelle-Zélande ?",
+    "correct_answer": "Le détroit de Cook",
+    "incorrect_answers": [
+      "Le détroit de Foveaux",
+      "Le détroit de Bass",
+      "Le détroit de Torrès",
+      "Le passage entre deux paddocks à moutons"
+    ],
+    "explanation": "Le détroit de Cook se rétrécit à environ 22 km entre le cap Terawhiti et les Marlborough Sounds, reliant la mer de Tasman au Pacifique Sud. Ses courants de marée y sont parmi les plus rapides du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_Cook",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0054",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Baffin est la plus grande île de quel pays ?",
+    "correct_answer": "Le Canada",
+    "incorrect_answers": [
+      "Le Danemark",
+      "La Russie",
+      "Les États-Unis",
+      "Celle que les ours polaires gardent hors des cartes"
+    ],
+    "explanation": "Située dans l'Arctique canadien, l'île de Baffin couvre environ 507 000 kilomètres carrés, ce qui en fait la plus grande île du Canada et la cinquième du monde. Son ice cap de Barnes est un vestige de la dernière glaciation.",
+    "source_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_Baffin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0055",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle mer intérieure se trouve entièrement en Turquie, entre la mer Noire et la mer Égée ?",
+    "correct_answer": "La mer de Marmara",
+    "incorrect_answers": [
+      "La mer Noire",
+      "La mer Rouge",
+      "La mer Morte",
+      "Le parking à trop-plein de la Méditerranée"
+    ],
+    "explanation": "La mer de Marmara est la seule mer intérieure de Turquie, reliée à la mer Noire par le Bosphore et à la mer Égée par les Dardanelles. Ses eaux de surface sont bien moins salées que l'océan, car les fleuves la diluent.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mer_de_Marmara",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0056",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quelle est la capitale nationale la plus basse du monde, à environ 28 m sous le niveau de la mer ?",
+    "correct_answer": "Bakou",
+    "incorrect_answers": [
+      "Amsterdam",
+      "La Nouvelle-Orléans",
+      "Le Caire",
+      "La capitale du club d'appréciation des poissons"
+    ],
+    "explanation": "Bakou, capitale de l'Azerbaïdjan, se dresse sur les rives de la mer Caspienne, elle-même à environ 28 m sous le niveau des océans, ce qui en fait la capitale la plus basse du monde. Amsterdam et La Nouvelle-Orléans ont aussi des rues sous le niveau de la mer, mais aucune ne descend aussi profond.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bakou",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0053",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "En décembre 1914, des soldats britanniques et allemands ont cessé le combat pour chanter des chants de Noël et échanger des petits cadeaux lors de quel événement de la Première Guerre mondiale ?",
+    "correct_answer": "La Trêve de Noël",
+    "incorrect_answers": [
+      "La bataille de la Somme",
+      "La bataille de Verdun",
+      "Le débarquement des Dardanelles",
+      "Un câlin collectif, des siècles en avance"
+    ],
+    "explanation": "Les soldats allemands ont décoré leurs tranchées de bougies et chanté des chants de Noël le 24 décembre 1914 ; les Britanniques ont répondu en chantant, puis les deux camps se sont rencontrés dans le no man's land pour échanger tabac, nourriture et souvenirs.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tr%C3%AAve_de_No%C3%ABl",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0054",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Le 28 avril 1789, l'équipage de quel navire de la Royal Navy a abandonné son capitaine, William Bligh, dans une petite chaloupe au milieu du Pacifique Sud ?",
+    "correct_answer": "Le Bounty",
+    "incorrect_answers": [
+      "Le Beagle",
+      "L'Endeavour",
+      "Le Resolution",
+      "Celui dont le cuisinier confisquait le rhum"
+    ],
+    "explanation": "Fletcher Christian a mené la mutinerie du Bounty après le départ de Tahiti, abandonnant Bligh et 18 fidèles dans la chaloupe ; Bligh a ensuite navigué sur plus de 6 600 kilomètres jusqu'à Timor.",
+    "source_url": "https://fr.wikipedia.org/wiki/HMS_Bounty",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0055",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Le phare d'Alexandrie, l'une des sept merveilles du monde antique, se dressait sur la petite île de Pharos. Dans quel pays actuel se trouvent ses ruines ?",
+    "correct_answer": "L'Égypte",
+    "incorrect_answers": [
+      "La Grèce",
+      "La Turquie",
+      "Le Liban",
+      "La plus grande veilleuse du monde"
+    ],
+    "explanation": "Construit sur l'île de Pharos au 3e siècle avant notre ère sous Ptolémée Ier et II, le phare guidait les navires vers Alexandrie avant que des séismes ne le renversent ; des plongeurs ont ensuite retrouvé ses blocs dans le port.",
+    "source_url": "https://fr.wikipedia.org/wiki/Phare_d%27Alexandrie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0056",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel nom, sans signification en latin mais choisi parce qu'aucun point des océans n'est plus éloigné des terres, a été donné au lieu le plus reculé du Pacifique ?",
+    "correct_answer": "Point Nemo",
+    "incorrect_answers": [
+      "Point Zéro",
+      "Point Endeavour",
+      "Point Antipode",
+      "Là où les satellites vont se cacher"
+    ],
+    "explanation": "Le point Nemo, calculé en 1992 à partir de données satellitaires à environ 2 688 km des îles les plus proches, vient du latin signifiant personne, comme le célèbre capitaine de sous-marin de bande dessinée.",
+    "source_url": "https://fr.wikipedia.org/wiki/Point_de_d%C3%A9part",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0042",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quel élément chimique porte le symbole He ?",
+    "correct_answer": "L'hélium",
+    "incorrect_answers": [
+      "L'hydrogène",
+      "L'hafnium",
+      "L'holmium",
+      "Deux hydrogènes dans un imperméable"
+    ],
+    "explanation": "Repéré dans le spectre du Soleil lors de l'éclipse de 1868 avant d'être trouvé sur Terre, l'hélium doit son nom à Hélios, le dieu grec du Soleil. C'est le deuxième élément le plus léger après l'hydrogène et il ne réagit presque avec rien.",
+    "source_url": "https://fr.wikipedia.org/wiki/Hélium",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0043",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quel mammifère pond des œufs au lieu de donner naissance à des petits vivants ?",
+    "correct_answer": "L'ornithorynque",
+    "incorrect_answers": [
+      "Le castor",
+      "La loutre",
+      "Le tatou",
+      "Un castor en crise d'identité"
+    ],
+    "explanation": "L'ornithorynque est l'un des cinq seuls monotrèmes actuels, des mammifères qui pondent des œufs. Vivant dans l'est de l'Australie, il combine un bec de canard, une queue de castor et des pattes de loutre, et le mâle porte des éperons venimeux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ornithorynque",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0044",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quelle lune de Jupiter est la plus grande lune du système solaire ?",
+    "correct_answer": "Ganymède",
+    "incorrect_answers": [
+      "Titan",
+      "Callisto",
+      "Io",
+      "La place de parking préférée de Zeus"
+    ],
+    "explanation": "Avec un diamètre de 5 268 km, Ganymède dépasse la planète Mercure et reste la seule lune connue pour générer son propre champ magnétique. Galilée l'a repérée en 1610 avec trois de ses sœurs.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ganymède_(lune)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0042",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Dans quel roman de F. Scott Fitzgerald le mystérieux milliardaire Jay Gatsby donne-t-il des fêtes somptueuses sur Long Island ?",
+    "correct_answer": "Gatsby le Magnifique",
+    "incorrect_answers": [
+      "Tendre est la nuit",
+      "L'Envers du paradis",
+      "Les Heureux et les Damnés",
+      "Le Beau Gatsby livre de coloriage"
+    ],
+    "explanation": "Publié en avril 1925, le roman suit le narrateur Nick Carraway, qui loue une maisonnette voisine du manoir de Gatsby à West Egg. Échec commercial avec moins de 20 000 exemplaires vendus la première année, il est devenu un classique américain après sa renaissance en temps de guerre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Gatsby_le_Magnifique",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0043",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel dramaturge irlandais a écrit En attendant Godot, la pièce en deux actes où Vladimir et Estragon attendent en vain au bord d'une route ?",
+    "correct_answer": "Samuel Beckett",
+    "incorrect_answers": [
+      "Harold Pinter",
+      "Eugène Ionesco",
+      "Jean-Paul Sartre",
+      "Samouel Beckett"
+    ],
+    "explanation": "Beckett a d'abord écrit la pièce en français, et sa création a eu lieu au Théâtre de Babylone à Paris le 5 janvier 1953, dans une mise en scène de Roger Blin. Il a traduit lui-même la version anglaise, jouée à Londres en 1955.",
+    "source_url": "https://fr.wikipedia.org/wiki/En_attendant_Godot",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0044",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Combien de fois l'ostinato immuable de caisse claire est-il joué au cours du Boléro de Ravel, la pièce orchestrale de 1928 ?",
+    "correct_answer": "169",
+    "incorrect_answers": [
+      "99",
+      "144",
+      "365",
+      "Une fois, mais avec feeling"
+    ],
+    "explanation": "Ravel a construit la pièce sur deux mélodies portées par un rythme d'ostinato joué 169 fois sur une ou plusieurs caisses claires, dans un crescendo continu. Il l'a composée en 1928 pour la danseuse Ida Rubinstein, et elle a été créée à l'Opéra Garnier en novembre de la même année.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bol%C3%A9ro_(Ravel)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0039",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quel film français, tourné dans des conditions difficiles entre 1943 et 1945 et situé dans le monde du théâtre parisien des années 1830, a été élu meilleur film français de tous les temps par un vote de 600 critiques et professionnels du cinéma en 1995 ?",
+    "correct_answer": "Les Enfants du paradis",
+    "incorrect_answers": [
+      "La Grande Illusion",
+      "Les Quatre Cents Coups",
+      "Hiroshima mon amour",
+      "Un manège de baguettes"
+    ],
+    "explanation": "Le drame romantique en deux époques de Marcel Carné suit une courtisane aimée par un mime, un acteur, un bandit et un aristocrate. Truffaut disait qu'il aurait donné tous ses films pour l'avoir réalisé.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Enfants_du_paradis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0040",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quelle série américaine d'histoires fantastiques créée par Rod Serling, diffusée sur le réseau CBS entre 1959 et 1964, a donné son nom à une expression décrivant des situations étranges ou surréalistes ?",
+    "correct_answer": "La Quatrième Dimension",
+    "incorrect_answers": [
+      "Au-delà du réel",
+      "Alfred Hitchcock présente",
+      "Les Envahisseurs",
+      "La Cinquième Dimension"
+    ],
+    "explanation": "Rod Serling a écrit ou coécrit 92 des 156 épisodes, chacun une histoire autonome à chute. L'expression « entrer dans la Quatrième Dimension » est passée dans le langage courant.",
+    "source_url": "https://fr.wikipedia.org/wiki/La_Quatri%C3%A8me_Dimension_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0041",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Le film d'horreur de 1984, dans lequel un village du Nebraska est dirigé par des enfants vouant un culte à une divinité des champs de maïs, est adapté d'une nouvelle de Stephen King parue en 1977 dans quel magazine ?",
+    "correct_answer": "Penthouse",
+    "incorrect_answers": [
+      "Playboy",
+      "Hustler",
+      "Esquire",
+      "La revue des agriculteurs du Nebraska"
+    ],
+    "explanation": "La nouvelle Les Enfants du maïs est parue dans Penthouse en 1977 avant d'être recueillie dans Danse macabre, et l'adaptation de Fritz Kiersch a lancé une longue série de films.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_D%C3%A9mons_du_ma%C3%AFs",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0039",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Quelle superficie des grounds de Wimbledon se compose de courts de competition en gazon, tondus chaque annee par les gardeners ?",
+    "correct_answer": "Environ 8 000 m2",
+    "incorrect_answers": [
+      "Environ 80 000 m2",
+      "Environ 800 m2",
+      "Environ 8 m2",
+      "Une tondeuse robot par court"
+    ],
+    "explanation": "Le domaine couvre 8 hectares au total, dont 8 000 m2 de courts de competition en gazon : le Central, le numero 1 et les courts 2 a 19.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0040",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Depuis 2022, a Wimbledon le jeu decisif de la manche finale debute a 6 jeux partout : combien de points le vainqueur doit-il marquer ?",
+    "correct_answer": "10 points",
+    "incorrect_answers": [
+      "7 points",
+      "12 points",
+      "15 points",
+      "Autant que de fraises restantes"
+    ],
+    "explanation": "Depuis 2022, les quatre tournois du Grand Chelem disputent un jeu decisif de 10 points des que la manche finale atteint 6-6, et le vainqueur doit compter deux points d'ecart. Wimbledon pratiquait le jeu decisif a 6-6 depuis 2019.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0041",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Quel joueur, 125e mondial et reppeche en tant qu'invite, a remporte le simple messieurs de Wimbledon en 2001 ?",
+    "correct_answer": "Goran Ivanisevic",
+    "incorrect_answers": [
+      "Goran Dragic",
+      "Marin Cilic",
+      "Ivan Lendl",
+      "Un invite de la boutique de souvenirs"
+    ],
+    "explanation": "Goran Ivanisevic, invite et 125e mondial, a battu Patrick Rafter en cinq manches en finale. Il reste le seul vainqueur de simple messieurs entre comme invite a Wimbledon ; Boris Becker etait deja champion non tete de serie en 1985.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon_2026",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
