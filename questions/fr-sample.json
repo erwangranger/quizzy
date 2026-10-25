@@ -2316,5 +2316,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0025",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel pays insulaire est surnomme le pays de feu et de glace ?",
+    "correct_answer": "L'Islande",
+    "incorrect_answers": [
+      "Le Groenland",
+      "L'Irlande",
+      "Les iles Feroe",
+      "La piscine du Viking"
+    ],
+    "explanation": "L'Islande doit son surnom a ses glaciers comme le Vatnajokull et a ses volcans actifs comme l'Hekla, car elle chevauche la dorsale medio-atlantique. Des colons vikings s'y installent vers 874.",
+    "source_url": "https://fr.wikipedia.org/wiki/Islande",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0026",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle est la capitale de l'Egypte ?",
+    "correct_answer": "Le Caire",
+    "incorrect_answers": [
+      "Alexandrie",
+      "Gizeh",
+      "Louxor",
+      "La ville perdue de l'Atlantide"
+    ],
+    "explanation": "Le Caire a ete fondee en 969 par les Fatimides et est aujourd'hui la plus grande ville du monde arabe. Les pyramides de Gizeh se dressent juste a sa lisiere occidentale.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Caire",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0027",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel lac est le plus profond du monde ?",
+    "correct_answer": "Le lac Baikal",
+    "incorrect_answers": [
+      "Le lac Tanganyika",
+      "Le lac Titicaca",
+      "Le lac Leman",
+      "La flaque ambitieuse"
+    ],
+    "explanation": "Le lac Baikal, en Siberie, atteint 1 642 m de profondeur et contient environ 20 pour cent de l'eau douce liquide de la planete. Il abrite le nerpa, un phoque d'eau douce unique au monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_Ba%C3%AFkal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0028",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quel sommet est le point culminant de l'Afrique ?",
+    "correct_answer": "Le Kilimandjaro",
+    "incorrect_answers": [
+      "Le mont Kenya",
+      "Le mont Meru",
+      "Le mont Cameroun",
+      "Le mont Presque"
+    ],
+    "explanation": "Le Kilimandjaro, en Tanzanie, culmine a 5 895 m et est la plus haute montagne isolee du monde. Ses trois cones, Kibo, Mawenzi et Shira, sont d'anciens volcans endormis.",
+    "source_url": "https://fr.wikipedia.org/wiki/Kilimandjaro",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0025",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quels trois systèmes d'écriture figurent sur la pierre de Rosette ?",
+    "correct_answer": "Hiéroglyphes, démotique et grec ancien",
+    "incorrect_answers": [
+      "Latin, araméen et phénicien",
+      "Sanskrit, hébreu et copte",
+      "Linéaire B, ougaritique et vieux-perse",
+      "La villa d'été du pharaon"
+    ],
+    "explanation": "Gravé en 196 av. J.-C., le décret a été promulgué à Memphis au nom du jeune pharaon Ptolémée V, et la pierre a été trouvée en 1799 près de la ville de Rosette, dans le delta du Nil.",
+    "source_url": "https://fr.wikipedia.org/wiki/Pierre_de_Rosette",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0026",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Combien d'engins en bronze ont été identifiés dans le mécanisme d'Anticythère ?",
+    "correct_answer": "37",
+    "incorrect_answers": [
+      "12",
+      "57",
+      "3",
+      "Un tiroir de roues dentées de rechange"
+    ],
+    "explanation": "Des pêcheurs d'éponges ont découvert ce calculateur à engrenages en 1901 dans l'épave d'un navire romain au large d'Anticythère ; les chercheurs y voient le premier ordinateur analogique connu.",
+    "source_url": "https://fr.wikipedia.org/wiki/M%C3%A9canisme_d%27Anticyth%C3%A8re",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0027",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "En 1860, le Pony Express a commencé à acheminer le courrier à travers quel pays ?",
+    "correct_answer": "Les États-Unis",
+    "incorrect_answers": [
+      "Le Canada",
+      "L'Australie",
+      "Le Mexique",
+      "L'après-midi de congé du cheval"
+    ],
+    "explanation": "À cheval, en relais entre Saint Joseph (Missouri) et Sacramento, les cavaliers parcouraient environ 3 000 km par tous les temps, jusqu'à ce que le télégraphe rende le service obsolète en octobre 1861.",
+    "source_url": "https://fr.wikipedia.org/wiki/Pony_Express",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0028",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Dans quelle ville la danse de 1518 a-t-elle commencé ?",
+    "correct_answer": "Strasbourg",
+    "incorrect_answers": [
+      "Lyon",
+      "Bruges",
+      "Vienne",
+      "Le pire récital de danse de l'Europe"
+    ],
+    "explanation": "L'épidémie a commencé en juillet 1518 avec une femme restée connue sous le nom de Frau Troffea, et à son apogée des centaines de personnes dansaient dans les rues, certaines jusqu'à l'épuisement.",
+    "source_url": "https://fr.wikipedia.org/wiki/%C3%89pid%C3%A9mie_dansante_de_1518",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0021",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quelle planète possède le plus de lunes confirmées de notre système solaire ?",
+    "correct_answer": "Saturne",
+    "incorrect_answers": [
+      "Mars",
+      "Mercure",
+      "Neptune",
+      "Celle qui a commandé ses anneaux par la poste"
+    ],
+    "explanation": "Saturne a dépassé Jupiter en 2023 lorsque 62 nouvelles lunes ont porté son total confirmé à 146, le record du système solaire. Jupiter suit avec 95 lunes confirmées.",
+    "source_url": "https://fr.wikipedia.org/wiki/Saturne_(plan%C3%A8te)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0022",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quelle unité mesure la fréquence, soit un cycle par seconde ?",
+    "correct_answer": "Le hertz",
+    "incorrect_answers": [
+      "Le watt",
+      "Le pascal",
+      "Le joule",
+      "Le tic-tac par quinzaine"
+    ],
+    "explanation": "Le hertz (Hz) rend hommage à Heinrich Hertz, qui a démontré l'existence des ondes radio en 1887. Un diapason de 440 Hz vibre 440 fois par seconde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Hertz",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0023",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Avec 3 422 degrés Celsius, quel métal fond à la température la plus élevée parmi les métaux purs ?",
+    "correct_answer": "Le tungstène",
+    "incorrect_answers": [
+      "Le titane",
+      "Le platine",
+      "Le cuivre",
+      "Ce qui reste au fond du four du forgeron"
+    ],
+    "explanation": "Le tungstène fond à 3 422 degrés Celsius, le point de fusion le plus élevé des métaux purs, d'où son rôle de filament incandescent dans les ampoules classiques. Son symbole W vient du minerai de wolframite.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tungst%C3%A8ne",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0021",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel artiste japonais a créé l'estampe 'La Grande Vague de Kanagawa' ?",
+    "correct_answer": "Katsushika Hokusai",
+    "incorrect_answers": [
+      "Utagawa Hiroshige",
+      "Kitagawa Utamaro",
+      "Sakai Hoitsu",
+      "Un chef sushi à la main très sûre"
+    ],
+    "explanation": "Hokusai publie l'estampe vers 1831 comme première planche de sa série Trente-six vues du mont Fuji, et le volcan reste visible à l'horizon sous la vague démesurée.",
+    "source_url": "https://fr.wikipedia.org/wiki/La_Grande_Vague_de_Kanagawa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0022",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "La Vénus de Milo, exposée au Louvre, a été sculptée sur quelle île de la mer Égée ?",
+    "correct_answer": "Milos",
+    "incorrect_answers": [
+      "Paros",
+      "Naxos",
+      "Rhodes",
+      "L'île de Man"
+    ],
+    "explanation": "Un paysan découvre la statue de marbre à Milos en 1820 et la France l'achète la même année ; ses bras s'étaient perdus bien avant cette découverte.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vénus_de_Milo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0023",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel compositeur russe a écrit le ballet 'Le Lac des cygnes' ?",
+    "correct_answer": "Piotr Ilitch Tchaïkovski",
+    "incorrect_answers": [
+      "Sergueï Prokofiev",
+      "Igor Stravinski",
+      "Modeste Moussorgski",
+      "Le club d'alimentation des canards de Moscou"
+    ],
+    "explanation": "Tchaïkovski compose Le Lac des cygnes en 1875 et 1876 pour le Bolchoï de Moscou, où la création de 1877 passe presque inaperçue avant que le ballet ne devienne l'un des plus joués au monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Lac_des_cygnes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0018",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Totoro, l'esprit géant qui sert de mascotte à un célèbre studio d'animation japonais, est apparu pour la première fois dans quel film de 1988 ?",
+    "correct_answer": "Mon voisin Totoro",
+    "incorrect_answers": [
+      "Princesse Mononoké",
+      "Le Château ambulant",
+      "Kiki la petite sorcière",
+      "Totoro part en vacances"
+    ],
+    "explanation": "Fondé en 1985 par Hayao Miyazaki et Isao Takahata, le Studio Ghibli a fait de cet esprit inspiré des tanuki et des chats sa mascotte la plus reconnaissable.",
+    "source_url": "https://fr.wikipedia.org/wiki/Studio_Ghibli",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0019",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quel bruitage emblématique, enregistré pour la première fois pour le film de 1951 Les Aventures du capitaine Wyatt, a été glissé dans plus de 400 films, dont les sagas Star Wars et Indiana Jones ?",
+    "correct_answer": "Le cri Wilhelm",
+    "incorrect_answers": [
+      "Le cri Howie",
+      "Le tonnerre du château",
+      "Le rugissement du lion",
+      "Le kazoo du désespoir"
+    ],
+    "explanation": "Le concepteur sonore Ben Burtt a retrouvé l'enregistrement dans une bande des archives de Warner Bros et l'a baptisé d'après le soldat Wilhelm, transpercé par une flèche dans le western de 1953 La Charge sur la rivière rouge.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cri_Wilhelm",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0020",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quelle chanson a offert à ABBA la victoire au Concours Eurovision de la chanson 1974 à Brighton, lançant la carrière mondiale du groupe suédois ?",
+    "correct_answer": "Waterloo",
+    "incorrect_answers": [
+      "Dancing Queen",
+      "Mamma Mia",
+      "Fernando",
+      "Napoléon sur glace"
+    ],
+    "explanation": "Avec 24 points le 6 avril 1974, ABBA offre à la Suède sa première victoire au concours, et la chanson a été élue en 2005 la meilleure de l'histoire de l'Eurovision.",
+    "source_url": "https://fr.wikipedia.org/wiki/Waterloo_(chanson)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0018",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Dans quelle ville ont eu lieu les premiers Jeux olympiques de l’ère moderne en 1896 ?",
+    "correct_answer": "Athènes",
+    "incorrect_answers": [
+      "Paris",
+      "Rome",
+      "Londres",
+      "Le camp de base de l’Olympe"
+    ],
+    "explanation": "Organisés par le Comité international olympique fondé par Pierre de Coubertin, les Jeux se déroulent du 6 au 15 avril 1896, avec 241 sportifs et neuf sports au programme. Le Grec Spyridon Louis remporte le marathon devant son public.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jeux_olympiques_d%27%C3%A9t%C3%A9_de_1896",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0019",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Quelle nation a remporté la première Coupe du monde de football, disputée en 1930 ?",
+    "correct_answer": "Uruguay",
+    "incorrect_answers": [
+      "Argentine",
+      "Brésil",
+      "Italie",
+      "Le pays de la prolongation"
+    ],
+    "explanation": "L’Uruguay organise et remporte ce tournoi inaugural en juillet 1930, battant l’Argentine 4-2 en finale à l’Estadio Centenario de Montevideo devant 68 346 spectateurs. Les hôtes avaient aussi décroché l’or olympique en 1928.",
+    "source_url": "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_1930",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0020",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Combien de temps a duré le match Isner - Mahut à Wimbledon en 2010, le plus long de l’histoire du tennis ?",
+    "correct_answer": "11 heures et 5 minutes",
+    "incorrect_answers": [
+      "9 heures et 12 minutes",
+      "7 heures et 26 minutes",
+      "13 heures et 40 minutes",
+      "Une pause thé interminable"
+    ],
+    "explanation": "Disputé sur le court 18 du 22 au 24 juin 2010, le match se conclut 70-68 dans le cinquième set après 183 jeux, les deux joueurs dépassant les 100 aces. Wimbledon a ensuite instauré un tie-break dans le set décisif.",
+    "source_url": "https://fr.wikipedia.org/wiki/Match_Isner_-_Mahut_lors_du_tournoi_de_Wimbledon_2010",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

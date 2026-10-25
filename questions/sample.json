@@ -2316,5 +2316,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0025",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which island nation is known as the land of fire and ice?",
+    "correct_answer": "Iceland",
+    "incorrect_answers": [
+      "Greenland",
+      "Ireland",
+      "Faroe Islands",
+      "A freezer with geysers"
+    ],
+    "explanation": "Iceland pairs ice caps like Vatnajokull with active volcanoes such as Hekla, because it sits on the Mid-Atlantic Ridge where two tectonic plates pull apart. Norse settlers arrived around 874 AD.",
+    "source_url": "https://en.wikipedia.org/wiki/Iceland",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0026",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Egypt?",
+    "correct_answer": "Cairo",
+    "incorrect_answers": [
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "The lost city of Atlantis"
+    ],
+    "explanation": "Cairo was founded in 969 by the Fatimids and is the largest city in the Arab world today. The pyramids of Giza stand right on its western edge.",
+    "source_url": "https://en.wikipedia.org/wiki/Cairo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0027",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which lake is the deepest in the world?",
+    "correct_answer": "Lake Baikal",
+    "incorrect_answers": [
+      "Lake Tanganyika",
+      "Crater Lake",
+      "Lake Titicaca",
+      "The world's largest birdbath"
+    ],
+    "explanation": "Lake Baikal in Siberia reaches 1,642 m deep and holds about 20 percent of the planet's unfrozen fresh surface water. It is the only home of the nerpa, a freshwater seal.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0028",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which mountain is the highest peak in Africa?",
+    "correct_answer": "Mount Kilimanjaro",
+    "incorrect_answers": [
+      "Mount Kenya",
+      "Mount Meru",
+      "Mount Cameroon",
+      "Mount Neverest"
+    ],
+    "explanation": "Kilimanjaro in Tanzania rises 5,895 m and is the world's highest free-standing mountain. Its three cones, Kibo, Mawenzi and Shira, are dormant volcanoes.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0025",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which three scripts appear on the Rosetta Stone?",
+    "correct_answer": "Hieroglyphic, demotic and ancient Greek",
+    "incorrect_answers": [
+      "Latin, Aramaic and Phoenician",
+      "Sanskrit, Hebrew and Coptic",
+      "Linear B, Ugaritic and Old Persian",
+      "Pharaoh's summer cottage"
+    ],
+    "explanation": "Carved in 196 BC, the decree was issued at Memphis on behalf of the boy pharaoh Ptolemy V, and the stone was found in 1799 near the Nile Delta town of Rosetta.",
+    "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0026",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "How many bronze gears have been identified in the Antikythera mechanism?",
+    "correct_answer": "37",
+    "incorrect_answers": [
+      "12",
+      "57",
+      "3",
+      "A drawer of spare cogs"
+    ],
+    "explanation": "Sponge divers found the bronze geared device in 1901 in a Roman-era shipwreck off Antikythera, and researchers have called it the first known analogue computer.",
+    "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0027",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In 1860, the Pony Express began carrying mail across which country?",
+    "correct_answer": "The United States",
+    "incorrect_answers": [
+      "Canada",
+      "Australia",
+      "Mexico",
+      "The horse's afternoon off"
+    ],
+    "explanation": "Riders on relay between St Joseph, Missouri and Sacramento covered roughly 1,900 miles through rain and snow until the telegraph made the service obsolete in October 1861.",
+    "source_url": "https://en.wikipedia.org/wiki/Pony_Express",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0028",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In which city did the dancing plague of 1518 begin?",
+    "correct_answer": "Strasbourg",
+    "incorrect_answers": [
+      "Lyon",
+      "Bruges",
+      "Vienna",
+      "Europe's worst dance recital"
+    ],
+    "explanation": "The outbreak began in July 1518 with a woman known as Frau Troffea, and at its height hundreds of people danced through the streets, some until they collapsed.",
+    "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0021",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet has the most confirmed moons in our solar system?",
+    "correct_answer": "Saturn",
+    "incorrect_answers": [
+      "Mars",
+      "Mercury",
+      "Neptune",
+      "The one with the rings on back order"
+    ],
+    "explanation": "Saturn passed Jupiter in 2023 when 62 new moons pushed its confirmed total to 146, the highest of any planet. Jupiter trails with 95 confirmed moons.",
+    "source_url": "https://en.wikipedia.org/wiki/Moons_of_Saturn",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0022",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which unit measures frequency, equal to one cycle per second?",
+    "correct_answer": "Hertz",
+    "incorrect_answers": [
+      "Watt",
+      "Pascal",
+      "Joule",
+      "A tick-tock per fortnight"
+    ],
+    "explanation": "The hertz (Hz) is named for Heinrich Hertz, who proved radio waves exist in 1887. A 440 Hz tuning fork vibrates 440 times every second.",
+    "source_url": "https://en.wikipedia.org/wiki/Hertz",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0023",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "At 3,422 degrees Celsius, which metal has the highest melting point of any pure metal?",
+    "correct_answer": "Tungsten",
+    "incorrect_answers": [
+      "Titanium",
+      "Platinum",
+      "Copper",
+      "Whatever was left in the kiln"
+    ],
+    "explanation": "Tungsten melts at 3,422 degrees Celsius, the highest of any pure metal, which is why it worked as a glowing filament in classic light bulbs. Its symbol W comes from the ore wolframite.",
+    "source_url": "https://en.wikipedia.org/wiki/Tungsten",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0021",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Japanese artist created the woodblock print 'The Great Wave off Kanagawa'?",
+    "correct_answer": "Katsushika Hokusai",
+    "incorrect_answers": [
+      "Utagawa Hiroshige",
+      "Kitagawa Utamaro",
+      "Sakai Hoitsu",
+      "A sushi chef with a very steady hand"
+    ],
+    "explanation": "Hokusai published the print around 1831 as the first design in his series Thirty-six Views of Mount Fuji, and the volcano still appears small on the horizon beneath the towering wave.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0022",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "The Venus de Milo, now in the Louvre, was sculpted on which Aegean island?",
+    "correct_answer": "Milos",
+    "incorrect_answers": [
+      "Paros",
+      "Naxos",
+      "Rhodes",
+      "The Isle of Man"
+    ],
+    "explanation": "A farmer unearthed the marble statue on Milos in 1820, and France bought it the same year; her arms had already been lost long before the discovery.",
+    "source_url": "https://en.wikipedia.org/wiki/Venus_de_Milo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0023",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Russian composer wrote the ballet 'Swan Lake'?",
+    "correct_answer": "Pyotr Ilyich Tchaikovsky",
+    "incorrect_answers": [
+      "Sergei Prokofiev",
+      "Igor Stravinsky",
+      "Modest Mussorgsky",
+      "The Moscow Duck-Feeding Society"
+    ],
+    "explanation": "Tchaikovsky composed Swan Lake in 1875 and 1876 for the Bolshoi Theatre in Moscow, where the 1877 premiere drew a lukewarm reception even though the ballet went on to become one of the most performed works in dance.",
+    "source_url": "https://en.wikipedia.org/wiki/Swan_Lake",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0018",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Totoro, the giant spirit who serves as the mascot of a famous Japanese animation studio, debuted in which 1988 film?",
+    "correct_answer": "My Neighbor Totoro",
+    "incorrect_answers": [
+      "Princess Mononoke",
+      "Howl's Moving Castle",
+      "Kiki's Delivery Service",
+      "My Neighbor Totoro Goes to Miami"
+    ],
+    "explanation": "Studio Ghibli, founded in 1985 by Hayao Miyazaki and Isao Takahata, counts the tanuki-and-cat-inspired spirit as its mascot and most recognizable character.",
+    "source_url": "https://en.wikipedia.org/wiki/Studio_Ghibli",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0019",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which stock sound effect, first recorded for the 1951 film Distant Drums, has been slipped into more than 400 films, including the Star Wars and Indiana Jones series?",
+    "correct_answer": "The Wilhelm scream",
+    "incorrect_answers": [
+      "The Howie scream",
+      "The Castle thunder",
+      "The Hawk screech",
+      "The Kazoo of Despair"
+    ],
+    "explanation": "Sound designer Ben Burtt found the recording on a Warner Bros. archive reel and named it after Private Wilhelm, a character shot with an arrow in the 1953 western The Charge at Feather River.",
+    "source_url": "https://en.wikipedia.org/wiki/Wilhelm_scream",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0020",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which song gave ABBA victory at the 1974 Eurovision Song Contest in Brighton, launching the Swedish group to worldwide fame?",
+    "correct_answer": "Waterloo",
+    "incorrect_answers": [
+      "Dancing Queen",
+      "Mamma Mia",
+      "Fernando",
+      "Napoleon on Ice"
+    ],
+    "explanation": "ABBA won with 24 points in Brighton on 6 April 1974, and in 2005 the song was voted the best in the contest's 50-year history.",
+    "source_url": "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0018",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In which city were the first modern Olympic Games held in 1896?",
+    "correct_answer": "Athens",
+    "incorrect_answers": [
+      "Paris",
+      "Rome",
+      "London",
+      "Mount Olympus Base Camp"
+    ],
+    "explanation": "Organised by the IOC founded by Pierre de Coubertin, the Games ran in Athens from 6 to 15 April 1896, drawing 241 athletes from 14 nations. Winners received silver medals, and Greek water carrier Spyridon Louis won the marathon.",
+    "source_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0019",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Which nation won the first FIFA World Cup, held in 1930?",
+    "correct_answer": "Uruguay",
+    "incorrect_answers": [
+      "Argentina",
+      "Brazil",
+      "Italy",
+      "The Land of Extra Time"
+    ],
+    "explanation": "The hosts won the inaugural tournament in July 1930, beating Argentina 4-2 in the final at Montevideo’s Estadio Centenario before 68,346 fans. They had also taken Olympic football gold in 1928.",
+    "source_url": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0020",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "How long did the Isner-Mahut match at Wimbledon 2010, the longest in tennis history, last?",
+    "correct_answer": "11 hours and 5 minutes",
+    "incorrect_answers": [
+      "7 hours and 26 minutes",
+      "9 hours and 12 minutes",
+      "13 hours and 40 minutes",
+      "A five-day rain delay"
+    ],
+    "explanation": "Played on Court 18 from 22 to 24 June 2010, the match ended 70-68 in the fifth set after 183 games, with both players serving over 100 aces. Wimbledon later added final-set tiebreaks, and the Grand Slams adopted a 10-point one at 6-6 in 2022.",
+    "source_url": "https://en.wikipedia.org/wiki/Isner%E2%80%93Mahut_match_at_the_2010_Wimbledon_Championships",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
