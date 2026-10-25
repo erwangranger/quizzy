@@ -6496,5 +6496,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0069",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Le lac Titicaca, souvent présenté comme le plus haut lac navigable du monde, est traversé par la frontière de quels deux pays ?",
+    "correct_answer": "La Bolivie et le Pérou",
+    "incorrect_answers": [
+      "Le Chili et l'Argentine",
+      "L'Équateur et la Colombie",
+      "Le Brésil et le Paraguay",
+      "La Bolivie et son jumeau du mal"
+    ],
+    "explanation": "Le Titicaca se dresse à 3 812 mètres d'altitude dans les Andes et est le plus grand lac d'Amérique du Sud en volume d'eau. Le Pérou et la Bolivie s'en partagent les rives, et la marine bolivienne y navigue depuis la perte du littoral.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_Titicaca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0070",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel détroit relie la Manche à la mer du Nord ?",
+    "correct_answer": "Le pas de Calais",
+    "incorrect_answers": [
+      "Le Skagerrak",
+      "Le Kattegat",
+      "Le détroit de Bonifacio",
+      "Le détroit de Détroit"
+    ],
+    "explanation": "Le pas de Calais est la partie la plus étroite de la Manche : à peine 34 kilomètres entre Douvres et le cap Gris-Nez. Il relie la Manche au sud de la mer du Nord et figure parmi les zones maritimes les plus fréquentées du monde.",
+    "source_url": "https://fr.wikipedia.org/wiki/Manche_(mer)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0071",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel cap constitue le vrai point le plus méridional du continent africain ?",
+    "correct_answer": "Le cap des Aiguilles",
+    "incorrect_answers": [
+      "Le cap de Bonne-Espérance",
+      "Le cap Horn",
+      "Le cap Vert",
+      "Le cap des Crayons Émoussés"
+    ],
+    "explanation": "Le cap des Aiguilles se trouve à environ 55 kilomètres plus au sud que le célèbre cap de Bonne-Espérance et marque l'extrémité méridionale de l'Afrique. Selon l'Organisation hydrographique internationale, il constitue aussi la limite officielle entre l'océan Atlantique et l'océan Indien.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cap_des_Aiguilles",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0072",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Uluru, le monolithe de grès du Territoire du Nord australien, s'élève d'environ combien de mètres au-dessus de la plaine ?",
+    "correct_answer": "348 mètres",
+    "incorrect_answers": [
+      "148 mètres",
+      "546 mètres",
+      "1 148 mètres",
+      "Trois cacatoès empilés l'un sur l'autre"
+    ],
+    "explanation": "Uluru culmine à 348 mètres au-dessus de la plaine, soit 863 mètres d'altitude, l'essentiel de sa masse restant enfoui sous terre. Baptisé Ayers Rock en 1873 en l'honneur de Henry Ayers, il est sacré pour les Pitjantjatjaras.",
+    "source_url": "https://fr.wikipedia.org/wiki/Uluru/Ayers_Rock",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0069",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "En 1184, le plancher d'une salle d'Erfurt s'est effondré pendant une diète et une soixantaine de nobles sont tombés dans quoi ?",
+    "correct_answer": "Une fosse d'aisances",
+    "incorrect_answers": [
+      "Une cave à vin",
+      "Un donjon",
+      "Un grenier à grain",
+      "La baignoire du roi"
+    ],
+    "explanation": "Les nobles assistaient à un Hoftag convoqué par le roi Henri VI lorsque le plancher pourri a cédé ; le roi a survécu en s'accrochant à une alcôve de pierre jusqu'à l'arrivée des secouristes.",
+    "source_url": "https://fr.wikipedia.org/wiki/Accident_des_latrines_d%27Erfurt",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0070",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Lors du concile cadavérique réuni à Rome en 897, quel défunt hors du commun le pape Étienne VI a-t-il jugé ?",
+    "correct_answer": "Le cadavre exhumé du pape Formose",
+    "incorrect_answers": [
+      "Un évêque vivant accusé d'hérésie",
+      "Le cadavre d'un empereur",
+      "Un manuscrit jugé hérétique",
+      "Une souris d'église turbulente"
+    ],
+    "explanation": "Formose, décédé quelques mois plus tôt, a été exhumé, revêtu de ses habits pontificaux et installé sur un trône pendant qu'un diacre répondait pour lui ; il fut déclaré coupable et ses actes annulés.",
+    "source_url": "https://fr.wikipedia.org/wiki/Concile_cadav%C3%A9rique",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0071",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Livrée le 27 août 1896 entre le Royaume-Uni et Zanzibar, quel record la guerre anglo-zanzibarite détient-elle ?",
+    "correct_answer": "La guerre la plus courte de l'histoire",
+    "incorrect_answers": [
+      "La première guerre déclarée par télégramme",
+      "Le blocus naval le plus long du XIXe siècle",
+      "La première bataille gagnée sans aucune victime",
+      "La seule guerre disputée pendant la pause déjeuner"
+    ],
+    "explanation": "Le bombardement a duré environ 38 minutes ; la marine britannique a incendié le palais, coulé le yacht royal Glasgow, et le sultan Khalid s'est réfugié au consulat d'Allemagne.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bombardement_de_Zanzibar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0072",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "L'effondrement spectaculaire de 1637 aux Provinces-Unies a suivi une spéculation effrénée sur les bulbes de quelle fleur ?",
+    "correct_answer": "La tulipe",
+    "incorrect_answers": [
+      "La jacinthe",
+      "Le narcisse",
+      "La pivoine",
+      "Le chou de Bruxelles"
+    ],
+    "explanation": "Au plus fort de la tulipomanie, en février de 1637, un bulbe se négociait jusqu'à dix fois le salaire annuel d'un artisan spécialisé avant l'effondrement des cours.",
+    "source_url": "https://fr.wikipedia.org/wiki/Tulipomanie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0054",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Combien de pattes une araignée a-t-elle pour se déplacer ?",
+    "correct_answer": "8",
+    "incorrect_answers": [
+      "6",
+      "10",
+      "12",
+      "Autant que de fils dans sa toile"
+    ],
+    "explanation": "Les araignées sont des arachnides et non des insectes : elles possèdent huit pattes, plus une paire de chélicères portant les crochets à venin. Les insectes, eux, n'ont que six pattes.",
+    "source_url": "https://fr.wikipedia.org/wiki/Araneae",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0055",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Lorsque Wilhelm Röntgen a découvert les rayons X en 1895, comment les a-t-il nommés ?",
+    "correct_answer": "D'après l'inconnue mathématique, le symbole X",
+    "incorrect_answers": [
+      "D'après son propre nom de famille",
+      "D'après le chiffre romain pour dix",
+      "D'après la lettre grecque chi, qui ressemble à un X",
+      "D'après son chat invisible nommé Zinzin"
+    ],
+    "explanation": "Röntgen les a appelés rayons X car X est le symbole mathématique de l'inconnue, la nature de ce rayonnement étant alors un mystère. Dans plusieurs langues, dont l'allemand et le français, on parle encore de rayons de Röntgen, et il a reçu le premier prix Nobel de physique en 1901.",
+    "source_url": "https://fr.wikipedia.org/wiki/Rayon_X",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0056",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quelles particules forment la part la plus importante, environ 88 pour cent, des rayons cosmiques ?",
+    "correct_answer": "Les protons",
+    "incorrect_answers": [
+      "Les électrons",
+      "Les noyaux d'hélium",
+      "Les photons gamma",
+      "Les miettes d'étoiles filantes"
+    ],
+    "explanation": "Environ 88 pour cent des rayons cosmiques sont des protons, les noyaux d'hélium en représentent environ 9 pour cent et les électrons une petite fraction. Ces particules filent presque à la vitesse de la lumière avant de frapper notre atmosphère et d'y créer des gerbes de particules secondaires.",
+    "source_url": "https://fr.wikipedia.org/wiki/Rayonnement_cosmique",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0054",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel compositeur a écrit « Clair de lune » ?",
+    "correct_answer": "Claude Debussy",
+    "incorrect_answers": [
+      "Maurice Ravel",
+      "Erik Satie",
+      "Camille Saint-Saëns",
+      "La Lune"
+    ],
+    "explanation": "Debussy a composé cette pièce comme troisième mouvement de la Suite bergamasque, commencée vers 1890 et publiée en 1905 ; le titre fait écho à un poème de Paul Verlaine, et elle est devenue l'une des œuvres pour piano les plus célèbres de tous les temps.",
+    "source_url": "https://fr.wikipedia.org/wiki/Suite_bergamasque",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0055",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "En quelle créature Gregor Samsa se transforme-t-il au début de « La Métamorphose » de Franz Kafka ?",
+    "correct_answer": "Un insecte géant",
+    "incorrect_answers": [
+      "Une araignée géante",
+      "Un lézard géant",
+      "Un poisson géant",
+      "Un croissant tout chaud"
+    ],
+    "explanation": "Kafka publie cette nouvelle en 1915 et ne nomme jamais l'espèce exacte dans le texte ; les adaptations représentent presque toujours Gregor en cafard, et cette ouverture est l'une des plus analysées de la littérature moderne.",
+    "source_url": "https://fr.wikipedia.org/wiki/La_M%C3%A9tamorphose",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0056",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quel titre Whistler a-t-il donné au portrait de sa mère, aujourd'hui exposé au Musée d'Orsay ?",
+    "correct_answer": "Arrangement en gris et noir no 1",
+    "incorrect_answers": [
+      "Nocturne en noir et or",
+      "Harmonie en gris et vert",
+      "Étude en gris et nacre",
+      "Arrangement en gris et en gratin"
+    ],
+    "explanation": "Whistler peint ce portrait en 1871 et aime intituler ses tableaux d'après des formes musicales ; le gouvernement français l'achète en 1891 et il est aujourd'hui exposé au Musée d'Orsay à Paris.",
+    "source_url": "https://fr.wikipedia.org/wiki/James_Abbott_McNeill_Whistler",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0051",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quel dessin animé de 1928 de Walt Disney est considéré comme la naissance officielle de Mickey Mouse, bien que deux courts métrages antérieurs avec le personnage soient restés inédits ou non distribués ?",
+    "correct_answer": "Steamboat Willie",
+    "incorrect_answers": [
+      "Plane Crazy",
+      "La Fanfare",
+      "Mickey gaucho",
+      "Le steamboat de Tante Odette"
+    ],
+    "explanation": "Réalisé par Walt Disney et Ub Iwerks, Steamboat Willie est le premier court métrage de Mickey Mouse à avoir été officiellement distribué, et sa bande sonore synchronisée en fait un jalon du cinéma sonore.",
+    "source_url": "https://fr.wikipedia.org/wiki/Steamboat_Willie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0052",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Dans quelle ville les Beatles ont-ils donné leur dernière prestation publique, un concert de 42 minutes sur un toit interrompu par la police ?",
+    "correct_answer": "Londres",
+    "incorrect_answers": [
+      "Liverpool",
+      "Manchester",
+      "New York",
+      "Sur un toit qui tourne à Birmingham"
+    ],
+    "explanation": "Le 30 janvier 1969, les Beatles ont joué sur le toit de leur siège Apple Corps, au 3 Savile Row à Londres, jusqu'à l'intervention de la police ; c'était la dernière prestation publique du groupe.",
+    "source_url": "https://fr.wikipedia.org/wiki/Concert_des_Beatles_sur_le_toit",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0053",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel film de 1975 a mis fin au règne du Parrain comme film le plus lucratif du box-office nord-américain, en devenant le premier à dépasser 100 millions de dollars de recettes aux États-Unis ?",
+    "correct_answer": "Les Dents de la mer",
+    "incorrect_answers": [
+      "L'Exorciste",
+      "Rocky",
+      "Rencontres du troisième type",
+      "Un jougon de piscine très déterminé"
+    ],
+    "explanation": "Réalisé par Steven Spielberg, Les Dents de la mer a dépassé Le Parrain en août 1975, et son succès est largement crédité du lancement de l'ère du blockbuster estival.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Dents_de_la_mer",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0051",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Combien de médailles d'or Jesse Owens a-t-il remportées aux Jeux olympiques de Berlin en 1936 ?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "2",
+      "6",
+      "8",
+      "Une pour chaque chaussure"
+    ],
+    "explanation": "Jesse Owens a gagné l'or sur 100 mètres, 200 mètres, en saut en longueur et avec le relais 4x100 mètres, battant à chaque fois le record olympique. Ses quatre titres sont arrivés malgré des Jeux organisés en vitrine de l'Allemagne nazie.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jesse_Owens",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0052",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Dans quel journal la première grille de mots croisés est-elle parue en 1913 ?",
+    "correct_answer": "Le New York World",
+    "incorrect_answers": [
+      "Le New York Times",
+      "Le Daily Telegraph",
+      "The Saturday Evening Post",
+      "Le Grand Livre des Cases Blanches"
+    ],
+    "explanation": "Le Britannique Arthur Wynne a publié une grille appelée word-cross dans le New York World du 21 décembre 1913. Ses cases noires ont permis aux mots de longueurs différentes de se croiser, et le jeu s'est répandu dans le monde entier en une décennie.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mots_crois%C3%A9s",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0053",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Pendant environ combien d'années le record du monde de saut en longueur établi par Jesse Owens en 1935 est-il resté invaincu ?",
+    "correct_answer": "25 ans",
+    "incorrect_answers": [
+      "16 ans",
+      "12 ans",
+      "40 ans",
+      "Le temps d'un café"
+    ],
+    "explanation": "Jesse Owens a porté le record du monde de saut en longueur à 8,13 mètres en 1935, l'année avant les Jeux de Berlin. La marque est restée invaincue pendant 25 ans, jusqu'au saut de Ralph Boston à 8,21 mètres en 1960.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jesse_Owens",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

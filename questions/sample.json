@@ -6496,5 +6496,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0069",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Lake Titicaca, often called the world's highest navigable lake, lies on the border of which two countries?",
+    "correct_answer": "Bolivia and Peru",
+    "incorrect_answers": [
+      "Chile and Argentina",
+      "Ecuador and Colombia",
+      "Brazil and Paraguay",
+      "Bolivia and Bolivia's evil twin"
+    ],
+    "explanation": "Titicaca sits at 3,812 m above sea level high in the Andes and is South America's largest lake by volume. Both Peru and Bolivia claim its shores, and the Bolivian navy trains on its waters.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0070",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which strait connects the English Channel to the North Sea?",
+    "correct_answer": "The Strait of Dover",
+    "incorrect_answers": [
+      "The Skagerrak",
+      "The Kattegat",
+      "The Minch",
+      "The Strait of No Return"
+    ],
+    "explanation": "The Strait of Dover is the narrowest part of the English Channel, just 34 km wide between Dover and Cap Gris-Nez. It links the Channel to the southern North Sea and carries some of the busiest shipping traffic in the world.",
+    "source_url": "https://en.wikipedia.org/wiki/English_Channel",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0071",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which headland is the true southernmost point of the African continent?",
+    "correct_answer": "Cape Agulhas",
+    "incorrect_answers": [
+      "Cape of Good Hope",
+      "Cape Horn",
+      "Cape Verde",
+      "Cape of Blunt Pencils"
+    ],
+    "explanation": "Cape Agulhas lies about 55 km farther south than the more famous Cape of Good Hope and is the geographic southern tip of Africa. Its Portuguese name means Cape of Needles, and it marks the official divide between the Atlantic and Indian oceans.",
+    "source_url": "https://en.wikipedia.org/wiki/Cape_Agulhas",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0072",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Uluru, the giant sandstone monolith in Australia's Northern Territory, rises approximately how high above the surrounding plain?",
+    "correct_answer": "348 metres",
+    "incorrect_answers": [
+      "148 metres",
+      "546 metres",
+      "1,148 metres",
+      "Three galahs standing on each other"
+    ],
+    "explanation": "Uluru stands 348 m above the plain, reaching 863 m above sea level with most of its bulk still buried underground. Named Ayers Rock in 1873 after Henry Ayers, it is sacred to the Pitjantjatjara people.",
+    "source_url": "https://en.wikipedia.org/wiki/Uluru",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0069",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In 1184, the floor of a hall in Erfurt collapsed during a meeting of German nobles, killing around 60 people. Into what did many of the victims fall?",
+    "correct_answer": "A latrine cesspit",
+    "incorrect_answers": [
+      "A wine cellar",
+      "A castle dungeon",
+      "A grain silo",
+      "The king's bathtub"
+    ],
+    "explanation": "The nobles were attending a Hoftag convened by King Henry VI when the rotten floor gave way and they plunged into the cesspit below; Henry VI survived by clinging to a stone window alcove until rescuers arrived.",
+    "source_url": "https://en.wikipedia.org/wiki/Erfurt_latrine_disaster",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0070",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "At the Cadaver Synod held in Rome in 897, Pope Stephen VI placed what unusual defendant on trial?",
+    "correct_answer": "The exhumed corpse of Pope Formosus",
+    "incorrect_answers": [
+      "A living bishop accused of heresy",
+      "The corpse of a Holy Roman emperor",
+      "A manuscript condemned as heretical",
+      "A rowdy church mouse"
+    ],
+    "explanation": "Formosus, dead for several months, was exhumed, dressed in papal vestments and propped up on a throne while a deacon answered for him; he was found guilty and his ordinations were annulled.",
+    "source_url": "https://en.wikipedia.org/wiki/Cadaver_Synod",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0071",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Fought between Britain and Zanzibar on 27 August of 1896, what record does the Anglo-Zanzibar War hold?",
+    "correct_answer": "Shortest war in recorded history",
+    "incorrect_answers": [
+      "First war declared by telegram",
+      "Longest naval blockade of the 19th century",
+      "First battle won without a single casualty",
+      "Only war fought during a tea break"
+    ],
+    "explanation": "The conflict lasted about 38 minutes; a Royal Navy bombardment set the palace on fire, sank the royal yacht Glasgow, and Sultan Khalid fled to the German consulate.",
+    "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0072",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The spectacular market crash of 1637 in the Dutch Republic followed wild speculation in the bulbs of which flower?",
+    "correct_answer": "Tulip",
+    "incorrect_answers": [
+      "Daffodil",
+      "Carnation",
+      "Peony",
+      "The Brussels sprout"
+    ],
+    "explanation": "At the peak of tulip mania in February of 1637, a single bulb traded for about ten times the annual wage of a skilled craftsman before prices collapsed.",
+    "source_url": "https://en.wikipedia.org/wiki/Tulip_mania",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0054",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many walking legs does a spider have?",
+    "correct_answer": "8",
+    "incorrect_answers": [
+      "6",
+      "10",
+      "12",
+      "A hundred tiny legs"
+    ],
+    "explanation": "Spiders are arachnids, not insects: they have eight legs plus a separate pair of fang-bearing appendages called chelicerae. Insects, by contrast, have six legs.",
+    "source_url": "https://en.wikipedia.org/wiki/Spider",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0055",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "When Wilhelm Röntgen discovered X-rays in 1895, what did he name the new rays after?",
+    "correct_answer": "The unknown, using the mathematical symbol X",
+    "incorrect_answers": [
+      "His own surname",
+      "The Roman numeral for ten",
+      "The Greek letter chi, which resembles an X",
+      "His Invisible Squiggly Ray"
+    ],
+    "explanation": "Röntgen named them X-rays because X is the mathematical symbol for an unknown quantity, as the nature of the rays was a mystery. In many languages, including German and French, they are still called Röntgen rays, and he received the first Nobel Prize in Physics in 1901.",
+    "source_url": "https://en.wikipedia.org/wiki/X-ray",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0056",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which particles make up the largest share, roughly 88 per cent, of cosmic rays arriving at Earth?",
+    "correct_answer": "Protons",
+    "incorrect_answers": [
+      "Electrons",
+      "Helium nuclei",
+      "Gamma-ray photons",
+      "Crumbs from Exploding Stars"
+    ],
+    "explanation": "About 88 per cent of cosmic rays are protons, with helium nuclei around 9 per cent and electrons a small fraction; they race through space at nearly the speed of light before striking our atmosphere and creating showers of secondary particles.",
+    "source_url": "https://en.wikipedia.org/wiki/Cosmic_ray",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0054",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which composer wrote Clair de lune?",
+    "correct_answer": "Claude Debussy",
+    "incorrect_answers": [
+      "Maurice Ravel",
+      "Erik Satie",
+      "Camille Saint-Saëns",
+      "The moon"
+    ],
+    "explanation": "Debussy wrote it as the third movement of the Suite bergamasque, begun around 1890 and published in 1905; the title echoes a poem by Paul Verlaine, and the dreamy piece became one of the most famous piano works of all time.",
+    "source_url": "https://en.wikipedia.org/wiki/Suite_bergamasque",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0055",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "In Franz Kafka's novella The Metamorphosis, what kind of creature does Gregor Samsa wake up transformed into?",
+    "correct_answer": "A giant insect",
+    "incorrect_answers": [
+      "A giant spider",
+      "A giant lizard",
+      "A giant fish",
+      "A giant bagel"
+    ],
+    "explanation": "Kafka published the novella in 1915 and never names the exact species in the text; adaptations almost always depict Gregor as a cockroach, making its opening line one of the most analysed in modern literature.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Metamorphosis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0056",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "What formal title did Whistler give to the portrait of his mother that now hangs in the Musée d'Orsay?",
+    "correct_answer": "Arrangement in Grey and Black No. 1",
+    "incorrect_answers": [
+      "Nocturne in Black and Gold",
+      "Harmony in Grey and Green",
+      "Study in Grey and Pearl",
+      "Arrangement in Grey and Gravy"
+    ],
+    "explanation": "Whistler painted it in 1871 and liked to give his portraits musical titles; the French government bought the work in 1891 and it now hangs in the Musée d'Orsay in Paris.",
+    "source_url": "https://en.wikipedia.org/wiki/Whistler%27s_Mother",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0051",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 1928 Walt Disney cartoon is considered the official debut of Mickey Mouse, even though two earlier shorts featuring him went unreleased or undistributed?",
+    "correct_answer": "Steamboat Willie",
+    "incorrect_answers": [
+      "Plane Crazy",
+      "The Band Concert",
+      "The Gallopin' Gaucho",
+      "Steamboat Sadie and the Squeaky Wheel"
+    ],
+    "explanation": "Steamboat Willie, directed by Walt Disney and Ub Iwerks, was the first Mickey Mouse short to be officially distributed, and its synchronized soundtrack made it a landmark of the sound era.",
+    "source_url": "https://en.wikipedia.org/wiki/Steamboat_Willie",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0052",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In which city did the Beatles play their final public performance, a 42-minute rooftop set brought to a halt by police?",
+    "correct_answer": "London",
+    "incorrect_answers": [
+      "Liverpool",
+      "Manchester",
+      "New York City",
+      "A spinning rooftop in Birmingham"
+    ],
+    "explanation": "On 30 January 1969 the Beatles played from the roof of their Apple Corps headquarters at 3 Savile Row in central London, until the Metropolitan Police arrived and told them to reduce the volume.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Beatles%27_rooftop_concert",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0053",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1975 film ended The Godfather's reign as the highest-grossing film at the North American box office, becoming the first to earn 100 million dollars in US theatrical rentals?",
+    "correct_answer": "Jaws",
+    "incorrect_answers": [
+      "The Exorcist",
+      "Rocky",
+      "Close Encounters of the Third Kind",
+      "A very determined inflatable pool toy"
+    ],
+    "explanation": "Steven Spielberg's Jaws overtook The Godfather in just 78 days during August 1975, and its success is widely credited with launching the summer blockbuster era.",
+    "source_url": "https://en.wikipedia.org/wiki/Jaws_(film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0051",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many gold medals did Jesse Owens win at the 1936 Berlin Olympics?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "2",
+      "6",
+      "8",
+      "One for each shoe"
+    ],
+    "explanation": "Owens won gold in the 100 metres, the 200 metres, the long jump and the 4x100 metres relay, setting an Olympic record in each event. His four titles came despite the Games being staged as a showcase for Nazi Germany.",
+    "source_url": "https://en.wikipedia.org/wiki/Jesse_Owens",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0052",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In which newspaper did the first crossword puzzle appear in 1913?",
+    "correct_answer": "The New York World",
+    "incorrect_answers": [
+      "The New York Times",
+      "The Daily Telegraph",
+      "The Saturday Evening Post",
+      "The Big Book of Blank Squares"
+    ],
+    "explanation": "Liverpool-born journalist Arthur Wynne printed a word-cross puzzle in the New York World on December 21, 1913. His black-square grid let words of different lengths cross, and the format spread worldwide within a decade.",
+    "source_url": "https://en.wikipedia.org/wiki/Crossword",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0053",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "For roughly how many years did the long jump world record set by Jesse Owens in 1935 stand?",
+    "correct_answer": "25 years",
+    "incorrect_answers": [
+      "16 years",
+      "12 years",
+      "40 years",
+      "Until the next coffee break"
+    ],
+    "explanation": "Owens set the long jump world record at 8.13 metres in 1935, the year before the Berlin Olympics. The mark lasted 25 years until Ralph Boston jumped 8.21 metres in 1960.",
+    "source_url": "https://en.wikipedia.org/wiki/Jesse_Owens",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
