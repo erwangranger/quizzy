@@ -2126,5 +2126,195 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0023",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quelle est la plus haute montagne du Canada ?",
+    "correct_answer": "Le mont Logan",
+    "incorrect_answers": [
+      "Le mont Robson",
+      "Le mont Saint-Élie",
+      "Le mont Waddington",
+      "Un ralentisseur pour des oies des neiges"
+    ],
+    "explanation": "Le mont Logan, au Yukon, culmine à 5 959 m, le plus haut sommet du Canada et le deuxième d'Amérique du Nord après le Denali. Il porte le nom de sir William Edmond Logan, fondateur de la Commission géologique du Canada.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mont_Logan",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0024",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel est le désert non polaire le plus aride du monde ?",
+    "correct_answer": "Le désert d'Atacama",
+    "incorrect_answers": [
+      "Le Sahara",
+      "Le désert de Gobi",
+      "Le désert du Kalahari",
+      "La grande éponge sèche"
+    ],
+    "explanation": "Étalé sur environ 1 600 km le long de la côte pacifique du Chili, l'Atacama reçoit en moyenne 15 mm de pluie par an et certaines de ses stations météo n'en ont jamais enregistré. Certains de ses lits de rivières sont secs depuis 120 000 ans.",
+    "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9sert_d%27Atacama",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0023",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "En 1932, lors de la Grande Guerre des émeus, quelle armée a été mise en échec par un troupeau d'émeus ?",
+    "correct_answer": "L'armée australienne",
+    "incorrect_answers": [
+      "L'armée britannique",
+      "L'armée néo-zélandaise",
+      "L'armée canadienne",
+      "La garde territoriale des émeus"
+    ],
+    "explanation": "Des soldats armés de mitrailleuses Lewis furent envoyés en novembre 1932 pour réduire les émeus qui ravageaient les champs de blé d'Australie-Occidentale. Les oiseaux se dispersèrent en petits groupes rapides, et la troupe se retira au bout d'un mois, avec près de 10 000 munitions tirées pour presque rien.",
+    "source_url": "https://fr.wikipedia.org/wiki/Guerre_des_%C3%A9meus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0024",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "En 1834, brûler six siècles de bâtons de comptage en bois a détruit par accident quel bâtiment ?",
+    "correct_answer": "Le Parlement britannique",
+    "incorrect_answers": [
+      "La tour de Londres",
+      "L'abbaye de Westminster",
+      "La Banque d'Angleterre",
+      "Le ministère des feux de camp"
+    ],
+    "explanation": "Les bâtons de comptage de l'Échiquier devaient être brûlés dans deux fours sous le palais de Westminster ; l'incendie remonta les cheminées et détruisit l'essentiel du bâtiment médiéval. Charles Dickens a ensuite raillé la paperasse à l'origine du brasier.",
+    "source_url": "https://fr.wikipedia.org/wiki/B%C3%A2ton_de_comptage",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0019",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quel gaz compose la plus grande partie de l'atmosphère terrestre ?",
+    "correct_answer": "L'azote",
+    "incorrect_answers": [
+      "L'oxygène",
+      "Le dioxyde de carbone",
+      "L'hydrogène",
+      "L'hélium, c'est pour ça que les voix flottent"
+    ],
+    "explanation": "L'azote représente environ 78 % de l'air, l'oxygène étant loin derrière avec 21 %. Ses molécules sont si stables que les plantes ne peuvent l'utiliser directement : elles dépendent de bactéries capables de le fixer pour elles.",
+    "source_url": "https://fr.wikipedia.org/wiki/Azote",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0020",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quel symbole chimique désigne l'azote ?",
+    "correct_answer": "N",
+    "incorrect_answers": [
+      "Nd",
+      "Ne",
+      "No",
+      "N comme Naviguer"
+    ],
+    "explanation": "N vient de nitrum, le mot latin désignant le natron à l'origine du nom de l'élément. Les symboles à une seule lettre sont réservés aux éléments les plus familiers, de H et C jusqu'au K du potassium.",
+    "source_url": "https://fr.wikipedia.org/wiki/Azote",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0019",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel peintre a consacré ses 31 dernières années à environ 250 toiles de nymphéas peintes dans son jardin de Giverny ?",
+    "correct_answer": "Claude Monet",
+    "incorrect_answers": [
+      "Auguste Renoir",
+      "Camille Pissarro",
+      "Édouard Manet",
+      "Le nain de jardin, en peinture à l'huile"
+    ],
+    "explanation": "Claude Monet a peint son jardin d'eau de Giverny pendant les 31 dernières années de sa vie, souvent malgré des cataractes qui s'aggravaient. Huit des plus grandes toiles habillent aujourd'hui deux salles ovales du musée de l'Orangerie, à Paris.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Nymph%C3%A9as",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0020",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Qui a peint « La Jeune Fille à la perle » ?",
+    "correct_answer": "Johannes Vermeer",
+    "incorrect_answers": [
+      "Rembrandt van Rijn",
+      "Frans Hals",
+      "Jan Steen",
+      "Sa coiffeuse, évidemment"
+    ],
+    "explanation": "Johannes Vermeer a peint cette étude de visage vers 1665 à Delft. Achetée deux florins et trente cents aux enchères de La Haye en 1881, elle est exposée à la Mauritshuis de La Haye depuis 1902.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jeune_Femme_avec_boucle_d%27oreille_en_perle",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0017",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Combien de semaines « Bohemian Rhapsody » est-elle restée numéro un du classement britannique des singles en 1975 ?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "3",
+      "6",
+      "12",
+      "Le temps d'apprendre le passage opéra"
+    ],
+    "explanation": "Les producteurs jugeaient ce single de presque six minutes injouable à la radio, mais il a dominé le classement britannique pendant neuf semaines à Noël 1975. Après la mort de Freddie Mercury en 1991, sa réédition y a ajouté cinq autres semaines au sommet.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bohemian_Rhapsody",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0017",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Au snooker, quel est le plus grand break possible dans des circonstances normales ?",
+    "correct_answer": "147",
+    "incorrect_answers": [
+      "100",
+      "135",
+      "150",
+      "Un jeu parfait au billard, mais en plus classe"
+    ],
+    "explanation": "Un break maximum empocher les 15 rouges avec 15 noirs pour 120 points, puis les six couleurs pour 27 points de plus. Joe Davis a réussi le premier 147 officiel en 1955 ; celui de Ronnie O'Sullivan au Championnat du monde 1997 n'a pris que 5 minutes et 8 secondes.",
+    "source_url": "https://fr.wikipedia.org/wiki/147_(snooker)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

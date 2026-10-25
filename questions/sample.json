@@ -2126,5 +2126,195 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0023",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "What is the highest mountain in Canada?",
+    "correct_answer": "Mount Logan",
+    "incorrect_answers": [
+      "Mount Robson",
+      "Mount Saint Elias",
+      "Mount Waddington",
+      "A speed bump for Snowbirds"
+    ],
+    "explanation": "Mount Logan in Yukon stands 5,959 m tall, the highest peak in Canada and the second highest in North America after Denali. It is named after Sir William Edmond Logan, founder of the Geological Survey of Canada.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Logan",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0024",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which desert is the driest non-polar desert on Earth?",
+    "correct_answer": "The Atacama Desert",
+    "incorrect_answers": [
+      "The Sahara",
+      "The Gobi Desert",
+      "The Kalahari Desert",
+      "The Big Dry Sponge"
+    ],
+    "explanation": "Stretching about 1,600 km along the Pacific coast of Chile, the Atacama averages around 15 mm of rain a year and some of its weather stations have never recorded any. Some river beds there have been dry for 120,000 years.",
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0023",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In the 1932 Great Emu War, which army was outmanoeuvred by a flock of emus?",
+    "correct_answer": "The Australian Army",
+    "incorrect_answers": [
+      "The British Army",
+      "The New Zealand Army",
+      "The Canadian Army",
+      "The Emu Home Guard"
+    ],
+    "explanation": "Soldiers armed with Lewis guns were sent in November 1932 to cull emus plaguing Western Australian wheat farms. The birds scattered into small, fast-moving groups, and the force withdrew after about a month with little to show for nearly 10,000 rounds.",
+    "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0024",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In 1834, burning six centuries’ worth of wooden tally sticks accidentally destroyed which building?",
+    "correct_answer": "The Houses of Parliament",
+    "incorrect_answers": [
+      "The Tower of London",
+      "Westminster Abbey",
+      "The Bank of England",
+      "The Ministry of Campfires"
+    ],
+    "explanation": "Exchequer tally sticks were ordered burned in two furnaces beneath the Palace of Westminster; the fire spread up the chimneys and destroyed most of the medieval building. Charles Dickens later mocked the paperwork behind the blaze.",
+    "source_url": "https://en.wikipedia.org/wiki/Tally_stick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0019",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which gas makes up most of Earth's atmosphere?",
+    "correct_answer": "Nitrogen",
+    "incorrect_answers": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen",
+      "Helium, which is why voices float"
+    ],
+    "explanation": "Nitrogen makes up about 78 per cent of the air, with oxygen a distant second at 21 per cent. Its molecules are so stable that plants cannot use it directly — they depend on bacteria to fix it for them.",
+    "source_url": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0020",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which chemical symbol stands for nitrogen?",
+    "correct_answer": "N",
+    "incorrect_answers": [
+      "Nd",
+      "Ne",
+      "No",
+      "N for Nifty"
+    ],
+    "explanation": "N traces back to nitrum, the Latin word for the natron salts behind the element's name. One-letter symbols are reserved for the most familiar elements, from H and C to K for potassium.",
+    "source_url": "https://en.wikipedia.org/wiki/Nitrogen",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0019",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which painter spent his final 31 years producing around 250 water lily paintings of his garden at Giverny?",
+    "correct_answer": "Claude Monet",
+    "incorrect_answers": [
+      "Auguste Renoir",
+      "Camille Pissarro",
+      "Édouard Manet",
+      "The garden gnome, working in oils"
+    ],
+    "explanation": "Claude Monet painted his water garden at Giverny for the last 31 years of his life, often despite worsening cataracts. Eight of the largest canvases now wrap two oval rooms at the Musée de l'Orangerie in Paris.",
+    "source_url": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0020",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who painted ‘Girl with a Pearl Earring’?",
+    "correct_answer": "Johannes Vermeer",
+    "incorrect_answers": [
+      "Rembrandt van Rijn",
+      "Frans Hals",
+      "Jan Steen",
+      "Her hairstylist, obviously"
+    ],
+    "explanation": "Johannes Vermeer painted the tronie around 1665 in Delft. Bought for two guilders and thirty cents at an 1881 auction in The Hague, it has hung in the Mauritshuis there since 1902.",
+    "source_url": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0017",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "How many weeks did ‘Bohemian Rhapsody’ spend at number one on the UK Singles Chart in 1975?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "3",
+      "6",
+      "12",
+      "Enough weeks to learn the operatic bit"
+    ],
+    "explanation": "Record executives called the near six-minute song unplayable, but it topped the UK chart for nine weeks over Christmas 1975. After Freddie Mercury's death in 1991, the re-release added another five weeks at number one.",
+    "source_url": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0017",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In snooker, what is the highest possible break in normal circumstances?",
+    "correct_answer": "147",
+    "incorrect_answers": [
+      "100",
+      "135",
+      "150",
+      "A perfect game of pool, but fancier"
+    ],
+    "explanation": "A maximum break pots all 15 reds with 15 blacks for 120 points, then clears the six colours for 27 more. Joe Davis made the first official 147 in 1955; Ronnie O'Sullivan's 1997 World Championship maximum took just 5 minutes and 8 seconds.",
+    "source_url": "https://en.wikipedia.org/wiki/Maximum_break",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
