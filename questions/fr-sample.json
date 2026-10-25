@@ -3836,5 +3836,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0041",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle est la plus grande île de la mer Méditerranée ?",
+    "correct_answer": "La Sicile",
+    "incorrect_answers": [
+      "La Sardaigne",
+      "Chypre",
+      "La Corse",
+      "L'Atlantide (toujours introuvable)"
+    ],
+    "explanation": "La Sicile couvre environ 25 700 kilomètres carrés au large de la pointe de la botte italienne, devant la Sardaigne, Chypre et la Corse. L'Etna, sur sa côte est, est l'un des volcans les plus actifs d'Europe.",
+    "source_url": "https://fr.wikipedia.org/wiki/Sicile",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0042",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel est le plus grand lac d'Afrique en superficie ?",
+    "correct_answer": "Le lac Victoria",
+    "incorrect_answers": [
+      "Le lac Tanganyika",
+      "Le lac Malawi",
+      "Le lac Tchad",
+      "Le jacuzzi à hippopotames"
+    ],
+    "explanation": "Le lac Victoria s'étend sur environ 68 800 kilomètres carrés, ce qui en fait le plus grand lac tropical du monde. Il touche l'Ouganda, le Kenya et la Tanzanie, et le Nil blanc en sort en direction du nord.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lac_Victoria",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0043",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle mer n'a aucun littoral et est entièrement délimitée par des courants océaniques ?",
+    "correct_answer": "La mer des Sargasses",
+    "incorrect_answers": [
+      "La mer des Caraïbes",
+      "La mer de Corail",
+      "La mer Baltique",
+      "Le syndicat des algues"
+    ],
+    "explanation": "La mer des Sargasses se tient dans la gyre de l'Atlantique Nord, encadrée par le Gulf Stream et trois autres courants au lieu de côtes. Ses eaux calmes retiennent l'algue sargasse flottante, qui lui a donné son nom.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mer_des_Sargasses",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0044",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Le mont Fuji est un volcan actif ; en quelle année est-il entré en éruption pour la dernière fois ?",
+    "correct_answer": "1707",
+    "incorrect_answers": [
+      "1523",
+      "1815",
+      "1902",
+      "Fuji n'entre pas en éruption, il éternue poliment"
+    ],
+    "explanation": "L'éruption de Hōei commence fin 1707 et recouvre Edo, l'actuelle Tokyo, d'une fine couche de cendres ; le Fuji est resté calme depuis. Avec ses 3 776 m, c'est toujours le plus haut sommet du Japon.",
+    "source_url": "https://fr.wikipedia.org/wiki/Mont_Fuji",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0041",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quel navire de guerre a fait naufrage à Stockholm lors de sa sortie inaugurale en 1628, après à peine 1 300 mètres parcourus, puis a été renfloué presque intact en 1961 ?",
+    "correct_answer": "Le Vasa",
+    "incorrect_answers": [
+      "Le Mary Rose",
+      "Le Wasa of Turku",
+      "Le Viceroy",
+      "La Majesté du Fond Peu Profond"
+    ],
+    "explanation": "Construit pour le roi Gustave II Adolphe avec 64 canons et des sculptures aux couleurs vives, le Vasa chavire quelques minutes après son premier appareillage, le 10 août 1628. Il reste 333 ans au fond avant son renflouement en 1961.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vasa",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0042",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "En 1948, lorsque l'Union soviétique a coupé toutes les voies terrestres et fluviales vers Berlin-Ouest, comment les Alliés occidentaux ont-ils ravitaillé la ville jusqu'à la levée du blocus l'année suivante ?",
+    "correct_answer": "Par un pont aérien de ravitaillement",
+    "incorrect_answers": [
+      "Par une flotte de navires de ravitaillement sur l'Elbe",
+      "Par une nouvelle ligne de chemin de fer contournant la zone soviétique",
+      "Par des montgolfières lancées depuis l'Allemagne de l'Ouest",
+      "Par une chaîne de courriers d'une politesse exemplaire"
+    ],
+    "explanation": "Le pont aérien de Berlin a volé pendant près d'un an, du 26 juin 1948 à la levée du blocus le 12 mai 1949, et les avions américains et britanniques se sont posés plus de 200 000 fois, livrant chaque jour nourriture, carburant et autres nécessités.",
+    "source_url": "https://fr.wikipedia.org/wiki/Blocus_de_Berlin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0043",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quel code de lois babylonien antique, gravé sur une stèle de basalte de 2,25 mètres, comporte notamment la loi du talion, œil pour œil ?",
+    "correct_answer": "Le Code de Hammurabi",
+    "incorrect_answers": [
+      "Les Douze Tables",
+      "Le Digeste de Justinien",
+      "La constitution de Dracon",
+      "Les conditions générales de vente que personne ne lit"
+    ],
+    "explanation": "Rédigé vers 1750 avant notre ère sous le roi Hammurabi de Babylone, le code compte 282 lois en cunéiforme akkadien. La stèle, retrouvée à Suse en 1901, est aujourd'hui exposée au Louvre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Code_de_Hammurabi",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0044",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quelle statue monumentale, offerte par la France aux États-Unis, a été inaugurée à New York en 1886 ?",
+    "correct_answer": "La statue de la Liberté",
+    "incorrect_answers": [
+      "Le Colosse de Rhodes",
+      "Le Christ Rédempteur",
+      "La Mère Patrie appelle",
+      "La duchesse Pumpernickel de la Boutique de Souvenirs"
+    ],
+    "explanation": "Conçue par Auguste Bartholdi, avec une structure métallique de Gustave Eiffel, la statue a été inaugurée le 28 octobre 1886. Sa tablette porte l'inscription MDCCLXXVI, date de la Déclaration d'indépendance américaine.",
+    "source_url": "https://fr.wikipedia.org/wiki/Statue_de_la_Libert%C3%A9",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0033",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quelle est la substance naturelle la plus dure sur Terre ?",
+    "correct_answer": "Le diamant",
+    "incorrect_answers": [
+      "Le quartz",
+      "Le titane",
+      "Le granit",
+      "Du beurre tiède"
+    ],
+    "explanation": "Le diamant est du carbone pur dont chaque atome est relié à quatre voisins dans un réseau tridimensionnel rigide, ce qui en fait la référence pour tester la dureté de tous les autres minéraux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Diamant",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0034",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quel groupe sanguin est connu comme le donneur universel ?",
+    "correct_answer": "O négatif",
+    "incorrect_answers": [
+      "AB positif",
+      "A positif",
+      "B négatif",
+      "Groupe Zzz"
+    ],
+    "explanation": "Les globules rouges du groupe O ne portent ni l'antigène A ni l'antigène B, si bien que le sang O négatif peut être transfusé à presque tous les patients, alors que le groupe AB positif est le receveur universel.",
+    "source_url": "https://fr.wikipedia.org/wiki/Groupe_sanguin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0035",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quelle est la couleur de la peau de l'ours blanc ?",
+    "correct_answer": "Noire",
+    "incorrect_answers": [
+      "Blanche",
+      "Rose",
+      "Grise",
+      "Vert radioactif"
+    ],
+    "explanation": "La peau de l'ours blanc est noire pour absorber un maximum de chaleur solaire, et ses poils creux et translucides dispersent la lumière, ce qui donne à la fourrure son apparence blanche.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ours_blanc",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0033",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel auteur français a publié en 1862 un roman épique qui suit les pas de l'ancien forçat Jean Valjean à Paris ?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Alexandre Dumas",
+      "Émile Zola",
+      "Gustave Flaubert",
+      "Les misérables eux-mêmes"
+    ],
+    "explanation": "Victor Hugo a mis près de deux décennies à écrire Les Misérables, publié le 31 mars 1862. Le roman s'ouvre en 1815 et culmine avec l'insurrection de juin 1832 à Paris, avant d'inspirer une comédie musicale mondialement célèbre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Mis%C3%A9rables",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0034",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel peintre autrichien a rehaussé d'or sa toile de 1908 représentant un couple enlacé, exposée au Belvédère de Vienne ?",
+    "correct_answer": "Gustav Klimt",
+    "incorrect_answers": [
+      "Egon Schiele",
+      "Oskar Kokoschka",
+      "Caspar David Friedrich",
+      "Un papier cadeau hors de prix"
+    ],
+    "explanation": "Le Baiser a été peint en 1907 et 1908, au sommet de la période dite dorée de Klimt : huile sur toile rehaussée de feuilles d'or, d'argent et de platine. L'œuvre fut présentée en 1908 sous le titre Liebespaar, c'est-à-dire les amoureux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Baiser_(Klimt)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0035",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quelle noble dame de compagnie est créditée de l'écriture du Dit du Genji au début du XIe siècle ?",
+    "correct_answer": "Murasaki Shikibu",
+    "incorrect_answers": [
+      "Sei Shōnagon",
+      "Izumi Shikibu",
+      "Natsume Sōseki",
+      "Le secrétaire personnel de Genji"
+    ],
+    "explanation": "Écrit à l'apogée de l'époque de Heian, le Dit du Genji retrace la vie du courtisan Hikaru Genji. Il fut rédigé en hiragana, l'écriture phonétique associée aux femmes de l'époque, plutôt qu'en caractères chinois, réservés à la littérature prestigieuse.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Dit_du_Genji",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0030",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Dans Retour vers le futur, l'adolescent Marty McFly est projeté par accident en 1955 dans une machine à voyager dans le temps intégrée à quel modèle de voiture ?",
+    "correct_answer": "DeLorean",
+    "incorrect_answers": [
+      "Ford Mustang",
+      "Pontiac Trans Am",
+      "Un réfrigérateur motorisé avec des bandes de course",
+      "KITT, la voiture de K 2000"
+    ],
+    "explanation": "Doc Brown transforme une DeLorean DMC-12 en machine à voyager dans le temps, et la voiture doit atteindre 88 miles par heure pour sauter dans le temps.",
+    "source_url": "https://fr.wikipedia.org/wiki/Retour_vers_le_futur",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0031",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Dans La Reine des neiges, après qu'Elsa a plongé le royaume d'Arendelle dans un hiver éternel, la princesse Anna part retrouver sa sœur accompagnée de qui ?",
+    "correct_answer": "Kristoff, Sven et Olaf",
+    "incorrect_answers": [
+      "Kristoff, Sven et Grand Pabbie",
+      "Kristoff, Hans et le duc de Weselton",
+      "Kristoff, Sven et un poisson parlant nommé Baltique",
+      "Olaf, Elsa et un renne très perdu"
+    ],
+    "explanation": "Anna fait équipe avec le montagnard Kristoff, son fidèle renne Sven et le bonhomme de neige parlant Olaf pour retrouver Elsa, exilée à la Montagne du Nord.",
+    "source_url": "https://fr.wikipedia.org/wiki/La_Reine_des_neiges_(film,_2013)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0032",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel réalisateur a signé l'épopée de 1954 dans laquelle un village paysan recrute sept guerriers contre des bandits, récompensée par un Lion d'argent à Venise et adaptée en western sous le titre Les Sept Mercenaires ?",
+    "correct_answer": "Akira Kurosawa",
+    "incorrect_answers": [
+      "Yasujirō Ozu",
+      "Hayao Miyazaki",
+      "Kenji Mizoguchi",
+      "Le comte Toshiro du bol de riz sans fond"
+    ],
+    "explanation": "Les Sept Samouraïs de Kurosawa, avec Toshirō Mifune dans le rôle du fougueux Kikuchiyo, est devenu l'un des films d'action les plus influents de l'histoire et a remporté le Lion d'argent en 1954.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Sept_Samoura%C3%AFs",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0030",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Combien de plumes composent un volant de badminton réglementaire ?",
+    "correct_answer": "16",
+    "incorrect_answers": [
+      "12",
+      "8",
+      "20",
+      "Une seule oie très fidèle"
+    ],
+    "explanation": "Un volant réglementaire porte 16 plumes d'oie ou de canard de 62 à 70 mm, plantées dans une base en liège, et elles doivent toutes provenir de la même aile pour que le vol reste régulier.",
+    "source_url": "https://fr.wikipedia.org/wiki/Volant_de_badminton",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0031",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Quelle pièce des échecs est la seule à pouvoir sauter par-dessus les autres pièces ?",
+    "correct_answer": "Le cavalier",
+    "incorrect_answers": [
+      "Le fou",
+      "La tour",
+      "La dame",
+      "Le pion à trampoline"
+    ],
+    "explanation": "Le cavalier se déplace en forme de L, deux cases dans une direction puis une case de côté, et son déplacement est le seul à pouvoir franchir des cases occupées. Il change aussi de couleur de case à chaque coup.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cavalier_(jeu_d%27%C3%A9checs)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0032",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Au bowling à dix quilles, combien d'abats consécutifs faut-il pour un jeu parfait de 300 points ?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "10",
+      "11",
+      "15",
+      "Autant que vos chaussures porte-bonheur en comptent"
+    ],
+    "explanation": "Un jeu parfait exige un abat dans chacun des neuf premiers carreaux et trois autres au dixième, car un abat au dixième offre deux lancers de bonus. Les jeux parfaits homologués sont récompensés par une bague.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bowling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

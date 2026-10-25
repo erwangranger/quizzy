@@ -3836,5 +3836,385 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0041",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest island in the Mediterranean Sea?",
+    "correct_answer": "Sicily",
+    "incorrect_answers": [
+      "Sardinia",
+      "Cyprus",
+      "Corsica",
+      "Atlantis (still missing)"
+    ],
+    "explanation": "Sicily covers about 25,700 square km off the toe of Italy's boot, ahead of Sardinia, Cyprus and Corsica. Mount Etna on its east coast is one of Europe's most active volcanoes.",
+    "source_url": "https://en.wikipedia.org/wiki/Sicily",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0042",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest lake in Africa by surface area?",
+    "correct_answer": "Lake Victoria",
+    "incorrect_answers": [
+      "Lake Tanganyika",
+      "Lake Malawi",
+      "Lake Chad",
+      "The hippo jacuzzi"
+    ],
+    "explanation": "Lake Victoria spans about 68,800 square km, making it the world's largest tropical lake. It touches Uganda, Kenya and Tanzania, and the White Nile flows out of it on its way north.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Victoria",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0043",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which sea has no land coastline and is bounded entirely by ocean currents?",
+    "correct_answer": "The Sargasso Sea",
+    "incorrect_answers": [
+      "The Caribbean Sea",
+      "The Coral Sea",
+      "The Baltic Sea",
+      "The Atlantic's seaweed lobby"
+    ],
+    "explanation": "The Sargasso Sea sits inside the North Atlantic gyre, framed by the Gulf Stream and three other currents instead of any shore. Its calm water collects the floating sargassum weed that gave it its name.",
+    "source_url": "https://en.wikipedia.org/wiki/Sargasso_Sea",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0044",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Mount Fuji is an active volcano; in which year did it last erupt?",
+    "correct_answer": "1707",
+    "incorrect_answers": [
+      "1523",
+      "1815",
+      "1902",
+      "Fuji never erupts, it just politely sneezes"
+    ],
+    "explanation": "The Hōei eruption began in late 1707 and dusted Edo, today's Tokyo, with ash; Fuji has been quiet ever since. At 3,776 m it remains Japan's highest mountain.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Fuji",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0041",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which warship sank in Stockholm harbor on her maiden voyage in 1628, after sailing barely 1,300 metres, and was raised almost intact in 1961?",
+    "correct_answer": "The Vasa",
+    "incorrect_answers": [
+      "The Mary Rose",
+      "The Wasa of Turku",
+      "The Viceroy",
+      "The Majesty of the Shallow End"
+    ],
+    "explanation": "Built for King Gustavus Adolphus with 64 cannons and vividly painted sculptures, the Vasa capsized minutes into her first sail on 10 August 1628. She spent 333 years on the seabed before her 1961 salvage.",
+    "source_url": "https://en.wikipedia.org/wiki/Vasa_(ship)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0042",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In 1948, when the Soviet Union cut all land and water routes to West Berlin, how did the Western Allies resupply the city until the blockade was lifted the following year?",
+    "correct_answer": "By an airlift of supplies",
+    "incorrect_answers": [
+      "By a fleet of supply ships up the Elbe",
+      "By a new railway line built around the Soviet zone",
+      "By hot-air balloons launched from West Germany",
+      "By a conga line of very polite couriers"
+    ],
+    "explanation": "The Berlin Airlift flew for nearly a year, from June 1948 until the blockade was lifted on 12 May 1949, with American and British aircraft landing in Berlin more than 200,000 times to deliver food, fuel, and other necessities each day.",
+    "source_url": "https://en.wikipedia.org/wiki/Berlin_Blockade",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0044",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which colossal statue, a gift from France to the United States, was dedicated in New York in 1886?",
+    "correct_answer": "The Statue of Liberty",
+    "incorrect_answers": [
+      "The Colossus of Rhodes",
+      "Christ the Redeemer",
+      "The Motherland Calls",
+      "A gift receipt from 1886"
+    ],
+    "explanation": "Designed by Auguste Bartholdi with an iron framework by Gustave Eiffel, the statue was dedicated on 28 October 1886. Her tablet is inscribed with the Roman numerals MDCCLXXVI, the date of the Declaration of Independence.",
+    "source_url": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0043",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which ancient Babylonian legal code, carved on a 2.25-metre basalt stele, famously includes an eye-for-an-eye provision?",
+    "correct_answer": "The Code of Hammurabi",
+    "incorrect_answers": [
+      "The Twelve Tables",
+      "The Digest of Justinian",
+      "The Draconian constitution",
+      "The Terms and Conditions Nobody Reads"
+    ],
+    "explanation": "Composed around 1750 BC under King Hammurabi of Babylon, the code is inscribed in Akkadian cuneiform with 282 laws. The stele was rediscovered at Susa in 1901 and now stands in the Louvre.",
+    "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0033",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the hardest natural substance on Earth?",
+    "correct_answer": "Diamond",
+    "incorrect_answers": [
+      "Quartz",
+      "Titanium",
+      "Granite",
+      "Warm butter"
+    ],
+    "explanation": "Diamond is pure carbon with each atom bonded to four neighbours in a rigid three-dimensional lattice, making it the benchmark used to scratch-test every other mineral.",
+    "source_url": "https://en.wikipedia.org/wiki/Diamond",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0034",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which blood type is known as the universal donor?",
+    "correct_answer": "O negative",
+    "incorrect_answers": [
+      "AB positive",
+      "A positive",
+      "B negative",
+      "Type Zzz"
+    ],
+    "explanation": "Type O red cells carry neither the A nor the B antigen, so O negative blood can be given to almost any patient, while AB positive is the universal recipient.",
+    "source_url": "https://en.wikipedia.org/wiki/Blood_type",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0035",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What colour is the skin of a polar bear?",
+    "correct_answer": "Black",
+    "incorrect_answers": [
+      "White",
+      "Pink",
+      "Grey",
+      "Radioactive green"
+    ],
+    "explanation": "A polar bear's skin is jet black to soak up the sun's heat, while its hollow, translucent hairs scatter light and make the coat look white.",
+    "source_url": "https://en.wikipedia.org/wiki/Polar_bear",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0033",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which French author set Les Miserables in early 19th-century Paris and published it in 1862?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Alexandre Dumas",
+      "Emile Zola",
+      "Gustave Flaubert",
+      "The miserables themselves"
+    ],
+    "explanation": "Victor Hugo worked on the novel for nearly two decades. It follows the ex-convict Jean Valjean through the 1832 June Rebellion in Paris, and has been adapted into films and a long-running musical.",
+    "source_url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0034",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Austrian painter added gold leaf to his 1908 canvas of an embracing couple, shown at the Belvedere in Vienna?",
+    "correct_answer": "Gustav Klimt",
+    "incorrect_answers": [
+      "Egon Schiele",
+      "Oskar Kokoschka",
+      "Caspar David Friedrich",
+      "A very expensive wrapping paper"
+    ],
+    "explanation": "The Kiss was painted in 1907 and 1908 during Klimt's so-called Golden Period, using oil paint with added gold, silver and platinum leaf. It debuted in 1908 under the title Liebespaar, meaning the lovers.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0035",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which noblewoman and lady-in-waiting is credited with writing The Tale of Genji in the early 11th century?",
+    "correct_answer": "Murasaki Shikibu",
+    "incorrect_answers": [
+      "Sei Shonagon",
+      "Izumi Shikibu",
+      "Natsume Soseki",
+      "Genji, ghostwritten by his diary"
+    ],
+    "explanation": "Written around the peak of the Heian period, the tale follows the courtier Hikaru Genji. It was composed in hiragana, the phonetic script associated with women's writing of the era, rather than the more prestigious Chinese characters.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0030",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In Back to the Future, teenager Marty McFly is accidentally sent back to 1955 in a time machine built into which car model?",
+    "correct_answer": "DeLorean",
+    "incorrect_answers": [
+      "Ford Mustang",
+      "Pontiac Trans Am",
+      "A motorised fridge with racing stripes",
+      "KITT from Knight Rider"
+    ],
+    "explanation": "Doc Brown converts a DeLorean DMC-12 into his time machine, and the car needs to hit 88 miles per hour to jump through time.",
+    "source_url": "https://en.wikipedia.org/wiki/Back_to_the_Future",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0031",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In Frozen, Elsa's runaway powers trap the kingdom of Arendelle in endless winter, sending Princess Anna off to find her sister with which companions?",
+    "correct_answer": "Kristoff, Sven and Olaf",
+    "incorrect_answers": [
+      "Kristoff, Sven and Grand Pabbie",
+      "Kristoff, Hans and the Duke of Weselton",
+      "Kristoff, Sven and a walking fish named Baltic",
+      "Olaf, Elsa and a very confused moose"
+    ],
+    "explanation": "Anna teams up with the iceman Kristoff, his loyal reindeer Sven, and the talking snowman Olaf to reach Elsa, who has exiled herself to the North Mountain.",
+    "source_url": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0032",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which director's 1954 epic, in which a farming village hires seven warriors against bandits, took the Silver Lion at Venice and later inspired the western The Magnificent Seven?",
+    "correct_answer": "Akira Kurosawa",
+    "incorrect_answers": [
+      "Yasujirō Ozu",
+      "Hayao Miyazaki",
+      "Kenji Mizoguchi",
+      "Count Toshiro of the Bottomless Rice Bowl"
+    ],
+    "explanation": "Kurosawa's Seven Samurai, starring Toshirō Mifune as the wild Kikuchiyo, became one of the most influential action films ever and won the Silver Lion in 1954.",
+    "source_url": "https://en.wikipedia.org/wiki/Seven_Samurai",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0030",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "How many feathers make up a regulation badminton shuttlecock?",
+    "correct_answer": "16",
+    "incorrect_answers": [
+      "12",
+      "8",
+      "20",
+      "One very loyal goose"
+    ],
+    "explanation": "A regulation shuttlecock carries 16 goose or duck feathers, each 62 to 70 mm long, set into a cork base, and all must come from the same wing of the bird so the flight stays even.",
+    "source_url": "https://en.wikipedia.org/wiki/Shuttlecock",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0031",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Which chess piece is the only one that can jump over other pieces?",
+    "correct_answer": "The knight",
+    "incorrect_answers": [
+      "The bishop",
+      "The rook",
+      "The queen",
+      "The pawn with a trampoline"
+    ],
+    "explanation": "The knight moves in an L shape, two squares one way then one square sideways, and its move is the only one that clears occupied squares. It is also the only piece that changes square colour with every move.",
+    "source_url": "https://en.wikipedia.org/wiki/Knight_(chess)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0032",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "In ten-pin bowling, how many consecutive strikes make a perfect game of 300?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "10",
+      "11",
+      "15",
+      "As many as your lucky shoes allow"
+    ],
+    "explanation": "A perfect game needs one strike in each of the first nine frames and three more in the tenth, because a strike in the tenth earns two bonus throws. Certified perfect games are commemorated with a ring.",
+    "source_url": "https://en.wikipedia.org/wiki/Perfect_game_(bowling)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
