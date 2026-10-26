@@ -18,12 +18,12 @@ describe('questionBank', () => {
     resetSeenQuestions()
   })
 
-  it('loads 822 reviewed questions from questions/*.json', () => {
+  it('loads 806 reviewed questions from questions/*.json', () => {
     const all = loadAllQuestions()
-    expect(all).toHaveLength(822)
+    expect(all).toHaveLength(806)
     expect(all.every((q) => q.reviewed)).toBe(true)
-    expect(all.filter((q) => q.lang === 'en')).toHaveLength(411)
-    expect(all.filter((q) => q.lang === 'fr')).toHaveLength(411)
+    expect(all.filter((q) => q.lang === 'en')).toHaveLength(403)
+    expect(all.filter((q) => q.lang === 'fr')).toHaveLength(403)
   })
 
   it('derives categories from the data for the given language', () => {

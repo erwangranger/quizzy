@@ -513,25 +513,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261015-65",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, Tesla a présenté sa nouvelle voiture de sport électrique Roadster, près de neuf ans après le premier dévoilement de la version de nouvelle génération. De qui la silhouette apparaît-elle à côté du logo Tesla dans la photo du reportage de la BBC ?",
-    "correct_answer": "Elon Musk",
-    "incorrect_answers": [
-      "Jeff Bezos",
-      "Tim Cook",
-      "Sam Altman",
-      "Un lampadaire suspectement grand"
-    ],
-    "explanation": "Tesla avait dévoilé la Roadster de nouvelle génération à la fin de 2017, mais la voiture a accumulé les reports. Le sujet du World Business Report, illustré par la silhouette d'Elon Musk, notait aussi une journée difficile pour les valeurs technologiques, dans un contexte d'interrogations sur les dépenses en intelligence artificielle.",
-    "source_url": "https://www.bbc.com/audio/play/w3ct8fqw",
-    "as_of": "2026-10-15",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261015-66",
     "lang": "fr",
     "category": "recent-news",

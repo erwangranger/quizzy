@@ -437,25 +437,6 @@
     "reviewed": true
   },
   {
-    "id": "arts-fr-0014",
-    "lang": "fr",
-    "category": "arts-literature",
-    "difficulty": 2,
-    "question": "Quel compositeur baroque a écrit « Les Quatre Saisons » ?",
-    "correct_answer": "Antonio Vivaldi",
-    "incorrect_answers": [
-      "Johann Sebastian Bach",
-      "George Frideric Handel",
-      "Antonio Salieri",
-      "Le quatuor du météorologue"
-    ],
-    "explanation": "Publié en 1725, ce cycle de quatre concertos pour violon de Vivaldi s’accompagne d’un sonnet décrivant le printemps, l’été, l’automne et l’hiver, un jalon précoce de la musique à programme.",
-    "source_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "arts-fr-0015",
     "lang": "fr",
     "category": "arts-literature",
@@ -726,7 +707,7 @@
     "lang": "fr",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "Dans quel film de 1994 un homme simple et généreux prononce la réplique sur la boîte de chocolats ?",
+    "question": "Quel film de 1994 suit un homme simple et généreux de l'Alabama pour qui la vie est comme une boîte de chocolats ?",
     "correct_answer": "Forrest Gump",
     "incorrect_answers": [
       "Big",
@@ -1125,7 +1106,7 @@
     "lang": "fr",
     "category": "geography",
     "difficulty": 3,
-    "question": "Quel pays traverse le plus de fuseaux horaires ?",
+    "question": "Territoires d'outre-mer compris, quel pays traverse le plus de fuseaux horaires ?",
     "correct_answer": "La France",
     "incorrect_answers": [
       "La Russie",
@@ -2018,7 +1999,7 @@
     "lang": "fr",
     "category": "sports-leisure",
     "difficulty": 2,
-    "question": "En ski de descente, comment mesure-t-on le résultat lorsqu’une épreuve se décide sur deux manches ?",
+    "question": "En ski alpin, dans un combiné, comment sont comptées les manches de descente et de slalom d'un skieur ?",
     "correct_answer": "Au temps cumulé",
     "incorrect_answers": [
       "À la meilleure manche",
@@ -2026,7 +2007,7 @@
       "Aux points par porte",
       "Au cri le plus puissant dans la descente"
     ],
-    "explanation": "Les épreuves de descente en deux manches, comme les combinés olympiques, additionnent les deux temps et le total le plus bas l’emporte. Les descentes de Coupe du monde en une manche récompensent simplement la descente la plus rapide.",
+    "explanation": "Le combiné additionne les temps de la descente et du slalom, et le total le plus bas l'emporte. Une descente pure se joue sur une seule manche.",
     "source_url": "https://en.wikipedia.org/wiki/Alpine_combined",
     "as_of": null,
     "origin": "claude",
@@ -2056,7 +2037,7 @@
     "lang": "fr",
     "category": "sports-leisure",
     "difficulty": 2,
-    "question": "Combien de couloirs compte un bassin olympique de natation ?",
+    "question": "Combien de couloirs compte un bassin olympique moderne, y compris les deux laissés vides pendant les courses ?",
     "correct_answer": "10",
     "incorrect_answers": [
       "6",
@@ -2226,13 +2207,13 @@
     "id": "scie-fr-0020",
     "lang": "fr",
     "category": "science",
-    "difficulty": 3,
-    "question": "Quel élément chimique est représenté par le symbole N ?",
-    "correct_answer": "N",
+    "difficulty": 1,
+    "question": "Quel élément chimique a pour symbole N ?",
+    "correct_answer": "L'azote",
     "incorrect_answers": [
-      "Nd",
-      "Ne",
-      "No",
+      "Le néon",
+      "Le nickel",
+      "Le sodium",
       "N comme Naviguer"
     ],
     "explanation": "N vient de nitrum, le mot latin désignant le natron à l'origine du nom de l'élément. Les symboles à une seule lettre sont réservés aux éléments les plus familiers, de H et C jusqu'au K du potassium.",
@@ -2284,7 +2265,7 @@
     "lang": "fr",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "Combien de semaines « Bohemian Rhapsody » est-elle restée numéro un du classement britannique des singles en 1975 ?",
+    "question": "Combien de semaines « Bohemian Rhapsody » est-elle restée numéro un du classement britannique des singles lors de sa sortie initiale ?",
     "correct_answer": "9",
     "incorrect_answers": [
       "3",
@@ -2755,25 +2736,6 @@
     "reviewed": true
   },
   {
-    "id": "geo-fr-0032",
-    "lang": "fr",
-    "category": "geography",
-    "difficulty": 3,
-    "question": "La France métropolitaine s'étend sur combien de fuseaux horaires, un record mondial ?",
-    "correct_answer": "12",
-    "incorrect_answers": [
-      "8",
-      "3",
-      "24",
-      "L'heure d'ouverture de la boulangerie"
-    ],
-    "explanation": "Les territoires d'outre-mer, de Clipperton dans le Pacifique à La Réunion dans l'océan Indien, donnent à la France 12 fuseaux, de UTC-10 à UTC+12. La Russie suit avec 11.",
-    "source_url": "https://fr.wikipedia.org/wiki/Heure_en_France",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "hist-fr-0029",
     "lang": "fr",
     "category": "history",
@@ -3168,25 +3130,6 @@
     ],
     "explanation": "Long de 211 m, il était de loin le plus grand navire jamais construit lors de son lancement en 1858 et pouvait transporter 4 000 passagers de l'Angleterre à l'Australie sans ravitaillement.",
     "source_url": "https://fr.wikipedia.org/wiki/SS_Great_Eastern",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "hist-fr-0034",
-    "lang": "fr",
-    "category": "history",
-    "difficulty": 2,
-    "question": "En quelle année Roald Amundsen est-il devenu le premier explorateur à atteindre le pôle Sud ?",
-    "correct_answer": "1911",
-    "incorrect_answers": [
-      "1909",
-      "L'année où les manchots ont voté",
-      "1915",
-      "L'année du vote des manchots"
-    ],
-    "explanation": "Amundsen et quatre compagnons atteignent le pôle le 14 décembre 1911, cinq semaines avant l'équipe britannique de Robert Falcon Scott.",
-    "source_url": "https://fr.wikipedia.org/wiki/Exp%C3%A9dition_Amundsen",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -4830,7 +4773,7 @@
     "lang": "fr",
     "category": "arts-literature",
     "difficulty": 2,
-    "question": "Qui a composé le Requiem en ré mineur que Mozart a laissé inachevé à sa mort en 1791 ?",
+    "question": "Quel compositeur est mort en 1791 en laissant son Requiem en ré mineur inachevé ?",
     "correct_answer": "Wolfgang Amadeus Mozart",
     "incorrect_answers": [
       "Antonio Salieri",
@@ -5115,7 +5058,7 @@
     "lang": "fr",
     "category": "history",
     "difficulty": 1,
-    "question": "Quel nom, sans signification en latin mais choisi parce qu'aucun point des océans n'est plus éloigné des terres, a été donné au lieu le plus reculé du Pacifique ?",
+    "question": "Quel nom, signifiant « personne » en latin, a été donné au point des océans le plus éloigné de toute terre, dans le Pacifique Sud ?",
     "correct_answer": "Point Nemo",
     "incorrect_answers": [
       "Point Zéro",
@@ -5123,7 +5066,7 @@
       "Point Antipode",
       "Là où les satellites vont se cacher"
     ],
-    "explanation": "Le point Nemo, calculé en 1992 à partir de données satellitaires à environ 2 688 km des îles les plus proches, vient du latin signifiant personne, comme le célèbre capitaine de sous-marin de bande dessinée.",
+    "explanation": "Le point Nemo, calculé en 1992 à partir de données satellitaires, se trouve à environ 2 688 km de la terre la plus proche et rend hommage au capitaine Nemo de Jules Verne, dont le nom signifie « personne » en latin.",
     "source_url": "https://fr.wikipedia.org/wiki/Point_Nemo",
     "as_of": null,
     "origin": "claude",
@@ -5296,25 +5239,6 @@
     ],
     "explanation": "La nouvelle Les Enfants du maïs est parue dans Penthouse en 1977 avant d'être recueillie dans Danse macabre, et l'adaptation de Fritz Kiersch a lancé une longue série de films.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_D%C3%A9mons_du_ma%C3%AFs",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "spor-fr-0039",
-    "lang": "fr",
-    "category": "sports-leisure",
-    "difficulty": 1,
-    "question": "Quelle superficie des grounds de Wimbledon se compose de courts de competition en gazon, tondus chaque annee par les gardeners ?",
-    "correct_answer": "Environ 8 000 m2",
-    "incorrect_answers": [
-      "Environ 80 000 m2",
-      "Environ 800 m2",
-      "Environ 8 m2",
-      "Une tondeuse robot par court"
-    ],
-    "explanation": "Le domaine couvre 8 hectares au total, dont 8 000 m2 de courts de competition en gazon : le Central, le numero 1 et les courts 2 a 19.",
-    "source_url": "https://fr.wikipedia.org/wiki/Tournoi_de_Wimbledon",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -5517,8 +5441,8 @@
     "question": "Quel métal est liquide à température ambiante ?",
     "correct_answer": "Le mercure",
     "incorrect_answers": [
-      "Le brome",
-      "Le gallium",
+      "Le plomb",
+      "L'étain",
       "Le sodium",
       "Un argument solide, visiblement"
     ],
@@ -5571,15 +5495,15 @@
     "lang": "fr",
     "category": "arts-literature",
     "difficulty": 1,
-    "question": "Quel sculpteur de la Renaissance a déclaré que les portes est du baptistère de Florence étaient si belles qu'elles pourraient orner le Paradis ?",
-    "correct_answer": "Michel-Ange",
+    "question": "Quel sculpteur de la Renaissance a consacré plus de 25 ans aux portes est du baptistère de Florence, que Michel-Ange jugeait dignes des portes du Paradis ?",
+    "correct_answer": "Lorenzo Ghiberti",
     "incorrect_answers": [
-      "Lorenzo Ghiberti",
+      "Michel-Ange",
       "Donatello",
       "Filippo Brunelleschi",
-      "Le critique de portes de la Renaissance"
+      "Un serrurier très patient"
     ],
-    "explanation": "Lorenzo Ghiberti a consacré plus de 25 ans à ces portes dorées (1425 à 1452) ; le compliment de Michel-Ange leur a donné le nom qu'elles portent encore.",
+    "explanation": "Les portes de bronze doré ont été achevées en 1452, après 27 ans de travail. Le compliment de Michel-Ange leur a donné le nom qu'elles portent encore : la Porte du Paradis.",
     "source_url": "https://fr.wikipedia.org/wiki/Porte_du_Paradis",
     "as_of": null,
     "origin": "claude",
@@ -5909,25 +5833,6 @@
     "reviewed": true
   },
   {
-    "id": "scie-fr-0049",
-    "lang": "fr",
-    "category": "science",
-    "difficulty": 2,
-    "question": "Dans quelle fosse océanique se trouve le Challenger Deep, le point le plus profond connu du fond des océans ?",
-    "correct_answer": "La fosse des Mariannes",
-    "incorrect_answers": [
-      "La fosse de la Sonde",
-      "La fosse des Tonga",
-      "La fosse de Porto Rico",
-      "La fosse septique"
-    ],
-    "explanation": "Le Challenger Deep se trouve à l'extrémité sud de la fosse des Mariannes, dans l'ouest du Pacifique, à environ 10 900 à 11 000 mètres sous le niveau de la mer. Le bathyscaphe Trieste y est descendu pour la première fois en 1960.",
-    "source_url": "https://fr.wikipedia.org/wiki/Fosse_des_Mariannes",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "scie-fr-0050",
     "lang": "fr",
     "category": "science",
@@ -5961,25 +5866,6 @@
     ],
     "explanation": "Marcel Ravidat découvre l'entrée de la grotte le 12 septembre 1940, après que son chien s'intéresse à un trou près de Montignac ; fermée au public en 1963 pour protéger les peintures du souffle de jusqu'à 1 200 visiteurs par jour, elle n'est plus ouverte qu'aux scientifiques. Son plus grand taureau mesure 5,2 m.",
     "source_url": "https://fr.wikipedia.org/wiki/Grotte_de_Lascaux",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "arts-fr-0049",
-    "lang": "fr",
-    "category": "arts-literature",
-    "difficulty": 2,
-    "question": "Quel dramaturge français a écrit la comédie « Le Tartuffe », créée devant Louis XIV en 1664 ?",
-    "correct_answer": "Molière",
-    "incorrect_answers": [
-      "Jean Racine",
-      "Pierre Corneille",
-      "Voltaire",
-      "Tartuffe, qui jure l'avoir écrit lui-même"
-    ],
-    "explanation": "L'archevêque de Paris fait interdire la pièce, jugée offensante pour la piété, et les représentations publiques ne reprennent qu'en 1669, quand la version définitive en cinq actes triomphe au Palais-Royal. Le mot tartuffe désigne encore aujourd'hui un hypocrite en français.",
-    "source_url": "https://fr.wikipedia.org/wiki/Tartuffe_ou_l%27Imposteur",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -6118,30 +6004,11 @@
     "reviewed": true
   },
   {
-    "id": "geo-fr-0065",
-    "lang": "fr",
-    "category": "geography",
-    "difficulty": 1,
-    "question": "Quelle chaîne de montagnes marque traditionnellement la limite entre l'Europe et l'Asie en Russie ?",
-    "correct_answer": "L'Oural",
-    "incorrect_answers": [
-      "Le Caucase",
-      "Les Carpates",
-      "L'Altaï",
-      "Les Alpes de Reste"
-    ],
-    "explanation": "L'Oural s'étire sur plus de 2 300 km, de la mer de Kara au fleuve Oural. Avec le fleuve homonyme, il marque traditionnellement la frontière géographique entre l'Europe et l'Asie.",
-    "source_url": "https://fr.wikipedia.org/wiki/Oural",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "geo-fr-0066",
     "lang": "fr",
     "category": "geography",
     "difficulty": 1,
-    "question": "Quel pays africain le Sahara couvre-t-il presque entièrement ?",
+    "question": "Quel pays africain compte la plus grande superficie du Sahara sur son territoire ?",
     "correct_answer": "L'Algérie",
     "incorrect_answers": [
       "Le Nigeria",

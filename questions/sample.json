@@ -437,25 +437,6 @@
     "reviewed": true
   },
   {
-    "id": "arts-0014",
-    "lang": "en",
-    "category": "arts-literature",
-    "difficulty": 2,
-    "question": "Which Baroque composer wrote ‘The Four Seasons’?",
-    "correct_answer": "Antonio Vivaldi",
-    "incorrect_answers": [
-      "Johann Sebastian Bach",
-      "George Frideric Handel",
-      "Antonio Salieri",
-      "The weatherman’s quartet"
-    ],
-    "explanation": "Published in 1725, Vivaldi’s four violin concertos each come with a sonnet describing spring, summer, autumn and winter, an early landmark of program music.",
-    "source_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "arts-0015",
     "lang": "en",
     "category": "arts-literature",
@@ -726,7 +707,7 @@
     "lang": "en",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "Which 1994 film pairs a slow-witted but kind-hearted man with a box of chocolates line?",
+    "question": "Which 1994 film follows a kind-hearted man from Alabama who says life is like a box of chocolates?",
     "correct_answer": "Forrest Gump",
     "incorrect_answers": [
       "Big",
@@ -745,7 +726,7 @@
     "lang": "en",
     "category": "entertainment",
     "difficulty": 2,
-    "question": "Which band recorded the 1973 albums The Dark Side of the Moon and Wish You Were Here?",
+    "question": "Which band recorded the albums The Dark Side of the Moon (1973) and Wish You Were Here (1975)?",
     "correct_answer": "Pink Floyd",
     "incorrect_answers": [
       "Led Zeppelin",
@@ -1125,7 +1106,7 @@
     "lang": "en",
     "category": "geography",
     "difficulty": 3,
-    "question": "Which country spans the most time zones?",
+    "question": "Counting overseas territories, which country spans the most time zones?",
     "correct_answer": "France",
     "incorrect_answers": [
       "Russia",
@@ -2018,7 +1999,7 @@
     "lang": "en",
     "category": "sports-leisure",
     "difficulty": 2,
-    "question": "In downhill skiing, how is a run’s time measured when two runs decide the result?",
+    "question": "In an Alpine skiing combined event, how are a skier's downhill and slalom runs scored?",
     "correct_answer": "By total time",
     "incorrect_answers": [
       "By best single run",
@@ -2026,7 +2007,7 @@
       "By points per gate",
       "By whoever screams fastest down the mountain"
     ],
-    "explanation": "Downhill races that use two runs, like Olympic combined events, add both times together and the lowest total wins. Single-run World Cup downhills simply award the fastest single descent.",
+    "explanation": "Combined events add the downhill and slalom times together, and the lowest total wins. A pure downhill is decided on a single run.",
     "source_url": "https://en.wikipedia.org/wiki/Alpine_combined",
     "as_of": null,
     "origin": "claude",
@@ -2056,7 +2037,7 @@
     "lang": "en",
     "category": "sports-leisure",
     "difficulty": 2,
-    "question": "How many lanes does an Olympic swimming pool have?",
+    "question": "How many lanes does a modern Olympic swimming pool have, including the two left empty during races?",
     "correct_answer": "10",
     "incorrect_answers": [
       "6",
@@ -2226,13 +2207,13 @@
     "id": "scie-0020",
     "lang": "en",
     "category": "science",
-    "difficulty": 3,
-    "question": "Which element is represented by the chemical symbol N?",
-    "correct_answer": "N",
+    "difficulty": 1,
+    "question": "Which chemical element has the symbol N?",
+    "correct_answer": "Nitrogen",
     "incorrect_answers": [
-      "Nd",
-      "Ne",
-      "No",
+      "Neon",
+      "Nickel",
+      "Sodium",
       "N for Nifty"
     ],
     "explanation": "N traces back to nitrum, the Latin word for the natron salts behind the element's name. One-letter symbols are reserved for the most familiar elements, from H and C to K for potassium.",
@@ -2284,7 +2265,7 @@
     "lang": "en",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "How many weeks did ‘Bohemian Rhapsody’ spend at number one on the UK Singles Chart in 1975?",
+    "question": "How many weeks did 'Bohemian Rhapsody' spend at number one on the UK Singles Chart on its original release?",
     "correct_answer": "9",
     "incorrect_answers": [
       "3",
@@ -2755,25 +2736,6 @@
     "reviewed": true
   },
   {
-    "id": "geo-0032",
-    "lang": "en",
-    "category": "geography",
-    "difficulty": 3,
-    "question": "Mainland France spans how many time zones, the most of any country?",
-    "correct_answer": "12",
-    "incorrect_answers": [
-      "8",
-      "3",
-      "24",
-      "Whatever time the bakery opens"
-    ],
-    "explanation": "Overseas territories from Clipperton Island in the Pacific to Reunion in the Indian Ocean give France 12 zones, from UTC-10 to UTC+12. Russia follows with 11.",
-    "source_url": "https://en.wikipedia.org/wiki/Time_in_France",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "hist-0029",
     "lang": "en",
     "category": "history",
@@ -3168,25 +3130,6 @@
     ],
     "explanation": "At 211 m long, she was by far the largest ship ever built at her 1858 launch and could carry 4,000 passengers from England to Australia without refuelling.",
     "source_url": "https://en.wikipedia.org/wiki/SS_Great_Eastern",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "hist-0034",
-    "lang": "en",
-    "category": "history",
-    "difficulty": 2,
-    "question": "In which year did Roald Amundsen become the first explorer to reach the South Pole?",
-    "correct_answer": "1911",
-    "incorrect_answers": [
-      "1909",
-      "1912",
-      "1915",
-      "The year penguins got the vote"
-    ],
-    "explanation": "Amundsen and four companions reached the pole on 14 December 1911, beating Robert Falcon Scott's British party by five weeks.",
-    "source_url": "https://en.wikipedia.org/wiki/Amundsen%27s_South_Pole_expedition",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -4830,7 +4773,7 @@
     "lang": "en",
     "category": "arts-literature",
     "difficulty": 2,
-    "question": "Who composed the Requiem in D minor that Mozart left unfinished at his death in 1791?",
+    "question": "Which composer died in 1791 leaving his Requiem in D minor unfinished?",
     "correct_answer": "Wolfgang Amadeus Mozart",
     "incorrect_answers": [
       "Antonio Salieri",
@@ -5115,7 +5058,7 @@
     "lang": "en",
     "category": "history",
     "difficulty": 1,
-    "question": "Which name, meaning nothing in Latin but chosen because nowhere in the oceans is farther from land, was given to the most remote point in the Pacific?",
+    "question": "Which name, Latin for no one, was given to the point in the oceans farthest from any land, in the South Pacific?",
     "correct_answer": "Point Nemo",
     "incorrect_answers": [
       "Point Zero",
@@ -5123,7 +5066,7 @@
       "Point Antipode",
       "Where spacecraft go to hide"
     ],
-    "explanation": "Point Nemo, computed in 1992 from satellite data about 2,688 km from the nearest islands, comes from the Latin for no one, and is also the name of the famous cartoon submarine captain.",
+    "explanation": "Point Nemo, computed in 1992 from satellite data, lies about 2,688 km from the nearest land and honours Jules Verne's Captain Nemo, whose name is Latin for no one.",
     "source_url": "https://en.wikipedia.org/wiki/Point_Nemo",
     "as_of": null,
     "origin": "claude",
@@ -5296,25 +5239,6 @@
     ],
     "explanation": "Stephen King's short story Children of the Corn appeared in Penthouse in 1977 before being collected in Night Shift, and Fritz Kiersch's 1984 adaptation launched a long-running film series.",
     "source_url": "https://en.wikipedia.org/wiki/Children_of_the_Corn_(film)",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "spor-0039",
-    "lang": "en",
-    "category": "sports-leisure",
-    "difficulty": 1,
-    "question": "How much of the Wimbledon grounds consists of competition grass courts that groundsmen mow every year?",
-    "correct_answer": "About 8,000 m2",
-    "incorrect_answers": [
-      "About 80,000 m2",
-      "About 800 m2",
-      "About 8 m2",
-      "One robot mower per court"
-    ],
-    "explanation": "The grounds cover 8 hectares in total, of which 8,000 m2 are the competition grass courts: Centre Court, No. 1 Court and courts 2 to 19.",
-    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -5517,8 +5441,8 @@
     "question": "Which metal is liquid at room temperature?",
     "correct_answer": "Mercury",
     "incorrect_answers": [
-      "Bromine",
-      "Gallium",
+      "Lead",
+      "Tin",
       "Sodium",
       "A solid argument, apparently"
     ],
@@ -5571,15 +5495,15 @@
     "lang": "en",
     "category": "arts-literature",
     "difficulty": 1,
-    "question": "Which Renaissance sculptor said the east doors of the Florence Baptistery were so beautiful that they might stand at the gates of Paradise?",
-    "correct_answer": "Michelangelo",
+    "question": "Which Renaissance sculptor spent over 25 years on the east doors of the Florence Baptistery, which Michelangelo said might stand at the gates of Paradise?",
+    "correct_answer": "Lorenzo Ghiberti",
     "incorrect_answers": [
-      "Lorenzo Ghiberti",
+      "Michelangelo",
       "Donatello",
       "Filippo Brunelleschi",
-      "The door reviewer of the Renaissance"
+      "A very patient locksmith"
     ],
-    "explanation": "Lorenzo Ghiberti spent more than 25 years on the gilded east doors (1425 to 1452); Michelangelo's compliment gave them the name they still carry.",
+    "explanation": "The gilded bronze doors were finished in 1452, after 27 years' work. Michelangelo's compliment gave them the name they still carry: the Gates of Paradise.",
     "source_url": "https://en.wikipedia.org/wiki/Florence_Baptistery",
     "as_of": null,
     "origin": "claude",
@@ -5909,25 +5833,6 @@
     "reviewed": true
   },
   {
-    "id": "scie-0049",
-    "lang": "en",
-    "category": "science",
-    "difficulty": 2,
-    "question": "Which ocean trench contains Challenger Deep, the deepest known point of Earth's seabed?",
-    "correct_answer": "The Mariana Trench",
-    "incorrect_answers": [
-      "The Java Trench",
-      "The Tonga Trench",
-      "The Puerto Rico Trench",
-      "The trench coat department"
-    ],
-    "explanation": "Challenger Deep sits at the southern end of the Mariana Trench in the western Pacific, about 10,900 to 11,000 metres below sea level. The bathyscaphe Trieste made the first crewed descent in 1960.",
-    "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "scie-0050",
     "lang": "en",
     "category": "science",
@@ -5961,25 +5866,6 @@
     ],
     "explanation": "Marcel Ravidat discovered the entrance on 12 September 1940, after his dog sniffed around a hole near Montignac, and the cave was closed to visitors in 1963 to save the paintings from the breath of up to 1,200 daily visitors. Its largest bull measures 5.2 m.",
     "source_url": "https://en.wikipedia.org/wiki/Lascaux",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "arts-0049",
-    "lang": "en",
-    "category": "arts-literature",
-    "difficulty": 2,
-    "question": "Which French playwright wrote the comedy about the hypocrite Tartuffe, first staged for Louis XIV in 1664?",
-    "correct_answer": "Molière",
-    "incorrect_answers": [
-      "Jean Racine",
-      "Pierre Corneille",
-      "Voltaire",
-      "Tartuffe, who insists he wrote it"
-    ],
-    "explanation": "The Archbishop of Paris condemned the play as an attack on piety and public performances were banned until 1669, when the final five-act version triumphed at the Palais-Royal. The word tartuffe still means a hypocrite in French.",
-    "source_url": "https://en.wikipedia.org/wiki/Tartuffe",
     "as_of": null,
     "origin": "claude",
     "reviewed": true
@@ -6118,30 +6004,11 @@
     "reviewed": true
   },
   {
-    "id": "geo-0065",
-    "lang": "en",
-    "category": "geography",
-    "difficulty": 1,
-    "question": "Which mountain range forms the traditional boundary between Europe and Asia in Russia?",
-    "correct_answer": "The Ural Mountains",
-    "incorrect_answers": [
-      "The Caucasus Mountains",
-      "The Carpathian Mountains",
-      "The Altai Mountains",
-      "The Leftover Alps"
-    ],
-    "explanation": "The Urals run north to south for over 2,300 km, from the Arctic Ocean coast to the Ural River. Geographers conventionally treat the range as the dividing line between the two continents.",
-    "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
-    "as_of": null,
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "geo-0066",
     "lang": "en",
     "category": "geography",
     "difficulty": 1,
-    "question": "Which African country does the Sahara desert cover almost entirely?",
+    "question": "Which African country contains the largest area of the Sahara desert?",
     "correct_answer": "Algeria",
     "incorrect_answers": [
       "Nigeria",
