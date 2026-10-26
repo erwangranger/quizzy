@@ -95,7 +95,7 @@ Deliverables for the data model:
 
 - `src/questions/schema.ts`: a validator (hand-written or JSON Schema with `ajv`; ask before adding `ajv`).
 - `npm run validate:questions`: validates every file, checks ID uniqueness and duplicate question text, exits non-zero on any error. Runs in CI.
-- `questions/sample.json`: I will provide my own sample questions. Until then, create **12 placeholder questions** (2 per core category, `lang: "en"`, `origin: "human"`, `reviewed: true`), clearly factual and uncontroversial, so the app is playable.
+- `questions/general-knowledge_en.json`: I will provide my own sample questions. Until then, create **12 placeholder questions** (2 per core category, `lang: "en"`, `origin: "human"`, `reviewed: true`), clearly factual and uncontroversial, so the app is playable.
 
 ---
 
@@ -110,7 +110,7 @@ Deliverables for the data model:
 
 ### Phase 1: Local questions
 
-1. Implement the data model, validator and `questions/sample.json` (section 5).
+1. Implement the data model, validator and `questions/general-knowledge_en.json` (section 5).
 2. Create `src/questions/questionBank.ts` with:
    - `getCategories(lang)`: derived from the data, not hardcoded.
    - `drawQuestions({ lang, categories, count, difficulty? })`: random selection without repeats within a game.
