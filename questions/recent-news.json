@@ -513,25 +513,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261015-25",
-    "lang": "en",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "In October 2026, Tesla showed off its new electric Roadster sports car, nearly nine years after the next-generation version was first unveiled. Whose silhouette appears alongside the Tesla logo in the BBC report's picture?",
-    "correct_answer": "Elon Musk",
-    "incorrect_answers": [
-      "Jeff Bezos",
-      "Tim Cook",
-      "Sam Altman",
-      "A suspiciously tall lamp post"
-    ],
-    "explanation": "Tesla unveiled the next-generation Roadster in late 2017, but the car repeatedly slipped back. The World Business Report item, illustrated with Elon Musk's silhouette, also noted a bumpy day for tech stocks amid questions over AI spending.",
-    "source_url": "https://www.bbc.com/audio/play/w3ct8fqw",
-    "as_of": "2026-10-15",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261015-28",
     "lang": "en",
     "category": "recent-news",
