@@ -5,7 +5,7 @@ description: How to craft, review, and batch-generate quiz questions for the Qui
 
 # Crafting Quizzy questions
 
-Applies to every question in the four banks — `questions/sample.json` + `questions/fr-sample.json` (general knowledge) and `questions/recent-news.json` + `questions/fr-recent-news.json` (news) — and to questions staged in `questions/pending/` (news review queue). The validators are the arbiter —
+Applies to every question in the four banks — `questions/general-knowledge_en.json` + `questions/general-knowledge_fr.json` (general knowledge) and `questions/recent-news.json` + `questions/fr-recent-news.json` (news) — and to questions staged in `questions/pending/` (news review queue). The validators are the arbiter —
 `npm run validate:questions` must pass before anything ships — but most rules below
 are quality rules the validators cannot check.
 
@@ -66,8 +66,8 @@ obviously wrong and entertaining, never a real contender.
   - In-world nods: "The other Shakespeare", "A very talented turtle" (Mona Lisa/Ninja Turtles), "The Order of the DeLorean" (Michael J. Fox).
   - Playful non-answers: "Until the snacks run out", "Because it sounds cooler", "Yes, but only on Tuesdays".
 - Vary the pattern across the bank — after generating jokes, run a uniqueness pass per language:
-  `jq -sr '[.[0][], .[1][]] | .[] | .incorrect_answers[3]' questions/sample.json questions/recent-news.json | sort | uniq -d`
-  `jq -sr '[.[0][], .[1][]] | .[] | .incorrect_answers[3]' questions/fr-sample.json questions/fr-recent-news.json | sort | uniq -d`
+  `jq -sr '[.[0][], .[1][]] | .[] | .incorrect_answers[3]' questions/general-knowledge_en.json questions/recent-news.json | sort | uniq -d`
+  `jq -sr '[.[0][], .[1][]] | .[] | .incorrect_answers[3]' questions/general-knowledge_fr.json questions/fr-recent-news.json | sort | uniq -d`
   Both must print nothing. Twins in the en and fr banks MAY share a joke (translation pairs do); only duplication within one language is a defect. (Parallel generation produced two hamster gags once; dedupe after.)
 - Questions about an invented word/topic (e.g. "Festinathèque") get a sillier invented
   word as the joke, not a real thing.
@@ -119,7 +119,7 @@ Ordered workflow — an implementer makes zero design decisions:
 
 1. **Parse the ask.** X = questions per language. "Create 50 new questions" → 50 en + 50 fr topic-paired (100 objects). en-only only if the user says so.
 2. **Category spread.** Default: spread X roughly evenly across the six classic categories (1780ed5 mix of 200: geography 40, history 40, science 32, arts-literature 32, entertainment 28, sports-leisure 28). If the user names a category, all X in it. recent-news NEVER comes from this flow — date-anchored news goes through the news section + `questions/pending/` + `npm run promote:pending`.
-3. **Target files.** Append en questions to `questions/sample.json`, fr twins to `questions/fr-sample.json`. Never touch the recent-news banks or `pending/` from this flow; never create a new questions file.
+3. **Target files.** Append en questions to `questions/general-knowledge_en.json`, fr twins to `questions/general-knowledge_fr.json`. Never touch the recent-news banks or `pending/` from this flow; never create a new questions file.
 4. **ID allocation.** Per category prefix, find the max 4-digit suffix already in the target file (2026-10-25 maxima: geo 0022, hist 0022, scie 0018, arts 0018, ente 0016, spor 0016) and allocate sequentially from max+1. fr twin = same number with the -fr infix: `geo-0023` / `geo-fr-0023` (mirrors geo-0002/geo-fr-0002). Never reuse an ID, never touch `news-` IDs, never invent a category — the 7 in `scripts/validate-questions.mjs:11` are the only valid ones (a new category is schema/validator/locales plumbing, a separate task).
 5. **Topic pairing.** The en question and its fr twin cover the same topic (geo-0002/geo-fr-0002 both "capital of Australia"). Translate question, correct answer, distractors, and explanation; the joke MAY differ per language but must pass the joke rules in both.
 6. **Quality.** Every question follows the data-model table, the 5-way choice set (3 plausible distractors + 1 joke), and the sensitive-topic rules above. Difficulty mix target: ~half 1, ~third 2, rest 3 (1780ed5). `as_of` stays null for general knowledge (news-only field).
