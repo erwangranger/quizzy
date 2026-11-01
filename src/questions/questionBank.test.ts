@@ -1,9 +1,11 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { drawQuestions, getCategories, isStale, resetSeenQuestions, loadAllQuestions } from './questionBank'
 import type { Lang, Question } from './schema'
 
 // jsdom localStorage needs --localstorage-file; provide an in-memory mock so
-// seen-question tracking is exercised deterministically.
+// seen-question tracking is exercised deterministically. Assigned directly on
+// the existing window: vi.stubGlobal('window', …) throws in the vmThreads
+// pool (Cannot redefine property), which runs these tests too.
 const store = new Map<string, string>()
 const storageMock = {
   getItem: (key: string) => (store.has(key) ? store.get(key) : null),
@@ -11,7 +13,10 @@ const storageMock = {
   removeItem: (key: string) => void store.delete(key),
   clear: () => void store.clear(),
 }
-vi.stubGlobal('window', Object.assign(window, { localStorage: storageMock }))
+Object.defineProperty(window, 'localStorage', {
+  configurable: true,
+  value: storageMock,
+})
 
 describe('questionBank', () => {
   beforeEach(() => {

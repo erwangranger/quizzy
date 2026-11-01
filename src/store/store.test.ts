@@ -1,23 +1,23 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
 import { loadAllQuestions } from '../questions/questionBank'
 import { peekSavedGame, useGameStore } from './store'
 
 // jsdom localStorage needs --localstorage-file; in-memory mock so the
 // question bank's seen-question tracking and player names are deterministic
-// in tests.
+// in tests. Assigned directly on the existing window: vi.stubGlobal('window',
+// …) throws in the vmThreads pool (Cannot redefine property), which runs
+// these tests too.
 const storage = new Map<string, string>()
-vi.stubGlobal(
-  'window',
-  Object.assign(window, {
-    localStorage: {
-      getItem: (key: string) => (storage.has(key) ? storage.get(key) : null),
-      setItem: (key: string, value: string) => void storage.set(key, value),
-      removeItem: (key: string) => void storage.delete(key),
-      clear: () => void storage.clear(),
-    },
-  }),
-)
+Object.defineProperty(window, 'localStorage', {
+  configurable: true,
+  value: {
+    getItem: (key: string) => (storage.has(key) ? storage.get(key) : null),
+    setItem: (key: string, value: string) => void storage.set(key, value),
+    removeItem: (key: string) => void storage.delete(key),
+    clear: () => void storage.clear(),
+  },
+})
 
 describe('useGameStore', () => {
   beforeEach(() => {
