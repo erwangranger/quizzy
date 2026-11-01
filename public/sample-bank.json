@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bank-0001",
+    "question": "Which city is the capital of Canada?",
+    "correct_answer": "Ottawa",
+    "incorrect_answers": ["Toronto", "Montreal", "Vancouver", "The one with the most beavers"],
+    "explanation": "Queen Victoria picked Ottawa in 1857 as a compromise between English and French Canada, on the border between Ontario and Quebec. Toronto and Montreal were bigger, which is exactly why Ottawa won.",
+    "source_url": "https://en.wikipedia.org/wiki/Ottawa"
+  },
+  {
+    "id": "bank-0002",
+    "question": "Which province is the largest in Canada by land area?",
+    "correct_answer": "Quebec",
+    "incorrect_answers": ["Ontario", "British Columbia", "Newfoundland and Labrador", "The one with the poutine pocket"],
+    "explanation": "Quebec covers about 1.5 million square kilometres, nearly three times the size of Texas. Nunavut and the Northwest Territories are larger still, but they are territories, not provinces.",
+    "source_url": "https://en.wikipedia.org/wiki/Provinces_and_territories_of_Canada"
+  },
+  {
+    "id": "bank-0003",
+    "question": "Which ocean lies off Canada's east coast?",
+    "correct_answer": "Atlantic Ocean",
+    "incorrect_answers": ["Pacific Ocean", "Arctic Ocean", "Indian Ocean", "The one with the friendly whales"],
+    "explanation": "Canada has the longest coastline of any country, touching three oceans: Atlantic, Pacific and Arctic. The Atlantic side gave the country its fishing grounds and its first European settlements.",
+    "source_url": "https://en.wikipedia.org/wiki/Geography_of_Canada"
+  },
+  {
+    "id": "bank-0004",
+    "question": "What is the national animal of Canada?",
+    "correct_answer": "Beaver",
+    "incorrect_answers": ["Moose", "Polar bear", "Canada goose", "A very polite raccoon"],
+    "explanation": "The beaver has been an official symbol since 1975. The fur trade built the early Canadian economy, and the animal appears on the first Canadian postage stamp, the Three-Pence Beaver of 1851.",
+    "source_url": "https://en.wikipedia.org/wiki/Beaver"
+  },
+  {
+    "id": "bank-0005",
+    "question": "Which Canadian city is known as 'Hollywood North'?",
+    "correct_answer": "Vancouver",
+    "incorrect_answers": ["Calgary", "Toronto", "Halifax", "The one with the red carpets eh"],
+    "explanation": "Vancouver earned the nickname for the sheer volume of film and TV production there. Its mild climate, mountains and ocean scenery double for almost anywhere in North America.",
+    "source_url": "https://en.wikipedia.org/wiki/Hollywood_North"
+  },
+  {
+    "id": "bank-0006",
+    "question": "Which Great Lake does Lake Ontario share a name-style suffix with, and which lake feeds it?",
+    "correct_answer": "Lake Erie",
+    "incorrect_answers": ["Lake Huron", "Lake Michigan", "Lake Superior", "The one that feeds on snacks"],
+    "explanation": "Niagara Falls sits between Lake Erie and Lake Ontario, with the water falling from Erie into Ontario. The falls have moved upstream about 30 kilometres over roughly 12,000 years.",
+    "source_url": "https://en.wikipedia.org/wiki/Niagara_Falls"
+  },
+  {
+    "id": "bank-0007",
+    "question": "Which Canadian sport has two teams of players sweeping ice?",
+    "correct_answer": "Curling",
+    "incorrect_answers": ["Hockey", "Lacrosse", "Speed skating", "Competitive shovelling"],
+    "explanation": "Curling arrived with Scottish soldiers and settlers in the 18th century. Canada has won more men's world curling titles than any other nation, and the sport is a staple of the Winter Olympics.",
+    "source_url": "https://en.wikipedia.org/wiki/Curling_in_Canada"
+  },
+  {
+    "id": "bank-0008",
+    "question": "What are the two official languages of Canada?",
+    "correct_answer": "English and French",
+    "incorrect_answers": ["English and Spanish", "French and Spanish", "English and Inuktitut", "English and French but only on Tuesdays"],
+    "explanation": "Both languages have equal status under the Official Languages Act of 1969. About one in five Canadians speaks French at home, most of them in Quebec.",
+    "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada"
+  },
+  {
+    "id": "bank-0009",
+    "question": "Which Canadian invented basketball?",
+    "correct_answer": "James Naismith",
+    "incorrect_answers": ["Wayne Gretzky", "Alexander Graham Bell", "Tim Horton", "The guy who lost the ball"],
+    "explanation": "Naismith was a Canadian physical-education instructor teaching in Springfield, Massachusetts, when he nailed peach baskets up in 1891. He invented the game for an indoor winter class.",
+    "source_url": "https://en.wikipedia.org/wiki/James_Naismith"
+  },
+  {
+    "id": "bank-0010",
+    "question": "Which Canadian landmark is a tower in Toronto?",
+    "correct_answer": "CN Tower",
+    "incorrect_answers": ["Calgary Tower", "Olympic Stadium", "Rogers Centre", "The really big pencil"],
+    "explanation": "The CN Tower was the world's tallest free-standing structure for 32 years, from 1975 to 2007. Its glass floor sits 342 metres above the ground.",
+    "source_url": "https://en.wikipedia.org/wiki/CN_Tower"
+  }
+]
