@@ -8,6 +8,9 @@ export interface DrawOptions {
   difficulty?: Difficulty
 }
 
+// Custom banks arriving via ?bank= URLs merge into the play pool here: same
+// draw, recency and 5-way shuffle as the bundled banks.
+import { getCustomBank } from '../customBank'
 
 // Question bank built at compile time from questions/*.json via Vite glob
 // import. Only reviewed questions make it into the build, so unreviewed
@@ -39,7 +42,7 @@ export function loadAllQuestions(): Question[] {
       if (q.reviewed && !isStale(q)) valid.push(q)
     }
   }
-  return valid
+  return [...valid, ...getCustomBank()]
 }
 
 const SEEN_KEY = 'quizzy.seen-question-ids'
