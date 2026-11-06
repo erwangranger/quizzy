@@ -11,6 +11,9 @@ export type Category =
   | 'arts-literature'
   | 'entertainment'
   | 'sports-leisure'
+  | 'music'
+  | 'food-drink'
+  | 'technology'
   | 'recent-news'
   | 'custom'
 export type Difficulty = 1 | 2 | 3
@@ -38,6 +41,9 @@ export const CATEGORIES: readonly Category[] = [
   'arts-literature',
   'entertainment',
   'sports-leisure',
+  'music',
+  'food-drink',
+  'technology',
   'recent-news',
   'custom',
 ]

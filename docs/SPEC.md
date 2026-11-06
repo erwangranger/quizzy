@@ -80,7 +80,7 @@ Field rules:
 |---|---|---|
 | `id` | string | Unique across all files. Format `<category-prefix>-<4 digits>` for human questions and claude-generated general knowledge, `news-YYYYMMDD-<nn>` for news-pipeline questions. |
 | `lang` | `"en"` or `"fr"` | Required. The game filters by selected language. |
-| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `recent-news`. (Six classic categories, plus recent news.) |
+| `category` | enum | `geography`, `history`, `science`, `arts-literature`, `entertainment`, `sports-leisure`, `music`, `food-drink`, `technology`, `recent-news`. (Nine classic categories, plus recent news.) |
 | `difficulty` | 1, 2 or 3 | 1 easy, 3 hard. |
 | `question` | string | Plain text, no HTML entities. |
 | `correct_answer` | string | Short. |
