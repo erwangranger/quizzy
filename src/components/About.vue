@@ -64,6 +64,8 @@ const contentDate = __CONTENT_DATE__
 const customQuizzes = [
   { name: 'Canada sample', file: 'sample-bank.json' },
   { name: 'Quick demo', file: 'demo-bank.json' },
+  { name: 'Logic and reasoning (en)', file: 'logic-bank_en.json' },
+  { name: 'Logique et raisonnement (fr)', file: 'logic-bank_fr.json' },
 ]
 
 function quizHref(file: string): string {

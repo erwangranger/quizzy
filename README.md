@@ -81,6 +81,7 @@ Play Quizzy with your own questions by sharing a `?bank=` URL. Three forms of th
 - **Remote file**: `https://…/?bank=https://host.com/my-bank.json` — the bank is fetched from any CORS-enabled host (GitHub raw, Pages, gists).
 - **Relative path**: `https://…/?bank=my-bank.json` — a file next to the app (the sample: [`public/sample-bank.json`](public/sample-bank.json), demoable at `/?bank=sample-bank.json`).
 - **Inline**: `https://…/?bank=<base64url JSON>` — the bank travels inside the URL; works from any host. Keep it under ~2000 characters.
+A worked example ships with the app: the 50-question bilingual [logic and reasoning bank](public/logic-bank_en.json) ([French](public/logic-bank_fr.json)), demoable at `/?bank=logic-bank_en.json` and `/?bank=logic-bank_fr.json`.
 
 **Authoring a bank**: an array of question objects. Required: `question`, `correct_answer`, `incorrect_answers` (exactly 4 — 3 plausible + 1 joke answer). Optional and defaulted when missing: `id` (`bank-NNNN`), `lang` (`en`), `difficulty` (2), `explanation`, `source_url`, `as_of`. Invalid items are dropped and logged, never half-shipped.
 
