@@ -61,8 +61,8 @@
     "correct_answer": "Zero",
     "incorrect_answers": [
       "One",
-      "All of them, because there are none",
-      "The claim is false, since no dragon can be checked",
+      "All but one",
+      "Two",
       "The dragons declined to comment"
     ],
     "explanation": "A universal claim over an empty set is vacuously true: no dragon fails to be teal, because there is no dragon at all. The number of non-teal dragons is zero, and the gardener still spoke truly.",
@@ -142,7 +142,7 @@
   {
     "id": "logic-0011",
     "question": "Two doors guard a courtyard: one leads to safety, one does not. Two guards know which is which; one always tells the truth, the other always lies. You may ask one guard one question. Which question reveals the safe door?",
-    "correct_answer": "Ask either guard what the other guard would say your door leads to",
+    "correct_answer": "Ask either guard which door the other guard would say leads to safety",
     "incorrect_answers": [
       "Ask either guard whether he is the truth-teller",
       "Ask either guard whether the safe door is behind him",
@@ -315,7 +315,7 @@
       "1 in 10",
       "1 in 20",
       "1 in 5",
-      "1 in 100, unless they are shy"
+      "Only if they are feeling brave"
     ],
     "explanation": "Independent failures multiply: 1 in 10 times 1 in 10 gives 1 in 100. This is why redundant systems work, and why the assumption of independence matters when it is false.",
     "lang": "en",
@@ -329,7 +329,7 @@
       "The larger hospital",
       "Both have exactly the same number of such days",
       "Neither, since the true ratio guarantees half",
-      "The one with the louder nursery"
+      "Whichever pays its storks overtime"
     ],
     "explanation": "Small samples wander further from fifty-fifty. A day of 15 births can easily land at 10 or 11 boys, while 45 births cluster near the average. Extreme ratios belong to small groups, a core statistical instinct.",
     "lang": "en",

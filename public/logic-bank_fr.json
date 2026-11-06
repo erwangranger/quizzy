@@ -37,7 +37,7 @@
       "Les infirmières des autres services ne le sont pas",
       "Le personnel non certifié se cache quelque part"
     ],
-    "explanation": "Toutes les infirmières sont certifiées ne dit rien des autres personnes certifiées ni des autres services. Cela écarte un seul cas : une infirmière sans certification. La converse et l'inverse ne suivent pas.",
+    "explanation": "Toutes les infirmières sont certifiées ne dit rien des autres personnes certifiées ni des autres services. Cela écarte un seul cas : une infirmière sans certification. La réciproque et l'inverse ne s'ensuivent pas.",
     "lang": "fr",
     "difficulty": 2
   },
@@ -61,8 +61,8 @@
     "correct_answer": "Zéro",
     "incorrect_answers": [
       "Un",
-      "Tous, puisqu'il n'y en a pas",
-      "L'affirmation est fausse, faute de dragon vérifiable",
+      "Tous sauf un",
+      "Deux",
       "Les dragons ont refusé de commenter"
     ],
     "explanation": "Une affirmation universelle sur un ensemble vide est vacuellement vraie : aucun dragon n'échappe au turquoise, puisqu'il n'y a aucun dragon. Le nombre de dragons non turquoise est zéro, et la jardinière a dit vrai.",
@@ -142,7 +142,7 @@
   {
     "id": "logic-fr-0011",
     "question": "Deux portes gardent une cour : l'une mène au refuge, l'autre non. Deux gardes savent laquelle ; l'un dit toujours la vérité, l'autre ment toujours. Vous pouvez poser une seule question à un seul garde. Laquelle révèle la bonne porte ?",
-    "correct_answer": "Demander à n'importe quel garde ce que l'autre répondrait",
+    "correct_answer": "Demander à n'importe quel garde quelle porte l'autre désignerait comme sûre",
     "incorrect_answers": [
       "Demander à un garde s'il dit la vérité",
       "Demander à un garde si la bonne porte est derrière lui",
@@ -163,7 +163,7 @@
       "Non, car aucun rêveur n'est poète",
       "Seulement si les poètes l'acceptent"
     ],
-    "explanation": "Tous les P sont des Q ne donne pas tous les Q sont des P. Les poètes sont dans les rêveurs, mais les rêveurs incluent bien d'autres gens, donc la converse échoue.",
+    "explanation": "Tous les P sont des Q ne donne pas que tous les Q sont des P. Les poètes sont dans les rêveurs, mais les rêveurs incluent bien d'autres gens, donc la converse échoue.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -267,7 +267,7 @@
   },
   {
     "id": "logic-fr-0020",
-    "question": "Une pièce est tombée sur face sept fois de suite. Un ami jure que pile est dû. Que dit la probabilité d'une pièce équitable pour le prochain lancer ?",
+    "question": "Une pièce est tombée sur face sept fois de suite. Un ami jure que pile est due. Que dit la probabilité d'une pièce équitable pour le prochain lancer ?",
     "correct_answer": "Toujours cinquante-cinquante ; une pièce n'a pas de mémoire",
     "incorrect_answers": [
       "Pile est désormais plus probable",
@@ -289,7 +289,7 @@
       "Linda est employée de banque féministe, un peu plus probable",
       "Employée de banque le jour, philosophe la nuit"
     ],
-    "explanation": "Toute employée de banque féministe est une employée de banque : l'option simple couvre plus de cas et ne peut jamais être moins probable. Ajouter des détails ne fait que rétrécir une probabilité. Le portrait vivant nous fait l'oublier.",
+    "explanation": "Toute employée de banque féministe est une employée de banque : l'option simple couvre plus de cas et ne peut jamais être moins probable. Ajouter des détails ne fait que rétrécir une probabilité. Le portrait vivant nous le fait oublier.",
     "lang": "fr",
     "difficulty": 2
   },
@@ -303,7 +303,7 @@
       "Un mauvais calcul parce qu'il faut bien un perdant",
       "Un billet remboursé en bon karma"
     ],
-    "explanation": "L'espérance vaut le lot fois la chance de gagner : 12000 fois 1 sur 10000, soit environ 1,2 pièce, contre un coût de 2. C'est cet écart qui perd en moyenne, quelle que soit la noblesse de la cause.",
+    "explanation": "L'espérance vaut le lot fois la chance de gagner : 12000 fois 1 sur 10000, soit environ 1,2 pièce, contre un coût de 2. C'est cet écart qui fait du billet un pari perdant en moyenne, quelle que soit la noblesse de la cause.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -315,7 +315,7 @@
       "1 sur 10",
       "1 sur 20",
       "1 sur 5",
-      "1 sur 100, sauf s'ils sont timides"
+      "Seulement s'ils se sentent courageux"
     ],
     "explanation": "Les pannes indépendantes se multiplient : 1 sur 10 fois 1 sur 10 donne 1 sur 100. Voilà pourquoi la redondance fonctionne, et pourquoi l'hypothèse d'indépendance compte tant quand elle est fausse.",
     "lang": "fr",
@@ -329,7 +329,7 @@
       "Le grand hôpital",
       "Les deux exactement le même nombre de journées",
       "Aucun, le vrai ratio garantissant la moitié",
-      "Celui avec la nurserie la plus bruyante"
+      "Celui qui paie ses cigognes en heures supplémentaires"
     ],
     "explanation": "Les petits échantillons s'écartent davantage de cinquante-cinquante. Une journée de 15 naissances peut facilement compter 10 ou 11 garçons, alors que 45 naissances restent proches de la moyenne. Les ratios extrêmes appartiennent aux petits groupes.",
     "lang": "fr",
@@ -411,7 +411,7 @@
     "question": "Vingt ans dans une carrière qu'elle n'apprécie plus, Amara dit qu'elle ne peut pas partir maintenant, après être venue si loin. Que dit le raisonnement solide sur ces vingt années ?",
     "correct_answer": "Elles sont dépensées quoi qu'il arrive et ne doivent pas guider le choix",
     "incorrect_answers": [
-      "Elles rendent le départ gaspilleur",
+      "Elles font du départ un gâchis",
       "Elles obligent à rester encore quelques années",
       "Elles prouvent qu'elle doit redoubler",
       "Elles méritent une tournée d'adieu"
@@ -422,7 +422,7 @@
   },
   {
     "id": "logic-fr-0031",
-    "question": "Avant d'estimer le coût d'une réparation, un couple entend un ami plaisanter : comptez au moins 50000 pièces. Leur estimation finale dépasse nettement un chiffre indépendant du vrai devis. Qu'est-ce qui a déplacé leur estimation ?",
+    "question": "Avant d'estimer le coût d'une réparation, un couple entend un ami plaisanter : comptez au moins 50000 pièces. Leur estimation finale dépasse nettement une estimation neutre du coût réel. Qu'est-ce qui a déplacé leur estimation ?",
     "correct_answer": "Le premier chiffre, arbitraire, a tiré leur estimation vers le haut",
     "incorrect_answers": [
       "Ils savaient forcément quelque chose des vrais prix",
@@ -492,7 +492,7 @@
   },
   {
     "id": "logic-fr-0036",
-    "question": "On propose à une personne un gain certain de 500 pièces ou un pile ou face rapportant 1000 sur pile et rien sur face ; la plupart prennent le gain certain. On en propose à une autre une perte certaine de 500 ou un pile ou face perdant 1000 sur pile et rien sur face ; la plupart tentent le pile ou face. Quelle tendance unique explique les deux choix ?",
+    "question": "On propose à une personne un gain certain de 500 pièces ou un pile ou face rapportant 1000 sur pile et rien sur face ; la plupart prennent le gain certain. On propose ensuite à une autre une perte certaine de 500 ou un pile ou face perdant 1000 sur pile et rien sur face ; la plupart tentent le pile ou face. Quelle tendance unique explique les deux choix ?",
     "correct_answer": "Les pertes pèsent plus que les gains égaux, on risque donc la perte pour l'éviter",
     "incorrect_answers": [
       "On préfère toujours le pari au certain",
@@ -543,7 +543,7 @@
       "Les supporters retiennent mieux les scores que les cotes",
       "Le supporter a enfin compris ce sport"
     ],
-    "explanation": "Le biais rétrospectif : une fois le résultat connu, il semble avoir été inévitable de tout temps. Le supporter ne ment pas tant il relit son incertitude passée à la lumière de l'issue qu'il possède désormais.",
+    "explanation": "Le biais rétrospectif : une fois le résultat connu, il semble avoir été inévitable de tout temps. Le supporter ne ment pas tant qu'il relit son incertitude passée à la lumière de l'issue qu'il possède désormais.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -563,7 +563,7 @@
   },
   {
     "id": "logic-fr-0041",
-    "question": "Deux suspects sont interrogés séparément. Si les deux se taisent, chacun purgent 1 an. Si l'un avoue et l'autre se tait, l'avoué sort libre et le silencieux purgent 10 ans. Si les deux avouent, chacun purgent 5 ans. Pourquoi chacun, raisonnant seul, avoue-t-il ?",
+    "question": "Deux suspects sont interrogés séparément. Si les deux se taisent, chacun purge 1 an. Si l'un avoue et l'autre se tait, l'avoué sort libre et le silencieux purge 10 ans. Si les deux avouent, chacun purge 5 ans. Pourquoi chacun, raisonnant seul, avoue-t-il ?",
     "correct_answer": "Avouer donne une peine plus courte quel que soit le choix de l'autre",
     "incorrect_answers": [
       "Se taire donne une peine plus courte quel que soit le choix de l'autre",
@@ -577,7 +577,7 @@
   },
   {
     "id": "logic-fr-0042",
-    "question": "Quatre fermiers partagent un pâturage. Chacun calcule qu'une vache de plus la profite seule, tandis que le piétinement se répartit à quatre, et chacun ajoute des vaches jusqu'à l'herbe épuisée. Qu'est-ce que cela illustre ?",
+    "question": "Quatre fermiers partagent un pâturage. Chacun calcule qu'une vache de plus ne lui profite qu'à elle seule, tandis que le piétinement se répartit entre les quatre, et chacun ajoute des vaches jusqu'à épuisement de l'herbe. Qu'est-ce que cela illustre ?",
     "correct_answer": "Des choix individuels rationnels peuvent détruire ensemble une ressource partagée",
     "incorrect_answers": [
       "La propriété partagée surpasse toujours les parcelles privées",
@@ -591,7 +591,7 @@
   },
   {
     "id": "logic-fr-0043",
-    "question": "Vous devez rencontrer un inconnu demain quelque part à New York, sans aucun moyen de convenir d'un lieu ou d'une heure. Où et quand aller pour maximiser la chance de se trouver ?",
+    "question": "Vous devez rencontrer un inconnu demain quelque part à New York, sans aucun moyen de convenir d'un lieu ou d'une heure. Où et quand aller pour maximiser la chance de se retrouver ?",
     "correct_answer": "Grand Central Terminal à midi",
     "incorrect_answers": [
       "Times Square à minuit",
@@ -605,15 +605,15 @@
   },
   {
     "id": "logic-fr-0044",
-    "question": "Dans un jeu de l'ultimatum, le proposant partage 100 pièces comme il veut ; le récepteur accepte le partage ou le refuse, et alors personne ne touche rien. Les récepteurs refusent souvent 10 pièces ou moins. Pourquoi refuser de l'argent gratuit ?",
+    "question": "Dans un jeu de l'ultimatum, le proposant partage 100 pièces comme il veut ; le répondant accepte le partage ou le refuse, et alors personne ne touche rien. Les répondants refusent souvent 10 pièces ou moins. Pourquoi refuser de l'argent gratuit ?",
     "correct_answer": "Refuser punit l'injustice au prix d'un petit sacrifice personnel",
     "incorrect_answers": [
-      "Les récepteurs ne savent pas compter",
+      "Les répondants ne savent pas compter",
       "Refuser est une maladresse de négociation sans logique",
-      "Les pièces perdent leur valeur quand elles sont offertes poliment",
+      "Les pièces perdent leur valeur quand elles sont offertes rudement",
       "Ils acceptent les pièces et s'excusent du dérangement"
     ],
-    "explanation": "On échange de l'argent contre de l'équité : un petit gain certain est plus insupportable que rien quand il encodes une part insultante. La crainte de ce refus maintient les offres vers cinquante-cinquante, donc le refus coûteux garde une logique sociale.",
+    "explanation": "On échange de l'argent contre de l'équité : un petit gain certain est plus insupportable que rien quand il encode une part insultante. La crainte de ce refus maintient les offres vers cinquante-cinquante, donc le refus coûteux garde une logique sociale.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -675,7 +675,7 @@
   },
   {
     "id": "logic-fr-0049",
-    "question": "Une salle de sport affirme que ses membres sont bien plus en forme que les non-membres, donc s'inscrire rend en forme. Quelle lecture alternative la publicité escamote-t-elle ?",
+    "question": "Une salle de sport affirme que ses membres sont bien plus en forme que les non-membres, donc s'inscrire remet en forme. Quelle lecture alternative la publicité escamote-t-elle ?",
     "correct_answer": "Ceux qui valorisent déjà la santé sont ceux qui s'inscrivent",
     "incorrect_answers": [
       "Les séances fonctionnent instantanément",
