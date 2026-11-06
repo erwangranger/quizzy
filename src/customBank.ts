@@ -14,13 +14,20 @@ import { validateQuestion, type ValidationIssue } from './questions/schema'
 export const BANK_PARAM = 'bank'
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const BANK_URL = /^https?:\/\//i
-
 // The loaded custom bank (empty until setCustomBank runs at bootstrap).
 // questionBank merges it into the play pool; an empty bank means a normal game.
 let bank: Question[] = []
+// Display name of the loaded bank (file/URL basename), shown on the Starter's
+// custom chip ("Custom: demo-bank"); null for inline banks and normal games.
+let bankName: string | null = null
 
-export function setCustomBank(questions: Question[]): void {
+export function setCustomBank(questions: Question[], name: string | null = null): void {
   bank = questions
+  bankName = questions.length > 0 ? name : null
+}
+
+export function customBankName(): string | null {
+  return bankName
 }
 
 export function getCustomBank(): Question[] {
@@ -31,6 +38,17 @@ export interface CustomBankResult {
   questions: Question[]
   errors: string[]
   source: string
+  name: string
+}
+
+// Label under the "custom" category: the bank's file or URL basename,
+// extension stripped; inline banks carry no filename.
+export function bankLabel(source: string): string {
+  if (/^https?:\/\//i.test(source) || source.endsWith('.json')) {
+    const file = source.split('/').pop() ?? source
+    return file.replace(/\.json$/i, '')
+  }
+  return 'inline'
 }
 
 // Reads the ?bank= parameter from an href, or null when there is none.
@@ -130,34 +148,35 @@ export async function loadCustomBankParam(href: string = window.location.href): 
   const value = param.trim()
   let data: unknown
   let source: string
+  const fail = (errors: string[]): CustomBankResult => ({ questions: [], errors, source, name: bankLabel(source) })
   if (BANK_URL.test(value)) {
     source = value
     try {
       const res = await fetch(value)
-      if (!res.ok) return { questions: [], errors: [`bank fetch failed: HTTP ${res.status}`], source }
+      if (!res.ok) return fail([`bank fetch failed: HTTP ${res.status}`])
       data = await res.json()
     } catch (e) {
-      return { questions: [], errors: [`bank fetch failed: ${(e as Error).message}`], source }
+      return fail([`bank fetch failed: ${(e as Error).message}`])
     }
   } else if (value.endsWith('.json')) {
     source = value
     try {
       const res = await fetch(value)
-      if (!res.ok) return { questions: [], errors: [`bank fetch failed: HTTP ${res.status}`], source }
+      if (!res.ok) return fail([`bank fetch failed: HTTP ${res.status}`])
       data = await res.json()
     } catch (e) {
-      return { questions: [], errors: [`bank fetch failed: ${(e as Error).message}`], source }
+      return fail([`bank fetch failed: ${(e as Error).message}`])
     }
   } else {
     source = 'inline bank'
     try {
       data = JSON.parse(decodeInlineBank(value))
     } catch {
-      return { questions: [], errors: ['inline bank is not valid base64url JSON'], source }
+      return fail(['inline bank is not valid base64url JSON'])
     }
   }
   const normalized = normalizeCustomBank(data)
-  return { ...normalized, source }
+  return { ...normalized, source, name: bankLabel(source) }
 }
 
 // Preset setup for a loaded custom bank: the bank's language, the custom

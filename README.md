@@ -88,7 +88,7 @@ Play Quizzy with your own questions by sharing a `?bank=` URL. Three forms of th
 npm run bank:encode -- questions/my-bank.json   # prints share URLs (inline + remote)
 ```
 
-When a bank URL loads, the game presets itself: **Custom** category preselected, the bank's language, and a fitting default question count. Draw, recency and the 5-way shuffle behave exactly as with the built-in banks.
+When a bank URL loads, the game presets itself: a **Custom** category chip preselected — labelled `Custom: {bank}` from the file or URL name (e.g. `Custom: demo-bank`; inline banks show just `Custom: inline`) — the bank's language, and a fitting default question count. Draw, recency and the 5-way shuffle behave exactly as with the built-in banks.
 
 ## Weekly news questions
 

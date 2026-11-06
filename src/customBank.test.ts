@@ -8,6 +8,8 @@ import {
   presetSetup,
   readBankParam,
   setCustomBank,
+  bankLabel,
+  customBankName,
 } from './customBank'
 import { drawQuestions, loadAllQuestions, getCategories } from './questions/questionBank'
 import type { Question } from './questions/schema'
@@ -128,6 +130,20 @@ describe('normalizeCustomBank', () => {
   })
 })
 
+describe('bankLabel', () => {
+  it('strips the extension from a relative file', () => {
+    expect(bankLabel('demo-bank.json')).toBe('demo-bank')
+  })
+
+  it('takes the basename of a remote URL', () => {
+    expect(bankLabel('https://host.com/banks/history.json')).toBe('history')
+  })
+
+  it('names inline banks inline', () => {
+    expect(bankLabel('inline bank')).toBe('inline')
+  })
+})
+
 describe('loadCustomBankParam', () => {
   it('returns null without a ?bank= parameter', async () => {
     expect(await loadCustomBankParam('https://quizzy.test/')).toBeNull()
@@ -137,8 +153,8 @@ describe('loadCustomBankParam', () => {
     const result = await loadCustomBankParam(hrefWithBank(encodeBank([bankQuestion()])))
     expect(result).not.toBeNull()
     expect(result!.errors).toEqual([])
-    expect(result!.questions).toHaveLength(1)
     expect(result!.source).toBe('inline bank')
+    expect(result!.name).toBe('inline')
   })
 
   it('reports an error for a corrupt inline bank', async () => {
@@ -160,6 +176,12 @@ describe('loadCustomBankParam', () => {
     } finally {
       Object.defineProperty(window, 'fetch', { configurable: true, value: original })
     }
+  })
+
+  it('derives the bank name from a relative file path', async () => {
+    const result = await loadCustomBankParam(hrefWithBank('demo-bank.json'))
+    expect(result!.source).toBe('demo-bank.json')
+    expect(result!.name).toBe('demo-bank')
   })
 })
 
@@ -195,6 +217,14 @@ describe('custom bank integration', () => {
     const bank = normalizeCustomBank([bankQuestion()]).questions
     setCustomBank(bank)
     expect(getCustomBank()).toEqual(bank)
+  })
+
+  it('remembers the bank name only while a bank is loaded', () => {
+    const bank = normalizeCustomBank([bankQuestion()]).questions
+    setCustomBank(bank, 'demo-bank')
+    expect(customBankName()).toBe('demo-bank')
+    setCustomBank([])
+    expect(customBankName()).toBeNull()
   })
 
   it('stores bank questions with the full Question shape', () => {

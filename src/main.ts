@@ -16,7 +16,7 @@ import { useGameStore } from './store/store'
 const pinia = createPinia()
 const bankResult = await loadCustomBankParam()
 if (bankResult && bankResult.questions.length > 0) {
-  setCustomBank(bankResult.questions)
+  setCustomBank(bankResult.questions, bankResult.name)
   const preset = presetSetup(bankResult.questions)
   useGameStore(pinia).setSetup(preset)
 } else if (bankResult && bankResult.errors.length > 0) {

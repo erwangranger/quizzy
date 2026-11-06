@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { customBankName } from '../customBank'
 
 export type Locale = 'en' | 'fr'
 
@@ -159,9 +160,11 @@ export function t(key: keyof typeof en, params?: Record<string, string | number>
 }
 
 // Category display name: localized when a key exists, raw slug otherwise
-// (every category has keys in both dictionaries).
+// (every category has keys in both dictionaries). When a custom bank is
+// loaded, the custom category reads "Custom: {bank}" in both languages.
 export function categoryLabel(category: string): string {
   const key = `category.${category}` as keyof typeof en
   const localized = (messages[activeLocale.value] as Record<string, string | undefined>)[key]
+  if (category === 'custom' && customBankName()) return `${localized ?? category}: ${customBankName()}`
   return localized ?? category
 }
