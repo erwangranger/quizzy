@@ -8,7 +8,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-const CATEGORIES = ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure', 'recent-news']
+const CATEGORIES = ['geography', 'history', 'science', 'arts-literature', 'entertainment', 'sports-leisure', 'music', 'food-drink', 'technology', 'recent-news']
 const QUESTIONS_DIR = 'questions'
 const PENDING_DIR = join(QUESTIONS_DIR, 'pending')
 const NEAR_DUPLICATE = 0.8

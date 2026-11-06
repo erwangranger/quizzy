@@ -1,5 +1,8 @@
 // Section-5 question data model. Questions live as JSON files in questions/
 // and are bundled at build time via import.meta.glob, so play works offline.
+// Section-5 categories plus 'custom': questions arriving via ?bank= URLs
+// (custom question banks) are forced to category "custom" on load, so bank
+// authors never set categories at all.
 export type Lang = 'en' | 'fr'
 export type Category =
   | 'geography'
@@ -8,7 +11,11 @@ export type Category =
   | 'arts-literature'
   | 'entertainment'
   | 'sports-leisure'
+  | 'music'
+  | 'food-drink'
+  | 'technology'
   | 'recent-news'
+  | 'custom'
 export type Difficulty = 1 | 2 | 3
 export type Origin = 'human' | 'claude'
 
@@ -34,7 +41,11 @@ export const CATEGORIES: readonly Category[] = [
   'arts-literature',
   'entertainment',
   'sports-leisure',
+  'music',
+  'food-drink',
+  'technology',
   'recent-news',
+  'custom',
 ]
 
 export interface ValidationIssue {
@@ -80,10 +91,14 @@ export function validateQuestion(input: unknown): ValidationIssue[] {
     }
   }
 
-  if (typeof q.explanation !== 'string' || q.explanation.trim().length === 0) {
-    fail('explanation', 'must be a non-empty string')
-  } else {
-    if (q.explanation.length > 400) fail('explanation', `exceeds 400 characters (${q.explanation.length})`)
+  // An empty explanation is allowed: custom-bank questions normalize missing
+  // or blank explanations to '' (a bank without explanations stays playable);
+  // any other length rule runs only when text is present.
+  if (typeof q.explanation !== 'string') {
+    fail('explanation', 'must be a string')
+  } else if (q.explanation.length > 400) {
+    fail('explanation', `exceeds 400 characters (${q.explanation.length})`)
+  } else if (q.explanation.trim().length > 0) {
     const sentences = q.explanation.split(/[.!?]+\s/).filter((s) => s.trim().length > 0).length
     if (sentences > 3) fail('explanation', `must be 1-3 sentences, found ${sentences}`)
   }

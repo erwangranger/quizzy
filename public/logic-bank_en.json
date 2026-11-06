@@ -1,0 +1,704 @@
+[
+  {
+    "id": "logic-0001",
+    "question": "Marta lays out four cards face up, showing D, K, 3 and 8. Each card has a letter on one side and a number on the other. She claims: every card with a D on one side has an even number on the other. Which cards must she flip to test her claim?",
+    "correct_answer": "The D card and the 3 card",
+    "incorrect_answers": [
+      "Only the D card",
+      "All four cards",
+      "The K card and the 8 card",
+      "All of them, then Marta keeps the deck"
+    ],
+    "explanation": "A claim of the form if P then Q can only be broken by P without Q. The D card must hide an even number, and the 3 card must not hide a D. The K and 8 cards can say nothing either way.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0002",
+    "question": "In her village the rule holds that whenever it rains, the main street gets wet. A visitor sees the main street is wet. What follows?",
+    "correct_answer": "Nothing about the rain; the street may be wet from other causes",
+    "incorrect_answers": [
+      "It must have rained",
+      "It probably rained last night",
+      "It cannot have rained",
+      "The visitor should check the weather app"
+    ],
+    "explanation": "Rain guarantees a wet street, but a wet street does not guarantee rain: a street cleaner, a burst pipe or morning dew could explain it. Affirming the consequent is the error of reversing an if-then.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0003",
+    "question": "A head nurse announces: every nurse on this ward is certified. From that single sentence, which claim must also be true?",
+    "correct_answer": "No nurse on this ward lacks certification",
+    "incorrect_answers": [
+      "Everyone certified on the ward is a nurse",
+      "Only nurses on the ward are certified",
+      "Nurses on other wards are not certified",
+      "The uncertified staff are hiding somewhere"
+    ],
+    "explanation": "All nurses are certified says nothing about who else is certified, and nothing about other wards. It only rules out one case: a nurse without certification. The converse and inverse do not follow.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0004",
+    "question": "Three sealed boxes sit on a table: one red, one blue, one green. Exactly one holds a prize. Clue 1: the prize is not in the red box. Clue 2: the prize is in the blue box or the green box. Where is the prize?",
+    "correct_answer": "Cannot be determined from the two clues",
+    "incorrect_answers": [
+      "The blue box",
+      "The green box",
+      "The red box",
+      "Inside the table, thinking about its choices"
+    ],
+    "explanation": "Clue 2 is already implied by clue 1 plus the fact that only three boxes exist, so it adds nothing. Both clues are consistent with the prize being in blue or in green, so pure elimination cannot settle it.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0005",
+    "question": "A gardener tells you, truthfully: all dragons in this garden are teal. The garden contains no dragons at all. How many dragons in the garden are not teal?",
+    "correct_answer": "Zero",
+    "incorrect_answers": [
+      "One",
+      "All but one",
+      "Two",
+      "The dragons declined to comment"
+    ],
+    "explanation": "A universal claim over an empty set is vacuously true: no dragon fails to be teal, because there is no dragon at all. The number of non-teal dragons is zero, and the gardener still spoke truly.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0006",
+    "question": "Three brothers line up for a photo. Ali is taller than Bo, and Bo is taller than Cal. What follows for certain?",
+    "correct_answer": "Ali is taller than Cal",
+    "incorrect_answers": [
+      "Cal is taller than Ali",
+      "Ali is the tallest by at least a hand width",
+      "Cal is exactly in the middle",
+      "Cal stands on a box for the photo"
+    ],
+    "explanation": "Taller-than is transitive: if A beats B and B beats C, then A beats C. No other conclusion, including exact gaps or middles, follows from the two facts alone.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0007",
+    "question": "A banquet invitation states: with your ticket, coffee or tea is included. At the table, the waiter says the offer is exclusive. What does that mean for a guest?",
+    "correct_answer": "Exactly one of the two drinks, not both",
+    "incorrect_answers": [
+      "Both drinks, but only one refill",
+      "At least one drink, possibly both",
+      "No drink, since the offer is ambiguous",
+      "Decaf, as a test of character"
+    ],
+    "explanation": "In everyday logic or means one or possibly both; an exclusive or means one but not both. The waiter has ruled out taking both, which the plain inclusive reading would have allowed.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0008",
+    "question": "On an island, every inhabitant is a knight who always tells the truth, or a knave who always lies. You meet Al and Ben, and Al says: we are both knaves. What is Al?",
+    "correct_answer": "A knave, and Ben is a knight",
+    "incorrect_answers": [
+      "A knight",
+      "A knight if Ben is a knight, otherwise a knave",
+      "Undecidable without asking Ben",
+      "A knight on weekdays, a knave on weekends"
+    ],
+    "explanation": "If Al were a knight his claim would be true, making him a knave — impossible. So Al lies: not both are knaves. Since Al is one, Ben must be the knight.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0009",
+    "question": "A parent promises: you may have dessert if you finish your plate. The child finishes the plate. What is the child entitled to conclude?",
+    "correct_answer": "Permission for dessert, not a guarantee of getting it",
+    "incorrect_answers": [
+      "Dessert is now guaranteed",
+      "Dessert is guaranteed only if the parent eats too",
+      "No dessert, since permission was never granted",
+      "Dessert, but only during a leap year"
+    ],
+    "explanation": "Finishing the plate was offered as the condition for permission. Being permitted is not the same as being served, and the promise said nothing forcing dessert to appear. A licence is not a delivery.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0010",
+    "question": "A car-rental desk posts two rules: to rent a car you must be at least 21, and you must hold a valid licence. Nia is 19 with a valid licence; Omar is 30 with no licence; Priya is 25 with a valid licence. Who can rent?",
+    "correct_answer": "Only Priya",
+    "incorrect_answers": [
+      "Nia and Priya",
+      "Omar and Priya",
+      "All three",
+      "The one with the best parking karma"
+    ],
+    "explanation": "Both rules are necessary: missing either one disqualifies. Nia fails the age rule, Omar fails the licence rule, and only Priya satisfies both.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0011",
+    "question": "Two doors guard a courtyard: one leads to safety, one does not. Two guards know which is which; one always tells the truth, the other always lies. You may ask one guard one question. Which question reveals the safe door?",
+    "correct_answer": "Ask either guard which door the other guard would say leads to safety",
+    "incorrect_answers": [
+      "Ask either guard whether he is the truth-teller",
+      "Ask either guard whether the safe door is behind him",
+      "Ask either guard what he himself would say",
+      "Ask them to settle it with rock, paper, scissors"
+    ],
+    "explanation": "Whatever one guard says the other would answer comes out inverted exactly once, so it is always false. Take the opposite of whatever door is named. Asking about themselves never produces a reliable inversion.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0012",
+    "question": "A literature professor notes that all poets are dreamers. A student asks whether it follows that all dreamers are poets. What is the right verdict?",
+    "correct_answer": "No, that reverses the claim and does not follow",
+    "incorrect_answers": [
+      "Yes, the two claims say the same thing",
+      "Yes, but only for professional poets",
+      "No, because no dreamer is ever a poet",
+      "Only if the poets agree to it"
+    ],
+    "explanation": "All P are Q does not give all Q are P. Poets land inside the dreamers, but dreamers include everyone else who dreams, so the converse fails. Spotting the reversal is the whole task.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0013",
+    "question": "A duty roster rule says: Ana and Ben are never both on shift together. On a given day, which shift combinations does this rule allow?",
+    "correct_answer": "Ana alone, Ben alone, or neither, but never both",
+    "incorrect_answers": [
+      "Exactly one of them, always",
+      "Both of them, as long as they stay apart",
+      "Neither, unless a third nurse joins",
+      "Whatever is left after the coffee break"
+    ],
+    "explanation": "Not both only forbids the single case where both work. Ana alone, Ben alone and neither are all consistent with the rule. De Morgan: not (A and B) equals not A or not B, and or includes the neither case.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0014",
+    "question": "A village posts a rule: the barber shaves every man in the village who does not shave himself, and shaves no one else. The barber is a man of the village. What follows?",
+    "correct_answer": "The rule is self-contradictory, so no such barber can exist",
+    "incorrect_answers": [
+      "The barber shaves himself",
+      "The barber does not shave himself",
+      "The barber shaves everyone in the village",
+      "The barber charges extra for paradoxes"
+    ],
+    "explanation": "Ask whether the barber shaves himself: if yes, the rule forbids it, and if no, the rule demands it. Both readings fail, so the setup itself is impossible.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0015",
+    "question": "A game show offers three doors; one hides a car, two hide goats. You pick door 1. The host, who knows where the car is, opens door 3 to reveal a goat and offers a switch to door 2. What should you do?",
+    "correct_answer": "Switch, which wins two times out of three",
+    "incorrect_answers": [
+      "Stay, since the odds are now fifty-fifty",
+      "Stay, because your first instinct was informed",
+      "Switch, which wins half the time",
+      "Ask the goat for a second opinion"
+    ],
+    "explanation": "Your first pick wins one time in three, and the car sits behind one of the other doors two times in three. The host always reveals a goat, so switching collects that two-thirds chance. Staying keeps one-third.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0016",
+    "question": "A screening test for a disease that affects 1 in 1000 people is 99 percent accurate: it is right 99 times in 100, both ways. A random person tests positive. What is most likely true?",
+    "correct_answer": "They probably do not have the disease",
+    "incorrect_answers": [
+      "They almost certainly have the disease",
+      "They have it with even odds",
+      "The result is unusable and should be ignored",
+      "They should retest until it comes back negative"
+    ],
+    "explanation": "In 100000 people, about 100 are sick and about 99 of them test positive. Of the 99900 healthy, about 1 percent, roughly 999, also test positive. False positives outnumber true positives about ten to one.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0017",
+    "question": "A party host wonders when a shared birthday becomes likely. Roughly how many guests are needed before shared-birthday odds pass fifty percent, ignoring February 29 and assuming even spread?",
+    "correct_answer": "23",
+    "incorrect_answers": [
+      "183",
+      "120",
+      "354",
+      "Whoever arrived before the cake"
+    ],
+    "explanation": "With 23 people there are 253 pairs, and each pair has a 1 in 365 chance of matching. Those pair-chances pile up quickly, and the probability of at least one shared birthday first passes half at 23 guests.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0018",
+    "question": "A court hears that a partial fingerprint matches the accused, and the analyst says a random innocent person would match with probability 1 in 1000000. The town has 1000000 residents including the culprit. What does the fingerprint evidence alone establish?",
+    "correct_answer": "The match is roughly as likely on an innocent person as on the culprit",
+    "incorrect_answers": [
+      "The accused is guilty beyond reasonable doubt",
+      "The accused is innocent, since coincidences happen",
+      "The odds of guilt are now a million to one",
+      "The fingerprint should be dusted for prints"
+    ],
+    "explanation": "Expect about one innocent resident to match by chance among a million, and the culprit also matches, so a matching person is about as likely innocent as guilty. The 1 in 1000000 figure is the false-positive rate, not the probability of innocence given a match.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0019",
+    "question": "A family you know nothing about has two children. You learn that at least one is a boy. What is the probability both are boys?",
+    "correct_answer": "One third",
+    "incorrect_answers": [
+      "One half",
+      "One quarter",
+      "Two thirds",
+      "Whichever the coin flipped last"
+    ],
+    "explanation": "The four equally likely birth orders are BB, BG, GB and GG. At least one boy leaves BB, BG and GB, and only BB has two boys, so the probability is one third.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0020",
+    "question": "A coin has landed heads seven times in a row. A friend insists tails is due. What does fair-coin probability say about the next flip?",
+    "correct_answer": "Still exactly fifty-fifty; coins have no memory",
+    "incorrect_answers": [
+      "Tails is now more likely",
+      "Heads is now more likely",
+      "The game should stop until the coin cools down",
+      "The coin has earned a nap"
+    ],
+    "explanation": "Each flip of a fair coin is independent, so the chance of heads stays at one half no matter the streak. The gambler's fallacy reads memory into memoryless events.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0021",
+    "question": "Zoe reads a profile of Linda: 31, outspoken, bright, studied philosophy, and as a student was passionate about equality. Which is more probable?",
+    "correct_answer": "Linda is a bank teller",
+    "incorrect_answers": [
+      "Linda is a bank teller and active in the feminist movement",
+      "Both descriptions have the same probability",
+      "Linda is a feminist bank teller, slightly more likely",
+      "Teller by day, philosopher by night"
+    ],
+    "explanation": "Every feminist bank teller is a bank teller, so the plain teller option covers more cases and can never be less likely. Adding detail can only shrink a probability, never grow it. The vivid profile tempts us to forget that.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0022",
+    "question": "A charity raffle sells 10000 tickets at 2 coins each. The single prize is worth 12000 coins. What does expected value say about buying one ticket?",
+    "correct_answer": "The ticket is a bad deal, returning about 1.2 coins per 2 spent",
+    "incorrect_answers": [
+      "The ticket is fair, since the prize covers the pool",
+      "The ticket is a good deal, since 12000 beats 2",
+      "The ticket is a bad deal because someone must lose",
+      "The ticket pays for itself in good karma"
+    ],
+    "explanation": "Expected value is the prize times your winning chance: 12000 times 1 in 10000, about 1.2 coins, against a cost of 2. The gap is what makes it a losing bet on average, however worthy the cause.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0023",
+    "question": "A machine has two independent safety systems. Each fails on its own with probability 1 in 10. What is the probability both fail at once?",
+    "correct_answer": "1 in 100",
+    "incorrect_answers": [
+      "1 in 10",
+      "1 in 20",
+      "1 in 5",
+      "Only if they are feeling brave"
+    ],
+    "explanation": "Independent failures multiply: 1 in 10 times 1 in 10 gives 1 in 100. This is why redundant systems work, and why the assumption of independence matters when it is false.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0024",
+    "question": "Two hospitals each record, per day, how many of their newborns are boys. One averages 45 births a day, the other 15. Over a year, which hospital sees more days where more than 60 percent of newborns were boys?",
+    "correct_answer": "The smaller hospital",
+    "incorrect_answers": [
+      "The larger hospital",
+      "Both have exactly the same number of such days",
+      "Neither, since the true ratio guarantees half",
+      "Whichever pays its storks overtime"
+    ],
+    "explanation": "Small samples wander further from fifty-fifty. A day of 15 births can easily land at 10 or 11 boys, while 45 births cluster near the average. Extreme ratios belong to small groups, a core statistical instinct.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0025",
+    "question": "A health headline announces that a popular snack doubles the risk of a rare disease, which affects 2 in 10000 people. What does the headline leave out?",
+    "correct_answer": "The absolute risk rises only from 2 to 4 in 10000",
+    "incorrect_answers": [
+      "The risk grows by 2 percentage points",
+      "The disease is now common among snackers",
+      "The study compared unlike groups",
+      "The snack was last seen fleeing the country"
+    ],
+    "explanation": "Relative and absolute risk tell different stories. Doubling 2 in 10000 gives 4 in 10000, an extra 2 cases per 10000 people. Headlines love the doubling; decisions need the base rate.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0026",
+    "question": "A family you know nothing about has two children. You meet the older child: she is a girl. What is the probability that both children are girls?",
+    "correct_answer": "One half",
+    "incorrect_answers": [
+      "One third",
+      "One quarter",
+      "Three quarters",
+      "The younger child gets a vote"
+    ],
+    "explanation": "Knowing the older child is a girl fixes one birth, leaving only the younger one uncertain, a plain coin flip. This differs from learning merely that at least one is a girl, which leaves three possible orders and pushes the answer to one third.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0027",
+    "question": "A casino earns a small mathematical edge on every bet. Some nights it loses heavily. Over a full year of millions of bets, what does the law of large numbers imply?",
+    "correct_answer": "Aggregate results converge on the edge, making a yearly profit near certain",
+    "incorrect_answers": [
+      "The edge only appears on losing nights",
+      "Luck evens out, so the yearly result is a coin flip",
+      "The edge shrinks as players learn the games",
+      "The casino prays more often in December"
+    ],
+    "explanation": "Averages over huge numbers of trials settle onto the expected value, so the small per-bet edge becomes a reliable aggregate profit. A single night is dominated by variance, which is exactly why casinos can afford short-term losses.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0028",
+    "question": "Two hospitals publish success rates. Overall, Hospital A cures a higher share of its patients. But within each severity group, mild cases and severe cases alike, Hospital B does better. A patient whose case is known to be severe should choose which hospital?",
+    "correct_answer": "Hospital B, since the within-group rates are what apply to the patient",
+    "incorrect_answers": [
+      "Hospital A, since its overall rate is higher",
+      "Either, since the figures cancel out",
+      "Hospital A, since it must excel at severe cases too",
+      "Whichever has the shorter queue"
+    ],
+    "explanation": "The overall rate blends unequal case mixes: A treats mostly mild cases, so its headline edge can coexist with worse results in every group. For a patient in a known group, only that group rate matters. This reversal is Simpson's paradox.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0029",
+    "question": "During the Second World War, analysts mapped bullet holes on bombers returning from missions and proposed armoring the spots with the most holes. Statistician Abraham Wald told them to armor the opposite spots. Why?",
+    "correct_answer": "Planes hit in the clean spots never returned, so those hits were the lethal ones",
+    "incorrect_answers": [
+      "The holes in dense spots were all cosmetic",
+      "The clean spots took more shots on average",
+      "Armor works best where crews feel safest",
+      "The maps had been printed upside down"
+    ],
+    "explanation": "The sample contained only survivors, so the visible holes mark places a plane can survive. Where returning planes showed no holes, hits must have destroyed the aircraft before it came back. Armor belongs where the missing planes were hit.",
+    "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0030",
+    "question": "Twenty years into a career she no longer enjoys, Amara says she cannot leave now, having come so far. What does sound reasoning say about the twenty years?",
+    "correct_answer": "They are spent either way and should not drive the choice",
+    "incorrect_answers": [
+      "They make leaving wasteful",
+      "They obligate at least a few more years",
+      "They prove she should double down",
+      "They deserve a farewell tour"
+    ],
+    "explanation": "Sunk costs are irrecoverable no matter what she does next, so only future costs and benefits are rational inputs. Staying to justify the past simply spends more of the one resource she cannot renew.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0031",
+    "question": "Before a couple estimates the cost of a home repair, a friend jokes that it will surely cost at least 50000 coins. Their later guess lands far above an independent estimate of the real bill. What moved their guess?",
+    "correct_answer": "The arbitrary first number pulled their estimate upward",
+    "incorrect_answers": [
+      "They must know something about real repair prices",
+      "The joke had no measurable effect on them",
+      "Repair costs are simply hard to remember",
+      "Their contractor anchored them downward"
+    ],
+    "explanation": "Anchoring: numeric judgments drift toward whatever starting value is in the air, even an obviously arbitrary one. The defence is to form your own estimate before hearing anyone else's number.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0032",
+    "question": "After saturation news coverage of a plane crash, travellers cancel flights and drive instead, though driving is far riskier per kilometre. What steered their choice?",
+    "correct_answer": "The vivid recent crash came to mind easily and inflated the perceived risk",
+    "incorrect_answers": [
+      "They updated correctly on new evidence",
+      "Roads become safer right after a crash",
+      "Flying risk doubles after any accident",
+      "The airline food was the real problem"
+    ],
+    "explanation": "The availability heuristic: likelihoods are judged by how easily examples come to mind, and dramatic coverage supplies them in bulk. Memorable deaths crowd out base rates, so people flee the safer mode of travel.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0033",
+    "question": "You are shown the triple 2, 4, 6 and told it fits a hidden rule; you may name further triples and be told yes or no. You try 8, 10, 12 (yes) and 100, 102, 104 (yes). Which next test would tell you the most?",
+    "correct_answer": "A triple your current hypothesis says should fail, such as 4, 2, 6",
+    "incorrect_answers": [
+      "Another same-shape triple, such as 10, 12, 14",
+      "A far larger same-shape triple, such as 1000, 1002, 1004",
+      "The original triple again, to double-check",
+      "Whatever triple the experimenter seems to like"
+    ],
+    "explanation": "Same-shape tests can only produce yeses, so they cannot separate your pet rule, say ascending by two, from the broader rule any ascending triple. A test that should fail under your hypothesis can discriminate. Preferring friendly tests is confirmation bias.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0034",
+    "question": "A surgeon describes the same operation to one patient as having a 90 percent survival rate and to another as having a 10 percent mortality rate. What typically follows?",
+    "correct_answer": "The survival framing is more likely to win consent",
+    "incorrect_answers": [
+      "Both patients decide identically, since the numbers match",
+      "The mortality framing is more likely to win consent",
+      "Neither patient consents to surgery",
+      "Consent rates depend on the waiting room chairs"
+    ],
+    "explanation": "The two descriptions are numerically identical, yet positive framing feels safer than loss framing. Choices track the wording as much as the facts, which is why framing effects matter in medicine and law.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0035",
+    "question": "A survey finds that 90 percent of drivers rate their own driving as better than the average driver. What does this pattern most likely reveal?",
+    "correct_answer": "Self-assessment is systematically biased upward",
+    "incorrect_answers": [
+      "Most drivers genuinely drive better than average",
+      "Exactly half of any group must be below average",
+      "The survey sampled too few drivers",
+      "Traffic wardens were counted as drivers"
+    ],
+    "explanation": "Illusory superiority: people inflate their own competence, and the least skilled overrate themselves most. The average self-rating can exceed the average skill, since ratings measure confidence, not ability.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0036",
+    "question": "Offer one person a sure gain of 500 coins or a coin flip paying 1000 on heads and nothing on tails; most take the sure gain. Offer another a sure loss of 500 or a coin flip losing 1000 on heads and nothing on tails; most take the flip. What single tendency explains both choices?",
+    "correct_answer": "Losses hurt more than equal gains please, so people risk losses to avoid them",
+    "incorrect_answers": [
+      "People always prefer gambles to sure things",
+      "The two choices contradict each other and show mere randomness",
+      "People cannot compare 500 with 1000",
+      "Coins simply bring out the gambler"
+    ],
+    "explanation": "Loss aversion: the pain of losing looms larger than the pleasure of an equal gain. That makes people risk-averse for gains, locking in the sure 500, and risk-seeking for losses, gambling to dodge a sure 500.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0037",
+    "question": "In a lab experiment, people given a mug demand roughly twice as much money to part with it as strangers offered the same mug will pay for it. What drives the gap?",
+    "correct_answer": "Owning the mug makes losing it feel like a loss, inflating its price",
+    "incorrect_answers": [
+      "Sellers know the mug is worth more",
+      "Buyers are simply bargain hunters",
+      "The mug was worth less in the shop",
+      "Mugs prefer to stay home"
+    ],
+    "explanation": "The endowment effect: possession itself reframes giving up the item as a loss, and losses loom larger than gains. The very same mug acquires a higher selling price than buying price the moment it has an owner.",
+    "source_url": "https://en.wikipedia.org/wiki/Endowment_effect",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0038",
+    "question": "A team plans a kitchen renovation. The lead confidently promises six weeks, having ignored the neighbor project that ran four months. Which planning habit produced the promise?",
+    "correct_answer": "Building the plan from the best case instead of real past outcomes",
+    "incorrect_answers": [
+      "Overestimating how long work takes out of caution",
+      "Ignoring the client late fee",
+      "Assuming permits always arrive early",
+      "Blaming the hammer, which did nothing wrong"
+    ],
+    "explanation": "The planning fallacy: inside-view plans lean on the current project going smoothly, while the outside view of similar past projects predicts far longer. Distributional evidence beats optimistic story-telling.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0039",
+    "question": "The morning after a final, a fan says he always knew the underdog would win, though the night before he called the match a coin flip. What changed?",
+    "correct_answer": "The known outcome rewrote his sense of what was predictable",
+    "incorrect_answers": [
+      "His memory of the prediction is intact and unbiased",
+      "The underdog was always the obvious pick",
+      "Fans remember scores better than odds",
+      "The fan finally understood the sport"
+    ],
+    "explanation": "Hindsight bias: once the result is known, it feels as if it was inevitable all along. The fan is not lying so much as misreading his earlier uncertainty through the outcome he now possesses.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0040",
+    "question": "A town of 100 households has a median household income of 50000 coins and a mean of 52000. One billionaire moves in. What happens to the two averages?",
+    "correct_answer": "The mean leaps upward, while the median barely moves",
+    "incorrect_answers": [
+      "Both leap upward together",
+      "The median leaps while the mean stays put",
+      "Both stay put, since one person cannot matter",
+      "The billionaire pays the difference"
+    ],
+    "explanation": "The mean adds every income, so one gigantic value drags it up dramatically. The median is the middle household, and no single newcomer can shift that position. This is why medians headline income statistics.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0041",
+    "question": "Two suspects are interrogated separately. If both stay silent, each serves 1 year. If one confesses and the other stays silent, the confessor walks and the silent one serves 10 years. If both confess, each serves 5 years. Why does each suspect, reasoning alone, confess?",
+    "correct_answer": "Confessing gives a shorter sentence whichever the other does",
+    "incorrect_answers": [
+      "Silence gives a shorter sentence whichever the other does",
+      "Confessing is better only if the other confesses",
+      "Confessing is better only if the other stays silent",
+      "They hire a lawyer to invent a fourth option"
+    ],
+    "explanation": "Compare moves against each response of the partner. If the other stays silent, confessing means walking rather than 1 year; if the other confesses, confessing means 5 years rather than 10. Confessing wins in both cases, which makes it dominant, even though mutual silence would serve both better.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0042",
+    "question": "Four farmers share a pasture. Each figures that grazing one more cow benefits her alone while the trampling cost spreads across all four, so each adds cows until the grass is gone. What does this illustrate?",
+    "correct_answer": "Individual rational choices can jointly destroy a shared resource",
+    "incorrect_answers": [
+      "Shared property always outperforms private plots",
+      "Farmers should simply buy more land",
+      "The market will price the grass correctly",
+      "Cows understand rotation grazing"
+    ],
+    "explanation": "Each farmer keeps the full benefit of her extra cow and pays only a quarter of its cost, so overgrazing is individually rational and collectively ruinous. Tragedy of the commons: private incentives overshoot the shared optimum.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0043",
+    "question": "You must meet a stranger tomorrow somewhere in New York City, with no way to agree on a place or time in advance. Where and when should you go to maximize the chance of meeting?",
+    "correct_answer": "Grand Central Terminal at noon",
+    "incorrect_answers": [
+      "Times Square at midnight",
+      "The Statue of Liberty at dawn",
+      "A random subway entrance at 6 pm",
+      "The middle of Central Park at 3 am"
+    ],
+    "explanation": "Schelling focal points: when communication is impossible, people converge on options that stand out as obvious. Grand Central at noon is the candidate New Yorkers most often name, so each side reasons the other will be there.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0044",
+    "question": "In an ultimatum game, the proposer may split 100 coins any way; the responder either accepts the split or rejects it and both get nothing. Responders often reject offers of 10 coins or less. Why turn down free money?",
+    "correct_answer": "Rejecting punishes unfairness at a small personal cost",
+    "incorrect_answers": [
+      "Responders cannot do the arithmetic",
+      "Rejection is a negotiating blunder with no logic",
+      "Coins lose value when offered rudely",
+      "They take the coins and apologize for the mess"
+    ],
+    "explanation": "People trade money for fairness: a small sure gain feels worse than nothing when it encodes an insultingly small share. The threat of such rejection keeps offers nearer fifty-fifty, so the costly refusal has social logic.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0045",
+    "question": "A small game has three options for a player, with payoffs depending on the opponent. Whatever the opponent does, option C gives 2 coins and option A gives at least 3. What can be said about a rational player choosing C?",
+    "correct_answer": "A rational player never picks C, since A is better whatever happens",
+    "incorrect_answers": [
+      "C is the safest choice against a clever opponent",
+      "C and A tie when the opponent plays cleverly",
+      "A rational player picks C half the time",
+      "Strategy by Magic 8-Ball, results pending"
+    ],
+    "explanation": "A strictly dominates C: in every scenario it pays more, so C can never be the best reply. A rational player eliminates dominated options first, whatever guesses she makes about the opponent.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0046",
+    "question": "An urn is known to hold exactly 50 red and 50 black balls. A second urn holds 100 red or black balls in an unknown ratio. People typically pay more to draw from the known urn, whichever color they bet on. What does this pattern reveal?",
+    "correct_answer": "People treat known odds as safer than unknown ones beyond what logic allows",
+    "incorrect_answers": [
+      "People correctly detect the second urn is rigged",
+      "The known urn mathematically pays better",
+      "People cannot compare probabilities at all",
+      "Red balls are simply luckier"
+    ],
+    "explanation": "Ellsberg ambiguity aversion: whichever color you name, the unknown urn could be fine or terrible, and people shun the unquantifiable risk. Strict probability theory says the two bets can be worth the same, so the preference exposes a distaste for unknown odds themselves.",
+    "lang": "en",
+    "difficulty": 3
+  },
+  {
+    "id": "logic-0047",
+    "question": "A coastal town finds that ice-cream sales and drowning deaths rise and fall together month by month. Which conclusion is sound?",
+    "correct_answer": "A third factor, summer heat, drives both numbers",
+    "incorrect_answers": [
+      "Ice cream causes swimming accidents",
+      "Drownings make people crave ice cream",
+      "The correlation must be a coincidence",
+      "Ice cream should be banned near beaches"
+    ],
+    "explanation": "Hot weather sends people both to the ice-cream stand and into the water, so the two series move together without one causing the other. A confounder explains the correlation; the classic warning is that it does not establish causation.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0048",
+    "question": "A rooster crows daily just before sunrise. A patient sips herbal tea and feels better the next morning. What do the two cases share?",
+    "correct_answer": "Both treat sequence as proof of causation",
+    "incorrect_answers": [
+      "Both prove gentle remedies work",
+      "Both show animals sense weather",
+      "Both were designed experiments",
+      "Both involve breakfast"
+    ],
+    "explanation": "Post hoc reasoning: because B followed A, A must have caused B. The rooster does not raise the sun, and the tea may coincide with natural recovery. Both cases need a comparison group before credit is assigned.",
+    "lang": "en",
+    "difficulty": 1
+  },
+  {
+    "id": "logic-0049",
+    "question": "A gym advertises that its members are far healthier than non-members, so joining must make you healthy. What alternative reading does the advert skip past?",
+    "correct_answer": "People who already value health are the ones who sign up",
+    "incorrect_answers": [
+      "The gym sessions work instantly",
+      "Non-members are secretly healthier",
+      "Health is unrelated to exercise",
+      "The advert is legally required to lie"
+    ],
+    "explanation": "Healthy-user bias: the gym does not only add exercise, it selects for people who already exercise, eat well and see doctors. The membership correlates with health partly because health-seeking people join, not purely because of what happens inside.",
+    "lang": "en",
+    "difficulty": 2
+  },
+  {
+    "id": "logic-0050",
+    "question": "A drug trial gives half the patients the drug and half an identical-looking dummy, with neither patients nor staff knowing who got which. What does the dummy arm let researchers conclude?",
+    "correct_answer": "How much improvement exceeds what expectation and time alone produce",
+    "incorrect_answers": [
+      "That the drug works for everyone in the trial",
+      "That the drug has no side effects",
+      "That the drug beats every older treatment",
+      "That the patients were easily fooled"
+    ],
+    "explanation": "The control arm measures recovery from expectation and natural course. Only improvement beyond that baseline is attributable to the drug, and blinding keeps belief from leaking into measurement. That is what a placebo arm actually licenses you to infer.",
+    "lang": "en",
+    "difficulty": 2
+  }
+]

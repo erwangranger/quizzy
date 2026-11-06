@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { customBankName } from '../customBank'
 
 export type Locale = 'en' | 'fr'
 
@@ -6,8 +7,9 @@ const en = {
     'app.title': 'Quizzy 🥴',
     'about.contentUpdated': 'questions updated {date}',
     'about.source': 'Source on GitHub',
-    'about.issues': 'Report an issue',
+    'about.customQuizzes': 'Custom quizzes',
     'about.creditLead': 'Quizzy started life as a fork of',
+    'about.issues': 'Report an issue',
     'about.creditName': "Christopher Murphy's open-source quiz app",
     'about.installLead': 'Quizzy is a progressive web app: add it to your home screen or desktop for full-screen play, even offline. How to install it:',
     'about.installChrome': 'Chrome/Edge (Android/Desktop): a banner appears when you visit the site — tap "Add to Quizzy".',
@@ -29,7 +31,11 @@ const en = {
     'category.arts-literature': 'Arts & Literature',
     'category.entertainment': 'Entertainment',
     'category.sports-leisure': 'Sports & Leisure',
+    'category.music': 'Music',
+    'category.food-drink': 'Food & Drink',
+    'category.technology': 'Technology',
     'category.recent-news': 'Recent News',
+    'category.custom': 'Custom',
     'questions.next': 'Next',
     'questions.reveal': 'Reveal',
     'questions.skip': 'Skip',
@@ -73,6 +79,7 @@ const fr: Record<keyof typeof en, string> = {
     'app.title': 'Quizzy 🥴',
     'about.contentUpdated': 'questions mises à jour le {date}',
     'about.source': 'Source sur GitHub',
+    'about.customQuizzes': 'Quiz personnalisés',
     'about.issues': 'Signaler un problème',
     'about.creditLead': 'Quizzy a commencé comme un fork de',
     'about.creditName': "l'app quiz open source de Christopher Murphy",
@@ -96,6 +103,9 @@ const fr: Record<keyof typeof en, string> = {
     'category.arts-literature': 'Arts et littérature',
     'category.entertainment': 'Divertissement',
     'category.sports-leisure': 'Sports et loisirs',
+    'category.music': 'Musique',
+    'category.food-drink': 'Cuisine et boissons',
+    'category.technology': 'Technologie',
     'category.recent-news': 'Actualités récentes',
     'questions.next': 'Suivant',
     'questions.reveal': 'Révéler',
@@ -107,6 +117,7 @@ const fr: Record<keyof typeof en, string> = {
     'gameover.title': 'Partie terminée !',
     'gameover.score': 'Score : {score}/{total}',
     'gameover.points': '{points} pts',
+    'category.custom': 'Personnalisé',
     'gameover.correct': '{correct}/{total} bonnes réponses',
     'gameover.breakdown': 'Détail par catégorie',
     'gameover.newGame': 'Nouvelle partie',
@@ -157,9 +168,11 @@ export function t(key: keyof typeof en, params?: Record<string, string | number>
 }
 
 // Category display name: localized when a key exists, raw slug otherwise
-// (every category has keys in both dictionaries).
+// (every category has keys in both dictionaries). When a custom bank is
+// loaded, the custom category reads "Custom: {bank}" in both languages.
 export function categoryLabel(category: string): string {
   const key = `category.${category}` as keyof typeof en
   const localized = (messages[activeLocale.value] as Record<string, string | undefined>)[key]
+  if (category === 'custom' && customBankName()) return `${localized ?? category}: ${customBankName()}`
   return localized ?? category
 }

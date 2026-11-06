@@ -12,7 +12,8 @@
     "preview": "vite preview --config config/vite.config.ts",
     "validate:questions": "node scripts/validate-questions.mjs",
     "test": "vitest run --config config/vite.config.ts",
-    "promote:pending": "node scripts/promote-pending.mjs"
+    "promote:pending": "node scripts/promote-pending.mjs",
+    "bank:encode": "node scripts/encode-bank.mjs"
   },
   "dependencies": {
     "pinia": "^3.0.1",

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "correct_answer": "Paris",
+    "incorrect_answers": ["London", "Berlin", "Madrid", "The one with the baguette tower"]
+  },
+  {
+    "question": "What is 2 + 2?",
+    "correct_answer": "4",
+    "incorrect_answers": ["3", "5", "22", "Eleven, if you ask nicely"]
+  },
+  {
+    "question": "Which animal says moo?",
+    "correct_answer": "Cow",
+    "incorrect_answers": ["Dog", "Cat", "Duck", "The one reading over your shoulder"]
+  },
+  {
+    "question": "How many days are in a week?",
+    "correct_answer": "7",
+    "incorrect_answers": ["5", "10", "12", "Depends how rough the Monday was"]
+  },
+  {
+    "question": "What colour is a ripe banana?",
+    "correct_answer": "Yellow",
+    "incorrect_answers": ["Blue", "Purple", "Polka dot", "Beige, but confident"]
+  }
+]

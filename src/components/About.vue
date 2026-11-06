@@ -19,6 +19,14 @@
         >{{ t('about.issues') }}</a>
       </li>
     </ul>
+    <div class="quizzes" v-if="customQuizzes.length > 0">
+      <p class="quizzes-lead">{{ t('about.customQuizzes') }}</p>
+      <ul class="quizzes-list">
+        <li v-for="quiz in customQuizzes" :key="quiz.file">
+          <a :href="quizHref(quiz.file)" class="link-light">{{ quiz.name }}</a>
+        </li>
+      </ul>
+    </div>
     <div class="install">
       <p class="install-lead">{{ t('about.installLead') }}</p>
       <ul class="install-steps">
@@ -48,6 +56,21 @@ import { t } from '../locales'
 
 const version = __APP_VERSION__
 const contentDate = __CONTENT_DATE__
+
+// Pre-loaded custom quizzes: bank files under public/, served at the app
+// root. A quiz is one entry here + the .json file; the link re-enters the
+// app with a relative ?bank= parameter (works on Pages subpath, in dev and
+// inside a Capacitor WebView alike).
+const customQuizzes = [
+  { name: 'Canada sample', file: 'sample-bank.json' },
+  { name: 'Quick demo', file: 'demo-bank.json' },
+  { name: 'Logic and reasoning (en)', file: 'logic-bank_en.json' },
+  { name: 'Logique et raisonnement (fr)', file: 'logic-bank_fr.json' },
+]
+
+function quizHref(file: string): string {
+  return new URL(`?bank=${file}`, window.location.href).href
+}
 </script>
 <style lang="scss" scoped>
 @use '../styles/variables' as *;
@@ -68,6 +91,21 @@ const contentDate = __CONTENT_DATE__
   margin-bottom: 1.5em;
 
   li {
+    margin: 0.4em 0;
+  }
+}
+
+// Pre-loaded custom quizzes: same rhythm as the install block
+.quizzes {
+  margin-bottom: 1.5em;
+
+  .quizzes-lead {
+    color: $color-med;
+    font-size: 0.85em;
+    margin-bottom: 0.75em;
+  }
+
+  .quizzes-list li {
     margin: 0.4em 0;
   }
 }

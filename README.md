@@ -74,6 +74,23 @@ npm run build && npm run preview  # production build + local preview
 ```
 The site deploys to GitHub Pages automatically on every push to `main`.
 
+## Custom question banks
+
+Play Quizzy with your own questions by sharing a `?bank=` URL. Three forms of the bank value work:
+
+- **Remote file**: `https://…/?bank=https://host.com/my-bank.json` — the bank is fetched from any CORS-enabled host (GitHub raw, Pages, gists).
+- **Relative path**: `https://…/?bank=my-bank.json` — a file next to the app (the sample: [`public/sample-bank.json`](public/sample-bank.json), demoable at `/?bank=sample-bank.json`).
+- **Inline**: `https://…/?bank=<base64url JSON>` — the bank travels inside the URL; works from any host. Keep it under ~2000 characters.
+A worked example ships with the app: the 50-question bilingual [logic and reasoning bank](public/logic-bank_en.json) ([French](public/logic-bank_fr.json)), demoable at `/?bank=logic-bank_en.json` and `/?bank=logic-bank_fr.json`.
+
+**Authoring a bank**: an array of question objects. Required: `question`, `correct_answer`, `incorrect_answers` (exactly 4 — 3 plausible + 1 joke answer). Optional and defaulted when missing: `id` (`bank-NNNN`), `lang` (`en`), `difficulty` (2), `explanation`, `source_url`, `as_of`. Invalid items are dropped and logged, never half-shipped.
+
+```bash
+npm run bank:encode -- questions/my-bank.json   # prints share URLs (inline + remote)
+```
+
+When a bank URL loads, the game presets itself: a **Custom** category chip preselected — labelled `Custom: {bank}` from the file or URL name (e.g. `Custom: demo-bank`; inline banks show just `Custom: inline`) — the bank's language, and a fitting default question count. Draw, recency and the 5-way shuffle behave exactly as with the built-in banks.
+
 ## Weekly news questions
 
 A Claude Code Desktop scheduled task on the owner's laptop writes about 10 English and 10 French Recent News questions every week and opens a pull request. The recipe it follows is [`.claude/commands/news-questions.md`](.claude/commands/news-questions.md). You can also run it by hand with `/news-questions` (e.g. `/news-questions count=5`).
