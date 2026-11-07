@@ -1,0 +1,192 @@
+[
+  {
+    "id": "news-20261106-01",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In October 2026, which team won the first World Series title in its franchise history?",
+    "correct_answer": "Milwaukee Brewers",
+    "incorrect_answers": [
+      "Tampa Bay Rays",
+      "Seattle Mariners",
+      "San Diego Padres",
+      "The Milwaukee Wienermobiles"
+    ],
+    "explanation": "The Brewers beat the Tampa Bay Rays 4-1 in Game 5 on October 28, capping a 103-win season. It is Milwaukee's first championship since the 1957 Braves, and four MLB franchises now remain without a title.",
+    "source_url": "https://www.mlb.com/brewers/news/brewers-beat-rays-game-5-win-2026-world-series",
+    "as_of": "2026-10-28",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-02",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In November 2026, who became the youngest Formula 1 world champion in history?",
+    "correct_answer": "Kimi Antonelli",
+    "incorrect_answers": [
+      "Max Verstappen",
+      "Lewis Hamilton",
+      "George Russell",
+      "A very confident sim racer"
+    ],
+    "explanation": "Mercedes' 20-year-old clinched the title by finishing third at the Mexico City Grand Prix, beating Sebastian Vettel's record by three years and 66 days. He is the first Italian champion since Alberto Ascari in 1953.",
+    "source_url": "https://www.bbc.com/sport/formula1/articles/cv62y1e6wly6o",
+    "as_of": "2026-11-01",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-03",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In November 2026, about how many runners took part in the 50th running of the New York City Marathon?",
+    "correct_answer": "60,000",
+    "incorrect_answers": [
+      "40,000",
+      "45,000",
+      "52,000",
+      "Everyone except the pigeons"
+    ],
+    "explanation": "Roughly 60,000 runners from more than 140 countries raced through all five boroughs, nearly half of them women. Sweden's Andreas Almgren won the men's race in 2:06:01, the third-fastest time in course history.",
+    "source_url": "https://www.npr.org/2026/11/01/nx-s1-6025437/new-york-marathon-almgren-chepkirui-win",
+    "as_of": "2026-11-01",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-04",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In November 2026, NASA announced that Voyager 1 is set to become the first human-made object to reach what distance from Earth?",
+    "correct_answer": "One light-day",
+    "incorrect_answers": [
+      "One light-hour",
+      "One light-week",
+      "One light-year",
+      "One very long carpool from Earth"
+    ],
+    "explanation": "Launched in 1977, the probe is closing on the distance light travels in a single day. NASA invited the public to flash the mission call sign V-G-R in Morse code skyward after sunset on November 17.",
+    "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/shine-bright-for-voyagers-light-day/",
+    "as_of": "2026-11-04",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-05",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, what did Google's Project Suncatcher prototype satellite return from orbit?",
+    "correct_answer": "The first AI response from a data-center-class TPU in orbit",
+    "incorrect_answers": [
+      "The first livestream from the Moon",
+      "The first weather report from Mars",
+      "The first laser link between two satellites",
+      "One AI haiku, lightly toasted"
+    ],
+    "explanation": "Google uplinked a prompt to the onboard Gemma model, which produced a haiku about being in space, downlinked during a pass over Svalbard. The company calls it a step toward running AI compute in space.",
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response",
+    "as_of": "2026-10-30",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-06",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In November 2026, CERN's LHCb experiment reported the first evidence of the rarest decay ever observed at the Large Hadron Collider. What was it?",
+    "correct_answer": "A B meson decaying into two muons",
+    "incorrect_answers": [
+      "A proton decaying into two pions",
+      "A neutron decaying into an antineutron",
+      "A Higgs boson decaying into gravitons",
+      "Two muons walk into a bar"
+    ],
+    "explanation": "A neutral B meson containing a beauty quark is expected to decay into two muons only about once per ten billion. Announced after a 42-year search, the result offers a new precision test of the Standard Model.",
+    "source_url": "https://www.birmingham.ac.uk/news/2026/physicists-uncover-evidence-of-one-of-natures-rarest-particle-decays",
+    "as_of": "2026-11-03",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-07",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In November 2026, a SLAC-led team published conclusive experimental proof of which third type of magnetism?",
+    "correct_answer": "Altermagnetism",
+    "incorrect_answers": [
+      "Ferrimagnetism",
+      "Paramagnetism",
+      "Nanomagnetism",
+      "Fridge-magnet-ism"
+    ],
+    "explanation": "Chiral X-ray scattering on manganese telluride revealed the handedness that sets altermagnets apart. The class combines an antiferromagnet's stability with a ferromagnet's ability to carry information, promising for spintronics.",
+    "source_url": "https://www.sciencedaily.com/releases/2026/11/261104012256.htm",
+    "as_of": "2026-11-04",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-08",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In November 2026, which ancient human species yielded its first molecular data, from 400,000-year-old tooth proteins?",
+    "correct_answer": "Homo erectus",
+    "incorrect_answers": [
+      "Homo floresiensis",
+      "Homo luzonensis",
+      "Homo heidelbergensis",
+      "Uncle Terry (no relation)"
+    ],
+    "explanation": "Proteins from six teeth found at three Chinese sites, including Zhoukoudian, revealed a variant shared with Denisovans that survives in about 21 percent of people in the Philippines today.",
+    "source_url": "https://www.sciencedaily.com/releases/2026/11/261102202836.htm",
+    "as_of": "2026-11-05",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-09",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In November 2026, whose album became the first by an Asian artist to surpass one billion Spotify streams in four consecutive years?",
+    "correct_answer": "Jungkook",
+    "incorrect_answers": [
+      "Jin",
+      "Jimin",
+      "RM",
+      "Your uncle's workout playlist"
+    ],
+    "explanation": "GOLDEN, released on November 3, 2023, topped a billion streams in every year from 2023 through 2026, for a cumulative 7.58 billion, according to the World Music Awards.",
+    "source_url": "https://www.starnewskorea.com/en/music/2026/11/04/2026110408081982063",
+    "as_of": "2026-11-04",
+    "origin": "claude",
+    "reviewed": false
+  },
+  {
+    "id": "news-20261106-10",
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, which company passed one billion dollars in annual recurring revenue?",
+    "correct_answer": "Freshworks",
+    "incorrect_answers": [
+      "Zendesk",
+      "Atlassian",
+      "Snowflake",
+      "A guy with a spreadsheet"
+    ],
+    "explanation": "Founded in Chennai, India, about 15 years ago as a help-desk tool, Freshworks ended its third quarter at roughly 992 million dollars in ARR and crossed the milestone in October after buying Torii and Robusta.",
+    "source_url": "https://fortune.com/2026/11/03/freshworks-1-billion-arr-dennis-woodside-ai-what-companies-stop-doing/",
+    "as_of": "2026-11-03",
+    "origin": "claude",
+    "reviewed": false
+  }
+]
