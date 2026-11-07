@@ -97,7 +97,7 @@ const fr: Record<keyof typeof en, string> = {
     'about.installSafari': "Safari (iOS) : touchez le bouton Partager → « Sur l'écran d'accueil ».",
     'about.installFirefox': "Firefox (Android) : touchez le menu (⋮) → « Ajouter à l'écran d'accueil » ou « Installer ».",
     'about.installAfter': "Une fois installée, Quizzy s'ouvre en plein écran comme n'importe quelle app, sans barres de navigateur.",
-    'instructions.body': 'Peut provoquer des connaissances vertigineuses.',
+    'instructions.body': 'Peut provoquer un savoir vertigineux',
     'starter.start': 'Commencer',
     'starter.resume': 'Reprendre la partie',
     'starter.resumeHint': 'Question {round} sur {total}',
