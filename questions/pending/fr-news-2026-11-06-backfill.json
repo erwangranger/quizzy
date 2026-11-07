@@ -1,0 +1,477 @@
+[
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En mai 2026, la Bulgarie a remporte pour la premiere fois de son histoire le concours Eurovision de la chanson grace au titre Bangaranga chante par Dara. Dans quelle ville s'est deroulee la finale ?",
+    "correct_answer": "Vienne",
+    "incorrect_answers": [
+      "Bâle",
+      "Malmö",
+      "Turin",
+      "La boutique de souvenirs du concours"
+    ],
+    "explanation": "Dara, de son vrai nom Darina Yotova, a amassé 516 points lors de la 70e édition du concours. C'est la première fois en presque dix ans, depuis Kiev 2017, que les jurys et le public choisissent le même vainqueur, Israël terminant deuxième avec 343 points.",
+    "source_url": "https://ici.radio-canada.ca/nouvelle/2254648/eurovision-victoire-bulgarie-vienne-autriche",
+    "as_of": "2026-05-17",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-46"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En mai 2026, la sonde Smile, fruit d'une collaboration entre l'ESA et l'Academie chinoise des sciences, a decolle a bord d'une fusee Vega-C pour etudier le bouclier magnetique de la Terre face au vent solaire. Le port spatial de l'Europe se situe sur quel territoire d'Amerique du Sud ?",
+    "correct_answer": "La Guyane française",
+    "incorrect_answers": [
+      "Les îles Malouines",
+      "Les îles Galápagos",
+      "L'île de Pâques",
+      "Un pas de tir sujet au trac"
+    ],
+    "explanation": "Smile, pour Solar wind Magnetosphere Ionosphere Link Explorer, observera le champ magnétique terrestre aux rayons X et les aurores boréales en continu pendant 45 heures d'affilée, une première pour une mission spatiale. Ce lancement était le premier de l'année pour Vega-C.",
+    "source_url": "https://cnes.fr/communiques/lancement-reussi-de-7e-mission-de-vega-c-smile-mis-orbite-succes",
+    "as_of": "2026-05-19",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-47"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En mai 2026, des astronomes ont annonce que la galaxie ultra-pale LAP1-B, observee par le telescope James-Webb seulement 800 millions d'annees apres le Big Bang, etait la galaxie qui forme des etoiles la plus chimiquement primitive jamais decouverte. Quel element, indispensable a la vie, y est le plus rare ?",
+    "correct_answer": "L'oxygène",
+    "incorrect_answers": [
+      "Le carbone",
+      "Le fer",
+      "L'azote",
+      "Le chocolat"
+    ],
+    "explanation": "Son abondance en éléments lourds est record : environ 0,4 % du niveau d'oxygène du Soleil, soit 4,2 millièmes de la valeur solaire. Fortement agrandie par une lentille gravitationnelle et dominée par la matière noire, LAP1-B est une ancêtre directe des galaxies naines ultra-pâles proches de la Voie lactée.",
+    "source_url": "https://www.nature.com/articles/s41586-026-10374-1",
+    "as_of": "2026-05-14",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-48"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En juin 2026, selon des données de la firme Sensor Tower, l'application ChatGPT est devenue l'application la plus rapide à franchir quel cap en à peine trois ans d'existence ?",
+    "correct_answer": "1 milliard d'utilisateurs actifs mensuels",
+    "incorrect_answers": [
+      "500 millions d'utilisateurs actifs mensuels",
+      "2 milliards d'utilisateurs actifs mensuels",
+      "100 millions d'utilisateurs actifs mensuels",
+      "Toute la Terre, deux fois"
+    ],
+    "explanation": "Lancée fin 2022, l'application a atteint ce seuil plus vite que Google Maps, TikTok, Instagram ou YouTube. C'était aussi la première application d'intelligence artificielle à y parvenir.",
+    "source_url": "https://www.reuters.com/technology/chatgpt-app-hits-1-billion-monthly-active-users-record-time-data-shows-2026-06-02",
+    "as_of": "2026-06-02",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-49"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En juin 2026, lors de la 79e cérémonie des Tony Awards, quelle comédie musicale parodiant les grands classiques de Broadway a remporté le trophée de la meilleure comédie musicale ?",
+    "correct_answer": "Schmigadoon!",
+    "incorrect_answers": [
+      "The Lost Boys",
+      "Ragtime",
+      "Cats: The Jellicle Ball",
+      "Une comédie musicale sur les impôts"
+    ],
+    "explanation": "Schmigadoon! a décroché quatre Tony au total, tout comme The Lost Boys, tandis que la reprise de Mort d'un commis voyageur a dominé la soirée avec six trophées. La cérémonie était animée par la chanteuse Pink au Radio City Music Hall.",
+    "source_url": "https://www.npr.org/2026/06/08/nx-s1-5843063/schmigadoon-wins-best-musical-at-79th-annual-tony-awards",
+    "as_of": "2026-06-07",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-50"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En juin 2026, Apple a dévoilé Siri AI, une version entièrement repensée de son assistante vocale, à l'occasion de quelle conférence annuelle pour les développeurs ?",
+    "correct_answer": "La WWDC",
+    "incorrect_answers": [
+      "Le Google I/O",
+      "Le Microsoft Build",
+      "La Galaxy Unpacked",
+      "Le retour de Clippy"
+    ],
+    "explanation": "Annoncé le 8 juin, Siri AI peut répondre à des questions sur le contenu affiché à l'écran, fouiller les applications grâce au contexte personnel et converser dans une application Siri dédiée. La bêta publique arrive plus tard en 2026, d'abord en anglais.",
+    "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+    "as_of": "2026-06-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-51"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En juin 2026, le télescope James Webb a révélé que la comète interstellaire 3I/ATLAS, sans doute âgée de 10 à 12 milliards d'années, renferme environ 30 fois plus de quoi que n'importe quelle comète de notre système solaire ?",
+    "correct_answer": "Le deutérium",
+    "incorrect_answers": [
+      "Le tritium",
+      "L'hélium 3",
+      "L'antihydrogène",
+      "L'hydrogène pétillant"
+    ],
+    "explanation": "Cette eau lourde en abondance indique que la comète s'est formée dans un milieu très froid, bien avant notre Soleil. Son nom vient de son statut de troisième comète interstellaire confirmée et du télescope ATLAS de la NASA qui l'a repérée.",
+    "source_url": "https://esawebb.org/news/weic2613/",
+    "as_of": "2026-06-22",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-52"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En juin 2026, l'observatoire Vera Rubin, perché au Chili, a officiellement lancé son grand relevé de dix ans du ciel austral. Quel instrument détenteur d'un record mondial équipe son télescope ?",
+    "correct_answer": "Le plus grand appareil photo numérique du monde",
+    "incorrect_answers": [
+      "Le plus grand radiotélescope du monde",
+      "Le laser le plus puissant jamais construit",
+      "Le détecteur d'ondes gravitationnelles le plus sensible",
+      "Un appareil photo jetable"
+    ],
+    "explanation": "La caméra de 3200 megapixels de Rubin prend une nouvelle image du ciel environ toutes les 40 secondes. Durant ses travaux préparatoires, l'observatoire a déjà découvert plus de 11 000 astéroïdes inconnus, et chaque zone du ciel sera revisitée environ 800 fois.",
+    "source_url": "https://noirlab.edu/public/news/noirlab2616/",
+    "as_of": "2026-06-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-53"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En juillet 2026, le télescope spatial européen Euclid a détecté 31 quasars parmi les plus anciens jamais observés, apparus alors que l'Univers était âgé de moins de combien d'années ?",
+    "correct_answer": "700 millions",
+    "incorrect_answers": [
+      "5 milliards",
+      "1 milliard",
+      "300 millions",
+      "700 millions de minutes"
+    ],
+    "explanation": "Les quasars sont des noyaux de galaxies brillants, alimentés par la matière qui plonge dans un trou noir supermassif. Leur lumière a mis plus de 13 milliards d'années à nous parvenir, ce qui permet d'étudier la formation des premières galaxies.",
+    "source_url": "https://cnes.fr/actualites/euclid-revele-quasars-plus-anciens-de-lunivers",
+    "as_of": "2026-07-06",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-54"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En juillet 2026, l'Inde est devenue le troisième pays, après les États-Unis et la Chine, à voir une entreprise privée placer une fusée en orbite. De quelle ville indienne Skyroot, le constructeur du lanceur Vikram 1, est-elle originaire ?",
+    "correct_answer": "Hyderabad",
+    "incorrect_answers": [
+      "Mumbai",
+      "Bangalore",
+      "Chennai",
+      "Sriharikota"
+    ],
+    "explanation": "Le 18 juillet, la fusée Vikram 1, haute de 23 mètres, a décollé du centre spatial de Sriharikota et atteint son orbite à 450 km d'altitude une quinzaine de minutes plus tard. L'Inde vise une part de 10 pour cent du marché spatial mondial d'ici 2030.",
+    "source_url": "https://www.franceinfo.fr/sciences/espace/la-premiere-fusee-privee-indienne-reussit-son-lancement-dans-un-pays-aux-grandes-ambitions-spatiales_8112743.html",
+    "as_of": "2026-07-18",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-55"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En juillet 2026, le site bouddhique antique de Sarnath, où le Bouddha aurait prononcé son premier sermon, a été inscrit au patrimoine mondial de l'UNESCO. Il est devenu le 45e site du patrimoine mondial de quel pays ?",
+    "correct_answer": "L'Inde",
+    "incorrect_answers": [
+      "Le Népal",
+      "Le Sri Lanka",
+      "La Thaïlande",
+      "L'Empire du Milieu des stupas"
+    ],
+    "explanation": "L'inscription a été annoncée à Busan, en Corée du Sud, lors de la 48e session du Comité du patrimoine mondial. Sarnath, situé près de Varanasi, abrite les stupas Chaukhandi et Dhamek dans un lieu connu sous le nom de parc aux daims.",
+    "source_url": "https://www.unesco.org/en/articles/ancient-buddhist-site-sarnath-inscribed-unesco-world-heritage-list",
+    "as_of": "2026-07-25",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-56"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En juillet 2026, des archéologues ont annoncé en Égypte la découverte d'une cité byzantine remarquablement bien conservée, avec sa basilique du IVe siècle, dans quel désert ?",
+    "correct_answer": "Le désert occidental",
+    "incorrect_answers": [
+      "Le désert du Sinaï",
+      "Le désert oriental",
+      "Le désert de Nubie",
+      "Le désert le plus à l'est, pour varier"
+    ],
+    "explanation": "La cité se trouve dans l'oasis de Dakhla, dans le gouvernorat de la Nouvelle-Vallée. Les fouilles ont aussi livré des fours à pain, des pièces d'or de l'empereur Constance II et environ 200 fragments de poterie servant de support d'écriture.",
+    "source_url": "https://www.theguardian.com/world/2026/jul/04/archaeologists-uncover-ancient-byzantine-city-in-egypts-western-desert",
+    "as_of": "2026-07-04",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-57"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En juillet 2026, les actions du fabricant chinois de mémoire CXMT ont bondi d'environ 466 pour cent lors de ses débuts à la Bourse de Shanghai, ce qui en a fait la société cotée la plus valorisée de Chine continentale. Dans quelle ville chinoise son siège est-il situé ?",
+    "correct_answer": "Hefei",
+    "incorrect_answers": [
+      "Shenzhen",
+      "Chengdu",
+      "Wuhan",
+      "À un jet de pierre de la Bourse"
+    ],
+    "explanation": "Fondée en 2016, ChangXin Memory Technologies fabrique des puces DRAM qui équipent les centres de données d'IA, les téléphones et les ordinateurs. Sa valorisation a atteint environ 3 300 milliards de yuans, soit près de 487 milliards de dollars.",
+    "source_url": "https://www.bbc.co.uk/news/articles/c9q9w3x9qn2o",
+    "as_of": "2026-07-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-58"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En août 2026, l'ESA a confirmé que la mission BepiColombo, lancée en 2018, allait entamer son arrivée autour de quelle planète ?",
+    "correct_answer": "Mercure",
+    "incorrect_answers": [
+      "Vénus",
+      "Mars",
+      "Saturne",
+      "Celle où il fait bon vivre"
+    ],
+    "explanation": "BepiColombo est la première mission européenne et japonaise vers Mercure. La séparation du module de transfert a été programmée pour le 3 septembre 2026, avant la mise en orbite des deux sondes en fin d'année.",
+    "source_url": "https://www.esa.int/Enabling_Support/Operations/Watch_live_BepiColombo_begins_its_arrival_at_Mercury",
+    "as_of": "2026-08-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-59"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En août 2026, la NASA a lancé le télescope spatial Nancy Grace Roman, destiné à étudier l'énergie noire et la matière noire. Quelle entreprise a fourni la fusée Falcon Heavy qui l'a mis en orbite ?",
+    "correct_answer": "SpaceX",
+    "incorrect_answers": [
+      "Blue Origin",
+      "Boeing",
+      "ArianeGroup",
+      "Une entreprise de déménagement interstellaire"
+    ],
+    "explanation": "Le lancement a eu lieu le 30 août 2026 depuis le centre spatial Kennedy, à bord d'une Falcon Heavy. Le télescope se rendra au point de Lagrange L2, à environ un million de miles de la Terre, comme le télescope James Webb.",
+    "source_url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/",
+    "as_of": "2026-08-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-60"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En août 2026, l'agence spatiale japonaise JAXA a fixé au 20 octobre le lancement de sa mission MMX, qui vise à rapporter les premiers échantillons d'une lune de Mars. De laquelle ?",
+    "correct_answer": "Phobos",
+    "incorrect_answers": [
+      "Déimos",
+      "Europe",
+      "Titan",
+      "Celle qu'on voit le soir"
+    ],
+    "explanation": "La sonde MMX décollera à bord d'une fusée H3 depuis le centre de Tanegashima. Phobos, la plus grande des deux lunes martiennes, est l'objectif de cette première mission de retour d'échantillons du système martien.",
+    "source_url": "https://www.mmx.jaxa.jp/en/",
+    "as_of": "2026-08-20",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-61"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En août 2026, une équipe internationale a décrit sept nouvelles espèces de grenouilles diamant, un genre endémique de quelle grande île de l'océan Indien ?",
+    "correct_answer": "Madagascar",
+    "incorrect_answers": [
+      "Sri Lanka",
+      "Bornéo",
+      "Nouvelle-Guinée",
+      "Celle qui brille la nuit"
+    ],
+    "explanation": "L'étude menée par l'université de Copenhague a combiné ADN d'échantillons actuels et de spécimens de musée vieux d'un siècle pour résoudre une énigme taxonomique de douze ans. Ces grenouilles vivent cachées sous la litière des forêts malgaches.",
+    "source_url": "https://www.sciencedaily.com/releases/2026/08/260828082347.htm",
+    "as_of": "2026-08-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-62"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En septembre 2026, la fusée Spectrum de l'entreprise allemande Isar Aerospace est devenue le premier lanceur européen privé à atteindre l'orbite depuis l'Europe continentale. Depuis quel spatioport norvégien s'est-elle envolée ?",
+    "correct_answer": "Andøya",
+    "incorrect_answers": [
+      "Kourou",
+      "Kiruna",
+      "Plesetsk",
+      "Celui où les rennes font le décompte"
+    ],
+    "explanation": "Le décollage a eu lieu le 5 septembre 2026 depuis Andøya, dans le nord de la Norvège. Premier vol en 2025 : une trentaine de secondes. Cette fois, Spectrum a déployé six charges utiles commerciales et éducatives en orbite basse.",
+    "source_url": "https://fr.euronews.com/2026/09/06/lallemagne-a-une-fusee-pour-mettre-des-satellites-en-orbite-premier-succes-en-europe-conti",
+    "as_of": "2026-09-05",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-63"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En septembre 2026, Apple a présenté son premier iPhone pliable, doté d'un écran intérieur de 7,6 pouces une fois déployé. Sous quel nom ce modèle a-t-il été lancé ?",
+    "correct_answer": "iPhone Duo",
+    "incorrect_answers": [
+      "iPhone Fold",
+      "iPhone Pliage",
+      "iPhone 18 Fold",
+      "L'iPhone Sandwich"
+    ],
+    "explanation": "Annoncé le 9 septembre 2026, l'iPhone Duo se referme sur un écran extérieur de 5,4 pouces et s'ouvre sur la plus grande dalle jamais vue sur un iPhone, avec un prix de départ de 1 999 dollars. Les précommandes ont débuté le 16 octobre.",
+    "source_url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+    "as_of": "2026-09-09",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-64"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En septembre 2026, l'expérience Lux-Zeplin a capté un signal intrigant, peut-être la première trace de matière noire, au fond d'une ancienne mine d'or de 1,5 km de profondeur. Dans quel État américain se trouve ce laboratoire souterrain ?",
+    "correct_answer": "Le Dakota du Sud",
+    "incorrect_answers": [
+      "Le Nevada",
+      "Le Wyoming",
+      "Le Dakota du Nord",
+      "Celui des mineurs de fond à lunettes soudées"
+    ],
+    "explanation": "Le détecteur baigne dans environ dix tonnes de xénon liquide ultra-pur, au Sanford Underground Research Facility, à Lead. L'événement inexpliqué n'avait qu'environ 0,5 % de chances de provenir d'un bruit de fond connu, d'où la prudence des chercheurs.",
+    "source_url": "https://www.rts.ch/info/sciences-tech/2026/article/matiere-noire-une-trace-potentielle-decelee-aux-etats-unis-29350088.html",
+    "as_of": "2026-09-01",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-65"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En septembre 2026, la NASA a annoncé qu'un vaste motif atmosphérique à dix côtés, le décagone, entoure le pôle Sud de quelle planète ?",
+    "correct_answer": "Saturne",
+    "incorrect_answers": [
+      "Jupiter",
+      "Neptune",
+      "Uranus",
+      "La planète des formes bonus"
+    ],
+    "explanation": "Le décagone, cousin de l'hexagone bien connu du pôle Nord, a été confirmé par Hubble dans une étude de Science Advances. Il semble être apparu après 2023, alors que l'hexagone nordique dure depuis plus de 40 ans.",
+    "source_url": "https://www.cieletespace.fr/article/le-decagone-de-saturne-confirme-grace-a-hubble",
+    "as_of": "2026-09-02",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-66"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, l'astronaute de l'ESA Sophie Adenot est rentrée sur Terre après le plus long séjour spatial en continu jamais réalisé par un Européen. Quelle est sa nationalité ?",
+    "correct_answer": "Française",
+    "incorrect_answers": [
+      "Belge",
+      "Allemande",
+      "Italienne",
+      "Citoyenne de la Station"
+    ],
+    "explanation": "Cette colonelle de l'armée de l'Air a passé 235 jours à bord de l'ISS, à 400 kilomètres au-dessus de la Terre, un record pour un astronaute européen, homme ou femme confondus.",
+    "source_url": "https://www.rfi.fr/fr/france/20261008-l-astronaute-fran%C3%A7aise-sophie-adenot-est-de-retour-sur-terre-apr%C3%A8s-huit-mois-dans-l-espace",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-67"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "En octobre 2026, la tour de Djeddah a dépassé 474 mètres de haut alors qu'elle n'est pas encore achevée. Quelle hauteur finale le projet vise-t-il ?",
+    "correct_answer": "Plus de 1 000 mètres",
+    "incorrect_answers": [
+      "Environ 830 mètres",
+      "Environ 650 mètres",
+      "Environ 900 mètres",
+      "Jusqu'à la Lune"
+    ],
+    "explanation": "Conçue par Adrian Smith, l'architecte du Burj Khalifa de Dubaï, la tour doit dépasser le kilomètre de haut et devrait être achevée fin 2028, après des années d'interruption du chantier.",
+    "source_url": "https://newatlas.com/architecture/jec-jeddah-tower-15-tallest-saudi-october-update/",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-68"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "En octobre 2026, Anthropic a rendu public son dossier d'introduction en Bourse. Son fondateur Dario Amodei avait créé l'entreprise après son départ de quelle autre société d'IA ?",
+    "correct_answer": "OpenAI",
+    "incorrect_answers": [
+      "Google",
+      "Meta",
+      "Microsoft",
+      "Le club de robotique de son lycée"
+    ],
+    "explanation": "Fondée en 2021 à San Francisco, Anthropic est devenue l'un des leaders des modèles d'IA avec son assistant Claude et pourrait réaliser l'une des plus grandes introductions en Bourse de l'histoire américaine.",
+    "source_url": "https://www.lefigaro.fr/secteur/high-tech/anthropic-donne-le-coup-d-envoi-d-une-introduction-en-bourse-record-20261026",
+    "as_of": "2026-10-26",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-69"
+  },
+  {
+    "lang": "fr",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "En octobre 2026, l'observatoire Vera C. Rubin, installé au Chili, a annoncé la découverte de 2026 ED138, un objet situé au-delà de l'orbite de Pluton. À quelle catégorie d'astre pourrait-il appartenir ?",
+    "correct_answer": "Planète naine",
+    "incorrect_answers": [
+      "Comète",
+      "Astéroïde",
+      "Exoplanète",
+      "La planète de secours"
+    ],
+    "explanation": "Cet objet se trouve à environ 46 unités astronomiques du Soleil, contre 40 en moyenne pour Pluton. Son diamètre est estimé entre 600 et 1 500 kilomètres, mais des observations dans l'infrarouge seront nécessaires pour confirmer son statut.",
+    "source_url": "https://www.numerama.com/sciences/2362319-au-dela-de-pluton-on-a-peut-etre-trouve-une-nouvelle-planete-naine-dans-notre-systeme-solaire.html",
+    "as_of": "2026-10-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-70"
+  }
+]

@@ -1,0 +1,477 @@
+[
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In May 2026, Bulgaria won the Eurovision Song Contest for the first time in its history, with Dara singing the party anthem Bangaranga. In which city was the final held?",
+    "correct_answer": "Vienna",
+    "incorrect_answers": [
+      "Basel",
+      "Malmo",
+      "Turin",
+      "The Eurovision gift shop"
+    ],
+    "explanation": "Dara, a 27-year-old singer who is a star at home in Bulgaria, had not been among the favourites to win. She took the title at the contest's 70th edition, where Israel's Noam Bettan came second and Australia's Delta Goodrem fourth.",
+    "source_url": "https://www.rfi.fr/en/culture/20260517-bulgaria-wins-eurovision-song-contest-israel-comes-second-again",
+    "as_of": "2026-05-17",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-21"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In May 2026, the joint European and Chinese space mission Smile lifted off on a Vega-C rocket to study Earth's magnetic shield against the solar wind. Europe's Spaceport is located in which South American territory?",
+    "correct_answer": "French Guiana",
+    "incorrect_answers": [
+      "Falkland Islands",
+      "Galapagos Islands",
+      "Easter Island",
+      "A launch pad with stage fright"
+    ],
+    "explanation": "Smile, short for Solar wind Magnetosphere Ionosphere Link Explorer, is the first mission that ESA and China have jointly selected, designed, implemented and launched. It will make the first X-ray observations of Earth's magnetic shield and watch the northern lights for up to 45 hours at a time.",
+    "source_url": "https://www.esa.int/articles/about-us/directorates/science/smile/smile-lifts-off-on-quest-to-reveal-earth-s-invisible-shield-against-the-solar-wind",
+    "as_of": "2026-05-19",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-22"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In May 2026, astronomers announced that the James Webb Space Telescope had characterised LAP1-B, an ultra-faint galaxy from 13 billion years ago and the most chemically primitive star-forming galaxy yet found. Which element, essential to life, is scarcest in it?",
+    "correct_answer": "Oxygen",
+    "incorrect_answers": [
+      "Carbon",
+      "Iron",
+      "Nitrogen",
+      "Unobtainium"
+    ],
+    "explanation": "The team measured an oxygen abundance of only about 1/240th of the Sun's after staring at the galaxy for more than 30 hours. Magnified about 100 times by a gravitational lens, LAP1-B is seen as the ancestor of the ultra-faint fossil galaxies found near the Milky Way today.",
+    "source_url": "https://www.nao.ac.jp/en/news/science/2026/20260514-dos.html",
+    "as_of": "2026-05-14",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-23"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In June 2026, data from the market intelligence firm Sensor Tower showed the ChatGPT app had become the fastest ever to reach which user milestone?",
+    "correct_answer": "1 billion monthly active users",
+    "incorrect_answers": [
+      "500 million monthly active users",
+      "2 billion monthly active users",
+      "100 million monthly active users",
+      "Everyone, twice"
+    ],
+    "explanation": "ChatGPT passed the benchmark roughly three years after its late-2022 launch, faster than Google Maps, TikTok, Instagram or YouTube. It was the first AI app to reach the mark.",
+    "source_url": "https://www.reuters.com/technology/chatgpt-app-hits-1-billion-monthly-active-users-record-time-data-shows-2026-06-02",
+    "as_of": "2026-06-02",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-24"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In June 2026, which musical, a gentle parody of Golden Age Broadway shows like The Music Man, won best musical at the 79th Tony Awards?",
+    "correct_answer": "Schmigadoon!",
+    "incorrect_answers": [
+      "The Lost Boys",
+      "Ragtime",
+      "Cats: The Jellicle Ball",
+      "A musical about doing taxes"
+    ],
+    "explanation": "Schmigadoon! won four Tonys in total, matching The Lost Boys, while the revival of Death of a Salesman led the night with six. Pop star Pink hosted the ceremony at Radio City Music Hall.",
+    "source_url": "https://www.npr.org/2026/06/08/nx-s1-5843063/schmigadoon-wins-best-musical-at-79th-annual-tony-awards",
+    "as_of": "2026-06-07",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-25"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In June 2026, Apple introduced Siri AI, an entirely new and far more capable version of which long-running voice assistant?",
+    "correct_answer": "Siri",
+    "incorrect_answers": [
+      "Alexa",
+      "Cortana",
+      "Bixby",
+      "Clippy's comeback"
+    ],
+    "explanation": "Unveiled at WWDC on June 8, Siri AI can answer questions about what is on your screen, search across apps using personal context, and chat in a dedicated Siri app. A public beta arrives later in 2026, starting in English.",
+    "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+    "as_of": "2026-06-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-26"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In June 2026, NASA announced that the James Webb Space Telescope had found about 30 times more of which substance in the interstellar comet 3I/ATLAS than in any comet from our own solar system?",
+    "correct_answer": "Deuterium",
+    "incorrect_answers": [
+      "Tritium",
+      "Helium-3",
+      "Antihydrogen",
+      "Hydrogen, but espresso"
+    ],
+    "explanation": "The heavy hydrogen ratio suggests 3I/ATLAS formed in a deeply frozen environment, possibly 10 to 12 billion years ago during the era astronomers call cosmic noon. It is only the third interstellar comet ever confirmed.",
+    "source_url": "https://science.nasa.gov/missions/webb/nasas-webb-finds-clues-to-ancient-distant-origin-of-comet-3i-atlas/",
+    "as_of": "2026-06-22",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-27"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In June 2026, the Vera Rubin Observatory in Chile officially began its 10-year Legacy Survey of Space and Time. Which record-setting instrument does the telescope use to capture the sky?",
+    "correct_answer": "The largest digital camera ever built",
+    "incorrect_answers": [
+      "The largest radio dish ever built",
+      "The most powerful laser ever built",
+      "The most sensitive gravitational wave detector",
+      "A very big phone camera"
+    ],
+    "explanation": "Rubin's 3200-megapixel camera takes a new image of the sky roughly every 40 seconds. During early survey work the observatory already discovered more than 11,000 never-before-seen asteroids, and the survey will revisit each patch of sky about 800 times.",
+    "source_url": "https://noirlab.edu/public/news/noirlab2616/",
+    "as_of": "2026-06-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-28"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In July 2026, the Euclid space telescope revealed 31 of the oldest quasars ever documented, including the two most ancient ones, dating back to the first few hundred million years of what?",
+    "correct_answer": "The universe",
+    "incorrect_answers": [
+      "The Roman Empire",
+      "The Age of Dinosaurs",
+      "Our solar system",
+      "The universe, just after its warm-up act"
+    ],
+    "explanation": "Euclid, a European Space Agency telescope with NASA participation, spotted 31 ancient quasars, brilliant galactic cores powered by matter falling into supermassive black holes. Two formed within the universe's first 670 million years.",
+    "source_url": "https://science.nasa.gov/blogs/science-news/2026/07/06/esas-euclid-space-telescope-finds-universes-most-ancient-quasars/",
+    "as_of": "2026-07-06",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-29"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In July 2026, Skyroot Aerospace made India the third country after the US and China to have a private company launch a rocket into orbit. In which country is Skyroot based?",
+    "correct_answer": "India",
+    "incorrect_answers": [
+      "Japan",
+      "France",
+      "Australia",
+      "India's spare bedroom"
+    ],
+    "explanation": "The Hyderabad-based startup launched its Vikram-1 rocket from Sriharikota on July 18, after becoming India's first space-tech unicorn. The rocket is named after Vikram Sarabhai, considered the father of India's space programme.",
+    "source_url": "https://www.bbc.com/news/articles/clyekv7rld3o",
+    "as_of": "2026-07-18",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-30"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In July 2026, the ancient Buddhist site of Sarnath, where the Buddha is said to have delivered his first sermon, was added to the UNESCO World Heritage List. In which Indian city is it located?",
+    "correct_answer": "Varanasi",
+    "incorrect_answers": [
+      "Agra",
+      "Jaipur",
+      "Kolkata",
+      "Deer Park, just past the gift shop"
+    ],
+    "explanation": "The inscription was announced in Busan at the 48th session of the World Heritage Committee, making Sarnath India's 45th World Heritage site. The site's monuments include the Chaukhandi and Dhamek stupas, in an area known as Deer Park.",
+    "source_url": "https://www.unesco.org/en/articles/ancient-buddhist-site-sarnath-inscribed-unesco-world-heritage-list",
+    "as_of": "2026-07-25",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-31"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In July 2026, archaeologists in Egypt announced the discovery of a well-preserved Byzantine-era city with a basilica-style church in which desert oasis?",
+    "correct_answer": "Dakhla oasis",
+    "incorrect_answers": [
+      "Siwa oasis",
+      "Fayum oasis",
+      "Bahariya oasis",
+      "Oasis, the band"
+    ],
+    "explanation": "The fourth-century settlement in Egypt's western desert includes streets, watchtowers and bread ovens, plus about 200 pottery fragments used as writing material. Gold coins from the reign of Roman emperor Constantius II were also found.",
+    "source_url": "https://www.theguardian.com/world/2026/jul/04/archaeologists-uncover-ancient-byzantine-city-in-egypts-western-desert",
+    "as_of": "2026-07-04",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-32"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In July 2026, Chinese memory chipmaker CXMT saw its shares soar nearly 470 percent on their Shanghai debut, briefly making it the most valuable listed company in mainland China. What kind of chips does CXMT make?",
+    "correct_answer": "Memory chips",
+    "incorrect_answers": [
+      "Graphics chips",
+      "Automotive chips",
+      "Quantum chips",
+      "Chocolate chips"
+    ],
+    "explanation": "ChangXin Memory Technologies, founded in 2016 and headquartered in Hefei, makes DRAM chips that power AI data centres, phones and PCs. The surge gave it a valuation of about 3.3 trillion yuan, or roughly 487 billion dollars.",
+    "source_url": "https://www.bbc.co.uk/news/articles/c9q9w3x9qn2o",
+    "as_of": "2026-07-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-33"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In August 2026, ESA and JAXA announced that the BepiColombo mission, more than seven years into its journey, would begin its arrival phase at which planet?",
+    "correct_answer": "Mercury",
+    "incorrect_answers": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "The planet closest to the vending machine"
+    ],
+    "explanation": "BepiColombo launched in 2018 and is Europe and Japan's first mission to Mercury. In August 2026 ESA confirmed that the transfer module would separate on 3 September, with both orbiters due to enter orbit around Mercury in late 2026.",
+    "source_url": "https://www.esa.int/Enabling_Support/Operations/Watch_live_BepiColombo_begins_its_arrival_at_Mercury",
+    "as_of": "2026-08-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-34"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In August 2026, NASA launched the Nancy Grace Roman Space Telescope to study dark energy and dark matter. Which company provided the Falcon Heavy rocket that carried it into orbit?",
+    "correct_answer": "SpaceX",
+    "incorrect_answers": [
+      "Blue Origin",
+      "Boeing",
+      "United Launch Alliance",
+      "The one run by a man named Nancy"
+    ],
+    "explanation": "Roman lifted off on a Falcon Heavy from Kennedy Space Center on 30 August 2026, becoming the fourth primary NASA mission launched by that rocket. The observatory is heading to the L2 point about a million miles from Earth.",
+    "source_url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/",
+    "as_of": "2026-08-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-35"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In August 2026, JAXA announced a 20 October launch for its Martian Moons eXploration mission. Which Martian moon is the planned sample-return destination?",
+    "correct_answer": "Phobos",
+    "incorrect_answers": [
+      "Deimos",
+      "Amalthea",
+      "Io",
+      "The one with the nicer views"
+    ],
+    "explanation": "JAXA confirmed the MMX spacecraft would launch on an H3 rocket from Tanegashima, aiming to collect the first samples ever returned from the Martian system. Phobos, the larger of Mars' two moons, is the target.",
+    "source_url": "https://www.mmx.jaxa.jp/en/",
+    "as_of": "2026-08-20",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-36"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In August 2026, an international team announced seven newly identified species of diamond frogs from which island nation, taking the known species count in that genus to 27?",
+    "correct_answer": "Madagascar",
+    "incorrect_answers": [
+      "Sri Lanka",
+      "Borneo",
+      "New Guinea",
+      "The one shaped like a diamond"
+    ],
+    "explanation": "The University of Copenhagen-led study used DNA from both modern frogs and century-old museum specimens to untangle a 12-year taxonomy puzzle. Diamond frogs get their name from their gem-like shape and spend much of their lives under leaf litter.",
+    "source_url": "https://www.sciencedaily.com/releases/2026/08/260828082347.htm",
+    "as_of": "2026-08-30",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-37"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In September 2026, the German company Isar Aerospace became the first European company to reach orbit with its own rocket, lifting off from a spaceport in which country?",
+    "correct_answer": "Norway",
+    "incorrect_answers": [
+      "Sweden",
+      "Iceland",
+      "Germany",
+      "The one with the puffins as mission control"
+    ],
+    "explanation": "The two-stage Spectrum rocket lifted off from Andoya Spaceport in northern Norway on September 5, 2026, carrying six commercial and educational CubeSats. The first Spectrum flight in 2025 lasted only about 30 seconds before falling into the sea.",
+    "source_url": "https://www.esa.int/Enabling_Support/Space_Transportation/Boost/Isar_Aerospace_achieves_first_launch_to_orbit_from_continental_Europe",
+    "as_of": "2026-09-05",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-38"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In September 2026, Apple unveiled its first foldable iPhone, which opens to reveal a 7.6-inch inner display. What is the new model called?",
+    "correct_answer": "iPhone Duo",
+    "incorrect_answers": [
+      "iPhone Fold",
+      "iPhone Flex",
+      "iPhone 18 Fold",
+      "The iPhone Flip Phone, honestly"
+    ],
+    "explanation": "Apple announced the iPhone Duo on September 9, 2026, its first foldable, starting at 1999 dollars with pre-orders from October 16. Closed, it has a 5.4-inch outer screen; opened, the 7.6-inch display is the largest ever on an iPhone.",
+    "source_url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+    "as_of": "2026-09-09",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-39"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In September 2026, the LUX-ZEPLIN experiment reported the most compelling hint of dark matter yet: a single particle event recorded in a tank of which liquid element, buried under a South Dakota gold mine?",
+    "correct_answer": "Xenon",
+    "incorrect_answers": [
+      "Argon",
+      "Helium",
+      "Krypton",
+      "Liquid suspense"
+    ],
+    "explanation": "The detector holds 10 tons of ultrapure liquid xenon nearly a mile underground. One unexplained event had only about a 0.5 percent chance of coming from known backgrounds, below the 5-sigma threshold needed to claim a discovery.",
+    "source_url": "https://www.brown.edu/news/2026-09-01/lz-dark-matter-results",
+    "as_of": "2026-09-01",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-40"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In September 2026, astronomers revealed a giant 10-sided wave pattern encircling the south pole of which planet, the first regular-sided jet pattern ever seen in its southern hemisphere?",
+    "correct_answer": "Saturn",
+    "incorrect_answers": [
+      "Jupiter",
+      "Neptune",
+      "Uranus",
+      "The planet of the bonus shapes"
+    ],
+    "explanation": "Hubble observations confirmed the decagon, a cousin of Saturn's famous northern hexagon, in a study published in Science Advances. The hexagon has persisted for more than 40 years, while the new decagon appears to have formed only recently, after 2023.",
+    "source_url": "https://esahubble.org/news/heic2612/",
+    "as_of": "2026-09-02",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-41"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In October 2026, ESA astronaut Sophie Adenot returned to Earth after the longest uninterrupted stay in space by any European astronaut. Which company built the Dragon capsule that carried her home?",
+    "correct_answer": "SpaceX",
+    "incorrect_answers": [
+      "Boeing",
+      "Blue Origin",
+      "Rocket Lab",
+      "Drogon from Game of Thrones"
+    ],
+    "explanation": "Adenot splashed down off California aboard the SpaceX Dragon Freedom with her three Crew-12 crewmates. During the mission she became the first French woman to perform a spacewalk, completing three in all.",
+    "source_url": "https://www.rfi.fr/en/science-and-technology/20261010-french-astronaut-recounts-astonishing-emotions-after-return-to-earth",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-42"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 1,
+    "question": "In October 2026, the still-unfinished Jeddah Tower rose past 474 metres, already placing it among the 15 tallest buildings on Earth. In which country is it under construction?",
+    "correct_answer": "Saudi Arabia",
+    "incorrect_answers": [
+      "United Arab Emirates",
+      "Qatar",
+      "Egypt",
+      "Narnia"
+    ],
+    "explanation": "Designed by Adrian Smith, who also drew up Dubai's 828-metre Burj Khalifa, the tower is meant to exceed 1,000 metres and is due for completion in late 2028 after years of delays.",
+    "source_url": "https://newatlas.com/architecture/jec-jeddah-tower-15-tallest-saudi-october-update/",
+    "as_of": "2026-10-08",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-43"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 2,
+    "question": "In October 2026, the AI company Anthropic publicly filed for one of the largest stock market listings in US history. Which chatbot does it develop?",
+    "correct_answer": "Claude",
+    "incorrect_answers": [
+      "Gemini",
+      "Copilot",
+      "Llama",
+      "Inspector Clouseau"
+    ],
+    "explanation": "The San Francisco firm will list under the symbol ANT, with investors valuing it at more than $1.5 trillion. Its filing showed revenue of $16.3 billion for the first half of 2026 alone.",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/26/anthropic-files-listing-stock-market",
+    "as_of": "2026-10-26",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-44"
+  },
+  {
+    "lang": "en",
+    "category": "recent-news",
+    "difficulty": 3,
+    "question": "In October 2026, the Vera C. Rubin Observatory in Chile announced its first candidate for which category of solar system object, found beyond the orbit of Pluto?",
+    "correct_answer": "Dwarf planet",
+    "incorrect_answers": [
+      "Comet",
+      "Asteroid",
+      "Exoplanet",
+      "The solar system's spare planet"
+    ],
+    "explanation": "Provisionally named 2026 ED138, the object sits about 46 astronomical units from the Sun, farther out than Pluto, and is estimated to be between 600 and 1,500 kilometres across.",
+    "source_url": "https://www6.slac.stanford.edu/news/2026-10-27-nsf-doe-vera-c-rubin-observatory-reveals-its-first-dwarf-planet-candidate-our-solar",
+    "as_of": "2026-10-27",
+    "origin": "claude",
+    "reviewed": false,
+    "id": "news-20261106-45"
+  }
+]
