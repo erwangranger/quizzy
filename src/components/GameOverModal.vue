@@ -4,6 +4,7 @@
       <!-- Single player scores -->
       <div v-if="store.solo">
         <h1>{{ t('gameover.title') }}</h1>
+        <p class="player-name">{{ store.players[0]?.name }}</p>
         <h2 v-if="store.setup.weightByDifficulty">{{ t('gameover.points', { points: store.players[0]?.score.total ?? 0 }) }}</h2>
         <h2 v-else>{{ t('gameover.score', { score: store.players[0]?.score.total ?? 0, total: store.answeredTotal }) }}</h2>
         <p>{{ scoreMessage }}</p>
@@ -116,6 +117,13 @@ button {
 
 h1, p {
   color: $color-darkest;
+}
+
+.player-name {
+  color: $color-dark;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
 }
 
 h2 {

@@ -46,6 +46,8 @@ describe('game-over tally render', () => {
 
     const modal = wrapper.find('.modal .container')
     expect(modal.exists()).toBe(true)
+    // The player's name is displayed even in solo (one player).
+    expect(modal.text()).toContain(store.players[0].name)
     // The tally heading is rendered and at least one category line follows.
     expect(modal.text()).toContain(t('gameover.breakdown'))
     expect(wrapper.findAll('.breakdown li').length).toBeGreaterThan(0)
