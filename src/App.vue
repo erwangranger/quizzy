@@ -1,7 +1,5 @@
 <template>
-  <!-- starPower hack for proper animation display on style binding -->
-  <div class="container" :style="store.starPower ? 'overflow: hidden' : 'overflow: inherit'">
-    <GameOverModal v-if="store.isGameOver" />
+  <div class="container">
 
     <div class="about-button" @click="store.aboutToggle()">
       <transition name="fade" mode="out-in">

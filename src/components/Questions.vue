@@ -275,9 +275,24 @@ h3 {
 // Verdict marks beside the answers (scheme 3, answer-marks mockup):
 // stroke-drawn ringed ✓ on the correct pill, ✗ beside each answer a player
 // picked, and player names stacked as tags on the pill they chose.
+// Verdict marks slide in over 0.25s (transform, composited); the pills shift
+// right in one margin step at the same moment. No padding transition: animating
+// padding re-measures the whole list on every frame (janky on iOS).
 ul.revealed {
     padding-left: 40px;
-    transition: padding-left 0.25s;
+
+    .vmark {
+        animation: mark-in 0.25s ease-out forwards;
+    }
+}
+
+@keyframes mark-in {
+    from {
+        transform: translateY(-50%) translateX(-16px);
+    }
+    to {
+        transform: translateY(-50%) translateX(0);
+    }
 }
 
 li {
@@ -389,8 +404,7 @@ button.correct {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    ul.revealed { transition: none; }
-
+    ul.revealed .vmark { animation: none; }
     .vmark circle,
     .vmark path {
         animation: none;

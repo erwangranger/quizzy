@@ -1,11 +1,12 @@
 <template>
-  <div>
-  <template v-if="store.starPower">
+  <!-- fixed inset-0: clips the stars' flight (they're absolutely positioned,
+       so ancestor overflow does not contain them) and gives them a stable
+       containing block. pointer-events: none keeps taps flowing to the board. -->
+  <div v-if="store.starPower" class="star-layer">
     <i
     v-for="star in quantity"
     :key="star"
     class="material-icons star">star</i>
-  </template>
   </div>
 </template>
 
@@ -31,6 +32,14 @@ const quantity = ref(10)
     right: math.random(10) + vw;
     bottom: math.random(10) + vh;
     left: math.random(10) + vw;
+}
+
+.star-layer {
+    position: fixed;
+    inset: 0;
+    overflow: hidden; // the layer is the stars' containing block, so this clips their flight
+    pointer-events: none;
+    z-index: 999;
 }
 
 // Star element
