@@ -95,8 +95,12 @@ The joke must never punch at people. Adjust by question type:
 - `source_url` + `as_of` required; `reviewed: true` only after verifying the fact
   against the source article. Known flags (e.g. photo attribution in
   `news-20261014-29`) must be resolved, not assumed.
-- Factual, not partisan. Prefer science, culture, sports, business, space, geography,
-  notable firsts. Avoid tragedies and violent events as quiz material entirely.
+- Factual, not partisan. Prefer science, space, business, geography, culture and
+  notable firsts. NO sports results or score-based questions (owner decision
+  2026-11-06: no "which team won by how many points" content — the Oct 2026
+  sports strips covered MLB, F1, NHL, MLS, college football, rugby, curling,
+  tennis, track and marathon results). Avoid tragedies and violent events as
+  quiz material entirely.
 - The correct answer must be verifiable from the linked article alone.
 
 ## Quality gates (all required before a question ships)

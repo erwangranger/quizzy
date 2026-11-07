@@ -21,7 +21,12 @@ Let `DATE` be today's date (`YYYY-MM-DD`) and `STAMP` the same without dashes (`
 - Run `node scripts/news-context.mjs --days 90`. Every line is an existing news question. Do not write a question about the same event or fact as any of them. IDs `news-STAMP-<nn>` must not collide with any listed id (start `nn` after the highest used for `STAMP`, else at `01`). en and fr share one numbering sequence.
 
 ## 3. Research and write
-- Use web search to find events from the last `days` days. Prefer science, space, culture, sports, business, geography and notable firsts. Avoid tragedies, violence and partisan framing. Use only verifiable facts, never opinions or predictions.
+- Use web search to find events from the last `days` days. Prefer science, space,
+  business, geography, culture and notable firsts. NO sports results or score-based
+  questions (owner decision 2026-11-06: no team/score/who-won content — MLB, F1,
+  NHL, MLS, college football, rugby, curling, tennis, track, marathon results are
+  all out). Avoid tragedies, violence and partisan framing. Use only verifiable
+  facts, never opinions or predictions.
 - Every question has to be checked against an article you actually opened. `source_url` is that article, from a reputable outlet or primary source. `as_of` is the date the fact was true.
 - Write `count` questions per language. French questions are written natively in French (they may cover the same or different events as the English ones, but are never word-for-word translations). Sources for fr questions may be French-language outlets.
 - Question text is date-anchored ("In October 2026, ..." / "En octobre 2026, ..."). Use `category: "recent-news"`, `origin: "claude"`, `reviewed: false`. Explanations go in your own words, never copied from the source.

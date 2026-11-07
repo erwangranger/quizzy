@@ -155,7 +155,7 @@ Amended 2026-10-21 (owner decision): generation runs as a **weekly Claude Code D
    - Web-searches events from the last N days and writes questions following the `quizzy-question-crafting` skill and these content rules:
      - Questions must be about verifiable facts, not opinions or predictions.
      - Every question must be date-anchored in its text and have `as_of` and a `source_url` from a reputable outlet or primary source found via search.
-     - Avoid tragedies and violent events as quiz material; avoid partisan framing; prefer science, culture, sports, business, space, geography, notable firsts.
+     - Avoid tragedies and violent events as quiz material; avoid partisan framing; prefer science, space, business, geography, culture, notable firsts. NO sports results or score-based questions (amended 2026-11-06, owner decision: no team/score/who-won content; replaces the earlier "prefer sports" wording).
      - The correct answer must be unambiguous; incorrect answers must be plausible but clearly wrong.
      - Explanations written in the model's own words, never copied from the source.
      - French questions are written natively, not translated.
