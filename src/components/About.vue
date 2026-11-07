@@ -77,6 +77,7 @@ const customQuizzes = [
   { name: 'Quick demo', file: 'demo-bank.json' },
   { name: 'Logic and reasoning (en)', file: 'logic-bank_en.json' },
   { name: 'MCP Gateway', file: 'mcp-gateway-bank.json' },
+  { name: 'Pluralisme dans les organisations (fr)', file: 'pluralisme.json' },
   { name: 'Logique et raisonnement (fr)', file: 'logic-bank_fr.json' },
 ]
 

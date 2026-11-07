@@ -1,0 +1,282 @@
+[
+  {
+    "id": "pluralisme-0001",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Une entreprise doit répondre en même temps à un régulateur public, à des investisseurs et à des communautés locales, chacun avec ses exigences légitimes. Comment appelle-t-on cette situation ?",
+    "correct_answer": "Un pluralisme institutionnel",
+    "incorrect_answers": [
+      "Une bureaucratie purifiée",
+      "Un monopole institutionnel",
+      "Un désalignement stratégique",
+      "Un problème de plus pour le stagiaire"
+    ],
+    "explanation": "C’est le pluralisme institutionnel de Kraatz et Block (2010) : l’organisation opère au sein de plusieurs sphères — réglementaires, normatives et cognitives — et joue en quelque sorte à plusieurs jeux dont les règles diffèrent. Ce contexte rend les explications classiques de la légitimité et du changement « nécessaires mais non suffisantes »."
+  },
+  {
+    "id": "pluralisme-0002",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Dans un comité, un groupe s’oppose vigoureusement à la fermeture d’un programme. Pour la perspective pluraliste des organisations, comment considérer cette opposition ?",
+    "correct_answer": "Comme un phénomène normal et légitime",
+    "incorrect_answers": [
+      "Comme une aberration causée par des fauteurs de trouble mal informés",
+      "Comme une preuve d’échec du management",
+      "Comme un signal à réprimer immédiatement",
+      "Comme une tradition à célébrer chaque printemps"
+    ],
+    "explanation": "Hardy (1991) oppose les deux visions : le modèle unitaire juge la résistance irrationnelle, œuvre de « troublemakers » mal informés ; la perspective pluraliste y voit un conflit normal et légitime entre groupes aux buts divergents — sans exclure collaboration et consensus."
+  },
+  {
+    "id": "pluralisme-0003",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Dans une organisation, les groupes internes poursuivent des buts divergents, chacun disposant d’un pouvoir légitime. Comment nommer cette source de pluralisme ?",
+    "correct_answer": "Le pluralisme motivé de l’intérieur (internally-motivated)",
+    "incorrect_answers": [
+      "Le pluralisme motivé de l’extérieur (externally-motivated)",
+      "Le pluralisme circumstantiel",
+      "Le pluralisme résiduel",
+      "Le pluralisme en kit, à assembler soi-même"
+    ],
+    "explanation": "Jarzabkowski et Fenton (2006) distinguent le pluralisme né des intérêts des groupes internes (« internally-motivated ») de celui né de demandes environnementales multiples et contradictoires (« externally-motivated »). Leur cadre diagnostique croise les deux pour repérer le risque d’association destructrice."
+  },
+  {
+    "id": "pluralisme-0004",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Qu’est-ce qu’une organisation hybride ?",
+    "correct_answer": "Une organisation qui poursuit une mission sociale en s’appuyant fortement sur des revenus commerciaux",
+    "incorrect_answers": [
+      "Une organisation qui mène deux activités commerciales de front",
+      "Une organisation sans hiérarchie ni règles formelles",
+      "Une organisation qui alterne public-privé selon les saisons",
+      "Mi-castor, mi-banque"
+    ],
+    "explanation": "L’organisation hybride allie mission sociale et revenus commerciaux. L’étude d’Echoing Green avec Harvard (Battilana et al., 2012) a passé au crible plus de 3 500 candidatures : en 2010-2011, près de la moitié misait sur un modèle hybride. Le danger qui la guette : la dérive de mission, un focus sur les profits au détriment du bien social."
+  },
+  {
+    "id": "pluralisme-0005",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Un collectif en ligne n’a ni membres officiels ni carte de membre. Qu’est-ce qui lui permet d’apparaître quand même comme un acteur organisé ?",
+    "correct_answer": "Des énoncés sur son identité, proférés et validés au nom du collectif",
+    "incorrect_answers": [
+      "Une hiérarchie cachée de modérateurs",
+      "Une personnalité juridique déposée",
+      "Le silence absolu de ses membres",
+      "Un badge numérique distribué à la foire"
+    ],
+    "explanation": "C’est la thèse de Dobusch et Schoeneborn (2015) à propos d’Anonymous : l’« organisationnalité » d’un collectif fluide s’accomplit par des énoncés d’identité (identity claims) qui se valident mutuellement. Leur analyse code 127 claims sur deux opérations, parmi 111 opérations recensées."
+  },
+  {
+    "id": "pluralisme-0006",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Dans la métaphore du changement en trois phases (dégel, changement, regel), quel stade devient l’état permanent d’une organisation qui se veut « fluide » ?",
+    "correct_answer": "Le dégel (unfreezing)",
+    "incorrect_answers": [
+      "Le changement lui-même (moving)",
+      "Le regel (refreezing)",
+      "Le préchauffage",
+      "La mise en veille prolongée"
+    ],
+    "explanation": "L’organisation fluide rêvée par les partisans de la fluidité a le dégel comme état commun et s’abstient de tout regel (Schreyögg et Sydow, 2010). Leur objection : une telle organisation perdrait l’essence même de l’organiser — des frontières, des routines et une identité qui réduisent la complexité."
+  },
+  {
+    "id": "pluralisme-0007",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Un festival tourne en mode projet : équipes éphémères, peu de règles formelles, coordination par ajustement mutuel. Quel type de structure correspond à cette organisation ?",
+    "correct_answer": "Une structure adhocratique",
+    "incorrect_answers": [
+      "Une structure bureaucratique mécaniste",
+      "Une structure divisionnelle",
+      "Une structure matricielle classique",
+      "Une structure en papyrus, très écoresponsable"
+    ],
+    "explanation": "Les festivals sont des adhocraties coordonnées par ajustement mutuel (Arezki, Keramidas et Soldo, 2016). Le paradoxe étudié : mobiliser collectivement des équipes aux statuts très hétérogènes — salariés, intermittents du spectacle, bénévoles, agents publics — pour un projet éphémère."
+  },
+  {
+    "id": "pluralisme-0008",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Dans un festival coproduit par une municipalité et un collectif d’artistes, quel affrontement de logiques menace le sens de l’action collective ?",
+    "correct_answer": "La logique managériale contre la logique artistique",
+    "incorrect_answers": [
+      "La logique militaire contre la logique familiale",
+      "La logique religieuse contre la logique commerciale",
+      "La logique publique contre la logique scolaire",
+      "La logique du « on verra bien le jour J »"
+    ],
+    "explanation": "L’étude de cas d’Arezki et al. (2016) — un jeune festival public d’arts numériques du sud de la France — montre l’affrontement « art/culture versus management/marché » (Benghozi) entre la collectivité territoriale et le collectif d’artistes : il a vidé l’action de son sens jusqu’à évoquer une annulation."
+  },
+  {
+    "id": "pluralisme-0009",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Quelle est la différence entre diversité et pluralisme ?",
+    "correct_answer": "La diversité est un fait objectif ; le pluralisme est la réponse normative à cette diversité",
+    "incorrect_answers": [
+      "La diversité est une politique ; le pluralisme est un accident démographique",
+      "La diversité s’applique aux individus ; le pluralisme uniquement aux États",
+      "La diversité se mesure ; le pluralisme se décrète par référendum",
+      "La diversité est un hors-d’œuvre ; le pluralisme, le plat principal"
+    ],
+    "explanation": "King (2017) reprend la définition du Global Centre for Pluralism : le pluralisme est un ensemble d’intentions et de pratiques visant à institutionnaliser la reconnaissance de la différence comme culture civique — un processus, non un produit, face au fait objectif de la diversité."
+  },
+  {
+    "id": "pluralisme-0010",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Avant de fonder la première Caisse Populaire à Lévis en 1900, comment Alphonse Desjardins gagnait-il sa vie ?",
+    "correct_answer": "Journaliste et sténographe au Parlement canadien",
+    "incorrect_answers": [
+      "Notaire de campagne",
+      "Directeur de banque à Québec",
+      "Marchand général à Lévis",
+      "Pigeon voyageur, carrière écourtée par la grève"
+    ],
+    "explanation": "Desjardins était journaliste et sténographe, reporter au Parlement à Ottawa (Barmeyer et Rodrigue, 2023) ; c’est un article de la Revue des Deux Mondes sur la banque coopérative européenne qui déclencha sa croisade contre l’usure. À sa mort en 1920, le mouvement comptait déjà 220 caisses et 30 000 membres."
+  },
+  {
+    "id": "pluralisme-0011",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Le modèle de banque coopérative européenne s’est implanté au Québec sans que son importateur ne visite jamais l’Europe : il a écrit des milliers de lettres, questionnaire en main. Quelle stratégie de transfert interculturel cela illustre-t-il ?",
+    "correct_answer": "Une stratégie pull (de traction)",
+    "incorrect_answers": [
+      "Une stratégie push (de poussée)",
+      "Une stratégie pivot",
+      "Une stratégie de contournement",
+      "Une stratégie poulie, avec poulies et cordages"
+    ],
+    "explanation": "Dans le cadre push-pull de Martin, la stratégie pull désigne l’initiative du récepteur : Desjardins a sollicité les experts européens par correspondance (Barmeyer et Rodrigue, 2023), sans jamais parler allemand — le transfert s’est fait surtout via la Grande-Bretagne et la France. À l’inverse, la stratégie push part de l’expéditeur."
+  },
+  {
+    "id": "pluralisme-0012",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Pour partager des données d’impact sans imposer d’indicateurs uniformes, une approche canadienne s’appuie sur des normes flexibles. Combien compte-t-elle de normes ?",
+    "correct_answer": "Quatre",
+    "incorrect_answers": [
+      "Deux",
+      "Six",
+      "Dix-sept, comme les ODD",
+      "Une, mais elle est très longue"
+    ],
+    "explanation": "Les quatre normes du Common Approach (Ruff et al., 2022) : le Common Framework, le Common Impact Data Standard, les Common Foundations et le Common Form. Leur credo : laisser chaque organisme mesurer ce qui compte pour lui, tout en rendant les données agrégeables entre organisations partenaires."
+  },
+  {
+    "id": "pluralisme-0013",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Que veut dire le slogan « les normes sont des communautés, pas des documents » ?",
+    "correct_answer": "La valeur d’une norme tient aux qualités de sa communauté d’utilisateurs",
+    "incorrect_answers": [
+      "Il faut jeter les documents et tout miser sur les gens",
+      "Une norme n’existe que si elle est signée par tous",
+      "Les documents sont trop longs pour être lus",
+      "Les comités rédigent mieux que les logiciels"
+    ],
+    "explanation": "Ruff et al. (2022) soutiennent qu’une norme vit par sa communauté d’utilisateurs plutôt que par ses spécifications techniques. L’analogie du téléphone résume l’enjeu : une norme de partage ne sert que si les organisations avec qui on veut échanger des données l’ont aussi adoptée."
+  },
+  {
+    "id": "pluralisme-0014",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Face à la domination d’un groupe sur un autre (« power over »), quel pouvoir complémentaire permet de gouverner une organisation pluraliste ?",
+    "correct_answer": "Le « power with » — la capacité d’agir de concert",
+    "incorrect_answers": [
+      "Le « power through »",
+      "Le « power despite »",
+      "Le « power without »",
+      "Le « power nap », essentiel en réunion"
+    ],
+    "explanation": "Mary Parker Follett distingue le pouvoir sur (domination) du pouvoir avec (agir de concert). Kraatz et Block (2010) y voient la clé d’une gouvernance pluraliste, aux côtés du « genius of the and » de Collins et Porras contre la « tyrannie du ou »."
+  },
+  {
+    "id": "pluralisme-0015",
+    "lang": "fr",
+    "difficulty": 1,
+    "question": "Des centaines d’experts venus du monde entier négocient une norme ensemble, sans autorité centrale qui tranche. Pourquoi ce cas illustre-t-il une organisation hautement pluraliste ?",
+    "correct_answer": "Parce que pouvoirs, préférences et logiques y sont multiples et doivent se concilier par la délibération",
+    "incorrect_answers": [
+      "Parce qu’une organisation internationale est pluraliste par définition",
+      "Parce que les experts y perdent leur indépendance",
+      "Parce que les normes techniques sont toujours négociées ainsi",
+      "Parce que ça fait de jolies photos de groupe"
+    ],
+    "explanation": "Brès, Raufflet et Boghossian (2018) ouvrent leur revue sur la négociation d’ISO 26000 : plus de 450 experts de 99 pays, consensus en cinq ans. Ils en tirent leur grille de lecture du pluralisme — multiplicité des pouvoirs, des préférences et des logiques."
+  },
+  {
+    "id": "pluralisme-0016",
+    "lang": "fr",
+    "difficulty": 2,
+    "question": "Deux organisations de microfinance latino-américaines : l’une embauche à parts égales des vétérans du secteur bancaire et du secteur social ; l’autre préfère de jeunes diplômés sans expérience, formés en interne. Pourquoi ce second choix ?",
+    "correct_answer": "Pour éviter que les habitudes d’un secteur prennent le dessus sur la mission",
+    "incorrect_answers": [
+      "Pour réduire les coûts salariaux à long terme",
+      "Pour se conformer à des quotas d’embauche locaux",
+      "Pour garantir la loyauté politique du personnel",
+      "Pour ne former que des employés capables de tout réinventer"
+    ],
+    "explanation": "BancoSol a mélangé vétérans des deux mondes : moins de conflits, mais un risque accru de dérive de mission. Los Andes (Battilana et al., 2012) a préféré de jeunes diplômés sans préjugés, avec un salaire lié au nombre ET à la qualité des prêts — croissance plus lente, mais plus durable."
+  },
+  {
+    "id": "pluralisme-0017",
+    "lang": "fr",
+    "difficulty": 2,
+    "question": "La norme ISO 26000 de responsabilité sociétale est souvent citée comme cas d’école du pluralisme. Quel consensus a permis de la publier ?",
+    "correct_answer": "Un accord entre plus de 450 experts de 99 pays, en cinq ans",
+    "incorrect_answers": [
+      "Un accord entre 150 experts de 40 pays, en deux ans",
+      "Un accord entre 800 experts de 120 pays, en dix ans",
+      "Un accord entre 300 experts de 60 pays, en sept ans",
+      "Trois experts très patients et un chat"
+    ],
+    "explanation": "Le groupe de travail ISO sur la responsabilité sociétale (WGSR) a réuni plus de 450 experts de 99 pays et de plus de 40 organisations internationales ; consensus publié en cinq ans (Brès et al., 2018). Un cas exemplaire d’organisation où le pluralisme devient une méthode de travail."
+  },
+  {
+    "id": "pluralisme-0018",
+    "lang": "fr",
+    "difficulty": 2,
+    "question": "Les parties prenantes ne jugent pas seulement ce qu’une organisation fait : elles évaluent aussi ce qu’elle veut vouloir être. Quelle distinction cette observation mobilise-t-elle ?",
+    "correct_answer": "Celle des désirs de premier ordre et de second ordre",
+    "incorrect_answers": [
+      "Celle des besoins primaires et des besoins secondaires",
+      "Celle des objectifs explicites et implicites",
+      "Celle de l’intérêt individuel et de l’intérêt collectif",
+      "Celle du lait premier prix et du lait de marque"
+    ],
+    "explanation": "Frankfurt distingue les désirs portant sur des choses (premier ordre) de ceux portant sur d’autres désirs — « vouloir vouloir » (second ordre). Kraatz et Block (2010) transposent : les parties prenantes scrutent ce que l’organisation veut vouloir être, et ses signaux de second ordre comme la réputation."
+  },
+  {
+    "id": "pluralisme-0019",
+    "lang": "fr",
+    "difficulty": 2,
+    "question": "Pour prouver que son collectif est bien derrière une opération, un hacker déface un site web en direct, sous les yeux du public. Quel type d’acte de parole cela illustre-t-il ?",
+    "correct_answer": "Un déclaratif : il change la réalité en l’énonçant",
+    "incorrect_answers": [
+      "Un assertif : il affirme une vérité déjà établie",
+      "Une promesse conditionnelle",
+      "Une menace verbale sans effet",
+      "Un mot doux laissé sur le frigo de la rédaction"
+    ],
+    "explanation": "Chez Anonymous (Dobusch et Schoeneborn, 2015), les affirmations contradictoires (assertifs) n’ont rien tranché ; seul un déclaratif « équipé » dans la matérialité — le défacement en direct pendant l’interview de David Pakman — a authentifié l’appartenance, comme un maire qui marie un couple en l’énonçant."
+  },
+  {
+    "id": "pluralisme-0020",
+    "lang": "fr",
+    "difficulty": 2,
+    "question": "Une entreprise sépare ses unités : certaines doivent innover sans limite, d’autres être efficaces au maximum. Pourquoi cette « ambidexétrie organisationnelle » est-elle jugée insuffisante face à la fluidité ?",
+    "correct_answer": "Parce que la séparation crée des interfaces rigides et des coûts de coordination croissants",
+    "incorrect_answers": [
+      "Parce qu’elle interdit toute innovation dans les sous-unités",
+      "Parce qu’elle exige de licencier la moitié du personnel",
+      "Parce qu’elle ne fonctionne que dans les organisations à but non lucratif",
+      "Parce qu’elle demande deux cerveaux, offre rare sur le marché"
+    ],
+    "explanation": "L’ambidexétrie organisationnelle (Duncan ; O’Reilly et Tushman) répartit innovation et efficience entre sous-unités distinctes. Schreyögg et Sydow (2010) objectent que cette séparation crée des interfaces nettes et des coûts de coordination croissants ; ils préfèrent un équilibrage réflexif de second ordre, qui inclut même le « non-apprentissage » délibéré."
+  }
+]
