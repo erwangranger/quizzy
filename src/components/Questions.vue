@@ -1,7 +1,10 @@
 <template>
   <div>
     <p v-if="store.poolReset" class="pool-reset">{{ t('questions.poolReset') }}</p>
-    <h3>{{ categoryLabel(currentQuestion.category) }}</h3>
+    <h3>
+      {{ categoryLabel(currentQuestion.category) }}
+      <span class="difficulty" :data-level="currentQuestion.difficulty">{{ t(`difficulty.${currentQuestion.difficulty}`) }}</span>
+    </h3>
     <h2>{{ currentQuestion.question }}</h2>
     <ul v-if="choicesVisible" :class="{ revealed: store.revealed }">
       <li v-for="(choice, i) in choices" :key="i">
@@ -162,6 +165,30 @@ div {
 
 h3 {
     color: $color-med;
+}
+
+.difficulty {
+    display: inline-block;
+    font-size: 0.55em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.15em 0.7em;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    vertical-align: middle;
+    margin-left: 0.5em;
+
+    &[data-level='1'] {
+        color: $color-green;
+    }
+
+    &[data-level='2'] {
+        color: $color-white;
+    }
+
+    &[data-level='3'] {
+        color: $color-red;
+    }
 }
 
 .pool-reset {
