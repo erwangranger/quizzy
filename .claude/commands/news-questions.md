@@ -27,7 +27,7 @@ Let `DATE` be today's date (`YYYY-MM-DD`) and `STAMP` the same without dashes (`
   NHL, MLS, college football, rugby, curling, tennis, track, marathon results are
   all out). Avoid tragedies, violence and partisan framing. Use only verifiable
   facts, never opinions or predictions.
-- Every question has to be checked against an article you actually opened. `source_url` is that article, from a reputable outlet or primary source. `as_of` is the date the fact was true.
+- Every question has to be checked against an article you actually opened. `source_url` is that article, from a reputable outlet or primary source. `as_of` is the date the fact was true. Preferred outlets: Reuters, AP, BBC, CBC/Radio-Canada, The Guardian, Le Monde, NPR, NASA, ESA, Nature — prefer these when a search offers several; paywalled outlets are fine as links. University/institute press releases are a good primary source. Never link aggregator or syndication pages.
 - Write `count` questions per language. French questions are written natively in French (they may cover the same or different events as the English ones, but are never word-for-word translations). Sources for fr questions may be French-language outlets.
 - Question text is date-anchored ("In October 2026, ..." / "En octobre 2026, ..."). Use `category: "recent-news"`, `origin: "claude"`, `reviewed: false`. Explanations go in your own words, never copied from the source.
 
