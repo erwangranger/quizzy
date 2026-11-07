@@ -18,6 +18,9 @@
           class="link-light"
         >{{ t('about.issues') }}</a>
       </li>
+      <li>
+        <button type="button" class="link-light reset-seen" @click="resetSeen">{{ t('about.resetSeen') }}</button>
+      </li>
     </ul>
     <div class="quizzes" v-if="customQuizzes.length > 0">
       <p class="quizzes-lead">{{ t('about.customQuizzes') }}</p>
@@ -53,9 +56,17 @@ declare const __APP_VERSION__: string
 declare const __CONTENT_DATE__: string
 
 import { t } from '../locales'
+import { useGameStore } from '../store/store'
 
+const store = useGameStore()
 const version = __APP_VERSION__
 const contentDate = __CONTENT_DATE__
+
+// Clear the recency pool so every question counts as unseen again. The
+// current game keeps its drawn questions; the next draw starts fresh.
+function resetSeen() {
+  store.clearSeenQuestions()
+}
 
 // Pre-loaded custom quizzes: bank files under public/, served at the app
 // root. A quiz is one entry here + the .json file; the link re-enters the
@@ -92,6 +103,20 @@ function quizHref(file: string): string {
 
   li {
     margin: 0.4em 0;
+  }
+}
+
+// The reset-seen action is a button styled like the sibling links
+.reset-seen {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-med;
   }
 }
 

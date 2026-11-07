@@ -10,6 +10,7 @@ const en = {
     'about.customQuizzes': 'Custom quizzes',
     'about.creditLead': 'Quizzy started life as a fork of',
     'about.issues': 'Report an issue',
+    'about.resetSeen': 'Reset question history',
     'about.creditName': "Christopher Murphy's open-source quiz app",
     'about.installLead': 'Quizzy is a progressive web app: add it to your home screen or desktop for full-screen play, even offline. How to install it:',
     'about.installChrome': 'Chrome/Edge (Android/Desktop): a banner appears when you visit the site — tap "Add to Quizzy".',
@@ -21,6 +22,10 @@ const en = {
     'starter.resume': 'Resume game',
     'starter.resumeHint': 'Question {round} of {total}',
     'starter.language': 'Language',
+    'starter.lang.en': 'English',
+    'starter.lang.fr': 'Français',
+    'starter.difficulty': 'Difficulty',
+    'difficulty.any': 'Any',
     'starter.questionCount': 'Number of Questions',
     'starter.chooseCategory': 'Choose Category',
     'starter.allCategories': 'All Categories',
@@ -84,6 +89,7 @@ const fr: Record<keyof typeof en, string> = {
     'about.source': 'Source sur GitHub',
     'about.customQuizzes': 'Quiz personnalisés',
     'about.issues': 'Signaler un problème',
+    'about.resetSeen': "Réinitialiser l'historique des questions",
     'about.creditLead': 'Quizzy a commencé comme un fork de',
     'about.creditName': "l'app quiz open source de Christopher Murphy",
     'about.installLead': "Quizzy est une application web progressive (PWA) : ajoutez-la à votre écran d'accueil ou à votre bureau pour jouer en plein écran, même hors ligne. Voici comment l'installer :",
@@ -96,6 +102,10 @@ const fr: Record<keyof typeof en, string> = {
     'starter.resume': 'Reprendre la partie',
     'starter.resumeHint': 'Question {round} sur {total}',
     'starter.language': 'Langue',
+    'starter.lang.en': 'English',
+    'starter.lang.fr': 'Français',
+    'starter.difficulty': 'Difficulté',
+    'difficulty.any': 'Toutes',
     'starter.questionCount': 'Nombre de questions',
     'starter.chooseCategory': 'Choisir une catégorie',
     'starter.allCategories': 'Toutes les catégories',
@@ -157,7 +167,7 @@ const messages: Record<Locale, Record<keyof typeof en, string>> = { en, fr }
 
 // Active locale, kept in a Vue ref so every t() call site re-renders on change.
 // The store sets it when the language selection changes; defaults to 'en'.
-const activeLocale = ref<Locale>('en')
+export const activeLocale = ref<Locale>('en')
 
 export function setLocale(locale: Locale): void {
   activeLocale.value = locale

@@ -31,10 +31,12 @@ When the quiz is over you get your score and a breakdown by category:
 1. **Choose how many players** — 1 to 4. One player is a solo game; two or more play together (see below).
 2. **Weight by Difficulty** *(optional)* — tick this to make harder questions worth more points. Left off, every question scores the same.
 3. **Pick a language** — English (`en`) or French (`fr`).
-4. **Pick a category** — Geography, History, Science, Arts & Literature, Entertainment, Sports & Leisure, or Recent News.
-5. **Pick how many questions** — 5, 10, 15, or 20.
-6. Hit **Start** and answer the questions. Not sure about one? **Skip** it — no penalty, it just moves on.
-7. At the end, check your score and start another round, or head back to the menu.
+4. **Pick a difficulty** *(optional)* — Easy, Medium, or Hard draws only that difficulty; leave it on **Any** for a mix.
+5. **Pick a category** — Geography, History, Science, Arts & Literature, Entertainment, Sports & Leisure, or Recent News.
+6. **Pick how many questions** — 5, 10, 15, or 20.
+7. Hit **Start** and answer the questions. Not sure about one? **Skip** it — no penalty, it just moves on.
+8. At the end, check your score and start another round, or head back to the menu.
+9. Played a lot and want the full deck fresh again? **About → "Reset question history"** clears the seen-question memory.
 
 ### Playing with friends
 

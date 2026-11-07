@@ -104,18 +104,20 @@ function questionShown(questionId: string, category: string): void {
 
 // A player's answer was scored (per-question correct/incorrect counts).
 // Quizmaster: one event per marked player at Next. Pass-and-play: one event
-// per recorded choice. Solo: one event.
+// per recorded choice. Solo: one event. Identifies the player by seat
+// number (1-4), never by name: names are free text users type on the
+// device and must not leave it.
 function questionAnswered(
   questionId: string,
   correct: boolean,
   mode: string,
-  playerName?: string,
+  playerSeat?: number,
 ): void {
   event('question_answered', {
     question_id: questionId,
     correct,
     mode,
-    player: playerName,
+    player_seat: playerSeat,
   })
 }
 

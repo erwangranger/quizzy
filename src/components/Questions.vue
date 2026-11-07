@@ -39,7 +39,7 @@
         </p>
         <p class="reveal-explanation-label">{{ t('reveal.explanation') }}</p>
         <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
-        <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: currentQuestion.as_of }) }}</span>
+        <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: formatDate(currentQuestion.as_of) }) }}</span>
         <a v-if="currentQuestion.source_url" :href="currentQuestion.source_url" target="_blank" rel="noopener noreferrer" class="source-link">{{ t('reveal.source') }}</a>
         <!-- Quizmaster marks who was right -->
         <div v-if="store.mode === 'quizmaster'" class="marks">
@@ -81,7 +81,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useGameStore, type Choice } from '../store/store'
-import { t, categoryLabel } from '../locales'
+import { t, categoryLabel, activeLocale } from '../locales'
 
 const store = useGameStore()
 
@@ -100,6 +100,13 @@ const choicesVisible = computed(() => {
 function answer(choice: Choice) {
   if (store.mode === 'quizmaster') return
   store.answer(choice)
+}
+
+// Recent-news as_of dates ship as ISO strings; the reveal badge renders them
+// in the active locale (e.g. "October 1, 2026" / "1 octobre 2026"). The
+// locale key 'reveal.asOf' wraps the formatted date ("As of {date}" / "Le {date}").
+function formatDate(iso: string): string {
+  return new Intl.DateTimeFormat(activeLocale.value, { dateStyle: 'long' }).format(new Date(`${iso}T00:00:00`))
 }
 
 // Players who picked this choice this round, matched by object reference

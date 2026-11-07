@@ -348,7 +348,7 @@ export const useGameStore = defineStore('game', {
         this.questions[this.round]?.id ?? '',
         points > 0,
         this.mode,
-        player.name,
+        index + 1,
       )
       if (points > 0) {
         player.score.history.push({ correct: true, incorrect: false, category })

@@ -16,7 +16,7 @@
         type="button"
         :class="store.setup.lang === lang ? 'on' : null"
         @click="chooseLang(lang)"
-        >{{ lang }}</button>
+        >{{ t(`starter.lang.${lang}`) }}</button>
       </div>
     </div>
 
@@ -60,6 +60,21 @@
         :class="store.mode === 'pass-and-play' ? 'on' : null"
         @click="store.setMultiplayerMode('pass-and-play')"
         >{{ t('starter.passPlay') }}</button>
+      </div>
+    </div>
+
+    <!-- Difficulty selector (segmented): Any = mixed difficulties (default) -->
+    <div class="seg-row">
+      <span class="seg-label">{{ t('starter.difficulty') }}</span>
+      <div class="seg" role="group" :aria-label="t('starter.difficulty')">
+        <button
+        v-for="level in difficulties"
+        :key="level ?? 'any'"
+        type="button"
+        :class="(store.setup.difficulty ?? null) === level ? 'on' : null"
+        :aria-pressed="(store.setup.difficulty ?? null) === level"
+        @click="store.setSetup({ difficulty: level })"
+        >{{ t(level ? `difficulty.${level}` : 'difficulty.any') }}</button>
       </div>
     </div>
 
@@ -112,11 +127,13 @@
 import { ref } from 'vue'
 import { useGameStore, MAX_PLAYERS, peekSavedGame } from '../store/store'
 import { t, categoryLabel } from '../locales'
-import type { Category, Lang } from '../questions/schema'
+import type { Category, Difficulty, Lang } from '../questions/schema'
 
 const store = useGameStore()
 
 const languages: Lang[] = ['en', 'fr']
+const difficulties: (Difficulty | undefined)[] = [undefined, 1, 2, 3]
+
 const questionCounts = [5, 10, 15, 20]
 const maxPlayers = MAX_PLAYERS
 // Read once on mount; starting a new game discards the save

@@ -47,8 +47,10 @@ const quantity = computed(() => Math.max(store.answeredTotal, 1))
   justify-content: flex-start;
 }
 
-.single {
-  justify-content: center;
+// 20 dots at 20px each overflow a 375px viewport; wrap instead of clipping
+.droplet-container {
+  flex-wrap: wrap;
+  row-gap: 6px;
 }
 
 .correct {
