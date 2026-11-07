@@ -3,7 +3,7 @@
     "lang": "fr",
     "category": "recent-news",
     "difficulty": 1,
-    "question": "En mai 2026, la Bulgarie a remporte pour la premiere fois de son histoire le concours Eurovision de la chanson grace au titre Bangaranga chante par Dara. Dans quelle ville s'est deroulee la finale ?",
+    "question": "En mai 2026, la Bulgarie a remporté pour la première fois de son histoire le concours Eurovision de la chanson grâce au titre Bangaranga chanté par Dara. Dans quelle ville s'est déroulée la finale ?",
     "correct_answer": "Vienne",
     "incorrect_answers": [
       "Bâle",
@@ -22,7 +22,7 @@
     "lang": "fr",
     "category": "recent-news",
     "difficulty": 2,
-    "question": "En mai 2026, la sonde Smile, fruit d'une collaboration entre l'ESA et l'Academie chinoise des sciences, a decolle a bord d'une fusee Vega-C pour etudier le bouclier magnetique de la Terre face au vent solaire. Le port spatial de l'Europe se situe sur quel territoire d'Amerique du Sud ?",
+    "question": "En mai 2026, la sonde Smile, fruit d'une collaboration entre l'ESA et l'Académie chinoise des sciences, a décollé à bord d'une fusée Vega-C pour étudier le bouclier magnétique de la Terre face au vent solaire. Le port spatial de l'Europe se situe sur quel territoire d'Amérique du Sud ?",
     "correct_answer": "La Guyane française",
     "incorrect_answers": [
       "Les îles Malouines",
@@ -41,7 +41,7 @@
     "lang": "fr",
     "category": "recent-news",
     "difficulty": 3,
-    "question": "En mai 2026, des astronomes ont annonce que la galaxie ultra-pale LAP1-B, observee par le telescope James-Webb seulement 800 millions d'annees apres le Big Bang, etait la galaxie qui forme des etoiles la plus chimiquement primitive jamais decouverte. Quel element, indispensable a la vie, y est le plus rare ?",
+    "question": "En mai 2026, des astronomes ont annoncé que la galaxie ultra-pâle LAP1-B, observée par le télescope James-Webb seulement 800 millions d'années après le Big Bang, était la galaxie qui forme des étoiles la plus chimiquement primitive jamais découverte. Quel élément, indispensable à la vie, y est le plus rare ?",
     "correct_answer": "L'oxygène",
     "incorrect_answers": [
       "Le carbone",
@@ -161,7 +161,7 @@
       "5 milliards",
       "1 milliard",
       "300 millions",
-      "700 millions de minutes"
+      "Environ trois semaines"
     ],
     "explanation": "Les quasars sont des noyaux de galaxies brillants, alimentés par la matière qui plonge dans un trou noir supermassif. Leur lumière a mis plus de 13 milliards d'années à nous parvenir, ce qui permet d'étudier la formation des premières galaxies.",
     "source_url": "https://cnes.fr/actualites/euclid-revele-quasars-plus-anciens-de-lunivers",
@@ -180,7 +180,7 @@
       "Mumbai",
       "Bangalore",
       "Chennai",
-      "Sriharikota"
+      "Une rampe de lancement gonflable"
     ],
     "explanation": "Le 18 juillet, la fusée Vikram 1, haute de 23 mètres, a décollé du centre spatial de Sriharikota et atteint son orbite à 450 km d'altitude une quinzaine de minutes plus tard. L'Inde vise une part de 10 pour cent du marché spatial mondial d'ici 2030.",
     "source_url": "https://www.franceinfo.fr/sciences/espace/la-premiere-fusee-privee-indienne-reussit-son-lancement-dans-un-pays-aux-grandes-ambitions-spatiales_8112743.html",
@@ -256,7 +256,7 @@
       "Vénus",
       "Mars",
       "Saturne",
-      "Celle où il fait bon vivre"
+      "La Lune, pour faire court"
     ],
     "explanation": "BepiColombo est la première mission européenne et japonaise vers Mercure. La séparation du module de transfert a été programmée pour le 3 septembre 2026, avant la mise en orbite des deux sondes en fin d'année.",
     "source_url": "https://www.esa.int/Enabling_Support/Operations/Watch_live_BepiColombo_begins_its_arrival_at_Mercury",
@@ -294,7 +294,7 @@
       "Déimos",
       "Europe",
       "Titan",
-      "Celle qu'on voit le soir"
+      "La plus grosse, donc la plus facile à viser"
     ],
     "explanation": "La sonde MMX décollera à bord d'une fusée H3 depuis le centre de Tanegashima. Phobos, la plus grande des deux lunes martiennes, est l'objectif de cette première mission de retour d'échantillons du système martien.",
     "source_url": "https://www.mmx.jaxa.jp/en/",
@@ -313,10 +313,10 @@
       "Sri Lanka",
       "Bornéo",
       "Nouvelle-Guinée",
-      "Celle qui brille la nuit"
+      "Un aquarium géant"
     ],
     "explanation": "L'étude menée par l'université de Copenhague a combiné ADN d'échantillons actuels et de spécimens de musée vieux d'un siècle pour résoudre une énigme taxonomique de douze ans. Ces grenouilles vivent cachées sous la litière des forêts malgaches.",
-    "source_url": "https://www.sciencedaily.com/releases/2026/08/260828082347.htm",
+    "source_url": "https://snm.dk/en/news/scientists-discover-seven-new-frog-species-madagascar",
     "as_of": "2026-08-30",
     "origin": "claude",
     "reviewed": false,
@@ -332,7 +332,7 @@
       "Kourou",
       "Kiruna",
       "Plesetsk",
-      "Celui où les rennes font le décompte"
+      "Partagé avec les rennes"
     ],
     "explanation": "Le décollage a eu lieu le 5 septembre 2026 depuis Andøya, dans le nord de la Norvège. Premier vol en 2025 : une trentaine de secondes. Cette fois, Spectrum a déployé six charges utiles commerciales et éducatives en orbite basse.",
     "source_url": "https://fr.euronews.com/2026/09/06/lallemagne-a-une-fusee-pour-mettre-des-satellites-en-orbite-premier-succes-en-europe-conti",
@@ -349,7 +349,7 @@
     "correct_answer": "iPhone Duo",
     "incorrect_answers": [
       "iPhone Fold",
-      "iPhone Pliage",
+      "iPhone Clapet",
       "iPhone 18 Fold",
       "L'iPhone Sandwich"
     ],
@@ -370,7 +370,7 @@
       "Le Nevada",
       "Le Wyoming",
       "Le Dakota du Nord",
-      "Celui des mineurs de fond à lunettes soudées"
+      "Le Dakota du Café"
     ],
     "explanation": "Le détecteur baigne dans environ dix tonnes de xénon liquide ultra-pur, au Sanford Underground Research Facility, à Lead. L'événement inexpliqué n'avait qu'environ 0,5 % de chances de provenir d'un bruit de fond connu, d'où la prudence des chercheurs.",
     "source_url": "https://www.rts.ch/info/sciences-tech/2026/article/matiere-noire-une-trace-potentielle-decelee-aux-etats-unis-29350088.html",

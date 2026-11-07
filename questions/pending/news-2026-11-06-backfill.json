@@ -98,7 +98,7 @@
     "lang": "en",
     "category": "recent-news",
     "difficulty": 1,
-    "question": "In June 2026, Apple introduced Siri AI, an entirely new and far more capable version of which long-running voice assistant?",
+    "question": "In June 2026, Apple introduced an entirely new, far more capable AI version of which long-running voice assistant?",
     "correct_answer": "Siri",
     "incorrect_answers": [
       "Alexa",
@@ -161,7 +161,7 @@
       "The Roman Empire",
       "The Age of Dinosaurs",
       "Our solar system",
-      "The universe, just after its warm-up act"
+      "Everything, during its sound check"
     ],
     "explanation": "Euclid, a European Space Agency telescope with NASA participation, spotted 31 ancient quasars, brilliant galactic cores powered by matter falling into supermassive black holes. Two formed within the universe's first 670 million years.",
     "source_url": "https://science.nasa.gov/blogs/science-news/2026/07/06/esas-euclid-space-telescope-finds-universes-most-ancient-quasars/",
@@ -174,13 +174,13 @@
     "lang": "en",
     "category": "recent-news",
     "difficulty": 1,
-    "question": "In July 2026, Skyroot Aerospace made India the third country after the US and China to have a private company launch a rocket into orbit. In which country is Skyroot based?",
+    "question": "In July 2026, Skyroot Aerospace made its home country the third, after the US and China, to have a private company launch a rocket into orbit. In which country is Skyroot based?",
     "correct_answer": "India",
     "incorrect_answers": [
       "Japan",
       "France",
       "Australia",
-      "India's spare bedroom"
+      "The parking lot of the space race"
     ],
     "explanation": "The Hyderabad-based startup launched its Vikram-1 rocket from Sriharikota on July 18, after becoming India's first space-tech unicorn. The rocket is named after Vikram Sarabhai, considered the father of India's space programme.",
     "source_url": "https://www.bbc.com/news/articles/clyekv7rld3o",
@@ -231,7 +231,7 @@
     "lang": "en",
     "category": "recent-news",
     "difficulty": 3,
-    "question": "In July 2026, Chinese memory chipmaker CXMT saw its shares soar nearly 470 percent on their Shanghai debut, briefly making it the most valuable listed company in mainland China. What kind of chips does CXMT make?",
+    "question": "In July 2026, Chinese chipmaker CXMT saw its shares soar nearly 470 percent on their Shanghai debut, briefly making it the most valuable listed company in mainland China. What kind of chips does CXMT make?",
     "correct_answer": "Memory chips",
     "incorrect_answers": [
       "Graphics chips",
@@ -275,7 +275,7 @@
       "Blue Origin",
       "Boeing",
       "United Launch Alliance",
-      "The one run by a man named Nancy"
+      "Planet Hollywood"
     ],
     "explanation": "Roman lifted off on a Falcon Heavy from Kennedy Space Center on 30 August 2026, becoming the fourth primary NASA mission launched by that rocket. The observatory is heading to the L2 point about a million miles from Earth.",
     "source_url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/",
@@ -294,7 +294,7 @@
       "Deimos",
       "Amalthea",
       "Io",
-      "The one with the nicer views"
+      "Slingshot around a passing comet"
     ],
     "explanation": "JAXA confirmed the MMX spacecraft would launch on an H3 rocket from Tanegashima, aiming to collect the first samples ever returned from the Martian system. Phobos, the larger of Mars' two moons, is the target.",
     "source_url": "https://www.mmx.jaxa.jp/en/",
@@ -316,7 +316,7 @@
       "The one shaped like a diamond"
     ],
     "explanation": "The University of Copenhagen-led study used DNA from both modern frogs and century-old museum specimens to untangle a 12-year taxonomy puzzle. Diamond frogs get their name from their gem-like shape and spend much of their lives under leaf litter.",
-    "source_url": "https://www.sciencedaily.com/releases/2026/08/260828082347.htm",
+    "source_url": "https://snm.dk/en/news/scientists-discover-seven-new-frog-species-madagascar",
     "as_of": "2026-08-30",
     "origin": "claude",
     "reviewed": false,
@@ -332,7 +332,7 @@
       "Sweden",
       "Iceland",
       "Germany",
-      "The one with the puffins as mission control"
+      "Cold, mostly"
     ],
     "explanation": "The two-stage Spectrum rocket lifted off from Andoya Spaceport in northern Norway on September 5, 2026, carrying six commercial and educational CubeSats. The first Spectrum flight in 2025 lasted only about 30 seconds before falling into the sea.",
     "source_url": "https://www.esa.int/Enabling_Support/Space_Transportation/Boost/Isar_Aerospace_achieves_first_launch_to_orbit_from_continental_Europe",
