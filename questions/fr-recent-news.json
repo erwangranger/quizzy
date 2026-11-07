@@ -57,25 +57,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261005-62",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, le pilote de Formule 1 de l'écurie Cadillac Valtteri Bottas a renoncé à un court vol et a plutôt parcouru environ 350 km à vélo pour se rendre au Grand Prix de Singapour depuis quel pays ?",
-    "correct_answer": "La Malaisie",
-    "incorrect_answers": [
-      "L'Indonésie",
-      "La Thaïlande",
-      "L'Australie",
-      "La Comté"
-    ],
-    "explanation": "Le pilote finlandais a pédalé de la Malaisie jusqu'à Singapour, couvrant plus de 160 km lors de la seule deuxième étape. Passionné de cyclisme, il s'était aussi qualifié pour les Championnats du monde de gravel.",
-    "source_url": "https://www.bbc.com/sport/formula1/articles/cv2d6p9en7wdo",
-    "as_of": "2026-10-05",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261006-61",
     "lang": "fr",
     "category": "recent-news",
@@ -167,44 +148,6 @@
     "explanation": "La qualité de l'air de Singapour a atteint un niveau « très malsain » avec un indice AQI de 216 ; Kuala Lumpur s'est classée deuxième tandis que la fumée des incendies à Sumatra et à Bornéo se propageait.",
     "source_url": "https://www.cnn.com/2026/10/09/asia/singapore-pollution-formula-one-hnk-intl",
     "as_of": "2026-10-09",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261011-61",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, Max Verstappen a remporté le Grand Prix de Singapour, une première dans sa carrière. Quel pilote a terminé deuxième pour Ferrari ?",
-    "correct_answer": "Charles Leclerc",
-    "incorrect_answers": [
-      "Lewis Hamilton",
-      "Lando Norris",
-      "George Russell",
-      "Un pélican très égaré"
-    ],
-    "explanation": "Verstappen a mené du début à la fin à Marina Bay, avec Leclerc deuxième et Kimi Antonelli, de Mercedes, troisième. Son coéquipier chez Ferrari, Hamilton, a terminé sixième après une stratégie de pneus déroutante.",
-    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
-    "as_of": "2026-10-11",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261011-62",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 3,
-    "question": "En octobre 2026, après le Grand Prix de Singapour, quel pilote de Mercedes âgé de 20 ans est resté en mesure d'assurer son premier titre mondial de Formule 1 dès la prochaine course, à Austin ?",
-    "correct_answer": "Kimi Antonelli",
-    "incorrect_answers": [
-      "Oscar Piastri",
-      "Liam Lawson",
-      "Isack Hadjar",
-      "Un kart de location à Austin"
-    ],
-    "explanation": "La troisième place d'Antonelli à Singapour, combinée à la neuvième de son coéquipier George Russell, a porté son avance au championnat à 102 points, alors que 150 points restaient en jeu au maximum. Une victoire à Austin pourrait faire de lui le plus jeune champion de l'histoire de la discipline.",
-    "source_url": "https://www.bbc.com/sport/formula1/articles/c84g1p2ql9z5o",
-    "as_of": "2026-10-11",
     "origin": "claude",
     "reviewed": true
   },
@@ -437,25 +380,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261015-61",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, le gérant des Brewers de Milwaukee, Pat Murphy, a été arrosé de champagne après que son club s'est qualifié pour la Série mondiale. Le circuit de trois points de quel joueur avait donné une avance de 4-0 aux Dodgers lors du quatrième match, avant que Milwaukee ne revienne pour gagner 6-4 ?",
-    "correct_answer": "Shohei Ohtani",
-    "incorrect_answers": [
-      "Mookie Betts",
-      "Freddie Freeman",
-      "Will Smith",
-      "Le vendeur de Dodger Dogs"
-    ],
-    "explanation": "La longue balle d'Ohtani en deuxième manche avait brièvement donné le contrôle à Los Angeles, mais Milwaukee a grugé l'écart et le circuit de Garrett Mitchell en sixième manche a donné aux Brewers une avance qu'ils n'ont plus perdue.",
-    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
-    "as_of": "2026-10-15",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261015-62",
     "lang": "fr",
     "category": "recent-news",
@@ -608,25 +532,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261016-63",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, World Curling a confirmé son intention d'organiser le championnat du monde féminin 2027 dans quel pays ?",
-    "correct_answer": "Les Émirats arabes unis",
-    "incorrect_answers": [
-      "Le Japon",
-      "La Suisse",
-      "La Corée du Sud",
-      "Un château de sable très glacé"
-    ],
-    "explanation": "Le championnat de la mi-mars doit se tenir aux Émirats arabes unis. Le curling est traditionnellement concentré dans les pays au climat froid comme le Canada, l'Écosse, la Suède et la Suisse, ce qui fait de ce pays du Golfe un choix étonnant.",
-    "source_url": "https://www.cbc.ca/sports/curling-womens-world-championships-abu-dhabi-9.7383379",
-    "as_of": "2026-10-16",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261016-64",
     "lang": "fr",
     "category": "recent-news",
@@ -642,44 +547,6 @@
     "explanation": "L'analyse génétique n'a révélé aucun métissage, ce qui suggère que les unions entre colons et peuples autochtones étaient moins fréquentes que ce que beaucoup de Québécois croient au sujet de leurs lointains ancêtres.",
     "source_url": "https://www.lapresse.ca/actualites/sciences/2026-10-16/nouvelle-france/une-etude-met-a-mal-le-mythe-du-metissage-des-premiers-colons.php",
     "as_of": "2026-10-16",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261017-61",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, les Brewers de Milwaukee ont décroché leur première participation à la Série mondiale depuis quelle année en balayant les Dodgers de Los Angeles lors de la Série de championnat de la Ligue nationale ?",
-    "correct_answer": "1982",
-    "incorrect_answers": [
-      "1975",
-      "1991",
-      "2008",
-      "1975 et demie"
-    ],
-    "explanation": "Milwaukee a balayé les Dodgers, champions en titre, pour se tailler une place à sa deuxième Série mondiale de l'histoire ; les Brewers avaient perdu la Série mondiale 1982 en sept matchs contre les Cardinals de Saint-Louis.",
-    "source_url": "https://www.cnn.com/2026/10/15/sport/brewers-sweep-dodgers-nlcs",
-    "as_of": "2026-10-17",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261017-62",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, Auburn, non classée, a créé la surprise en battant Georgia, première au classement, 27-24 sur un botté de 34 verges à l'expiration du temps réglementaire. C'était la première victoire d'Auburn à Athènes depuis quelle année ?",
-    "correct_answer": "2005",
-    "incorrect_answers": [
-      "1994",
-      "2010",
-      "2013",
-      "L'année après la prochaine"
-    ],
-    "explanation": "Le botté d'Alex McPherson sur le dernier jeu a donné à Auburn sa première victoire à Athènes depuis 2005 et sa première victoire à l'extérieur contre une équipe classée première depuis sa victoire contre la Floride en 1994.",
-    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
-    "as_of": "2026-10-17",
     "origin": "claude",
     "reviewed": true
   },
@@ -722,25 +589,6 @@
     "reviewed": true
   },
   {
-    "id": "news-20261017-65",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, l'équipe canadienne féminine de rugby a battu l'Angleterre 24-21 à Toronto, mettant fin à une série de combien de matchs sans défaite pour les Red Roses ?",
-    "correct_answer": "41 matchs",
-    "incorrect_answers": [
-      "23 matchs",
-      "37 matchs",
-      "50 matchs",
-      "Tous, pour toujours"
-    ],
-    "explanation": "Shoshanah Seumanutafa a marqué un essai à la 78e minute pour compléter la remontée devant 18 621 spectateurs, la plus grande foule de l'histoire du rugby féminin en Amérique du Nord. C'était la première défaite de l'Angleterre depuis la finale de la Coupe du monde 2022.",
-    "source_url": "https://www.cbc.ca/sports/rugby/canada-womens-rugby-england-toronto-recap-9.7385124",
-    "as_of": "2026-10-17",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
     "id": "news-20261017-66",
     "lang": "fr",
     "category": "recent-news",
@@ -756,63 +604,6 @@
     "explanation": "La Bronze a forgé ce mot, qui fusionne « festin » et « bibliothèque », pour son quatrième album, un disque éclectique dans lequel elle explore une vaste gamme d'émotions.",
     "source_url": "https://www.lapresse.ca/arts/musique/2026-10-17/la-festinatheque/le-festin-des-festins-de-la-bronze.php",
     "as_of": "2026-10-17",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261017-67",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, quelle équipe de la LNH a gagné 8-3 dans un match où Carter Verhaeghe et Sam Bennett ont chacun réussi un tour du chapeau ?",
-    "correct_answer": "Les Panthers de la Floride",
-    "incorrect_answers": [
-      "Le Kraken de Seattle",
-      "Le Lightning de Tampa Bay",
-      "Les Bruins de Boston",
-      "Les Zamboni All-Stars"
-    ],
-    "explanation": "Les deux Panthers ont chacun complété un tour du chapeau dans cette victoire facile à domicile contre Seattle, à Sunrise. Deux tours du chapeau par des coéquipiers dans un même match, c'est un fait rare dans la LNH.",
-    "source_url": "https://www.lapresse.ca/sports/hockey/2026-10-17/samedi-dans-la-lnh/les-panthers-defont-le-kraken-8-3.php",
-    "as_of": "2026-10-17",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261017-68",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, le CF Montréal a été officiellement éliminé de la course aux séries éliminatoires de la MLS après un match nul de 1-1 contre quel club ?",
-    "correct_answer": "Les Sounders de Seattle",
-    "incorrect_answers": [
-      "Les Whitecaps de Vancouver",
-      "Le Galaxy de Los Angeles",
-      "Le Toronto FC",
-      "Le club de kayak local"
-    ],
-    "explanation": "La défense montréalaise a tenu bon tard en deuxième mi-temps pour arracher le match nul de 1-1 samedi soir, mais ce point unique n'a pas suffi à maintenir les espoirs de séries du club en vie.",
-    "source_url": "https://www.lapresse.ca/sports/soccer/2026-10-18/le-cf-montreal-recolte-un-match-nul-face-aux-sounders-et-est-officiellement-elimine.php",
-    "as_of": "2026-10-17",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261018-61",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, le football universitaire américain est entré dans l'histoire lorsque cinq des sept meilleures équipes du top 25 de l'AP ont perdu le même jour pour la première fois. Quelle conférence comptait Georgia, numéro 1, Alabama, numéro 6, et Texas, numéro 7, toutes battues ce jour-là ?",
-    "correct_answer": "La SEC (Conférence Sud-Est)",
-    "incorrect_answers": [
-      "La Big Ten",
-      "L'ACC",
-      "La Big 12",
-      "L'Alliance des éléphants confus"
-    ],
-    "explanation": "Les surprises de ce « Shakeup Saturday » ont été portées par la Conférence Sud-Est. Auburn, non classée, a créé la sensation en s'imposant 27-24 chez Georgia, le fait saillant d'une journée chaotique pour ce sport.",
-    "source_url": "https://www.cnn.com/2026/10/18/sport/college-football-five-top-eight-upset",
-    "as_of": "2026-10-18",
     "origin": "claude",
     "reviewed": true
   },
@@ -850,63 +641,6 @@
     ],
     "explanation": "Cette entreprise de l'Ohio, plus grand producteur nord-américain d'acier plat, a acheté Stelco en 2024. Son plan de suppression d'emplois malgré ses engagements pris en vertu de la Loi sur l'investissement au Canada amène Ottawa à étudier des recours juridiques.",
     "source_url": "https://www.cbc.ca/news/business/stelco-jobs-layoffs-steel-industry-9.7384487",
-    "as_of": "2026-10-18",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261018-64",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, des scientifiques ont rapporté que la sprinteuse italienne Emma Mazzenga, qui participe encore à des épreuves masters, avait quel âge ?",
-    "correct_answer": "93",
-    "incorrect_answers": [
-      "73",
-      "83",
-      "103",
-      "Assez rapide pour dépasser son acte de naissance"
-    ],
-    "explanation": "Mazzenga a repris la course à 53 ans et détient désormais le record du monde du 200 mètres dans la catégorie des femmes de plus de 90 ans. Les chercheurs ont constaté que ses fibres musculaires à contraction lente, résistantes à la fatigue, sont aussi volumineuses que celles d'une femme de 20 ans.",
-    "source_url": "https://www.cbc.ca/news/world/emma-mazzenga-italian-sprinter-longevity-9.7383784",
-    "as_of": "2026-10-18",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261018-65",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, quelle joueuse de tennis canadienne a remporté le titre du double féminin de l'Open de Wuhan aux côtés de la Brésilienne Luisa Stefani ?",
-    "correct_answer": "Gabriela Dabrowski",
-    "incorrect_answers": [
-      "Leylah Fernandez",
-      "Bianca Andreescu",
-      "Eugenie Bouchard",
-      "Un orignal avec une raquette"
-    ],
-    "explanation": "Dabrowski et Stefani ont battu les championnes en titre Storm Hunter et Katerina Siniakova 7-5, 6-4 en finale à Wuhan dimanche.",
-    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-wuhan/dabrowski-recolte-un-autre-titre-en-double-feminin.php",
-    "as_of": "2026-10-18",
-    "origin": "claude",
-    "reviewed": true
-  },
-  {
-    "id": "news-20261018-66",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, quel joueur de tennis espagnol a remporté son premier titre Masters 1000 en battant son compatriote Rafael Jodar en finale du Masters de Shanghai ?",
-    "correct_answer": "Alejandro Davidovich Fokina",
-    "incorrect_answers": [
-      "Carlos Alcaraz",
-      "Rafael Nadal",
-      "Pablo Carreno Busta",
-      "Un juge de ligne très enthousiaste"
-    ],
-    "explanation": "Davidovich Fokina a perdu le premier set et cédé un break de service avant de l'emporter 1-6, 7-6 (5), 6-4 à Shanghai. Le niveau Masters 1000 se situe juste en dessous des quatre tournois du Grand Chelem.",
-    "source_url": "https://www.lapresse.ca/sports/tennis/2026-10-18/tournoi-de-shanghai/davidovich-fokina-s-offre-son-premier-masters-1000.php",
     "as_of": "2026-10-18",
     "origin": "claude",
     "reviewed": true

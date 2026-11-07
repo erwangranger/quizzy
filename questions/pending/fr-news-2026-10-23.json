@@ -76,63 +76,6 @@
     "reviewed": false
   },
   {
-    "id": "news-20261023-13",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, les Rays de Tampa Bay ont atteint la Série mondiale. Ils avaient déjà gagné le championnat de l'Américaine en 2008 et en quelle autre année ?",
-    "correct_answer": "2020",
-    "incorrect_answers": [
-      "2013",
-      "2016",
-      "2022",
-      "2099, dans le futur"
-    ],
-    "explanation": "Aucune de ces deux conquêtes de l'Américaine n'a débouché sur un titre mondial : Tampa Bay n'a jamais gagné la Série. Cette fois, ils affrontent des Brewers de Milwaukee eux aussi en quête d'un premier sacre.",
-    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
-    "as_of": "2026-10-19",
-    "origin": "claude",
-    "reviewed": false
-  },
-  {
-    "id": "news-20261023-14",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 2,
-    "question": "En octobre 2026, menés 2-1 par Cleveland dans la finale de l'Américaine, les Rays de Tampa Bay ont ensuite remporté combien de matchs consécutifs ?",
-    "correct_answer": "Trois",
-    "incorrect_answers": [
-      "Un",
-      "Deux",
-      "Quatre",
-      "Mille"
-    ],
-    "explanation": "Tampa Bay a ainsi éliminé les Guardians en six matchs, 4-2, avec une victoire décisive le lundi soir. L'équipe s'est qualifiée pour la Série mondiale.",
-    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
-    "as_of": "2026-10-19",
-    "origin": "claude",
-    "reviewed": false
-  },
-  {
-    "id": "news-20261023-15",
-    "lang": "fr",
-    "category": "recent-news",
-    "difficulty": 1,
-    "question": "En octobre 2026, dans quelle ville a eu lieu le premier match de la Série mondiale opposant les Brewers aux Rays ?",
-    "correct_answer": "Milwaukee",
-    "incorrect_answers": [
-      "Tampa",
-      "Cleveland",
-      "Los Angeles",
-      "Quelque part sur la Lune"
-    ],
-    "explanation": "Les matchs 1 et 2 se jouent à Milwaukee, les matchs 3 à 5 à Tampa Bay, puis les matchs 6 et 7, si nécessaires, de nouveau à Milwaukee. Le coup d'envoi était prévu le 23 octobre.",
-    "source_url": "https://www.fox6now.com/sports/brewers-world-series-rays-2026",
-    "as_of": "2026-10-19",
-    "origin": "claude",
-    "reviewed": false
-  },
-  {
     "id": "news-20261023-16",
     "lang": "fr",
     "category": "recent-news",
