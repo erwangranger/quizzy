@@ -137,7 +137,7 @@
     "lang": "en",
     "category": "arts-literature",
     "difficulty": 2,
-    "question": "Who wrote the play \"Romeo and Juliet\"?",
+    "question": "Who wrote the play ‘Romeo and Juliet’?",
     "correct_answer": "William Shakespeare",
     "incorrect_answers": [
       "Christopher Marlowe",
@@ -156,7 +156,7 @@
     "lang": "en",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "Which studio produced the animated film \"Toy Story\"?",
+    "question": "Which studio produced the animated film ‘Toy Story’?",
     "correct_answer": "Pixar",
     "incorrect_answers": [
       "DreamWorks",
@@ -175,7 +175,7 @@
     "lang": "en",
     "category": "entertainment",
     "difficulty": 2,
-    "question": "Which band released the album \"Abbey Road\"?",
+    "question": "Which band released the album ‘Abbey Road’?",
     "correct_answer": "The Beatles",
     "incorrect_answers": [
       "The Rolling Stones",
@@ -251,7 +251,7 @@
     "lang": "en",
     "category": "arts-literature",
     "difficulty": 1,
-    "question": "Who painted ‘The Last Supper’?",
+    "question": "Who painted 'The Last Supper'?",
     "correct_answer": "Leonardo da Vinci",
     "incorrect_answers": [
       "Michelangelo",
@@ -352,7 +352,7 @@
       "Macbeth",
       "King Lear",
       "Othello",
-      "The Danish pastry"
+      "A melancholy loaf of bread"
     ],
     "explanation": "Written around 1600, ‘Hamlet’ follows the Prince of Denmark as he hesitates between revenge on his uncle Claudius and despair; the famous soliloquy opens Act 3, Scene 1.",
     "source_url": "https://en.wikipedia.org/wiki/To_be,_or_not_to_be",
@@ -428,7 +428,7 @@
       "5",
       "7",
       "12",
-      "A baker’s dozen"
+      "Ten, plus two shy ones"
     ],
     "explanation": "Between 1799 and 1824 Beethoven wrote nine symphonies, from the ‘Eroica’ to the ‘Choral’ with its ‘Ode to Joy’; by the Ninth’s 1824 premiere he was completely deaf.",
     "source_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
@@ -447,9 +447,9 @@
       "Cathedrals",
       "Castle towers",
       "Stone bridges",
-      "The neighbour’s laundry"
+      "The neighbor’s laundry"
     ],
-    "explanation": "In Cervantes’ 1605 novel, the would-be knight-errant jousts with windmills he believes are giants, giving the world the phrase ‘tilting at windmills’ for fighting imaginary enemies.",
+    "explanation": "In Cervantes’ 1605 novel, the would-be knight-errant jousts with windmills he takes for giants, giving the world the phrase ‘tilting at windmills’.",
     "source_url": "https://en.wikipedia.org/wiki/Don_Quixote",
     "as_of": null,
     "origin": "claude",
@@ -523,7 +523,7 @@
       "Rob Reiner",
       "Ron Howard",
       "Frank Capra",
-      "The warden, obviously"
+      "The warden"
     ],
     "explanation": "Frank Darabont adapted Stephen King's novella; the film underperformed in theatres, earned 7 Oscar nominations, and found its huge audience later on home video.",
     "source_url": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption",
@@ -561,7 +561,7 @@
       "The Lost World",
       "King Kong",
       "Godzilla",
-      "Dino Petting Farm"
+      "The petting zoo’s escaped goat"
     ],
     "explanation": "Steven Spielberg's adaptation of Michael Crichton's novel used groundbreaking CGI and became the highest-grossing film in history at its release.",
     "source_url": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
@@ -637,7 +637,7 @@
       "Sam Smith",
       "Amy Winehouse",
       "Duffy",
-      "The villain's choir"
+      "The henchman’s karaoke night"
     ],
     "explanation": "Adele co-wrote Skyfall with producer Paul Epworth and won the Academy Award for Best Original Song in 2013.",
     "source_url": "https://en.wikipedia.org/wiki/Skyfall_(song)",
@@ -675,7 +675,7 @@
       "Oldboy",
       "Burning",
       "Train to Busan",
-      "Oscar-only subtitles"
+      "Subtitles, but only the polite ones"
     ],
     "explanation": "Bong Joon-ho's Parasite won 4 Academy Awards in 2020, including Best Picture, Director and Original Screenplay.",
     "source_url": "https://en.wikipedia.org/wiki/Parasite_(2019_film)",
@@ -694,7 +694,7 @@
       "Ron Weasley",
       "Neville Longbottom",
       "Draco Malfoy",
-      "The scar kid from next door"
+      "The scar kid from next door’s owl"
     ],
     "explanation": "Daniel Radcliffe played Harry Potter in 8 films released between 2001 and 2011, adapted from the 7 novels.",
     "source_url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)",
@@ -713,7 +713,7 @@
       "Big",
       "Cast Away",
       "Rain Man",
-      "Chocolates: nature's life coach"
+      "Life is like a bag of gummy bears"
     ],
     "explanation": "Robert Zemeckis's Forrest Gump won 6 Oscars in 1995, including Best Picture and a Best Actor win for Tom Hanks.",
     "source_url": "https://en.wikipedia.org/wiki/Forrest_Gump",
@@ -1549,7 +1549,7 @@
       "Ag",
       "Fe",
       "Sn",
-      "Certified unobtainium, 24 karat"
+      "Shinyium"
     ],
     "explanation": "The symbol comes from aurum, the Latin word for gold. Humans have worked gold for over 5,000 years, and its rarity and resistance to tarnish made it a store of value in nearly every civilization.",
     "source_url": "https://en.wikipedia.org/wiki/Gold",
@@ -1663,7 +1663,7 @@
       "Isaac Newton",
       "Charles Darwin",
       "Nikola Tesla",
-      "Albert's cousin Norman"
+      "A licensed time-dilation adjuster"
     ],
     "explanation": "Einstein published special relativity in 1905 and general relativity in 1915, linking space, time, mass and gravity. His famous E = mc2 relation underpins nuclear physics and the corrections that keep GPS accurate.",
     "source_url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
@@ -1739,7 +1739,7 @@
       "The Andromeda Galaxy",
       "The Triangulum Galaxy",
       "The Whirlpool Galaxy",
-      "The Big Dipper Express"
+      "The Lactea Express"
     ],
     "explanation": "The Milky Way is a barred spiral galaxy about 100,000 light-years across, holding somewhere between 100 and 400 billion stars. The Sun sits roughly 26,000 light-years from its center, and Andromeda is our nearest large galactic neighbor.",
     "source_url": "https://en.wikipedia.org/wiki/Milky_Way",
@@ -1809,7 +1809,7 @@
     "lang": "en",
     "category": "science",
     "difficulty": 3,
-    "question": "Which chemical element has the symbol K?",
+    "question": "Potassium carries which one-letter chemical symbol?",
     "correct_answer": "Potassium",
     "incorrect_answers": [
       "Phosphorus",
@@ -2216,7 +2216,7 @@
       "Sodium",
       "N for Nifty"
     ],
-    "explanation": "N traces back to nitrum, the Latin word for the natron salts behind the element's name. One-letter symbols are reserved for the most familiar elements, from H and C to K for potassium.",
+    "explanation": "N comes from niter, the mineral salt whose Latin name nitrum gave nitrogen its name. One-letter symbols are reserved for the most familiar elements, from H and C to K for potassium.",
     "source_url": "https://en.wikipedia.org/wiki/Nitrogen",
     "as_of": null,
     "origin": "claude",
@@ -2233,7 +2233,7 @@
       "Auguste Renoir",
       "Camille Pissarro",
       "Édouard Manet",
-      "The garden gnome, working in oils"
+      "The garden gnome"
     ],
     "explanation": "Claude Monet painted his water garden at Giverny for the last 31 years of his life, often despite worsening cataracts. Eight of the largest canvases now wrap two oval rooms at the Musée de l'Orangerie in Paris.",
     "source_url": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
@@ -2399,14 +2399,14 @@
     "category": "history",
     "difficulty": 3,
     "question": "How many bronze gears have been identified in the Antikythera mechanism?",
-    "correct_answer": "37",
+    "correct_answer": "35",
     "incorrect_answers": [
       "12",
       "57",
       "3",
-      "A drawer of spare cogs"
+      "Thirty-five, and one still in the post"
     ],
-    "explanation": "Sponge divers found the bronze geared device in 1901 in a Roman-era shipwreck off Antikythera, and researchers have called it the first known analogue computer.",
+    "explanation": "Sponge divers found the bronze geared device in 1901 in a Roman-era shipwreck off Antikythera. X-ray scans suggest 35 meshing gears, 30 of which survive, and researchers have called it the first known analogue computer.",
     "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
     "as_of": null,
     "origin": "claude",
@@ -2463,7 +2463,7 @@
       "Neptune",
       "Rings on back order"
     ],
-    "explanation": "Saturn passed Jupiter in 2023 when 62 new moons pushed its confirmed total to 146, the highest of any planet. Jupiter trails with 95 confirmed moons.",
+    "explanation": "Saturn has been the moon leader since 2023, and in March 2025 the IAU recognized 128 more, bringing its confirmed total to 274. Jupiter trails with 95, so Saturn now has more moons than all the other planets combined.",
     "source_url": "https://en.wikipedia.org/wiki/Moons_of_Saturn",
     "as_of": null,
     "origin": "claude",
@@ -2518,7 +2518,7 @@
       "Utagawa Hiroshige",
       "Kitagawa Utamaro",
       "Sakai Hoitsu",
-      "A sushi chef, obviously"
+      "The fifth sushi restaurant"
     ],
     "explanation": "Hokusai published the print around 1831 as the first design in his series Thirty-six Views of Mount Fuji, and the volcano still appears small on the horizon beneath the towering wave.",
     "source_url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
@@ -2594,7 +2594,7 @@
       "The Howie scream",
       "The Castle thunder",
       "The Hawk screech",
-      "The Kazoo of Despair"
+      "The kazoo"
     ],
     "explanation": "Sound designer Ben Burtt found the recording on a Warner Bros. archive reel and named it after Private Wilhelm, a character shot with an arrow in the 1953 western The Charge at Feather River.",
     "source_url": "https://en.wikipedia.org/wiki/Wilhelm_scream",
@@ -2689,7 +2689,7 @@
       "The Strait of Magellan",
       "The Strait of Gibraltar",
       "The Bosphorus",
-      "The Panama Canal with the locks removed"
+      "An unfinished Panama Canal"
     ],
     "explanation": "The Bering Strait is only about 82 km wide at its narrowest, between Cape Dezhnev in Russia and Cape Prince of Wales in Alaska. The International Date Line runs through it.",
     "source_url": "https://en.wikipedia.org/wiki/Bering_Strait",
@@ -2860,7 +2860,7 @@
       "Nematode",
       "Rotifer",
       "Amoeba",
-      "The cookie that fell behind the sofa"
+      "A really tiny space suit"
     ],
     "explanation": "Tardigrades, or water bears, are eight-legged micro-animals under 1 mm long. In 2007 one lived through ten days of open-space vacuum on a satellite by shutting down into a tun state.",
     "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
@@ -2936,7 +2936,7 @@
       "Family Guy",
       "South Park",
       "Futurama",
-      "The Flaming Homer Marathon"
+      "Flaming Moe’s family hour"
     ],
     "explanation": "The Simpsons premiered on Fox in December 1989 and became the longest-running American primetime scripted series, with Springfield's location famously kept a running gag.",
     "source_url": "https://en.wikipedia.org/wiki/The_Simpsons",
@@ -2955,7 +2955,7 @@
       "Bad",
       "Off the Wall",
       "Dangerous",
-      "45 minutes of light breathing"
+      "Whoever guesses the beat on the first try"
     ],
     "explanation": "Thriller won a record eight Grammys at the 1984 ceremony and its 14-minute title video helped break MTV's early reluctance to play Black artists.",
     "source_url": "https://en.wikipedia.org/wiki/Thriller_(album)",
@@ -2974,7 +2974,7 @@
       "Ennio Morricone",
       "Nino Rota",
       "John Barry",
-      "A Solo Violinist Locked in the Shower"
+      "A solo violinist locked in the shower"
     ],
     "explanation": "Herrmann's all-string score, including the shrieking violin motif of the shower scene, cost far less than the film's budget, and Hitchcock paid him his full fee when the composer requested credit.",
     "source_url": "https://en.wikipedia.org/wiki/Psycho_(1960_film)",
@@ -3145,7 +3145,7 @@
       "Galleons",
       "Galleys",
       "Frigates",
-      "Spain's floating barbecue"
+      "The Spanish Armada tribute band"
     ],
     "explanation": "The Armada anchored off Calais in August 1588 to link up with the Duke of Parma's army, and English fireships sent into the anchorage scattered it before the Battle of Gravelines.",
     "source_url": "https://en.wikipedia.org/wiki/Spanish_Armada",
@@ -3183,7 +3183,7 @@
       "Iron dust",
       "Frozen methane",
       "Volcanic ash",
-      "A hula hoop the size of Texas"
+      "Saturn's spare ice cubes"
     ],
     "explanation": "The rings are made almost entirely of water ice particles, ranging from micrometers to meters across, orbiting the planet. Galileo first spotted them through a telescope in 1610, though he could not tell what they were.",
     "source_url": "https://en.wikipedia.org/wiki/Rings_of_Saturn",
@@ -3316,7 +3316,7 @@
       "Monsters, Inc.",
       "Toy Story",
       "Spirited Away",
-      "A golden statuette of Lord Farquaad's haircut"
+      "Lord Farquaad’s barber"
     ],
     "explanation": "Shrek won the inaugural Academy Award for Best Animated Feature in 2002, beating Monsters, Inc. and Jimmy Neutron: Boy Genius. In 2020 it became the first 21st-century film preserved in the National Film Registry.",
     "source_url": "https://en.wikipedia.org/wiki/Shrek",
@@ -3335,7 +3335,7 @@
       "Metropolis",
       "The Singing Fool",
       "Sunrise",
-      "A gramophone hidden in the popcorn machine"
+      "The world's first visible yodel"
     ],
     "explanation": "Alan Crosland's The Jazz Singer, starring Al Jolson, used the Vitaphone sound-on-disc system and effectively ended the silent era. It entered the US public domain on January 1, 2023.",
     "source_url": "https://en.wikipedia.org/wiki/The_Jazz_Singer",
@@ -3392,7 +3392,7 @@
       "3.60 m",
       "5.20 m",
       "6.70 m",
-      "A ring of spare rice-straw bales, width undisclosed"
+      "One bale short of a ring"
     ],
     "explanation": "The dohyo is a 4.55 m circle of clay bounded by partially buried rice-straw bales; 6.7 m is the width of the square platform it stands on.",
     "source_url": "https://en.wikipedia.org/wiki/Dohy%C5%8D",
@@ -3620,7 +3620,7 @@
       "Johann Sebastian Bach",
       "George Frideric Handel",
       "Arcangelo Corelli",
-      "The triangle solo guy"
+      "A harpsichord on four seasons of unpaid leave"
     ],
     "explanation": "Antonio Vivaldi published The Four Seasons in 1725 in Amsterdam as the first four concertos of a set of twelve; each concerto is paired with an Italian sonnet, probably written by Vivaldi himself.",
     "source_url": "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
@@ -3679,7 +3679,7 @@
       "Star Wars: The Force Awakens",
       "Three hours of blue screen tests"
     ],
-    "explanation": "Avatar passed Titanic on January 25, 2010, and has stayed on top since its 2021 re-release. James Cameron shot most of it with performance capture on a purpose-built stage in Los Angeles.",
+    "explanation": "Avatar passed Titanic on January 26, 2010, and has stayed on top since its 2021 re-release. James Cameron shot most of it with performance capture on a purpose-built stage in Los Angeles.",
     "source_url": "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
     "as_of": null,
     "origin": "claude",
@@ -4002,7 +4002,7 @@
       "Gustave Flaubert",
       "The miserables themselves"
     ],
-    "explanation": "Victor Hugo worked on the novel for nearly two decades. It follows the ex-convict Jean Valjean through the 1832 June Rebellion in Paris, and has been adapted into films and a long-running musical.",
+    "explanation": "Victor Hugo worked on Les Misérables for nearly two decades. It follows the ex-convict Jean Valjean through the 1832 June Rebellion in Paris, and has been adapted into films and a long-running musical.",
     "source_url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables",
     "as_of": null,
     "origin": "claude",
@@ -4056,8 +4056,8 @@
     "incorrect_answers": [
       "Ford Mustang",
       "Pontiac Trans Am",
-      "A motorised fridge with racing stripes",
-      "KITT from Knight Rider"
+      "KITT from Knight Rider",
+      "A motorised fridge with racing stripes"
     ],
     "explanation": "Doc Brown converts a DeLorean DMC-12 into his time machine, and the car needs to hit 88 miles per hour to jump through time.",
     "source_url": "https://en.wikipedia.org/wiki/Back_to_the_Future",
@@ -4075,8 +4075,8 @@
     "incorrect_answers": [
       "Kristoff, Sven and Grand Pabbie",
       "Kristoff, Hans and the Duke of Weselton",
-      "Kristoff, Sven and a walking fish named Baltic",
-      "Olaf, Elsa and a very confused moose"
+      "Olaf, Elsa and a very confused moose",
+      "A walking fish named Baltic"
     ],
     "explanation": "Anna teams up with the iceman Kristoff, his loyal reindeer Sven, and the talking snowman Olaf to reach Elsa, who has exiled herself to the North Mountain.",
     "source_url": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
@@ -4095,7 +4095,7 @@
       "Yasujirō Ozu",
       "Hayao Miyazaki",
       "Kenji Mizoguchi",
-      "Count Toshiro of the Bottomless Rice Bowl"
+      "The other Kurosawa"
     ],
     "explanation": "Kurosawa's Seven Samurai, starring Toshirō Mifune as the wild Kikuchiyo, became one of the most influential action films ever and won the Silver Lion in 1954.",
     "source_url": "https://en.wikipedia.org/wiki/Seven_Samurai",
@@ -4382,7 +4382,7 @@
       "A Wrinkle in Time",
       "The Baby Emperor of Mars"
     ],
-    "explanation": "Antoine de Saint-Exupery published this short tale in 1943 in New York, in English and French, while France was under occupation. The tiny asteroid home and the rose he tends have made it one of the most translated books ever written.",
+    "explanation": "Antoine de Saint-Exupéry published this short tale in 1943 in New York, in English and French, while France was under occupation. The tiny asteroid home and the rose he tends have made it one of the most translated books ever written.",
     "source_url": "https://en.wikipedia.org/wiki/The_Little_Prince",
     "as_of": null,
     "origin": "claude",
@@ -4477,7 +4477,7 @@
       "Maurice Jarre",
       "A man with a very fast synthesizer"
     ],
-    "explanation": "Vangelis's theme was released as a single and reached number one on the Billboard Hot 100 in 1982, and the film's score won the Academy Award for Best Original Score. He had already scored Animal House and would later write the music for Blade Runner.",
+    "explanation": "Vangelis's theme was released as a single and reached number one on the Billboard Hot 100 in 1982, and the film's score won the Academy Award for Best Original Score. He would later write the music for Blade Runner.",
     "source_url": "https://en.wikipedia.org/wiki/Chariots_of_Fire_(instrumental)",
     "as_of": null,
     "origin": "claude",
@@ -4779,7 +4779,7 @@
       "Antonio Salieri",
       "Joseph Haydn",
       "Franz Schubert",
-      "The Walsegg Tribute Band"
+      "Count Walsegg’s tribute act"
     ],
     "explanation": "The anonymous commission actually came from Count Franz von Walsegg, who wanted the work credited to himself for a memorial service for his young wife. Mozart died on 5 December 1791 with the Lacrimosa cut off after eight bars, and his pupil Franz Xaver Sussmayr completed the mass.",
     "source_url": "https://en.wikipedia.org/wiki/Requiem_(Mozart)",
@@ -4798,7 +4798,7 @@
       "Eduardo de Valfierno",
       "Yves Chaudron",
       "Apollinaire",
-      "The Louvre Employee of the Month, 1911"
+      "Louvre Employee of the Month, 1911"
     ],
     "explanation": "Peruggia, an Italian glazier who had helped build the painting's protective case, walked out with it under his worker's smock on 21 August 1911; Picasso and the poet Apollinaire were questioned over the theft. He was caught in Florence in December 1913 and served seven months.",
     "source_url": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia",
@@ -5007,7 +5007,7 @@
       "The Battle of the Somme",
       "The Battle of Verdun",
       "The Gallipoli landings",
-      "An early group hug, centuries ahead of schedule"
+      "Yes, but only until New Year's Day"
     ],
     "explanation": "German troops decorated their trenches with candles and sang carols on Christmas Eve 1914; British soldiers joined in singing and met in no man's land to swap tobacco, food and souvenirs.",
     "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
@@ -5026,7 +5026,7 @@
       "HMS Beagle",
       "HMS Endeavour",
       "HMS Resolution",
-      "The one where the cook confiscated the rum"
+      "The launch with the world's worst itinerary"
     ],
     "explanation": "Fletcher Christian led the mutiny on the Bounty after the ship left Tahiti, setting Bligh and 18 loyalists adrift in the launch; Bligh then navigated over 3,600 nautical miles to Timor.",
     "source_url": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty",
@@ -5121,7 +5121,7 @@
       "Titan",
       "Callisto",
       "Europa",
-      "Zeus's favourite parking spot"
+      "A moon with room for two"
     ],
     "explanation": "Ganymede spans 5,268 km across, wider than the planet Mercury, and is the only moon known to generate its own magnetic field. Galileo spotted it and three sister moons in 1610.",
     "source_url": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
@@ -5140,7 +5140,7 @@
       "Tender Is the Night",
       "This Side of Paradise",
       "The Beautiful and Damned",
-      "The Great Gatsby Coloring Book"
+      "The other Gatsby"
     ],
     "explanation": "Published in April 1925, the novel follows narrator Nick Carraway, who rents a cottage next door to Gatsby's mansion at West Egg. A commercial flop that sold fewer than 20,000 copies in its first year, it became an American classic after its wartime revival.",
     "source_url": "https://en.wikipedia.org/wiki/The_Great_Gatsby",
@@ -5178,7 +5178,7 @@
       "99",
       "144",
       "365",
-      "Once, but with feeling"
+      "A snare drum with commitment issues"
     ],
     "explanation": "Ravel built the piece on two melodies over an ostinato rhythm played 169 times on one or more snare drums, rising in one long crescendo. He composed it in 1928 for the dancer Ida Rubinstein, and it premiered at the Paris Opera that November.",
     "source_url": "https://en.wikipedia.org/wiki/Bol%C3%A9ro",
@@ -5197,7 +5197,7 @@
       "Grand Illusion",
       "The 400 Blows",
       "Hiroshima Mon Amour",
-      "A carousel of baguettes"
+      "A mime's silent review"
     ],
     "explanation": "Marcel Carné's two-part romantic drama Les Enfants du paradis follows a courtesan loved by a mime, an actor, a criminal and an aristocrat. Truffaut said he would give up all his films to have directed it.",
     "source_url": "https://en.wikipedia.org/wiki/Children_of_Paradise",
@@ -5520,7 +5520,7 @@
       "The Seine",
       "The Danube",
       "The Rhine",
-      "The puddle in the palace courtyard"
+      "The puddle outside the palace"
     ],
     "explanation": "King George I sailed upriver from Whitehall to Chelsea while about 50 musicians played from a nearby barge; the delighted king ordered the music repeated 3 times.",
     "source_url": "https://en.wikipedia.org/wiki/Water_Music",
@@ -5767,7 +5767,7 @@
       "Ambiorix",
       "Boudica",
       "Arminius",
-      "Duke Baguette of the Baguette Battalion"
+      "The Gaul Caesar never stopped talking about"
     ],
     "explanation": "Caesar trapped Vercingetorix on the plateau of Alise-Sainte-Reine behind a double line of fortifications and beat off a huge relief army. The defeated leader surrendered, was paraded in Caesars triumph and was executed in Rome in 46 BC.",
     "source_url": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
@@ -5783,7 +5783,7 @@
     "question": "Which ancient Roman aqueduct bridge in southern France, with three tiers of arches, stands almost 49 metres high?",
     "correct_answer": "The Pont du Gard",
     "incorrect_answers": [
-      "The Pont du Gard Bridge of Sighs",
+      "The Bridge of Sighs",
       "The Aqueduct of Segovia",
       "The Bridge of Alcántara",
       "A Roman paddling pool"
@@ -5862,7 +5862,7 @@
       "Spain",
       "Germany",
       "Italy",
-      "The parking garage they found the paintings in"
+      "A parking garage"
     ],
     "explanation": "Marcel Ravidat discovered the entrance on 12 September 1940, after his dog sniffed around a hole near Montignac, and the cave was closed to visitors in 1963 to save the paintings from the breath of up to 1,200 daily visitors. Its largest bull measures 5.2 m.",
     "source_url": "https://en.wikipedia.org/wiki/Lascaux",
@@ -5881,7 +5881,7 @@
       "Giuseppe Verdi",
       "Johannes Brahms",
       "Richard Strauss",
-      "Four operas is only three too many"
+      "The opera composer’s four-day workweek"
     ],
     "explanation": "Wagner wrote the libretto and music over about 26 years, from 1848 to 1874, and a full cycle runs roughly 15 hours across four evenings. The first complete performance opened the first Bayreuth Festival in 1876, from Das Rheingold to Götterdämmerung.",
     "source_url": "https://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen",
@@ -6204,7 +6204,7 @@
       "Swan Lake",
       "Giselle",
       "The Sleeping Beauty",
-      "The one where the sugar plum fairy unionizes"
+      "The sugar plum fairy’s other gig"
     ],
     "explanation": "Tchaikovsky's two-act ballet premiered in Saint Petersburg in 1892, adapted from a story by Alexandre Dumas that itself retells Hoffmann's tale The Nutcracker and the Mouse King.",
     "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker",
@@ -6280,7 +6280,7 @@
       "Madonna",
       "Prince",
       "Bruce Springsteen",
-      "A kazoo tribute band"
+      "A polka covers album"
     ],
     "explanation": "Nevermind knocked Michael Jackson's Dangerous off the top of the Billboard 200 in January 1992, a symbolic passing of the torch from pop to grunge.",
     "source_url": "https://en.wikipedia.org/wiki/Nevermind",
@@ -6541,7 +6541,7 @@
     "category": "science",
     "difficulty": 2,
     "question": "When Wilhelm Röntgen discovered X-rays in 1895, what did he name the new rays after?",
-    "correct_answer": "The unknown, using the mathematical symbol X",
+    "correct_answer": "The unknown (the symbol X)",
     "incorrect_answers": [
       "His own surname",
       "The Roman numeral for ten",

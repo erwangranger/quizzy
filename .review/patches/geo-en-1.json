@@ -1,0 +1,44 @@
+{
+  "agent": "GeoEn1",
+  "edit_log": [
+    {
+      "id": "geo-0029",
+      "lang": "en",
+      "reason": "joke at index 3 is untranslated fr-bank English text",
+      "set": {
+        "incorrect_answers": ["The Strait of Magellan", "The Strait of Gibraltar", "The Bosphorus", "An unfinished Panama Canal"]
+      }
+    },
+    {
+      "id": "geo-fr-0029",
+      "lang": "fr",
+      "reason": "twin: replace English-language joke with French equivalent",
+      "set": {
+        "incorrect_answers": ["Le détroit de Magellan", "Le détroit de Gibraltar", "Le Bosphore", "Le canal de Panama inachevé"]
+      }
+    },
+    {
+      "id": "geo-fr-0025",
+      "lang": "fr",
+      "reason": "question text missing required accents (surnomme, feu et de glace)",
+      "set": {
+        "question": "Quel pays insulaire est surnommé le pays de feu et de glace ?"
+      }
+    },
+    {
+      "id": "geo-fr-0027",
+      "lang": "fr",
+      "reason": "joke distractor and correct answer overlap both mean small puddle/pond",
+      "set": {
+        "incorrect_answers": ["Le lac Tanganyika", "Le lac Titicaca", "Le lac Leman", "Le plus grand bain d'oiseaux du monde"]
+      }
+    }
+  ],
+  "delete_ids": [],
+  "notes": [
+    "geo-0032 does not exist in either bank; slice reviewed was the 34 existing questions geo-0001 to geo-0035 minus geo-0032.",
+    "No en entries beyond geo-0029: the other 33 en questions passed fact check, answer/distractor structure, joke, explanation, and voice checks unmodified.",
+    "Joke uniqueness verified mechanically against both full banks; all replacement joke texts are unused anywhere.",
+    "Fr-only entries (geo-fr-0025, geo-fr-0027) are translation-twin corrections of plain defects; no matching en change required."
+  ]
+}

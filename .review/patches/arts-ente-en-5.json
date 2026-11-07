@@ -1,0 +1,514 @@
+{
+  "agent": "ArtsEnteEn5",
+  "edit_log": [
+    {
+      "id": "arts-0002",
+      "lang": "en",
+      "reason": "question contains double quotes, forbidden by spec",
+      "set": {
+        "question": "Who wrote the play ‘Romeo and Juliet’?"
+      }
+    },
+    {
+      "id": "arts-fr-0002",
+      "lang": "fr",
+      "reason": "twin of arts-0002 quote-style fix",
+      "set": {}
+    },
+    {
+      "id": "ente-0001",
+      "lang": "en",
+      "reason": "question contains double quotes, forbidden by spec",
+      "set": {
+        "question": "Which studio produced the animated film ‘Toy Story’?"
+      }
+    },
+    {
+      "id": "ente-fr-0001",
+      "lang": "fr",
+      "reason": "twin of ente-0001 quote-style fix",
+      "set": {}
+    },
+    {
+      "id": "ente-0002",
+      "lang": "en",
+      "reason": "question contains double quotes, forbidden by spec",
+      "set": {
+        "question": "Which band released the album ‘Abbey Road’?"
+      }
+    },
+    {
+      "id": "ente-fr-0002",
+      "lang": "fr",
+      "reason": "twin of ente-0002 quote-style fix",
+      "set": {}
+    },
+    {
+      "id": "arts-0009",
+      "lang": "en",
+      "reason": "playful literalism lands better than generic pastry pun",
+      "set": {
+        "incorrect_answers": ["Macbeth", "King Lear", "Othello", "A melancholy loaf of bread"]
+      }
+    },
+    {
+      "id": "arts-fr-0009",
+      "lang": "fr",
+      "reason": "twin of arts-0009 joke fix",
+      "set": {
+        "incorrect_answers": ["Macbeth", "Le Roi Lear", "Othello", "Une miche de pain très mélancolique"]
+      }
+    },
+    {
+      "id": "arts-0013",
+      "lang": "en",
+      "reason": "joke is an unfunny idiom restating a nearby distractor",
+      "set": {
+        "incorrect_answers": ["5", "7", "12", "Ten, plus two shy ones"]
+      }
+    },
+    {
+      "id": "arts-fr-0013",
+      "lang": "fr",
+      "reason": "twin of arts-0013 joke fix",
+      "set": {
+        "incorrect_answers": ["5", "7", "12", "Dix, plus deux timides"]
+      }
+    },
+    {
+      "id": "arts-0015",
+      "lang": "en",
+      "reason": "explanation uses non-bank British spelling; image is funnier without dead tail",
+      "set": {
+        "explanation": "In Cervantes’ 1605 novel, the would-be knight-errant jousts with windmills he takes for giants, giving the world the phrase ‘tilting at windmills’.",
+        "incorrect_answers": ["Cathedrals", "Castle towers", "Stone bridges", "The neighbor’s laundry"]
+      }
+    },
+    {
+      "id": "arts-fr-0015",
+      "lang": "fr",
+      "reason": "twin of arts-0015 fixes",
+      "set": {
+        "explanation": "Dans le roman de Cervantès de 1605, le faux chevalier errant charge en lance au poing des moulins qu'il prend pour des géants, donnant au monde l'expression « combattre des moulins à vent ».",
+        "incorrect_answers": ["Des cathédrales", "Des châteaux forts", "Des ponts de pierre", "Le linge de la voisine"]
+      }
+    },
+    {
+      "id": "arts-0019",
+      "lang": "en",
+      "reason": "joke tail dilutes the image",
+      "set": {
+        "incorrect_answers": ["Auguste Renoir", "Camille Pissarro", "Édouard Manet", "The garden gnome"]
+      }
+    },
+    {
+      "id": "arts-fr-0019",
+      "lang": "fr",
+      "reason": "twin of arts-0019 joke fix",
+      "set": {
+        "incorrect_answers": ["Auguste Renoir", "Camille Pissarro", "Édouard Manet", "Le nain de jardin"]
+      }
+    },
+    {
+      "id": "arts-0021",
+      "lang": "en",
+      "reason": "the fifth sushi restaurant is funnier than the first and unique",
+      "set": {
+        "incorrect_answers": ["Utagawa Hiroshige", "Kitagawa Utamaro", "Sakai Hoitsu", "The fifth sushi restaurant"]
+      }
+    },
+    {
+      "id": "arts-fr-0021",
+      "lang": "fr",
+      "reason": "twin of arts-0021 joke fix",
+      "set": {
+        "incorrect_answers": ["Utagawa Hiroshige", "Kitagawa Utamaro", "Sakai Hoitsu", "Le cinquième restaurant de sushi"]
+      }
+    },
+    {
+      "id": "arts-0030",
+      "lang": "en",
+      "reason": "in-world absurdity beats generic stock gag",
+      "set": {
+        "incorrect_answers": ["Johann Sebastian Bach", "George Frideric Handel", "Arcangelo Corelli", "A harpsichord on four seasons of unpaid leave"]
+      }
+    },
+    {
+      "id": "arts-fr-0030",
+      "lang": "fr",
+      "reason": "twin of arts-0030 joke fix",
+      "set": {
+        "incorrect_answers": ["Johann Sebastian Bach", "George Frideric Handel", "Arcangelo Corelli", "Un clavecin en congé sans solde depuis quatre saisons"]
+      }
+    },
+    {
+      "id": "arts-0036",
+      "lang": "en",
+      "reason": "author's accented name is canonical",
+      "set": {
+        "explanation": "Antoine de Saint-Exupéry published this short tale in 1943 in New York, in English and French, while France was under occupation. The tiny asteroid home and the rose he tends have made it one of the most translated books ever written."
+      }
+    },
+    {
+      "id": "arts-fr-0036",
+      "lang": "fr",
+      "reason": "twin of arts-0036 accent fix",
+      "set": {}
+    },
+    {
+      "id": "arts-0040",
+      "lang": "en",
+      "reason": "the count who commissioned the Requiem under anonymity is the funnier target",
+      "set": {
+        "incorrect_answers": ["Antonio Salieri", "Joseph Haydn", "Franz Schubert", "Count Walsegg’s tribute act"]
+      }
+    },
+    {
+      "id": "arts-fr-0040",
+      "lang": "fr",
+      "reason": "twin of arts-0040 joke fix",
+      "set": {
+        "incorrect_answers": ["Antonio Salieri", "Joseph Haydn", "Franz Schubert", "Le tribute act du comte Walsegg"]
+      }
+    },
+    {
+      "id": "arts-0041",
+      "lang": "en",
+      "reason": "date-format joke arrives before the punch word; keep the image",
+      "set": {
+        "incorrect_answers": ["Eduardo de Valfierno", "Yves Chaudron", "Apollinaire", "Louvre Employee of the Month, 1911"]
+      }
+    },
+    {
+      "id": "arts-fr-0041",
+      "lang": "fr",
+      "reason": "twin of arts-0041 joke fix",
+      "set": {
+        "incorrect_answers": ["Eduardo de Valfierno", "Yves Chaudron", "Apollinaire", "Employé du mois du Louvre, 1911"]
+      }
+    },
+    {
+      "id": "arts-0033",
+      "lang": "en",
+      "reason": "canonical accented title and author voice fix",
+      "set": {
+        "explanation": "Victor Hugo worked on Les Misérables for nearly two decades. It follows the ex-convict Jean Valjean through the 1832 June Rebellion in Paris, and has been adapted into films and a long-running musical."
+      }
+    },
+    {
+      "id": "arts-fr-0033",
+      "lang": "fr",
+      "reason": "twin of arts-0033 accent fix",
+      "set": {}
+    },
+    {
+      "id": "arts-0042",
+      "lang": "en",
+      "reason": "coloring-book joke restates the answer; absurd tribute safer than mocking the author",
+      "set": {
+        "incorrect_answers": ["Tender Is the Night", "This Side of Paradise", "The Beautiful and Damned", "The other Gatsby"]
+      }
+    },
+    {
+      "id": "arts-fr-0042",
+      "lang": "fr",
+      "reason": "twin of arts-0042 joke fix",
+      "set": {
+        "incorrect_answers": ["Tendre est la nuit", "L'Envers du paradis", "Les Heureux et les Damnés", "L'autre Gatsby"]
+      }
+    },
+    {
+      "id": "arts-0044",
+      "lang": "en",
+      "reason": "tempo joke is mundane for music-world question",
+      "set": {
+        "incorrect_answers": ["99", "144", "365", "A snare drum with commitment issues"]
+      }
+    },
+    {
+      "id": "arts-fr-0044",
+      "lang": "fr",
+      "reason": "twin of arts-0044 joke fix",
+      "set": {
+        "incorrect_answers": ["99", "144", "365", "Une caisse claire qui a peur de l'engagement"]
+      }
+    },
+    {
+      "id": "arts-0046",
+      "lang": "en",
+      "reason": "joke: literalism is funnier than soggy courtyard",
+      "set": {
+        "incorrect_answers": ["The Seine", "The Danube", "The Rhine", "The puddle outside the palace"]
+      }
+    },
+    {
+      "id": "arts-fr-0046",
+      "lang": "fr",
+      "reason": "twin of arts-0046 joke fix",
+      "set": {
+        "incorrect_answers": ["La Seine", "Le Danube", "Le Rhin", "La flaque devant le palais"]
+      }
+    },
+    {
+      "id": "arts-0048",
+      "lang": "en",
+      "reason": "joke drags a 5-word image into parking-garage absurdity",
+      "set": {
+        "incorrect_answers": ["Spain", "Germany", "Italy", "A parking garage"]
+      }
+    },
+    {
+      "id": "arts-fr-0048",
+      "lang": "fr",
+      "reason": "twin of arts-0048 joke fix",
+      "set": {
+        "incorrect_answers": ["L'Espagne", "L'Allemagne", "L'Italie", "Un parking souterrain"]
+      }
+    },
+    {
+      "id": "arts-0050",
+      "lang": "en",
+      "reason": "explanatory-tail joke lacks an image",
+      "set": {
+        "incorrect_answers": ["Giuseppe Verdi", "Johannes Brahms", "Richard Strauss", "The opera composer’s four-day workweek"]
+      }
+    },
+    {
+      "id": "arts-fr-0050",
+      "lang": "fr",
+      "reason": "twin of arts-0050 joke fix",
+      "set": {
+        "incorrect_answers": ["Giuseppe Verdi", "Johannes Brahms", "Richard Strauss", "La semaine de quatre jours du compositeur d'opéra"]
+      }
+    },
+    {
+      "id": "arts-0051",
+      "lang": "en",
+      "reason": "5-word union gag overruns the 1-4 word deadpan rule",
+      "set": {
+        "incorrect_answers": ["Swan Lake", "Giselle", "The Sleeping Beauty", "The sugar plum fairy’s other gig"]
+      }
+    },
+    {
+      "id": "arts-fr-0051",
+      "lang": "fr",
+      "reason": "twin of arts-0051 joke fix",
+      "set": {
+        "incorrect_answers": ["Le Lac des cygnes", "Giselle", "La Belle au bois dormant", "Le deuxième métier de la fée Dragée"]
+      }
+    },
+    {
+      "id": "ente-0003",
+      "lang": "en",
+      "reason": "fr twin compares the warden to the answer; en mirror fixes the overlap",
+      "set": {
+        "incorrect_answers": ["Rob Reiner", "Ron Howard", "Frank Capra", "The warden"]
+      }
+    },
+    {
+      "id": "ente-fr-0003",
+      "lang": "fr",
+      "reason": "twin of ente-0003 joke fix",
+      "set": {
+        "incorrect_answers": ["Rob Reiner", "Ron Howard", "Frank Capra", "Le directeur de la prison"]
+      }
+    },
+    {
+      "id": "ente-0005",
+      "lang": "en",
+      "reason": "kiddie-petting-zoo joke undershoots the film's scale; absurd-entity fix is specific to the question's world",
+      "set": {
+        "incorrect_answers": ["The Lost World", "King Kong", "Godzilla", "The petting zoo’s escaped goat"]
+      }
+    },
+    {
+      "id": "ente-fr-0005",
+      "lang": "fr",
+      "reason": "twin of ente-0005 joke fix",
+      "set": {
+        "incorrect_answers": ["Le Monde perdu", "King Kong", "Godzilla", "La chèvre échappée du zoo tactile"]
+      }
+    },
+    {
+      "id": "ente-0009",
+      "lang": "en",
+      "reason": "fr twin reads Le Méchant; in-world absurdity fits Bond's world and stays unique",
+      "set": {
+        "incorrect_answers": ["Sam Smith", "Amy Winehouse", "Duffy", "The henchman’s karaoke night"]
+      }
+    },
+    {
+      "id": "ente-fr-0009",
+      "lang": "fr",
+      "reason": "twin of ente-0009 joke fix",
+      "set": {
+        "incorrect_answers": ["Sam Smith", "Amy Winehouse", "Duffy", "La soirée karaoké des sbires"]
+      }
+    },
+    {
+      "id": "ente-0011",
+      "lang": "en",
+      "reason": "subtitle-style joke dead; playful non-answer keeps the image",
+      "set": {
+        "incorrect_answers": ["Oldboy", "Burning", "Train to Busan", "Subtitles, but only the polite ones"]
+      }
+    },
+    {
+      "id": "ente-fr-0011",
+      "lang": "fr",
+      "reason": "twin of ente-0011 joke fix",
+      "set": {
+        "incorrect_answers": ["Oldboy", "Burning", "Train to Busan", "Sous-titres, mais seulement les polis"]
+      }
+    },
+    {
+      "id": "ente-0012",
+      "lang": "en",
+      "reason": "in-world absurdity beats generic neighbor kid",
+      "set": {
+        "incorrect_answers": ["Ron Weasley", "Neville Longbottom", "Draco Malfoy", "The scar kid from next door’s owl"]
+      }
+    },
+    {
+      "id": "ente-fr-0012",
+      "lang": "fr",
+      "reason": "twin of ente-0012 joke fix",
+      "set": {
+        "incorrect_answers": ["Ron Weasley", "Neville Longbottom", "Draco Malfoy", "La chouette du gamin à la cicatrice d’à côté"]
+      }
+    },
+    {
+      "id": "ente-0013",
+      "lang": "en",
+      "reason": "subtitle-clause joke with colon; chocolate non-answers keep the image",
+      "set": {
+        "incorrect_answers": ["Big", "Cast Away", "Rain Man", "Life is like a bag of gummy bears"]
+      }
+    },
+    {
+      "id": "ente-fr-0013",
+      "lang": "fr",
+      "reason": "twin of ente-0013 joke fix",
+      "set": {
+        "incorrect_answers": ["Big", "Seul au monde", "Rain Man", "La vie est comme un paquet de oursons gélifiés"]
+      }
+    },
+    {
+      "id": "ente-0019",
+      "lang": "en",
+      "reason": "one-word deadpan stays inside the 1-4-word rule",
+      "set": {
+        "incorrect_answers": ["The Howie scream", "The Castle thunder", "The Hawk screech", "The kazoo"]
+      }
+    },
+    {
+      "id": "ente-fr-0019",
+      "lang": "fr",
+      "reason": "twin of ente-0019 joke fix",
+      "set": {
+        "incorrect_answers": ["Le cri Howie", "Le tonnerre du château", "Le rugissement du lion", "Le kazoo"]
+      }
+    },
+    {
+      "id": "ente-0021",
+      "lang": "en",
+      "reason": "in-world Simpsons gag beats generic marathon joke; fr twin showed the way",
+      "set": {
+        "incorrect_answers": ["Family Guy", "South Park", "Futurama", "Flaming Moe’s family hour"]
+      }
+    },
+    {
+      "id": "ente-fr-0021",
+      "lang": "fr",
+      "reason": "twin of ente-0021 joke fix",
+      "set": {
+        "incorrect_answers": ["Family Guy", "South Park", "Futurama", "L'émission familiale du Duff flamboyant"]
+      }
+    },
+    {
+      "id": "ente-0022",
+      "lang": "en",
+      "reason": "deadpan absurdity at beat-guessing beats explanatory tail",
+      "set": {
+        "incorrect_answers": ["Bad", "Off the Wall", "Dangerous", "Whoever guesses the beat on the first try"]
+      }
+    },
+    {
+      "id": "ente-fr-0022",
+      "lang": "fr",
+      "reason": "twin of ente-0022 joke fix",
+      "set": {
+        "incorrect_answers": ["Bad", "Off the Wall", "Dangerous", "Celui qui trouve le tempo du premier coup"]
+      }
+    },
+    {
+      "id": "ente-0023",
+      "lang": "en",
+      "reason": "Title Case inconsistent with the bank's sentence case",
+      "set": {
+        "incorrect_answers": ["Ennio Morricone", "Nino Rota", "John Barry", "A solo violinist locked in the shower"]
+      }
+    },
+    {
+      "id": "ente-fr-0023",
+      "lang": "fr",
+      "reason": "twin of ente-0023 casing fix",
+      "set": {}
+    },
+    {
+      "id": "ente-0025",
+      "lang": "en",
+      "reason": "date-format joke; absurd tribute to the film is funnier",
+      "set": {
+        "incorrect_answers": ["Monsters, Inc.", "Toy Story", "Spirited Away", "Lord Farquaad’s barber"]
+      }
+    },
+    {
+      "id": "ente-fr-0025",
+      "lang": "fr",
+      "reason": "twin of ente-0025 joke fix",
+      "set": {
+        "incorrect_answers": ["Monstres et Cie", "Toy Story", "Le Voyage de Chihiro", "Le coiffeur de Lord Farquaad"]
+      }
+    },
+    {
+      "id": "ente-0026",
+      "lang": "en",
+      "reason": "en twin should be at least as funny as the fr one; absurdist-historical lands in the silent-film world",
+      "set": {
+        "incorrect_answers": ["Metropolis", "The Singing Fool", "Sunrise", "The world's first visible yodel"]
+      }
+    },
+    {
+      "id": "ente-fr-0026",
+      "lang": "fr",
+      "reason": "twin of ente-0026 joke fix",
+      "set": {
+        "incorrect_answers": ["Metropolis", "Les Ailes", "L'Aurore", "Le tout premier yodel visible du monde"]
+      }
+    },
+    {
+      "id": "arts-0004",
+      "lang": "en",
+      "reason": "crisper apostrophe form, voice-matched to bank",
+      "set": {
+        "question": "Who painted 'The Last Supper'?"
+      }
+    },
+    {
+      "id": "arts-fr-0004",
+      "lang": "fr",
+      "reason": "twin of arts-0004 touch-up",
+      "set": {}
+    }
+  ],
+  "delete_ids": [],
+  "notes": [
+    "Slice scope: arts-0001..0054 and ente-0001..0026 in general-knowledge_en.json. arts-0014 and arts-0049 do not exist; 78 questions reviewed, none deleted.",
+    "Twin entries with empty 'set' (arts-fr-0002, ente-fr-0001, ente-fr-0002, arts-fr-0036, arts-fr-0033, ente-fr-0023, arts-fr-0004) mark questions whose twin was edited for mechanical normalization (curly straight quotes -> en bank's curly single quotes; accent canonicalization) while their own language already uses « » or the correct accent; integrator may apply or skip these no-op twins. If your schema rejects empty 'set', drop those 7 entries: no en change in those pairs depends on the fr side.",
+    "Fact checks against Wikipedia: Bolero ostinato 169x (arts-0044) confirmed; Wilhelm scream from Distant Drums 1951 (ente-0019) confirmed; Bohemian Rhapsody 9 weeks at #1 (ente-0017) confirmed; David 5.17 m (arts-0028) confirmed; Venus de Milo found on Milos 1820 (arts-0022) confirmed; The Kiss 1907-1908 shown at Belvedere (arts-0034) confirmed; Monet ~250 water-lily canvases in his last 31 years (arts-0019) confirmed.",
+    "All replacement jokes were checked unique within the en bank; fr twins are literal translations and checked unique within the fr bank.",
+    "Duplicate-question pair geo-0042/geo-0015 is outside my slice; no geo questions were touched.",
+    "Edits cluster on: straight double quotes in 3 en questions (spec violation), joke index-3 quality (shorter or more in-world), two author-name accent canonicalizations, one digit-voice count, one Title Case fix. Facts and answers were correct throughout."
+  ]
+}

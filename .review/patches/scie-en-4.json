@@ -1,0 +1,249 @@
+{
+  "agent": "ScieEn4",
+  "edit_log": [
+    {
+      "id": "scie-0021",
+      "lang": "en",
+      "reason": "explanation cites outdated 2023 moon counts; Saturn has 274 confirmed moons since March 2025",
+      "set": {
+        "explanation": "Saturn has been the moon leader since 2023, and in March 2025 the IAU recognized 128 more, bringing its confirmed total to 274. Jupiter trails with 95, so Saturn now has more moons than all the other planets combined."
+      }
+    },
+    {
+      "id": "scie-fr-0021",
+      "lang": "fr",
+      "reason": "twin explanation update to match en moon counts",
+      "set": {
+        "explanation": "Saturne est la championne des lunes depuis 2023, et en mars 2025 l'Union astronomique internationale en a reconnu 128 de plus, portant son total confirmé à 274. Jupiter suit avec 95 lunes, si bien que Saturne en compte plus que toutes les autres planètes réunies."
+      }
+    },
+    {
+      "id": "scie-0017",
+      "lang": "en",
+      "reason": "question text 0.97 similar to scie-0020 (symbol-K vs symbol-N), validator near-duplicate territory; reworded to vary the template",
+      "set": {
+        "question": "Potassium carries which one-letter chemical symbol?"
+      }
+    },
+    {
+      "id": "scie-fr-0017",
+      "lang": "fr",
+      "reason": "twin rewording to match en near-duplicate fix",
+      "set": {
+        "question": "Le potassium porte quel symbole chimique à une seule lettre ?"
+      }
+    },
+    {
+      "id": "scie-0032",
+      "lang": "en",
+      "reason": "explanation repeated the question's premise; trimmed to the added fact per brief rule 5",
+      "set": {
+        "explanation": "Since 1983 the metre is defined as the distance light covers in 1/299,792,458 of a second, so the constant is exact by definition. Better measurements now refine the metre, not the speed of light."
+      }
+    },
+    {
+      "id": "scie-fr-0032",
+      "lang": "fr",
+      "reason": "twin explanation trim to match en",
+      "set": {
+        "explanation": "Depuis 1983, le mètre est défini comme la distance parcourue par la lumière dans le vide en 1/299 792 458 de seconde, si bien que la constante est exacte par définition. Les mesures plus précises affinent désormais le mètre, et non la vitesse de la lumière."
+      }
+    },
+    {
+      "id": "scie-0055",
+      "lang": "en",
+      "reason": "correct answer contained a parenthetical clause, not the canonical short form",
+      "set": {
+        "correct_answer": "The unknown (the symbol X)"
+      }
+    },
+    {
+      "id": "scie-fr-0055",
+      "lang": "fr",
+      "reason": "twin answer reformat to mirror en canonical form",
+      "set": {
+        "correct_answer": "L'inconnue (le symbole X)"
+      }
+    },
+    {
+      "id": "scie-0020",
+      "lang": "en",
+      "reason": "explanation contained an unverifiable etymological claim about natron and the element's name",
+      "set": {
+        "explanation": "N comes from niter, the mineral salt whose Latin name nitrum gave nitrogen its name. One-letter symbols are reserved for the most familiar elements, from H and C to K for potassium."
+      }
+    },
+    {
+      "id": "scie-fr-0020",
+      "lang": "fr",
+      "reason": "twin explanation rewrite to match en niter etymology",
+      "set": {
+        "explanation": "Le N vient du salpêtre, ce minéral dont le nom latin nitrum a donné celui de l'azote. Les symboles à une seule lettre sont réservés aux éléments les plus familiers, de H et C jusqu'au K du potassium."
+      }
+    },
+    {
+      "id": "scie-0009",
+      "lang": "en",
+      "reason": "joke invoked a real named person's fictional relative; replaced with gentle absurd scale per brief",
+      "set": {
+        "incorrect_answers": [
+          "Isaac Newton",
+          "Charles Darwin",
+          "Nikola Tesla",
+          "A licensed time-dilation adjuster"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0009",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en",
+      "set": {
+        "incorrect_answers": [
+          "Isaac Newton",
+          "Charles Darwin",
+          "Nikola Tesla",
+          "Un ajusteur agréé de dilatation du temps"
+        ]
+      }
+    },
+    {
+      "id": "scie-0003",
+      "lang": "en",
+      "reason": "joke namechecked a real brand-like entity with unobtainium; replaced with a pure absurd entity",
+      "set": {
+        "incorrect_answers": [
+          "Ag",
+          "Fe",
+          "Sn",
+          "Shinyium"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0003",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en",
+      "set": {
+        "incorrect_answers": [
+          "Ag",
+          "Fe",
+          "Sn",
+          "Brillium"
+        ]
+      }
+    },
+    {
+      "id": "scie-0013",
+      "lang": "en",
+      "reason": "joke was a generic transit gag tied to nothing in the question's world; replaced with a Milky Way specific joke",
+      "set": {
+        "incorrect_answers": [
+          "The Andromeda Galaxy",
+          "The Triangulum Galaxy",
+          "The Whirlpool Galaxy",
+          "The Lactea Express"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0013",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en",
+      "set": {
+        "incorrect_answers": [
+          "La galaxie d'Andromède",
+          "La galaxie du Triangle",
+          "La galaxie du Tourbillon",
+          "Celle d'à côté"
+        ]
+      }
+    },
+    {
+      "id": "scie-0027",
+      "lang": "en",
+      "reason": "joke was a plain metaphor, not an absurd wrong answer; replaced with a planet-scale absurd entity; joke deduped vs news-20261006-16",
+      "set": {
+        "incorrect_answers": [
+          "Iron dust",
+          "Frozen methane",
+          "Volcanic ash",
+          "Saturn's spare ice cubes"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0027",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en; joke deduped vs news-20261006-61",
+      "set": {
+        "incorrect_answers": [
+          "Poussière de fer",
+          "Méthane gelé",
+          "Cendre volcanique",
+          "Les glaçons de réserve de Saturne"
+        ]
+      }
+    },
+    {
+      "id": "scie-0044",
+      "lang": "en",
+      "reason": "joke mocked a real named god figure with a parking gag; replaced with an in-world absurd scale entity",
+      "set": {
+        "incorrect_answers": [
+          "Titan",
+          "Callisto",
+          "Europa",
+          "A moon with room for two"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0044",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en",
+      "set": {
+        "incorrect_answers": [
+          "Titan",
+          "Callisto",
+          "Europe",
+          "Une lune avec de la place pour deux"
+        ]
+      }
+    },
+    {
+      "id": "scie-0026",
+      "lang": "en",
+      "reason": "joke was unrelated household whimsy; replaced with an in-world absurd entity",
+      "set": {
+        "incorrect_answers": [
+          "Nematode",
+          "Rotifer",
+          "Amoeba",
+          "A really tiny space suit"
+        ]
+      }
+    },
+    {
+      "id": "scie-fr-0026",
+      "lang": "fr",
+      "reason": "twin joke replacement to match en",
+      "set": {
+        "incorrect_answers": [
+          "Nématode",
+          "Rotifère",
+          "Amibe",
+          "Une très petite combinaison spatiale"
+        ]
+      }
+    }
+  ],
+  "delete_ids": [],
+  "notes": [
+    "scie-0049 does not exist in general-knowledge_en.json (ids jump 0048 to 0050); 55 scie ids exist, 54 in my 0001-0055 window minus that gap.",
+    "Fact fixes: moon counts verified via NASA Saturnian Satellite Fact Sheet (274 confirmed as of March 2025) and Guardian coverage.",
+    "No duplicate jokes introduced; each replacement joke checked against all index-3 jokes in both banks.",
+    "scie-0017 rewording also resolves the en near-duplicate pair scie-0017/scie-0020 (0.97 similarity).",
+    "No deletions: every claim was fixable in place."
+  ]
+}

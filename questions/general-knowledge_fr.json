@@ -352,7 +352,7 @@
       "Macbeth",
       "Le Roi Lear",
       "Othello",
-      "Le petit pain danois"
+      "Une miche de pain très mélancolique"
     ],
     "explanation": "Écrite vers 1600, « Hamlet » suit le prince du Danemark, tiraillé entre la vengeance contre son oncle Claudius et le désespoir ; le célèbre monologue ouvre l’acte III, scène 1.",
     "source_url": "https://en.wikipedia.org/wiki/To_be,_or_not_to_be",
@@ -428,7 +428,7 @@
       "5",
       "7",
       "12",
-      "Une douzaine de boulanger"
+      "Dix, plus deux timides"
     ],
     "explanation": "Entre 1799 et 1824, Beethoven écrit neuf symphonies, de l’« Héroïque » à la « Chorale » et son « Hymne à la joie » ; à la création de la Neuvième en 1824, il est totalement sourd.",
     "source_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
@@ -447,9 +447,9 @@
       "Des cathédrales",
       "Des châteaux forts",
       "Des ponts de pierre",
-      "Le linge du voisin"
+      "Le linge de la voisine"
     ],
-    "explanation": "Dans le roman de Cervantès paru en 1605, le prétendu chevalier errant joute contre des moulins qu’il prend pour des géants, donnant au monde l’expression « combattre des moulins à vent ».",
+    "explanation": "Dans le roman de Cervantès de 1605, le faux chevalier errant charge en lance au poing des moulins qu'il prend pour des géants, donnant au monde l'expression « combattre des moulins à vent ».",
     "source_url": "https://en.wikipedia.org/wiki/Don_Quixote",
     "as_of": null,
     "origin": "claude",
@@ -523,7 +523,7 @@
       "Rob Reiner",
       "Ron Howard",
       "Frank Capra",
-      "Le directeur de la prison, bien sûr"
+      "Le directeur de la prison"
     ],
     "explanation": "Frank Darabont a adapté la novella de Stephen King ; le film a déçu au box-office, décroché 7 nominations aux Oscars, puis trouvé son immense public en vidéo.",
     "source_url": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption",
@@ -561,7 +561,7 @@
       "Le Monde perdu",
       "King Kong",
       "Godzilla",
-      "La ferme à dinosaures"
+      "La chèvre échappée du zoo tactile"
     ],
     "explanation": "Adapté du roman de Michael Crichton par Steven Spielberg, le film a repoussé les limites des effets numériques et est devenu le plus gros succès de l’histoire du cinéma à sa sortie.",
     "source_url": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
@@ -637,7 +637,7 @@
       "Sam Smith",
       "Amy Winehouse",
       "Duffy",
-      "La chorale du méchant"
+      "La soirée karaoké des sbires"
     ],
     "explanation": "Adele a coécrit Skyfall avec le producteur Paul Epworth et a remporté l’Oscar de la meilleure chanson originale en 2013.",
     "source_url": "https://en.wikipedia.org/wiki/Skyfall_(song)",
@@ -675,7 +675,7 @@
       "Oldboy",
       "Burning",
       "Train to Busan",
-      "Sous-titré qu'aux Oscars"
+      "Sous-titres, mais seulement les polis"
     ],
     "explanation": "Parasite de Bong Joon-ho a remporté 4 Oscars en 2020, dont meilleur film, meilleure réalisation et meilleur scénario original.",
     "source_url": "https://en.wikipedia.org/wiki/Parasite_(2019_film)",
@@ -694,7 +694,7 @@
       "Ron Weasley",
       "Neville Longbottom",
       "Draco Malfoy",
-      "Le gamin à la cicatrice d’à côté"
+      "La chouette du gamin à la cicatrice d’à côté"
     ],
     "explanation": "Daniel Radcliffe a incarné Harry Potter dans 8 films sortis entre 2001 et 2011, adaptés des 7 romans.",
     "source_url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)",
@@ -713,7 +713,7 @@
       "Big",
       "Seul au monde",
       "Rain Man",
-      "La boîte de chocolats, c’est la vie"
+      "La vie est comme un paquet de oursons gélifiés"
     ],
     "explanation": "Forrest Gump de Robert Zemeckis a remporté 6 Oscars en 1995, dont meilleur film et un Oscar du meilleur acteur pour Tom Hanks.",
     "source_url": "https://en.wikipedia.org/wiki/Forrest_Gump",
@@ -1549,7 +1549,7 @@
       "Ag",
       "Fe",
       "Sn",
-      "Unobtainium certifié, 24 carats"
+      "Brillium"
     ],
     "explanation": "Le symbole vient d’aurum, le mot latin désignant l’or. Les humains travaillent ce métal depuis plus de 5 000 ans, et sa rareté comme sa résistance au ternissement en ont fait une réserve de valeur dans presque toutes les civilisations.",
     "source_url": "https://en.wikipedia.org/wiki/Gold",
@@ -1663,7 +1663,7 @@
       "Isaac Newton",
       "Charles Darwin",
       "Nikola Tesla",
-      "Le cousin Norman d’Albert"
+      "Un ajusteur agréé de dilatation du temps"
     ],
     "explanation": "Einstein publie la relativité restreinte en 1905 puis la relativité générale en 1915, reliant espace, temps, masse et gravité. Sa célèbre relation E = mc2 fonde la physique nucléaire et les corrections qui maintiennent le GPS précis.",
     "source_url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
@@ -1736,10 +1736,10 @@
     "question": "Quelle galaxie contient notre système solaire ?",
     "correct_answer": "La Voie lactée",
     "incorrect_answers": [
-      "La galaxie d’Andromède",
+      "La galaxie d'Andromède",
       "La galaxie du Triangle",
       "La galaxie du Tourbillon",
-      "L’express de la Grande Ourse"
+      "Celle d'à côté"
     ],
     "explanation": "La Voie lactée est une galaxie spirale barrée d’environ 100 000 années-lumière de diamètre, qui compte entre 100 et 400 milliards d’étoiles. Le Soleil se trouve à quelque 26 000 années-lumière de son centre, et Andromède est notre plus proche grande voisine.",
     "source_url": "https://en.wikipedia.org/wiki/Milky_Way",
@@ -1809,7 +1809,7 @@
     "lang": "fr",
     "category": "science",
     "difficulty": 3,
-    "question": "Quel élément chimique a pour symbole K ?",
+    "question": "Le potassium porte quel symbole chimique à une seule lettre ?",
     "correct_answer": "Le potassium",
     "incorrect_answers": [
       "Le phosphore",
@@ -2216,7 +2216,7 @@
       "Le sodium",
       "N comme Naviguer"
     ],
-    "explanation": "N vient de nitrum, le mot latin désignant le natron à l'origine du nom de l'élément. Les symboles à une seule lettre sont réservés aux éléments les plus familiers, de H et C jusqu'au K du potassium.",
+    "explanation": "Le N vient du salpêtre, ce minéral dont le nom latin nitrum a donné celui de l'azote. Les symboles à une seule lettre sont réservés aux éléments les plus familiers, de H et C jusqu'au K du potassium.",
     "source_url": "https://fr.wikipedia.org/wiki/Azote",
     "as_of": null,
     "origin": "claude",
@@ -2233,7 +2233,7 @@
       "Auguste Renoir",
       "Camille Pissarro",
       "Édouard Manet",
-      "Le nain de jardin, en peinture à l'huile"
+      "Le nain de jardin"
     ],
     "explanation": "Claude Monet a peint son jardin d'eau de Giverny pendant les 31 dernières années de sa vie, souvent malgré des cataractes qui s'aggravaient. Huit des plus grandes toiles habillent aujourd'hui deux salles ovales du musée de l'Orangerie, à Paris.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Nymph%C3%A9as",
@@ -2303,7 +2303,7 @@
     "lang": "fr",
     "category": "geography",
     "difficulty": 1,
-    "question": "Quel pays insulaire est surnomme le pays de feu et de glace ?",
+    "question": "Quel pays insulaire est surnommé le pays de feu et de glace ?",
     "correct_answer": "L'Islande",
     "incorrect_answers": [
       "Le Groenland",
@@ -2347,7 +2347,7 @@
       "Le lac Tanganyika",
       "Le lac Titicaca",
       "Le lac Leman",
-      "La flaque ambitieuse"
+      "Le plus grand bain d'oiseaux du monde"
     ],
     "explanation": "Le lac Baikal, en Siberie, atteint 1 642 m de profondeur et contient environ 20 pour cent de l'eau douce liquide de la planete. Il abrite le nerpa, un phoque d'eau douce unique au monde.",
     "source_url": "https://fr.wikipedia.org/wiki/Lac_Ba%C3%AFkal",
@@ -2399,14 +2399,14 @@
     "category": "history",
     "difficulty": 3,
     "question": "Combien d'engrenages en bronze ont été identifiés dans le mécanisme d'Anticythère ?",
-    "correct_answer": "37",
+    "correct_answer": "35",
     "incorrect_answers": [
       "12",
       "57",
       "3",
-      "Un tiroir de roues dentées de rechange"
+      "Trente-cinq, et la dernière encore au rebut"
     ],
-    "explanation": "Des pêcheurs d'éponges ont découvert ce calculateur à engrenages en 1901 dans l'épave d'un navire romain au large d'Anticythère ; les chercheurs y voient le premier ordinateur analogique connu.",
+    "explanation": "Des pêcheurs d'éponges ont découvert ce calculateur à engrenages en 1901 dans l'épave d'un navire romain au large d'Anticythère. Les scanners à rayons X révèlent 35 engrenages imbriqués, dont 30 subsistent, et les chercheurs y voient le premier ordinateur analogique connu.",
     "source_url": "https://fr.wikipedia.org/wiki/M%C3%A9canisme_d%27Anticyth%C3%A8re",
     "as_of": null,
     "origin": "claude",
@@ -2463,7 +2463,7 @@
       "Neptune",
       "Celle aux anneaux commandés par la poste"
     ],
-    "explanation": "Saturne a dépassé Jupiter en 2023 lorsque 62 nouvelles lunes ont porté son total confirmé à 146, le record du système solaire. Jupiter suit avec 95 lunes confirmées.",
+    "explanation": "Saturne est la championne des lunes depuis 2023, et en mars 2025 l'Union astronomique internationale en a reconnu 128 de plus, portant son total confirmé à 274. Jupiter suit avec 95 lunes, si bien que Saturne en compte plus que toutes les autres planètes réunies.",
     "source_url": "https://fr.wikipedia.org/wiki/Saturne_(plan%C3%A8te)",
     "as_of": null,
     "origin": "claude",
@@ -2518,7 +2518,7 @@
       "Utagawa Hiroshige",
       "Kitagawa Utamaro",
       "Sakai Hoitsu",
-      "Un chef sushi, évidemment"
+      "Le cinquième restaurant de sushi"
     ],
     "explanation": "Hokusai publie l'estampe vers 1831 comme première planche de sa série Trente-six vues du mont Fuji, et le volcan reste visible à l'horizon sous la vague démesurée.",
     "source_url": "https://fr.wikipedia.org/wiki/La_Grande_Vague_de_Kanagawa",
@@ -2594,7 +2594,7 @@
       "Le cri Howie",
       "Le tonnerre du château",
       "Le rugissement du lion",
-      "Le kazoo du désespoir"
+      "Le kazoo"
     ],
     "explanation": "Le concepteur sonore Ben Burtt a retrouvé l'enregistrement dans une bande des archives de Warner Bros et l'a baptisé d'après le soldat Wilhelm, transpercé par une flèche dans le western de 1953 La Charge sur la rivière rouge.",
     "source_url": "https://fr.wikipedia.org/wiki/Cri_Wilhelm",
@@ -2689,7 +2689,7 @@
       "Le détroit de Magellan",
       "Le détroit de Gibraltar",
       "Le Bosphore",
-      "The Panama Canal with the locks removed"
+      "Le canal de Panama inachevé"
     ],
     "explanation": "Le détroit de Béring ne dépasse pas 82 km à son point le plus étroit, entre le cap Dejnev en Russie et la péninsule Seward en Alaska. La ligne de changement de date le traverse.",
     "source_url": "https://fr.wikipedia.org/wiki/D%C3%A9troit_de_B%C3%A9ring",
@@ -2857,10 +2857,10 @@
     "question": "Quel animal microscopique peut survivre dans le vide de l'espace ?",
     "correct_answer": "Le tardigrade",
     "incorrect_answers": [
-      "Le nématode",
-      "Le rotifère",
-      "L'amibe",
-      "Le biscuit tombé derrière le canapé"
+      "Nématode",
+      "Rotifère",
+      "Amibe",
+      "Une très petite combinaison spatiale"
     ],
     "explanation": "Les tardigrades, ou ours d'eau, sont des micro-animaux à huit pattes de moins d'un millimètre. En 2007, l'un d'eux a survécu à dix jours de vide spatial à bord d'un satellite en s'enfermant dans une forme de vie ralentie appelée tun.",
     "source_url": "https://fr.wikipedia.org/wiki/Tardigrada",
@@ -2936,7 +2936,7 @@
       "Family Guy",
       "South Park",
       "Futurama",
-      "Le Grand Marathon Flambant"
+      "L'émission familiale du Duff flamboyant"
     ],
     "explanation": "Les Simpson sont diffusées sur Fox depuis décembre 1989 et forment la série en prises de vues réelles la plus longue de l'histoire américaine ; l'emplacement exact de Springfield reste un gag récurrent.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Simpson",
@@ -2955,7 +2955,7 @@
       "Bad",
       "Off the Wall",
       "Dangerous",
-      "45 minutes de respiration légère"
+      "Celui qui trouve le tempo du premier coup"
     ],
     "explanation": "Thriller a remporté un record de huit Grammy Awards en 1984, et son clip de quatorze minutes a aidé MTV à dépasser sa réticence initiale à diffuser d'artistes noirs.",
     "source_url": "https://fr.wikipedia.org/wiki/Thriller_(album)",
@@ -3145,7 +3145,7 @@
       "Des galions",
       "Des galères",
       "Des frégates",
-      "Le barbecue flottant de l'Espagne"
+      "Le fan club flottant de l'Armada"
     ],
     "explanation": "L'Armada mouille devant Calais en août 1588 pour rejoindre l'armée du duc de Parme, et des brûlots anglais lancés dans le mouillage mettent la flotte en désordre avant la bataille de Gravelines.",
     "source_url": "https://fr.wikipedia.org/wiki/Invincible_Armada",
@@ -3180,10 +3180,10 @@
     "question": "De quoi les célèbres anneaux de Saturne sont-ils presque entièrement composés ?",
     "correct_answer": "De glace d'eau",
     "incorrect_answers": [
-      "De poussière de fer",
-      "De méthane gelé",
-      "De cendre volcanique",
-      "Un hula hoop grand comme le Texas"
+      "Poussière de fer",
+      "Méthane gelé",
+      "Cendre volcanique",
+      "Les glaçons de réserve de Saturne"
     ],
     "explanation": "Les anneaux sont faits presque entièrement de particules de glace d'eau, de quelques micromètres à plusieurs mètres, en orbite autour de la planète. Galilée les a aperçus au télescope en 1610 sans en comprendre la nature.",
     "source_url": "https://fr.wikipedia.org/wiki/Anneaux_de_Saturne",
@@ -3316,7 +3316,7 @@
       "Monstres et Cie",
       "Toy Story",
       "Le Voyage de Chihiro",
-      "Une statuette d'or à l'effigie de Lord Farquaad"
+      "Le coiffeur de Lord Farquaad"
     ],
     "explanation": "Shrek a remporté le premier Oscar du meilleur film d'animation en 2002, devant Monstres et Cie et Jimmy Neutron. En 2020, il est devenu le premier film du 21e siècle conservé à la National Film Registry.",
     "source_url": "https://fr.wikipedia.org/wiki/Shrek_(film)",
@@ -3335,7 +3335,7 @@
       "Metropolis",
       "Les Ailes",
       "L'Aurore",
-      "Un gramophone caché dans la machine à pop-corn"
+      "Le tout premier yodel visible du monde"
     ],
     "explanation": "Réalisé par Alan Crosland avec le chanteur Al Jolson, Le Chanteur de jazz utilisait le procédé Vitaphone et marqua la fin du cinéma muet. Il est entré dans le domaine public américain le 1er janvier 2023.",
     "source_url": "https://fr.wikipedia.org/wiki/Le_Chanteur_de_jazz",
@@ -3392,7 +3392,7 @@
       "3,60 m",
       "5,20 m",
       "6,70 m",
-      "Un cercle de bottes de paille"
+      "Il manque une botte au cercle"
     ],
     "explanation": "Le dohyō est un cercle de 4,55 m bordé de bottes de riz à demi enterrées ; 6,70 m correspond au côté de la plateforme carrée qui le porte.",
     "source_url": "https://fr.wikipedia.org/wiki/Dohy%C5%8D",
@@ -3603,7 +3603,7 @@
       "Einstein a calculé cette valeur à la main en 1905",
       "Parce qu'une nanoseconde mesure un pied-lumière"
     ],
-    "explanation": "Depuis 1983, le mètre est défini comme la distance parcourue par la lumière dans le vide en 1/299 792 458 de seconde. La vitesse de la lumière est donc exacte par définition, et les mesures plus précises raffinent le mètre, pas la constante.",
+    "explanation": "Depuis 1983, le mètre est défini comme la distance parcourue par la lumière dans le vide en 1/299 792 458 de seconde, si bien que la constante est exacte par définition. Les mesures plus précises affinent désormais le mètre, et non la vitesse de la lumière.",
     "source_url": "https://fr.wikipedia.org/wiki/Vitesse_de_la_lumi%C3%A8re",
     "as_of": null,
     "origin": "claude",
@@ -3620,7 +3620,7 @@
       "Johann Sebastian Bach",
       "George Frideric Handel",
       "Arcangelo Corelli",
-      "Celui au solo de triangle"
+      "Un clavecin en congé sans solde depuis quatre saisons"
     ],
     "explanation": "Antonio Vivaldi a publié Les Quatre Saisons en 1725 à Amsterdam, comme les quatre premiers concertos d'un recueil de douze ; chaque concerto est accompagné d'un sonnet italien, probablement écrit par Vivaldi lui-même.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Quatre_Saisons_(Vivaldi)",
@@ -3679,7 +3679,7 @@
       "Star Wars : Le Réveil de la Force",
       "Trois heures de tests sur fond bleu"
     ],
-    "explanation": "Avatar a dépassé Titanic le 25 janvier 2010 et reste en tête depuis sa ressortie en 2021. James Cameron a tourné l'essentiel du film par capture de mouvement dans un studio construit pour l'occasion à Los Angeles.",
+    "explanation": "Avatar a dépassé Titanic le 26 janvier 2010 et reste en tête depuis sa ressortie en 2021. James Cameron a tourné l'essentiel du film par capture de mouvement dans un studio construit pour l'occasion à Los Angeles.",
     "source_url": "https://fr.wikipedia.org/wiki/Avatar_(film,_2009)",
     "as_of": null,
     "origin": "claude",
@@ -4056,8 +4056,8 @@
     "incorrect_answers": [
       "Ford Mustang",
       "Pontiac Trans Am",
-      "Un réfrigérateur motorisé avec des bandes de course",
-      "KITT, la voiture de K 2000"
+      "KITT, la voiture de K 2000",
+      "Un réfrigérateur motorisé avec des bandes de course"
     ],
     "explanation": "Doc Brown transforme une DeLorean DMC-12 en machine à voyager dans le temps, et la voiture doit atteindre 88 miles par heure pour sauter dans le temps.",
     "source_url": "https://fr.wikipedia.org/wiki/Retour_vers_le_futur",
@@ -4075,8 +4075,8 @@
     "incorrect_answers": [
       "Kristoff, Sven et Grand Pabbie",
       "Kristoff, Hans et le duc de Weselton",
-      "Kristoff, Sven et un poisson parlant nommé Baltique",
-      "Olaf, Elsa et un renne très perdu"
+      "Olaf, Elsa et un renne très perdu",
+      "Un poisson parlant nommé Baltique"
     ],
     "explanation": "Anna fait équipe avec le montagnard Kristoff, son fidèle renne Sven et le bonhomme de neige parlant Olaf pour retrouver Elsa, exilée à la Montagne du Nord.",
     "source_url": "https://fr.wikipedia.org/wiki/La_Reine_des_neiges_(film,_2013)",
@@ -4095,7 +4095,7 @@
       "Yasujirō Ozu",
       "Hayao Miyazaki",
       "Kenji Mizoguchi",
-      "Le comte Toshiro, bol sans fond"
+      "L'autre Kurosawa"
     ],
     "explanation": "Les Sept Samouraïs de Kurosawa, avec Toshirō Mifune dans le rôle du fougueux Kikuchiyo, est devenu l'un des films d'action les plus influents de l'histoire et a remporté le Lion d'argent en 1954.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Sept_Samoura%C3%AFs",
@@ -4477,7 +4477,7 @@
       "Maurice Jarre",
       "Un homme à synthétiseur très rapide"
     ],
-    "explanation": "Le thème de Vangelis, sorti en single, a atteint la première place du Billboard Hot 100 en 1982, et la musique du film a remporté l'Oscar de la meilleure musique de film. Il avait déjà composé celle d'American College avant d'écrire celle de Blade Runner.",
+    "explanation": "Le thème de Vangelis, sorti en single, a atteint la première place du Billboard Hot 100 en 1982, et la musique du film a remporté l'Oscar de la meilleure musique de film. Il écrira plus tard celle de Blade Runner.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Chariots_de_feu",
     "as_of": null,
     "origin": "claude",
@@ -4779,7 +4779,7 @@
       "Antonio Salieri",
       "Joseph Haydn",
       "Franz Schubert",
-      "Le groupe hommage du comte Walsegg"
+      "Le tribute act du comte Walsegg"
     ],
     "explanation": "La commande anonyme venait en réalité du comte Franz de Walsegg, qui voulait présenter l'œuvre comme la sienne pour un service commémoratif en mémoire de sa jeune épouse. Mozart meurt le 5 décembre 1791, le Lacrimosa interrompu après huit mesures, et son élève Franz Xaver Süssmayr achève la messe.",
     "source_url": "https://fr.wikipedia.org/wiki/Requiem_(Mozart)",
@@ -4798,7 +4798,7 @@
       "Eduardo de Valfierno",
       "Yves Chaudron",
       "Apollinaire",
-      "L'employé du mois du Louvre"
+      "Employé du mois du Louvre, 1911"
     ],
     "explanation": "Peruggia, vitrier italien ayant participé à la fabrication du caisson protecteur du tableau, s'enfuit avec sous sa blouse d'ouvrier le 21 août 1911 ; Picasso et le poète Apollinaire furent interrogés après le vol. Arrêté à Florence en décembre 1913, il ne purga que sept mois.",
     "source_url": "https://fr.wikipedia.org/wiki/Vincenzo_Peruggia",
@@ -5007,7 +5007,7 @@
       "La bataille de la Somme",
       "La bataille de Verdun",
       "Le débarquement des Dardanelles",
-      "Un câlin collectif, des siècles en avance"
+      "Oui, mais seulement jusqu'au jour de l'An"
     ],
     "explanation": "Les soldats allemands ont décoré leurs tranchées de bougies et chanté des chants de Noël le 24 décembre 1914 ; les Britanniques ont répondu en chantant, puis les deux camps se sont rencontrés dans le no man's land pour échanger tabac, nourriture et souvenirs.",
     "source_url": "https://fr.wikipedia.org/wiki/Tr%C3%AAve_de_No%C3%ABl",
@@ -5026,7 +5026,7 @@
       "Le Beagle",
       "L'Endeavour",
       "Le Resolution",
-      "Celui dont le cuisinier confisquait le rhum"
+      "La chaloupe au pire itinéraire du monde"
     ],
     "explanation": "Fletcher Christian a mené la mutinerie du Bounty après le départ de Tahiti, abandonnant Bligh et 18 fidèles dans la chaloupe ; Bligh a ensuite navigué sur plus de 6 600 kilomètres jusqu'à Timor.",
     "source_url": "https://fr.wikipedia.org/wiki/HMS_Bounty",
@@ -5120,8 +5120,8 @@
     "incorrect_answers": [
       "Titan",
       "Callisto",
-      "Io",
-      "La place de parking préférée de Zeus"
+      "Europe",
+      "Une lune avec de la place pour deux"
     ],
     "explanation": "Avec un diamètre de 5 268 km, Ganymède dépasse la planète Mercure et reste la seule lune connue pour générer son propre champ magnétique. Galilée l'a repérée en 1610 avec trois de ses sœurs.",
     "source_url": "https://fr.wikipedia.org/wiki/Ganymède_(lune)",
@@ -5140,7 +5140,7 @@
       "Tendre est la nuit",
       "L'Envers du paradis",
       "Les Heureux et les Damnés",
-      "Le Beau Gatsby livre de coloriage"
+      "L'autre Gatsby"
     ],
     "explanation": "Publié en avril 1925, le roman suit le narrateur Nick Carraway, qui loue une maisonnette voisine du manoir de Gatsby à West Egg. Échec commercial avec moins de 20 000 exemplaires vendus la première année, il est devenu un classique américain après sa renaissance en temps de guerre.",
     "source_url": "https://fr.wikipedia.org/wiki/Gatsby_le_Magnifique",
@@ -5178,7 +5178,7 @@
       "99",
       "144",
       "365",
-      "Une fois, mais avec feeling"
+      "Une caisse claire qui a peur de l'engagement"
     ],
     "explanation": "Ravel a construit la pièce sur deux mélodies portées par un rythme d'ostinato joué 169 fois sur une ou plusieurs caisses claires, dans un crescendo continu. Il l'a composée en 1928 pour la danseuse Ida Rubinstein, et elle a été créée à l'Opéra Garnier en novembre de la même année.",
     "source_url": "https://fr.wikipedia.org/wiki/Bol%C3%A9ro_(Ravel)",
@@ -5197,7 +5197,7 @@
       "La Grande Illusion",
       "Les Quatre Cents Coups",
       "Hiroshima mon amour",
-      "Un manège de baguettes"
+      "La critique muette d'un mime"
     ],
     "explanation": "Le drame romantique en deux époques de Marcel Carné suit une courtisane aimée par un mime, un acteur, un bandit et un aristocrate. Truffaut disait qu'il aurait donné tous ses films pour l'avoir réalisé.",
     "source_url": "https://fr.wikipedia.org/wiki/Les_Enfants_du_paradis",
@@ -5520,7 +5520,7 @@
       "La Seine",
       "Le Danube",
       "Le Rhin",
-      "La flaque dans la cour du palais"
+      "La flaque devant le palais"
     ],
     "explanation": "Le roi George Ier remonte le fleuve de Whitehall à Chelsea tandis qu'environ 50 musiciens jouent depuis une barque voisine ; le roi, enchanté, demande de rejouer l'œuvre 3 fois.",
     "source_url": "https://fr.wikipedia.org/wiki/Water_Music",
@@ -5767,7 +5767,7 @@
       "Ambiorix",
       "Boadicée",
       "Arminius",
-      "Duc Baguette de la Brigade Baguette"
+      "Le Gaulois dont César n'a jamais fini de parler"
     ],
     "explanation": "César a enfermé Vercingétorix sur le plateau d'Alise-Sainte-Reine derrière un double réseau de fortifications et repoussé une immense armée de secours. Vaincu, le chef gaulois s'est rendu, a figuré au triomphe de César et a été exécuté à Rome en 46 avant notre ère.",
     "source_url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_d%27Al%C3%A9sia",
@@ -5783,7 +5783,7 @@
     "question": "Quel pont-aqueduc romain à trois niveaux du sud de la France culmine à près de 49 mètres de hauteur ?",
     "correct_answer": "Le pont du Gard",
     "incorrect_answers": [
-      "Le pont du Gard des Soupirs",
+      "Le pont des Soupirs",
       "L'aqueduc de Ségovie",
       "Le pont d'Alcántara",
       "Une piscine romaine"
@@ -5862,7 +5862,7 @@
       "L'Espagne",
       "L'Allemagne",
       "L'Italie",
-      "Le parking souterrain où elles ont été retrouvées"
+      "Un parking souterrain"
     ],
     "explanation": "Marcel Ravidat découvre l'entrée de la grotte le 12 septembre 1940, après que son chien s'intéresse à un trou près de Montignac ; fermée au public en 1963 pour protéger les peintures du souffle de jusqu'à 1 200 visiteurs par jour, elle n'est plus ouverte qu'aux scientifiques. Son plus grand taureau mesure 5,2 m.",
     "source_url": "https://fr.wikipedia.org/wiki/Grotte_de_Lascaux",
@@ -5881,7 +5881,7 @@
       "Giuseppe Verdi",
       "Johannes Brahms",
       "Richard Strauss",
-      "Quatre opéras, c'est déjà trois de trop"
+      "La semaine de quatre jours du compositeur d'opéra"
     ],
     "explanation": "Wagner écrit les livrets et la musique d'environ 1848 à 1874, et le cycle complet demande environ 15 heures de représentation sur quatre soirées. Sa première intégrale ouvre le tout premier festival de Bayreuth en 1876, de L'Or du Rhin au Crépuscule des dieux.",
     "source_url": "https://fr.wikipedia.org/wiki/L%27Anneau_du_Nibelung",
@@ -6204,7 +6204,7 @@
       "Le Lac des cygnes",
       "Giselle",
       "La Belle au bois dormant",
-      "Celui où la fée Dragée syndique les jouets"
+      "Le deuxième métier de la fée Dragée"
     ],
     "explanation": "Le ballet en deux actes de Tchaïkovski est créé à Saint-Pétersbourg en 1892, d'après une version d'Alexandre Dumas qui adapte elle-même le conte d'Hoffmann, Casse-Noisette et le Roi des souris.",
     "source_url": "https://fr.wikipedia.org/wiki/Casse-Noisette",
@@ -6280,7 +6280,7 @@
       "Like a Prayer de Madonna",
       "Purple Rain de Prince",
       "Born in the U.S.A. de Bruce Springsteen",
-      "Un album de kazoo joué par un grizzly"
+      "Un album de polka de reprises"
     ],
     "explanation": "Nevermind a dépassé Dangerous de Michael Jackson au sommet du Billboard 200 en janvier 1992, un passage de relais symbolique de la pop vers le grunge.",
     "source_url": "https://fr.wikipedia.org/wiki/Nevermind",
@@ -6301,7 +6301,7 @@
       "Blanche-Neige et les Sept Nains",
       "Une bande-son stéréo en kazoo"
     ],
-    "explanation": "Walt Disney et RCA ont développé le Fantasound pour Fantasia, premier film commercial en stéréo et précurseur du son surround, même si sa sortie en salles fut d'abord un échec commercial.",
+    "explanation": "Walt Disney et la RCA ont développé le système Fantasound pour Fantasia, en faisant le premier film commercial en stéréo et un précurseur du son surround, même si son exploitation en roadshow perdit d'abord de l'argent.",
     "source_url": "https://fr.wikipedia.org/wiki/Fantasia_(film,_1940)",
     "as_of": null,
     "origin": "claude",
@@ -6541,7 +6541,7 @@
     "category": "science",
     "difficulty": 2,
     "question": "Lorsque Wilhelm Röntgen a découvert les rayons X en 1895, comment les a-t-il nommés ?",
-    "correct_answer": "D'après l'inconnue mathématique, le symbole X",
+    "correct_answer": "L'inconnue (le symbole X)",
     "incorrect_answers": [
       "D'après son propre nom de famille",
       "D'après le chiffre romain pour dix",

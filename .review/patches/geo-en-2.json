@@ -1,0 +1,47 @@
+{
+  "agent": "GeoEn2",
+  "edit_log": [
+    {
+      "id": "hist-0026",
+      "lang": "en",
+      "reason": "gear count wrong: scans show 35 gears (30 surviving), not 37",
+      "set": {
+        "correct_answer": "35",
+        "incorrect_answers": ["12", "57", "3", "Thirty-five, and one still in the post"],
+        "explanation": "Sponge divers found the bronze geared device in 1901 in a Roman-era shipwreck off Antikythera. X-ray scans suggest 35 meshing gears, 30 of which survive, and researchers have called it the first known analogue computer."
+      }
+    },
+    {
+      "id": "hist-fr-0026",
+      "lang": "fr",
+      "reason": "twin of hist-0026: same gear-count fix",
+      "set": {
+        "correct_answer": "35",
+        "incorrect_answers": ["12", "57", "3", "Trente-cinq, et la dernière encore au rebut"],
+        "explanation": "Des pêcheurs d'éponges ont découvert ce calculateur à engrenages en 1901 dans l'épave d'un navire romain au large d'Anticythère. Les scanners à rayons X révèlent 35 engrenages imbriqués, dont 30 subsistent, et les chercheurs y voient le premier ordinateur analogique connu."
+      }
+    },
+    {
+      "id": "hist-0035",
+      "lang": "en",
+      "reason": "joke at index 3 mocks a real nation, replaced with in-world absurd entity",
+      "set": {
+        "incorrect_answers": ["Galleons", "Galleys", "Frigates", "The Spanish Armada tribute band"]
+      }
+    },
+    {
+      "id": "hist-fr-0035",
+      "lang": "fr",
+      "reason": "twin of hist-0035: same joke fix",
+      "set": {
+        "incorrect_answers": ["Des galions", "Des galères", "Des frégates", "Le fan club flottant de l'Armada"]
+      }
+    }
+  ],
+  "delete_ids": [],
+  "notes": [
+    "Slice as assigned lists geo-0036..geo-0070 and hist-0001..hist-0035, but geo-0065 and hist-0034 do not exist in the bank (ids are not contiguous); the 68 existing questions were reviewed.",
+    "geo-0042 vs geo-0015 similarity pair left untouched per brief.",
+    "All other questions passed fact check, distractor structure, joke, explanation, difficulty and voice checks; 64 of 68 approved unchanged."
+  ]
+}

@@ -10,7 +10,7 @@
       "One light-hour",
       "One light-week",
       "One light-year",
-      "One very long carpool from Earth"
+      "One very long carpool"
     ],
     "explanation": "Launched in 1977, the probe is closing on the distance light travels in a single day. NASA invited the public to flash the mission call sign V-G-R in Morse code skyward after sunset on November 17.",
     "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/shine-bright-for-voyagers-light-day/",
@@ -29,7 +29,7 @@
       "The first livestream from the Moon",
       "The first weather report from Mars",
       "The first laser link between two satellites",
-      "One AI haiku, lightly toasted"
+      "The first AI response from a very patient group chat"
     ],
     "explanation": "Google uplinked a prompt to the onboard Gemma model, which produced a haiku about being in space, downlinked during a pass over Svalbard. The company calls it a step toward running AI compute in space.",
     "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response",
@@ -50,7 +50,7 @@
       "A Higgs boson decaying into gravitons",
       "Two muons walk into a bar"
     ],
-    "explanation": "A neutral B meson containing a beauty quark is expected to decay into two muons only about once per ten billion. Announced after a 42-year search, the result offers a new precision test of the Standard Model.",
+    "explanation": "A neutral B meson containing a beauty quark is expected to decay into two muons only about once per ten billion. First evidence came after a 42-year search using LHCb data reaching back to 2011, a new precision test of the Standard Model.",
     "source_url": "https://www.birmingham.ac.uk/news/2026/physicists-uncover-evidence-of-one-of-natures-rarest-particle-decays",
     "as_of": "2026-11-03",
     "origin": "claude",
