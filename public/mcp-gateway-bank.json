@@ -1,0 +1,562 @@
+[
+  {
+    "question": "What is the Model Context Protocol?",
+    "correct_answer": "An open protocol for connecting LLM applications to data sources and tools",
+    "incorrect_answers": [
+      "A proprietary API for calling one vendor's models",
+      "A database schema for storing chat history",
+      "A framework for fine-tuning language models",
+      "A rumor mill, but standardized"
+    ],
+    "explanation": "MCP is an open protocol enabling integration between LLM applications and external data sources and tools, whether you are building an IDE, a chat interface or a custom AI workflow.",
+    "source_url": "https://modelcontextprotocol.io/specification/2025-06-18",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "In MCP terminology, what is the host?",
+    "correct_answer": "The AI application coordinating connections to servers",
+    "incorrect_answers": [
+      "The machine the protocol is installed on",
+      "The server that owns the tools",
+      "The user account that approves actions",
+      "The one bringing snacks to the meeting"
+    ],
+    "explanation": "The host is the AI application itself, like an IDE or a desktop assistant. It creates and manages MCP clients, enforces security policies and coordinates the LLM integration.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "How does a host connect to multiple MCP servers?",
+    "correct_answer": "One dedicated client per server",
+    "incorrect_answers": [
+      "One shared client multiplexing all servers",
+      "One client per tool rather than per server",
+      "A single connection that the servers share",
+      "One client, but it believes in itself"
+    ],
+    "explanation": "Each MCP client maintains a dedicated connection to exactly one server; the host spins up as many clients as it has servers. This keeps security boundaries and capabilities isolated per server.",
+    "source_url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture/index",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What are the two layers of the MCP protocol?",
+    "correct_answer": "A data layer and a transport layer",
+    "incorrect_answers": [
+      "A presentation layer and a session layer",
+      "A model layer and a prompt layer",
+      "A front end and a back end",
+      "The crunchy layer and the soft layer"
+    ],
+    "explanation": "The data layer defines the JSON-RPC message protocol, lifecycle and primitives; the transport layer defines how messages travel, covering stdio and Streamable HTTP plus connection setup and authorization.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "What message format does MCP build on?",
+    "correct_answer": "JSON-RPC 2.0",
+    "incorrect_answers": [
+      "SOAP envelopes",
+      "Protocol Buffers",
+      "Plain CSV lines",
+      "Smoke signals, encoded"
+    ],
+    "explanation": "Both requests and responses are JSON-RPC 2.0 messages, with notifications used when no response is expected. This keeps the data layer independent of whichever transport carries it.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Which three primitives can an MCP server expose?",
+    "correct_answer": "Tools, resources and prompts",
+    "incorrect_answers": [
+      "Tools, tokens and templates",
+      "Queries, mutations and subscriptions",
+      "Models, embeddings and agents",
+      "Tools, vibes and a mystery third thing"
+    ],
+    "explanation": "Tools are executable functions the model can call, resources are context data the application can read, and prompts are reusable interaction templates. Clients discover each kind through list methods.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Which MCP primitive lets a server request a completion from the client's LLM?",
+    "correct_answer": "Sampling",
+    "incorrect_answers": [
+      "Elicitation",
+      "Logging",
+      "Roots",
+      "Reverse psychology"
+    ],
+    "explanation": "Sampling lets a server ask the host's AI application for a language model completion, so server authors stay model-independent without bundling an LLM SDK. Elicitation instead asks the human user for input.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What happens during an MCP session's initialize exchange?",
+    "correct_answer": "Protocol version and capabilities are negotiated",
+    "incorrect_answers": [
+      "The user's identity is fully authenticated",
+      "All tools are downloaded for offline use",
+      "The server registers itself with a registry",
+      "Everyone agrees to disagree"
+    ],
+    "explanation": "The client sends initialize with its protocol version and capabilities; the server responds with its own. Both sides then know which features, like tools or sampling, the session may use.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Per MCP design principles, how much of the user's conversation should a server see?",
+    "correct_answer": "Only the context it needs, never the whole conversation",
+    "incorrect_answers": [
+      "The full transcript for better answers",
+      "Everything except credentials",
+      "Whatever the model decides to share",
+      "Everything; servers are very nosy"
+    ],
+    "explanation": "The spec's design principles keep servers focused: they receive only necessary contextual information, full conversation history stays with the host, and servers cannot see into other servers.",
+    "source_url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture/index",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Is authorization mandatory for MCP implementations?",
+    "correct_answer": "No, it is optional per the specification",
+    "incorrect_answers": [
+      "Yes, every server must run OAuth",
+      "Yes, but only for remote servers",
+      "Only when tools can spend money",
+      "Mandatory on alternating Thursdays"
+    ],
+    "explanation": "The specification makes authorization OPTIONAL. Servers on HTTP transports should follow the OAuth flow when they support it, while stdio servers should get credentials from their environment instead.",
+    "source_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Which transport fits an MCP server running as a local process on the same machine?",
+    "correct_answer": "stdio, over standard input and output",
+    "incorrect_answers": [
+      "Streamable HTTP over the loopback interface",
+      "gRPC with mutual TLS",
+      "A Unix email spool",
+      "Semaphore flags between processes"
+    ],
+    "explanation": "The stdio transport runs the server as a child process talking over standard streams, with no network overhead. Streamable HTTP is the transport for remote servers serving many clients.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "What does MCP say about how an AI application should use its LLM?",
+    "correct_answer": "Nothing; the protocol only defines context exchange",
+    "incorrect_answers": [
+      "Applications must route all calls through MCP",
+      "The host must disclose its model to servers",
+      "Sampling decisions belong to the server",
+      "It insists everyone uses the same model"
+    ],
+    "explanation": "MCP scopes itself to the protocol for context exchange. How an application prompts, manages or orchestrates its model is explicitly outside the protocol's mandate.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-06-18/learn/architecture",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the MCP Gateway's core role?",
+    "correct_answer": "A governance and security control plane for agent traffic",
+    "incorrect_answers": [
+      "A faster runtime for executing MCP tools",
+      "A registry where teams publish MCP servers",
+      "A cache that stores tool results",
+      "A nightclub bouncer for bots"
+    ],
+    "explanation": "It sits as a centralized control plane between AI agents and MCP servers, adding aggregation, authentication, tool-level authorization and curated tool collections on top of the servers it fronts.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the gateway's aggregation give agent developers?",
+    "correct_answer": "One endpoint and one integration for many servers",
+    "incorrect_answers": [
+      "One set of tools shared by all servers",
+      "One license covering every backend",
+      "A single tool that does everything",
+      "A group discount on integrations"
+    ],
+    "explanation": "Agents connect to the gateway once and every registered server's tools appear in a single merged catalogue, each tool name prefixed with its server's prefix so it stays routable and unique.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Is the MCP Gateway an inference layer for language models?",
+    "correct_answer": "No; it governs agent-to-server traffic, never model calls",
+    "incorrect_answers": [
+      "Yes, it load-balances model inference",
+      "Yes, it falls back to a built-in model",
+      "Only for servers that declare a model",
+      "Yes, on a very good day"
+    ],
+    "explanation": "The gateway is a control plane between agents and MCP servers: aggregation, authentication, authorization and tool curation. Running or routing LLM inference is not among its jobs.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "In the guide's design, who issues the tokens the gateway accepts?",
+    "correct_answer": "An external identity provider, which the gateway does not replace",
+    "incorrect_answers": [
+      "The gateway itself, signing tokens per session",
+      "Each MCP server vouching for its callers",
+      "The client, self-signing its tokens",
+      "The gateway, after a brief promotion"
+    ],
+    "explanation": "Red Hat Build of Keycloak acts as the OAuth 2.1 authorization server issuing JWTs; the gateway validates them as the resource server. Trust stays with the identity provider, not the gateway.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/07-authentication.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "In OAuth terms, what role does the gateway play?",
+    "correct_answer": "The resource server protecting the MCP API",
+    "incorrect_answers": [
+      "The authorization server issuing tokens",
+      "The OpenID identity provider",
+      "The PKCE challenge store",
+      "The token's travel agent"
+    ],
+    "explanation": "Following the MCP authorization model, the protected server is the resource server: it validates tokens issued by the authorization server and rejects unauthenticated requests with a discovery pointer.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/07-authentication.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What does a client get when calling the gateway without a token?",
+    "correct_answer": "A 401 that points at OAuth discovery metadata",
+    "incorrect_answers": [
+      "A 500 with a stack trace",
+      "A guest token good for one call",
+      "The tool list, minus secrets",
+      "A strongly worded 200"
+    ],
+    "explanation": "The 401 carries a WWW-Authenticate header referencing the protected resource metadata. Compliant clients like the MCP Inspector follow it to the identity provider and complete the OAuth flow on their own.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/07-authentication.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is an MCP virtual server?",
+    "correct_answer": "A curated collection of tools from registered servers",
+    "incorrect_answers": [
+      "A server running on a virtual machine",
+      "A backup replica of a registered server",
+      "A mock server for integration tests",
+      "A server that exists only on Tuesdays"
+    ],
+    "explanation": "Virtual servers group focused tool subsets, like a risk-analysis collection, for specific use cases. Clients still connect to the same gateway; they just see a filtered view of the catalogue.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/09-virtual-servers.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Why do curated tool collections help AI agents?",
+    "correct_answer": "Models choose better from fewer, focused tools",
+    "incorrect_answers": [
+      "They cache model weights closer to the tools",
+      "They compress tool descriptions",
+      "They pre-execute tools to warm them up",
+      "Because LLMs love less homework"
+    ],
+    "explanation": "The guide lists improved AI performance as a benefit: an LLM selecting among a handful of relevant tools makes better choices than one scanning a large mixed catalogue. Layered access control comes with it.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/09-virtual-servers.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "Does selecting a virtual server bypass the user's tool permissions?",
+    "correct_answer": "No; the user sees only the intersection of both filters",
+    "incorrect_answers": [
+      "Yes, virtual servers override permissions",
+      "Yes, but only for read-only tools",
+      "Only if the user owns the virtual server",
+      "With a permission slip from mom"
+    ],
+    "explanation": "Discovery is filtered first by the user's authorized roles, then by the virtual server's list. A user entitled to one tool sees exactly that tool from a collection of six, and never the rest.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/09-virtual-servers.html",
+    "as_of": "2026-11-07",
+    "difficulty": 3
+  },
+  {
+    "question": "After registering a new MCP server with the gateway, who may call its tools?",
+    "correct_answer": "No one, until the identity provider grants the roles",
+    "incorrect_answers": [
+      "Anyone who authenticates successfully",
+      "Only cluster administrators",
+      "Only the person who registered it",
+      "Whoever gets there first"
+    ],
+    "explanation": "Authorization is driven by roles bound to the server in the identity provider, not by registration itself. The guide calls skipping that step the most common surprise: the server works, but every call is denied.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/08-authorization.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Is MCP Gateway supported in production under RHCL 1.4?",
+    "correct_answer": "No, it is Technology Preview without a production SLA",
+    "incorrect_answers": [
+      "Yes, with full enterprise support",
+      "Yes, but only on dedicated clusters",
+      "Supported after a paid add-on",
+      "GA in 1.4, but only secretly"
+    ],
+    "explanation": "In Red Hat Connectivity Link 1.4 the gateway is Technology Preview: no production SLA and possibly incomplete. It reached general availability in 1.5, which the guide also validates.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the guide's internal hostname pattern like server.mcp.local actually do?",
+    "correct_answer": "Nothing in DNS; it is a routing label for internal hops",
+    "incorrect_answers": [
+      "It resolves through the cluster DNS",
+      "It requires a wildcard TLS certificate",
+      "It must match the cluster's domain",
+      "It works only during full moons"
+    ],
+    "explanation": "The backend names exist only to match the internal listener's wildcard so Envoy picks the right route. No DNS entry or certificate is needed because that traffic never leaves the cluster.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/02-gateway-setup.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the token passthrough anti-pattern?",
+    "correct_answer": "Forwarding client tokens downstream without validating audience",
+    "incorrect_answers": [
+      "Storing tokens in browser local storage",
+      "Renewing tokens too eagerly",
+      "Sending tokens in the URI query string",
+      "Passing tokens like party invites"
+    ],
+    "explanation": "An MCP server that accepts tokens not issued specifically for it and passes them to downstream APIs is doing token passthrough. The specification forbids it and requires audience validation instead.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Why is token passthrough dangerous?",
+    "correct_answer": "It bypasses downstream controls and breaks audit trails",
+    "incorrect_answers": [
+      "It makes tokens expire sooner",
+      "It doubles the number of tokens in flight",
+      "It confuses browser cookie handling",
+      "Audits hate surprises"
+    ],
+    "explanation": "Rate limits, validation and monitoring keyed to the token's audience get circumvented, and logs attribute actions to the wrong identity. A stolen token also turns the server into an exfiltration proxy.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Which pattern does the guide apply when its agent reaches an external third-party MCP server?",
+    "correct_answer": "Strip internal credentials before egress",
+    "incorrect_answers": [
+      "Re-sign the token for the third party",
+      "Delegate trust to the third party",
+      "Tunnel the token inside the request body",
+      "Whisper it over TLS"
+    ],
+    "explanation": "The broker forwards the caller's Authorization header upstream by default, so the guide's proxy for the external server deliberately blanks it. User JWTs must never leak to third parties, which DeepWiki itself enforces.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/04-register-mcp-servers.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the confused deputy problem in MCP proxy architectures?",
+    "correct_answer": "A proxy's static client ID lets attackers skip user consent",
+    "incorrect_answers": [
+      "Two proxies issue conflicting tokens",
+      "The user consents twice by accident",
+      "A deputy signs tokens for the wrong realm",
+      "A deputy with excellent credentials"
+    ],
+    "explanation": "With a static client ID at the third-party identity provider plus dynamic client registration, an attacker can reuse the browser's existing consent cookie and redirect the authorization code to themselves.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "as_of": "2026-11-07",
+    "difficulty": 3
+  },
+  {
+    "question": "What is the correct stance on using MCP session IDs for authentication?",
+    "correct_answer": "Never; sessions identify state, not identity",
+    "incorrect_answers": [
+      "Sessions are the recommended credential",
+      "Sessions authenticate if they are long-lived",
+      "Sessions authenticate after re-approval",
+      "Trust the session, verify the vibes"
+    ],
+    "explanation": "The security guidance requires servers to verify every inbound request and never treat possession of a session ID as proof of identity, since guessed or stolen IDs would otherwise grant impersonation.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the scope minimization principle for MCP tokens?",
+    "correct_answer": "Start minimal and elevate progressively, never wildcard scopes",
+    "incorrect_answers": [
+      "Request every scope up front to save prompts",
+      "Use one wildcard scope for flexibility",
+      "Keep scopes broad but rotate them often",
+      "Scope: yes"
+    ],
+    "explanation": "Broad tokens enlarge the blast radius of theft and muddy audit trails. The guidance prefers a minimal initial scope with targeted elevation challenges when privileged operations are first attempted.",
+    "source_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Why is verifying an install with discovery alone an anti-pattern?",
+    "correct_answer": "Discovery can pass while every actual tool call fails",
+    "incorrect_answers": [
+      "Discovery leaks the server's internal names",
+      "Discovery locks the server into a session",
+      "Discovery disables authorization checks",
+      "Because tools deserve face time"
+    ],
+    "explanation": "Initialize and tools/list are served from the broker's cached list and never dial the backends, so an install can look finished while calls fail. The guide insists on running a real tool call as the final check.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/03-mcp-gateway-extension.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "When the gateway's policy plugin fails to load, what does it do?",
+    "correct_answer": "Fails closed: blocks all traffic rather than flow unprotected",
+    "incorrect_answers": [
+      "Fails open: forwards traffic without policies",
+      "Retries the plugin while serving cached decisions",
+      "Switches to a permissive audit-only mode",
+      "Fails fabulously, with logging"
+    ],
+    "explanation": "The gateway treats missing policy enforcement as unacceptable and blocks traffic until the plugin loads. The guide pairs this with a mandatory gateway restart after the plugin is installed.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/07-authentication.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Why does the guide's identity realm define one OAuth client per MCP server?",
+    "correct_answer": "So each token is bound to one server's audience and roles",
+    "incorrect_answers": [
+      "Because the identity provider caps roles per client",
+      "To give each server its own login page",
+      "To issue one token per tool call",
+      "For decoration, mostly"
+    ],
+    "explanation": "Per-server clients implement the specification's audience binding: a token carries roles under the client matching the target server, so a token for one server grants nothing on another.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/06-deploy-keycloak.html",
+    "as_of": "2026-11-07",
+    "difficulty": 3
+  },
+  {
+    "question": "The guide's Keycloak runs on a database with no persistent volume. Why is that an anti-pattern beyond demos?",
+    "correct_answer": "A restart wipes the realm, users and clients",
+    "incorrect_answers": [
+      "Tokens grow stale on every restart",
+      "The realm import runs in reverse",
+      "Client registrations leak between realms",
+      "Databases never forget, except this one"
+    ],
+    "explanation": "Ephemeral storage suits a workshop; anywhere longer-lived it silently destroys the identity configuration on the first restart. Production identity data belongs on persistent storage.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/06-deploy-keycloak.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "A registration reports Ready and discovery lists its tools, but calls fail. What is the lesson?",
+    "correct_answer": "Readiness is not reachability; verify with a real call",
+    "incorrect_answers": [
+      "Discovery invents tools that do not exist",
+      "Ready status requires a broker restart",
+      "The prefix was registered incorrectly",
+      "Trust the green checkmark"
+    ],
+    "explanation": "Status conditions can be true while the internal dial-back path is broken; tool discovery never exercises it. The guide treats a real tool call as the only test that proves the path end to end.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/03-mcp-gateway-extension.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "Why must inbound and outbound traffic share one Gateway listener?",
+    "correct_answer": "The internal re-route happens inside that listener; splitting it breaks calls silently",
+    "incorrect_answers": [
+      "Two listeners would double certificate costs",
+      "The protocol allows only one listener per Gateway",
+      "Listeners cannot hostnames in different zones",
+      "Symmetry is beautiful"
+    ],
+    "explanation": "On a tool call the router rewrites the request for the backend hop, and Envoy re-routes within the same listener it intercepted. Splitting inbound from outbound passes every status check while calls never work.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/02-gateway-setup.html",
+    "as_of": "2026-11-07",
+    "difficulty": 3
+  },
+  {
+    "question": "What does the MCP Gateway NOT do for agent developers?",
+    "correct_answer": "It does not run, route or choose language models",
+    "incorrect_answers": [
+      "It does not merge multiple servers behind one endpoint",
+      "It does not check who may call which tool",
+      "It does not support externally hosted servers",
+      "It does not negotiate, at all, ever"
+    ],
+    "explanation": "The gateway aggregates servers, authenticates agents, authorizes tool calls and curates collections. Model selection and inference stay entirely with the agent's host application.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the right way to expose a new MCP server's tools to specific users only?",
+    "correct_answer": "Bind roles for its tools to chosen users in the identity provider",
+    "incorrect_answers": [
+      "Register the server and let discovery decide",
+      "Add its tools to a public virtual server",
+      "Email the tool list to the chosen users",
+      "Hope nobody unauthorized reads the catalogue"
+    ],
+    "explanation": "Access follows roles in the user's token, granted per server in the identity provider. The guide's access matrix shows the same server serving a full-access user and a restricted user simultaneously.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/08-authorization.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What does MCP authorization say a client must do after receiving a 401?",
+    "correct_answer": "Follow the discovery metadata to the authorization server",
+    "incorrect_answers": [
+      "Retry the same request until it succeeds",
+      "Generate a local token and retry once",
+      "Fall back to the server's API key",
+      "Ask the server to lower its standards"
+    ],
+    "explanation": "The 401's WWW-Authenticate header leads to protected resource metadata, which names the authorization servers. The client then runs the standard OAuth 2.1 flow, including PKCE, before retrying.",
+    "source_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the composite pattern the guide builds toward across its phases?",
+    "correct_answer": "Governed aggregation: one secured endpoint, curated views, per-tool access",
+    "incorrect_answers": [
+      "A mesh of agents calling servers directly",
+      "Per-team gateways with no shared policy",
+      "Open servers secured only by obscurity",
+      "A bus held together with hope"
+    ],
+    "explanation": "The end state is many MCP servers behind one gateway: agents authenticate once, discovery is filtered by role and curated collections, and each tool call is authorized against the user's bound roles.",
+    "source_url": "https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html",
+    "as_of": "2026-11-07",
+    "difficulty": 2
+  }
+]

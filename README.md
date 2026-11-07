@@ -84,6 +84,7 @@ Play Quizzy with your own questions by sharing a `?bank=` URL. Three forms of th
 - **Relative path**: `https://…/?bank=my-bank.json` — a file next to the app (the sample: [`public/sample-bank.json`](public/sample-bank.json), demoable at `/?bank=sample-bank.json`).
 - **Inline**: `https://…/?bank=<base64url JSON>` — the bank travels inside the URL; works from any host. Keep it under ~2000 characters.
 A worked example ships with the app: the 50-question bilingual [logic and reasoning bank](public/logic-bank_en.json) ([French](public/logic-bank_fr.json)), demoable at `/?bank=logic-bank_en.json` and `/?bank=logic-bank_fr.json`.
+A second worked example ships with the app: the 40-question [MCP Gateway bank](public/mcp-gateway-bank.json) — what the Model Context Protocol is, what the MCP Gateway does and does not do, and the patterns and anti-patterns of governing agent traffic. Every question links back to its source (the [MCP Gateway on OpenShift guide](https://rh-aiservices-bu.github.io/mcp-gateway-guide/modules/main/index.html) or the [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)) via the Source link on the reveal screen. Demoable at `/?bank=mcp-gateway-bank.json`.
 
 **Authoring a bank**: an array of question objects. Required: `question`, `correct_answer`, `incorrect_answers` (exactly 4 — 3 plausible + 1 joke answer). Optional and defaulted when missing: `id` (`bank-NNNN`), `lang` (`en`), `difficulty` (2), `explanation`, `source_url`, `as_of`. Invalid items are dropped and logged, never half-shipped.
 
