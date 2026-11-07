@@ -6743,5 +6743,1905 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-fr-0073",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel fleuve traverse Londres ?",
+    "correct_answer": "La Tamise",
+    "incorrect_answers": [
+      "La Mersey",
+      "La Tyne",
+      "La Clyde",
+      "Le fleuve avec un meilleur agent"
+    ],
+    "explanation": "La Tamise parcourt environ 346 km dans le sud de l’Angleterre, et Londres s’est construite autour de son estuaire. Malgré la taille de la ville, elle est alimentée par plus de 300 ruisseaux et sources.",
+    "source_url": "https://en.wikipedia.org/wiki/River_Thames",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0074",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle est la capitale du Maroc ?",
+    "correct_answer": "Rabat",
+    "incorrect_answers": [
+      "Casablanca",
+      "Marrakech",
+      "Tanger",
+      "La ville au M le plus célèbre"
+    ],
+    "explanation": "Rabat est la capitale du Maroc depuis 1912, choisie par l’administration du protectorat français pour sa situation côtière. Casablanca reste la plus grande ville du pays et son centre économique, mais pas son siège de gouvernement.",
+    "source_url": "https://en.wikipedia.org/wiki/Rabat",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0075",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel pays est entièrement entouré par le territoire d’un seul autre pays ?",
+    "correct_answer": "Le Lesotho",
+    "incorrect_answers": [
+      "L’Eswatini",
+      "L’Andorre",
+      "Le Bhoutan",
+      "Le pays avec une clôture invisible"
+    ],
+    "explanation": "Le Lesotho est une enclave complètement entourée par l’Afrique du Sud, le seul pays du monde frontalié par exactement un voisin. L’Eswatini s’en approche, mais il touche aussi le Mozambique à l’est.",
+    "source_url": "https://fr.wikipedia.org/wiki/Lesotho",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0076",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel fleuve traverse Rome ?",
+    "correct_answer": "Le Tibre",
+    "incorrect_answers": [
+      "L’Arno",
+      "Le Pô",
+      "L’Adige",
+      "Le fleuve qui a inventé l’eau de cuisson des pâtes"
+    ],
+    "explanation": "Le Tibre prend sa source dans les Apennins et parcourt environ 405 km jusqu’à la mer Tyrrhénienne. Rome a été fondée sur ses rives, traditionnellement en 753 avant notre ère, près du gué de l’île Tibérine.",
+    "source_url": "https://en.wikipedia.org/wiki/Tiber",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0077",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel détroit se trouve entre la mer Rouge et le golfe d’Aden ?",
+    "correct_answer": "Le détroit de Bab-el-Mandeb",
+    "incorrect_answers": [
+      "Le détroit d’Ormuz",
+      "Le détroit de Béring",
+      "Le détroit de Malacca",
+      "Le détroit qui exige un péage en grains de poivre"
+    ],
+    "explanation": "Bab-el-Mandeb, qui signifie la porte des Lamentations en arabe, ne mesure qu’environ 29 km à son point le plus étroit. Il relie la mer Rouge au golfe d’Aden, ce qui en fait un point de passage clé pour les navires qui se dirigent vers le canal de Suez.",
+    "source_url": "https://en.wikipedia.org/wiki/Bab-el-Mandeb",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0078",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+    "correct_answer": "Wellington",
+    "incorrect_answers": [
+      "Auckland",
+      "Christchurch",
+      "Dunedin",
+      "Le bureau le plus branlant de l’immeuble"
+    ],
+    "explanation": "Wellington est devenue la capitale en 1865, remplaçant Auckland en partie pour satisfaire la population riche en or de l’île du Sud. Elle est installée dans une baie à la pointe sud de l’île du Nord et est réputée pour son vent.",
+    "source_url": "https://en.wikipedia.org/wiki/Wellington",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0079",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quel drapeau national est le seul à ne pas être rectangulaire ?",
+    "correct_answer": "Le Népal",
+    "incorrect_answers": [
+      "Le Bhoutan",
+      "La Suisse",
+      "Le Vatican",
+      "Le drapeau qui a été mal plié"
+    ],
+    "explanation": "Le drapeau du Népal se compose de deux pennons superposés de couleur cramoisie et est le seul drapeau national non quadrilatère. Les drapeaux suisse et vatican sont carrés, donc toujours des rectangles.",
+    "source_url": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0080",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quel plan d’eau est le plus salé du monde ?",
+    "correct_answer": "L’étang Gaet’ale",
+    "incorrect_answers": [
+      "La mer Morte",
+      "Le Grand Lac Salé",
+      "Le lac Assal",
+      "Un verre de margarita, probablement"
+    ],
+    "explanation": "L’étang Gaet’ale, dans la dépression du Danakil en Éthiopie, est une petite source chaude d’environ 43 pour cent de salinité, la plus élevée connue. La mer Morte atteint environ 34 pour cent.",
+    "source_url": "https://en.wikipedia.org/wiki/Gaet%27ale_Pond",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0081",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Quelle capitale nationale se trouve sur les deux rives du Dniepr ?",
+    "correct_answer": "Kyiv",
+    "incorrect_answers": [
+      "Minsk",
+      "Moscou",
+      "Vilnius",
+      "La ville avec une rivière pour douves"
+    ],
+    "explanation": "Le Dniepr coupe Kyiv en deux moitiés, rive droite et rive gauche, reliées par de nombreux ponts. C’est l’un des plus longs fleuves d’Europe : il prend sa source près de Smolensk et rejoint la mer Noire.",
+    "source_url": "https://en.wikipedia.org/wiki/Dnieper",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0082",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Quel est le plus grand pays entièrement situé en Europe ?",
+    "correct_answer": "L’Ukraine",
+    "incorrect_answers": [
+      "La France",
+      "L’Espagne",
+      "L’Allemagne",
+      "Le pays qui se dit plus grand à l’intérieur"
+    ],
+    "explanation": "Avec environ 603 000 kilomètres carrés, l’Ukraine est le plus grand pays entièrement situé dans les limites conventionnelles de l’Europe. La Russie est plus vaste au total, mais s’étend à travers l’Asie jusqu’au Pacifique.",
+    "source_url": "https://en.wikipedia.org/wiki/Ukraine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-fr-0083",
+    "lang": "fr",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Quel plateau est souvent appelé le toit du monde ?",
+    "correct_answer": "Le plateau Tibétain",
+    "incorrect_answers": [
+      "Le plateau du Deccan",
+      "Le plateau du Colorado",
+      "L’Altiplano bolivien",
+      "La suite présidentielle des continents"
+    ],
+    "explanation": "Le plateau Tibétain couvre environ 2,5 millions de kilomètres carrés à une altitude moyenne supérieure à 4 500 m, ce qui en fait le plus grand et le plus haut plateau du monde. Ses glaciers alimentent des fleuves majeurs comme l’Indus, le Mékong et le Yangtsé.",
+    "source_url": "https://en.wikipedia.org/wiki/Tibetan_Plateau",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0073",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel monarque anglais a régné le plus longtemps avant Élisabeth II ?",
+    "correct_answer": "La reine Victoria",
+    "incorrect_answers": [
+      "Le roi George III",
+      "Le roi Henri III",
+      "Le roi Édouard III",
+      "Celui qui est tombé à court de calendrier"
+    ],
+    "explanation": "Victoria a régné plus de 63 ans, de 1837 à 1901, un record qui a tenu jusqu’à ce qu’Élisabeth II le dépasse en septembre 2015. Les près de 60 ans de George III arrivent deuxièmes parmi les monarques précédents.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_longest-reigning_British_monarchs",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0074",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Qui a peint le plafond de la chapelle Sixtine pour le pape Jules II ?",
+    "correct_answer": "Michel-Ange",
+    "incorrect_answers": [
+      "Raphaël",
+      "Léonard de Vinci",
+      "Botticelli",
+      "Un type avec un très long rouleau"
+    ],
+    "explanation": "Michel-Ange a peint le plafond de la chapelle entre 1508 et 1512, debout plutôt qu’allongé sur des échafaudages comme le veut la légende. Il se considérait d’abord comme un sculpteur et a accepté la commande à contrecœur.",
+    "source_url": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0075",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel souverain français a vendu la Louisiane aux États-Unis en 1803 ?",
+    "correct_answer": "Napoléon Bonaparte",
+    "incorrect_answers": [
+      "Le roi Louis XVI",
+      "Napoléon III",
+      "Charles de Gaulle",
+      "L’empereur du déstockage"
+    ],
+    "explanation": "Napoléon a vendu la Louisiane, environ 2,1 millions de kilomètres carrés, pour 15 millions de dollars, doublant la taille des États-Unis. Il avait besoin d’argent pour ses guerres en Europe et craignait de perdre la colonie au profit de la Grande-Bretagne.",
+    "source_url": "https://en.wikipedia.org/wiki/Louisiana_Purchase",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0076",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quelle ville était la capitale de l’Empire byzantin ?",
+    "correct_answer": "Constantinople",
+    "incorrect_answers": [
+      "Rome",
+      "Athènes",
+      "Alexandrie",
+      "La ville aux deux noms et à une seule ligne d’horizon"
+    ],
+    "explanation": "Fondée par Constantin Ier sur le site de Byzance en 330, Constantinople a servi de capitale impériale pendant plus de 1 100 ans. C’est aujourd’hui Istanbul, la plus grande ville de Turquie, à cheval sur deux continents.",
+    "source_url": "https://en.wikipedia.org/wiki/Constantinople",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0077",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Qui a écrit le Manifeste du Parti communiste avec Friedrich Engels ?",
+    "correct_answer": "Karl Marx",
+    "incorrect_answers": [
+      "Vladimir Lénine",
+      "Léon Trotsky",
+      "Mikhaïl Bakounine",
+      "Le fantôme qui hantait l’Europe"
+    ],
+    "explanation": "Marx et Engels ont publié le pamphlet en février 1848, quelques semaines avant que les révolutions ne balayent l’Europe. Sa première phrase annonce qu’un spectre hante l’Europe, le spectre du communisme.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0078",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Quelle reine d’Égypte est célèbre pour ses alliances avec Jules César et Marc Antoine ?",
+    "correct_answer": "Cléopâtre",
+    "incorrect_answers": [
+      "Néfertiti",
+      "Hatchepsout",
+      "La reine Ahhotep Ier",
+      "La pharaone avec le meilleur agent"
+    ],
+    "explanation": "Cléopâtre VII, dernière souveraine en activité de la dynastie ptolémaïque, s’est alliée aux deux chefs romains pour garder l’Égypte indépendante. Après la défaite d’Actium en 31 avant notre ère, l’Égypte est devenue une province romaine.",
+    "source_url": "https://en.wikipedia.org/wiki/Cleopatra",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0079",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel chef franc a arrêté une invasion omeyyade à la bataille de Poitiers en 732 ?",
+    "correct_answer": "Charles Martel",
+    "incorrect_answers": [
+      "Charlemagne",
+      "Clovis Ier",
+      "Pépin le Bref",
+      "Le marteau du magasin de bricolage"
+    ],
+    "explanation": "Charles Martel, maire du palais et dirigeant de fait des Francs, a battu une armée omeyyade entre Poitiers et Tours. Son petit-fils Charlemagne a ensuite bâti l’Empire carolingien sur ces bases.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0080",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Qui a été le deuxième président des États-Unis, juste après Washington ?",
+    "correct_answer": "John Adams",
+    "incorrect_answers": [
+      "Thomas Jefferson",
+      "James Madison",
+      "Alexander Hamilton",
+      "Le finaliste promu numéro un"
+    ],
+    "explanation": "John Adams a été le deuxième président, de 1797 à 1801, après huit ans comme vice-président de Washington. Lui et Thomas Jefferson, son successeur et rival, sont tous deux morts le 4 juillet 1826, cinquante ans jour pour jour après la Déclaration d’indépendance.",
+    "source_url": "https://en.wikipedia.org/wiki/John_Adams",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0081",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quelle merveille antique se dressait dans le port de Rhodes ?",
+    "correct_answer": "Le Colosse de Rhodes",
+    "incorrect_answers": [
+      "Le phare d’Alexandrie",
+      "Le temple d’Artémis à Éphèse",
+      "Le mausolée d’Halicarnasse",
+      "La statue qui a raté son contrôle technique"
+    ],
+    "explanation": "Cette statue de bronze du dieu soleil Hélios, haute d’environ 33 mètres, a été achevée vers 280 avant notre ère et renversée par un séisme à peine 54 ans plus tard. Ses fragments sont restés des siècles sur le rivage avant d’être vendus comme ferraille.",
+    "source_url": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0082",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Quel empereur moghol a fait construire le Taj Mahal ?",
+    "correct_answer": "Shah Jahan",
+    "incorrect_answers": [
+      "Akbar",
+      "Aurangzeb",
+      "Babur",
+      "L’empereur aux goûts de marbre très coûteux"
+    ],
+    "explanation": "Shah Jahan a fait édifier le Taj Mahal à Agra entre 1632 et 1653 comme tombeau pour son épouse préférée, Mumtaz Mahal, morte en donnant naissance à leur 14e enfant. On dit qu’environ 20 000 ouvriers y ont travaillé.",
+    "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-fr-0083",
+    "lang": "fr",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Quel souverain du 13e siècle a fondé l’Empire du Mali en battant le royaume Sosso à la bataille de Kirina vers 1235 ?",
+    "correct_answer": "Soundiata Keïta",
+    "incorrect_answers": [
+      "Mansa Moussa",
+      "Askia Mohammed Ier",
+      "Sonni Ali",
+      "Le fondateur à la poigne légendaire"
+    ],
+    "explanation": "Soundiata Keïta, le prince lion du clan Keïta, a vaincu le roi Sosso Soumaoro Kanté à Kirina et bâti un empire qui a fait du Mali le royaume le plus riche d’Afrique de l’Ouest. L’épopée de Soundiata est encore récitée par les griots du Mali et de Guinée.",
+    "source_url": "https://en.wikipedia.org/wiki/Sundiata_Keita",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0057",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Combien de cavités compte le cœur humain ?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "2",
+      "3",
+      "6",
+      "Deux à l’étage, deux en bas"
+    ],
+    "explanation": "Le cœur compte deux oreillettes qui reçoivent le sang et deux ventricules qui l’éjectent. Le côté droit envoie le sang vers les poumons pour l’oxygéner, tandis que le gauche le propulse dans tout le corps.",
+    "source_url": "https://en.wikipedia.org/wiki/Heart",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0058",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quels deux éléments composent l’eau ?",
+    "correct_answer": "Hydrogène et oxygène",
+    "incorrect_answers": [
+      "Azote et oxygène",
+      "Carbone et hydrogène",
+      "Sodium et chlore",
+      "Mouillé et très mouillé"
+    ],
+    "explanation": "Chaque molécule d’eau assemble deux atomes d’hydrogène autour d’un atome d’oxygène, d’où la célèbre formule H2O. L’eau couvre environ 71 pour cent de la surface de la Terre mais reste rare dans l’univers.",
+    "source_url": "https://en.wikipedia.org/wiki/Water",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0059",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quels scientifiques sont crédités de la description de la structure en double hélice de l’ADN ?",
+    "correct_answer": "Watson et Crick",
+    "incorrect_answers": [
+      "Mendel et Darwin",
+      "Curie et Bohr",
+      "Galilée et Copernic",
+      "Helix et Fils, plombiers de l’ADN"
+    ],
+    "explanation": "James Watson et Francis Crick ont publié leur modèle en 1953, en s’appuyant crucial sur les images de diffraction aux rayons X de Rosalind Franklin. Sa photo 51 a fourni la preuve clé de la forme hélicoïdale.",
+    "source_url": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0060",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quel élément chimique représente environ 46 pour cent de la masse de la croûte terrestre, la plus grande part ?",
+    "correct_answer": "L’oxygène",
+    "incorrect_answers": [
+      "Le silicium",
+      "L’aluminium",
+      "Le fer",
+      "Celui qui croque sous la dent"
+    ],
+    "explanation": "L’oxygène forme près de la moitié de la croûte une fois combiné en minéraux silicatés, le silicium arrivant deuxième à environ 28 pour cent de la masse. La majeure partie est enfermée dans les roches plutôt que libre.",
+    "source_url": "https://en.wikipedia.org/wiki/Abundance_of_elements_in_Earth%27s_crust",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0061",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Quelles cellules du sang transportent l’oxygène dans le corps humain ?",
+    "correct_answer": "Les globules rouges",
+    "incorrect_answers": [
+      "Les globules blancs",
+      "Les plaquettes",
+      "Les cellules plasmatiques",
+      "Les petits camions de livraison rouges"
+    ],
+    "explanation": "Les globules rouges sont bourrés d’hémoglobine, une protéine riche en fer qui fixe l’oxygène dans les poumons et le libère dans les tissus. Ils n’ont pas de noyau et ne vivent qu’environ 120 jours.",
+    "source_url": "https://en.wikipedia.org/wiki/Red_blood_cell",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0062",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Quelle planète est la plus proche du Soleil ?",
+    "correct_answer": "Mercure",
+    "incorrect_answers": [
+      "Vénus",
+      "Mars",
+      "La Terre",
+      "Celle qui a la meilleure crème solaire"
+    ],
+    "explanation": "Mercure orbite à une distance moyenne d’environ 58 millions de km et boucle sa révolution en 88 jours. Malgré sa proximité avec le Soleil, ce n’est pas la planète la plus chaude, car Vénus retient la chaleur grâce à son épaisse atmosphère.",
+    "source_url": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0063",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 2,
+    "question": "De quelle couleur est le sang de la pieuvre ?",
+    "correct_answer": "Bleu",
+    "incorrect_answers": [
+      "Vert",
+      "Violet",
+      "Incolore",
+      "Bordeaux grand cru, évidemment"
+    ],
+    "explanation": "Les pieuvres utilisent l’hémocyanine, une protéine à base de cuivre, au lieu de l’hémoglobine à base de fer, pour transporter l’oxygène. Le cuivre devient bleu une fois oxygéné, donc leur sang est bleu.",
+    "source_url": "https://en.wikipedia.org/wiki/Octopus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0064",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quel dinosaure avait la morsure la plus puissante jamais mesurée chez un animal terrestre, d’environ 35 000 à 57 000 newtons ?",
+    "correct_answer": "Tyrannosaurus rex",
+    "incorrect_answers": [
+      "Vélociraptor",
+      "Tricératops",
+      "Allosaure",
+      "Celui qui sautait le jour des jambes"
+    ],
+    "explanation": "Les études biomécaniques du crâne du T. rex estiment une morsure allant jusqu’à environ 57 000 newtons, trois fois celle d’un grand crocodile marin. Les vélociraptors, malgré leur célébrité au cinéma, faisaient à peu près la taille d’une dinde.",
+    "source_url": "https://en.wikipedia.org/wiki/Tyrannosaurus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0065",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Au niveau de la mer, à quelle température l’eau bout-elle ?",
+    "correct_answer": "100 degrés Celsius",
+    "incorrect_answers": [
+      "90 degrés Celsius",
+      "110 degrés Celsius",
+      "120 degrés Celsius",
+      "Quand elle se sent prête"
+    ],
+    "explanation": "Le point d’ébullition baisse avec la pression : au sommet de l’Everest, l’eau bout vers 70 degrés, ce qui explique la cuisson lente des repas en altitude. Dans une cocotte-minute, la température plus élevée accélère la cuisson.",
+    "source_url": "https://en.wikipedia.org/wiki/Boiling_point",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0066",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Combien de lunes compte Mars ?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "4",
+      "8",
+      "Une par robot visiteur"
+    ],
+    "explanation": "Phobos et Déimos sont de petites lunes irrégulières, probablement des astéroïdes capturés. Phobos orbite si bas qu’elle tourne autour de Mars trois fois par jour et s’en rapproche lentement.",
+    "source_url": "https://en.wikipedia.org/wiki/Moons_of_Mars",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-fr-0067",
+    "lang": "fr",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Quel naturaliste anglais a conçu indépendamment la théorie de l’évolution par sélection naturelle et cosigné avec Darwin en 1858 ?",
+    "correct_answer": "Alfred Russel Wallace",
+    "incorrect_answers": [
+      "Thomas Huxley",
+      "Joseph Hooker",
+      "Charles Lyell",
+      "L’autre passager du Beagle"
+    ],
+    "explanation": "Wallace a élaboré la sélection naturelle en collectant des spécimens dans l’archipel malais et a envoyé son article à Darwin depuis l’île de Ternate en 1858. Leur présentation conjointe a poussé Darwin à publier De l’origine des espèces l’année suivante.",
+    "source_url": "https://en.wikipedia.org/wiki/Alfred_Russel_Wallace",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0057",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel roman s’ouvre sur la phrase : Appelez-moi Ismaël ?",
+    "correct_answer": "Moby Dick",
+    "incorrect_answers": [
+      "Le Vieil Homme et la Mer",
+      "L’Île au trésor",
+      "Robinson Crusoé",
+      "La baleine qui s’est échappée"
+    ],
+    "explanation": "L’épopée sur la chasse aux baleines d’Herman Melville, publiée en 1851, s’ouvre sur son narrateur qui déclare : Appelez-moi Ismaël. Cette phrase compte parmi les incipit les plus célèbres de la littérature américaine.",
+    "source_url": "https://fr.wikipedia.org/wiki/Moby_Dick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0058",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel auteur français a écrit le roman ’Les Trois Mousquetaires’ ?",
+    "correct_answer": "Alexandre Dumas",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Jules Verne",
+      "Gustave Flaubert",
+      "Père et Fils Dumas"
+    ],
+    "explanation": "Alexandre Dumas a publié Les Trois Mousquetaires en 1844, en suivant d’Artagnan et ses compagnons Athos, Porthos et Aramis. Son fils, lui aussi prénommé Alexandre, a écrit le drame romantique La Dame aux camélias.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Trois_Mousquetaires",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0059",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Qui a écrit le roman ’Bilbo le Hobbit’ ?",
+    "correct_answer": "J. R. R. Tolkien",
+    "incorrect_answers": [
+      "C. S. Lewis",
+      "J. K. Rowling",
+      "George R. R. Martin",
+      "Le dragon qui n’a pas signé"
+    ],
+    "explanation": "Tolkien publie Bilbo le Hobbit en 1937, en introduisant le lecteur dans le monde de la Terre du Milieu aux côtés de Bilbo Sacquet. Son succès mènera, vingt ans plus tard, à la trilogie du Seigneur des anneaux.",
+    "source_url": "https://fr.wikipedia.org/wiki/Bilbo_le_Hobbit",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0060",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel poète américain a écrit le recueil ’Feuilles d’herbe’ ?",
+    "correct_answer": "Walt Whitman",
+    "incorrect_answers": [
+      "Emily Dickinson",
+      "Robert Frost",
+      "Edgar Allan Poe",
+      "Un jardinier très mulché"
+    ],
+    "explanation": "Walt Whitman publie Feuilles d’herbe à compte d’auteur en 1855 et ne cesse de le réviser et de l’enrichir jusqu’à sa mort. L’édition finale compte plus de 400 poèmes, dont Chant de moi-même.",
+    "source_url": "https://fr.wikipedia.org/wiki/Feuilles_d%27herbe",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0061",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Comment nomme-t-on une forme poétique japonaise de 17 syllabes, réparties en 5-7-5 ?",
+    "correct_answer": "Haïku",
+    "incorrect_answers": [
+      "Tanka",
+      "Renga",
+      "Senryû",
+      "Dix-sept haïkus sous un long manteau"
+    ],
+    "explanation": "Le haïku capture une image fugace en trois vers de 5, 7 et 5 syllabes. Matsuo Basho, qui écrivait au 17e siècle, en reste le praticien le plus célèbre.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ha%C3%AFku",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0062",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel peintre français a réalisé ’Olympia’, la toile de 1863 d’une femme nue allongée qui fit scandale au Salon de Paris ?",
+    "correct_answer": "Édouard Manet",
+    "incorrect_answers": [
+      "Claude Monet",
+      "Edgar Degas",
+      "Gustave Courbet",
+      "Le modèle qui a trop dormi"
+    ],
+    "explanation": "Édouard Manet expose Olympia au Salon de 1865, où la critique s’indigne du regard frontal du modèle et du style moderne et plat de la toile. L’œuvre est aujourd’hui au musée d’Orsay.",
+    "source_url": "https://fr.wikipedia.org/wiki/Olympia_(Manet)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0063",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel peintre néerlandais s’est sectionné une partie de l’oreille gauche en 1888 après une dispute à Arles ?",
+    "correct_answer": "Vincent van Gogh",
+    "incorrect_answers": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Piet Mondrian",
+      "Le barbier trop zélé"
+    ],
+    "explanation": "Vincent van Gogh se coupe une partie de l’oreille gauche en décembre 1888 après une violente dispute avec Paul Gauguin, qu’il hébergeait à Arles. Il peint ensuite plusieurs autoportraits à l’oreille bandée.",
+    "source_url": "https://fr.wikipedia.org/wiki/Vincent_van_Gogh",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0064",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Quel peintre baroque italien, connu pour son clair-obscur et son caractère violent, fuit Rome en 1606 après avoir tué un homme lors d’une rixe ?",
+    "correct_answer": "Le Caravage",
+    "incorrect_answers": [
+      "Raphaël",
+      "Titien",
+      "Artemisia Gentileschi",
+      "Le peintre qui a oublié sa palette"
+    ],
+    "explanation": "Le clair-obscur du Caravage en fait l’artiste le plus célèbre de Rome, avant que son tempérament violent ne le rattrape. Il passe ses dernières années en fuite et meurt en 1610 dans des circonstances troubles.",
+    "source_url": "https://fr.wikipedia.org/wiki/Le_Caravage",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0065",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Quel surréaliste espagnol a peint en 1936 ’Construction molle avec haricots bouillis’, vision macabre d’un personnage se démembra à la veille de la guerre d’Espagne ?",
+    "correct_answer": "Salvador Dalí",
+    "incorrect_answers": [
+      "Joan Miró",
+      "René Magritte",
+      "Max Ernst",
+      "Un cuisinier très délicat"
+    ],
+    "explanation": "Salvador Dalí peint Construction molle avec haricots bouillis en 1936, quelques mois avant le début de la guerre d’Espagne. Sa figure grotesque qui s’étrangle elle-même est souvent lue comme une prophétie du conflit à venir.",
+    "source_url": "https://fr.wikipedia.org/wiki/Construction_molle_avec_haricots_bouillis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0066",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel peintre américain a réalisé ’Les Nighthawks’, la toile de 1942 montrant des clients dans un dîner nocturne ?",
+    "correct_answer": "Edward Hopper",
+    "incorrect_answers": [
+      "Grant Wood",
+      "Andrew Wyeth",
+      "Georgia O’Keeffe",
+      "Le café qui n’est jamais arrivé"
+    ],
+    "explanation": "Edward Hopper achève Nighthawks en 1942, en capturant un coin de rue désert et la lumière crue d’un dîner nocturne. Le tableau est devenu l’une des images les plus reconnaissables de la solitude américaine.",
+    "source_url": "https://fr.wikipedia.org/wiki/Nighthawks_(tableau)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-fr-0067",
+    "lang": "fr",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Quel philosophe grec, jugé et condamné à mort en 399 avant J.-C., voit son procès rapporté par le dialogue ’Apologie’ de Platon ?",
+    "correct_answer": "Socrate",
+    "incorrect_answers": [
+      "Platon",
+      "Aristote",
+      "Pythagore",
+      "L’avocat qui a perdu le procès"
+    ],
+    "explanation": "Socrate est jugé en 399 avant J.-C. pour impiété et corruption de la jeunesse athénienne, et condamné à boire la ciguë. L’Apologie de Platon rapporte son plaidoyer, bien que Platon n’y ait probablement pas assisté.",
+    "source_url": "https://fr.wikipedia.org/wiki/Apologie_de_Socrate",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0054",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quelle actrice a incarné Hermione Granger dans la série de films Harry Potter ?",
+    "correct_answer": "Emma Watson",
+    "incorrect_answers": [
+      "Dakota Fanning",
+      "Chloë Grace Moretz",
+      "Hailee Steinfeld",
+      "Le service de réparation des retourneurs de temps"
+    ],
+    "explanation": "Emma Watson a été retenue à 9 ans et a joué Hermione dans les huit films, de 2001 à 2011. Elle a ensuite obtenu son diplôme à l’université Brown, tout en terminant la série.",
+    "source_url": "https://fr.wikipedia.org/wiki/Emma_Watson",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0055",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Dans quel film de 1996 Shaquille O’Neal incarne-t-il un génie rappeur qui exauce trois vœux ?",
+    "correct_answer": "Kazaam",
+    "incorrect_answers": [
+      "Aladdin",
+      "L’Histoire sans fin",
+      "L’Aventure intérieure",
+      "Trois vœux, non remboursables"
+    ],
+    "explanation": "Shaquille O’Neal joue le génie rappeur Kazaam dans le film de 1996 du même nom. Le film est sorti au début de sa carrière avec le Magic d’Orlando, quelques années avant que sa carrière au cinéma ne marque le pas.",
+    "source_url": "https://fr.wikipedia.org/wiki/Kazaam",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0056",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quel label a lancé la carrière des Beatles en les signant en 1962, après le refus d’autres maisons de disques ?",
+    "correct_answer": "Parlophone",
+    "incorrect_answers": [
+      "Columbia",
+      "EMI",
+      "Apple Records",
+      "Le label au problème d’attitude"
+    ],
+    "explanation": "Le producteur George Martin signe les Beatles chez Parlophone, une filiale d’EMI connue pour ses disques comiques, en 1962 après leur refus par Decca. Leur collaboration produira 12 albums studio.",
+    "source_url": "https://fr.wikipedia.org/wiki/Parlophone",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0057",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel label a refusé les Beatles après une audition le 1er janvier 1962, ce qui est souvent cité comme la plus grande erreur de l’histoire de la pop ?",
+    "correct_answer": "Decca",
+    "incorrect_answers": [
+      "Atlantic",
+      "Philips",
+      "RCA Victor",
+      "On ne signe que les groupes bien coiffés"
+    ],
+    "explanation": "Decca auditionne les Beatles dans ses studios londoniens le jour de l’an 1962 et leur préfère Brian Poole and the Tremeloes. Dick Rowe, le dénicheur de talents du label, a ensuite hérité du surnom de l’homme qui a refusé les Beatles.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Beatles%27_Deca_audition",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0058",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Dans quelle comédie musicale le personnage de Sarah Brown, une missionnaire, tombe-t-elle amoureuse du joueur Sky Masterson ?",
+    "correct_answer": "Guys and Dolls",
+    "incorrect_answers": [
+      "Chantons sous la pluie",
+      "Un Américain à Paris",
+      "Show Boat",
+      "Un cheval, un dé, un mariage"
+    ],
+    "explanation": "Guys and Dolls est créé à Broadway en 1950, puis adapté au cinéma en 1955 avec Marlon Brando et Jean Simmons. Ses chansons sont signées Frank Loesser.",
+    "source_url": "https://fr.wikipedia.org/wiki/Guys_and_Dolls",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0059",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Dans quel pays africain fictif se déroule l’essentiel du film Black Panther de 2018 ?",
+    "correct_answer": "Wakanda",
+    "incorrect_answers": [
+      "Zamunda",
+      "Genosha",
+      "Latveria",
+      "Un pays introuvable sur les cartes postales"
+    ],
+    "explanation": "Le Wakanda est la nation africaine technologiquement avancée dirigée par T’Challa, incarné par Chadwick Boseman dans le film de 2018. Black Panther a été le premier film de super-héros nommé à l’Oscar du meilleur film.",
+    "source_url": "https://fr.wikipedia.org/wiki/Wakanda",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0060",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quelle comédie musicale de Stephen Sondheim entremêle les contes de Jack, Cendrillon, le Petit Chaperon rouge et Raiponce ?",
+    "correct_answer": "Into the Woods",
+    "incorrect_answers": [
+      "The Book of Mormon",
+      "Sweeney Todd",
+      "Cats",
+      "Un éboueur très bricoleur"
+    ],
+    "explanation": "Into the Woods, sur une musique de Stephen Sondheim et un livret de James Lapine, est créé à Broadway en 1987 et entremêle plusieurs contes des frères Grimm autour d’un boulanger et de son épouse frappés par la malédiction d’une sorcière.",
+    "source_url": "https://fr.wikipedia.org/wiki/Into_the_Woods",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0061",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Quel film romantique de 1990, avec Patrick Swayze et Demi Moore, rend célèbre une scène de poterie ?",
+    "correct_answer": "Ghost",
+    "incorrect_answers": [
+      "Dirty Dancing",
+      "Officier et Gentleman",
+      "Pretty Woman",
+      "Une séance de spiritisme très tactile"
+    ],
+    "explanation": "Ghost (1990) vaut à Whoopi Goldberg l’Oscar de la meilleure actrice dans un second rôle pour celui de médium fraudeuse. La scène de poterie, sur la chanson Unchained Melody, est devenue l’un des moments les plus parodiés du cinéma.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ghost_(film,_1990)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0062",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Quel réalisateur a remporté son unique Oscar compétitif, celui du meilleur scénario original, pour le film Pulp Fiction de 1994 ?",
+    "correct_answer": "Quentin Tarantino",
+    "incorrect_answers": [
+      "Martin Scorsese",
+      "Robert Altman",
+      "David Fincher",
+      "Le scénario qui s’est écrit tout seul"
+    ],
+    "explanation": "Quentin Tarantino partage l’Oscar du meilleur scénario original 1995 avec son coscénariste Roger Avary pour Pulp Fiction. Ses deux autres Oscars, pour Django Unchained et Once Upon a Time in Hollywood, récompensent aussi des scénarios.",
+    "source_url": "https://fr.wikipedia.org/wiki/Pulp_Fiction",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-fr-0063",
+    "lang": "fr",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Quel faux documentaire de 1984 suit le groupe de rock fictif Spinal Tap lors d’une tournée américaine catastrophique ?",
+    "correct_answer": "This Is Spinal Tap",
+    "incorrect_answers": [
+      "The Blues Brothers",
+      "Wayne’s World",
+      "L’Excellente Aventure de Bill et Ted",
+      "Un guitariste très puissant"
+    ],
+    "explanation": "This Is Spinal Tap, réalisé par Rob Reiner, popularise le format du mockumentary en 1984. Ses amplificateurs qui montent jusqu’à onze sont devenus un objet de culte dans la culture rock.",
+    "source_url": "https://fr.wikipedia.org/wiki/This_Is_Spinal_Tap",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0054",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Dans les courses de chevaux, quelle est la récompense traditionnelle du vainqueur du Kentucky Derby ?",
+    "correct_answer": "Une couverture de roses",
+    "incorrect_answers": [
+      "Un fer à cheval en argent",
+      "Un baril de bourbon du Kentucky",
+      "Un chapeau Stetson",
+      "Un bouquet très nerveux"
+    ],
+    "explanation": "Le vainqueur du Kentucky Derby est drapé dans une couverture de plus de 400 roses, ce qui vaut à la course son surnom de Run for the Roses. Les premières roses ont été attribuées en 1896.",
+    "source_url": "https://fr.wikipedia.org/wiki/Kentucky_Derby",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0055",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Dans quelle ville se trouve le siège du Comité international olympique ?",
+    "correct_answer": "Lausanne",
+    "incorrect_answers": [
+      "Genève",
+      "Paris",
+      "Zurich",
+      "Là où se trouve la flamme"
+    ],
+    "explanation": "Le CIO est installé à Lausanne, en Suisse, depuis 1915, lorsque Pierre de Coubertin y a transféré le siège pendant la Première Guerre mondiale. La ville se surnomme la capitale olympique.",
+    "source_url": "https://fr.wikipedia.org/wiki/Comit%C3%A9_international_olympique",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0056",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Quel pongiste suédois a remporté l’or olympique en simple messieurs à Barcelone en 1992, ce qui lui a valu le surnom d’arbre toujours vert en Chine ?",
+    "correct_answer": "Jan-Ove Waldner",
+    "incorrect_answers": [
+      "Ma Long",
+      "Yoo Nam-kyu",
+      "Zhang Jike",
+      "La raquette rancunière"
+    ],
+    "explanation": "Jan-Ove Waldner décroche l’or olympique en simple à Barcelone en 1992, et sa longévité lui vaut le surnom d’arbre toujours vert en Chine. Séoul 1988 était revenu au Sud-Coréen Yoo Nam-kyu, et Waldner jouait encore au niveau international à plus de 40 ans.",
+    "source_url": "https://fr.wikipedia.org/wiki/Jan-Ove_Waldner",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0057",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Dans le jeu de société Cluedo, dans quelle pièce le crime est-il commis ?",
+    "correct_answer": "La cuisine",
+    "incorrect_answers": [
+      "La serre",
+      "La salle de billard",
+      "La bibliothèque",
+      "Là où le majordome faisait la sieste"
+    ],
+    "explanation": "Dans Cluedo, les joueurs doivent identifier dans laquelle des neuf pièces du manoir le meurtre a eu lieu, ainsi que l’arme et le coupable. La cuisine est l’une des pièces d’angle.",
+    "source_url": "https://fr.wikipedia.org/wiki/Cluedo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0058",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Quel jeu de société utilise des tuiles hexagonales que les joueurs assemblent pour créer des paysages, des villages et des routes ?",
+    "correct_answer": "Les Colons de Catane",
+    "incorrect_answers": [
+      "Les Aventuriers du Rail",
+      "Carcassonne",
+      "Pandémie",
+      "Des hexagones à volonté"
+    ],
+    "explanation": "Les Colons de Catane, créé par le concepteur allemand Klaus Teuber en 1995, utilise des tuiles de terrain hexagonales qui forment une île différente à chaque partie. Le jeu a popularisé les jeux de société européens en Amérique du Nord.",
+    "source_url": "https://fr.wikipedia.org/wiki/Les_Colons_de_Catane",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0059",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Dans quel pays le curling est-il né au Moyen Âge, avec des pierres lancées sur des étangs gelés ?",
+    "correct_answer": "L’Écosse",
+    "incorrect_answers": [
+      "Le Canada",
+      "La Norvège",
+      "La Suisse",
+      "Sur glace, évidemment"
+    ],
+    "explanation": "Le curling s’est développé sur les étangs et marais gelés de l’Écosse médiévale, avec une première mention écrite datant de 1541. Le Royal Caledonian Curling Club, fondé en 1838, a codifié les règles modernes.",
+    "source_url": "https://fr.wikipedia.org/wiki/Curling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0060",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Au tennis, comment appelle-t-on le score de 40-40, où il faut gagner deux points consécutifs pour remporter le jeu ?",
+    "correct_answer": "Égalité",
+    "incorrect_answers": [
+      "Balle de break",
+      "Balle de set",
+      "Avantage",
+      "La revanche de l’égalité"
+    ],
+    "explanation": "À 40-40, le score est appelé égalité, et un joueur doit gagner deux points consécutifs, d’abord pour l’avantage puis le jeu. L’origine française du comptage, avec ses étranges 15-30-40, reste débattue par les historiens.",
+    "source_url": "https://fr.wikipedia.org/wiki/Comptage_des_points_au_tennis",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0061",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "Au cricket, comment nomme-t-on le fait pour un batteur de marquer 100 courses en une manche ?",
+    "correct_answer": "Un siècle",
+    "incorrect_answers": [
+      "Un canard",
+      "Un doublé",
+      "Une tonne",
+      "Fuir les points à toutes jambes"
+    ],
+    "explanation": "Un siècle correspond à 100 courses marquées par un même batteur en une manche. Le cricket récompense aussi une sélection internationale par un cap et un lanceur par une manche à cinq guichets, mais le siècle reste la référence du batteur.",
+    "source_url": "https://en.wikipedia.org/wiki/Century_(cricket)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0062",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Quelle finale de la Coupe du monde de football 1966, disputée en prolongation à Wembley, a vu naître le but le plus controversé de l’histoire de la compétition ?",
+    "correct_answer": "La finale Angleterre - Allemagne de l’Ouest",
+    "incorrect_answers": [
+      "La finale de 1954, Allemagne de l’Ouest - Hongrie",
+      "La demi-finale de 1970, Italie - Allemagne de l’Ouest",
+      "Le match décisif de 1950, Uruguay - Brésil",
+      "Le but qui discute encore avec l’arbitre"
+    ],
+    "explanation": "La frappe de Geoff Hurst qui rebondit sur la barre transversale lors de la finale de 1966 est accordée par l’arbitre de touche, et l’Angleterre s’impose 4-2. Des décennies d’analyses vidéo n’ont pas tranché si le ballon a entièrement franchi la ligne.",
+    "source_url": "https://fr.wikipedia.org/wiki/Finale_de_la_Coupe_du_monde_de_football_1966",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-fr-0063",
+    "lang": "fr",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Au poker, quelle combinaison se classe juste en dessous du full ?",
+    "correct_answer": "La couleur",
+    "incorrect_answers": [
+      "Le carré",
+      "La suite",
+      "Le brelan",
+      "Une poignée de main très ferme"
+    ],
+    "explanation": "La couleur est composée de cinq cartes de la même famille, et se classe juste en dessous du full, qui combine un brelan et une paire. Le carré et la quinte flush se classent au-dessus du full.",
+    "source_url": "https://fr.wikipedia.org/wiki/Ordre_des_force_des_main_au_poker",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0001",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Combien de cordes compte une guitare moderne standard ?",
+    "correct_answer": "6",
+    "incorrect_answers": [
+      "4",
+      "7",
+      "12",
+      "Une pour chaque jour de congé"
+    ],
+    "explanation": "Les six cordes sont devenues la norme au XIXe siècle, lorsque le luthier espagnol Antonio Torres a fixé la forme actuelle de la caisse. Les modèles douze cordes existent, mais leurs cordes sont appariées en chœurs.",
+    "source_url": "https://en.wikipedia.org/wiki/Guitar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0002",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Quel instrument Bartolomeo Cristofori a-t-il inventé vers 1700 ?",
+    "correct_answer": "Le piano",
+    "incorrect_answers": [
+      "Le clavecin",
+      "L'orgue",
+      "L'accordéon",
+      "Une harpe prise de trac"
+    ],
+    "explanation": "Facteur de clavecins à Florence, Cristofori a construit des instruments où des marteaux frappent les cordes, permettant de nuancer le volume au toucher. Son piano de 1720 est conservé au Metropolitan Museum of Art de New York.",
+    "source_url": "https://en.wikipedia.org/wiki/Piano",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0003",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Dans quel pays le reggae est-il né à la fin des années 1960 ?",
+    "correct_answer": "La Jamaïque",
+    "incorrect_answers": [
+      "Cuba",
+      "Trinité-et-Tobago",
+      "La Barbade",
+      "À la plage, forcément"
+    ],
+    "explanation": "Le reggae est issu du ska et du rocksteady en Jamaïque. Le single Do the Reggay de Toots and the Maytals, paru en 1968, a donné son nom au genre.",
+    "source_url": "https://en.wikipedia.org/wiki/Reggae",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0004",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Combien de touches compte un piano moderne standard ?",
+    "correct_answer": "88",
+    "incorrect_answers": [
+      "76",
+      "92",
+      "108",
+      "Une par humeur"
+    ],
+    "explanation": "L'étendue de 88 touches, du la0 au do8, a été fixée par Steinway dans les années 1880 et est devenue la norme. Certains pianos à étendue élargie, comme ceux de Bösendorfer et de Stuart and Sons, la dépassent.",
+    "source_url": "https://en.wikipedia.org/wiki/Piano",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0005",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Avec quel pays le sitar est-il traditionnellement associé ?",
+    "correct_answer": "L'Inde",
+    "incorrect_answers": [
+      "Le Japon",
+      "La Turquie",
+      "L'Indonésie",
+      "Un charmeur de serpents très patient"
+    ],
+    "explanation": "Le sitar est un luth pincé du sous-continent indien, utilisé dans la musique classique hindoustanie. Ravi Shankar l'a fait connaître dans le monde entier à partir de la fin des années 1950.",
+    "source_url": "https://en.wikipedia.org/wiki/Sitar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0006",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Quel instrument de la famille des bois, joué avec anche simple, porte le nom d'un objet qui n'a rien à voir avec la musique ?",
+    "correct_answer": "La clarinette",
+    "incorrect_answers": [
+      "Le hautbois",
+      "La flûte",
+      "Le basson",
+      "Le fouet de cuisine"
+    ],
+    "explanation": "La clarinette utilise une anche simple fixée sur son bec, contrairement au hautbois et au basson à anche double. Son perce cylindrique et son pavillon évasé lui donnent une grande amplitude dynamique.",
+    "source_url": "https://en.wikipedia.org/wiki/Clarinet",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0007",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Sur quelle ferme le festival de Woodstock de 1969 a-t-il réellement eu lieu ?",
+    "correct_answer": "Bethel, dans l'État de New York",
+    "incorrect_answers": [
+      "Woodstock, dans l'État de New York",
+      "Saugerties, dans l'État de New York",
+      "Catskill, dans l'État de New York",
+      "Chez le voisin, après un différend"
+    ],
+    "explanation": "La ferme de Max Yasgur, à Bethel, à environ 95 km au sud-ouest de la ville de Woodstock, a accueilli le festival en août 1969. La ville elle-même avait refusé l'événement, mais le nom est resté.",
+    "source_url": "https://en.wikipedia.org/wiki/Woodstock",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0008",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 2,
+    "question": "À quelle fréquence le la au-dessus du do central est-il accordé selon la norme moderne de concert ?",
+    "correct_answer": "440 Hz",
+    "incorrect_answers": [
+      "432 Hz",
+      "452 Hz",
+      "480 Hz",
+      "Selon l'humeur du batteur"
+    ],
+    "explanation": "L'ISO a normalisé le la440 en 1955, mais les diapasons ont beaucoup varié au fil des siècles. Le diapason baroque se situe souvent vers 415 Hz, soit environ un demi-ton plus bas.",
+    "source_url": "https://en.wikipedia.org/wiki/A440_(pitch_standard)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0009",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Quel instrument électronique, joué sans le toucher, a été inventé par Leon Theremin en 1920 ?",
+    "correct_answer": "Le thérémine",
+    "incorrect_answers": [
+      "Le synthétiseur",
+      "L'orgue",
+      "Le violon électrique",
+      "La guitare aérienne enfin prise au sérieux"
+    ],
+    "explanation": "Deux antennes détectent la position des mains : l'une commande la hauteur, l'autre le volume. Le physicien soviétique Lev Termen l'a conçu en travaillant sur des capteurs de proximité, et c'est toujours le seul instrument qui se joue sans contact.",
+    "source_url": "https://en.wikipedia.org/wiki/Theremin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0010",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Quelle ville brésilienne a vu naître la bossa nova à la fin des années 1950 ?",
+    "correct_answer": "Rio de Janeiro",
+    "incorrect_answers": [
+      "Sao Paulo",
+      "Salvador",
+      "Brasilia",
+      "Le cousin méfiant de la samba"
+    ],
+    "explanation": "La bossa nova est née à Rio comme une branche apaisée de la samba, portée par la guitare feutrée et la voix murmurée de Joao Gilberto. La Fille d'Ipanema a rendu le style mondial en 1964.",
+    "source_url": "https://en.wikipedia.org/wiki/Bossa_nova",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0011",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Quelle entreprise a lancé la cassette compacte en 1963 ?",
+    "correct_answer": "Philips",
+    "incorrect_answers": [
+      "Sony",
+      "Grundig",
+      "RCA",
+      "Deux très petites bobines avec un rêve"
+    ],
+    "explanation": "Philips a présenté la cassette compacte au salon de la radio de Berlin en août 1963, puis a librement concédé sa licence à partir de 1966, ce qui en a fait la norme mondiale. Elle était au départ conçue pour la dictée.",
+    "source_url": "https://en.wikipedia.org/wiki/Compact_Cassette",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-fr-0012",
+    "lang": "fr",
+    "category": "music",
+    "difficulty": 3,
+    "question": "Quelle émission radiophonique de Nashville, lancée en 1925, est devenue la plus ancienne émission en direct de l'histoire des États-Unis ?",
+    "correct_answer": "Le Grand Ole Opry",
+    "incorrect_answers": [
+      "The Louisiana Hayride",
+      "The Midnight Jamboree",
+      "The Wheeling Jamboree",
+      "La plus longue file d'attente de Nashville"
+    ],
+    "explanation": "George D. Hay a fondé le WSM Barn Dance en novembre 1925 ; l'émission a été rebaptisée Grand Ole Opry en 1927. Toujours diffusée chaque semaine sur WSM, elle a fait de la musique country une industrie nationale.",
+    "source_url": "https://en.wikipedia.org/wiki/Grand_Ole_Opry",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0001",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Quel fruit est l'ingrédient principal du guacamole ?",
+    "correct_answer": "L'avocat",
+    "incorrect_answers": [
+      "Le concombre",
+      "La tomate verte",
+      "Le citron vert",
+      "Une grenouille très patiente"
+    ],
+    "explanation": "Le mot guacamole vient du nahuatl ahuacamolli, littéralement sauce à l'avocat. L'avocat était domestiqué en Mésoamérique vers 5000 avant notre ère.",
+    "source_url": "https://en.wikipedia.org/wiki/Guacamole",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0002",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Quel pays est le berceau traditionnel de la paella ?",
+    "correct_answer": "L'Espagne",
+    "incorrect_answers": [
+      "L'Italie",
+      "Le Portugal",
+      "Le Mexique",
+      "Une rizière très ambitieuse"
+    ],
+    "explanation": "La paella est originaire de la région de Valence et tire son nom de la grande poêle dans laquelle elle cuit. La version valencienne classique marie riz, lapin, poulet et safran.",
+    "source_url": "https://en.wikipedia.org/wiki/Paella",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0003",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Quel accompagnement coréen de légumes salés et fermentés, le plus souvent du chou chinois, est servi à presque chaque repas en Corée ?",
+    "correct_answer": "Le kimchi",
+    "incorrect_answers": [
+      "Le miso",
+      "La choucroute",
+      "Le tsukemono",
+      "Une salade très bruyante"
+    ],
+    "explanation": "Le kimchi est fermenté en saumure, ce qui lui donne son acidité et sa longue conservation. Le chou chinois n'est arrivé en Corée qu'à la fin du XIXe siècle ; les versions antérieures utilisaient d'autres légumes.",
+    "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0004",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Avec quoi le tofu est-il fabriqué ?",
+    "correct_answer": "Du lait de soja",
+    "incorrect_answers": [
+      "Du lait de riz",
+      "Du lait de coco",
+      "Du lait d'amande",
+      "Une substance très déterminée, voisine du fromage"
+    ],
+    "explanation": "Le tofu s'obtient en faisant cailler du lait de soja puis en pressant le caillé en blocs. Originaire de Chine, il s'y consomme depuis plus de 2 000 ans.",
+    "source_url": "https://en.wikipedia.org/wiki/Tofu",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0005",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "De quel ingrédient le saké, spécialité des brasseries japonaises, est-il fait ?",
+    "correct_answer": "Du riz",
+    "incorrect_answers": [
+      "De l'orge",
+      "Du blé",
+      "Du raisin",
+      "D'eau de pluie, par principe"
+    ],
+    "explanation": "Le saké est brassé en fermentant du riz poli avec un moût de koji et de l'eau, un procédé plus proche de la bière que du vin. Le taux de polissage du riz est un marqueur de qualité.",
+    "source_url": "https://en.wikipedia.org/wiki/Sake",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0006",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Quelle boisson à base d'espresso est traditionnellement préparée avec du lait chaud vapeur et une couche de mousse de lait ?",
+    "correct_answer": "Le cappuccino",
+    "incorrect_answers": [
+      "L'americano",
+      "Le ristretto",
+      "Le macchiato",
+      "Un latte qui a trop dormi"
+    ],
+    "explanation": "Le cappuccino superpose espresso, lait chaud et mousse en parts à peu près égales. Son nom vient des moines capucins, dont il rappelle la couleur de l'habit.",
+    "source_url": "https://en.wikipedia.org/wiki/Cappuccino",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0007",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Quelle épice, tirée des stigmates d'une fleur de crocus, se vend au gramme car il faut environ 150 fleurs pour en produire un seul gramme ?",
+    "correct_answer": "Le safran",
+    "incorrect_answers": [
+      "La cardamome",
+      "La vanille",
+      "Le curcuma",
+      "De la poudre de soleil"
+    ],
+    "explanation": "Chaque fleur de Crocus sativus ne donne qu'environ 7 mg de stigmates séchés, cueillis à la main à l'aube. Les prix varient de 1 100 à 11 000 dollars le kilogramme, ce qui en fait l'une des épices les plus chères au poids.",
+    "source_url": "https://en.wikipedia.org/wiki/Saffron",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0008",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Quel assaisonnement français marie des dés d'oignons, de carottes et de céleri cuits lentement au beurre sans coloration ?",
+    "correct_answer": "Le mirepoix",
+    "incorrect_answers": [
+      "Le roux",
+      "Le soffritto",
+      "Le bouquet garni",
+      "La première partie du concert des légumes"
+    ],
+    "explanation": "Le mirepoix doit son nom au duc de Levis-Mirepoix, dont le cuisinier aurait fixé la recette au XVIIIe siècle. La proportion classique est de deux parts d'oignon pour une de carotte et une de céleri.",
+    "source_url": "https://en.wikipedia.org/wiki/Mirepoix_(cuisine)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0009",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "En 1943, Ignacio Anaya a improvisé quel plat pour des clients affamés du restaurant Victory Club à Piedras Negras, au Mexique ?",
+    "correct_answer": "Les nachos",
+    "incorrect_answers": [
+      "Les burritos",
+      "Les quesadillas",
+      "Les tacos al pastor",
+      "Une assiette de chips très courageuse"
+    ],
+    "explanation": "Le maître d'hôtel, surnommé Nacho, a recouvert des tortillas frites de fromage et de jalapenos alors que la cuisine avait fermé. Le plat a gardé son nom et s'est diffusé depuis cette ville frontalière.",
+    "source_url": "https://en.wikipedia.org/wiki/Nachos",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0010",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Quel pain annulaire et moelleux est brièvement bouilli avant d'être enfourné ?",
+    "correct_answer": "Le bagel",
+    "incorrect_answers": [
+      "Le bretzel",
+      "La brioche",
+      "Le croissant",
+      "Un beignet qui a raté la fête foraine"
+    ],
+    "explanation": "L'ébouillantage fixe la croûte avant la cuisson et donne au bagel son cœur dense et moelleux. Ce petit pain est né dans les communautés juives de Pologne puis a gagné New York avec les émigrants.",
+    "source_url": "https://en.wikipedia.org/wiki/Bagel",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0011",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Quel adjectif décrit des pâtes cuites jusqu'à rester fermes sous la dent ?",
+    "correct_answer": "Al dente",
+    "incorrect_answers": [
+      "Al fresco",
+      "Antipasto",
+      "Affogato",
+      "Al cabossée, à cause d'une casserole tombée"
+    ],
+    "explanation": "Al dente signifie littéralement à la dent en italien. Cette cuisson laisse un cœur ferme, qui relève aussi l'index glycémique des pâtes par rapport à une cuisson molle.",
+    "source_url": "https://en.wikipedia.org/wiki/Al_dente",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-fr-0012",
+    "lang": "fr",
+    "category": "food-drink",
+    "difficulty": 3,
+    "question": "Quel plat d'œufs pochés dans une sauce tomate épicée aux poivrons tire son nom du Maghreb ?",
+    "correct_answer": "La chakchouka",
+    "incorrect_answers": [
+      "La ratatouille",
+      "Le menemen",
+      "Les huevos rancheros",
+      "Une omelette allée à l'école d'art"
+    ],
+    "explanation": "Chakchouka vient de l'arabe désignant un mélange ; la version maghrébine associe œufs, tomates, poivrons, cumin et paprika. Le plat s'est diffusé à travers l'Afrique du Nord et le Moyen-Orient.",
+    "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0001",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Que signifie le sigle WWW ?",
+    "correct_answer": "World Wide Web",
+    "incorrect_answers": [
+      "World Web Wide",
+      "Wide World Web",
+      "Wireless Web Worldwide",
+      "Trois dactylographes très confus"
+    ],
+    "explanation": "Tim Berners-Lee a inventé le Web au CERN en 1989 comme un système universel d'informations liées, ouvert au public en 1993. Le Web fonctionne sur Internet, mais n'en est pas synonyme.",
+    "source_url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0002",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "De quelle disposition le clavier anglais standard tire-t-il son nom ?",
+    "correct_answer": "QWERTY",
+    "incorrect_answers": [
+      "AZERTY",
+      "Dvorak",
+      "Colemak",
+      "Clavier, rangé par ordre alphabétique"
+    ],
+    "explanation": "Le nom épelle les six premières touches de la rangée supérieure de lettres. Cette disposition est apparue sur la machine à écrire Sholes and Glidden vendue par Remington à partir de 1874 et reste la norme de fait sur les ordinateurs.",
+    "source_url": "https://en.wikipedia.org/wiki/QWERTY",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0003",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Quelle entreprise a développé le code QR en 1994 pour suivre des pièces automobiles ?",
+    "correct_answer": "Denso",
+    "incorrect_answers": [
+      "Sony",
+      "Toyota elle-même, pas un sous-traitant",
+      "Panasonic",
+      "Un code-barres passé à la salle de sport"
+    ],
+    "explanation": "Masahiro Hara, ingénieur chez Denso Wave, a inventé le code à réponse rapide pour étiqueter les pièces automobiles. Sa correction d'erreurs l'a rendu robuste, avant sa conquête des paiements et des billets.",
+    "source_url": "https://en.wikipedia.org/wiki/QR_code",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0004",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Qui a présenté en 1968 la première souris d'ordinateur, une coque de bois sur deux roues ?",
+    "correct_answer": "Douglas Engelbart",
+    "incorrect_answers": [
+      "Alan Turing",
+      "Bill English",
+      "Douglas Fairbanks",
+      "Un rongeur très doué"
+    ],
+    "explanation": "Engelbart a dévoilé la souris lors de sa célèbre démonstration, la Mother of All Demos, à San Francisco. Bill English avait construit le prototype en 1964 d'après le croquis d'Engelbart.",
+    "source_url": "https://en.wikipedia.org/wiki/Computer_mouse",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0005",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Combien de satellites composent la constellation GPS complète ?",
+    "correct_answer": "24",
+    "incorrect_answers": [
+      "18",
+      "31",
+      "42",
+      "Un seul satellite, très étourdi"
+    ],
+    "explanation": "Le département américain de la Défense a conçu la constellation en 1973, et le jeu complet de 24 satellites est devenu opérationnel en 1993. Plus de 31 engins volent désormais, ce qui améliore la couverture.",
+    "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0006",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Que fait un pare-feu dans un réseau informatique ?",
+    "correct_answer": "Il filtre le trafic entre réseaux",
+    "incorrect_answers": [
+      "Il refroidit les processeurs",
+      "Il stocke des copies de sauvegarde",
+      "Il accélère les téléchargements",
+      "Une porte très persuasive, verrouillée bruyamment"
+    ],
+    "explanation": "Un pare-feu surveille et contrôle le trafic entrant et sortant selon des règles configurables, formant une barrière entre réseaux de confiance et réseaux douteux. Son nom emprunte aux murs coupe-feu du bâtiment.",
+    "source_url": "https://en.wikipedia.org/wiki/Firewall_(computing)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0007",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Quel microprocesseur, lancé en 1971, est généralement considéré comme le premier du commerce ?",
+    "correct_answer": "Intel 4004",
+    "incorrect_answers": [
+      "Intel 8080",
+      "Motorola 6800",
+      "Zilog Z80",
+      "Quatre pommes de terre alignées"
+    ],
+    "explanation": "Le 4004 a été conçu par Federico Faggin et construit à l'origine pour la calculatrice Busicom. Son processeur complet sur une seule puce a ouvert la voie à l'informatique personnelle.",
+    "source_url": "https://en.wikipedia.org/wiki/Microprocessor",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0008",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Quelle technologie sans fil doit son nom à un roi danois du Xe siècle ?",
+    "correct_answer": "Bluetooth",
+    "incorrect_answers": [
+      "Wi-Fi",
+      "Zigbee",
+      "NFC",
+      "Un pirate très frileux"
+    ],
+    "explanation": "Jim Kardach, ingénieur chez Intel, a proposé ce nom de code en lisant l'histoire d'Harald à la dent bleue, qui avait unifié le Danemark et la Norvège. Les runes de sa pierre runique dessinent le logo de la technologie.",
+    "source_url": "https://en.wikipedia.org/wiki/Bluetooth",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0009",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Quelle machine de 1945 est généralement créditée du titre de premier ordinateur numérique électronique programmable à usage général ?",
+    "correct_answer": "ENIAC",
+    "incorrect_answers": [
+      "Colossus",
+      "UNIVAC I",
+      "Zuse Z3",
+      "Un boulier très organisé"
+    ],
+    "explanation": "Achevé en 1945 à l'université de Pennsylvanie, l'ENIAC fut le premier à combiner vitesse électronique, programmabilité et usage général. Le reprogrammer signifiait au départ recâbler les tableaux de connexions à la main.",
+    "source_url": "https://en.wikipedia.org/wiki/ENIAC",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0010",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Quel système, créé par Paul Mockapetris en 1983, traduit les noms de domaine en adresses IP ?",
+    "correct_answer": "Le système de noms de domaine",
+    "incorrect_answers": [
+      "Le protocole de transfert hypertexte",
+      "Le protocole de contrôle de transmission",
+      "Le protocole de transfert de fichiers",
+      "Un annuaire téléphonique extrêmement patient"
+    ],
+    "explanation": "Mockapetris a conçu le DNS au sein de l'Information Sciences Institute de l'université du Sud de la Californie, pour remplacer un unique fichier d'hôtes. Les premières spécifications de l'IETF sont parues en novembre 1983 sous les numéros RFC 882 et 883.",
+    "source_url": "https://en.wikipedia.org/wiki/Domain_Name_System",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0011",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Quel format de document Adobe a-t-il lancé en 1993, normalisé depuis sous la référence ISO 32000 ?",
+    "correct_answer": "PDF",
+    "incorrect_answers": [
+      "DOC",
+      "RTF",
+      "PostScript",
+      "Un ouragan de papier très bien élevé"
+    ],
+    "explanation": "Le format PDF présente textes et images indépendamment du matériel et des logiciels, en s'appuyant sur PostScript. Adobe a ouvert la spécification en 2008, lorsque la normalisation ISO a suivi.",
+    "source_url": "https://en.wikipedia.org/wiki/PDF",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-fr-0012",
+    "lang": "fr",
+    "category": "technology",
+    "difficulty": 3,
+    "question": "Quel test, proposé par Alan Turing en 1950, juge une machine selon qu'un évaluateur humain parvient ou non à la distinguer d'une personne dans une conversation ?",
+    "correct_answer": "Le test de Turing",
+    "incorrect_answers": [
+      "Le test de Lovelace",
+      "L'algorithme d'imitation",
+      "La machine de Turing",
+      "Trouvez l'ordinateur en tutu"
+    ],
+    "explanation": "Turing l'a formulé dans son article Computing Machinery and Intelligence comme un jeu d'imitation. Il reste un jalon culturel, même si la recherche moderne en IA le considère plutôt comme une référence que comme un objectif.",
+    "source_url": "https://en.wikipedia.org/wiki/Turing_test",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]

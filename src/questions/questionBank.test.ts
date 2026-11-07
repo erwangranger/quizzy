@@ -23,12 +23,12 @@ describe('questionBank', () => {
     resetSeenQuestions()
   })
 
-  it('loads 778 reviewed questions from questions/*.json', () => {
+  it('loads 978 reviewed questions from questions/*.json', () => {
     const all = loadAllQuestions()
-    expect(all).toHaveLength(778)
+    expect(all).toHaveLength(978)
     expect(all.every((q) => q.reviewed)).toBe(true)
-    expect(all.filter((q) => q.lang === 'en')).toHaveLength(389)
-    expect(all.filter((q) => q.lang === 'fr')).toHaveLength(389)
+    expect(all.filter((q) => q.lang === 'en')).toHaveLength(489)
+    expect(all.filter((q) => q.lang === 'fr')).toHaveLength(489)
   })
 
   it('derives categories from the data for the given language', () => {
@@ -39,6 +39,9 @@ describe('questionBank', () => {
       'arts-literature',
       'entertainment',
       'sports-leisure',
+      'music',
+      'food-drink',
+      'technology',
       'recent-news',
     ])
     // fr banks mirror the en categories
@@ -49,6 +52,9 @@ describe('questionBank', () => {
       'arts-literature',
       'entertainment',
       'sports-leisure',
+      'music',
+      'food-drink',
+      'technology',
       'recent-news',
     ])
   })

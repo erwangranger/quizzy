@@ -1,7 +1,7 @@
 [
   {
     "id": "logic-fr-0001",
-    "question": "Marta étale quatre cartes face visible : D, K, 3 et 8. Chaque carte porte une lettre d'un côté et un nombre de l'autre. Elle affirme : toute carte avec un D sur une face porte un nombre pair sur l'autre. Quelles cartes doit-elle retourner pour tester son affirmation ?",
+    "question": "Marta étale quatre cartes face visible : D, K, 3 et 8. Chaque carte porte une lettre d’un côté et un nombre de l’autre. Elle affirme : toute carte avec un D sur une face porte un nombre pair sur l’autre. Quelles cartes doit-elle retourner pour tester son affirmation ?",
     "correct_answer": "Le D et le 3",
     "incorrect_answers": [
       "Seulement le D",
@@ -9,41 +9,41 @@
       "Le K et le 8",
       "Toutes, et Marta garde le paquet"
     ],
-    "explanation": "Une affirmation de la forme si P alors Q ne trébuche que sur P sans Q. La carte D doit cacher un nombre pair, et le 3 ne doit pas cacher de D. Les cartes K et 8 ne prouvent rien dans un sens ni dans l'autre.",
+    "explanation": "Une affirmation de la forme si P alors Q ne trébuche que sur P sans Q. La carte D doit cacher un nombre pair, et le 3 ne doit pas cacher de D. Les cartes K et 8 ne prouvent rien dans un sens ni dans l’autre.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0002",
     "question": "Dans son village, la règle veut que chaque pluie mouille la grand-rue. Un visiteur voit la grand-rue mouillée. Que peut-on en conclure ?",
-    "correct_answer": "Rien sur la pluie ; la rue peut être mouillée pour d'autres raisons",
+    "correct_answer": "Rien sur la pluie ; la rue peut être mouillée pour d’autres raisons",
     "incorrect_answers": [
       "Il a nécessairement plu",
       "Il a probablement plu dans la nuit",
       "Il ne peut pas avoir plu",
       "Le visiteur devrait consulter la météo"
     ],
-    "explanation": "La pluie garantit une rue mouillée, mais une rue mouillée ne garantit pas la pluie : un camion de nettoyage, une conduite qui cède ou la rosée peuvent l'expliquer. Affirmer le conséquent, c'est renverser un si-alors.",
+    "explanation": "La pluie garantit une rue mouillée, mais une rue mouillée ne garantit pas la pluie : un camion de nettoyage, une conduite qui cède ou la rosée peuvent l’expliquer. Affirmer le conséquent, c’est renverser un si-alors.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0003",
     "question": "Une infirmière en chef annonce : toutes les infirmières de ce service sont certifiées. De cette seule phrase, quelle affirmation découle à coup sûr ?",
-    "correct_answer": "Aucune infirmière de ce service n'est sans certification",
+    "correct_answer": "Aucune infirmière de ce service n’est sans certification",
     "incorrect_answers": [
       "Toute personne certifiée du service est infirmière",
       "Seules les infirmières du service sont certifiées",
       "Les infirmières des autres services ne le sont pas",
       "Le personnel non certifié se cache quelque part"
     ],
-    "explanation": "Toutes les infirmières sont certifiées ne dit rien des autres personnes certifiées ni des autres services. Cela écarte un seul cas : une infirmière sans certification. La réciproque et l'inverse ne s'ensuivent pas.",
+    "explanation": "Toutes les infirmières sont certifiées ne dit rien des autres personnes certifiées ni des autres services. Cela écarte un seul cas : une infirmière sans certification. La réciproque et l’inverse ne s’ensuivent pas.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0004",
-    "question": "Trois boîtes scellées sur une table : une rouge, une bleue, une verte. Une seule contient un prix. Indice 1 : le prix n'est pas dans la rouge. Indice 2 : le prix est dans la bleue ou dans la verte. Où est le prix ?",
+    "question": "Trois boîtes scellées sur une table : une rouge, une bleue, une verte. Une seule contient un prix. Indice 1 : le prix n’est pas dans la rouge. Indice 2 : le prix est dans la bleue ou dans la verte. Où est le prix ?",
     "correct_answer": "Impossible à déterminer à partir des deux indices",
     "incorrect_answers": [
       "Dans la boîte bleue",
@@ -51,7 +51,7 @@
       "Dans la boîte rouge",
       "Dans la table, qui réfléchit encore"
     ],
-    "explanation": "L'indice 2 découle déjà de l'indice 1 puisqu'il n'existe que trois boîtes ; il n'apporte rien. Les deux indices restent compatibles avec le bleu comme avec le vert, donc l'élimination pure ne tranche pas.",
+    "explanation": "L’indice 2 découle déjà de l’indice 1 puisqu’il n’existe que trois boîtes ; il n’apporte rien. Les deux indices restent compatibles avec le bleu comme avec le vert, donc l’élimination pure ne tranche pas.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -65,17 +65,17 @@
       "Deux",
       "Les dragons ont refusé de commenter"
     ],
-    "explanation": "Une affirmation universelle sur un ensemble vide est vacuellement vraie : aucun dragon n'échappe au turquoise, puisqu'il n'y a aucun dragon. Le nombre de dragons non turquoise est zéro, et la jardinière a dit vrai.",
+    "explanation": "Une affirmation universelle sur un ensemble vide est vacuellement vraie : aucun dragon n’échappe au turquoise, puisqu’il n’y a aucun dragon. Le nombre de dragons non turquoise est zéro, et la jardinière a dit vrai.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0006",
-    "question": "Trois frères s'alignent pour une photo. Ali est plus grand que Bo, et Bo est plus grand que Cal. Que suit-il à coup sûr ?",
+    "question": "Trois frères s’alignent pour une photo. Ali est plus grand que Bo, et Bo est plus grand que Cal. Que suit-il à coup sûr ?",
     "correct_answer": "Ali est plus grand que Cal",
     "incorrect_answers": [
-      "Cal est plus grand qu'Ali",
-      "Ali est le plus grand d'au moins une main",
+      "Cal est plus grand qu’Ali",
+      "Ali est le plus grand d’au moins une main",
       "Cal est exactement au milieu",
       "Cal monte sur une boîte pour la photo"
     ],
@@ -85,25 +85,25 @@
   },
   {
     "id": "logic-fr-0007",
-    "question": "Une invitation de banquet précise : avec votre billet, café ou thé inclus. À table, le serveur précise que l'offre est exclusive. Que signifie-t-elle pour l'invité ?",
+    "question": "Une invitation de banquet précise : avec votre billet, café ou thé inclus. À table, le serveur précise que l’offre est exclusive. Que signifie-t-elle pour l’invité ?",
     "correct_answer": "Exactement une des deux boissons, pas les deux",
     "incorrect_answers": [
       "Les deux boissons, mais un seul remplissage",
       "Au moins une boisson, peut-être les deux",
-      "Aucune boisson, l'offre restant ambiguë",
+      "Aucune boisson, l’offre restant ambiguë",
       "Un déca, à titre de test de caractère"
     ],
-    "explanation": "En logique courante, ou signifie l'un ou l'autre ou les deux ; un ou exclusif signifie l'un mais pas les deux. Le serveur a écarté la double commande que la lecture inclusive autorisait.",
+    "explanation": "En logique courante, ou signifie l’un ou l’autre ou les deux ; un ou exclusif signifie l’un mais pas les deux. Le serveur a écarté la double commande que la lecture inclusive autorisait.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0008",
-    "question": "Sur une île, chaque habitant est soit un chevalier qui dit toujours la vérité, soit un menteur qui ment toujours. Vous rencontrez Al et Ben, et Al déclare : nous sommes tous les deux des menteurs. Qu'est-ce qu'Al ?",
+    "question": "Sur une île, chaque habitant est soit un chevalier qui dit toujours la vérité, soit un menteur qui ment toujours. Vous rencontrez Al et Ben, et Al déclare : nous sommes tous les deux des menteurs. Qu’est-ce qu’Al ?",
     "correct_answer": "Un menteur, et Ben est un chevalier",
     "incorrect_answers": [
       "Un chevalier",
-      "Un chevalier si Ben l'est, sinon un menteur",
+      "Un chevalier si Ben l’est, sinon un menteur",
       "Indécidable sans interroger Ben",
       "Chevalier la semaine, menteur le week-end"
     ],
@@ -113,15 +113,15 @@
   },
   {
     "id": "logic-fr-0009",
-    "question": "Un parent promet : tu as le droit au dessert si tu finis ton assiette. L'enfant finit son assiette. À quoi l'enfant a-t-il droit ?",
+    "question": "Un parent promet : tu as le droit au dessert si tu finis ton assiette. L’enfant finit son assiette. À quoi l’enfant a-t-il droit ?",
     "correct_answer": "La permission du dessert, pas la garantie de le recevoir",
     "incorrect_answers": [
       "Le dessert est maintenant garanti",
-      "Le dessert n'est garanti que si le parent mange aussi",
-      "Pas de dessert, la permission n'ayant jamais été donnée",
+      "Le dessert n’est garanti que si le parent mange aussi",
+      "Pas de dessert, la permission n’ayant jamais été donnée",
       "Le dessert, mais seulement les années bissextiles"
     ],
-    "explanation": "Finir l'assiette était la condition de la permission. Être autorisé n'équivaut pas à être servi, et la promesse ne forçait aucun dessert à paraître. Une permission n'est pas une livraison.",
+    "explanation": "Finir l’assiette était la condition de la permission. Être autorisé n’équivaut pas à être servi, et la promesse ne forçait aucun dessert à paraître. Une permission n’est pas une livraison.",
     "lang": "fr",
     "difficulty": 2
   },
@@ -135,35 +135,35 @@
       "Les trois",
       "Celui qui a le meilleur karma de stationnement"
     ],
-    "explanation": "Les deux règles sont nécessaires : en manquer une seule disqualifie. Nia échoue sur l'âge, Omar sur le permis, et Priya seule satisfait aux deux.",
+    "explanation": "Les deux règles sont nécessaires : en manquer une seule disqualifie. Nia échoue sur l’âge, Omar sur le permis, et Priya seule satisfait aux deux.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0011",
-    "question": "Deux portes gardent une cour : l'une mène au refuge, l'autre non. Deux gardes savent laquelle ; l'un dit toujours la vérité, l'autre ment toujours. Vous pouvez poser une seule question à un seul garde. Laquelle révèle la bonne porte ?",
-    "correct_answer": "Demander à n'importe quel garde quelle porte l'autre désignerait comme sûre",
+    "question": "Deux portes gardent une cour : l’une mène au refuge, l’autre non. Deux gardes savent laquelle ; l’un dit toujours la vérité, l’autre ment toujours. Vous pouvez poser une seule question à un seul garde. Laquelle révèle la bonne porte ?",
+    "correct_answer": "Demander à n’importe quel garde quelle porte l’autre désignerait comme sûre",
     "incorrect_answers": [
-      "Demander à un garde s'il dit la vérité",
+      "Demander à un garde s’il dit la vérité",
       "Demander à un garde si la bonne porte est derrière lui",
       "Demander à un garde ce que lui-même répondrait",
       "Les faire départager au pierre-feuille-ciseaux"
     ],
-    "explanation": "Ce qu'un garde dit de l'autre ressort inversé exactement une fois, donc toujours faux. Prenez le contraire de la porte nommée. Les questions sur eux-mêmes ne produisent aucune inversion fiable.",
+    "explanation": "Ce qu’un garde dit de l’autre ressort inversé exactement une fois, donc toujours faux. Prenez le contraire de la porte nommée. Les questions sur eux-mêmes ne produisent aucune inversion fiable.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0012",
     "question": "Un professeur de lettres constate que tous les poètes sont rêveurs. Un élève demande si tous les rêveurs sont poètes. Quel est le verdict ?",
-    "correct_answer": "Non, cela renverse l'affirmation et ne suit pas",
+    "correct_answer": "Non, cela renverse l’affirmation et ne suit pas",
     "incorrect_answers": [
       "Oui, les deux affirmations disent la même chose",
       "Oui, mais seulement pour les poètes professionnels",
-      "Non, car aucun rêveur n'est poète",
-      "Seulement si les poètes l'acceptent"
+      "Non, car aucun rêveur n’est poète",
+      "Seulement si les poètes l’acceptent"
     ],
-    "explanation": "Tous les P sont des Q ne donne pas que tous les Q sont des P. Les poètes sont dans les rêveurs, mais les rêveurs incluent bien d'autres gens, donc la converse échoue.",
+    "explanation": "Tous les P sont des Q ne donne pas que tous les Q sont des P. Les poètes sont dans les rêveurs, mais les rêveurs incluent bien d’autres gens, donc la converse échoue.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -172,18 +172,18 @@
     "question": "Une règle de planning dit : Ana et Ben ne sont jamais de service ensemble. Quelles combinaisons la règle autorise-t-elle un jour donné ?",
     "correct_answer": "Ana seule, Ben seul, ou aucun des deux, mais jamais les deux",
     "incorrect_answers": [
-      "Exactement l'un des deux, toujours",
-      "Les deux, s'ils restent à distance",
+      "Exactement l’un des deux, toujours",
+      "Les deux, s’ils restent à distance",
       "Aucun des deux, sauf si un troisième rejoint",
       "Ce qui reste après la pause café"
     ],
-    "explanation": "Pas les deux n'interdit que le cas où les deux travaillent. Ana seule, Ben seul et aucun des deux restent compatibles avec la règle. De Morgan : non (A et B) égale non A ou non B, et le ou inclut le cas personne.",
+    "explanation": "Pas les deux n’interdit que le cas où les deux travaillent. Ana seule, Ben seul et aucun des deux restent compatibles avec la règle. De Morgan : non (A et B) égale non A ou non B, et le ou inclut le cas personne.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0014",
-    "question": "Un village édicte une règle : le barbier rase tous les hommes du village qui ne se rasent pas eux-mêmes, et personne d'autre. Le barbier est un homme du village. Qu'en suit-il ?",
+    "question": "Un village édicte une règle : le barbier rase tous les hommes du village qui ne se rasent pas eux-mêmes, et personne d’autre. Le barbier est un homme du village. Qu’en suit-il ?",
     "correct_answer": "La règle se contredit, un tel barbier ne peut pas exister",
     "incorrect_answers": [
       "Le barbier se rase lui-même",
@@ -191,13 +191,13 @@
       "Le barbier rase tout le village",
       "Le barbier facture un supplément pour les paradoxes"
     ],
-    "explanation": "Demandez-vous s'il se rase lui-même : si oui, la règle l'interdit ; si non, la règle l'exige. Les deux lectures échouent, donc le cadre lui-même est impossible.",
+    "explanation": "Demandez-vous s’il se rase lui-même : si oui, la règle l’interdit ; si non, la règle l’exige. Les deux lectures échouent, donc le cadre lui-même est impossible.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0015",
-    "question": "Un jeu télévisé propose trois portes ; une cache une voiture, deux cachent des chèvres. Vous choisissez la porte 1. Le présentateur, qui sait où est la voiture, ouvre la porte 3 sur une chèvre et propose d'échanger avec la porte 2. Que faire ?",
+    "question": "Un jeu télévisé propose trois portes ; une cache une voiture, deux cachent des chèvres. Vous choisissez la porte 1. Le présentateur, qui sait où est la voiture, ouvre la porte 3 sur une chèvre et propose d’échanger avec la porte 2. Que faire ?",
     "correct_answer": "Échanger, ce qui gagne deux fois sur trois",
     "incorrect_answers": [
       "Garder, puisque les chances sont désormais de cinquante-cinquante",
@@ -211,21 +211,21 @@
   },
   {
     "id": "logic-fr-0016",
-    "question": "Un test de dépistage d'une maladie qui touche 1 personne sur 1000 est fiable à 99 pour cent, dans les deux sens. Une personne tirée au hasard est positive. Qu'est-ce qui est le plus probable ?",
-    "correct_answer": "Elle n'a probablement pas la maladie",
+    "question": "Un test de dépistage d’une maladie qui touche 1 personne sur 1000 est fiable à 99 pour cent, dans les deux sens. Une personne tirée au hasard est positive. Qu’est-ce qui est le plus probable ?",
+    "correct_answer": "Elle n’a probablement pas la maladie",
     "incorrect_answers": [
       "Elle a la maladie presque à coup sûr",
-      "Elle l'a avec une chance sur deux",
+      "Elle l’a avec une chance sur deux",
       "Le résultat est inutilisable et à ignorer",
-      "Elle devrait retester jusqu'au négatif"
+      "Elle devrait retester jusqu’au négatif"
     ],
-    "explanation": "Sur 100000 personnes, environ 100 sont malades et 99 d'entre elles testent positif. Sur les 99900 saines, environ 1 pour cent, soit 999, testent aussi positif. Les faux positifs dépassent les vrais d'environ dix pour un.",
+    "explanation": "Sur 100000 personnes, environ 100 sont malades et 99 d’entre elles testent positif. Sur les 99900 saines, environ 1 pour cent, soit 999, testent aussi positif. Les faux positifs dépassent les vrais d’environ dix pour un.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0017",
-    "question": "Un hôte se demande quand un anniversaire partagé devient probable. Combien d'invités environ faut-il pour que les chances d'un anniversaire commun dépassent cinquante pour cent, en négligeant le 29 février ?",
+    "question": "Un hôte se demande quand un anniversaire partagé devient probable. Combien d’invités environ faut-il pour que les chances d’un anniversaire commun dépassent cinquante pour cent, en négligeant le 29 février ?",
     "correct_answer": "23",
     "incorrect_answers": [
       "183",
@@ -233,27 +233,27 @@
       "354",
       "Quiconque est arrivé avant le gâteau"
     ],
-    "explanation": "À 23 personnes, on compte 253 paires, chacune avec une chance sur 365 de coïncider. Ces chances s'empilent vite, et la probabilité d'au moins un anniversaire commun dépasse une moitié dès 23 invités.",
+    "explanation": "À 23 personnes, on compte 253 paires, chacune avec une chance sur 365 de coïncider. Ces chances s’empilent vite, et la probabilité d’au moins un anniversaire commun dépasse une moitié dès 23 invités.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0018",
-    "question": "Un tribunal apprend qu'une empreinte partielle correspond à l'accusé, l'analyste chiffrant à 1 sur 1000000 la chance qu'un innocent quelconque corresponde. La ville compte 1000000 d'habitants, coupable inclus. Que prouve cette seule empreinte ?",
+    "question": "Un tribunal apprend qu’une empreinte partielle correspond à l’accusé, l’analyste chiffrant à 1 sur 1000000 la chance qu’un innocent quelconque corresponde. La ville compte 1000000 d’habitants, coupable inclus. Que prouve cette seule empreinte ?",
     "correct_answer": "La correspondance est à peu près aussi probable sur un innocent que sur le coupable",
     "incorrect_answers": [
-      "L'accusé est coupable au-delà de tout doute raisonnable",
-      "L'accusé est innocent, les coïncidences existent",
-      "Les chances de culpabilité sont désormais d'un million contre un",
-      "L'empreinte devrait être dépoussiérée pour trouver d'autres empreintes"
+      "L’accusé est coupable au-delà de tout doute raisonnable",
+      "L’accusé est innocent, les coïncidences existent",
+      "Les chances de culpabilité sont désormais d’un million contre un",
+      "L’empreinte devrait être dépoussiérée pour trouver d’autres empreintes"
     ],
-    "explanation": "Parmi un million d'habitants, attendez-vous à un innocent correspondant par hasard, et le coupable correspond aussi : un individu correspondant est donc à peu près autant suspect qu'innocent. Le 1 sur 1000000 est un taux de faux positifs, non une probabilité d'innocence après correspondance.",
+    "explanation": "Parmi un million d’habitants, attendez-vous à un innocent correspondant par hasard, et le coupable correspond aussi : un individu correspondant est donc à peu près autant suspect qu’innocent. Le 1 sur 1000000 est un taux de faux positifs, non une probabilité d’innocence après correspondance.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0019",
-    "question": "Une famille que vous ne connaissez pas a deux enfants. Vous apprenez qu'au moins un est un garçon. Quelle est la probabilité que les deux soient des garçons ?",
+    "question": "Une famille que vous ne connaissez pas a deux enfants. Vous apprenez qu’au moins un est un garçon. Quelle est la probabilité que les deux soient des garçons ?",
     "correct_answer": "Un tiers",
     "incorrect_answers": [
       "Une moitié",
@@ -267,21 +267,21 @@
   },
   {
     "id": "logic-fr-0020",
-    "question": "Une pièce est tombée sur face sept fois de suite. Un ami jure que pile est due. Que dit la probabilité d'une pièce équitable pour le prochain lancer ?",
-    "correct_answer": "Toujours cinquante-cinquante ; une pièce n'a pas de mémoire",
+    "question": "Une pièce est tombée sur face sept fois de suite. Un ami jure que pile est due. Que dit la probabilité d’une pièce équitable pour le prochain lancer ?",
+    "correct_answer": "Toujours cinquante-cinquante ; une pièce n’a pas de mémoire",
     "incorrect_answers": [
       "Pile est désormais plus probable",
       "Face est désormais plus probable",
-      "La partie doit s'arrêter le temps que la pièce refroidisse",
+      "La partie doit s’arrêter le temps que la pièce refroidisse",
       "La pièce a mérité une sieste"
     ],
-    "explanation": "Chaque lancer d'une pièce équitable est indépendant : la chance de face reste une moitié malgré la série. Le sophisme du joueur prête une mémoire aux événements qui n'en ont pas.",
+    "explanation": "Chaque lancer d’une pièce équitable est indépendant : la chance de face reste une moitié malgré la série. Le sophisme du joueur prête une mémoire aux événements qui n’en ont pas.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0021",
-    "question": "Zoe lit le portrait de Linda : 31 ans, franche, brillante, études de philosophie, passionnée d'égalité sur les bancs de la fac. Qu'est-ce qui est le plus probable ?",
+    "question": "Zoe lit le portrait de Linda : 31 ans, franche, brillante, études de philosophie, passionnée d’égalité sur les bancs de la fac. Qu’est-ce qui est le plus probable ?",
     "correct_answer": "Linda est employée de banque",
     "incorrect_answers": [
       "Linda est employée de banque et active dans le mouvement féministe",
@@ -289,21 +289,21 @@
       "Linda est employée de banque féministe, un peu plus probable",
       "Employée de banque le jour, philosophe la nuit"
     ],
-    "explanation": "Toute employée de banque féministe est une employée de banque : l'option simple couvre plus de cas et ne peut jamais être moins probable. Ajouter des détails ne fait que rétrécir une probabilité. Le portrait vivant nous le fait oublier.",
+    "explanation": "Toute employée de banque féministe est une employée de banque : l’option simple couvre plus de cas et ne peut jamais être moins probable. Ajouter des détails ne fait que rétrécir une probabilité. Le portrait vivant nous le fait oublier.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0022",
-    "question": "Une tombola caritative vend 10000 billets à 2 pièces. Le lot unique vaut 12000 pièces. Que dit l'espérance de gain sur l'achat d'un billet ?",
+    "question": "Une tombola caritative vend 10000 billets à 2 pièces. Le lot unique vaut 12000 pièces. Que dit l’espérance de gain sur l’achat d’un billet ?",
     "correct_answer": "Un mauvais calcul, environ 1,2 pièce rendue pour 2 dépensées",
     "incorrect_answers": [
       "Un calcul équitable, le lot couvrant la cagnotte",
       "Une bonne affaire, 12000 valant mieux que 2",
-      "Un mauvais calcul parce qu'il faut bien un perdant",
+      "Un mauvais calcul parce qu’il faut bien un perdant",
       "Un billet remboursé en bon karma"
     ],
-    "explanation": "L'espérance vaut le lot fois la chance de gagner : 12000 fois 1 sur 10000, soit environ 1,2 pièce, contre un coût de 2. C'est cet écart qui fait du billet un pari perdant en moyenne, quelle que soit la noblesse de la cause.",
+    "explanation": "L’espérance vaut le lot fois la chance de gagner : 12000 fois 1 sur 10000, soit environ 1,2 pièce, contre un coût de 2. C’est cet écart qui fait du billet un pari perdant en moyenne, quelle que soit la noblesse de la cause.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -315,15 +315,15 @@
       "1 sur 10",
       "1 sur 20",
       "1 sur 5",
-      "Seulement s'ils se sentent courageux"
+      "Seulement s’ils se sentent courageux"
     ],
-    "explanation": "Les pannes indépendantes se multiplient : 1 sur 10 fois 1 sur 10 donne 1 sur 100. Voilà pourquoi la redondance fonctionne, et pourquoi l'hypothèse d'indépendance compte tant quand elle est fausse.",
+    "explanation": "Les pannes indépendantes se multiplient : 1 sur 10 fois 1 sur 10 donne 1 sur 100. Voilà pourquoi la redondance fonctionne, et pourquoi l’hypothèse d’indépendance compte tant quand elle est fausse.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0024",
-    "question": "Deux hôpitaux notent chaque jour la part de garçons parmi les nouveau-nés. L'un enregistre 45 naissances par jour en moyenne, l'autre 15. Sur un an, lequel connaît le plus de journées où les garçons dépassent 60 pour cent ?",
+    "question": "Deux hôpitaux notent chaque jour la part de garçons parmi les nouveau-nés. L’un enregistre 45 naissances par jour en moyenne, l’autre 15. Sur un an, lequel connaît le plus de journées où les garçons dépassent 60 pour cent ?",
     "correct_answer": "Le petit hôpital",
     "incorrect_answers": [
       "Le grand hôpital",
@@ -331,18 +331,18 @@
       "Aucun, le vrai ratio garantissant la moitié",
       "Celui qui paie ses cigognes en heures supplémentaires"
     ],
-    "explanation": "Les petits échantillons s'écartent davantage de cinquante-cinquante. Une journée de 15 naissances peut facilement compter 10 ou 11 garçons, alors que 45 naissances restent proches de la moyenne. Les ratios extrêmes appartiennent aux petits groupes.",
+    "explanation": "Les petits échantillons s’écartent davantage de cinquante-cinquante. Une journée de 15 naissances peut facilement compter 10 ou 11 garçons, alors que 45 naissances restent proches de la moyenne. Les ratios extrêmes appartiennent aux petits groupes.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0025",
-    "question": "Un titre de presse annonce qu'une collation populaire double le risque d'une maladie rare, qui touche 2 personnes sur 10000. Que manque-t-il au titre ?",
+    "question": "Un titre de presse annonce qu’une collation populaire double le risque d’une maladie rare, qui touche 2 personnes sur 10000. Que manque-t-il au titre ?",
     "correct_answer": "Le risque absolu ne passe que de 2 à 4 sur 10000",
     "incorrect_answers": [
       "Le risque grimpe de 2 points de pourcentage",
       "La maladie est désormais courante chez les gourmands",
-      "L'étude comparait des groupes dissemblables",
+      "L’étude comparait des groupes dissemblables",
       "La collation a été vue fuyant à toutes jambes"
     ],
     "explanation": "Risque relatif et risque absolu racontent deux histoires. Doubler 2 sur 10000 donne 4 sur 10000, soit 2 cas de plus par 10000 personnes. Les titres adorent le doublement ; les décisions ont besoin du taux de base.",
@@ -351,7 +351,7 @@
   },
   {
     "id": "logic-fr-0026",
-    "question": "Une famille que vous ne connaissez pas a deux enfants. Vous rencontrez l'aînée : c'est une fille. Quelle est la probabilité que les deux enfants soient des filles ?",
+    "question": "Une famille que vous ne connaissez pas a deux enfants. Vous rencontrez l’aînée : c’est une fille. Quelle est la probabilité que les deux enfants soient des filles ?",
     "correct_answer": "Une moitié",
     "incorrect_answers": [
       "Un tiers",
@@ -359,154 +359,154 @@
       "Trois quarts",
       "Le cadet réclame un droit de veto"
     ],
-    "explanation": "Savoir que l'aînée est une fille fixe une naissance ; il ne reste que le cadet, un simple pile ou face. Cela diffère du cas où l'on apprend seulement qu'au moins une est une fille, qui laisse trois ordres possibles et pousse la réponse à un tiers.",
+    "explanation": "Savoir que l’aînée est une fille fixe une naissance ; il ne reste que le cadet, un simple pile ou face. Cela diffère du cas où l’on apprend seulement qu’au moins une est une fille, qui laisse trois ordres possibles et pousse la réponse à un tiers.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0027",
-    "question": "Un casino garde un mince avantage mathématique sur chaque mise. Certaines nuits, il perd gros. Sur une année entière de millions de mises, qu'implique la loi des grands nombres ?",
-    "correct_answer": "Les résultats convergent vers l'avantage, rendant le profit annuel quasi certain",
+    "question": "Un casino garde un mince avantage mathématique sur chaque mise. Certaines nuits, il perd gros. Sur une année entière de millions de mises, qu’implique la loi des grands nombres ?",
+    "correct_answer": "Les résultats convergent vers l’avantage, rendant le profit annuel quasi certain",
     "incorrect_answers": [
-      "L'avantage ne se voit que les nuits perdantes",
-      "La chance finit par s'équilibrer, le bilan annuel restant une pièce à lancer",
-      "L'avantage fond à mesure que les joueurs apprennent",
+      "L’avantage ne se voit que les nuits perdantes",
+      "La chance finit par s’équilibrer, le bilan annuel restant une pièce à lancer",
+      "L’avantage fond à mesure que les joueurs apprennent",
       "Le casino prie plus souvent en décembre"
     ],
-    "explanation": "Sur d'immenses nombres d'essais, la moyenne converge vers l'espérance : le mince avantage par mise devient un profit agrégé fiable. Une seule nuit reste dominée par la variance, ce qui permet au casino d'absorber ses mauvaises soirées.",
+    "explanation": "Sur d’immenses nombres d’essais, la moyenne converge vers l’espérance : le mince avantage par mise devient un profit agrégé fiable. Une seule nuit reste dominée par la variance, ce qui permet au casino d’absorber ses mauvaises soirées.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0028",
-    "question": "Deux hôpitaux publient leurs taux de réussite. Globalement, l'hôpital A guérit une part plus élevée de ses patients. Mais dans chaque groupe de gravité, cas légers comme cas sévères, l'hôpital B fait mieux. Un patient dont le cas est sévère doit choisir quel hôpital ?",
-    "correct_answer": "L'hôpital B, les taux par groupe étant ceux qui s'appliquent au patient",
+    "question": "Deux hôpitaux publient leurs taux de réussite. Globalement, l’hôpital A guérit une part plus élevée de ses patients. Mais dans chaque groupe de gravité, cas légers comme cas sévères, l’hôpital B fait mieux. Un patient dont le cas est sévère doit choisir quel hôpital ?",
+    "correct_answer": "L’hôpital B, les taux par groupe étant ceux qui s’appliquent au patient",
     "incorrect_answers": [
-      "L'hôpital A, son taux global étant plus élevé",
-      "L'un ou l'autre, les chiffres s'annulant",
-      "L'hôpital A, forcé d'exceller aussi sur les cas sévères",
+      "L’hôpital A, son taux global étant plus élevé",
+      "L’un ou l’autre, les chiffres s’annulant",
+      "L’hôpital A, forcé d’exceller aussi sur les cas sévères",
       "Celui qui a la file la plus courte"
     ],
-    "explanation": "Le taux global mélange des compositions de cas inégales : A traite surtout des cas légers, ce qui laisse son avantage coexister avec des résultats inférieurs dans chaque groupe. Pour un patient d'un groupe connu, seul le taux du groupe compte. Ce renversement est le paradoxe de Simpson.",
+    "explanation": "Le taux global mélange des compositions de cas inégales : A traite surtout des cas légers, ce qui laisse son avantage coexister avec des résultats inférieurs dans chaque groupe. Pour un patient d’un groupe connu, seul le taux du groupe compte. Ce renversement est le paradoxe de Simpson.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0029",
-    "question": "Pendant la Seconde Guerre mondiale, des analystes cartographiaient les impacts de balles sur les bombardiers revenus de mission et proposaient de blinder les zones les plus touchées. Le statisticien Abraham Wald leur conseilla de blinder l'endroit opposé. Pourquoi ?",
+    "question": "Pendant la Seconde Guerre mondiale, des analystes cartographiaient les impacts de balles sur les bombardiers revenus de mission et proposaient de blinder les zones les plus touchées. Le statisticien Abraham Wald leur conseilla de blinder l’endroit opposé. Pourquoi ?",
     "correct_answer": "Les avions touchés aux zones propres ne rentraient jamais, ces impacts étaient mortels",
     "incorrect_answers": [
       "Les impacts des zones denses étaient purement cosmétiques",
-      "Les zones propres recevaient plus d'impacts en moyenne",
+      "Les zones propres recevaient plus d’impacts en moyenne",
       "Le blindage marche mieux là où les équipages se sentent en sécurité",
-      "Les cartes avaient été imprimées à l'envers"
+      "Les cartes avaient été imprimées à l’envers"
     ],
-    "explanation": "L'échantillon ne contenait que des survivants : les impacts visibles marquent les zones qu'un avion peut encaisser. Là où les avions rentrés ne montraient aucun trou, les impacts devaient détruire l'appareil avant son retour. Le blindage va où sont touchés les avions disparus.",
+    "explanation": "L’échantillon ne contenait que des survivants : les impacts visibles marquent les zones qu’un avion peut encaisser. Là où les avions rentrés ne montraient aucun trou, les impacts devaient détruire l’appareil avant son retour. Le blindage va où sont touchés les avions disparus.",
     "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0030",
-    "question": "Vingt ans dans une carrière qu'elle n'apprécie plus, Amara dit qu'elle ne peut pas partir maintenant, après être venue si loin. Que dit le raisonnement solide sur ces vingt années ?",
-    "correct_answer": "Elles sont dépensées quoi qu'il arrive et ne doivent pas guider le choix",
+    "question": "Vingt ans dans une carrière qu’elle n’apprécie plus, Amara dit qu’elle ne peut pas partir maintenant, après être venue si loin. Que dit le raisonnement solide sur ces vingt années ?",
+    "correct_answer": "Elles sont dépensées quoi qu’il arrive et ne doivent pas guider le choix",
     "incorrect_answers": [
       "Elles font du départ un gâchis",
       "Elles obligent à rester encore quelques années",
-      "Elles prouvent qu'elle doit redoubler",
-      "Elles méritent une tournée d'adieu"
+      "Elles prouvent qu’elle doit redoubler",
+      "Elles méritent une tournée d’adieu"
     ],
-    "explanation": "Les coûts irrécupérables sont perdus quelle que soit la suite, seuls les coûts et bénéfices futurs comptent. Rester pour justifier le passé dépense simplement davantage la seule ressource qu'elle ne peut renouveler.",
+    "explanation": "Les coûts irrécupérables sont perdus quelle que soit la suite, seuls les coûts et bénéfices futurs comptent. Rester pour justifier le passé dépense simplement davantage la seule ressource qu’elle ne peut renouveler.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0031",
-    "question": "Avant d'estimer le coût d'une réparation, un couple entend un ami plaisanter : comptez au moins 50000 pièces. Leur estimation finale dépasse nettement une estimation neutre du coût réel. Qu'est-ce qui a déplacé leur estimation ?",
+    "question": "Avant d’estimer le coût d’une réparation, un couple entend un ami plaisanter : comptez au moins 50000 pièces. Leur estimation finale dépasse nettement une estimation neutre du coût réel. Qu’est-ce qui a déplacé leur estimation ?",
     "correct_answer": "Le premier chiffre, arbitraire, a tiré leur estimation vers le haut",
     "incorrect_answers": [
       "Ils savaient forcément quelque chose des vrais prix",
-      "La plaisanterie n'a eu aucun effet mesurable",
+      "La plaisanterie n’a eu aucun effet mesurable",
       "Les coûts de réparation sont simplement difficiles à retenir",
       "Leur entrepreneur les a ancrés vers le bas"
     ],
-    "explanation": "L'ancrage : les jugements numériques dérivent vers la valeur de départ qui flotte dans l'air, même manifestement arbitraire. Le rempart consiste à estimer soi-même avant d'entendre le chiffre d'autrui.",
+    "explanation": "L’ancrage : les jugements numériques dérivent vers la valeur de départ qui flotte dans l’air, même manifestement arbitraire. Le rempart consiste à estimer soi-même avant d’entendre le chiffre d’autrui.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0032",
-    "question": "Après une couverture médiatique saturée d'un crash d'avion, des voyageurs annulent leurs vols et conduisent à la place, alors que la route est bien plus risquée au kilomètre. Qu'est-ce qui a orienté leur choix ?",
-    "correct_answer": "Le crash récent et frappant venait facilement à l'esprit et gonflait le risque perçu",
+    "question": "Après une couverture médiatique saturée d’un crash d’avion, des voyageurs annulent leurs vols et conduisent à la place, alors que la route est bien plus risquée au kilomètre. Qu’est-ce qui a orienté leur choix ?",
+    "correct_answer": "Le crash récent et frappant venait facilement à l’esprit et gonflait le risque perçu",
     "incorrect_answers": [
       "Ils ont mis à jour correctement sur données nouvelles",
       "Les routes deviennent plus sûres après un crash",
       "Le risque aérien double après tout accident",
       "La nourriture à bord était le vrai problème"
     ],
-    "explanation": "L'heuristique de disponibilité : on juge les probabilités selon la facilité avec laquelle des exemples viennent à l'esprit, et la couverture spectaculaire en fournit en masse. Les morts mémorables éclipsent les taux de base, on fuit donc le mode le plus sûr.",
+    "explanation": "L’heuristique de disponibilité : on juge les probabilités selon la facilité avec laquelle des exemples viennent à l’esprit, et la couverture spectaculaire en fournit en masse. Les morts mémorables éclipsent les taux de base, on fuit donc le mode le plus sûr.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0033",
-    "question": "On vous montre le triplet 2, 4, 6, conforme à une règle secrète ; vous pouvez proposer d'autres triplets et entendre oui ou non. Vous essayez 8, 10, 12 (oui) puis 100, 102, 104 (oui). Quel prochain test vous apprendra le plus ?",
+    "question": "On vous montre le triplet 2, 4, 6, conforme à une règle secrète ; vous pouvez proposer d’autres triplets et entendre oui ou non. Vous essayez 8, 10, 12 (oui) puis 100, 102, 104 (oui). Quel prochain test vous apprendra le plus ?",
     "correct_answer": "Un triplet que votre hypothèse prédit faux, par exemple 4, 2, 6",
     "incorrect_answers": [
       "Un autre triplet de même forme, comme 10, 12, 14",
       "Un triplet de même forme beaucoup plus grand, comme 1000, 1002, 1004",
       "Le triplet initial, pour vérifier deux fois",
-      "Celui que l'expérimentateur semble préférer"
+      "Celui que l’expérimentateur semble préférer"
     ],
-    "explanation": "Les tests de même forme ne produisent que des oui : ils ne peuvent pas séparer votre règle favorite, par exemple croître de deux, de la règle plus large de tout triplet croissant. Seul un test prédit faux peut départager. Préférer les tests gentils, c'est le biais de confirmation.",
+    "explanation": "Les tests de même forme ne produisent que des oui : ils ne peuvent pas séparer votre règle favorite, par exemple croître de deux, de la règle plus large de tout triplet croissant. Seul un test prédit faux peut départager. Préférer les tests gentils, c’est le biais de confirmation.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0034",
     "question": "Un chirurgien présente la même opération à un patient comme offrant 90 pour cent de survie et à un autre comme entraînant 10 pour cent de mortalité. Que se passe-t-il typiquement ?",
-    "correct_answer": "La formulation survie l'emporte plus souvent pour obtenir le consentement",
+    "correct_answer": "La formulation survie l’emporte plus souvent pour obtenir le consentement",
     "incorrect_answers": [
       "Les deux patients décident pareil, les chiffres étant identiques",
-      "La formulation mortalité l'emporte plus souvent",
-      "Aucun patient ne consent à l'opération",
-      "Le taux de consentement dépend des fauteuils de la salle d'attente"
+      "La formulation mortalité l’emporte plus souvent",
+      "Aucun patient ne consent à l’opération",
+      "Le taux de consentement dépend des fauteuils de la salle d’attente"
     ],
-    "explanation": "Les deux descriptions sont numériquement identiques, mais la formulation positive paraît plus sûre que celle en perte. Les choix suivent la formulation autant que les faits, d'où l'importance de l'effet de cadrage en médecine comme en droit.",
+    "explanation": "Les deux descriptions sont numériquement identiques, mais la formulation positive paraît plus sûre que celle en perte. Les choix suivent la formulation autant que les faits, d’où l’importance de l’effet de cadrage en médecine comme en droit.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0035",
-    "question": "Un sondage révèle que 90 pour cent des automobilistes jugent leur conduite supérieure à celle de l'automobiliste moyen. Que révèle ce motif ?",
-    "correct_answer": "L'auto-évaluation est systématiquement biaisée vers le haut",
+    "question": "Un sondage révèle que 90 pour cent des automobilistes jugent leur conduite supérieure à celle de l’automobiliste moyen. Que révèle ce motif ?",
+    "correct_answer": "L’auto-évaluation est systématiquement biaisée vers le haut",
     "incorrect_answers": [
       "La plupart conduisent réellement mieux que la moyenne",
       "Exactement la moitié de tout groupe doit être sous la moyenne",
-      "L'échantillon comptait trop peu de conducteurs",
+      "L’échantillon comptait trop peu de conducteurs",
       "Les agents de la circulation ont été comptés comme conducteurs"
     ],
-    "explanation": "Supériorité illusoire : chacun surestime sa propre compétence, et les moins habiles se surestiment le plus. La moyenne des auto-évaluations peut excéder la moyenne réelle, car elle mesure la confiance, non l'habileté.",
+    "explanation": "Supériorité illusoire : chacun surestime sa propre compétence, et les moins habiles se surestiment le plus. La moyenne des auto-évaluations peut excéder la moyenne réelle, car elle mesure la confiance, non l’habileté.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0036",
     "question": "On propose à une personne un gain certain de 500 pièces ou un pile ou face rapportant 1000 sur pile et rien sur face ; la plupart prennent le gain certain. On propose ensuite à une autre une perte certaine de 500 ou un pile ou face perdant 1000 sur pile et rien sur face ; la plupart tentent le pile ou face. Quelle tendance unique explique les deux choix ?",
-    "correct_answer": "Les pertes pèsent plus que les gains égaux, on risque donc la perte pour l'éviter",
+    "correct_answer": "Les pertes pèsent plus que les gains égaux, on risque donc la perte pour l’éviter",
     "incorrect_answers": [
       "On préfère toujours le pari au certain",
       "Les deux choix se contredisent et relèvent du hasard",
       "On ne sait pas comparer 500 et 1000",
       "Les pièces font simplement ressortir le joueur"
     ],
-    "explanation": "L'aversion aux pertes : la douleur de perdre l'emporte sur le plaisir d'un gain égal. D'où la prudence pour les gains, en verrouillant les 500 certains, et la prise de risque pour les pertes, en jouant pour échapper à la perte certaine.",
+    "explanation": "L’aversion aux pertes : la douleur de perdre l’emporte sur le plaisir d’un gain égal. D’où la prudence pour les gains, en verrouillant les 500 certains, et la prise de risque pour les pertes, en jouant pour échapper à la perte certaine.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0037",
-    "question": "En laboratoire, des personnes ayant reçu un mug exigent environ le double de l'argent que des inconnus proposent pour le même mug. Qu'est-ce qui creuse cet écart ?",
+    "question": "En laboratoire, des personnes ayant reçu un mug exigent environ le double de l’argent que des inconnus proposent pour le même mug. Qu’est-ce qui creuse cet écart ?",
     "correct_answer": "Posséder le mug fait de sa perte une perte, ce qui gonfle son prix",
     "incorrect_answers": [
       "Les vendeurs savent que le mug vaut plus",
@@ -514,20 +514,20 @@
       "Le mug valait moins en magasin",
       "Les mugs préfèrent rester à la maison"
     ],
-    "explanation": "L'effet de dotation : la possession transforme l'abandon de l'objet en perte, et la perte pèse plus que le gain. Le même mug acquiert un prix de vente supérieur à son prix d'achat dès qu'il a un propriétaire.",
+    "explanation": "L’effet de dotation : la possession transforme l’abandon de l’objet en perte, et la perte pèse plus que le gain. Le même mug acquiert un prix de vente supérieur à son prix d’achat dès qu’il a un propriétaire.",
     "source_url": "https://en.wikipedia.org/wiki/Endowment_effect",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0038",
-    "question": "Une équipe planifie la rénovation d'une cuisine. La responsable promet sereinement six semaines, ignorant le chantier voisin qui a duré quatre mois. Quelle habitude de planification a produit cette promesse ?",
+    "question": "Une équipe planifie la rénovation d’une cuisine. La responsable promet sereinement six semaines, ignorant le chantier voisin qui a duré quatre mois. Quelle habitude de planification a produit cette promesse ?",
     "correct_answer": "Bâtir le plan sur le meilleur des cas plutôt que sur les projets passés réels",
     "incorrect_answers": [
       "Surenchérir la durée par prudence",
       "Ignorer les pénalités de retard du client",
       "Supposer que les permis arrivent toujours tôt",
-      "Blâmer le marteau, qui n'y est pour rien"
+      "Blâmer le marteau, qui n’y est pour rien"
     ],
     "explanation": "Le sophisme de la planification : la vue interne mise sur un projet qui se déroule sans accroc, quand la vue externe de projets semblables prédit bien plus long. La distribution des passés bat le récit optimiste.",
     "lang": "fr",
@@ -535,21 +535,21 @@
   },
   {
     "id": "logic-fr-0039",
-    "question": "Le matin après une finale, un supporter jure qu'il savait depuis toujours que l'outsider gagnerait, lui qui parlait de pile ou face la veille. Qu'est-ce qui a changé ?",
+    "question": "Le matin après une finale, un supporter jure qu’il savait depuis toujours que l’outsider gagnerait, lui qui parlait de pile ou face la veille. Qu’est-ce qui a changé ?",
     "correct_answer": "Le résultat connu a réécrit son sentiment du prévisible",
     "incorrect_answers": [
       "Son souvenir du pronostic reste intact et sans biais",
-      "L'outsider était le choix évident depuis le début",
+      "L’outsider était le choix évident depuis le début",
       "Les supporters retiennent mieux les scores que les cotes",
       "Le supporter a enfin compris ce sport"
     ],
-    "explanation": "Le biais rétrospectif : une fois le résultat connu, il semble avoir été inévitable de tout temps. Le supporter ne ment pas tant qu'il relit son incertitude passée à la lumière de l'issue qu'il possède désormais.",
+    "explanation": "Le biais rétrospectif : une fois le résultat connu, il semble avoir été inévitable de tout temps. Le supporter ne ment pas tant qu’il relit son incertitude passée à la lumière de l’issue qu’il possède désormais.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0040",
-    "question": "Une ville de 100 foyers affiche un revenu médian de 50000 pièces et un revenu moyen de 52000. Un milliardaire s'installe. Que deviennent les deux moyennes ?",
+    "question": "Une ville de 100 foyers affiche un revenu médian de 50000 pièces et un revenu moyen de 52000. Un milliardaire s’installe. Que deviennent les deux moyennes ?",
     "correct_answer": "La moyenne bondit, la médiane bouge à peine",
     "incorrect_answers": [
       "Les deux bondissent ensemble",
@@ -557,91 +557,91 @@
       "Toutes deux restent en place, une seule personne ne pouvant rien changer",
       "Le milliardaire paie la différence"
     ],
-    "explanation": "La moyenne additionne tous les revenus : une valeur gigantesque l'entraîne violemment vers le haut. La médiane est le foyer du milieu, qu'aucun nouveau venu seul ne déplace. Voilà pourquoi la médiane fait la une des statistiques de revenu.",
+    "explanation": "La moyenne additionne tous les revenus : une valeur gigantesque l’entraîne violemment vers le haut. La médiane est le foyer du milieu, qu’aucun nouveau venu seul ne déplace. Voilà pourquoi la médiane fait la une des statistiques de revenu.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0041",
-    "question": "Deux suspects sont interrogés séparément. Si les deux se taisent, chacun purge 1 an. Si l'un avoue et l'autre se tait, l'avoué sort libre et le silencieux purge 10 ans. Si les deux avouent, chacun purge 5 ans. Pourquoi chacun, raisonnant seul, avoue-t-il ?",
-    "correct_answer": "Avouer donne une peine plus courte quel que soit le choix de l'autre",
+    "question": "Deux suspects sont interrogés séparément. Si les deux se taisent, chacun purge 1 an. Si l’un avoue et l’autre se tait, l’avoué sort libre et le silencieux purge 10 ans. Si les deux avouent, chacun purge 5 ans. Pourquoi chacun, raisonnant seul, avoue-t-il ?",
+    "correct_answer": "Avouer donne une peine plus courte quel que soit le choix de l’autre",
     "incorrect_answers": [
-      "Se taire donne une peine plus courte quel que soit le choix de l'autre",
-      "Avouer ne vaut que si l'autre avoue",
-      "Avouer ne vaut que si l'autre se tait",
+      "Se taire donne une peine plus courte quel que soit le choix de l’autre",
+      "Avouer ne vaut que si l’autre avoue",
+      "Avouer ne vaut que si l’autre se tait",
       "Ils engagent un avocat pour inventer une quatrième option"
     ],
-    "explanation": "Comparez chaque geste à chaque réponse du partenaire. Si l'autre se tait, avouer donne la liberté plutôt qu'1 an ; si l'autre avoue, avouer donne 5 ans plutôt que 10. Avouer gagne dans les deux cas, donc il domine, même si le silence mutuel servait mieux les deux.",
+    "explanation": "Comparez chaque geste à chaque réponse du partenaire. Si l’autre se tait, avouer donne la liberté plutôt qu’1 an ; si l’autre avoue, avouer donne 5 ans plutôt que 10. Avouer gagne dans les deux cas, donc il domine, même si le silence mutuel servait mieux les deux.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0042",
-    "question": "Quatre fermiers partagent un pâturage. Chacun calcule qu'une vache de plus ne lui profite qu'à elle seule, tandis que le piétinement se répartit entre les quatre, et chacun ajoute des vaches jusqu'à épuisement de l'herbe. Qu'est-ce que cela illustre ?",
+    "question": "Quatre fermiers partagent un pâturage. Chacun calcule qu’une vache de plus ne lui profite qu’à elle seule, tandis que le piétinement se répartit entre les quatre, et chacun ajoute des vaches jusqu’à épuisement de l’herbe. Qu’est-ce que cela illustre ?",
     "correct_answer": "Des choix individuels rationnels peuvent détruire ensemble une ressource partagée",
     "incorrect_answers": [
       "La propriété partagée surpasse toujours les parcelles privées",
       "Les fermiers devraient simplement acheter plus de terre",
-      "Le marché évaluera l'herbe correctement",
+      "Le marché évaluera l’herbe correctement",
       "Les vaches maîtrisent la rotation des parcelles"
     ],
-    "explanation": "Chacun garde tout le bénéfice de sa vache et ne paie qu'un quart du coût : le surpâturage est rationnel pour chacun et ruineux pour tous. C'est la tragédie des communs : l'incitation privée dépasse l'optimum collectif.",
+    "explanation": "Chacun garde tout le bénéfice de sa vache et ne paie qu’un quart du coût : le surpâturage est rationnel pour chacun et ruineux pour tous. C’est la tragédie des communs : l’incitation privée dépasse l’optimum collectif.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0043",
-    "question": "Vous devez rencontrer un inconnu demain quelque part à New York, sans aucun moyen de convenir d'un lieu ou d'une heure. Où et quand aller pour maximiser la chance de se retrouver ?",
+    "question": "Vous devez rencontrer un inconnu demain quelque part à New York, sans aucun moyen de convenir d’un lieu ou d’une heure. Où et quand aller pour maximiser la chance de se retrouver ?",
     "correct_answer": "Grand Central Terminal à midi",
     "incorrect_answers": [
       "Times Square à minuit",
-      "La statue de la Liberté à l'aube",
+      "La statue de la Liberté à l’aube",
       "Une entrée de métro au hasard à 18 h",
       "Le milieu de Central Park à 3 h du matin"
     ],
-    "explanation": "Les points focaux de Schelling : sans communication, chacun converge vers l'option qui se détache comme évidente. Grand Central à midi est la réponse que les New-Yorkais citent le plus, donc chacun raisonne que l'autre y sera.",
+    "explanation": "Les points focaux de Schelling : sans communication, chacun converge vers l’option qui se détache comme évidente. Grand Central à midi est la réponse que les New-Yorkais citent le plus, donc chacun raisonne que l’autre y sera.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0044",
-    "question": "Dans un jeu de l'ultimatum, le proposant partage 100 pièces comme il veut ; le répondant accepte le partage ou le refuse, et alors personne ne touche rien. Les répondants refusent souvent 10 pièces ou moins. Pourquoi refuser de l'argent gratuit ?",
-    "correct_answer": "Refuser punit l'injustice au prix d'un petit sacrifice personnel",
+    "question": "Dans un jeu de l’ultimatum, le proposant partage 100 pièces comme il veut ; le répondant accepte le partage ou le refuse, et alors personne ne touche rien. Les répondants refusent souvent 10 pièces ou moins. Pourquoi refuser de l’argent gratuit ?",
+    "correct_answer": "Refuser punit l’injustice au prix d’un petit sacrifice personnel",
     "incorrect_answers": [
       "Les répondants ne savent pas compter",
       "Refuser est une maladresse de négociation sans logique",
       "Les pièces perdent leur valeur quand elles sont offertes rudement",
-      "Ils acceptent les pièces et s'excusent du dérangement"
+      "Ils acceptent les pièces et s’excusent du dérangement"
     ],
-    "explanation": "On échange de l'argent contre de l'équité : un petit gain certain est plus insupportable que rien quand il encode une part insultante. La crainte de ce refus maintient les offres vers cinquante-cinquante, donc le refus coûteux garde une logique sociale.",
+    "explanation": "On échange de l’argent contre de l’équité : un petit gain certain est plus insupportable que rien quand il encode une part insultante. La crainte de ce refus maintient les offres vers cinquante-cinquante, donc le refus coûteux garde une logique sociale.",
     "lang": "fr",
     "difficulty": 1
   },
   {
     "id": "logic-fr-0045",
-    "question": "Un petit jeu offre trois options à un joueur, avec des gains dépendant de l'adversaire. Quoi que fasse l'adversaire, l'option C rapporte 2 pièces et l'option A en rapporte au moins 3. Que dire d'un joueur rationnel qui choisirait C ?",
-    "correct_answer": "Un joueur rationnel ne choisit jamais C, A étant meilleure quoi qu'il arrive",
+    "question": "Un petit jeu offre trois options à un joueur, avec des gains dépendant de l’adversaire. Quoi que fasse l’adversaire, l’option C rapporte 2 pièces et l’option A en rapporte au moins 3. Que dire d’un joueur rationnel qui choisirait C ?",
+    "correct_answer": "Un joueur rationnel ne choisit jamais C, A étant meilleure quoi qu’il arrive",
     "incorrect_answers": [
       "C est le choix le plus sûr contre un adversaire malin",
-      "C et A font égalité quand l'adversaire joue finement",
+      "C et A font égalité quand l’adversaire joue finement",
       "Un joueur rationnel prend C une fois sur deux",
       "Stratégie par boule de cristal, résultats à venir"
     ],
-    "explanation": "A domine strictement C : dans tous les scénarios, elle rapporte davantage, donc C ne peut jamais être la meilleure réponse. Un joueur rationnel élimine d'abord les options dominées, quelles que soient ses conjectures sur l'adversaire.",
+    "explanation": "A domine strictement C : dans tous les scénarios, elle rapporte davantage, donc C ne peut jamais être la meilleure réponse. Un joueur rationnel élimine d’abord les options dominées, quelles que soient ses conjectures sur l’adversaire.",
     "lang": "fr",
     "difficulty": 3
   },
   {
     "id": "logic-fr-0046",
-    "question": "Une urne contient exactement 50 boules rouges et 50 noires. Une seconde en contient 100 rouges ou noires dans une proportion inconnue. On paie typiquement plus pour tirer de l'urne connue, quelle que soit la couleur choisie. Que révèle ce comportement ?",
+    "question": "Une urne contient exactement 50 boules rouges et 50 noires. Une seconde en contient 100 rouges ou noires dans une proportion inconnue. On paie typiquement plus pour tirer de l’urne connue, quelle que soit la couleur choisie. Que révèle ce comportement ?",
     "correct_answer": "On tient des probabilités connues pour plus sûres que des inconnues, au-delà de ce que la logique autorise",
     "incorrect_answers": [
       "On détecte à raison que la seconde urne est truquée",
-      "L'urne connue rapporte mathématiquement mieux",
+      "L’urne connue rapporte mathématiquement mieux",
       "On ne sait comparer aucune probabilité",
       "Les boules rouges portent chance"
     ],
-    "explanation": "L'aversion à l'ambiguïté d'Ellsberg : quelle que soit la couleur, l'urne inconnue peut s'avérer favorable ou funeste, et on fuit le risque non quantifiable. La théorie des probabilités autorise pourtant des paris équivalents : la préférence dénonce une répulsion pour les cotes inconnues elles-mêmes.",
+    "explanation": "L’aversion à l’ambiguïté d’Ellsberg : quelle que soit la couleur, l’urne inconnue peut s’avérer favorable ou funeste, et on fuit le risque non quantifiable. La théorie des probabilités autorise pourtant des paris équivalents : la préférence dénonce une répulsion pour les cotes inconnues elles-mêmes.",
     "lang": "fr",
     "difficulty": 3
   },
@@ -652,10 +652,10 @@
     "incorrect_answers": [
       "Les glaces causent les accidents de baignade",
       "Les noyades donnent envie de glaces",
-      "La corrélation ne peut être qu'une coïncidence",
+      "La corrélation ne peut être qu’une coïncidence",
       "Les glaces devraient être interdites près des plages"
     ],
-    "explanation": "La chaleur pousse à la fois vers le marchand de glaces et vers l'eau, si bien que les deux séries bougent ensemble sans que l'une cause l'autre. Un facteur confondant explique la corrélation ; celle-ci n'établit pas la causalité.",
+    "explanation": "La chaleur pousse à la fois vers le marchand de glaces et vers l’eau, si bien que les deux séries bougent ensemble sans que l’une cause l’autre. Un facteur confondant explique la corrélation ; celle-ci n’établit pas la causalité.",
     "lang": "fr",
     "difficulty": 1
   },
@@ -675,29 +675,29 @@
   },
   {
     "id": "logic-fr-0049",
-    "question": "Une salle de sport affirme que ses membres sont bien plus en forme que les non-membres, donc s'inscrire remet en forme. Quelle lecture alternative la publicité escamote-t-elle ?",
-    "correct_answer": "Ceux qui valorisent déjà la santé sont ceux qui s'inscrivent",
+    "question": "Une salle de sport affirme que ses membres sont bien plus en forme que les non-membres, donc s’inscrire remet en forme. Quelle lecture alternative la publicité escamote-t-elle ?",
+    "correct_answer": "Ceux qui valorisent déjà la santé sont ceux qui s’inscrivent",
     "incorrect_answers": [
       "Les séances fonctionnent instantanément",
       "Les non-membres sont secrètement plus en forme",
-      "La santé ne tient pas à l'exercice",
+      "La santé ne tient pas à l’exercice",
       "La publicité est légalement tenue de mentir"
     ],
-    "explanation": "Le biais de l'utilisateur en bonne santé : la salle n'ajoute pas seulement de l'exercice, elle sélectionne des gens qui font déjà attention à leur santé, mangent bien et consultent. L'adhésion corrèle avec la santé en partie parce que ceux qui la recherchent s'inscrivent.",
+    "explanation": "Le biais de l’utilisateur en bonne santé : la salle n’ajoute pas seulement de l’exercice, elle sélectionne des gens qui font déjà attention à leur santé, mangent bien et consultent. L’adhésion corrèle avec la santé en partie parce que ceux qui la recherchent s’inscrivent.",
     "lang": "fr",
     "difficulty": 2
   },
   {
     "id": "logic-fr-0050",
-    "question": "Un essai clinique donne le médicament à la moitié des patients et un placebo d'aspect identique à l'autre moitié, ni les patients ni le personnel ne sachant qui a reçu quoi. Que permet de conclure le bras placebo ?",
-    "correct_answer": "De combien l'amélioration dépasse ce que l'attente et le temps produisent seuls",
+    "question": "Un essai clinique donne le médicament à la moitié des patients et un placebo d’aspect identique à l’autre moitié, ni les patients ni le personnel ne sachant qui a reçu quoi. Que permet de conclure le bras placebo ?",
+    "correct_answer": "De combien l’amélioration dépasse ce que l’attente et le temps produisent seuls",
     "incorrect_answers": [
       "Que le médicament marche pour tous les participants",
-      "Qu'il n'a pas d'effets secondaires",
-      "Qu'il bat tous les traitements plus anciens",
+      "Qu’il n’a pas d’effets secondaires",
+      "Qu’il bat tous les traitements plus anciens",
       "Que les patients se laissent tromper facilement"
     ],
-    "explanation": "Le bras contrôle mesure la guérison due à l'attente et au cours naturel. Seul le dépassement de ce seuil s'attribue au médicament, et l'aveugle empêche les croyances de contaminer la mesure. Voilà ce qu'un bras placebo autorise réellement à inférer.",
+    "explanation": "Le bras contrôle mesure la guérison due à l’attente et au cours naturel. Seul le dépassement de ce seuil s’attribue au médicament, et l’aveugle empêche les croyances de contaminer la mesure. Voilà ce qu’un bras placebo autorise réellement à inférer.",
     "lang": "fr",
     "difficulty": 2
   }

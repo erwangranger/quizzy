@@ -6743,5 +6743,1905 @@
     "as_of": null,
     "origin": "claude",
     "reviewed": true
+  },
+  {
+    "id": "geo-0073",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river flows through London?",
+    "correct_answer": "The Thames",
+    "incorrect_answers": [
+      "The Mersey",
+      "The Tyne",
+      "The Clyde",
+      "The river with a better agent"
+    ],
+    "explanation": "The Thames runs about 346 km through southern England, and London grew up around its tidal reach. Despite the city's size, it is fed by more than 300 streams and springs along its course.",
+    "source_url": "https://en.wikipedia.org/wiki/River_Thames",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0074",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Morocco?",
+    "correct_answer": "Rabat",
+    "incorrect_answers": [
+      "Casablanca",
+      "Marrakesh",
+      "Tangier",
+      "The city with the most famous M"
+    ],
+    "explanation": "Rabat has been Morocco's capital since 1912, chosen by the French protectorate administration for its coastal location. Casablanca remains the country's largest city and economic hub, but not its seat of government.",
+    "source_url": "https://en.wikipedia.org/wiki/Rabat",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0075",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which country is entirely surrounded by the territory of a single other country?",
+    "correct_answer": "Lesotho",
+    "incorrect_answers": [
+      "Eswatini",
+      "Andorra",
+      "Bhutan",
+      "The country with an invisible fence"
+    ],
+    "explanation": "Lesotho is an enclave completely surrounded by South Africa, the only country in the world bordered by exactly one neighbour. Eswatini comes close, but it also touches Mozambique on its eastern side.",
+    "source_url": "https://en.wikipedia.org/wiki/Lesotho",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0076",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river flows through Rome?",
+    "correct_answer": "The Tiber",
+    "incorrect_answers": [
+      "The Arno",
+      "The Po",
+      "The Adige",
+      "The river that invented pasta water"
+    ],
+    "explanation": "The Tiber rises in the Apennine Mountains and flows about 405 km to the Tyrrhenian Sea. Rome was founded on its banks, traditionally in 753 BC, on the Tiber Island ford.",
+    "source_url": "https://en.wikipedia.org/wiki/Tiber",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0077",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which strait lies between the Red Sea and the Gulf of Aden?",
+    "correct_answer": "The Bab-el-Mandeb Strait",
+    "incorrect_answers": [
+      "The Strait of Hormuz",
+      "The Bering Strait",
+      "The Strait of Malacca",
+      "The strait that demands a toll in peppercorns"
+    ],
+    "explanation": "Bab-el-Mandeb, meaning Gate of Grief in Arabic, is only about 29 km wide at its narrowest point. It links the Red Sea to the Gulf of Aden, making it a chokepoint for ships heading to the Suez Canal.",
+    "source_url": "https://en.wikipedia.org/wiki/Bab-el-Mandeb",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0078",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of New Zealand?",
+    "correct_answer": "Wellington",
+    "incorrect_answers": [
+      "Auckland",
+      "Christchurch",
+      "Dunedin",
+      "The shakiest desk in the office"
+    ],
+    "explanation": "Wellington became the capital in 1865, replacing Auckland partly to keep the South Island's gold-rich population happy. It sits in a harbour on the North Island's southern tip and is famously windy.",
+    "source_url": "https://en.wikipedia.org/wiki/Wellington",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0079",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which flag is the only national flag that is not rectangular?",
+    "correct_answer": "Nepal",
+    "incorrect_answers": [
+      "Bhutan",
+      "Switzerland",
+      "Vatican City",
+      "The flag that got folded wrong"
+    ],
+    "explanation": "Nepal's flag consists of two stacked crimson pennons and is the only non-quadrilateral national flag. Swiss and Vatican flags are square, but still rectangles.",
+    "source_url": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0080",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which body of water is the saltiest on Earth?",
+    "correct_answer": "Gaet'ale Pond",
+    "incorrect_answers": [
+      "The Dead Sea",
+      "Great Salt Lake",
+      "Lake Assal",
+      "A margarita glass, probably"
+    ],
+    "explanation": "Gaet'ale Pond in Ethiopia's Danakil Depression is a small hot spring with about 43 percent salinity, the saltiest open water known. The Dead Sea is around 34 percent.",
+    "source_url": "https://en.wikipedia.org/wiki/Gaet%27ale_Pond",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0081",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which national capital lies on both sides of the Dnieper River?",
+    "correct_answer": "Kyiv",
+    "incorrect_answers": [
+      "Minsk",
+      "Moscow",
+      "Vilnius",
+      "The city with a river for a moat"
+    ],
+    "explanation": "The Dnieper splits Kyiv into right-bank and left-bank halves, joined by many bridges. It is one of Europe's longest rivers, rising near Smolensk and reaching the Black Sea.",
+    "source_url": "https://en.wikipedia.org/wiki/Dnieper",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0082",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest country entirely within Europe?",
+    "correct_answer": "Ukraine",
+    "incorrect_answers": [
+      "France",
+      "Spain",
+      "Germany",
+      "The country that says it is bigger on the inside"
+    ],
+    "explanation": "At about 603,000 square km, Ukraine is the largest country wholly inside Europe's conventional boundaries. Russia is larger overall but extends across Asia to the Pacific.",
+    "source_url": "https://en.wikipedia.org/wiki/Ukraine",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "geo-0083",
+    "lang": "en",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which plateau is often called the Roof of the World?",
+    "correct_answer": "The Tibetan Plateau",
+    "incorrect_answers": [
+      "The Deccan Plateau",
+      "The Colorado Plateau",
+      "The Bolivian Altiplano",
+      "The penthouse suite of continents"
+    ],
+    "explanation": "The Tibetan Plateau covers about 2.5 million square km at an average elevation above 4,500 m, the largest and highest plateau on Earth. Its glaciers feed major rivers including the Indus, the Mekong and the Yangtze.",
+    "source_url": "https://en.wikipedia.org/wiki/Tibetan_Plateau",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0073",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which English monarch had the longest reign before Elizabeth II?",
+    "correct_answer": "Queen Victoria",
+    "incorrect_answers": [
+      "King George III",
+      "King Henry III",
+      "King Edward III",
+      "The one who ran out of calendar"
+    ],
+    "explanation": "Victoria reigned for more than 63 years, from 1837 to 1901, a record that stood until Elizabeth II passed it in September 2015. George III's nearly 60 years come second among earlier monarchs.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_longest-reigning_British_monarchs",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0074",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who painted the ceiling of the Sistine Chapel for Pope Julius II?",
+    "correct_answer": "Michelangelo",
+    "incorrect_answers": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Botticelli",
+      "A guy with a very long roller"
+    ],
+    "explanation": "Michelangelo painted the chapel ceiling between 1508 and 1512, mostly standing rather than lying on scaffolds as legend claims. He considered himself a sculptor first and took the commission reluctantly.",
+    "source_url": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0075",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which French ruler sold the Louisiana territory to the United States in 1803?",
+    "correct_answer": "Napoleon Bonaparte",
+    "incorrect_answers": [
+      "King Louis XVI",
+      "Napoleon III",
+      "Charles de Gaulle",
+      "The emperor of the clearance sale"
+    ],
+    "explanation": "Napoleon sold the Louisiana territory, roughly 2.1 million square km, for 15 million dollars, doubling the size of the United States. He needed money for his wars in Europe and feared losing the colony to Britain.",
+    "source_url": "https://en.wikipedia.org/wiki/Louisiana_Purchase",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0076",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which city was the capital of the Byzantine Empire?",
+    "correct_answer": "Constantinople",
+    "incorrect_answers": [
+      "Rome",
+      "Athens",
+      "Alexandria",
+      "The city with two names and one skyline"
+    ],
+    "explanation": "Constantinople, founded by Constantine I on the site of Byzantium in 330 AD, served as the imperial capital for more than 1,100 years. Today it is Istanbul, Turkey's largest city.",
+    "source_url": "https://en.wikipedia.org/wiki/Constantinople",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0077",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who wrote The Communist Manifesto with Friedrich Engels?",
+    "correct_answer": "Karl Marx",
+    "incorrect_answers": [
+      "Vladimir Lenin",
+      "Leon Trotsky",
+      "Mikhail Bakunin",
+      "The ghost that haunts Europe"
+    ],
+    "explanation": "Marx and Engels published the pamphlet in February 1848, weeks before revolutions swept across Europe. Its opening line declares that a spectre is haunting Europe, the spectre of communism.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0078",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which queen of Egypt was famous for her alliances with Julius Caesar and Mark Antony?",
+    "correct_answer": "Cleopatra",
+    "incorrect_answers": [
+      "Nefertiti",
+      "Hatshepsut",
+      "Queen Ahhotep I",
+      "The pharaoh with the best publicist"
+    ],
+    "explanation": "Cleopatra VII, the last active ruler of the Ptolemaic dynasty, allied with both Roman leaders to keep Egypt independent. After the defeat at Actium in 31 BC, Egypt became a Roman province.",
+    "source_url": "https://en.wikipedia.org/wiki/Cleopatra",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0079",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Frankish leader stopped an Umayyad invasion at the Battle of Tours in 732?",
+    "correct_answer": "Charles Martel",
+    "incorrect_answers": [
+      "Charlemagne",
+      "Clovis I",
+      "Pepin the Short",
+      "The hammer of the mall"
+    ],
+    "explanation": "Charles Martel, mayor of the palace and de facto ruler of the Franks, defeated an Umayyad raiding army between Tours and Poitiers. His grandson Charlemagne later built the Carolingian Empire on these foundations.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0080",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who served as the second President of the United States, right after Washington?",
+    "correct_answer": "John Adams",
+    "incorrect_answers": [
+      "Thomas Jefferson",
+      "James Madison",
+      "Alexander Hamilton",
+      "The runner-up promoted to number one"
+    ],
+    "explanation": "John Adams served as the second president from 1797 to 1801 after eight years as vice president under Washington. He and Thomas Jefferson, his successor and rival, both died on 4 July 1826.",
+    "source_url": "https://en.wikipedia.org/wiki/John_Adams",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0081",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which ancient wonder stood in the harbour of Rhodes?",
+    "correct_answer": "The Colossus of Rhodes",
+    "incorrect_answers": [
+      "The Lighthouse of Alexandria",
+      "The Temple of Artemis at Ephesus",
+      "The Mausoleum at Halicarnassus",
+      "The statue that failed its MoT"
+    ],
+    "explanation": "The bronze statue of the sun god Helios, about 33 metres tall, was completed around 280 BC and toppled by an earthquake only 54 years later. Its fragments lay on the shore for centuries before being sold for scrap.",
+    "source_url": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0082",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Mughal emperor commissioned the Taj Mahal?",
+    "correct_answer": "Shah Jahan",
+    "incorrect_answers": [
+      "Akbar",
+      "Aurangzeb",
+      "Babur",
+      "The emperor with expensive taste in marble"
+    ],
+    "explanation": "Shah Jahan built the Taj Mahal at Agra between 1632 and 1653 as a tomb for his favourite wife, Mumtaz Mahal, who died giving birth to their 14th child. Some 20,000 workers are said to have laboured on it.",
+    "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "hist-0083",
+    "lang": "en",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which 13th-century ruler founded the Mali Empire, breaking away from the Sosso kingdom after the Battle of Kirina around 1235?",
+    "correct_answer": "Sundiata Keita",
+    "incorrect_answers": [
+      "Mansa Musa",
+      "Askia Muhammad I",
+      "Sonni Ali",
+      "The founder with the legendary grip"
+    ],
+    "explanation": "Sundiata Keita, the lion prince of the Keita clan, defeated the Sosso king Sumanguru Kanté at Kirina and built an empire that later made Mali the richest in West Africa. The epic of Sundiata is still recited by griots in Mali and Guinea.",
+    "source_url": "https://en.wikipedia.org/wiki/Sundiata_Keita",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0057",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many chambers does the human heart have?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "2",
+      "3",
+      "6",
+      "Two upstairs, two downstairs"
+    ],
+    "explanation": "The heart has two atria that receive blood and two ventricles that pump it out. The right side sends blood to the lungs for oxygen while the left side drives it around the whole body.",
+    "source_url": "https://en.wikipedia.org/wiki/Heart",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0058",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which two elements make up water?",
+    "correct_answer": "Hydrogen and oxygen",
+    "incorrect_answers": [
+      "Nitrogen and oxygen",
+      "Carbon and hydrogen",
+      "Sodium and chlorine",
+      "Wet and wetter"
+    ],
+    "explanation": "Each water molecule packs two hydrogen atoms onto one oxygen atom, giving the famous formula H2O. Water covers about 71 percent of Earth's surface but is a rare substance in the universe.",
+    "source_url": "https://en.wikipedia.org/wiki/Water",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0059",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which scientists are credited with describing the double-helix structure of DNA?",
+    "correct_answer": "Watson and Crick",
+    "incorrect_answers": [
+      "Mendel and Darwin",
+      "Curie and Bohr",
+      "Galileo and Copernicus",
+      "Helix and Sons, DNA plumbers"
+    ],
+    "explanation": "James Watson and Francis Crick published their model in 1953, drawing crucially on Rosalind Franklin's X-ray diffraction images. Her Photo 51 provided the key evidence of the helical shape.",
+    "source_url": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0060",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which chemical element makes up about 46 percent of Earth's crust by mass, the largest share?",
+    "correct_answer": "Oxygen",
+    "incorrect_answers": [
+      "Silicon",
+      "Aluminium",
+      "Iron",
+      "The crunchy one"
+    ],
+    "explanation": "Oxygen forms nearly half the crust when combined into silicate minerals, with silicon second at about 28 percent by mass. Most of it is locked into rocks rather than floating free.",
+    "source_url": "https://en.wikipedia.org/wiki/Abundance_of_elements_in_Earth%27s_crust",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0061",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which blood cells carry oxygen around the human body?",
+    "correct_answer": "Red blood cells",
+    "incorrect_answers": [
+      "White blood cells",
+      "Platelets",
+      "Plasma cells",
+      "The little red delivery vans"
+    ],
+    "explanation": "Red blood cells are packed with haemoglobin, an iron-rich protein that binds oxygen in the lungs and releases it in tissues. They lack a nucleus and live only about 120 days.",
+    "source_url": "https://en.wikipedia.org/wiki/Red_blood_cell",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0062",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet is closest to the Sun?",
+    "correct_answer": "Mercury",
+    "incorrect_answers": [
+      "Venus",
+      "Mars",
+      "Earth",
+      "The one with the best tan"
+    ],
+    "explanation": "Mercury orbits at an average distance of about 58 million km, completing a lap every 88 days. Despite being closest to the Sun, it is not the hottest planet, because Venus holds heat with its thick atmosphere.",
+    "source_url": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0063",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What colour is octopus blood?",
+    "correct_answer": "Blue",
+    "incorrect_answers": [
+      "Green",
+      "Purple",
+      "Colourless",
+      "Burgundy, and it pairs with fish"
+    ],
+    "explanation": "Octopuses use haemocyanin, a copper-based protein, instead of iron-based haemoglobin to carry oxygen. Copper turns blue when oxygenated, so their blood runs blue.",
+    "source_url": "https://en.wikipedia.org/wiki/Octopus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0064",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which dinosaur had the most powerful bite force ever measured in a land animal, at roughly 35,000 to 57,000 newtons?",
+    "correct_answer": "Tyrannosaurus rex",
+    "incorrect_answers": [
+      "Velociraptor",
+      "Triceratops",
+      "Allosaurus",
+      "The one that skipped leg day"
+    ],
+    "explanation": "Studies of T. rex skull biomechanics estimate a bite of up to about 57,000 newtons, three times that of a large saltwater crocodile. Velociraptors, despite their film fame, were about turkey-sized.",
+    "source_url": "https://en.wikipedia.org/wiki/Tyrannosaurus",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0065",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "At sea level, at what temperature does water boil?",
+    "correct_answer": "100 degrees Celsius",
+    "incorrect_answers": [
+      "90 degrees Celsius",
+      "110 degrees Celsius",
+      "120 degrees Celsius",
+      "Whenever it feels ready"
+    ],
+    "explanation": "The boiling point drops with pressure: on top of Mount Everest water boils at about 70 degrees, which is why mountaineering meals cook slowly. In a pressure cooker the raised temperature speeds cooking up.",
+    "source_url": "https://en.wikipedia.org/wiki/Boiling_point",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0066",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many moons does Mars have?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "4",
+      "8",
+      "One per robot visitor"
+    ],
+    "explanation": "Phobos and Deimos are small, irregularly shaped moons likely captured asteroids. Phobos orbits so low that it circles Mars three times a day and is slowly spiralling inward.",
+    "source_url": "https://en.wikipedia.org/wiki/Moons_of_Mars",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "scie-0067",
+    "lang": "en",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which English naturalist independently conceived the theory of evolution by natural selection and co-published with Darwin in 1858?",
+    "correct_answer": "Alfred Russel Wallace",
+    "incorrect_answers": [
+      "Thomas Huxley",
+      "Joseph Hooker",
+      "Charles Lyell",
+      "The other beagle passenger"
+    ],
+    "explanation": "Wallace worked out natural selection while collecting specimens in the Malay Archipelago and sent his paper to Darwin from the island of Ternate in 1858. Their joint presentation pushed Darwin to publish On the Origin of Species the next year.",
+    "source_url": "https://en.wikipedia.org/wiki/Alfred_Russel_Wallace",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0057",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which novel opens with the line: Call me Ishmael?",
+    "correct_answer": "Moby-Dick",
+    "incorrect_answers": [
+      "The Old Man and the Sea",
+      "Treasure Island",
+      "Robinson Crusoe",
+      "The whale that got away"
+    ],
+    "explanation": "Herman Melville's 1851 whaling epic opens with its narrator announcing: Call me Ishmael. The line is now among the most famous openings in American literature.",
+    "source_url": "https://en.wikipedia.org/wiki/Moby-Dick",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0058",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which French author wrote the novel 'The Three Musketeers'?",
+    "correct_answer": "Alexandre Dumas",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Jules Verne",
+      "Gustave Flaubert",
+      "Dumas and Son"
+    ],
+    "explanation": "Alexandre Dumas serialized The Three Musketeers in 1844, following d'Artagnan and his companions Athos, Porthos, and Aramis. His son, also named Alexandre, wrote the tragic love story La Dame aux camelias.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Three_Musketeers",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0059",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Who wrote the novel 'The Hobbit'?",
+    "correct_answer": "J. R. R. Tolkien",
+    "incorrect_answers": [
+      "C. S. Lewis",
+      "J. K. Rowling",
+      "George R. R. Martin",
+      "The dragon who did not sign it"
+    ],
+    "explanation": "Tolkien published The Hobbit in 1937, introducing readers to Bilbo Baggins and the world of Middle-earth. Its success led to the Lord of the Rings trilogy two decades later.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Hobbit",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0060",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which American poet wrote the collections 'Leaves of Grass'?",
+    "correct_answer": "Walt Whitman",
+    "incorrect_answers": [
+      "Emily Dickinson",
+      "Robert Frost",
+      "Edgar Allan Poe",
+      "A very mulchy gardener"
+    ],
+    "explanation": "Walt Whitman self-published Leaves of Grass in 1855 and kept revising and expanding it for the rest of his life. The final edition contains more than 400 poems, including Song of Myself.",
+    "source_url": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0061",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which term describes a Japanese poem form of exactly 17 syllables in a 5-7-5 pattern?",
+    "correct_answer": "Haiku",
+    "incorrect_answers": [
+      "Tanka",
+      "Renga",
+      "Senryu",
+      "Seventeen haikus in a trench coat"
+    ],
+    "explanation": "A haiku captures a fleeting image in three phrases of 5, 7, and 5 syllables. Matsuo Basho, who wrote in the 17th century, remains its most celebrated practitioner.",
+    "source_url": "https://en.wikipedia.org/wiki/Haiku",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0062",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which French painter made 'Olympia', the 1863 canvas of a reclining nude that caused a scandal at the Paris Salon?",
+    "correct_answer": "Edouard Manet",
+    "incorrect_answers": [
+      "Claude Monet",
+      "Edgar Degas",
+      "Gustave Courbet",
+      "The model who overslept"
+    ],
+    "explanation": "Edouard Manet showed Olympia at the 1865 Salon, where critics were scandalized by the model's confrontational gaze and the painting's flat, modern style. The work now hangs in the Musee d'Orsay.",
+    "source_url": "https://en.wikipedia.org/wiki/Olympia_(Manet)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0063",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Dutch painter cut off part of his left ear in 1888 after an argument in Arles?",
+    "correct_answer": "Vincent van Gogh",
+    "incorrect_answers": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Piet Mondrian",
+      "The barber who did it"
+    ],
+    "explanation": "Vincent van Gogh cut off part of his left ear in December 1888 after a quarrel with fellow painter Paul Gauguin, who had been staying with him in Arles. He painted several self-portraits with a bandaged ear afterwards.",
+    "source_url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0064",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 3,
+    "question": "Which Italian Baroque painter, known for dramatic lighting and a violent temper, fled Rome in 1606 after killing a man in a brawl?",
+    "correct_answer": "Caravaggio",
+    "incorrect_answers": [
+      "Raphael",
+      "Titian",
+      "Artemisia Gentileschi",
+      "The painter who forgot his palette"
+    ],
+    "explanation": "Caravaggio's tenebrist paintings made him the most famous artist in Rome before his violent temper caught up with him. He spent his final years as a fugitive, dying in 1610 under murky circumstances.",
+    "source_url": "https://en.wikipedia.org/wiki/Caravaggio",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0065",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 2,
+    "question": "Which Spanish surrealist painted the 1936 canvas 'Soft Construction with Boiled Beans', a grim vision of a self-dismembering figure before the Spanish Civil War?",
+    "correct_answer": "Salvador Dali",
+    "incorrect_answers": [
+      "Joan Miro",
+      "Rene Magritte",
+      "Max Ernst",
+      "A very tender cook"
+    ],
+    "explanation": "Salvador Dali painted Soft Construction with Boiled Beans in 1936, months before the Spanish Civil War broke out. Its grotesque, self-strangling figure is often read as a prophetic vision of the coming conflict.",
+    "source_url": "https://en.wikipedia.org/wiki/Soft_Construction_with_Boiled_Beans",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0066",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which American painter made 'Nighthawks', the 1942 painting of people in a late-night diner?",
+    "correct_answer": "Edward Hopper",
+    "incorrect_answers": [
+      "Grant Wood",
+      "Andrew Wyeth",
+      "Georgia O'Keeffe",
+      "The coffee refill that never came"
+    ],
+    "explanation": "Edward Hopper completed Nighthawks in 1942, capturing a nearly deserted city street corner and a diner's harsh fluorescent light. It has become one of the most recognizable images of American loneliness.",
+    "source_url": "https://en.wikipedia.org/wiki/Nighthawks_(painting)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "arts-0067",
+    "lang": "en",
+    "category": "arts-literature",
+    "difficulty": 1,
+    "question": "Which Greek philosopher's executed-for-his-teachings trial in 399 BC is recounted in Plato's dialogue 'Apology'?",
+    "correct_answer": "Socrates",
+    "incorrect_answers": [
+      "Plato",
+      "Aristotle",
+      "Pythagoras",
+      "The lawyer who lost the case"
+    ],
+    "explanation": "Socrates was tried in 399 BC for impiety and corrupting the youth of Athens, and was sentenced to death by drinking hemlock. Plato's Apology presents his defense speech, though Plato was likely not present.",
+    "source_url": "https://en.wikipedia.org/wiki/Trial_of_Socrates",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0054",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which actress played Hermione Granger in the Harry Potter film series?",
+    "correct_answer": "Emma Watson",
+    "incorrect_answers": [
+      "Dakota Fanning",
+      "Chloe Grace Moretz",
+      "Hailee Steinfeld",
+      "The Time-Turner repair department"
+    ],
+    "explanation": "Emma Watson was cast at age 9 and played Hermione across all eight films from 2001 to 2011. She later graduated from Brown University while still finishing the series.",
+    "source_url": "https://en.wikipedia.org/wiki/Emma_Watson",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0055",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 1996 film stars basketball player Shaquille O'Neal as a rapping genie who grants three wishes?",
+    "correct_answer": "Kazaam",
+    "incorrect_answers": [
+      "Aladdin",
+      "The NeverEnding Story",
+      "Space Jam",
+      "Three wishes, no refunds"
+    ],
+    "explanation": "Shaquille O'Neal played the rapping genie Kazaam in the 1996 film of the same name. It was released during his early career with the Orlando Magic, a few years before his movie career stalled.",
+    "source_url": "https://en.wikipedia.org/wiki/Kazaam",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0056",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which record label launched The Beatles' career by signing them in 1962 after other labels had turned them down?",
+    "correct_answer": "Parlophone",
+    "incorrect_answers": [
+      "Columbia",
+      "EMI",
+      "Apple Records",
+      "Record label with an attitude problem"
+    ],
+    "explanation": "Producer George Martin signed The Beatles to Parlophone, an EMI subsidiary best known for comedy records, in 1962 after Decca had rejected them. The pairing produced 12 studio albums.",
+    "source_url": "https://en.wikipedia.org/wiki/Parlophone",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0057",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which record label famously turned down The Beatles after an audition on 1 January 1962, later calling it the biggest mistake in pop history?",
+    "correct_answer": "Decca",
+    "incorrect_answers": [
+      "Atlantic",
+      "Philips",
+      "RCA Victor",
+      "We only sign bands with haircuts"
+    ],
+    "explanation": "Decca auditioned The Beatles at their London studios on New Year's Day 1962 and chose Brian Poole and the Tremeloes instead. The label's talent executive, Dick Rowe, later earned the nickname the man who turned down The Beatles.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Beatles%27_Deca_audition",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0058",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which musical film features the character Sarah Brown, a missionary who falls in love with a gambler named Sky Masterson?",
+    "correct_answer": "Guys and Dolls",
+    "incorrect_answers": [
+      "Singin' in the Rain",
+      "An American in Paris",
+      "Show Boat",
+      "One horse, one dice, one wedding"
+    ],
+    "explanation": "Guys and Dolls opened on Broadway in 1950 and was adapted into a 1955 film starring Marlon Brando and Jean Simmons. Its songs were written by Frank Loesser.",
+    "source_url": "https://en.wikipedia.org/wiki/Guys_and_Dolls",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0059",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In which fictional African country is most of the 2018 film Black Panther set?",
+    "correct_answer": "Wakanda",
+    "incorrect_answers": [
+      "Zamunda",
+      "Genosha",
+      "Latveria",
+      "A country only found on souvenir maps"
+    ],
+    "explanation": "Wakanda is the technologically advanced African nation ruled by T'Challa, played by Chadwick Boseman in the 2018 film. Black Panther became the first superhero film nominated for Best Picture.",
+    "source_url": "https://en.wikipedia.org/wiki/Wakanda",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0060",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Stephen Sondheim musical intertwines the fairy tales of Jack, Cinderella, Little Red Riding Hood and Rapunzel?",
+    "correct_answer": "Into the Woods",
+    "incorrect_answers": [
+      "The Book of Mormon",
+      "Sweeney Todd",
+      "Cats",
+      "A very crafty garbage man"
+    ],
+    "explanation": "Into the Woods, with music by Stephen Sondheim and book by James Lapine, opened on Broadway in 1987 and weaves several Brothers Grimm fairy tales around a baker and his wife cursed by a witch.",
+    "source_url": "https://en.wikipedia.org/wiki/Into_the_Woods",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0061",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 1990 romantic Ghost thriller stars Patrick Swayze and Demi Moore, and famously features a pottery scene?",
+    "correct_answer": "Ghost",
+    "incorrect_answers": [
+      "Dirty Dancing",
+      "An Officer and a Gentleman",
+      "Pretty Woman",
+      "A very hands-on séance"
+    ],
+    "explanation": "Ghost (1990) earned Whoopi Goldberg a Best Supporting Actress Oscar for her role as a fraudulent medium. The pottery scene with the song Unchained Melody became one of cinema's most-parodied moments.",
+    "source_url": "https://en.wikipedia.org/wiki/Ghost_(1990_film)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0062",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which director won his only competitive Academy Award, for Best Original Screenplay, for the 1994 film Pulp Fiction?",
+    "correct_answer": "Quentin Tarantino",
+    "incorrect_answers": [
+      "Martin Scorsese",
+      "Robert Altman",
+      "David Fincher",
+      "The script that wrote itself"
+    ],
+    "explanation": "Quentin Tarantino and co-writer Roger Avary shared the 1995 Best Original Screenplay Oscar for Pulp Fiction. Tarantino's other two Oscars, for Django Unchained and Once Upon a Time in Hollywood, are also for screenplays.",
+    "source_url": "https://en.wikipedia.org/wiki/Pulp_Fiction",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "ente-0063",
+    "lang": "en",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 1984 mockumentary follows the fictional rock band Spinal Tap on a disastrous American tour?",
+    "correct_answer": "This Is Spinal Tap",
+    "incorrect_answers": [
+      "The Blues Brothers",
+      "Wayne's World",
+      "Bill and Ted's Excellent Adventure",
+      "A very loud guitarist"
+    ],
+    "explanation": "This Is Spinal Tap, directed by Rob Reiner, popularized the mockumentary format in 1984. Its amplifiers that go up to eleven became a lasting piece of rock culture.",
+    "source_url": "https://en.wikipedia.org/wiki/This_Is_Spinal_Tap",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0054",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In horse racing, what is the traditional prize for the winner of the Kentucky Derby?",
+    "correct_answer": "A blanket of roses",
+    "incorrect_answers": [
+      "A silver horseshoe",
+      "A barrel of Kentucky bourbon",
+      "A stetson hat",
+      "A very nervous bouquet"
+    ],
+    "explanation": "The Kentucky Derby winner is draped in a blanket of more than 400 roses, which is why the race is nicknamed the Run for the Roses. The first roses were awarded in 1896.",
+    "source_url": "https://en.wikipedia.org/wiki/Kentucky_Derby",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0055",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Which city hosts the headquarters of the International Olympic Committee?",
+    "correct_answer": "Lausanne",
+    "incorrect_answers": [
+      "Geneva",
+      "Paris",
+      "Zurich",
+      "Wherever the torch happens to be"
+    ],
+    "explanation": "The IOC has been based in Lausanne, Switzerland, since 1915, when Pierre de Coubertin moved it there during the First World War. The city calls itself the Olympic Capital.",
+    "source_url": "https://en.wikipedia.org/wiki/International_Olympic_Committee",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0056",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which Swedish table tennis player won the Olympic men's singles gold at Barcelona 1992, earning the nickname the Evergreen Tree in China?",
+    "correct_answer": "Jan-Ove Waldner",
+    "incorrect_answers": [
+      "Ma Long",
+      "Yoo Nam-kyu",
+      "Zhang Jike",
+      "The paddle with a grudge"
+    ],
+    "explanation": "Jan-Ove Waldner won Olympic singles gold in Barcelona in 1992, and his longevity earned him the nickname the Evergreen Tree in China. Seoul 1988 had gone to South Korea's Yoo Nam-kyu, and Waldner was still playing internationally in his forties.",
+    "source_url": "https://en.wikipedia.org/wiki/Jan-Ove_Waldner",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0057",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In the board game Clue, which room is the scene of the crime?",
+    "correct_answer": "The kitchen",
+    "incorrect_answers": [
+      "The conservatory",
+      "The billiard room",
+      "The library",
+      "Wherever the butler was napping"
+    ],
+    "explanation": "In Clue (known as Cluedo outside North America), players must identify which of the mansion's nine rooms the murder took place in, along with the weapon and the culprit. The kitchen is one of the corner rooms.",
+    "source_url": "https://en.wikipedia.org/wiki/Cluedo",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0058",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "Which board game uses hexagonal tiles that players place to build landscapes, settlements, and roads?",
+    "correct_answer": "Catan",
+    "incorrect_answers": [
+      "Ticket to Ride",
+      "Carcassonne",
+      "Pandemic",
+      "Hexpansions galore"
+    ],
+    "explanation": "Catan, created by German designer Klaus Teuber in 1995, uses hexagonal terrain tiles that create a different island layout each game. It popularized the European-style board game wave in North America.",
+    "source_url": "https://en.wikipedia.org/wiki/Catan",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0059",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In which country did the sport of curling originate in medieval times, with stones thrown over frozen ponds?",
+    "correct_answer": "Scotland",
+    "incorrect_answers": [
+      "Canada",
+      "Norway",
+      "Switzerland",
+      "On the rocks, obviously"
+    ],
+    "explanation": "Curling developed on the frozen ponds and marshes of medieval Scotland, with the first written reference dating to 1541. The Royal Caledonian Curling Club, formed in 1838, codified the modern rules.",
+    "source_url": "https://en.wikipedia.org/wiki/Curling",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0060",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "In tennis, what is the score called when a game is tied at 40-40 and the next point must be won twice in a row to take the game?",
+    "correct_answer": "Deuce",
+    "incorrect_answers": [
+      "Break point",
+      "Set point",
+      "Advantage",
+      "Deuce's revenge"
+    ],
+    "explanation": "At 40-40 the score is called deuce, and a player must win two consecutive points — first to advantage, then the game. The French origin of the strange 15-30-40 steps remains debated by historians.",
+    "source_url": "https://en.wikipedia.org/wiki/Tennis_scoring_system",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0061",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 1,
+    "question": "In cricket, what is the name for a score of 100 runs by a single batsman in one innings?",
+    "correct_answer": "A century",
+    "incorrect_answers": [
+      "A duck",
+      "A double",
+      "A ton",
+      "Runs for the hills"
+    ],
+    "explanation": "A century is 100 runs scored by one batter in a single innings. Cricket also awards a cap for international appearances and a five-wicket haul for bowlers, but the century remains the classic batting milestone.",
+    "source_url": "https://en.wikipedia.org/wiki/Century_(cricket)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0062",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 3,
+    "question": "Which 1966 FIFA World Cup match, decided in extra time at Wembley, included the most controversial goal in the tournament's history?",
+    "correct_answer": "The 1966 final between England and West Germany",
+    "incorrect_answers": [
+      "The 1954 final between West Germany and Hungary",
+      "The 1970 semi-final between Italy and West Germany",
+      "The 1950 decisive match between Uruguay and Brazil",
+      "The goal that is still arguing with the referee"
+    ],
+    "explanation": "Geoff Hurst's shot that bounced off the crossbar in the 1966 final was ruled a goal by the linesman, and England won 4-2. Decades of video analysis have not settled whether the ball fully crossed the line.",
+    "source_url": "https://en.wikipedia.org/wiki/1966_FIFA_World_Cup_final",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "spor-0063",
+    "lang": "en",
+    "category": "sports-leisure",
+    "difficulty": 2,
+    "question": "In poker, which hand ranks directly below a full house?",
+    "correct_answer": "Flush",
+    "incorrect_answers": [
+      "Four of a kind",
+      "Straight",
+      "Three of a kind",
+      "A very firm handshake"
+    ],
+    "explanation": "A flush is five cards of the same suit, and it ranks just below a full house, which is three of a kind plus a pair. Four of a kind and a straight flush both rank above the full house.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_poker_hands",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0001",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "How many strings does a standard modern guitar have?",
+    "correct_answer": "6",
+    "incorrect_answers": [
+      "4",
+      "7",
+      "12",
+      "One for each day off"
+    ],
+    "explanation": "Six strings became the standard in the 19th century, when Spanish makers like Antonio Torres fixed the modern body shape. Twelve-string models exist, but they pair the strings in courses.",
+    "source_url": "https://en.wikipedia.org/wiki/Guitar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0002",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Which instrument did Bartolomeo Cristofori invent around 1700?",
+    "correct_answer": "The piano",
+    "incorrect_answers": [
+      "The harpsichord",
+      "The pipe organ",
+      "The accordion",
+      "A harp with stage fright"
+    ],
+    "explanation": "Cristofori, a harpsichord maker in Florence, built instruments where hammers strike the strings, letting players control volume by touch. His 1720 piano survives at the Metropolitan Museum of Art in New York.",
+    "source_url": "https://en.wikipedia.org/wiki/Piano",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0003",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "In which country did the reggae genre originate in the late 1960s?",
+    "correct_answer": "Jamaica",
+    "incorrect_answers": [
+      "Cuba",
+      "Trinidad and Tobago",
+      "Barbados",
+      "The beach, presumably"
+    ],
+    "explanation": "Reggae grew out of ska and rocksteady in Jamaica. The 1968 single Do the Reggay by Toots and the Maytals gave the genre its name.",
+    "source_url": "https://en.wikipedia.org/wiki/Reggae",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0004",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "How many keys does a standard modern piano have?",
+    "correct_answer": "88",
+    "incorrect_answers": [
+      "76",
+      "92",
+      "108",
+      "One per mood"
+    ],
+    "explanation": "The 88-key range, from A0 to C8, was set by Steinway in the 1880s and became the norm. Some extended-range pianos by Bosendorfer and Stuart and Sons go beyond it.",
+    "source_url": "https://en.wikipedia.org/wiki/Piano",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0005",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Which instrument is the sitar traditionally associated with?",
+    "correct_answer": "India",
+    "incorrect_answers": [
+      "Japan",
+      "Turkey",
+      "Indonesia",
+      "A very patient snake charmer"
+    ],
+    "explanation": "The sitar is a plucked lute of the Indian subcontinent used in Hindustani classical music. Ravi Shankar carried it to worldwide audiences from the late 1950s onward.",
+    "source_url": "https://en.wikipedia.org/wiki/Sitar",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0006",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 1,
+    "question": "Which woodwind shares its name with a kitchen utensil and is played with a single reed?",
+    "correct_answer": "The clarinet",
+    "incorrect_answers": [
+      "The oboe",
+      "The flute",
+      "The bassoon",
+      "The whisk"
+    ],
+    "explanation": "The clarinet takes a single reed on its mouthpiece, unlike the double-reed oboe and bassoon. Its cylindrical bore and flared bell give it a wide dynamic range.",
+    "source_url": "https://en.wikipedia.org/wiki/Clarinet",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0007",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 2,
+    "question": "On which dairy farm was the 1969 Woodstock festival actually held?",
+    "correct_answer": "Bethel, New York",
+    "incorrect_answers": [
+      "Woodstock, New York",
+      "Saugerties, New York",
+      "Catskill, New York",
+      "The neighbour's field, after a dispute"
+    ],
+    "explanation": "Max Yasgur's farm in Bethel, about 95 km southwest of the town of Woodstock, hosted the August 1969 festival. The town itself refused the event, and the name stuck anyway.",
+    "source_url": "https://en.wikipedia.org/wiki/Woodstock",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0008",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 2,
+    "question": "To what frequency is the note A above middle C tuned as the modern concert standard?",
+    "correct_answer": "440 Hz",
+    "incorrect_answers": [
+      "432 Hz",
+      "452 Hz",
+      "480 Hz",
+      "However loud the drummer agrees to"
+    ],
+    "explanation": "The ISO standardized A440 in 1955, though ensembles have varied widely over the centuries. Baroque pitch often sits near 415 Hz, about a semitone lower.",
+    "source_url": "https://en.wikipedia.org/wiki/A440_(pitch_standard)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0009",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Which electronic instrument, played without touching it, was invented by Leon Theremin in 1920?",
+    "correct_answer": "The theremin",
+    "incorrect_answers": [
+      "The synthesizer",
+      "The organ",
+      "The electric violin",
+      "Air guitar, finally taken seriously"
+    ],
+    "explanation": "Two antennas sense the player's hand positions: one controls pitch, the other volume. Soviet physicist Lev Termen built it while researching proximity sensors, and it remains the only instrument played without contact.",
+    "source_url": "https://en.wikipedia.org/wiki/Theremin",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0010",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Which Brazilian city gave birth to the bossa nova style in the late 1950s?",
+    "correct_answer": "Rio de Janeiro",
+    "incorrect_answers": [
+      "Sao Paulo",
+      "Salvador",
+      "Brasilia",
+      "Samba's annoyed cousin"
+    ],
+    "explanation": "Bossa nova arose as a relaxed offshoot of samba in Rio's beachside districts, with Joao Gilberto's hushed guitar and singing voice defining the style. The Girl from Ipanema carried it worldwide in 1964.",
+    "source_url": "https://en.wikipedia.org/wiki/Bossa_nova",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0011",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 2,
+    "question": "Which company introduced the Compact Cassette in 1963?",
+    "correct_answer": "Philips",
+    "incorrect_answers": [
+      "Sony",
+      "Grundig",
+      "RCA",
+      "Two very small spools with a dream"
+    ],
+    "explanation": "Philips unveiled the Compact Cassette at the Berlin Radio Show in August 1963 and freely licensed the format from 1966, which helped it become the worldwide standard. It had originally been designed for dictation.",
+    "source_url": "https://en.wikipedia.org/wiki/Compact_Cassette",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "musi-0012",
+    "lang": "en",
+    "category": "music",
+    "difficulty": 3,
+    "question": "Which Nashville radio show, launched in 1925, became the longest-running radio broadcast in US history?",
+    "correct_answer": "The Grand Ole Opry",
+    "incorrect_answers": [
+      "The Louisiana Hayride",
+      "The Midnight Jamboree",
+      "The Wheeling Jamboree",
+      "Nashville's longest queue"
+    ],
+    "explanation": "George D. Hay founded the WSM Barn Dance in November 1925; it was renamed the Grand Ole Opry in 1927. It still airs weekly on WSM and made country music a national industry.",
+    "source_url": "https://en.wikipedia.org/wiki/Grand_Ole_Opry",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0001",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Which fruit is the main ingredient of guacamole?",
+    "correct_answer": "Avocado",
+    "incorrect_answers": [
+      "Cucumber",
+      "Tomatillo",
+      "Lime",
+      "A very patient frog"
+    ],
+    "explanation": "Guacamole comes from Classical Nahuatl ahuacamolli, literally avocado sauce. Avocados were domesticated in Mesoamerica by about 5000 BCE.",
+    "source_url": "https://en.wikipedia.org/wiki/Guacamole",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0002",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Which country is the traditional home of the paella?",
+    "correct_answer": "Spain",
+    "incorrect_answers": [
+      "Italy",
+      "Portugal",
+      "Mexico",
+      "A rice field with ambitions"
+    ],
+    "explanation": "Paella originated in the Valencia region, taking its name from the wide pan it cooks in. The classic Valencian version combines rice, rabbit, chicken and saffron.",
+    "source_url": "https://en.wikipedia.org/wiki/Paella",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0003",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Which Korean side dish of salted and fermented vegetables, most often napa cabbage, is served at nearly every Korean meal?",
+    "correct_answer": "Kimchi",
+    "incorrect_answers": [
+      "Miso",
+      "Sauerkraut",
+      "Tsukemono",
+      "A very loud salad"
+    ],
+    "explanation": "Kimchi is lacto-fermented in brine, which gives it its acidity and long keeping qualities. Napa cabbage only arrived in Korea at the end of the 19th century; earlier versions used other vegetables.",
+    "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0004",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "What is tofu made from?",
+    "correct_answer": "Soy milk",
+    "incorrect_answers": [
+      "Rice milk",
+      "Coconut milk",
+      "Almond milk",
+      "A very determined cheese-adjacent substance"
+    ],
+    "explanation": "Tofu is made by coagulating soy milk and pressing the curds into blocks. It originated in China and has been eaten there for over 2,000 years.",
+    "source_url": "https://en.wikipedia.org/wiki/Tofu",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0005",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Which alcoholic drink is sake, the specialty of Japanese breweries, made from?",
+    "correct_answer": "Rice",
+    "incorrect_answers": [
+      "Barley",
+      "Wheat",
+      "Grapes",
+      "Rainwater, on principle"
+    ],
+    "explanation": "Sake is brewed by fermenting polished rice with koji mold and water, more like a beer process than wine. The milled rice ratio is a key quality marker.",
+    "source_url": "https://en.wikipedia.org/wiki/Sake",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0006",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 1,
+    "question": "Which espresso-based drink is traditionally prepared with steamed milk and a layer of milk foam?",
+    "correct_answer": "Cappuccino",
+    "incorrect_answers": [
+      "Americano",
+      "Ristretto",
+      "Macchiato",
+      "A latte that overslept"
+    ],
+    "explanation": "The cappuccino layers espresso, steamed milk and foam in roughly equal parts. The name comes from the Capuchin friars, whose habit colour it recalls.",
+    "source_url": "https://en.wikipedia.org/wiki/Cappuccino",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0007",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Which spice, derived from the stigmas of a crocus flower, is typically sold by the gram because it takes roughly 150 flowers to yield a single gram?",
+    "correct_answer": "Saffron",
+    "incorrect_answers": [
+      "Cardamom",
+      "Vanilla",
+      "Turmeric",
+      "Powdered sunlight"
+    ],
+    "explanation": "Each Crocus sativus flower yields only about 7 mg of dried stigmas, hand-picked at dawn. Wholesale prices range from 1,100 to 11,000 dollars per kilogram, making saffron among the costliest spices by weight.",
+    "source_url": "https://en.wikipedia.org/wiki/Saffron",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0008",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Which French flavour base combines diced onions, carrots and celery cooked slowly in butter without browning?",
+    "correct_answer": "Mirepoix",
+    "incorrect_answers": [
+      "Roux",
+      "Soffritto",
+      "Bouquet garni",
+      "The vegetable section's opening act"
+    ],
+    "explanation": "Mirepoix is named for the duc de Levis-Mirepoix, whose cook is credited with fixing the recipe in the 18th century. The classic ratio is two parts onion to one each of carrot and celery.",
+    "source_url": "https://en.wikipedia.org/wiki/Mirepoix_(cuisine)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0009",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "In 1943, Ignacio Anaya improvised which dish for hungry customers at the Victory Club restaurant in Piedras Negras, Mexico?",
+    "correct_answer": "Nachos",
+    "incorrect_answers": [
+      "Burritos",
+      "Quesadillas",
+      "Tacos al pastor",
+      "A very brave plate of crisps"
+    ],
+    "explanation": "The maître d, nicknamed Nacho, layered fried tortillas with cheese and jalapenos when the kitchen had closed. The dish took his name and spread north from the border town.",
+    "source_url": "https://en.wikipedia.org/wiki/Nachos",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0010",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Which chewy ring-shaped bread is briefly boiled before being baked?",
+    "correct_answer": "Bagel",
+    "incorrect_answers": [
+      "Pretzel",
+      "Brioche",
+      "Croissant",
+      "A doughnut that missed the fair"
+    ],
+    "explanation": "Boiling sets the crust before baking, giving the bagel its dense, chewy interior. The roll originated in the Jewish communities of Poland and reached New York with emigrants.",
+    "source_url": "https://en.wikipedia.org/wiki/Bagel",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0011",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 2,
+    "question": "Which adjective describes pasta cooked until firm to the bite?",
+    "correct_answer": "Al dente",
+    "incorrect_answers": [
+      "Al fresco",
+      "Antipasto",
+      "Affogato",
+      "Al dented, from a dropped pot"
+    ],
+    "explanation": "Al dente means literally to the tooth in Italian. Cooking pasta this way leaves a firm centre, which also lowers its glycaemic impact compared with soft-cooked pasta.",
+    "source_url": "https://en.wikipedia.org/wiki/Al_dente",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "food-0012",
+    "lang": "en",
+    "category": "food-drink",
+    "difficulty": 3,
+    "question": "Which dish of eggs poached in a spiced tomato-and-pepper sauce takes its name from the Maghreb?",
+    "correct_answer": "Shakshouka",
+    "incorrect_answers": [
+      "Ratatouille",
+      "Menemen",
+      "Huevos rancheros",
+      "An omelette that went to art school"
+    ],
+    "explanation": "Shakshouka comes from the Arabic for a mixture, and the Maghrebi version pairs eggs with tomatoes, peppers, cumin and paprika. It spread across North Africa and the Middle East.",
+    "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0001",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "What does the acronym WWW stand for?",
+    "correct_answer": "World Wide Web",
+    "incorrect_answers": [
+      "World Web Wide",
+      "Wide World Web",
+      "Wireless Web Worldwide",
+      "Three very confused typists"
+    ],
+    "explanation": "Tim Berners-Lee invented the Web at CERN in 1989 as a universal linked information system, and it opened to the public in 1993. The Web runs on the internet but is not the same thing as it.",
+    "source_url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0002",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Which layout does the standard English keyboard take its name from?",
+    "correct_answer": "QWERTY",
+    "incorrect_answers": [
+      "AZERTY",
+      "Dvorak",
+      "Colemak",
+      "Keyboard, arranged alphabetically"
+    ],
+    "explanation": "The name spells out the first six keys on the top letter row. The layout appeared on the Sholes and Glidden typewriter sold by Remington from 1874 and remains the de facto standard on computers.",
+    "source_url": "https://en.wikipedia.org/wiki/QWERTY",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0003",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Which company developed the QR code in 1994 to track car parts?",
+    "correct_answer": "Denso",
+    "incorrect_answers": [
+      "Sony",
+      "Toyota itself, not a supplier",
+      "Panasonic",
+      "A barcode that went to the gym"
+    ],
+    "explanation": "Masahiro Hara of Denso Wave invented the quick-response code for labelling automobile parts. Its error correction made it robust, and it later conquered payments and tickets.",
+    "source_url": "https://en.wikipedia.org/wiki/QR_code",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0004",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "Who demonstrated the first computer mouse, a wooden shell on two wheels, in 1968?",
+    "correct_answer": "Douglas Engelbart",
+    "incorrect_answers": [
+      "Alan Turing",
+      "Bill English",
+      "Douglas Fairbanks",
+      "A very clever rodent"
+    ],
+    "explanation": "Engelbart unveiled the mouse during his Mother of All Demos in San Francisco. Bill English built the prototype in 1964 based on Engelbart's sketch.",
+    "source_url": "https://en.wikipedia.org/wiki/Computer_mouse",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0005",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "How many satellites make up the full GPS constellation?",
+    "correct_answer": "24",
+    "incorrect_answers": [
+      "18",
+      "31",
+      "42",
+      "One very dizzy satellite"
+    ],
+    "explanation": "The US Department of Defense designed the constellation in 1973, and the full 24-satellite set became operational in 1993. More than 31 craft now fly, improving coverage.",
+    "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0006",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 1,
+    "question": "What does a firewall do in a computer network?",
+    "correct_answer": "Filters traffic between networks",
+    "incorrect_answers": [
+      "Cools the processors",
+      "Stores backup copies",
+      "Speeds up downloads",
+      "A very persuasive door, loudly locked"
+    ],
+    "explanation": "A firewall monitors and controls incoming and outgoing traffic against configurable rules, forming a barrier between trusted and untrusted networks. The name borrows from building firewalls that stop a fire spreading.",
+    "source_url": "https://en.wikipedia.org/wiki/Firewall_(computing)",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0007",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Which microprocessor, launched in 1971, is generally counted as the first commercially available one?",
+    "correct_answer": "Intel 4004",
+    "incorrect_answers": [
+      "Intel 8080",
+      "Motorola 6800",
+      "Zilog Z80",
+      "Four potatoes in a row"
+    ],
+    "explanation": "The 4004 was designed by Federico Faggin and originally built for the Busicom calculator. Its complete CPU-on-a-chip design opened the road to personal computing.",
+    "source_url": "https://en.wikipedia.org/wiki/Microprocessor",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0008",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Which wireless technology takes its name from a 10th-century Danish king?",
+    "correct_answer": "Bluetooth",
+    "incorrect_answers": [
+      "Wi-Fi",
+      "Zigbee",
+      "NFC",
+      "A very cold pirate"
+    ],
+    "explanation": "Intel engineer Jim Kardach proposed the codename after reading about Harald Bluetooth, who united Denmark and Norway. The runes of his runestone form the technology's logo.",
+    "source_url": "https://en.wikipedia.org/wiki/Bluetooth",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0009",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Which 1945 machine is usually credited as the first programmable, electronic, general-purpose digital computer?",
+    "correct_answer": "ENIAC",
+    "incorrect_answers": [
+      "Colossus",
+      "UNIVAC I",
+      "Zuse Z3",
+      "A very organised abacus"
+    ],
+    "explanation": "Completed in 1945 at the University of Pennsylvania, ENIAC was the first machine to combine electronic speed, programmability and general purpose. Reprogramming it initially meant rewiring plugboards by hand.",
+    "source_url": "https://en.wikipedia.org/wiki/ENIAC",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0010",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Which system, created by Paul Mockapetris in 1983, translates domain names into IP addresses?",
+    "correct_answer": "The Domain Name System",
+    "incorrect_answers": [
+      "The hypertext transfer protocol",
+      "The transmission control protocol",
+      "The file transfer protocol",
+      "An extremely patient phone directory"
+    ],
+    "explanation": "Mockapetris designed the DNS at USC's Information Sciences Institute to replace a single hosts file. The first IETF specifications appeared as RFC 882 and 883 in November 1983.",
+    "source_url": "https://en.wikipedia.org/wiki/Domain_Name_System",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0011",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 2,
+    "question": "Which document format did Adobe release in 1993, standardizing later as ISO 32000?",
+    "correct_answer": "PDF",
+    "incorrect_answers": [
+      "DOC",
+      "RTF",
+      "PostScript",
+      "A paper hurricane that behaves"
+    ],
+    "explanation": "The Portable Document Format presents text and images independently of hardware and software, building on PostScript. Adobe made the specification open in 2008, when ISO standardization followed.",
+    "source_url": "https://en.wikipedia.org/wiki/PDF",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
+  },
+  {
+    "id": "tech-0012",
+    "lang": "en",
+    "category": "technology",
+    "difficulty": 3,
+    "question": "Which test, proposed by Alan Turing in 1950, judges a machine by whether a human evaluator can tell it apart from a person in conversation?",
+    "correct_answer": "The Turing test",
+    "incorrect_answers": [
+      "The Lovelace test",
+      "The imitation algorithm",
+      "The Turing machine",
+      "Spot the laptop in a tutu"
+    ],
+    "explanation": "Turing framed it in his paper Computing Machinery and Intelligence as an imitation game. It remains a cultural touchstone, though modern AI research treats it as a benchmark rather than a goal.",
+    "source_url": "https://en.wikipedia.org/wiki/Turing_test",
+    "as_of": null,
+    "origin": "claude",
+    "reviewed": true
   }
 ]
