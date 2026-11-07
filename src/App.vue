@@ -21,8 +21,10 @@
       <transition name="fade" mode="out-in">
         <Intro v-if="store.currentView === 'app-intro'" />
         <GameBoard v-else-if="store.currentView === 'app-game-board'" />
+
       </transition>
 
+    <GameOverModal v-if="store.isGameOver" />
     </main>
     <UpdatePrompt v-if="promptShow" @dismiss="promptDismiss" @refresh="onRefresh" />
   </div>
