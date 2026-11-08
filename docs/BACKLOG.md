@@ -23,13 +23,6 @@ Open work only. Finished work lives in `CHANGELOG.md` and git history; the roadm
 ## Custom deck paste/upload (idea — URL half shipped)
 - Shipped: `?bank=` URLs (remote, relative, inline base64) + the About quick-launch list — see CHANGELOG "Custom question banks". A deck that can't live at a URL still has no path in.
 - Remaining idea: paste or file-upload a `questions/*.json` on the Starter for teacher-handout JSON files.
-- Open questions: surface the `ValidationIssue` list for rejected items (custom-bank loading currently drops and logs them silently), and confirm whether custom-category questions fire `question_shown` analytics. (Seen-pool sharing is decided: custom banks share the pool and recency.)
-
-## Flag-this-question button (idea)
-- Button on the reveal screen (`Questions.vue`) opens a prefilled GitHub issue: question ID, category, lang, and a reason (wrong answer / stale `as_of` / dead `source_url` / bad explanation).
-- Crowdsources the question QA that currently depends on owner playthroughs (the `fix(questions): repair N defects` commit pattern).
-- Repo choice to make: issue templates vs. a `?title=&body=` URL builder; users without GitHub copy the prefilled report instead.
-
 
 ## Test coverage gaps (2026-11-07, from the game-over modal regression)
 The modal bug (render line dropped from `App.vue` in 0762018, no test caught it) exposed a structural gap: the suite has exactly one component-mount test (`app-game-over.test.ts`, solo happy path). Nothing mounts App at intro, in multiplayer, or mid-reveal, so every conditional render branch is dark. Audit from 2026-11-07 (three read-only passes: render wiring, store actions/getters, persistence/locales/analytics flows):
