@@ -11,7 +11,7 @@
       "Une gouvernance partagée",
       "Le stagiaire s’en chargera"
     ],
-    "explanation": "Pour Kraatz et Block (2010), l’organisation répond à plusieurs sphères institutionnelles — réglementaire, marchande, citoyenne — comme à autant de jeux aux règles différentes, et les explications classiques de la légitimité y restent nécessaires mais non suffisantes. Dans le dossier R-4307-2025, la Régie a entendu une douzaine de groupes avant de fixer une hausse moyenne de 3,2 %."
+    "explanation": "Pour Kraatz et Block (2010), l’organisation répond à plusieurs sphères institutionnelles — réglementaire, marchande, citoyenne — comme à autant de jeux aux règles différentes, et les explications classiques de la légitimité y restent nécessaires mais insuffisantes. Dans le dossier R-4307-2025, la Régie a entendu une douzaine de groupes avant de fixer une hausse moyenne de 3,2 %."
   },
   {
     "id": "pluralisme-0002",
@@ -31,7 +31,7 @@
     "id": "pluralisme-0003",
     "lang": "fr",
     "difficulty": 1,
-    "question": "À l’UQAM, autour d’un même programme : le comité de programme veut revoir le cheminement, les professeurs défendent leur recherche, l’association étudiante ses membres et la direction son budget — chacun assez puissant pour rendre ses buts légitimes. Comment nommer cette source de pluralisme ?",
+    "question": "À l’UQAM, autour d’un même programme : le comité de programme veut revoir le cheminement, les professeurs défendent leur recherche, l’association étudiante défend ses membres et la direction son budget — chacun assez puissant pour rendre ses buts légitimes. Comment nommer cette source de pluralisme ?",
     "correct_answer": "Le pluralisme motivé de l’intérieur",
     "incorrect_answers": [
       "Le pluralisme motivé de l’extérieur",
@@ -45,29 +45,29 @@
     "id": "pluralisme-0004",
     "lang": "fr",
     "difficulty": 1,
-    "question": "À Montréal, Santropol Roulant nourrit chaque jour des personnes en perte d’autonomie et fait aussi payer un service traiteur. Qu’est-ce que cela révèle sur son statut d’organisation ?",
-    "correct_answer": "C’est une organisation hybride : mission sociale et revenus commerciaux",
+    "question": "À Montréal, Santropol Roulant nourrit chaque jour des personnes en perte d’autonomie et fait aussi payer un service traiteur. Qu’est-ce que cela révèle sur la nature de cette organisation ?",
+    "correct_answer": "Une organisation hybride : mission sociale et revenus commerciaux",
     "incorrect_answers": [
       "Une organisation qui embauche à la fois du personnel syndiqué et non syndiqué",
       "Une organisation qui appartient à la fois à l’État et à des actionnaires privés",
       "Une organisation qui refuse tout financement public pour préserver son indépendance",
       "Mi-castor, mi-banque"
     ],
-    "explanation": "L’organisation hybride (Battilana et al., 2012) combine mission sociale et revenus commerciaux : sur plus de 3 500 candidatures Echoing Green analysées avec Harvard, près de la moitié des projets de 2010-2011 en étaient. Mais l’équilibre est fragile : la dérive de mission guette quand les profits prennent le dessus sur le bien social."
+    "explanation": "L’organisation hybride (Battilana et al., 2012) combine mission sociale et revenus commerciaux : sur plus de 3 500 candidatures à Echoing Green analysées avec Harvard, près de la moitié des projets de 2010-2011 en étaient. Mais l’équilibre est fragile : la dérive de mission guette quand les profits prennent le dessus sur le bien social."
   },
   {
     "id": "pluralisme-0005",
     "lang": "fr",
     "difficulty": 1,
     "question": "Un collectif en ligne n’a ni membres officiels ni carte de membre. Qu’est-ce qui lui permet d’apparaître quand même comme un acteur organisé ?",
-    "correct_answer": "Des énoncés d’identité, proférés et validés au nom du collectif",
+    "correct_answer": "Des énoncés d’identité, émis et validés au nom du collectif",
     "incorrect_answers": [
       "Un porte-parole officiel tenu au secret",
       "Un communiqué de presse par semaine",
       "Des réclamations remplies en trois exemplaires",
       "Une assemblée générale annuelle"
     ],
-    "explanation": "Dobusch et Schoeneborn (2015) analysent Anonymous : sans frontières ni membres stables, son organisationnalité repose sur des identity claims qui se valident mutuellement. Codés sur deux opérations (Westboro, Facebook) parmi les 111 opérations recensées, ces 127 claims suffisent à inscrire le collectif dans le débat public."
+    "explanation": "Dobusch et Schoeneborn (2015) analysent Anonymous : sans frontières ni membres stables, son organisationnalité repose sur des identity claims (énoncés d’identité) qui se valident mutuellement. Codés sur deux opérations (Westboro, Facebook) parmi les 111 opérations recensées, ces 127 énoncés suffisent à inscrire le collectif dans le débat public."
   },
   {
     "id": "pluralisme-0006",
@@ -78,10 +78,10 @@
     "incorrect_answers": [
       "Le changement lui-même (moving)",
       "Le regel (refreezing)",
-      "La fluidification permanente",
+      "Les trois stades à la fois",
       "Le tiroir à glaçons"
     ],
-    "explanation": "Schreyögg et Sydow (2010) décrivent le rêve de l’organisation fluide — tout en dégel permanent, aucun projet jamais consolidé — puis objectent qu’elle perdrait l’essence même de l’organiser : sans regel, plus de frontières, de routines ni d’identité pour réduire la complexité."
+    "explanation": "Schreyögg et Sydow (2010) décrivent le rêve de l’organisation fluide — en dégel permanent, aucun projet jamais consolidé — puis objectent qu’elle perdrait l’essence même de l’organiser : sans regel, plus de frontières, de routines ni d’identité pour réduire la complexité."
   },
   {
     "id": "pluralisme-0007",
@@ -95,7 +95,7 @@
       "Une structure matricielle classique",
       "Une structure en papyrus, très écoresponsable"
     ],
-    "explanation": "Arezki, Keramidas et Soldo (2016) décrivent les festivals comme des adhocraties en management par projet : mobiliser collectivement des statuts très hétérogènes — salariés, intermittents, bénévoles, agents publics — est leur paradoxe central, entre éphémère de l’édition et récurrence de l’organisation."
+    "explanation": "Arezki, Keramidas et Soldo (2016) décrivent les festivals comme des adhocraties en management par projet : mobiliser collectivement des statuts très hétérogènes — salariés, intermittents du spectacle (le statut français), bénévoles, agents publics — est leur paradoxe central, entre l’éphémère de l’édition et la récurrence de l’organisation."
   },
   {
     "id": "pluralisme-0008",
@@ -109,7 +109,7 @@
       "La logique publique contre la logique scolaire",
       "Clowns contre trapézistes"
     ],
-    "explanation": "L’étude de cas d’Arezki et al. (2016) suit un jeune festival public d’arts numériques du sud de la France où la collectivité territoriale et le collectif d’artistes se sont affrontés au point de vider l’action de son sens et de frôler l’annulation. Benghozi résume cette friction des industries culturelles : l’art et la culture d’un côté, le management et le marché de l’autre."
+    "explanation": "L’étude de cas d’Arezki et al. (2016) suit un jeune festival public d’arts numériques du sud de la France où la collectivité territoriale (la municipalité) et le collectif d’artistes se sont affrontés au point de vider l’action de son sens et de frôler l’annulation. Benghozi résume cette friction des industries culturelles : l’art et la culture d’un côté, le management et le marché de l’autre."
   },
   {
     "id": "pluralisme-0009",
@@ -120,7 +120,7 @@
     "incorrect_answers": [
       "La diversité est une réponse normative ; le pluralisme est un fait démographique",
       "La diversité relève des États seuls ; le pluralisme, des individus",
-      "La diversité se compte au recensement ; le pluralisme se décrète au journal officiel",
+      "La diversité se compte au recensement ; le pluralisme se décrète à la Gazette officielle",
       "Le déneigement municipal"
     ],
     "explanation": "King (2017) reprend la définition du Centre mondial du pluralisme, établi à Ottawa : le pluralisme est un ensemble d’intentions et de pratiques qui institutionnalisent la reconnaissance de la différence comme culture civique — un processus, non un produit. Reconnaître la diversité n’en est que le précurseur nécessaire."
@@ -137,16 +137,16 @@
       "Marchand général à Lévis",
       "Pigeon voyageur, carrière écourtée par la grève"
     ],
-    "explanation": "Sur sa chaise de sténographe de la Chambre des communes, il entend en 1897 les révélations sur l’usure qui déclenchent tout ; le modèle européen, il l’importe par milliers de lettres, sans jamais traverser l’Atlantique. À sa mort en 1920 : 220 caisses fondées et 30 000 membres (Barmeyer et Rodrigue, 2023). En décembre 2025, le Mouvement fêtait les 125 ans de la caisse de Lévis."
+    "explanation": "Sur sa chaise de sténographe de la Chambre des communes, Desjardins entend en 1897 les révélations sur l’usure, qui déclenchent tout ; il importe le modèle européen par milliers de lettres, sans jamais traverser l’Atlantique. À sa mort en 1920 : 220 caisses fondées et 30 000 membres (Barmeyer et Rodrigue, 2023). En décembre 2025, le Mouvement fêtait les 125 ans de la caisse de Lévis."
   },
   {
     "id": "pluralisme-0011",
     "lang": "fr",
     "difficulty": 1,
     "question": "Le modèle de banque coopérative européenne s’est implanté au Québec sans que son importateur ne visite jamais l’Europe : il a écrit des milliers de lettres, questionnaire en main. Quelle stratégie de transfert interculturel cela illustre-t-il ?",
-    "correct_answer": "Une stratégie pull (de traction)",
+    "correct_answer": "Une stratégie pull",
     "incorrect_answers": [
-      "Une stratégie push (de poussée)",
+      "Une stratégie push",
       "Une stratégie pivot",
       "Une stratégie de contournement",
       "Par télépathie transatlantique"
@@ -157,7 +157,7 @@
     "id": "pluralisme-0012",
     "lang": "fr",
     "difficulty": 1,
-    "question": "Stage dans un OSBL montréalais : le commanditaire veut des données d’impact, mais sans imposer les mêmes indicateurs à chaque organisme. L’approche canadienne qui réussit ce tour de force, le Common Approach — retenu pour la mesure d’impact du Fonds de finance sociale fédéral — repose sur combien de normes ?",
+    "question": "Stage dans un OSBL montréalais : le financeur veut des données d’impact, mais sans imposer les mêmes indicateurs à chaque organisme. L’approche canadienne qui réussit ce tour de force, le Common Approach — retenu pour la mesure d’impact du Fonds de finance sociale fédéral — repose sur combien de normes ?",
     "correct_answer": "Quatre",
     "incorrect_answers": [
       "Deux",
@@ -165,27 +165,27 @@
       "Dix-sept, comme les ODD",
       "Une, mais interminable"
     ],
-    "explanation": "Ruff et al. (2022) détaillent les quatre normes : le Common Framework agrège des indicateurs semblables sans les uniformiser, le Common Impact Data Standard les rend lisibles par les logiciels, les Common Foundations fixent cinq pratiques essentielles et le Common Form identifie l’organisme. Leur pari tient à l’effet téléphone : l’approche ne sert que si vos partenaires l’adoptent aussi."
+    "explanation": "Ruff et al. (2022) détaillent les quatre normes : le Common Framework agrège des indicateurs semblables sans les uniformiser, le Common Impact Data Standard les rend lisibles par les logiciels, les Common Foundations fixent cinq pratiques essentielles et le Common Form identifie l’organisme. Leur credo : chacun mesure ce qui compte pour lui, et les données restent agrégeables entre partenaires."
   },
   {
     "id": "pluralisme-0013",
     "lang": "fr",
     "difficulty": 1,
-    "question": "En stage, tu découvres le portail de rapport qu’exige ton financeur : navigation laborieuse, zéro consultation depuis des mois. Selon Ruff et al. (2022), qu’est-ce qui explique ce flop ?",
-    "correct_answer": "La valeur d’une norme tient aux qualités de sa communauté d’utilisateurs",
+    "question": "En stage, tu découvres le portail de reddition de comptes qu’exige ton financeur : navigation laborieuse, zéro consultation depuis des mois. Selon Ruff et al. (2022), qu’est-ce qui explique ce flop ?",
+    "correct_answer": "La valeur d’une norme tient à la qualité de sa communauté d’utilisateurs",
     "incorrect_answers": [
       "La valeur d’une norme tient à la qualité de sa documentation",
       "Une norme ne fonctionne que si ses règles sont strictes et uniformes",
       "Une norme ne vaut que si un organisme officiel l’impose",
       "Le logo doré du comité"
     ],
-    "explanation": "C’est le titre d’une section de l’article de Ruff et al. (2022), l’équipe canadienne derrière la démarche Common Approach : une norme vit par le raffinement continu qu’entretient sa communauté. L’analogie du téléphone fait le reste — un standard de partage ne sert que si vos partenaires l’adoptent aussi."
+    "explanation": "C’est le titre d’une section de l’article de Ruff et al. (2022), l’équipe canadienne derrière la démarche Common Approach : une norme vit par le raffinement continu qu’entretient sa communauté. L’analogie du téléphone fait le reste — une norme de partage ne sert que si vos partenaires l’adoptent aussi."
   },
   {
     "id": "pluralisme-0014",
     "lang": "fr",
     "difficulty": 1,
-    "question": "Dans une caisse Desjardins, les membres élisent leur conseil d’administration et co-orientent l’institution : la seule domination ne suffit pas à gouverner un tel pluralisme. Face au « power over », quel pouvoir complémentaire propose Mary Parker Follett ?",
+    "question": "Dans une caisse Desjardins, les membres élisent leur conseil d’administration et orientent collectivement l’institution : la seule domination ne suffit pas à gouverner un tel pluralisme. Face au « power over », quel pouvoir complémentaire propose Mary Parker Follett ?",
     "correct_answer": "Le « power with » — la capacité d’agir de concert",
     "incorrect_answers": [
       "Le « power through »",
@@ -193,7 +193,7 @@
       "Le « power without »",
       "Power nap en réunion"
     ],
-    "explanation": "Mary Parker Follett distingue le pouvoir sur (domination) du pouvoir avec (agir de concert) : sans « power with », pas de co-gouvernance durable. Kraatz et Block (2010) y voient la clé d’une gouvernance pluraliste, dans l’esprit du « genius of the and » de Collins et Porras contre la « tyrannie du ou »."
+    "explanation": "Mary Parker Follett distingue le pouvoir sur (domination) du pouvoir avec (agir de concert) : sans ce « power with », pas de co-gouvernance durable. Kraatz et Block (2010) y voient la clé d’une gouvernance pluraliste, dans l’esprit du « genius of the and » de Collins et Porras contre la « tyranny of the or »."
   },
   {
     "id": "pluralisme-0015",
@@ -207,7 +207,7 @@
       "Parce que des règles contraignantes y forcent l’accord de tous",
       "De jolies photos de groupe"
     ],
-    "explanation": "Brès, Raufflet et Boghossian (2018) ouvrent leur revue sur la genèse d’ISO 26000 : six catégories d’acteurs autour d’une même table, la plus vaste concertation multi-parties prenantes de l’histoire de l’ISO. Publiée le 1er novembre 2010, la norme a été confirmée sans modification lors de son réexamen de janvier 2025."
+    "explanation": "Brès, Raufflet et Boghossian (2018) ouvrent leur revue sur la genèse d’ISO 26000 : six catégories d’acteurs autour d’une même table, la plus vaste concertation multipartite de l’histoire de l’ISO. Publiée le 1er novembre 2010, la norme a été confirmée sans modification lors de son réexamen de janvier 2025."
   },
   {
     "id": "pluralisme-0016",
@@ -227,7 +227,7 @@
     "id": "pluralisme-0017",
     "lang": "fr",
     "difficulty": 2,
-    "question": "Cas d’école du pluralisme organisationnel, la norme ISO 26000 de responsabilité sociétale est née d’un accord lui aussi hors norme. Lequel ?",
+    "question": "Cas d’école du pluralisme organisationnel, la norme ISO 26000 sur la responsabilité sociétale est née d’un accord lui aussi hors norme. Lequel ?",
     "correct_answer": "Un accord entre plus de 450 experts de 99 pays, en cinq ans",
     "incorrect_answers": [
       "Un accord entre 150 experts de 40 pays, en deux ans",
@@ -235,7 +235,7 @@
       "Un accord entre 300 experts de 60 pays, en sept ans",
       "Trois experts et un chat"
     ],
-    "explanation": "Le WGSR, plus vaste groupe de travail de l’histoire d’ISO, réunissait six catégories d’intervenants (industrie, gouvernements, travailleurs, consommateurs, ONG, chercheurs) et 42 organisations internationales, sous coprésidence brésilienne et suédoise. Pour Brès et al. (2018), le pluralisme y devient une méthode de travail : la délibération remplace l’autorité hiérarchique."
+    "explanation": "Le GT RS, plus vaste groupe de travail de l’histoire d’ISO, réunissait six catégories d’intervenants (industrie, gouvernements, travailleurs, consommateurs, ONG, chercheurs) et 42 organisations internationales, sous coprésidence brésilienne et suédoise. Pour Brès et al. (2018), le pluralisme y devient une méthode de travail : la délibération remplace l’autorité hiérarchique."
   },
   {
     "id": "pluralisme-0018",
@@ -255,7 +255,7 @@
     "id": "pluralisme-0019",
     "lang": "fr",
     "difficulty": 2,
-    "question": "Les communiqués contradictoires d’un collectif de hackers n’ont rien tranché sur qui parle vraiment en son nom. Puis l’un d’eux défigure en direct, sous les yeux du public, le site web de l’organisation visée. Quel type d’acte de parole cela illustre-t-il ?",
+    "question": "Les communiqués contradictoires d’un collectif de hackers n’ont rien tranché sur qui parle vraiment en son nom. Puis, sous les yeux du public, l’un d’eux défigure en direct le site web de l’organisation visée. Quel type d’acte de parole cela illustre-t-il ?",
     "correct_answer": "Un déclaratif : il change la réalité en l’énonçant",
     "incorrect_answers": [
       "Un assertif : il affirme une vérité déjà établie",
@@ -263,20 +263,20 @@
       "Une menace : elle ne fait qu’annoncer",
       "Un post-it sur le frigo"
     ],
-    "explanation": "Chez Anonymous (Dobusch et Schoeneborn, 2015), des dizaines d’assertifs contradictoires n’avaient rien tranché ; seul ce geste doté de matérialité — le défacement en direct du site de la Westboro Baptist Church durant l’entrevue de David Pakman en 2011 — a authentifié qui parle au nom du collectif, comme un maire marie un couple en l’énonçant."
+    "explanation": "Chez Anonymous (Dobusch et Schoeneborn, 2015), des dizaines d’assertifs contradictoires n’avaient rien tranché ; seul ce geste doté de matérialité — le défacement en direct du site de la Westboro Baptist Church durant l’entrevue de David Pakman en 2011 — a authentifié qui parle au nom du collectif, comme un maire marie un couple en énonçant la formule."
   },
   {
     "id": "pluralisme-0020",
     "lang": "fr",
     "difficulty": 2,
-    "question": "Une jeune entreprise d’IA à Montréal crée un « lab » où explorer sans frein, pendant que les unités d’opérations doivent optimiser chaque cycle. Pourquoi cette ambidexétrie organisationnelle, coqueluche de l’ère des labs, est-elle jugée insuffisante face à la fluidité ?",
+    "question": "Une jeune entreprise d’IA à Montréal crée un « lab » où explorer sans frein, pendant que les unités opérationnelles doivent optimiser chaque cycle. Pourquoi cette ambidextrie organisationnelle, coqueluche de l’ère des labs, est-elle jugée insuffisante face à la fluidité ?",
     "correct_answer": "Parce que la séparation crée des interfaces rigides et des coûts de coordination croissants",
     "incorrect_answers": [
-      "Parce que les unités d’opérations finissent par absorber le lab",
+      "Parce que les unités opérationnelles finissent par absorber le lab",
       "Parce que les deux logiques entrent en concurrence pour les mêmes talents",
       "Parce qu’elle double les coûts fixes sans garantie d’innovation",
       "Deux cerveaux requis, stock limité"
     ],
-    "explanation": "Duncan (1976), puis O’Reilly et Tushman, ont fait de l’ambidexétrie la réponse classique : des unités distinctes pour explorer et pour exploiter. Schreyögg et Sydow (2010) lui préfèrent un équilibrage réflexif de second ordre, incluant même le « non-apprentissage » délibéré — un art que les labs d’IA d’aujourd’hui pratiquent à leurs dépens."
+    "explanation": "Duncan (1976), puis O’Reilly et Tushman, ont fait de l’ambidextrie la réponse classique : des unités distinctes pour explorer et pour exploiter. Schreyögg et Sydow (2010) lui préfèrent un équilibrage réflexif des processus opposés, incluant même le « non-apprentissage » délibéré — un art que les labs d’IA d’aujourd’hui pratiquent à leurs dépens."
   }
 ]
