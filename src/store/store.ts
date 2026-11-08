@@ -7,6 +7,7 @@ import { setLocale, t } from '../locales'
 export interface Choice {
   text: string
   answer: boolean
+  letter: 'A' | 'B' | 'C' | 'D' | 'E'
   classes: { correct: boolean; incorrect: boolean }
 }
 
@@ -93,21 +94,37 @@ export interface SavedGame {
   poolReset: boolean
 }
 
-// Fisher-Yates shuffle
-function shuffle<T>(items: T[]): T[] {
+// Seeded Fisher-Yates: same question id → same choice order in every instance,
+// so the correct answer's letter (A–E) is stable across players, devices and
+// locales (fr ids normalize to their en pairing by dropping "-fr"). Rotation
+// across questions comes from the id-hash seed, not from Math.random.
+function seededShuffle<T>(items: T[], seedText: string): T[] {
+  // FNV-1a folds the seed text to a starting state…
+  let s = 0x811c9dc5
+  for (let i = 0; i < seedText.length; i++) {
+    s ^= seedText.charCodeAt(i)
+    s = Math.imul(s, 0x01000193)
+  }
+  s ^= s >>> 16
+  s = Math.imul(s, 0x7feb352d)
+  s ^= s >>> 15
+  s = Math.imul(s, 0x846ca68b)
+  s ^= s >>> 16
+  // …and mulberry32 drives the draws.
+  const next = () => {
+    s = (s + 0x6d2b79f5) | 0
+    let t = Math.imul(s ^ (s >>> 15), 1 | s)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
   const arr = [...items]
-  let i = arr.length
-  let temp: T
-  let rand: number
-  while (0 !== i) {
-    rand = Math.floor(Math.random() * i)
-    i -= 1
-    temp = arr[i]
-    arr[i] = arr[rand]
-    arr[rand] = temp
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(next() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
   }
   return arr
 }
+const LETTERS = ['A', 'B', 'C', 'D', 'E'] as const
 
 // Saved player names from localStorage, wrapped so the game still works when
 // storage is unavailable (private mode, quota). Missing names fall back to the
@@ -533,17 +550,20 @@ export const useGameStore = defineStore('game', {
       const { questions, poolReset } = drawQuestions(this.setup)
       this.poolReset = poolReset
       this.questions = questions.map((q) => {
-        const choices: Choice[] = q.incorrect_answers.map((item) => ({
-          text: item,
-          answer: false,
+        // Seed on the id: paired en/fr translations (id vs id with "-fr-")
+        // produce the same order, so the correct answer keeps its letter
+        // in both locales.
+        const ordered = seededShuffle(
+          [q.correct_answer, ...q.incorrect_answers],
+          q.lang === 'fr' ? q.id.replace('-fr-', '-') : q.id,
+        )
+        const choices: Choice[] = ordered.map((text, index) => ({
+          text,
+          answer: text === q.correct_answer,
+          letter: LETTERS[index],
           classes: { correct: false, incorrect: false },
         }))
-        choices.push({
-          text: q.correct_answer,
-          answer: true,
-          classes: { correct: false, incorrect: false },
-        })
-        return { ...q, choices: shuffle(choices) }
+        return { ...q, choices }
       })
       this.currentView = this.questions.length > 0 ? 'app-game-board' : 'app-intro'
       this.round = 0

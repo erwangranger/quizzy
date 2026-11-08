@@ -12,7 +12,8 @@
         @click="answer(choice)"
         :disabled="store.isPaused"
         :class="choice.classes">
-          {{ choice.text }}
+          <span class="letter">{{ choice.letter }}</span>
+          <span class="choice-text">{{ choice.text }}</span>
           <!-- Verdict marks + player names at the reveal (scheme 3):
                drawn ✓ on the correct answer, ✗ on picked wrong answers,
                each participant's name stacked on the pill they chose -->
@@ -41,6 +42,19 @@
         <p class="reveal-explanation">{{ currentQuestion.explanation }}</p>
         <span v-if="currentQuestion.as_of" class="as-of-badge">{{ t('reveal.asOf', { date: formatDate(currentQuestion.as_of) }) }}</span>
         <a v-if="currentQuestion.source_url" :href="currentQuestion.source_url" target="_blank" rel="noopener noreferrer" class="source-link">{{ t('reveal.source') }}</a>
+        <!-- Flag this question: reason chips open a prefilled GitHub issue;
+             the tap that opens the tray also copies the report to the
+             clipboard as a fallback for players without a GitHub account -->
+        <div class="flag">
+          <button v-if="!flagOpen" class="flag-btn" @click="openFlag">{{ t('questions.flag') }}</button>
+          <template v-else>
+            <p class="flag-lead">{{ t('flag.lead') }}</p>
+            <div class="flag-chips">
+              <button v-for="r in flagReasons" :key="r.key" class="flag-chip" @click="flagWith(r.key)">{{ r.label }}</button>
+            </div>
+            <p v-if="flagCopied" class="flag-copied" role="status">{{ t('flag.copied') }} 🚩</p>
+          </template>
+        </div>
         <!-- Quizmaster marks who was right -->
         <div v-if="store.mode === 'quizmaster'" class="marks">
           <p class="marks-label">{{ t('reveal.whoWasRight') }}</p>
@@ -79,9 +93,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useGameStore, type Choice } from '../store/store'
+import { computed, ref } from 'vue'
 import { t, categoryLabel, activeLocale } from '../locales'
+import { useGameStore, type Choice } from '../store/store'
+import { buildQuestionReport, clipboardText } from '../questionReport'
 
 const store = useGameStore()
 
@@ -129,8 +144,52 @@ function pickedWrong(choice: Choice) {
 // pass-and-play and solo after every player has answered.
 const showNext = computed(() => store.revealed)
 
+// Flag-this-question: the first tap copies the prefilled report to the
+// clipboard (fallback for players without GitHub) and opens the reason tray;
+// picking a reason opens the prefilled GitHub issue in a new tab.
+const flagOpen = ref(false)
+const flagCopied = ref(false)
+
+type FlagReason = 'wrongAnswer' | 'badExplanation' | 'stale' | 'deadSource'
+
+// Reason chips are conditional: a question with no as_of cannot be outdated
+// and no source_url cannot have a dead link.
+const flagReasons = computed<{ key: FlagReason; label: string }[]>(() => {
+  const q = currentQuestion.value
+  if (!q) return []
+  const keys: FlagReason[] = ['wrongAnswer', 'badExplanation']
+  if (q.as_of) keys.push('stale')
+  if (q.source_url) keys.push('deadSource')
+  return keys.map((key) => ({ key, label: t(`flag.${key}`) }))
+})
+
+function openFlag() {
+  const report = buildQuestionReport(currentQuestion.value!)
+  navigator.clipboard
+    .writeText(clipboardText(report))
+    .then(() => {
+      flagCopied.value = true
+    })
+    .catch(() => {})
+  flagOpen.value = true
+}
+
+function flagWith(key: FlagReason) {
+  const reason = flagReasons.value.find((r) => r.key === key)?.label
+  const report = buildQuestionReport(currentQuestion.value!, reason)
+  window.open(report.url, '_blank', 'noopener,noreferrer')
+  flagOpen.value = false
+  flagCopied.value = false
+}
+
+function resetFlag() {
+  flagOpen.value = false
+  flagCopied.value = false
+}
+
 // Score the round and move on
 function advance() {
+  resetFlag()
   store.pauseGame()
   store.next()
   // Close About menu if open
@@ -138,9 +197,9 @@ function advance() {
     store.aboutToggle()
   }
 }
-
 // Skip the round: no one answers or scores
 function skip() {
+  resetFlag()
   store.skipRound()
   // Close About menu if open
   if (store.aboutShow) {
@@ -150,6 +209,7 @@ function skip() {
 
 // Leave the game and return to the Starter screen
 function toMenu() {
+  resetFlag()
   store.resetGame()
   store.newGame()
   // Close About menu if open
@@ -223,6 +283,83 @@ h3 {
     color: $color-med;
 }
 
+
+// Flag this question: quiet action below the Source link. The .reveal scoped
+// bare-div card rule leaks onto child divs (see .foot/.tally), so .flag and
+// .flag-chips carry explicit resets.
+.flag {
+    margin: 0.5em 0 0;
+    padding: 0;
+    min-width: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.flag-lead {
+    font-size: 0.8em;
+    margin: 0.5em 0 0.25em;
+    color: $color-med;
+}
+
+.flag {
+    margin: 0.25em 0 0;
+}
+
+.flag-btn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: $color-white;
+    opacity: 0.6;
+    font-size: 0.7em;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.2em 0.4em;
+    cursor: pointer;
+    width: auto;
+    max-width: none;
+    min-height: 24px;
+}
+
+.flag-btn:hover {
+    opacity: 1;
+}
+
+.flag-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+// Small pill options in the vein of the quizmaster marks pills
+.flag-chip {
+    background-color: $color-alt-dark;
+    border: 1px solid $color-alt-med;
+    border-radius: 10px;
+    color: $color-white;
+    font-size: 0.8em;
+    margin: 0;
+    min-height: 44px;
+    padding: 0.4em 0.9em;
+    cursor: pointer;
+    width: auto;
+}
+
+.flag-chip:hover {
+    background-color: $color-alt-med;
+}
+
+.flag-copied {
+    font-size: 0.75em;
+    color: $color-med;
+    margin: 0.5em 0 0;
+}
+
+
 .as-of-badge {
     display: block;
     font-size: 0.75em;
@@ -265,7 +402,6 @@ h3 {
     }
 }
 
-
 .mark-active {
     background-color: $color-green;
     border: 2px solid $color-green;
@@ -286,6 +422,36 @@ ul.revealed {
     }
 }
 
+// A–E choice labels: a solid dark disc pinned to the pill's left edge, always
+// visible with a white letter (WCAG-checked contrast on the idle white pill
+// and on the green/red revealed pills alike). Letters are the same in English
+// and French, so no locale strings here; the store's seeded shuffle keeps the
+// right answer's letter stable across instances while rotating between
+// questions.
+.letter {
+    position: absolute;
+    left: 0.6em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 50%;
+    background-color: $color-darkest;
+    color: $color-white;
+    font-size: 0.65em;
+    font-weight: bold;
+}
+
+// Answer text clears the letter disc
+.choice-text {
+    display: block;
+    margin-left: 3em;
+    margin-right: 0.2em;
+}
+
 @keyframes mark-in {
     from {
         transform: translateY(-50%) translateX(-16px);
@@ -299,9 +465,10 @@ li {
     position: relative;
 }
 
-// Marks position against the pill, not the full-width li
-button.correct,
-button.incorrect {
+// Marks and letter badges position against the pill, not the full-width li:
+// every answer button is the containing block, so the A–E disc sits inside
+// the pill box before the reveal too (not only on .correct/.incorrect pills).
+button {
     position: relative;
 }
 

@@ -104,7 +104,53 @@ describe('useGameStore', () => {
       expect(q.choices.map((c) => c.text).sort()).toEqual(
         [q.correct_answer, ...q.incorrect_answers].sort(),
       )
+      // Choices carry stable A–E labels in draw order
+      expect(q.choices.map((c) => c.letter)).toEqual(['A', 'B', 'C', 'D', 'E'])
     }
+  })
+
+  it('labels the correct answer with a deterministic, rotating letter', () => {
+    const store = useGameStore()
+    store.startGame()
+    const letters = store.questions.map(
+      (q) => q.choices.find((c) => c.answer)!.letter,
+    )
+    // Deterministic: a second store (another instance/device) playing the
+    // same drawn questions gets the same letter for every question.
+    const fresh = useGameStore()
+    fresh.questions = store.questions.map((q) => ({
+      ...q,
+      choices: q.choices.map((c) => ({ ...c })),
+    }))
+    expect(
+      fresh.questions.map((q) => q.choices.find((c) => c.answer)!.letter),
+    ).toEqual(letters)
+    // Rotating: a 10-question game must not put the right answer on one
+    // letter throughout.
+    expect(new Set(letters).size).toBeGreaterThan(2)
+  })
+
+  it('gives paired en/fr translations the same correct-answer letter', () => {
+    // The store seeds the shuffle on the question id, normalizing fr ids
+    // ("geo-fr-0001") to their en twin ("geo-0001"). Drawing both full banks
+    // must therefore put each translation pair's correct answer on the same
+    // letter — two players in different locales see the same right answer.
+    const store = useGameStore()
+    store.setSetup({ lang: 'fr', categories: [], count: 1000 })
+    store.startGame()
+    const frLetters = new Map(
+      store.questions.map((q) => [q.id.replace('-fr-', '-'), q.choices.find((c) => c.answer)!.letter]),
+    )
+    store.setSetup({ lang: 'en', categories: [], count: 1000 })
+    store.startGame()
+    let pairs = 0
+    for (const q of store.questions) {
+      const frLetter = frLetters.get(q.id)
+      if (frLetter === undefined) continue
+      pairs++
+      expect(frLetter).toBe(q.choices.find((c) => c.answer)!.letter)
+    }
+    expect(pairs).toBeGreaterThan(400)
   })
 
   it('honors setup: category filter and question count', () => {
