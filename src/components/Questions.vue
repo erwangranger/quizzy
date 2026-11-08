@@ -12,7 +12,8 @@
         @click="answer(choice)"
         :disabled="store.isPaused"
         :class="choice.classes">
-          {{ choice.text }}
+          <span class="letter">{{ choice.letter }}</span>
+          <span class="choice-text">{{ choice.text }}</span>
           <!-- Verdict marks + player names at the reveal (scheme 3):
                drawn ✓ on the correct answer, ✗ on picked wrong answers,
                each participant's name stacked on the pill they chose -->
@@ -265,7 +266,6 @@ h3 {
     }
 }
 
-
 .mark-active {
     background-color: $color-green;
     border: 2px solid $color-green;
@@ -286,6 +286,36 @@ ul.revealed {
     }
 }
 
+// A–E choice labels: a solid dark disc pinned to the pill's left edge, always
+// visible with a white letter (WCAG-checked contrast on the idle white pill
+// and on the green/red revealed pills alike). Letters are the same in English
+// and French, so no locale strings here; the store's seeded shuffle keeps the
+// right answer's letter stable across instances while rotating between
+// questions.
+.letter {
+    position: absolute;
+    left: 0.6em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 50%;
+    background-color: $color-darkest;
+    color: $color-white;
+    font-size: 0.65em;
+    font-weight: bold;
+}
+
+// Answer text clears the letter disc
+.choice-text {
+    display: block;
+    margin-left: 3em;
+    margin-right: 0.2em;
+}
+
 @keyframes mark-in {
     from {
         transform: translateY(-50%) translateX(-16px);
@@ -299,9 +329,10 @@ li {
     position: relative;
 }
 
-// Marks position against the pill, not the full-width li
-button.correct,
-button.incorrect {
+// Marks and letter badges position against the pill, not the full-width li:
+// every answer button is the containing block, so the A–E disc sits inside
+// the pill box before the reveal too (not only on .correct/.incorrect pills).
+button {
     position: relative;
 }
 
